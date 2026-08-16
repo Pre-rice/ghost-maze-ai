@@ -18,8 +18,8 @@ import { generateShareCode, loadFromShareCode } from '../src/tools/sharecode.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-// G1-demo 游戏端 v3 编码产物（来自 ghost-maze test/golden/maps.json）
-const G1_GOLDEN_CODE = 'Y-biYmRlSGFhZGRkZ2TmYFi1agEDBISuEo0NYFi1agWjAxdDAFODCMMCVjYQi5ERAA';
+// G1-demo 游戏端 v3 编码产物（来自 ghost-maze test/golden/maps.json；demo 图为自由模式）
+const G1_GOLDEN_CODE = 'Y-biYmZlSGFhZOT4jwT4GRnZGZk5GFatWsAAAaGrRGMDGFatWsHowMUQwNQgwrCAlQ3EYmQEAA';
 
 const demo = JSON.parse(readFileSync(join(__dirname, '..', 'examples', 'demo-map.json'), 'utf-8'));
 const mapData = demo.mapData;
@@ -71,7 +71,8 @@ test('golden 码可解码，关键字段与 canonical 一致', () => {
     const m = d.mapData;
     assertEq(m.width, 10, '宽度');
     assertEq(m.height, 10, '高度');
-    assertEq(m.editorMode, 'regular', 'editorMode');
+    assertEq(m.editorMode, 'free', 'editorMode');
+    assertEq(JSON.stringify(m.customStartPos), JSON.stringify({ x: 1, y: 8 }), '自由模式出生点');
     assertEq(m.multiLayerMode, false, 'multiLayerMode');
     assertEq(JSON.stringify(m.endPos), JSON.stringify(mapData.endPos), '终点');
     for (let y = 0; y <= 10; y++)
