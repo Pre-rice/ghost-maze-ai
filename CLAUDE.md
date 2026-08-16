@@ -77,6 +77,10 @@ npm run sharecode -- <map.json> [--verify]   # mapData → 分享码（粘贴进
 npm run feedback -- <map.json> "<评语>" [得分]  # 记录用户试玩反馈
 ```
 
+> **分享码协议 = 游戏端 v3**：`src/tools/sharecode.js` 与 ghost-maze 的 `src/core/dataSerializer.js` 字节级一致
+> （版本头 0x03 + 墙体变长前缀码位流 + 参数独立队列；已删 v1 的 mapStartPos/playerStartLayer）。
+> 由 `test/sharecode.test.mjs` 用游戏端 golden 码锁定逐字符一致 + 闭环 + 确定性失败路径。
+
 ## 验证层核心事实（迁移自原仓库 AI 管线，勿偏离）
 
 - 墙索引约定：`hWalls[y][x]` = 格 (x,y) **上方**的墙；`vWalls[y][x]` = 格 (x,y) **左侧**的墙。hWalls 是 (height+1)×width，vWalls 是 height×(width+1)。
