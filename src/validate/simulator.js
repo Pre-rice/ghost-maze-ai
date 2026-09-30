@@ -1,10 +1,10 @@
-import { WALL_TYPES } from '../engine/constants.js';
+import { WALL_TYPES, MapDefinition } from '../reference/engine.js';
 import { DIRS4, wallStateBetween, isGhostPassable, isGhostVisionBlocked, isPlayerTraversable } from './wallIndex.js';
 
 /**
- * simulator 模块 - AI 管线的核心规则引擎
+ * simulator 模块 - 与权威引擎对照的紧凑物理模拟器
  *
- * 轻量确定性状态机，复刻 gameLogic 全部规则：
+ * 轻量确定性状态机，对齐固定 gameLogic 的物理规则：
  * 移动/按钮副作用/拾取/鬼 AI（视野追捕+冲突解决）/碰撞/胜负/death-loop 语义。
  * 与 gameLogic 的差异（均为有意为之）：
  * - 去除 trail/seenCells 等非确定性/无关字段（trail 用 Date.now()，破坏搜索去重）
@@ -13,7 +13,7 @@ import { DIRS4, wallStateBetween, isGhostPassable, isGhostVisionBlocked, isPlaye
  * - 支持 withGhosts:false 开关（结构级搜索用，跳过鬼移动与碰撞）
  *
  * 验证器（solvabilityVerifier）与求解器（solver）都构建在本模块之上，
- * 保证单一规则源，防止规则漂移。
+ * 固定版本原引擎才是权威；本实现必须通过逐状态差分和证书重放。
  */
 
 // ==================================================
@@ -24,76 +24,17 @@ import { DIRS4, wallStateBetween, isGhostPassable, isGhostVisionBlocked, isPlaye
  * 把 mapData（generateFullMaze 返回形状）规范化为模拟器内部结构
  */
 function normalizeMapData(mapData) {
-    const width = mapData.width;
-    const height = mapData.height;
-    const multiLayer = !!(mapData.multiLayerMode && mapData.layers && mapData.layers.length > 1);
-    const layerCount = multiLayer ? mapData.layers.length : 1;
-    const layers = [];
-
-    for (let i = 0; i < layerCount; i++) {
-        let src;
-        if (mapData.layers && mapData.layers[i]) {
-            src = mapData.layers[i];
-        } else if (i === 0) {
-            src = {
-                hWalls: mapData.hWalls,
-                vWalls: mapData.vWalls,
-                activeCells: mapData.activeCells,
-                ghosts: mapData.initialGhosts || [],
-                items: mapData.items || [],
-                buttons: mapData.buttons || [],
-                stairs: [],
-                endPos: mapData.endPos,
-                customStartPos: mapData.customStartPos
-            };
-        } else {
-            src = null;
-        }
-        layers.push({
-            hWalls: src ? src.hWalls : null,
-            vWalls: src ? src.vWalls : null,
-            activeCells: src && src.activeCells
-                ? src.activeCells
-                : Array.from({ length: height }, () => Array(width).fill(true)),
-            ghosts: src ? src.ghosts : [],
-            items: src ? src.items : [],
-            buttons: src ? src.buttons : [],
-            stairs: src && src.stairs ? src.stairs : [],
-            endPos: src && src.endPos ? { x: src.endPos.x, y: src.endPos.y } : null,
-            customStartPos: src && src.customStartPos ? { x: src.customStartPos.x, y: src.customStartPos.y } : null
-        });
-    }
-
-    // 出生点（与 MapDefinition._findPlayerStart 语义一致）
-    let startPos = null;
-    if (mapData.editorMode === 'free') {
-        for (let i = 0; i < layers.length; i++) {
-            if (layers[i].customStartPos) {
-                startPos = { x: layers[i].customStartPos.x, y: layers[i].customStartPos.y, layer: i };
-                break;
-            }
-        }
-        if (!startPos && mapData.mapStartPos) {
-            startPos = { x: mapData.mapStartPos.x, y: mapData.mapStartPos.y, layer: mapData.playerStartLayer || 0 };
-        }
-    }
-    if (!startPos) {
-        const sp = mapData.startPos || { x: 1, y: height - 2 };
-        startPos = { x: sp.x, y: sp.y, layer: 0 };
-    }
-
+    const def = mapData instanceof MapDefinition ? mapData : new MapDefinition(mapData);
     return {
-        width,
-        height,
-        layerCount,
-        multiLayer,
-        layers,
-        startPos,
-        editorMode: mapData.editorMode || 'regular',
-        gameMode: mapData.gameMode || 'exploration',
-        initialHealth: mapData.initialHealth || 5,
-        initialStamina: mapData.initialStamina || 100,
-        stairs: mapData.stairs || []
+        width: def.width, height: def.height, layerCount: def.layerCount,
+        multiLayer: def.multiLayerMode, startPos: { ...def.playerStart },
+        editorMode: def.editorMode, gameMode: def.gameMode,
+        initialHealth: def.initialHealth, initialStamina: def.initialStamina,
+        stairs: def.stairs,
+        layers: def.layers.map(layer => ({
+            hWalls: layer.initialWalls.h, vWalls: layer.initialWalls.v,
+            activeCells: layer.activeCells, ...layer.initialEntities
+        }))
     };
 }
 
@@ -177,8 +118,8 @@ function buildWallStates(layer) {
     const copyRow = row => row ? row.map(w => ({
         type: w.type,
         keys: w.keys || 0,
-        direction: w.direction ? { dx: w.direction.dx, dy: w.direction.dy } : null,
-        letter: w.letter != null ? w.letter : null,
+        direction: w.direction ? { ...w.direction } : null,
+        letter: w.letter || null,
         initialState: w.initialState || 'closed',
         currentState: w.initialState || 'closed'
     })) : [];
@@ -189,7 +130,7 @@ function buildWallStates(layer) {
 }
 
 function initialWallBits(sim) {
-    let bits = 0;
+    let bits = 0n;
     // 初始为 open 的字母门
     for (let li = 0; li < sim.layerCount; li++) {
         const layer = sim.layers[li];
@@ -202,7 +143,7 @@ function initialWallBits(sim) {
                     const w = row[x];
                     if (w && w.type === WALL_TYPES.LETTER_DOOR && w.initialState === 'open') {
                         const idx = idxRows[y] ? idxRows[y][x] : -1;
-                        if (idx >= 0) bits |= (1 << idx);
+                        if (idx >= 0) bits |= (1n << BigInt(idx));
                     }
                 }
             }
@@ -240,17 +181,17 @@ export function createInitState(sim) {
 }
 
 /**
- * 轻量克隆：玩家对象复制、墙行浅拷贝（墙对象共享，修改时替换式更新保证 COW 安全）
+ * 轻量克隆：复制实体与墙行目录，只在写入时复制具体墙行，保持前态与兄弟分支不变
  */
 function cloneState(state) {
     return {
         player: { ...state.player },
         layers: state.layers.map(l => ({
             ghosts: l.ghosts.map(g => ({ ...g })),
-            items: l.items.map(i => ({ ...i })),
+            items: l.items.slice(),
             wallStates: {
-                h: l.wallStates.h.map(row => row.slice()),
-                v: l.wallStates.v.map(row => row.slice())
+                h: l.wallStates.h.slice(),
+                v: l.wallStates.v.slice()
             }
         })),
         wallBits: state.wallBits,
@@ -290,7 +231,7 @@ function handlePressButton(state, sim, letter) {
         if (w.currentState === next) continue;
         // COW 替换 + 位翻转
         replaceWall(state, layer, dir, y, x, { ...w, currentState: next });
-        state.wallBits ^= (1 << bit);
+        state.wallBits ^= (1n << BigInt(bit));
     }
     return true;
 }
@@ -336,7 +277,7 @@ function handleMove(state, sim, action) {
         const wy = action.dy === 1 ? p.y + 1 : (action.dy === -1 ? p.y : p.y);
         const wx = action.dx === 1 ? p.x + 1 : (action.dx === -1 ? p.x : p.x);
         replaceWall(state, layerIdx, dir, wy, wx, { ...wallState, type: WALL_TYPES.EMPTY });
-        if (idx >= 0) state.wallBits |= (1 << idx);
+        if (idx >= 0) state.wallBits |= (1n << BigInt(idx));
     }
 
     p.x = nx;
@@ -373,15 +314,14 @@ function handleUseStair(state, sim) {
     return true;
 }
 
-/** 复刻 gameLogic.handleItemPickup：拾取当前层玩家所在格的全部钥匙（全局共享，同格多把一次全捡） */
+/** 与固定游戏引擎一致：每次成功动作只拾取脚下第一个物品。 */
 function handleItemPickup(state, sim) {
     const p = state.player;
     const items = state.layers[p.layer].items;
-    for (let i = items.length - 1; i >= 0; i--) {
-        if (items[i].x === p.x && items[i].y === p.y) {
-            if (items[i].type === 'key') p.keys++;
-            items.splice(i, 1);
-        }
+    const index = items.findIndex(item => item.x === p.x && item.y === p.y);
+    if (index >= 0) {
+        if (items[index].type === 'key') p.keys++;
+        items.splice(index, 1);
     }
 }
 
@@ -679,10 +619,10 @@ function revive(state, sim) {
 }
 
 /**
- * 状态规范化键（去重用）：忽略 trail/seenCells/hp/steps 等不影响后续转移的字段
+ * 状态规范化键（去重用）：仅忽略视觉和累计代价字段；保留体力、生命与终止标志
  *
  * 必须完整刻画"未来转移"的状态分量：
- * - player 的 layer/x/y/keys（位置与钥匙数）
+ * - player 的 layer/x/y/keys/hp/stamina（位置、资源与生命）
  * - wallBits（LOCKED 消耗 / 字母门开关，决定墙的通行与视野）
  * - 剩余物品（**关键**：两个 keys 相同的状态可能剩余钥匙集合不同——
  *   一个已捡过 (x,y) 的钥匙、一个没捡，未来转移不同，key 必须区分）
@@ -693,17 +633,17 @@ function revive(state, sim) {
  */
 export function stateKey(state, sim, opts = {}) {
     const p = state.player;
-    let key = `${p.layer},${p.x},${p.y},${p.keys},${state.wallBits}`;
+    let key = `${p.layer},${p.x},${p.y},${p.keys},${p.hp},${p.stamina},${state.isDead},${state.isWon},${state.wallBits}`;
     // 剩余物品签名（物品状态影响未来转移：站在钥匙格上可拾取）
     const itemSig = state.layers.map((l, i) =>
-        `${i}:${l.items.map(it => `${it.x},${it.y}`).sort().join('|')}`
+        `${i}:${JSON.stringify(l.items.map(it => [it.x, it.y, it.type]))}`
     ).join(';');
     key += '|' + itemSig;
     const withGhosts = opts.withGhosts !== false && sim.withGhosts;
     if (withGhosts) {
         const sig = [];
         for (let i = 0; i < sim.layerCount; i++) {
-            const gs = state.layers[i].ghosts.map(g => `${g.x},${g.y}`).sort().join('|');
+            const gs = state.layers[i].ghosts.map(g => `${g.x},${g.y}`).join('|');
             sig.push(`${i}:${gs}`);
         }
         key += '|g:' + sig.join(';');
@@ -716,8 +656,7 @@ export function getEndPos(sim, layer) {
     return sim.layers[layer] ? sim.layers[layer].endPos : null;
 }
 
-/** 玩家是否在终点上（胜利判定） */
+/** 必须已经经过引擎判胜；初始坐标等于终点不代表零动作胜利。 */
 export function isWin(state, sim) {
-    const endPos = sim.layers[state.player.layer].endPos;
-    return !!endPos && state.player.x === endPos.x && state.player.y === endPos.y;
+    return state.isWon && !state.isDead;
 }

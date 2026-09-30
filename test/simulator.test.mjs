@@ -1,3 +1,6 @@
+// 保留历史测试地图分布，物理规则使用固定版本原引擎。
+import { generateFullMaze } from '../src/engine/mazeGenerator.js';
+import { WALL_TYPES, GameLogic, MapDefinition } from '../src/reference/engine.js';
 /**
  * 阶段 1 验证：simulator 与 gameLogic 一致性双跑测试
  *
@@ -9,10 +12,6 @@
  * - 手工 6×6 全元素图（LOCKED+钥匙 / LETTER_DOOR+按钮 / ONE_WAY / GLASS / 鬼）
  * 覆盖模式：exploration 与 death-loop（含死亡 REVIVE 全重置语义）
  */
-import { WALL_TYPES } from '../src/engine/constants.js';
-import { GameLogic } from '../src/engine/gameLogic.js';
-import { MapDefinition } from '../src/engine/mapDefinition.js';
-import { generateFullMaze } from '../src/engine/mazeGenerator.js';
 import { makeSimulator, createInitState, step, stateKey, canGhostSeePlayer } from '../src/validate/simulator.js';
 import { DIRS4 } from '../src/validate/wallIndex.js';
 import { suite, test, assert, assertEq, assertDeepEq, summary } from './_assert.mjs';
@@ -98,8 +97,8 @@ function assertStatesEqual(gs, ss, stepIdx, action, label) {
     assertEq(ss.isWon, gs.isWon, `${tag} isWon`);
     assertEq(ss.isDead, gs.isDead, `${tag} isDead`);
     for (let i = 0; i < gs.layerStates.length; i++) {
-        const g1 = gs.layerStates[i].ghosts.map(g => `${g.x},${g.y}`).sort().join('|');
-        const g2 = ss.layers[i].ghosts.map(g => `${g.x},${g.y}`).sort().join('|');
+        const g1 = gs.layerStates[i].ghosts.map(g => `${g.x},${g.y}`).join('|');
+        const g2 = ss.layers[i].ghosts.map(g => `${g.x},${g.y}`).join('|');
         assertEq(g2, g1, `${tag} layer${i} ghosts`);
         assertDeepEq(ss.layers[i].items, gs.layerStates[i].items, `${tag} layer${i} items`);
         assertDeepEq(ss.layers[i].wallStates, gs.layerStates[i].wallStates, `${tag} layer${i} wallStates`);
@@ -244,7 +243,7 @@ test('canGhostSeePlayer 导出回归：直线视野判定可导入且可调用',
     assertEq(canGhostSeePlayer(sim, s, 0, g, { x: 2, y: 0 }), false, '假想位不同列 → 不可见');
 });
 
-test('同格多把钥匙一次全捡（修复"来回走重复拾取"）', () => {
+test('同格多把钥匙逐次拾取，与当前原引擎一致', () => {
     const empty = () => ({ type: WALL_TYPES.EMPTY, keys: 0 });
     const width = 3, height = 3;
     const hWalls = Array(height + 1).fill(null).map(() => Array(width).fill(null).map(empty));
@@ -270,14 +269,14 @@ test('同格多把钥匙一次全捡（修复"来回走重复拾取"）', () => 
     const mapDef = new MapDefinition(md);
     let gs = GameLogic.createInitialState(mapDef);
     assertEq(gs.player.keys, 0, '初始无钥匙');
-    // 右移一步走到 (1,1)：同格 2 把钥匙应一次全捡
+    // 每次成功动作只捡第一个物品，回来以后才能再捡。
     gs = GameLogic.calculateNextState(gs, { type: 'MOVE', payload: { dx: 1, dy: 0 } }, mapDef);
-    assertEq(gs.player.keys, 2, '同格 2 把钥匙应一次全捡（keys+2）');
-    assertEq(gs.layerStates[0].items.length, 0, '该格钥匙应全部移除');
-    // 走开再走回同格：不再重复拾取
+    assertEq(gs.player.keys, 1, '第一次只捡一把');
+    assertEq(gs.layerStates[0].items.length, 1, '仍剩一把钥匙');
+    // 走开再走回，拾取剩下的一把。
     gs = GameLogic.calculateNextState(gs, { type: 'MOVE', payload: { dx: -1, dy: 0 } }, mapDef);
     gs = GameLogic.calculateNextState(gs, { type: 'MOVE', payload: { dx: 1, dy: 0 } }, mapDef);
-    assertEq(gs.player.keys, 2, '走回同格不应再拾取');
+    assertEq(gs.player.keys, 2, '回来后拿到第二把');
 });
 
 summary();

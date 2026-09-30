@@ -1,0 +1,12 @@
+{
+  "familyId": "complementary-switch-v1",
+  "seed": 20260929,
+  "iterations": 96,
+  "maxDepth": 3,
+  "hypotheses": [
+    { "id": "press_A", "sequence": [{ "type": "press", "letter": "A" }] },
+    { "id": "press_A_twice", "sequence": [{ "type": "press", "letter": "A" }, { "type": "press", "letter": "A" }] },
+    { "id": "key_then_press_A", "sequence": [{ "type": "pickup_key" }, { "type": "press", "letter": "A" }] }
+  ],
+  "budget": { "nodeBudget": 10000, "stateBudget": 10000, "budgetMs": 5000 }
+}

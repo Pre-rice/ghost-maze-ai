@@ -1,0 +1,7056 @@
+{
+  "schemaVersion": 1,
+  "id": "singlelayer-01",
+  "familyId": "dual-loop-relay-v1",
+  "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+  "mapId": "72239369e31b311eeefed1b77b9b118ff9d7891b1815474d6c7f088dca79cc11",
+  "source": "search_proposal_with_manual_refinement",
+  "provenance": {
+    "discoveryScript": "discover.mjs",
+    "randomSeed": 930261,
+    "proposalIndex": 12579,
+    "edits": [
+      "去掉无关的第二只鬼",
+      "删除未参与机关关系的七个格子",
+      "起点右侧改玻璃，左侧改普通门，提供安全观察"
+    ]
+  },
+  "humanPreference": null,
+  "targetQuality": "awaiting_user_review",
+  "analysis": {
+    "schemaVersion": 1,
+    "evaluatorVersion": "counterfactual-v1",
+    "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+    "mapId": "72239369e31b311eeefed1b77b9b118ff9d7891b1815474d6c7f088dca79cc11",
+    "baseline": {
+      "schemaVersion": 1,
+      "status": "solved",
+      "reason": "goal_reached",
+      "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+      "mapId": "72239369e31b311eeefed1b77b9b118ff9d7891b1815474d6c7f088dca79cc11",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "withGhosts": true,
+        "restrictions": []
+      },
+      "optimality": "proven",
+      "solution": {
+        "actions": [
+          "L",
+          "U",
+          "R",
+          "R",
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "D",
+          "L",
+          "U",
+          "D",
+          "R",
+          "R",
+          "R",
+          "L",
+          "L",
+          "L",
+          "U",
+          "R",
+          "U",
+          "U",
+          "U",
+          "R",
+          "R",
+          "U",
+          "L",
+          "L",
+          "D",
+          "L",
+          "U",
+          "R",
+          "R",
+          "R",
+          "D",
+          "R"
+        ],
+        "totalActions": 37,
+        "movementCost": 34
+      },
+      "search": {
+        "algorithm": "astar",
+        "expanded": 93,
+        "transitions": 465,
+        "discovered": 100,
+        "resourcePruned": 75,
+        "exhausted": false,
+        "elapsedMs": 4.130300000000005,
+        "budget": {
+          "nodeBudget": 100000,
+          "stateBudget": 100000,
+          "budgetMs": 30000
+        }
+      }
+    },
+    "counterfactuals": [
+      {
+        "hypothesis": {
+          "id": "B_then_A_then_B",
+          "sequence": [
+            {
+              "type": "press",
+              "letter": "B"
+            },
+            {
+              "type": "press",
+              "letter": "A"
+            },
+            {
+              "type": "press",
+              "letter": "B"
+            }
+          ]
+        },
+        "conclusion": "necessary_within_scope",
+        "result": {
+          "schemaVersion": 1,
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+          "mapId": "72239369e31b311eeefed1b77b9b118ff9d7891b1815474d6c7f088dca79cc11",
+          "scope": {
+            "gameMode": "death-loop",
+            "objective": "zero_hit_no_revive",
+            "metric": "successful_actions",
+            "actions": [
+              "U",
+              "R",
+              "D",
+              "L",
+              "STAIR"
+            ],
+            "withGhosts": true,
+            "restrictions": [
+              {
+                "id": "B_then_A_then_B",
+                "sequence": [
+                  {
+                    "type": "press",
+                    "letter": "B"
+                  },
+                  {
+                    "type": "press",
+                    "letter": "A"
+                  },
+                  {
+                    "type": "press",
+                    "letter": "B"
+                  }
+                ]
+              }
+            ]
+          },
+          "optimality": null,
+          "solution": null,
+          "search": {
+            "algorithm": "astar",
+            "expanded": 124,
+            "transitions": 620,
+            "discovered": 124,
+            "resourcePruned": 118,
+            "exhausted": true,
+            "elapsedMs": 2.4213000000000022,
+            "budget": {
+              "nodeBudget": 100000,
+              "stateBudget": 100000,
+              "budgetMs": 30000
+            }
+          }
+        }
+      },
+      {
+        "hypothesis": {
+          "id": "lower_lure_position",
+          "sequence": [
+            {
+              "type": "visit",
+              "layer": 0,
+              "x": 4,
+              "y": 5
+            }
+          ]
+        },
+        "conclusion": "necessary_within_scope",
+        "result": {
+          "schemaVersion": 1,
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+          "mapId": "72239369e31b311eeefed1b77b9b118ff9d7891b1815474d6c7f088dca79cc11",
+          "scope": {
+            "gameMode": "death-loop",
+            "objective": "zero_hit_no_revive",
+            "metric": "successful_actions",
+            "actions": [
+              "U",
+              "R",
+              "D",
+              "L",
+              "STAIR"
+            ],
+            "withGhosts": true,
+            "restrictions": [
+              {
+                "id": "lower_lure_position",
+                "sequence": [
+                  {
+                    "type": "visit",
+                    "layer": 0,
+                    "x": 4,
+                    "y": 5
+                  }
+                ]
+              }
+            ]
+          },
+          "optimality": null,
+          "solution": null,
+          "search": {
+            "algorithm": "astar",
+            "expanded": 48,
+            "transitions": 240,
+            "discovered": 48,
+            "resourcePruned": 46,
+            "exhausted": true,
+            "elapsedMs": 1.063999999999993,
+            "budget": {
+              "nodeBudget": 100000,
+              "stateBudget": 100000,
+              "budgetMs": 30000
+            }
+          }
+        }
+      },
+      {
+        "hypothesis": {
+          "id": "ghost_displaced_down",
+          "sequence": [
+            {
+              "type": "ghost_at",
+              "layer": 0,
+              "x": 4,
+              "y": 4
+            }
+          ]
+        },
+        "conclusion": "necessary_within_scope",
+        "result": {
+          "schemaVersion": 1,
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+          "mapId": "72239369e31b311eeefed1b77b9b118ff9d7891b1815474d6c7f088dca79cc11",
+          "scope": {
+            "gameMode": "death-loop",
+            "objective": "zero_hit_no_revive",
+            "metric": "successful_actions",
+            "actions": [
+              "U",
+              "R",
+              "D",
+              "L",
+              "STAIR"
+            ],
+            "withGhosts": true,
+            "restrictions": [
+              {
+                "id": "ghost_displaced_down",
+                "sequence": [
+                  {
+                    "type": "ghost_at",
+                    "layer": 0,
+                    "x": 4,
+                    "y": 4
+                  }
+                ]
+              }
+            ]
+          },
+          "optimality": null,
+          "solution": null,
+          "search": {
+            "algorithm": "astar",
+            "expanded": 50,
+            "transitions": 250,
+            "discovered": 50,
+            "resourcePruned": 47,
+            "exhausted": true,
+            "elapsedMs": 0.8394000000000119,
+            "budget": {
+              "nodeBudget": 100000,
+              "stateBudget": 100000,
+              "budgetMs": 30000
+            }
+          }
+        }
+      },
+      {
+        "hypothesis": {
+          "id": "ghost_displaced_left",
+          "sequence": [
+            {
+              "type": "ghost_at",
+              "layer": 0,
+              "x": 2,
+              "y": 1
+            }
+          ]
+        },
+        "conclusion": "necessary_within_scope",
+        "result": {
+          "schemaVersion": 1,
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+          "mapId": "72239369e31b311eeefed1b77b9b118ff9d7891b1815474d6c7f088dca79cc11",
+          "scope": {
+            "gameMode": "death-loop",
+            "objective": "zero_hit_no_revive",
+            "metric": "successful_actions",
+            "actions": [
+              "U",
+              "R",
+              "D",
+              "L",
+              "STAIR"
+            ],
+            "withGhosts": true,
+            "restrictions": [
+              {
+                "id": "ghost_displaced_left",
+                "sequence": [
+                  {
+                    "type": "ghost_at",
+                    "layer": 0,
+                    "x": 2,
+                    "y": 1
+                  }
+                ]
+              }
+            ]
+          },
+          "optimality": null,
+          "solution": null,
+          "search": {
+            "algorithm": "astar",
+            "expanded": 107,
+            "transitions": 535,
+            "discovered": 107,
+            "resourcePruned": 96,
+            "exhausted": true,
+            "elapsedMs": 1.540600000000012,
+            "budget": {
+              "nodeBudget": 100000,
+              "stateBudget": 100000,
+              "budgetMs": 30000
+            }
+          }
+        }
+      }
+    ],
+    "humanPreference": null
+  },
+  "reference": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+    "mapId": "72239369e31b311eeefed1b77b9b118ff9d7891b1815474d6c7f088dca79cc11",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "L",
+        "U",
+        "R",
+        "R",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "L",
+        "U",
+        "D",
+        "R",
+        "R",
+        "R",
+        "L",
+        "L",
+        "L",
+        "U",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R",
+        "R",
+        "U",
+        "L",
+        "L",
+        "D",
+        "L",
+        "U",
+        "R",
+        "R",
+        "R",
+        "D",
+        "R"
+      ],
+      "totalActions": 37,
+      "movementCost": 34
+    },
+    "search": {
+      "expanded": 979,
+      "transitions": 4892,
+      "discovered": 1038,
+      "exhausted": false,
+      "elapsedMs": 743.8781,
+      "budget": {
+        "nodeBudget": 100000,
+        "stateBudget": 100000,
+        "budgetMs": 30000
+      }
+    }
+  },
+  "restrictionsReference": [
+    {
+      "schemaVersion": 1,
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+      "mapId": "72239369e31b311eeefed1b77b9b118ff9d7891b1815474d6c7f088dca79cc11",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "restrictions": [
+          {
+            "id": "B_then_A_then_B",
+            "sequence": [
+              {
+                "type": "press",
+                "letter": "B"
+              },
+              {
+                "type": "press",
+                "letter": "A"
+              },
+              {
+                "type": "press",
+                "letter": "B"
+              }
+            ]
+          }
+        ]
+      },
+      "optimality": null,
+      "solution": null,
+      "search": {
+        "expanded": 5487,
+        "transitions": 27435,
+        "discovered": 5487,
+        "exhausted": true,
+        "elapsedMs": 4032.4589,
+        "budget": {
+          "nodeBudget": 100000,
+          "stateBudget": 100000,
+          "budgetMs": 30000
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+      "mapId": "72239369e31b311eeefed1b77b9b118ff9d7891b1815474d6c7f088dca79cc11",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "restrictions": [
+          {
+            "id": "lower_lure_position",
+            "sequence": [
+              {
+                "type": "visit",
+                "layer": 0,
+                "x": 4,
+                "y": 5
+              }
+            ]
+          }
+        ]
+      },
+      "optimality": null,
+      "solution": null,
+      "search": {
+        "expanded": 2228,
+        "transitions": 11140,
+        "discovered": 2228,
+        "exhausted": true,
+        "elapsedMs": 1679.4229000000005,
+        "budget": {
+          "nodeBudget": 100000,
+          "stateBudget": 100000,
+          "budgetMs": 30000
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+      "mapId": "72239369e31b311eeefed1b77b9b118ff9d7891b1815474d6c7f088dca79cc11",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "restrictions": [
+          {
+            "id": "ghost_displaced_down",
+            "sequence": [
+              {
+                "type": "ghost_at",
+                "layer": 0,
+                "x": 4,
+                "y": 4
+              }
+            ]
+          }
+        ]
+      },
+      "optimality": null,
+      "solution": null,
+      "search": {
+        "expanded": 2317,
+        "transitions": 11585,
+        "discovered": 2317,
+        "exhausted": true,
+        "elapsedMs": 1751.6866,
+        "budget": {
+          "nodeBudget": 100000,
+          "stateBudget": 100000,
+          "budgetMs": 30000
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+      "mapId": "72239369e31b311eeefed1b77b9b118ff9d7891b1815474d6c7f088dca79cc11",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "restrictions": [
+          {
+            "id": "ghost_displaced_left",
+            "sequence": [
+              {
+                "type": "ghost_at",
+                "layer": 0,
+                "x": 2,
+                "y": 1
+              }
+            ]
+          }
+        ]
+      },
+      "optimality": null,
+      "solution": null,
+      "search": {
+        "expanded": 4429,
+        "transitions": 22145,
+        "discovered": 4429,
+        "exhausted": true,
+        "elapsedMs": 3390.6285000000007,
+        "budget": {
+          "nodeBudget": 100000,
+          "stateBudget": 100000,
+          "budgetMs": 30000
+        }
+      }
+    }
+  ],
+  "trace": [
+    {
+      "index": 0,
+      "action": null,
+      "player": {
+        "layer": 0,
+        "x": 3,
+        "y": 2,
+        "hp": 5,
+        "stamina": 100,
+        "keys": 0,
+        "steps": 0
+      },
+      "ghosts": [
+        [
+          4,
+          2
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "action": "L",
+      "player": {
+        "layer": 0,
+        "x": 2,
+        "y": 2,
+        "hp": 5,
+        "stamina": 99,
+        "keys": 0,
+        "steps": 1
+      },
+      "ghosts": [
+        [
+          4,
+          2
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "action": "U",
+      "player": {
+        "layer": 0,
+        "x": 2,
+        "y": 1,
+        "hp": 5,
+        "stamina": 98,
+        "keys": 0,
+        "steps": 2
+      },
+      "ghosts": [
+        [
+          4,
+          2
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "action": "R",
+      "player": {
+        "layer": 0,
+        "x": 3,
+        "y": 1,
+        "hp": 5,
+        "stamina": 97,
+        "keys": 0,
+        "steps": 3
+      },
+      "ghosts": [
+        [
+          4,
+          2
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "action": "R",
+      "player": {
+        "layer": 0,
+        "x": 4,
+        "y": 1,
+        "hp": 5,
+        "stamina": 96,
+        "keys": 0,
+        "steps": 4
+      },
+      "ghosts": [
+        [
+          4,
+          2
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "action": "U",
+      "player": {
+        "layer": 0,
+        "x": 4,
+        "y": 1,
+        "hp": 5,
+        "stamina": 96,
+        "keys": 0,
+        "steps": 4
+      },
+      "ghosts": [
+        [
+          4,
+          2
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "action": "L",
+      "player": {
+        "layer": 0,
+        "x": 3,
+        "y": 1,
+        "hp": 5,
+        "stamina": 95,
+        "keys": 0,
+        "steps": 5
+      },
+      "ghosts": [
+        [
+          4,
+          2
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "action": "L",
+      "player": {
+        "layer": 0,
+        "x": 2,
+        "y": 1,
+        "hp": 5,
+        "stamina": 94,
+        "keys": 0,
+        "steps": 6
+      },
+      "ghosts": [
+        [
+          4,
+          2
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "action": "D",
+      "player": {
+        "layer": 0,
+        "x": 2,
+        "y": 2,
+        "hp": 5,
+        "stamina": 93,
+        "keys": 0,
+        "steps": 7
+      },
+      "ghosts": [
+        [
+          4,
+          2
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "action": "D",
+      "player": {
+        "layer": 0,
+        "x": 2,
+        "y": 3,
+        "hp": 5,
+        "stamina": 92,
+        "keys": 0,
+        "steps": 8
+      },
+      "ghosts": [
+        [
+          4,
+          2
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "action": "D",
+      "player": {
+        "layer": 0,
+        "x": 2,
+        "y": 4,
+        "hp": 5,
+        "stamina": 91,
+        "keys": 0,
+        "steps": 9
+      },
+      "ghosts": [
+        [
+          4,
+          2
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "action": "L",
+      "player": {
+        "layer": 0,
+        "x": 1,
+        "y": 4,
+        "hp": 5,
+        "stamina": 90,
+        "keys": 0,
+        "steps": 10
+      },
+      "ghosts": [
+        [
+          4,
+          2
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "action": "U",
+      "player": {
+        "layer": 0,
+        "x": 1,
+        "y": 4,
+        "hp": 5,
+        "stamina": 90,
+        "keys": 0,
+        "steps": 10
+      },
+      "ghosts": [
+        [
+          4,
+          2
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "action": "D",
+      "player": {
+        "layer": 0,
+        "x": 1,
+        "y": 5,
+        "hp": 5,
+        "stamina": 89,
+        "keys": 0,
+        "steps": 11
+      },
+      "ghosts": [
+        [
+          4,
+          2
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "action": "R",
+      "player": {
+        "layer": 0,
+        "x": 2,
+        "y": 5,
+        "hp": 5,
+        "stamina": 88,
+        "keys": 0,
+        "steps": 12
+      },
+      "ghosts": [
+        [
+          4,
+          2
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "action": "R",
+      "player": {
+        "layer": 0,
+        "x": 3,
+        "y": 5,
+        "hp": 5,
+        "stamina": 87,
+        "keys": 0,
+        "steps": 13
+      },
+      "ghosts": [
+        [
+          4,
+          2
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "action": "R",
+      "player": {
+        "layer": 0,
+        "x": 4,
+        "y": 5,
+        "hp": 5,
+        "stamina": 86,
+        "keys": 0,
+        "steps": 14
+      },
+      "ghosts": [
+        [
+          4,
+          3
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "action": "L",
+      "player": {
+        "layer": 0,
+        "x": 3,
+        "y": 5,
+        "hp": 5,
+        "stamina": 85,
+        "keys": 0,
+        "steps": 15
+      },
+      "ghosts": [
+        [
+          4,
+          4
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "action": "L",
+      "player": {
+        "layer": 0,
+        "x": 2,
+        "y": 5,
+        "hp": 5,
+        "stamina": 84,
+        "keys": 0,
+        "steps": 16
+      },
+      "ghosts": [
+        [
+          4,
+          4
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "action": "L",
+      "player": {
+        "layer": 0,
+        "x": 1,
+        "y": 5,
+        "hp": 5,
+        "stamina": 83,
+        "keys": 0,
+        "steps": 17
+      },
+      "ghosts": [
+        [
+          4,
+          4
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "action": "U",
+      "player": {
+        "layer": 0,
+        "x": 1,
+        "y": 4,
+        "hp": 5,
+        "stamina": 82,
+        "keys": 0,
+        "steps": 18
+      },
+      "ghosts": [
+        [
+          4,
+          4
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "action": "R",
+      "player": {
+        "layer": 0,
+        "x": 2,
+        "y": 4,
+        "hp": 5,
+        "stamina": 81,
+        "keys": 0,
+        "steps": 19
+      },
+      "ghosts": [
+        [
+          4,
+          4
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "action": "U",
+      "player": {
+        "layer": 0,
+        "x": 2,
+        "y": 3,
+        "hp": 5,
+        "stamina": 80,
+        "keys": 0,
+        "steps": 20
+      },
+      "ghosts": [
+        [
+          4,
+          4
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "action": "U",
+      "player": {
+        "layer": 0,
+        "x": 2,
+        "y": 2,
+        "hp": 5,
+        "stamina": 79,
+        "keys": 0,
+        "steps": 21
+      },
+      "ghosts": [
+        [
+          4,
+          4
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "action": "U",
+      "player": {
+        "layer": 0,
+        "x": 2,
+        "y": 1,
+        "hp": 5,
+        "stamina": 78,
+        "keys": 0,
+        "steps": 22
+      },
+      "ghosts": [
+        [
+          4,
+          4
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "action": "R",
+      "player": {
+        "layer": 0,
+        "x": 3,
+        "y": 1,
+        "hp": 5,
+        "stamina": 77,
+        "keys": 0,
+        "steps": 23
+      },
+      "ghosts": [
+        [
+          4,
+          4
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "action": "R",
+      "player": {
+        "layer": 0,
+        "x": 4,
+        "y": 1,
+        "hp": 5,
+        "stamina": 76,
+        "keys": 0,
+        "steps": 24
+      },
+      "ghosts": [
+        [
+          4,
+          3
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "action": "U",
+      "player": {
+        "layer": 0,
+        "x": 4,
+        "y": 1,
+        "hp": 5,
+        "stamina": 76,
+        "keys": 0,
+        "steps": 24
+      },
+      "ghosts": [
+        [
+          4,
+          2
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "action": "L",
+      "player": {
+        "layer": 0,
+        "x": 3,
+        "y": 1,
+        "hp": 5,
+        "stamina": 75,
+        "keys": 0,
+        "steps": 25
+      },
+      "ghosts": [
+        [
+          4,
+          1
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "action": "L",
+      "player": {
+        "layer": 0,
+        "x": 2,
+        "y": 1,
+        "hp": 5,
+        "stamina": 74,
+        "keys": 0,
+        "steps": 26
+      },
+      "ghosts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "action": "D",
+      "player": {
+        "layer": 0,
+        "x": 2,
+        "y": 2,
+        "hp": 5,
+        "stamina": 73,
+        "keys": 0,
+        "steps": 27
+      },
+      "ghosts": [
+        [
+          2,
+          1
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "action": "L",
+      "player": {
+        "layer": 0,
+        "x": 1,
+        "y": 2,
+        "hp": 5,
+        "stamina": 72,
+        "keys": 0,
+        "steps": 28
+      },
+      "ghosts": [
+        [
+          2,
+          2
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "action": "U",
+      "player": {
+        "layer": 0,
+        "x": 1,
+        "y": 1,
+        "hp": 5,
+        "stamina": 71,
+        "keys": 0,
+        "steps": 29
+      },
+      "ghosts": [
+        [
+          1,
+          2
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "action": "R",
+      "player": {
+        "layer": 0,
+        "x": 2,
+        "y": 1,
+        "hp": 5,
+        "stamina": 70,
+        "keys": 0,
+        "steps": 30
+      },
+      "ghosts": [
+        [
+          1,
+          1
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "action": "R",
+      "player": {
+        "layer": 0,
+        "x": 3,
+        "y": 1,
+        "hp": 5,
+        "stamina": 69,
+        "keys": 0,
+        "steps": 31
+      },
+      "ghosts": [
+        [
+          2,
+          1
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "action": "R",
+      "player": {
+        "layer": 0,
+        "x": 4,
+        "y": 1,
+        "hp": 5,
+        "stamina": 68,
+        "keys": 0,
+        "steps": 32
+      },
+      "ghosts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "action": "D",
+      "player": {
+        "layer": 0,
+        "x": 4,
+        "y": 2,
+        "hp": 5,
+        "stamina": 67,
+        "keys": 0,
+        "steps": 33
+      },
+      "ghosts": [
+        [
+          4,
+          1
+        ]
+      ],
+      "isDead": false,
+      "isWon": false,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "action": "R",
+      "player": {
+        "layer": 0,
+        "x": 5,
+        "y": 2,
+        "hp": 5,
+        "stamina": 66,
+        "keys": 0,
+        "steps": 34
+      },
+      "ghosts": [
+        [
+          4,
+          1
+        ]
+      ],
+      "isDead": false,
+      "isWon": true,
+      "gates": [
+        {
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ]
+    }
+  ],
+  "failedPlans": [
+    {
+      "id": "open_A_then_approach_exit",
+      "actions": [
+        "L",
+        "D",
+        "D",
+        "L",
+        "U",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R",
+        "R"
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "action": null,
+          "player": {
+            "layer": 0,
+            "x": 3,
+            "y": 2,
+            "hp": 5,
+            "stamina": 100,
+            "keys": 0,
+            "steps": 0
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "action": "L",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 2,
+            "hp": 5,
+            "stamina": 99,
+            "keys": 0,
+            "steps": 1
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "action": "D",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 3,
+            "hp": 5,
+            "stamina": 98,
+            "keys": 0,
+            "steps": 2
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "action": "D",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 4,
+            "hp": 5,
+            "stamina": 97,
+            "keys": 0,
+            "steps": 3
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "action": "L",
+          "player": {
+            "layer": 0,
+            "x": 1,
+            "y": 4,
+            "hp": 5,
+            "stamina": 96,
+            "keys": 0,
+            "steps": 4
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "action": "U",
+          "player": {
+            "layer": 0,
+            "x": 1,
+            "y": 4,
+            "hp": 5,
+            "stamina": 96,
+            "keys": 0,
+            "steps": 4
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "action": "R",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 4,
+            "hp": 5,
+            "stamina": 95,
+            "keys": 0,
+            "steps": 5
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "action": "U",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 3,
+            "hp": 5,
+            "stamina": 94,
+            "keys": 0,
+            "steps": 6
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "action": "U",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 2,
+            "hp": 5,
+            "stamina": 93,
+            "keys": 0,
+            "steps": 7
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "action": "U",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 1,
+            "hp": 5,
+            "stamina": 92,
+            "keys": 0,
+            "steps": 8
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "action": "R",
+          "player": {
+            "layer": 0,
+            "x": 3,
+            "y": 1,
+            "hp": 5,
+            "stamina": 91,
+            "keys": 0,
+            "steps": 9
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "action": "R",
+          "player": {
+            "layer": 0,
+            "x": 4,
+            "y": 1,
+            "hp": 5,
+            "stamina": 90,
+            "keys": 0,
+            "steps": 10
+          },
+          "ghosts": [
+            [
+              4,
+              1
+            ]
+          ],
+          "isDead": true,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prepare_gates_but_skip_lure",
+      "actions": [
+        "L",
+        "U",
+        "R",
+        "R",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "L",
+        "U",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R",
+        "R"
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "action": null,
+          "player": {
+            "layer": 0,
+            "x": 3,
+            "y": 2,
+            "hp": 5,
+            "stamina": 100,
+            "keys": 0,
+            "steps": 0
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "action": "L",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 2,
+            "hp": 5,
+            "stamina": 99,
+            "keys": 0,
+            "steps": 1
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "action": "U",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 1,
+            "hp": 5,
+            "stamina": 98,
+            "keys": 0,
+            "steps": 2
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "action": "R",
+          "player": {
+            "layer": 0,
+            "x": 3,
+            "y": 1,
+            "hp": 5,
+            "stamina": 97,
+            "keys": 0,
+            "steps": 3
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "action": "R",
+          "player": {
+            "layer": 0,
+            "x": 4,
+            "y": 1,
+            "hp": 5,
+            "stamina": 96,
+            "keys": 0,
+            "steps": 4
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "action": "U",
+          "player": {
+            "layer": 0,
+            "x": 4,
+            "y": 1,
+            "hp": 5,
+            "stamina": 96,
+            "keys": 0,
+            "steps": 4
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "action": "L",
+          "player": {
+            "layer": 0,
+            "x": 3,
+            "y": 1,
+            "hp": 5,
+            "stamina": 95,
+            "keys": 0,
+            "steps": 5
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "action": "L",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 1,
+            "hp": 5,
+            "stamina": 94,
+            "keys": 0,
+            "steps": 6
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "action": "D",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 2,
+            "hp": 5,
+            "stamina": 93,
+            "keys": 0,
+            "steps": 7
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "action": "D",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 3,
+            "hp": 5,
+            "stamina": 92,
+            "keys": 0,
+            "steps": 8
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "action": "D",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 4,
+            "hp": 5,
+            "stamina": 91,
+            "keys": 0,
+            "steps": 9
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "action": "L",
+          "player": {
+            "layer": 0,
+            "x": 1,
+            "y": 4,
+            "hp": 5,
+            "stamina": 90,
+            "keys": 0,
+            "steps": 10
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "action": "U",
+          "player": {
+            "layer": 0,
+            "x": 1,
+            "y": 4,
+            "hp": 5,
+            "stamina": 90,
+            "keys": 0,
+            "steps": 10
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "action": "R",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 4,
+            "hp": 5,
+            "stamina": 89,
+            "keys": 0,
+            "steps": 11
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "action": "U",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 3,
+            "hp": 5,
+            "stamina": 88,
+            "keys": 0,
+            "steps": 12
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "action": "U",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 2,
+            "hp": 5,
+            "stamina": 87,
+            "keys": 0,
+            "steps": 13
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 16,
+          "action": "U",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 1,
+            "hp": 5,
+            "stamina": 86,
+            "keys": 0,
+            "steps": 14
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 17,
+          "action": "R",
+          "player": {
+            "layer": 0,
+            "x": 3,
+            "y": 1,
+            "hp": 5,
+            "stamina": 85,
+            "keys": 0,
+            "steps": 15
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 18,
+          "action": "R",
+          "player": {
+            "layer": 0,
+            "x": 4,
+            "y": 1,
+            "hp": 5,
+            "stamina": 84,
+            "keys": 0,
+            "steps": 16
+          },
+          "ghosts": [
+            [
+              4,
+              1
+            ]
+          ],
+          "isDead": true,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lure_once_then_enter_exit_corridor",
+      "actions": [
+        "L",
+        "U",
+        "R",
+        "R",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "L",
+        "U",
+        "D",
+        "R",
+        "R",
+        "R",
+        "L",
+        "L",
+        "L",
+        "U",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R",
+        "R",
+        "D"
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "action": null,
+          "player": {
+            "layer": 0,
+            "x": 3,
+            "y": 2,
+            "hp": 5,
+            "stamina": 100,
+            "keys": 0,
+            "steps": 0
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "action": "L",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 2,
+            "hp": 5,
+            "stamina": 99,
+            "keys": 0,
+            "steps": 1
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "action": "U",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 1,
+            "hp": 5,
+            "stamina": 98,
+            "keys": 0,
+            "steps": 2
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "action": "R",
+          "player": {
+            "layer": 0,
+            "x": 3,
+            "y": 1,
+            "hp": 5,
+            "stamina": 97,
+            "keys": 0,
+            "steps": 3
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "action": "R",
+          "player": {
+            "layer": 0,
+            "x": 4,
+            "y": 1,
+            "hp": 5,
+            "stamina": 96,
+            "keys": 0,
+            "steps": 4
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "action": "U",
+          "player": {
+            "layer": 0,
+            "x": 4,
+            "y": 1,
+            "hp": 5,
+            "stamina": 96,
+            "keys": 0,
+            "steps": 4
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "action": "L",
+          "player": {
+            "layer": 0,
+            "x": 3,
+            "y": 1,
+            "hp": 5,
+            "stamina": 95,
+            "keys": 0,
+            "steps": 5
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "action": "L",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 1,
+            "hp": 5,
+            "stamina": 94,
+            "keys": 0,
+            "steps": 6
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "action": "D",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 2,
+            "hp": 5,
+            "stamina": 93,
+            "keys": 0,
+            "steps": 7
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "action": "D",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 3,
+            "hp": 5,
+            "stamina": 92,
+            "keys": 0,
+            "steps": 8
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "action": "D",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 4,
+            "hp": 5,
+            "stamina": 91,
+            "keys": 0,
+            "steps": 9
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "action": "L",
+          "player": {
+            "layer": 0,
+            "x": 1,
+            "y": 4,
+            "hp": 5,
+            "stamina": 90,
+            "keys": 0,
+            "steps": 10
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "closed"
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "action": "U",
+          "player": {
+            "layer": 0,
+            "x": 1,
+            "y": 4,
+            "hp": 5,
+            "stamina": 90,
+            "keys": 0,
+            "steps": 10
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "action": "D",
+          "player": {
+            "layer": 0,
+            "x": 1,
+            "y": 5,
+            "hp": 5,
+            "stamina": 89,
+            "keys": 0,
+            "steps": 11
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "action": "R",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 5,
+            "hp": 5,
+            "stamina": 88,
+            "keys": 0,
+            "steps": 12
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "action": "R",
+          "player": {
+            "layer": 0,
+            "x": 3,
+            "y": 5,
+            "hp": 5,
+            "stamina": 87,
+            "keys": 0,
+            "steps": 13
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 16,
+          "action": "R",
+          "player": {
+            "layer": 0,
+            "x": 4,
+            "y": 5,
+            "hp": 5,
+            "stamina": 86,
+            "keys": 0,
+            "steps": 14
+          },
+          "ghosts": [
+            [
+              4,
+              3
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 17,
+          "action": "L",
+          "player": {
+            "layer": 0,
+            "x": 3,
+            "y": 5,
+            "hp": 5,
+            "stamina": 85,
+            "keys": 0,
+            "steps": 15
+          },
+          "ghosts": [
+            [
+              4,
+              4
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 18,
+          "action": "L",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 5,
+            "hp": 5,
+            "stamina": 84,
+            "keys": 0,
+            "steps": 16
+          },
+          "ghosts": [
+            [
+              4,
+              4
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 19,
+          "action": "L",
+          "player": {
+            "layer": 0,
+            "x": 1,
+            "y": 5,
+            "hp": 5,
+            "stamina": 83,
+            "keys": 0,
+            "steps": 17
+          },
+          "ghosts": [
+            [
+              4,
+              4
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 20,
+          "action": "U",
+          "player": {
+            "layer": 0,
+            "x": 1,
+            "y": 4,
+            "hp": 5,
+            "stamina": 82,
+            "keys": 0,
+            "steps": 18
+          },
+          "ghosts": [
+            [
+              4,
+              4
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 21,
+          "action": "R",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 4,
+            "hp": 5,
+            "stamina": 81,
+            "keys": 0,
+            "steps": 19
+          },
+          "ghosts": [
+            [
+              4,
+              4
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 22,
+          "action": "U",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 3,
+            "hp": 5,
+            "stamina": 80,
+            "keys": 0,
+            "steps": 20
+          },
+          "ghosts": [
+            [
+              4,
+              4
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 23,
+          "action": "U",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 2,
+            "hp": 5,
+            "stamina": 79,
+            "keys": 0,
+            "steps": 21
+          },
+          "ghosts": [
+            [
+              4,
+              4
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 24,
+          "action": "U",
+          "player": {
+            "layer": 0,
+            "x": 2,
+            "y": 1,
+            "hp": 5,
+            "stamina": 78,
+            "keys": 0,
+            "steps": 22
+          },
+          "ghosts": [
+            [
+              4,
+              4
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 25,
+          "action": "R",
+          "player": {
+            "layer": 0,
+            "x": 3,
+            "y": 1,
+            "hp": 5,
+            "stamina": 77,
+            "keys": 0,
+            "steps": 23
+          },
+          "ghosts": [
+            [
+              4,
+              4
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 26,
+          "action": "R",
+          "player": {
+            "layer": 0,
+            "x": 4,
+            "y": 1,
+            "hp": 5,
+            "stamina": 76,
+            "keys": 0,
+            "steps": 24
+          },
+          "ghosts": [
+            [
+              4,
+              3
+            ]
+          ],
+          "isDead": false,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        },
+        {
+          "index": 27,
+          "action": "D",
+          "player": {
+            "layer": 0,
+            "x": 4,
+            "y": 2,
+            "hp": 5,
+            "stamina": 75,
+            "keys": 0,
+            "steps": 25
+          },
+          "ghosts": [
+            [
+              4,
+              2
+            ]
+          ],
+          "isDead": true,
+          "isWon": false,
+          "gates": [
+            {
+              "axis": "h",
+              "x": 1,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 2,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "axis": "v",
+              "x": 3,
+              "y": 5,
+              "letter": "A",
+              "state": "open"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contrastWithoutGhost": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+    "mapId": "72239369e31b311eeefed1b77b9b118ff9d7891b1815474d6c7f088dca79cc11",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "withGhosts": false,
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "L",
+        "D",
+        "D",
+        "L",
+        "U",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R",
+        "R",
+        "D",
+        "R"
+      ],
+      "totalActions": 13,
+      "movementCost": 12
+    },
+    "search": {
+      "algorithm": "astar",
+      "expanded": 25,
+      "transitions": 125,
+      "discovered": 35,
+      "resourcePruned": 23,
+      "exhausted": false,
+      "elapsedMs": 0.7245000000002619,
+      "budget": {
+        "nodeBudget": 100000,
+        "stateBudget": 100000,
+        "budgetMs": 30000
+      }
+    }
+  },
+  "alternative": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+    "mapId": "72239369e31b311eeefed1b77b9b118ff9d7891b1815474d6c7f088dca79cc11",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "withGhosts": true,
+      "restrictions": [
+        {
+          "id": "avoid_upper_left_corner",
+          "sequence": [
+            {
+              "type": "visit",
+              "layer": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        }
+      ]
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "L",
+        "U",
+        "R",
+        "R",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "L",
+        "U",
+        "D",
+        "R",
+        "R",
+        "R",
+        "L",
+        "L",
+        "L",
+        "U",
+        "U",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R",
+        "R",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "L",
+        "U",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R",
+        "R",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "L",
+        "D",
+        "R",
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "totalActions": 56,
+      "movementCost": 50
+    },
+    "search": {
+      "algorithm": "astar",
+      "expanded": 122,
+      "transitions": 610,
+      "discovered": 123,
+      "resourcePruned": 85,
+      "exhausted": false,
+      "elapsedMs": 2.367099999999482,
+      "budget": {
+        "nodeBudget": 100000,
+        "stateBudget": 100000,
+        "budgetMs": 30000
+      }
+    }
+  },
+  "exitWithoutGoal": {
+    "player": {
+      "layer": 0,
+      "x": 5,
+      "y": 2,
+      "hp": 5,
+      "stamina": 66,
+      "keys": 0,
+      "steps": 34
+    },
+    "isDead": false,
+    "isWon": false,
+    "loopCount": 0,
+    "layers": [
+      {
+        "ghosts": [
+          [
+            4,
+            2
+          ]
+        ],
+        "items": [],
+        "wallStates": {
+          "h": [
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 6,
+                "keys": 0,
+                "direction": null,
+                "letter": "B",
+                "initialState": "open",
+                "currentState": "open"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 6,
+                "keys": 0,
+                "direction": null,
+                "letter": "A",
+                "initialState": "closed",
+                "currentState": "open"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 6,
+                "keys": 0,
+                "direction": null,
+                "letter": "B",
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ]
+          ],
+          "v": [
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 2,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 5,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 6,
+                "keys": 0,
+                "direction": null,
+                "letter": "A",
+                "initialState": "closed",
+                "currentState": "open"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  "sharecode": "Y-bgYGZlSGFlYmZikLMTEZNjYGBkYWJgYmRhcGRhZHBatWrVqv36V4NCPUPWXw2FghCtlftCQ0ODVq38CeY7cDgxOjI4MTgyAAA",
+  "fairnessChecks": {
+    "startSeesGhost": true,
+    "startSeesGoal": true,
+    "fullInformationFairnessProven": false
+  }
+}

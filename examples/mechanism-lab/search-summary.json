@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-29",
+  "generatorVersion": "free-edit-v1",
+  "evaluatorVersion": "counterfactual-v1",
+  "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+  "familyId": "complementary-switch-v1",
+  "rootMapId": "3db1b4859f5d5c8f3c6c5b61fdcbfd39f87d5675591f8460a6ace31e39745967",
+  "seed": 20260929,
+  "iterations": 96,
+  "maxDepth": 3,
+  "budget": {
+    "nodeBudget": 10000,
+    "stateBudget": 10000,
+    "budgetMs": 5000
+  },
+  "hypotheses": [
+    {
+      "id": "press_A",
+      "sequence": [
+        {
+          "type": "press",
+          "letter": "A"
+        }
+      ]
+    },
+    {
+      "id": "press_A_twice",
+      "sequence": [
+        {
+          "type": "press",
+          "letter": "A"
+        },
+        {
+          "type": "press",
+          "letter": "A"
+        }
+      ]
+    },
+    {
+      "id": "key_then_press_A",
+      "sequence": [
+        {
+          "type": "pickup_key"
+        },
+        {
+          "type": "press",
+          "letter": "A"
+        }
+      ]
+    }
+  ],
+  "uniqueMapsIncludingRoot": 88,
+  "attemptOutcomes": {
+    "proven_unsat": 53,
+    "solved": 34,
+    "duplicate": 9
+  },
+  "archive": [
+    {
+      "descriptor": [
+        [
+          "key_then_press_A",
+          "press_A",
+          "press_A_twice"
+        ],
+        3
+      ],
+      "nodeId": 0,
+      "mapId": "3db1b4859f5d5c8f3c6c5b61fdcbfd39f87d5675591f8460a6ace31e39745967",
+      "actions": 14
+    },
+    {
+      "descriptor": [
+        [],
+        0
+      ],
+      "nodeId": 9,
+      "mapId": "96dec6f309f9fb2cb2eee22fc177b60baf6f1375a73565c59f18ca417ea75117",
+      "actions": 1
+    },
+    {
+      "descriptor": [
+        [],
+        1
+      ],
+      "nodeId": 11,
+      "mapId": "155acc1db13c18a3b1f7bb372bdbba8d912de1f103adc6f9f6a6cb06e870240c",
+      "actions": 4
+    },
+    {
+      "descriptor": [
+        [
+          "press_A"
+        ],
+        2
+      ],
+      "nodeId": 27,
+      "mapId": "3794bdf6d48de0ad69e0931de364f8e137b6fa9a24a90aa9308ed1dd90538fb9",
+      "actions": 11
+    },
+    {
+      "descriptor": [
+        [
+          "key_then_press_A",
+          "press_A",
+          "press_A_twice"
+        ],
+        2
+      ],
+      "nodeId": 35,
+      "mapId": "055e070210bb187d5e6f08f2b94a9f4c94b437ad7c0e4386a28af2b340536bb9",
+      "actions": 10
+    },
+    {
+      "descriptor": [
+        [
+          "press_A"
+        ],
+        0
+      ],
+      "nodeId": 36,
+      "mapId": "bdb62be8ea2db59092add35eb4b77f1e1a36bfd9dbab676ee6675e290a3ded68",
+      "actions": 3
+    },
+    {
+      "descriptor": [
+        [
+          "press_A"
+        ],
+        1
+      ],
+      "nodeId": 41,
+      "mapId": "87bb49a1bd51aaf9780ba8ac2b538e99b94d2860625382aede4148a56f957827",
+      "actions": 5
+    }
+  ],
+  "humanPreference": null
+}

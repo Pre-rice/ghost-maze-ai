@@ -1,3 +1,6 @@
+// 保留历史测试地图分布，物理规则使用固定版本原引擎。
+import { generateFullMaze } from '../src/engine/mazeGenerator.js';
+import { WALL_TYPES, GameLogic, MapDefinition } from '../src/reference/engine.js';
 /**
  * 阶段 2 验证：求解器 + 验证器
  *
@@ -9,13 +12,9 @@
  * 5. stamina 约束：同图不同初始体力，短体力不可解
  * 6. 超预算降级：高鬼数图不崩溃
  */
-import { GameLogic } from '../src/engine/gameLogic.js';
-import { MapDefinition } from '../src/engine/mapDefinition.js';
-import { generateFullMaze } from '../src/engine/mazeGenerator.js';
 import { solveMap } from '../src/validate/solver.js';
 import { isStructurallySolvable, relaxedDistField } from '../src/validate/solvabilityVerifier.js';
 import { makeSimulator } from '../src/validate/simulator.js';
-import { WALL_TYPES } from '../src/engine/constants.js';
 import { suite, test, assert, assertEq, summary } from './_assert.mjs';
 
 suite('solver');
@@ -46,10 +45,11 @@ const emptyWall = () => ({ type: WALL_TYPES.EMPTY, keys: 0 });
 const solidWall = () => ({ type: WALL_TYPES.SOLID, keys: 0 });
 
 function makeGrid(width, height) {
+    const w = Math.max(8, width), h = Math.max(8, height);
     return {
-        hWalls: Array(height + 1).fill(null).map(() => Array(width).fill(null).map(emptyWall)),
-        vWalls: Array(height).fill(null).map(() => Array(width + 1).fill(null).map(emptyWall)),
-        activeCells: Array(height).fill(null).map(() => Array(width).fill(true))
+        hWalls: Array.from({ length: h + 1 }, (_, y) => Array.from({ length: w }, (_, x) => y <= height && x < width ? emptyWall() : solidWall())),
+        vWalls: Array.from({ length: h }, (_, y) => Array.from({ length: w + 1 }, (_, x) => y < height && x <= width ? emptyWall() : solidWall())),
+        activeCells: Array.from({ length: h }, (_, y) => Array.from({ length: w }, (_, x) => x < width && y < height))
     };
 }
 
@@ -200,24 +200,26 @@ test('stamina 约束：初始体力不足以覆盖最短路径 → 不可解', (
     assert(!rFail.solvable, '体力 8 < 步数 9 应不可解（耗尽判死）');
 });
 
-test('随机图：结构可解双实现一致 + 有解图端到端回放无伤胜利', () => {
-    let solved = 0;
+test('随机图：无鬼兼容接口一致 + 有解图端到端回放无伤胜利', () => {
+    let solved = 0, unknown = 0, unsat = 0;
     for (const seed of [1, 2, 3, 4, 5]) {
         const md = genMap(seed);
         md.gameMode = 'death-loop';
         const vs = isStructurallySolvable(md);
         const rNoGhost = solveMap(md, { withGhosts: false });
-        assertEq(rNoGhost.solvable, vs, `seed${seed} 结构可解两实现应一致`);
+        assertEq(rNoGhost.solvable, vs, `seed${seed} 无鬼接口状态应一致`);
         const r = solveMap(md);
+        if (r.status === 'unknown') unknown++;
+        if (r.status === 'proven_unsat') unsat++;
         if (r.solvable) {
             solved++;
-            assert(r.minSteps <= 100, `seed${seed} 步数 ≤ stamina`);
+            assert(r.solution.movementCost <= 100, `seed${seed} 移动成本 ≤ stamina`);
             replayAndAssert(md, r, `随机图 seed${seed}`);
             assert(r.difficulty.minHits === 0, '无伤硬门');
         }
     }
     // 信息性：生成器历史缺陷下可解率（不断言，只输出）
-    console.log(`  随机图可解率：${solved}/5`);
+    console.log(`  历史随机图：取得证书 ${solved}/5，已证无解 ${unsat}，未知 ${unknown}`);
 });
 
 test('难度与特征输出结构完整', () => {
@@ -225,7 +227,7 @@ test('难度与特征输出结构完整', () => {
     md.gameMode = 'death-loop';
     const r = solveMap(md);
     if (!r.solvable) {
-        console.log('  seed1 不可解，跳过难度结构断言（信息性）');
+        console.log('  seed1 未取得可行证书，跳过特征检查（不代表已证明无解）');
         return;
     }
     assertEq(r.difficulty.minSteps, r.minSteps, 'difficulty.minSteps 与 minSteps 一致');
@@ -236,13 +238,13 @@ test('难度与特征输出结构完整', () => {
     assert(Number.isInteger(r.solutionFeatures.ghostSeenSteps), 'ghostSeenSteps 为整数');
 });
 
-test('超预算降级：高鬼数图不崩溃且结果结构合法', () => {
+test('预算中断：保留三态与已发现的证书', () => {
     const md = genMap(7, 10, 8);
     md.gameMode = 'death-loop';
     const r = solveMap(md, { nodeBudget: 2000, entryBudget: 1000, budgetMs: 500 });
     assert(['optimal', 'approx', 'none'].includes(r.confidence), 'confidence 合法');
     if (!r.solvable) {
-        assertEq(r.moves.length, 0, '不可解 moves 应为空');
+        assertEq(r.moves.length, 0, '未取得证书时 moves 应为空');
     } else {
         assert(r.minSteps > 0, '可解步数为正');
     }

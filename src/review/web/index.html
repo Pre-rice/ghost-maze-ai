@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>鬼迷宫 · 试玩记录</title><link rel="icon" href="/game/favicon.svg"><link rel="stylesheet" href="/styles.css"></head>
+<body>
+<main>
+  <header><div class="brand">鬼迷宫 <span>解谜试验室</span></div><a class="export" href="/api/export" download>导出我的记录 ↗</a></header>
+  <div class="intro"><p class="eyebrow">小关卡 · 成对试玩</p><h1>哪一道谜题，<br>更值得解开？</h1><p>试玩两题，再比较解谜体验。你可以反复尝试，不必追求一次通关。<br>优先考虑思路是否巧妙、线索是否清楚，以及想通后的满足感。</p></div>
+  <nav aria-label="选择比较组" id="pairs"></nav>
+  <section aria-labelledby="pair-title"><div class="pair-heading"><h2 id="pair-title">正在载入…</h2><p>关卡在新标签页打开，玩完回到这里记录。</p></div>
+    <div class="duel">
+      <article><span class="letter">A</span><div><h3>关卡 A</h3><p>方向键移动；面向按钮按对应方向。<br>站在楼梯上，按空格换层。</p><a id="play-a" class="play" rel="noopener">打开 A 试玩 ↗</a></div></article>
+      <article><span class="letter">B</span><div><h3>关卡 B</h3><p>方向键移动；面向按钮按对应方向。<br>站在楼梯上，按空格换层。</p><a id="play-b" class="play" rel="noopener">打开 B 试玩 ↗</a></div></article>
+    </div>
+    <form id="feedback">
+      <div class="progress-fields">
+        <label>A 的试玩情况<select name="playedA" required><option value="">请选择</option><option value="unplayed">还没玩</option><option value="tried">尝试过，未通关</option><option value="completed">已通关</option></select></label>
+        <label>B 的试玩情况<select name="playedB" required><option value="">请选择</option><option value="unplayed">还没玩</option><option value="tried">尝试过，未通关</option><option value="completed">已通关</option></select></label>
+        <label>试玩前是否了解解法？<select name="priorExposure" required><option value="">请选择</option><option value="none">两题都不了解</option><option value="some">了解其中一题或部分解法</option><option value="both">两题都了解</option><option value="unsure">记不清了</option></select></label>
+      </div>
+      <fieldset><legend>哪题的解谜体验更好？</legend><div class="choices">
+        <label><input type="radio" name="choice" value="a" required><span>A 更好</span></label>
+        <label><input type="radio" name="choice" value="b"><span>B 更好</span></label>
+        <label><input type="radio" name="choice" value="tie"><span>差不多</span></label>
+        <label><input type="radio" name="choice" value="cannot_judge"><span>暂时无法判断</span></label>
+      </div></fieldset>
+      <label class="reason">什么地方让你这样选？<small>可不填。写下关键的一点就够了。</small><textarea name="reason" maxlength="2000" rows="3" placeholder="例如：某一步想通后很舒服；来回走动太多；不清楚机关之间的关系……"></textarea></label>
+      <div class="save-row"><button type="submit" id="save" disabled>保存这组比较</button><p id="status" role="status" aria-live="polite"></p></div>
+    </form>
+  </section>
+  <footer>来源与解答暂不展示。反馈只保存在这台电脑上，未保存的内容会留作本页草稿。即使两题都不喜欢，也可以据实比较。</footer>
+</main><script type="module" src="/app.js"></script>
+</body></html>

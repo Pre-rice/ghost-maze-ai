@@ -1,0 +1,552 @@
+[
+  {
+    "id": "remote-switch",
+    "familyId": "vertical-relay-v1",
+    "source": "hand_designed_controlled_example",
+    "parentId": null,
+    "edit": null,
+    "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+    "mapId": "5c5a23573a037207b57a618a2c9f0ca5b70a6546815d82f9444715f094c93524",
+    "analysis": {
+      "schemaVersion": 1,
+      "evaluatorVersion": "counterfactual-v1",
+      "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+      "mapId": "5c5a23573a037207b57a618a2c9f0ca5b70a6546815d82f9444715f094c93524",
+      "baseline": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+        "mapId": "5c5a23573a037207b57a618a2c9f0ca5b70a6546815d82f9444715f094c93524",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": []
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "R",
+            "STAIR",
+            "R",
+            "R",
+            "L",
+            "L",
+            "U",
+            "L",
+            "D",
+            "STAIR",
+            "R",
+            "R"
+          ],
+          "totalActions": 12,
+          "movementCost": 11
+        },
+        "search": {
+          "algorithm": "astar",
+          "expanded": 21,
+          "transitions": 105,
+          "discovered": 25,
+          "resourcePruned": 17,
+          "exhausted": false,
+          "elapsedMs": 4.913300000000049,
+          "budget": {
+            "nodeBudget": 30000,
+            "stateBudget": 30000,
+            "budgetMs": 10000
+          }
+        }
+      },
+      "counterfactuals": [
+        {
+          "hypothesis": {
+            "id": "press_A",
+            "sequence": [
+              {
+                "type": "press",
+                "letter": "A"
+              }
+            ]
+          },
+          "conclusion": "necessary_within_scope",
+          "result": {
+            "schemaVersion": 1,
+            "status": "proven_unsat",
+            "reason": "frontier_exhausted",
+            "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+            "mapId": "5c5a23573a037207b57a618a2c9f0ca5b70a6546815d82f9444715f094c93524",
+            "scope": {
+              "gameMode": "death-loop",
+              "objective": "zero_hit_no_revive",
+              "metric": "successful_actions",
+              "actions": [
+                "U",
+                "R",
+                "D",
+                "L",
+                "STAIR"
+              ],
+              "withGhosts": true,
+              "restrictions": [
+                {
+                  "id": "press_A",
+                  "sequence": [
+                    {
+                      "type": "press",
+                      "letter": "A"
+                    }
+                  ]
+                }
+              ]
+            },
+            "optimality": null,
+            "solution": null,
+            "search": {
+              "algorithm": "astar",
+              "expanded": 11,
+              "transitions": 55,
+              "discovered": 11,
+              "resourcePruned": 9,
+              "exhausted": true,
+              "elapsedMs": 0.5982999999999947,
+              "budget": {
+                "nodeBudget": 30000,
+                "stateBudget": 30000,
+                "budgetMs": 10000
+              }
+            }
+          }
+        },
+        {
+          "hypothesis": {
+            "id": "pickup_key",
+            "sequence": [
+              {
+                "type": "pickup_key"
+              }
+            ]
+          },
+          "conclusion": "necessary_within_scope",
+          "result": {
+            "schemaVersion": 1,
+            "status": "proven_unsat",
+            "reason": "frontier_exhausted",
+            "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+            "mapId": "5c5a23573a037207b57a618a2c9f0ca5b70a6546815d82f9444715f094c93524",
+            "scope": {
+              "gameMode": "death-loop",
+              "objective": "zero_hit_no_revive",
+              "metric": "successful_actions",
+              "actions": [
+                "U",
+                "R",
+                "D",
+                "L",
+                "STAIR"
+              ],
+              "withGhosts": true,
+              "restrictions": [
+                {
+                  "id": "pickup_key",
+                  "sequence": [
+                    {
+                      "type": "pickup_key"
+                    }
+                  ]
+                }
+              ]
+            },
+            "optimality": null,
+            "solution": null,
+            "search": {
+              "algorithm": "astar",
+              "expanded": 11,
+              "transitions": 55,
+              "discovered": 11,
+              "resourcePruned": 9,
+              "exhausted": true,
+              "elapsedMs": 0.5124999999999886,
+              "budget": {
+                "nodeBudget": 30000,
+                "stateBudget": 30000,
+                "budgetMs": 10000
+              }
+            }
+          }
+        },
+        {
+          "hypothesis": {
+            "id": "upper_then_lower",
+            "sequence": [
+              {
+                "type": "visit",
+                "layer": 1,
+                "x": 2,
+                "y": 4
+              },
+              {
+                "type": "visit",
+                "layer": 0,
+                "x": 2,
+                "y": 4
+              }
+            ]
+          },
+          "conclusion": "necessary_within_scope",
+          "result": {
+            "schemaVersion": 1,
+            "status": "proven_unsat",
+            "reason": "frontier_exhausted",
+            "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+            "mapId": "5c5a23573a037207b57a618a2c9f0ca5b70a6546815d82f9444715f094c93524",
+            "scope": {
+              "gameMode": "death-loop",
+              "objective": "zero_hit_no_revive",
+              "metric": "successful_actions",
+              "actions": [
+                "U",
+                "R",
+                "D",
+                "L",
+                "STAIR"
+              ],
+              "withGhosts": true,
+              "restrictions": [
+                {
+                  "id": "upper_then_lower",
+                  "sequence": [
+                    {
+                      "type": "visit",
+                      "layer": 1,
+                      "x": 2,
+                      "y": 4
+                    },
+                    {
+                      "type": "visit",
+                      "layer": 0,
+                      "x": 2,
+                      "y": 4
+                    }
+                  ]
+                }
+              ]
+            },
+            "optimality": null,
+            "solution": null,
+            "search": {
+              "algorithm": "astar",
+              "expanded": 16,
+              "transitions": 80,
+              "discovered": 17,
+              "resourcePruned": 11,
+              "exhausted": true,
+              "elapsedMs": 0.7124000000000024,
+              "budget": {
+                "nodeBudget": 30000,
+                "stateBudget": 30000,
+                "budgetMs": 10000
+              }
+            }
+          }
+        }
+      ],
+      "humanPreference": null
+    },
+    "sharecode": "dcuxCYBAEETRv7sjXhFiL9eBBnZga6JYnC2sIGckvuRPMlFK37FKJoCRx_lvv9o4omLuLnCZARqAzEzz8IpJ72lbPubWiRs",
+    "humanPreference": null
+  },
+  {
+    "id": "local-key-control",
+    "familyId": "vertical-relay-v1",
+    "source": "hand_designed_controlled_example",
+    "parentId": "remote-switch",
+    "edit": {
+      "layer": 0,
+      "axis": "v",
+      "x": 3,
+      "y": 4,
+      "wall": {
+        "type": 2,
+        "keys": 0
+      }
+    },
+    "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+    "mapId": "cae8405a9797adbd534a2ca5a7370c77d5c24691a074142be7636c38c40ea43a",
+    "analysis": {
+      "schemaVersion": 1,
+      "evaluatorVersion": "counterfactual-v1",
+      "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+      "mapId": "cae8405a9797adbd534a2ca5a7370c77d5c24691a074142be7636c38c40ea43a",
+      "baseline": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+        "mapId": "cae8405a9797adbd534a2ca5a7370c77d5c24691a074142be7636c38c40ea43a",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": []
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "R",
+            "STAIR",
+            "R",
+            "R",
+            "L",
+            "L",
+            "STAIR",
+            "R",
+            "R"
+          ],
+          "totalActions": 9,
+          "movementCost": 9
+        },
+        "search": {
+          "algorithm": "astar",
+          "expanded": 11,
+          "transitions": 55,
+          "discovered": 14,
+          "resourcePruned": 9,
+          "exhausted": false,
+          "elapsedMs": 0.6041999999999916,
+          "budget": {
+            "nodeBudget": 30000,
+            "stateBudget": 30000,
+            "budgetMs": 10000
+          }
+        }
+      },
+      "counterfactuals": [
+        {
+          "hypothesis": {
+            "id": "press_A",
+            "sequence": [
+              {
+                "type": "press",
+                "letter": "A"
+              }
+            ]
+          },
+          "conclusion": "avoidable",
+          "result": {
+            "schemaVersion": 1,
+            "status": "solved",
+            "reason": "goal_reached",
+            "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+            "mapId": "cae8405a9797adbd534a2ca5a7370c77d5c24691a074142be7636c38c40ea43a",
+            "scope": {
+              "gameMode": "death-loop",
+              "objective": "zero_hit_no_revive",
+              "metric": "successful_actions",
+              "actions": [
+                "U",
+                "R",
+                "D",
+                "L",
+                "STAIR"
+              ],
+              "withGhosts": true,
+              "restrictions": [
+                {
+                  "id": "press_A",
+                  "sequence": [
+                    {
+                      "type": "press",
+                      "letter": "A"
+                    }
+                  ]
+                }
+              ]
+            },
+            "optimality": "proven",
+            "solution": {
+              "actions": [
+                "R",
+                "STAIR",
+                "R",
+                "R",
+                "L",
+                "L",
+                "STAIR",
+                "R",
+                "R"
+              ],
+              "totalActions": 9,
+              "movementCost": 9
+            },
+            "search": {
+              "algorithm": "astar",
+              "expanded": 11,
+              "transitions": 55,
+              "discovered": 14,
+              "resourcePruned": 9,
+              "exhausted": false,
+              "elapsedMs": 0.31409999999999627,
+              "budget": {
+                "nodeBudget": 30000,
+                "stateBudget": 30000,
+                "budgetMs": 10000
+              }
+            }
+          }
+        },
+        {
+          "hypothesis": {
+            "id": "pickup_key",
+            "sequence": [
+              {
+                "type": "pickup_key"
+              }
+            ]
+          },
+          "conclusion": "necessary_within_scope",
+          "result": {
+            "schemaVersion": 1,
+            "status": "proven_unsat",
+            "reason": "frontier_exhausted",
+            "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+            "mapId": "cae8405a9797adbd534a2ca5a7370c77d5c24691a074142be7636c38c40ea43a",
+            "scope": {
+              "gameMode": "death-loop",
+              "objective": "zero_hit_no_revive",
+              "metric": "successful_actions",
+              "actions": [
+                "U",
+                "R",
+                "D",
+                "L",
+                "STAIR"
+              ],
+              "withGhosts": true,
+              "restrictions": [
+                {
+                  "id": "pickup_key",
+                  "sequence": [
+                    {
+                      "type": "pickup_key"
+                    }
+                  ]
+                }
+              ]
+            },
+            "optimality": null,
+            "solution": null,
+            "search": {
+              "algorithm": "astar",
+              "expanded": 6,
+              "transitions": 30,
+              "discovered": 6,
+              "resourcePruned": 5,
+              "exhausted": true,
+              "elapsedMs": 0.23230000000000928,
+              "budget": {
+                "nodeBudget": 30000,
+                "stateBudget": 30000,
+                "budgetMs": 10000
+              }
+            }
+          }
+        },
+        {
+          "hypothesis": {
+            "id": "upper_then_lower",
+            "sequence": [
+              {
+                "type": "visit",
+                "layer": 1,
+                "x": 2,
+                "y": 4
+              },
+              {
+                "type": "visit",
+                "layer": 0,
+                "x": 2,
+                "y": 4
+              }
+            ]
+          },
+          "conclusion": "necessary_within_scope",
+          "result": {
+            "schemaVersion": 1,
+            "status": "proven_unsat",
+            "reason": "frontier_exhausted",
+            "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+            "mapId": "cae8405a9797adbd534a2ca5a7370c77d5c24691a074142be7636c38c40ea43a",
+            "scope": {
+              "gameMode": "death-loop",
+              "objective": "zero_hit_no_revive",
+              "metric": "successful_actions",
+              "actions": [
+                "U",
+                "R",
+                "D",
+                "L",
+                "STAIR"
+              ],
+              "withGhosts": true,
+              "restrictions": [
+                {
+                  "id": "upper_then_lower",
+                  "sequence": [
+                    {
+                      "type": "visit",
+                      "layer": 1,
+                      "x": 2,
+                      "y": 4
+                    },
+                    {
+                      "type": "visit",
+                      "layer": 0,
+                      "x": 2,
+                      "y": 4
+                    }
+                  ]
+                }
+              ]
+            },
+            "optimality": null,
+            "solution": null,
+            "search": {
+              "algorithm": "astar",
+              "expanded": 10,
+              "transitions": 50,
+              "discovered": 10,
+              "resourcePruned": 7,
+              "exhausted": true,
+              "elapsedMs": 0.2588000000000079,
+              "budget": {
+                "nodeBudget": 30000,
+                "stateBudget": 30000,
+                "budgetMs": 10000
+              }
+            }
+          }
+        }
+      ],
+      "humanPreference": null
+    },
+    "sharecode": "dcvBDUBQFETRO--P-EWIXnTAQgcK0QwLpWniSYSVOJs7mym1tg2LLQP03I5_-_mMVYoIQ1gC3AGZmYoSA7LfyzZ_TE9HLg",
+    "humanPreference": null
+  }
+]

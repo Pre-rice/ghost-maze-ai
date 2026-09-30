@@ -1,0 +1,286 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-30",
+  "sourceMapId": "72239369e31b311eeefed1b77b9b118ff9d7891b1815474d6c7f088dca79cc11",
+  "cases": [
+    {
+      "id": "original",
+      "edit": null,
+      "result": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+        "mapId": "72239369e31b311eeefed1b77b9b118ff9d7891b1815474d6c7f088dca79cc11",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": []
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "L",
+            "U",
+            "R",
+            "R",
+            "U",
+            "L",
+            "L",
+            "D",
+            "D",
+            "D",
+            "L",
+            "U",
+            "D",
+            "R",
+            "R",
+            "R",
+            "L",
+            "L",
+            "L",
+            "U",
+            "R",
+            "U",
+            "U",
+            "U",
+            "R",
+            "R",
+            "U",
+            "L",
+            "L",
+            "D",
+            "L",
+            "U",
+            "R",
+            "R",
+            "R",
+            "D",
+            "R"
+          ],
+          "totalActions": 37,
+          "movementCost": 34
+        },
+        "search": {
+          "algorithm": "astar",
+          "expanded": 93,
+          "transitions": 465,
+          "discovered": 100,
+          "resourcePruned": 75,
+          "exhausted": false,
+          "elapsedMs": 3.9540000000000077,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      }
+    },
+    {
+      "id": "top_B_as_empty",
+      "edit": {
+        "axis": "h",
+        "x": 1,
+        "y": 2,
+        "type": 0
+      },
+      "result": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+        "mapId": "bed2f786b4d5b69e2bfe7a757779540f39d93414a99671cb889563dd3452dd75",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": []
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "L",
+            "U",
+            "R",
+            "R",
+            "U",
+            "L",
+            "L",
+            "D",
+            "D",
+            "D",
+            "L",
+            "U",
+            "D",
+            "R",
+            "R",
+            "R",
+            "L",
+            "L",
+            "L",
+            "U",
+            "R",
+            "U",
+            "U",
+            "U",
+            "R",
+            "R",
+            "U",
+            "L",
+            "L",
+            "D",
+            "L",
+            "U",
+            "R",
+            "R",
+            "R",
+            "D",
+            "R"
+          ],
+          "totalActions": 37,
+          "movementCost": 34
+        },
+        "search": {
+          "algorithm": "astar",
+          "expanded": 93,
+          "transitions": 465,
+          "discovered": 100,
+          "resourcePruned": 79,
+          "exhausted": false,
+          "elapsedMs": 1.8782999999999959,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      }
+    },
+    {
+      "id": "top_B_as_solid",
+      "edit": {
+        "axis": "h",
+        "x": 1,
+        "y": 2,
+        "type": 1
+      },
+      "result": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+        "mapId": "fab9ff64c5ebec5fd455a875114acfcde0a7e187a281cb93d72a265c201cfc87",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": []
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "L",
+            "U",
+            "R",
+            "R",
+            "U",
+            "L",
+            "L",
+            "D",
+            "D",
+            "D",
+            "L",
+            "U",
+            "D",
+            "R",
+            "R",
+            "R",
+            "L",
+            "L",
+            "L",
+            "U",
+            "U",
+            "R",
+            "U",
+            "U",
+            "U",
+            "R",
+            "R",
+            "U",
+            "L",
+            "L",
+            "D",
+            "D",
+            "D",
+            "L",
+            "U",
+            "R",
+            "U",
+            "U",
+            "U",
+            "R",
+            "R",
+            "U",
+            "L",
+            "L",
+            "D",
+            "D",
+            "D",
+            "L",
+            "D",
+            "R",
+            "R",
+            "R",
+            "U",
+            "U",
+            "U",
+            "R"
+          ],
+          "totalActions": 56,
+          "movementCost": 50
+        },
+        "search": {
+          "algorithm": "astar",
+          "expanded": 132,
+          "transitions": 660,
+          "discovered": 133,
+          "resourcePruned": 93,
+          "exhausted": false,
+          "elapsedMs": 2.0486999999999966,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      }
+    }
+  ],
+  "interpretation": "左上 B 的可切换门属性不是保持 37 次动作最短解所必需；把该边封墙则仍有较长解。尚未取得用户动作，不能断言其路线与任一求解器证书相同。"
+}

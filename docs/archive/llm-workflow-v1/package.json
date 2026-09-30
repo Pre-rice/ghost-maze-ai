@@ -1,0 +1,22 @@
+{
+  "name": "ghost-maze-ai",
+  "version": "1.0.0",
+  "description": "鬼迷宫（Ghost Maze）AI 地图生成器训练工作区",
+  "type": "module",
+  "scripts": {
+    "test": "node test/run-all.mjs",
+    "validate": "node src/tools/validate-map.js",
+    "sharecode": "node src/tools/to-sharecode.js",
+    "feedback": "node src/tools/record-feedback.js"
+  },
+  "keywords": [
+    "ghost-maze",
+    "puzzle-game",
+    "map-generation",
+    "ai"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "pako": "^3.0.1"
+  }
+}

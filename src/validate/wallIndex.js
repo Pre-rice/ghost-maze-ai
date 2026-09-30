@@ -1,4 +1,4 @@
-import { WALL_TYPES } from '../engine/constants.js';
+import { WALL_TYPES } from '../reference/engine.js';
 
 /**
  * wallIndex 模块 - 统一的墙索引 / 取墙 / 通行判定助手

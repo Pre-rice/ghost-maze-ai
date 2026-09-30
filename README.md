@@ -1,52 +1,85 @@
-# ghost-maze-ai · 鬼迷宫 AI 地图生成器训练工作区
+# ghost-maze-ai · 鬼迷宫 AI 训练工作区
 
-为解谜游戏「鬼迷宫」（[https://ghostmaze.novic.cc](https://ghostmaze.novic.cc)）训练一个**能生成极高可玩性、甚至涌现人类没想到的精妙解谜设计**的地图生成 AI。
+目标是在个人工作站或少量 GPU 条件下，生成值得反复推敲的高质量谜题。允许长时间训练与生成，优先死亡循环中的智力体验。
 
-## 核心思路
+当前已完成 **P0 验证基础、反事实分析、自由编辑实验及首批成对试玩流程**：三个设计家族、可追溯修改链、3 组 6 图的本地试玩与反馈保存。尚未启动模型训练，也没有把机制证据当作人类趣味评分。
 
-**LLM 生成 + 算法硬门把关 + LLM 评审 + 真人试玩反馈** 的迭代训练循环：
+**最新试玩结论（2026-09-30）**：首批全部太简单、解法显而易见。下一步优先单层组合题，提高实际推理要求，暂缓机械扩大家族。见 [真实反馈复盘](docs/review-batch-01-findings.md)。
 
-- **生成**：Claude 以游戏设计师身份构思「设计意图」（谜题核心/玩家决策/鬼的剧本），再落地为地图
-- **验证**：四道算法硬门不可妥协（结构合法 / 结构可解 / 无伤可通 / 威胁实质）
-- **评审**：Claude 以设计师视角按协议评审（解谜趣味性 / 决策深度 / 公平性 / 新颖性…）
-- **反馈**：你亲自试玩是最终裁判，反馈沉淀进经验库
-- **积累**：`data/experience.md` 经验库让生成质量随训练轮次持续提升
+**当前待试玩**：[单层候选 01](examples/coupled-singlelayer/README.md)。本次只交一张重新筛选与精简的组合题，原引擎和浏览器已验证，实际巧妙程度等待用户反馈。
 
-完整方法论见 [docs/methodology.md](docs/methodology.md)。
+## 从这里开始
 
-## 当前阶段（阶段一）
+- [AGENTS.md](AGENTS.md)：Codex 项目指引与协作约定。
+- [当前状态](docs/status.md)：已完成工作、旧管线风险与下一步。
+- [参考环境与求解约定](docs/reference-contract.md)：动作、状态键、三态结果及预算边界。
+- [快模拟器与 A*](docs/fast-verification.md)：修正项、差分覆盖、资源剪枝与性能记录。
+- [具体训练方案](docs/ai-training-plan.md)：架构、数据、损失、奖励、课程和验收。
+- [调研报告](docs/ai-puzzle-generation-research.md)：机制分析与研究依据。
+- [两个小单元](examples/puzzle-units/README.md)：可试玩地图、解法与反例。
+- [反事实分析与设计搜索](docs/design-search.md)：事件监控、原图必要性证明、有限编辑实验及边界。
+- [互补开关与旁路对照](examples/mechanism-lab/README.md)：新的机制家族、可试玩地图和受控反例。
+- [开始成对试玩](examples/review-batch-01/README.md)：运行 `npm run review`，在原版游戏中试玩并保存比较。
+- [反馈格式与验证记录](docs/review-workflow.md)：原始选择、改评、导出及训练使用边界。
 
-仅 10×10、仅 death-loop 模式、仅鬼 + DOOR/钥匙/LOCKED 三要素，主打**解谜乐趣（巧妙解法的趣味性）**。后续阶段逐个引入新要素（见 [CLAUDE.md](CLAUDE.md) 的分阶段路线图）。
+## 本地初始化与检查
 
-## 快速上手
+使用支持 ES Module、node:test 的现代 Node.js（建议 Node.js 20 或更高版本）与 Git。
 
 ```bash
-npm install              # 唯一依赖：pako（分享码压缩）
-
-npm test                 # 验证层测试（含 simulator 与真实游戏规则双跑一致性）
-npm run validate -- examples/demo-map.json     # 四道硬门验证
-npm run sharecode -- examples/demo-map.json    # 地图 → 分享码，粘贴进游戏试玩
-npm run feedback -- examples/demo-map.json "评语" 8   # 记录试玩反馈
+git submodule update --init --recursive
+npm ci
+npm run check
+npm test
+npm run verify:seeds
+npm run solve -- examples/puzzle-units/unit-01.json
+npm run solve:fast -- examples/puzzle-units/unit-02.json
+npm run sharecode -- examples/puzzle-units/unit-01.json --verify
+npm run analyze -- examples/mechanism-lab/complementary-switch.json examples/mechanism-lab/analyze-config.json
+npm run search:design -- examples/mechanism-lab/complementary-switch.json examples/mechanism-lab/search-config.json
 ```
 
-## 目录
+`npm run check` 检查引擎提交、工作区纯净状态和种子内容；`verify:seeds` 用原引擎重放证书，并验证分享码与移除终点后的单元出口。
 
-```
-src/engine/      规则引擎快照（只读，来自原游戏）
-src/validate/    验证层（simulator/求解器/可解性/结构校验）
-src/tools/       CLI 工具
-docs/            方法论文档（方法论/地图格式/评审协议）
-data/maps/       生成地图存档（全记录）
-data/experience.md  经验库
-examples/        示例地图
-test/            验证层测试
+`npm test` 分别运行参考/快实现对照和原有工具回归；模拟器一致性测试直接对照固定游戏引擎，历史地图生成器仅提供测试输入。
+
+本次从同级本地游戏仓库引入固定提交，`.gitmodules` 记录正式远端地址，后续新克隆使用上面的标准命令。
+
+## 新方案的职责划分
+
+| 部分 | 职责 |
+| --- | --- |
+| `vendor/ghost-maze` + `engine.lock.json` | 固定版本权威规则，保持只读 |
+| `src/reference` | 物理参考环境、状态键、求解 CLI 与原分享码编解码入口 |
+| `src/search/reference-solver.js` | 直接调用原引擎的完整状态 BFS 对照基线 |
+| `src/search/fast-solver.js`、`src/validate/simulator.js` | A* 与经差分验证的紧凑模拟器 |
+| `src/search/restrictions.js`、`src/design` | 历史事件监控、反事实分析、底层编辑与证据档案 |
+| `src/review` | 隐藏来源的试玩页、本地游戏服务与成对反馈追加日志 |
+| `scripts`、`test/reference` | 环境、种子与规则基线检查 |
+| `examples/puzzle-units` | 两个已验证单元、证书、设计脚本和示意图 |
+| `examples/mechanism-lab` | 互补开关家族、旁路负例、证书与有限编辑实验摘要 |
+| `examples/vertical-relay`、`examples/review-batch-01` | 跨层机制家族及第一批已验证试玩包 |
+| `data/manifests` | 内容哈希、规则版本与家族元数据 |
+| `docs` | 当前方案、评审约定和状态 |
+| `src/engine`、旧格式/评审 CLI | 历史材料与对照工具；不作为权威物理规则 |
+
+模型与训练代码将在后续阶段建立。权重、轨迹缓存、运行输出和 Python 虚拟环境已列入忽略规则；当前没有安装 GPU 训练依赖。
+
+## 旧方案保留方式
+
+旧文档和配置已原文归档到 [docs/archive](docs/archive/README.md)，源码、测试和提交历史保留。旧流程可作为 LLM 提案与人工设计的对照基线。
+
+```bash
+npm run test:legacy
+npm run validate:legacy -- examples/demo-map.json
+npm run sharecode:legacy -- examples/demo-map.json --verify
+npm run feedback:legacy -- <已归档地图.json> <真实评语> [得分]
 ```
 
-## 训练循环速览
+旧 `validate` 命令明确命名为 `validate:legacy`，底层求解已更新为三态，并对未知返回退出码 3；其阶段筛选和威胁硬门仅作为旧基线，不作为新训练的通用标准。新流程使用 `solve` 或 `solve:fast`，两者都不评价地图是否好玩。
 
-```
-读经验库 → 构思设计意图 → 落地 mapData → 硬门验证（不过则改/重来）
-→ LLM 评审 → 你试玩反馈 → 归档 + 提炼教训 → 下一轮
-```
+## Codex 迁移
 
-每次训练前请阅读 [CLAUDE.md](CLAUDE.md)（协作守则）与 [docs/methodology.md](docs/methodology.md)（完整协议）。
+项目指引由 `AGENTS.md` 承担；根目录的 `CLAUDE.md` 已删除，原文保留在历史归档。不改用户全局 Codex 配置。指引文件方式参考 [OpenAI 官方文档](https://learn.chatgpt.com/docs/agent-configuration/agents-md)。
+
+后续在 Codex 中以本仓库为任务工作目录；仅添加到工作区不会让另一个仓库的任务自动切换工作目录。

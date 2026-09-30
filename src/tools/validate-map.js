@@ -18,7 +18,7 @@
 import { readFileSync } from 'node:fs';
 import { WALL_TYPES } from '../engine/constants.js';
 import { validateMapData } from '../validate/mapDataValidator.js';
-import { isStructurallySolvable } from '../validate/solvabilityVerifier.js';
+import { verifyStructuralSolvability } from '../validate/solvabilityVerifier.js';
 import { solveMap } from '../validate/solver.js';
 
 function loadMap(file) {
@@ -62,38 +62,43 @@ function run(file, opts) {
     const structural = validateMapData(mapData, { stage1Only: !opts.noStage1 });
 
     // ── ② 结构可解 ────────────────────────────────────
-    let solvableStruct = false;
+    let solvableStruct = null;
+    let structuralResult = null;
     if (structural.valid) {
         try {
-            solvableStruct = isStructurallySolvable(mapData); // 返回布尔值
+            structuralResult = verifyStructuralSolvability(mapData, opts.budget);
+            solvableStruct = structuralResult.solvable;
         } catch (e) {
-            solvableStruct = false;
+            structuralResult = { status: 'error', reason: e.message };
             structural.errors.push(`结构可解判定异常: ${e.message}`);
         }
     }
 
     // ── ③ 无伤可通 + ④ 威胁实质 ──────────────────────
     let solve = null;
-    if (structural.valid && solvableStruct) {
+    if (structural.valid && structuralResult?.status !== 'error' && solvableStruct !== false) {
         try {
-            solve = solveMap(mapData);
+            solve = solveMap(mapData, opts.budget);
         } catch (e) {
-            solve = { solvable: false, confidence: 'none', reason: `solver异常: ${e.message}`, moves: [], minSteps: -1, difficulty: null, solutionFeatures: null };
+            solve = { status: 'error', solvable: null, confidence: 'none', reason: `solver异常: ${e.message}`, moves: [], minSteps: -1, difficulty: null, solutionFeatures: null };
         }
     }
 
-    const zeroHitPassed = !!solve?.solvable;
+    const zeroHitPassed = solve?.status === 'solved';
+    if (zeroHitPassed) solvableStruct = true; // 全规则证书也证明去鬼后可通。
+    const status = !structural.valid ? 'invalid' : solve?.status || structuralResult?.status || 'error';
     const threatPassed = zeroHitPassed && (solve.solutionFeatures?.ghostSeenSteps ?? 0) >= 1;
-    const passed = structural.valid && solvableStruct && zeroHitPassed && threatPassed;
+    const passed = structural.valid && solvableStruct === true && zeroHitPassed && threatPassed;
 
     const report = {
         file,
+        status,
         passed,
         gates: {
             structural: { passed: structural.valid, errors: structural.errors },
-            structurallySolvable: { passed: solvableStruct },
-            zeroHitSolvable: { passed: zeroHitPassed, confidence: solve?.confidence ?? null, reason: solve?.reason ?? null },
-            threatSubstantial: { passed: threatPassed, ghostSeenSteps: solve?.solutionFeatures?.ghostSeenSteps ?? 0 }
+            structurallySolvable: { passed: solvableStruct, status: solvableStruct === true ? 'solved' : structuralResult?.status ?? null },
+            zeroHitSolvable: { passed: status === 'unknown' || status === 'error' ? null : zeroHitPassed, status, confidence: solve?.confidence ?? null, reason: solve?.reason ?? null },
+            threatSubstantial: { policy: 'legacy_only', passed: threatPassed, ghostSeenSteps: solve?.solutionFeatures?.ghostSeenSteps ?? 0 }
         },
         stats: countElements(mapData),
         solutionFeatures: solve?.solutionFeatures ?? null,
@@ -114,29 +119,44 @@ function run(file, opts) {
         console.log('──────────────────────────────────────────────');
         console.log(`① 结构合法:     ${structural.valid ? '✓ 通过' : '✗ 未过'}`);
         if (!structural.valid) structural.errors.forEach(e => console.log(`   - ${e}`));
-        console.log(`② 结构可解:     ${solvableStruct ? '✓ 通过' : '✗ 未过'}`);
+        console.log(`② 结构可解:     ${solvableStruct === null ? '？未知或错误' : solvableStruct ? '✓ 通过' : '✗ 已证无解'}`);
         console.log(`③ 无伤可通:     ${zeroHitPassed ? '✓ 通过' : '✗ 未过'}${solve ? ` (confidence=${solve.confidence}${solve.reason ? `, reason=${solve.reason}` : ''})` : ''}`);
         console.log(`④ 威胁实质:     ${threatPassed ? '✓ 通过' : '✗ 未过'}（解法被鬼盯 ${solve?.solutionFeatures?.ghostSeenSteps ?? 0} 步）`);
         if (passed && solve?.solutionFeatures) {
             const f = solve.solutionFeatures;
             console.log('──────────────────────────────────────────────');
             console.log('解法特征（巧妙性的量化信号）:');
-            console.log(`   无伤最优步数: ${solve.minSteps}（松弛下界 ${f.greedySteps}，绕路 ${f.detourSteps} 步）`);
+            console.log(`   ${solve.optimality === 'proven' ? '已证最短动作' : '已知可行动作'}: ${solve.minSteps}（松弛下界 ${f.greedySteps}，绕路 ${f.detourSteps} 步）`);
             console.log(`   回头次数:     ${f.backtrackCount}`);
             console.log(`   钥匙序深度:   ${f.keyDepth}（机制利用 ${f.mechanismUses} 次）`);
             console.log(`   被鬼盯:       ${f.ghostSeenSteps} 步 / ${solve.minSteps} 步（${(f.ghostSeenRatio * 100).toFixed(0)}%）`);
             console.log(`   最近鬼距:     ${f.minGhostDist}  探索率: ${(f.explorationRate * 100).toFixed(0)}%`);
         }
         console.log('══════════════════════════════════════════════');
-        console.log(passed ? '\n✅ 四道硬门全部通过，可进入评审/试玩' : '\n❌ 硬门未过，需要修改或重新生成');
+        console.log(`\n物理解状态: ${status}`);
+        console.log(status === 'unknown' ? '预算内未知，可追加验证预算；不是无解标签。' : passed ? '旧基线规则通过；不等于已证明有趣。' : '未通过旧基线规则，具体原因见上文。');
     }
     return report;
 }
 
-const [file, flag] = process.argv.slice(2);
-if (!file) {
-    console.error('用法: node src/tools/validate-map.js <map.json> [--json] [--no-stage1]');
-    process.exit(2);
+const [file, ...flags] = process.argv.slice(2);
+try {
+    if (!file) throw new Error('用法: npm run validate:legacy -- <map.json> [--json] [--no-stage1] [--nodes N] [--states N] [--ms N]');
+    const opts = { json: false, noStage1: false, budget: {} };
+    const budgetNames = { '--nodes': 'nodeBudget', '--states': 'stateBudget', '--ms': 'budgetMs' };
+    for (let i = 0; i < flags.length; i++) {
+        if (flags[i] === '--json') opts.json = true;
+        else if (flags[i] === '--no-stage1') opts.noStage1 = true;
+        else if (budgetNames[flags[i]] && flags[i + 1] != null) {
+            const name = budgetNames[flags[i]];
+            if (Object.hasOwn(opts.budget, name)) throw new Error('重复参数：' + flags[i]);
+            opts.budget[name] = Number(flags[++i]);
+        }
+        else throw new Error('未知参数：' + flags[i]);
+    }
+    const report = run(file, opts);
+    process.exitCode = report.status === 'unknown' ? 3 : ['invalid', 'error'].includes(report.status) ? 2 : report.passed ? 0 : 1;
+} catch (error) {
+    console.error(error.message);
+    process.exitCode = 2;
 }
-const report = run(file, { json: flag === '--json', noStage1: flag === '--no-stage1' });
-process.exit(report.passed ? 0 : 1);

@@ -1,13 +1,27 @@
 {
   "name": "ghost-maze-ai",
   "version": "1.0.0",
-  "description": "鬼迷宫（Ghost Maze）AI 地图生成器训练工作区",
+  "description": "鬼迷宫 AI：小单元设计、完整规则验证与人类偏好驱动的训练工作区",
   "type": "module",
   "scripts": {
-    "test": "node test/run-all.mjs",
-    "validate": "node src/tools/validate-map.js",
-    "sharecode": "node src/tools/to-sharecode.js",
-    "feedback": "node src/tools/record-feedback.js"
+    "check": "node scripts/check-environment.mjs",
+    "test": "node scripts/test.mjs",
+    "test:reference": "node scripts/test.mjs --reference-only",
+    "test:legacy": "node test/run-all.mjs",
+    "verify:seeds": "node scripts/verify-seeds.mjs",
+    "rebuild:seeds": "node examples/puzzle-units/design.mjs",
+    "sharecode": "node src/reference/to-sharecode.mjs",
+    "solve": "node src/reference/solve-map.mjs",
+    "validate:legacy": "node src/tools/validate-map.js",
+    "sharecode:legacy": "node src/tools/to-sharecode.js",
+    "feedback:legacy": "node src/tools/record-feedback.js",
+    "solve:fast": "node src/search/solve-map.mjs",
+    "analyze": "node src/design/cli.mjs analyze",
+    "search:design": "node src/design/cli.mjs search",
+    "rebuild:mechanisms": "node examples/mechanism-lab/build.mjs",
+    "rebuild:vertical": "node examples/vertical-relay/build.mjs",
+    "review:build": "node scripts/build-review.mjs",
+    "review": "node src/review/server.mjs"
   },
   "keywords": [
     "ghost-maze",
