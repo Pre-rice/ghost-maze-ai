@@ -2,11 +2,33 @@ import { traceAction } from '/trace-core.js';
 
 const error = document.querySelector('#record-error'), frame = document.querySelector('#game');
 let record, states, game, index = 0;
+let timer = null;
+const parameters = new URLSearchParams(location.search);
 const request = async (url, options) => {
     const response = await fetch(url, options), body = await response.json();
     if (!response.ok) throw new Error(body.error || '读取录制失败');
     return body;
 };
+function pause() {
+    clearInterval(timer); timer = null;
+    document.querySelector('#play').textContent = '播放';
+}
+function play() {
+    if (!states) return;
+    if (index === states.length - 1) show(0);
+    document.querySelector('#play').textContent = '暂停';
+    timer = setInterval(() => {
+        show(index + 1);
+        if (index === states.length - 1) pause();
+    }, 800);
+}
+function seek(position) { pause(); show(position); }
+function setVision() {
+    const toggle = frame.contentDocument?.querySelector('#debug-vision-toggle');
+    if (!toggle) return;
+    toggle.checked = document.querySelector('#full-map').checked;
+    toggle.dispatchEvent(new frame.contentWindow.Event('change', { bubbles: true }));
+}
 function show(position) {
     index = Math.max(0, Math.min(states.length - 1, Number(position)));
     const state = states[index], c = game.controller;
@@ -26,6 +48,7 @@ function show(position) {
     document.querySelectorAll('#steps button').forEach((button, i) => button.setAttribute('aria-current', String(i + 1 === index)));
 }
 async function load(id) {
+    pause();
     record = await request(`/api/recordings/${encodeURIComponent(id)}`);
     const ready = new Promise(resolve => { frame.onload = resolve; });
     frame.src = `/game/?map=${encodeURIComponent(record.input.sharecode)}&replay=1`;
@@ -46,13 +69,18 @@ async function load(id) {
         const li = document.createElement('li'), button = document.createElement('button');
         button.textContent = `${i + 1}. ${step.label}`; button.type = 'button';
         if (step.button) button.className = 'button-step';
-        button.onclick = () => show(i + 1); li.append(button); list.append(li);
+        button.onclick = () => seek(i + 1); li.append(button); list.append(li);
     });
+    document.querySelector('#full-map').checked = parameters.get('vision') === 'full';
+    setVision();
     show(0);
+    if (parameters.get('autoplay') === '1') play();
 }
-document.querySelector('#previous').onclick = () => show(index - 1);
-document.querySelector('#next').onclick = () => show(index + 1);
-document.querySelector('#position').oninput = event => show(event.target.value);
+document.querySelector('#play').onclick = () => timer === null ? play() : pause();
+document.querySelector('#previous').onclick = () => seek(index - 1);
+document.querySelector('#next').onclick = () => seek(index + 1);
+document.querySelector('#position').oninput = event => seek(event.target.value);
+document.querySelector('#full-map').onchange = setVision;
 document.querySelector('#import').onchange = async event => {
     try {
         const data = JSON.parse(await event.target.files[0].text());
@@ -62,7 +90,7 @@ document.querySelector('#import').onchange = async event => {
     } catch (e) { error.textContent = e.message; }
 };
 try {
-    const id = new URLSearchParams(location.search).get('id');
+    const id = parameters.get('id');
     if (id) await load(id);
     else {
         const rows = await request('/api/recordings');

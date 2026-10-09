@@ -6,6 +6,6 @@ main{max-width:1250px}.replay-layout{display:grid;grid-template-columns:minmax(5
 <p>每次按按钮独立计为一步。可以逐步查看玩家、鬼和门的变化。</p>
 <div id="list"></div><p id="record-error" role="status"></p>
 <label>导入导出的录制 JSON<input type="file" id="import" accept=".json,application/json"></label>
-<div id="controls" hidden><button id="previous" type="button">上一步</button><button id="next" type="button">下一步</button><input id="position" aria-label="回放步骤" type="range" min="0" value="0"><span id="counter"></span><a id="download" download="ghost-maze-recording.json">下载记录</a></div>
+<div id="controls" hidden><button id="play" type="button">播放</button><button id="previous" type="button">上一步</button><button id="next" type="button">下一步</button><input id="position" aria-label="回放步骤" type="range" min="0" value="0"><span id="counter"></span><label><input id="full-map" type="checkbox">显示全图</label><a id="download" download="ghost-maze-recording.json">下载记录</a></div>
 <div class="replay-layout"><iframe id="game" title="只读地图回放" tabindex="-1"></iframe><aside><pre id="info"></pre><ol id="steps"></ol></aside></div>
 </main><script type="module" src="/replay.js"></script></body></html>
