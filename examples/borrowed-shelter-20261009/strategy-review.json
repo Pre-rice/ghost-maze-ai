@@ -1,0 +1,1997 @@
+{
+  "firstPlans": [
+    {
+      "id": "direct_upper_key",
+      "idea": "先沿左侧绕到上方，直接拿上钥匙。",
+      "actions": [
+        "U",
+        "L",
+        "U",
+        "U",
+        "U",
+        "R",
+        "R",
+        "U"
+      ],
+      "result": {
+        "status": "dead",
+        "trace": [
+          {
+            "step": 1,
+            "action": "U",
+            "valid": true,
+            "player": [
+              1,
+              5
+            ],
+            "ghosts": [
+              [
+                2,
+                0
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 2,
+            "action": "L",
+            "valid": true,
+            "player": [
+              0,
+              5
+            ],
+            "ghosts": [
+              [
+                2,
+                0
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 3,
+            "action": "U",
+            "valid": true,
+            "player": [
+              0,
+              4
+            ],
+            "ghosts": [
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 4,
+            "action": "U",
+            "valid": true,
+            "player": [
+              0,
+              3
+            ],
+            "ghosts": [
+              [
+                2,
+                0
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 5,
+            "action": "U",
+            "valid": true,
+            "player": [
+              0,
+              2
+            ],
+            "ghosts": [
+              [
+                2,
+                0
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 6,
+            "action": "R",
+            "valid": true,
+            "player": [
+              1,
+              2
+            ],
+            "ghosts": [
+              [
+                2,
+                0
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 7,
+            "action": "R",
+            "valid": true,
+            "player": [
+              2,
+              2
+            ],
+            "ghosts": [
+              [
+                2,
+                1
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 8,
+            "action": "U",
+            "valid": true,
+            "player": [
+              2,
+              1
+            ],
+            "ghosts": [
+              [
+                2,
+                1
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "dead": true,
+            "won": false
+          }
+        ],
+        "valid": [
+          "U",
+          "L",
+          "U",
+          "U",
+          "U",
+          "R",
+          "R",
+          "U"
+        ]
+      }
+    },
+    {
+      "id": "reopen_at_same_station",
+      "idea": "既然上鬼已经隔开，就在右 A 原站重开，恢复上方通路。",
+      "actions": [
+        "U",
+        "L",
+        "U",
+        "U",
+        "L",
+        "U",
+        "R",
+        "R",
+        "R",
+        "D",
+        "R",
+        "R"
+      ],
+      "result": {
+        "status": "dead",
+        "trace": [
+          {
+            "step": 1,
+            "action": "U",
+            "valid": true,
+            "player": [
+              1,
+              5
+            ],
+            "ghosts": [
+              [
+                2,
+                0
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 2,
+            "action": "L",
+            "valid": true,
+            "player": [
+              0,
+              5
+            ],
+            "ghosts": [
+              [
+                2,
+                0
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 3,
+            "action": "U",
+            "valid": true,
+            "player": [
+              0,
+              4
+            ],
+            "ghosts": [
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 4,
+            "action": "U",
+            "valid": true,
+            "player": [
+              0,
+              3
+            ],
+            "ghosts": [
+              [
+                2,
+                0
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 5,
+            "action": "L",
+            "valid": true,
+            "player": [
+              0,
+              3
+            ],
+            "ghosts": [
+              [
+                2,
+                0
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 6,
+            "action": "U",
+            "valid": true,
+            "player": [
+              0,
+              2
+            ],
+            "ghosts": [
+              [
+                2,
+                0
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 7,
+            "action": "R",
+            "valid": true,
+            "player": [
+              1,
+              2
+            ],
+            "ghosts": [
+              [
+                2,
+                0
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 8,
+            "action": "R",
+            "valid": true,
+            "player": [
+              2,
+              2
+            ],
+            "ghosts": [
+              [
+                2,
+                1
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 9,
+            "action": "R",
+            "valid": true,
+            "player": [
+              3,
+              2
+            ],
+            "ghosts": [
+              [
+                2,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 10,
+            "action": "D",
+            "valid": true,
+            "player": [
+              3,
+              3
+            ],
+            "ghosts": [
+              [
+                3,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 11,
+            "action": "R",
+            "valid": true,
+            "player": [
+              3,
+              3
+            ],
+            "ghosts": [
+              [
+                3,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 12,
+            "action": "R",
+            "valid": true,
+            "player": [
+              3,
+              3
+            ],
+            "ghosts": [
+              [
+                3,
+                3
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "dead": true,
+            "won": false
+          }
+        ],
+        "valid": [
+          "U",
+          "L",
+          "U",
+          "U",
+          "L",
+          "U",
+          "R",
+          "R",
+          "R",
+          "D",
+          "R",
+          "R"
+        ]
+      }
+    },
+    {
+      "id": "restore_B_before_relocation",
+      "idea": "两处暂时安全后，从左 A 放开上鬼，直接恢复 B 去取上钥匙。",
+      "actions": [
+        "U",
+        "L",
+        "U",
+        "U",
+        "L",
+        "U",
+        "R",
+        "R",
+        "R",
+        "D",
+        "R",
+        "D",
+        "U",
+        "L",
+        "D",
+        "L",
+        "L",
+        "D",
+        "L",
+        "U",
+        "U",
+        "U",
+        "R",
+        "U",
+        "L",
+        "D",
+        "D",
+        "R",
+        "L"
+      ],
+      "result": {
+        "status": "dead",
+        "trace": [
+          {
+            "step": 1,
+            "action": "U",
+            "valid": true,
+            "player": [
+              1,
+              5
+            ],
+            "ghosts": [
+              [
+                2,
+                0
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 2,
+            "action": "L",
+            "valid": true,
+            "player": [
+              0,
+              5
+            ],
+            "ghosts": [
+              [
+                2,
+                0
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 3,
+            "action": "U",
+            "valid": true,
+            "player": [
+              0,
+              4
+            ],
+            "ghosts": [
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 4,
+            "action": "U",
+            "valid": true,
+            "player": [
+              0,
+              3
+            ],
+            "ghosts": [
+              [
+                2,
+                0
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 5,
+            "action": "L",
+            "valid": true,
+            "player": [
+              0,
+              3
+            ],
+            "ghosts": [
+              [
+                2,
+                0
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 6,
+            "action": "U",
+            "valid": true,
+            "player": [
+              0,
+              2
+            ],
+            "ghosts": [
+              [
+                2,
+                0
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 7,
+            "action": "R",
+            "valid": true,
+            "player": [
+              1,
+              2
+            ],
+            "ghosts": [
+              [
+                2,
+                0
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 8,
+            "action": "R",
+            "valid": true,
+            "player": [
+              2,
+              2
+            ],
+            "ghosts": [
+              [
+                2,
+                1
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 9,
+            "action": "R",
+            "valid": true,
+            "player": [
+              3,
+              2
+            ],
+            "ghosts": [
+              [
+                2,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 10,
+            "action": "D",
+            "valid": true,
+            "player": [
+              3,
+              3
+            ],
+            "ghosts": [
+              [
+                3,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 11,
+            "action": "R",
+            "valid": true,
+            "player": [
+              3,
+              3
+            ],
+            "ghosts": [
+              [
+                3,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 12,
+            "action": "D",
+            "valid": true,
+            "player": [
+              3,
+              4
+            ],
+            "ghosts": [
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 13,
+            "action": "U",
+            "valid": true,
+            "player": [
+              3,
+              3
+            ],
+            "ghosts": [
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 14,
+            "action": "L",
+            "valid": true,
+            "player": [
+              2,
+              3
+            ],
+            "ghosts": [
+              [
+                3,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 15,
+            "action": "D",
+            "valid": true,
+            "player": [
+              2,
+              4
+            ],
+            "ghosts": [
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 16,
+            "action": "L",
+            "valid": true,
+            "player": [
+              1,
+              4
+            ],
+            "ghosts": [
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 17,
+            "action": "L",
+            "valid": true,
+            "player": [
+              1,
+              4
+            ],
+            "ghosts": [
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 18,
+            "action": "D",
+            "valid": true,
+            "player": [
+              1,
+              5
+            ],
+            "ghosts": [
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 19,
+            "action": "L",
+            "valid": true,
+            "player": [
+              0,
+              5
+            ],
+            "ghosts": [
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 20,
+            "action": "U",
+            "valid": true,
+            "player": [
+              0,
+              4
+            ],
+            "ghosts": [
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 21,
+            "action": "U",
+            "valid": true,
+            "player": [
+              0,
+              3
+            ],
+            "ghosts": [
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 22,
+            "action": "U",
+            "valid": true,
+            "player": [
+              0,
+              2
+            ],
+            "ghosts": [
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 23,
+            "action": "R",
+            "valid": true,
+            "player": [
+              1,
+              2
+            ],
+            "ghosts": [
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 24,
+            "action": "U",
+            "valid": true,
+            "player": [
+              1,
+              2
+            ],
+            "ghosts": [
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 25,
+            "action": "L",
+            "valid": true,
+            "player": [
+              0,
+              2
+            ],
+            "ghosts": [
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 26,
+            "action": "D",
+            "valid": true,
+            "player": [
+              0,
+              3
+            ],
+            "ghosts": [
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 27,
+            "action": "D",
+            "valid": true,
+            "player": [
+              0,
+              4
+            ],
+            "ghosts": [
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 28,
+            "action": "R",
+            "valid": true,
+            "player": [
+              1,
+              4
+            ],
+            "ghosts": [
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "dead": false,
+            "won": false
+          },
+          {
+            "step": 29,
+            "action": "L",
+            "valid": true,
+            "player": [
+              1,
+              4
+            ],
+            "ghosts": [
+              [
+                3,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "dead": true,
+            "won": false
+          }
+        ],
+        "valid": [
+          "U",
+          "L",
+          "U",
+          "U",
+          "L",
+          "U",
+          "R",
+          "R",
+          "R",
+          "D",
+          "R",
+          "D",
+          "U",
+          "L",
+          "D",
+          "L",
+          "L",
+          "D",
+          "L",
+          "U",
+          "U",
+          "U",
+          "R",
+          "U",
+          "L",
+          "D",
+          "D",
+          "R",
+          "L"
+        ]
+      }
+    }
+  ],
+  "blocked": {
+    "idea": "两处暂时保护后，不改布局就直接去上钥匙",
+    "actions": [
+      "U",
+      "L",
+      "U",
+      "U",
+      "L",
+      "U",
+      "R",
+      "R",
+      "R",
+      "D",
+      "R",
+      "D",
+      "U",
+      "L",
+      "D",
+      "L",
+      "L",
+      "D",
+      "L",
+      "U",
+      "U",
+      "U",
+      "R",
+      "R"
+    ],
+    "result": {
+      "status": "unfinished",
+      "trace": [
+        {
+          "step": 1,
+          "action": "U",
+          "valid": true,
+          "player": [
+            1,
+            5
+          ],
+          "ghosts": [
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "dead": false,
+          "won": false
+        },
+        {
+          "step": 2,
+          "action": "L",
+          "valid": true,
+          "player": [
+            0,
+            5
+          ],
+          "ghosts": [
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "dead": false,
+          "won": false
+        },
+        {
+          "step": 3,
+          "action": "U",
+          "valid": true,
+          "player": [
+            0,
+            4
+          ],
+          "ghosts": [
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "dead": false,
+          "won": false
+        },
+        {
+          "step": 4,
+          "action": "U",
+          "valid": true,
+          "player": [
+            0,
+            3
+          ],
+          "ghosts": [
+            [
+              2,
+              0
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "dead": false,
+          "won": false
+        },
+        {
+          "step": 5,
+          "action": "L",
+          "valid": true,
+          "player": [
+            0,
+            3
+          ],
+          "ghosts": [
+            [
+              2,
+              0
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "dead": false,
+          "won": false
+        },
+        {
+          "step": 6,
+          "action": "U",
+          "valid": true,
+          "player": [
+            0,
+            2
+          ],
+          "ghosts": [
+            [
+              2,
+              0
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "dead": false,
+          "won": false
+        },
+        {
+          "step": 7,
+          "action": "R",
+          "valid": true,
+          "player": [
+            1,
+            2
+          ],
+          "ghosts": [
+            [
+              2,
+              0
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "dead": false,
+          "won": false
+        },
+        {
+          "step": 8,
+          "action": "R",
+          "valid": true,
+          "player": [
+            2,
+            2
+          ],
+          "ghosts": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "dead": false,
+          "won": false
+        },
+        {
+          "step": 9,
+          "action": "R",
+          "valid": true,
+          "player": [
+            3,
+            2
+          ],
+          "ghosts": [
+            [
+              2,
+              2
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "dead": false,
+          "won": false
+        },
+        {
+          "step": 10,
+          "action": "D",
+          "valid": true,
+          "player": [
+            3,
+            3
+          ],
+          "ghosts": [
+            [
+              3,
+              2
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "dead": false,
+          "won": false
+        },
+        {
+          "step": 11,
+          "action": "R",
+          "valid": true,
+          "player": [
+            3,
+            3
+          ],
+          "ghosts": [
+            [
+              3,
+              2
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "dead": false,
+          "won": false
+        },
+        {
+          "step": 12,
+          "action": "D",
+          "valid": true,
+          "player": [
+            3,
+            4
+          ],
+          "ghosts": [
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "dead": false,
+          "won": false
+        },
+        {
+          "step": 13,
+          "action": "U",
+          "valid": true,
+          "player": [
+            3,
+            3
+          ],
+          "ghosts": [
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "dead": false,
+          "won": false
+        },
+        {
+          "step": 14,
+          "action": "L",
+          "valid": true,
+          "player": [
+            2,
+            3
+          ],
+          "ghosts": [
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "dead": false,
+          "won": false
+        },
+        {
+          "step": 15,
+          "action": "D",
+          "valid": true,
+          "player": [
+            2,
+            4
+          ],
+          "ghosts": [
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "dead": false,
+          "won": false
+        },
+        {
+          "step": 16,
+          "action": "L",
+          "valid": true,
+          "player": [
+            1,
+            4
+          ],
+          "ghosts": [
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "dead": false,
+          "won": false
+        },
+        {
+          "step": 17,
+          "action": "L",
+          "valid": true,
+          "player": [
+            1,
+            4
+          ],
+          "ghosts": [
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "dead": false,
+          "won": false
+        },
+        {
+          "step": 18,
+          "action": "D",
+          "valid": true,
+          "player": [
+            1,
+            5
+          ],
+          "ghosts": [
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "dead": false,
+          "won": false
+        },
+        {
+          "step": 19,
+          "action": "L",
+          "valid": true,
+          "player": [
+            0,
+            5
+          ],
+          "ghosts": [
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "dead": false,
+          "won": false
+        },
+        {
+          "step": 20,
+          "action": "U",
+          "valid": true,
+          "player": [
+            0,
+            4
+          ],
+          "ghosts": [
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "dead": false,
+          "won": false
+        },
+        {
+          "step": 21,
+          "action": "U",
+          "valid": true,
+          "player": [
+            0,
+            3
+          ],
+          "ghosts": [
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "dead": false,
+          "won": false
+        },
+        {
+          "step": 22,
+          "action": "U",
+          "valid": true,
+          "player": [
+            0,
+            2
+          ],
+          "ghosts": [
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "dead": false,
+          "won": false
+        },
+        {
+          "step": 23,
+          "action": "R",
+          "valid": true,
+          "player": [
+            1,
+            2
+          ],
+          "ghosts": [
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "dead": false,
+          "won": false
+        },
+        {
+          "step": 24,
+          "action": "R",
+          "valid": false,
+          "player": [
+            1,
+            2
+          ],
+          "ghosts": [
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "dead": false,
+          "won": false
+        }
+      ],
+      "valid": [
+        "U",
+        "L",
+        "U",
+        "U",
+        "L",
+        "U",
+        "R",
+        "R",
+        "R",
+        "D",
+        "R",
+        "D",
+        "U",
+        "L",
+        "D",
+        "L",
+        "L",
+        "D",
+        "L",
+        "U",
+        "U",
+        "U",
+        "R"
+      ]
+    },
+    "recovery": {
+      "status": "solved",
+      "reason": "goal_reached",
+      "prefix": [
+        "U",
+        "L",
+        "U",
+        "U",
+        "L",
+        "U",
+        "R",
+        "R",
+        "R",
+        "D",
+        "R",
+        "D",
+        "U",
+        "L",
+        "D",
+        "L",
+        "L",
+        "D",
+        "L",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "actions": [
+        "L",
+        "D",
+        "D",
+        "R",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "U",
+        "R",
+        "U",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "U",
+        "R",
+        "L",
+        "R",
+        "U",
+        "R",
+        "U",
+        "L",
+        "U",
+        "U",
+        "L",
+        "R",
+        "D",
+        "D",
+        "R",
+        "U"
+      ],
+      "optimality": null,
+      "search": {
+        "algorithm": "fast_resource_reachability",
+        "expanded": 652,
+        "discovered": 656,
+        "exhausted": false,
+        "elapsedMs": 20.250199999999978,
+        "nodeBudget": 120000,
+        "budgetMs": 10000
+      }
+    },
+    "scope": "直接计划受阻但可以恢复，不是永久无解状态"
+  },
+  "cells": [
+    {
+      "cell": [
+        1,
+        0
+      ],
+      "role": "上钥匙死角：取得后必须返回，不能把一次冲入当作通关"
+    },
+    {
+      "cell": [
+        2,
+        0
+      ],
+      "role": "上鬼初始守点及上钥匙入口"
+    },
+    {
+      "cell": [
+        2,
+        1
+      ],
+      "role": "上方诱导接近距离；回取钥匙与返回都经过"
+    },
+    {
+      "cell": [
+        3,
+        1
+      ],
+      "role": "两钥匙终点，迫使完成上方往返"
+    },
+    {
+      "cell": [
+        0,
+        2
+      ],
+      "role": "左 A 外侧转角；释放上鬼后可以避开中央视线"
+    },
+    {
+      "cell": [
+        1,
+        2
+      ],
+      "role": "左 A 站；释放与下 A 关闭同时发生，但右侧 B 入口仍须另行恢复"
+    },
+    {
+      "cell": [
+        2,
+        2
+      ],
+      "role": "上鬼最初诱导点、B 入口内侧和上钥匙往返分岔"
+    },
+    {
+      "cell": [
+        3,
+        2
+      ],
+      "role": "上鬼临时安置点和终点入口，保护必须主动解除"
+    },
+    {
+      "cell": [
+        0,
+        3
+      ],
+      "role": "C 站；开桥让下鬼进入，再关闭其左侧边界"
+    },
+    {
+      "cell": [
+        1,
+        3
+      ],
+      "role": "下鬼最终完整隔离格；C 和 B 分别控制左右边界"
+    },
+    {
+      "cell": [
+        2,
+        3
+      ],
+      "role": "两鬼经过的交接通道；下鬼转移到 C 内侧时保持间距"
+    },
+    {
+      "cell": [
+        3,
+        3
+      ],
+      "role": "右 A 站及两鬼转向点；同站重开 A 会立即被抓"
+    },
+    {
+      "cell": [
+        0,
+        4
+      ],
+      "role": "初始引下鬼的直线端；后期切断上鬼视线后返回 B"
+    },
+    {
+      "cell": [
+        1,
+        4
+      ],
+      "role": "B 站，先作临时保护，最后完成另一位置的保护交接"
+    },
+    {
+      "cell": [
+        2,
+        4
+      ],
+      "role": "下鬼临时停留格，底边仍开放；不能一直保留到完成"
+    },
+    {
+      "cell": [
+        3,
+        4
+      ],
+      "role": "下鬼和下钥匙初位；两次纵向诱导的接近路线"
+    },
+    {
+      "cell": [
+        0,
+        5
+      ],
+      "role": "沿左侧绕开两处中央门，并在后期引上鬼向左移动"
+    },
+    {
+      "cell": [
+        1,
+        5
+      ],
+      "role": "上鬼最终安全安置格；上 A 遮断通关路径，其他边并非全封闭"
+    },
+    {
+      "cell": [
+        2,
+        5
+      ],
+      "role": "从下方引出临时下鬼，并作为上鬼向左转移的中间位置"
+    },
+    {
+      "cell": [
+        3,
+        5
+      ],
+      "role": "右下 B 的两侧及纵向诱导转角"
+    },
+    {
+      "cell": [
+        0,
+        6
+      ],
+      "role": "上鬼下移后绕行左列的转角；为随后向左引鬼留出距离"
+    },
+    {
+      "cell": [
+        1,
+        6
+      ],
+      "role": "起点；引出下鬼及引上鬼向下后的回退路线"
+    },
+    {
+      "cell": [
+        2,
+        6
+      ],
+      "role": "进入下鬼纵向视线的站位，上鬼下移后的横向退路"
+    },
+    {
+      "cell": [
+        3,
+        6
+      ],
+      "role": "下鬼转移时的右下转角；上鬼下移时保持一格追逐间距"
+    }
+  ],
+  "claims": {
+    "observedHumanBehavior": false,
+    "uniqueFullOrderProven": false,
+    "everyCellIndependentCognitiveNecessityProven": false,
+    "humanQuality": null
+  }
+}
