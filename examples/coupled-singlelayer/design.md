@@ -1,6 +1,8 @@
 # 内部评审：两处环路如何共同改变通行条件
 
-本文件含剧透，建议先试玩。本候选仍待用户确认，不预先称为精品。
+本文件含剧透。用户于 2026-09-30 明确给出“好设计、想了好一阵”的正面评价，并指出左上 B 冗余、提出不同解法及更精简的改图。
+
+**解释修正**：下文保留当时对 37 次动作解的分析，但“左上 B 的门属性不可或缺”不成立。将该门改为空通路后最短解仍为 37，封墙也仍有 56 次动作解；见 [消融证据](top-b-analysis.json)。不要将路线经过某处等同于该处门类型必要。用户优化图见 [用户改图](../user-refinements/README.md)。
 
 ## 来源与精简
 
@@ -57,4 +59,4 @@ LURRULLDDDLUDRRRLLLURUUURRULLDLURRRDR
 
 `node examples/coupled-singlelayer/build.mjs` 重建地图和证据，包含独立 BFS 对照；`npm test` 包含本题回归，全仓共 94 项通过。参考引擎与旧种子检查通过，原游戏和子模块保持原样。
 
-当前 `humanPreference: null`，目标质量标记为 `awaiting_user_review`。所有改图归在 `dual-loop-relay-v1`；它与旧诱鬼家族共享基础思想，不能仅凭换了家族名就声称是独立概念的泛化测试。旧批次反馈文件没有改动。
+生成时的机器证据保留 `humanPreference: null` 与 `awaiting_user_review`，不回写历史产物。用户的新正面反馈单独保存在 `data/feedback/singlelayer-01-observation-20260930.json`，训练消费时需要关联。所有改图归在 `dual-loop-relay-v1`；它与旧诱鬼家族共享基础思想，不能仅凭换了家族名就声称是独立概念的泛化测试。旧批次反馈文件没有改动。

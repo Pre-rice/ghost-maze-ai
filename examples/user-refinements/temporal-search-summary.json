@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "generatorVersion": "free-edit-v1",
+  "featureVersion": "temporal-v1",
+  "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+  "familyId": "dual-loop-relay-v1",
+  "rootMapId": "68b83f37974d5ae2a2a8e4f6068ed781fac1baf034c113621383bc5945319057",
+  "seed": 9302026,
+  "iterations": 128,
+  "maxDepth": 3,
+  "budget": {
+    "nodeBudget": 10000,
+    "stateBudget": 10000,
+    "budgetMs": 5000
+  },
+  "hypotheses": [
+    {
+      "id": "clock_B",
+      "sequence": [
+        {
+          "type": "all",
+          "events": [
+            {
+              "type": "press",
+              "letter": "B"
+            },
+            {
+              "type": "player_stationary"
+            },
+            {
+              "type": "nearest_ghost_distance",
+              "phase": "before",
+              "distance": 2
+            },
+            {
+              "type": "nearest_ghost_distance",
+              "phase": "after",
+              "distance": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "uniqueMapsIncludingRoot": 119,
+  "attemptOutcomes": {
+    "solved": 91,
+    "proven_unsat": 27,
+    "duplicate": 9,
+    "invalid": 1
+  },
+  "mechanismCountsIncludingRoot": {
+    "necessary_within_scope": 38,
+    "avoidable": 54,
+    "base_unsat": 27,
+    "unknown": 0
+  },
+  "archive": [
+    {
+      "descriptor": [
+        [
+          "clock_B"
+        ],
+        10
+      ],
+      "nodeId": 0
+    },
+    {
+      "descriptor": [
+        [
+          "clock_B"
+        ],
+        8
+      ],
+      "nodeId": 1
+    },
+    {
+      "descriptor": [
+        [],
+        0
+      ],
+      "nodeId": 2
+    },
+    {
+      "descriptor": [
+        [],
+        5
+      ],
+      "nodeId": 7
+    },
+    {
+      "descriptor": [
+        [],
+        2
+      ],
+      "nodeId": 9
+    },
+    {
+      "descriptor": [
+        [],
+        1
+      ],
+      "nodeId": 11
+    },
+    {
+      "descriptor": [
+        [],
+        4
+      ],
+      "nodeId": 36
+    },
+    {
+      "descriptor": [
+        [],
+        6
+      ],
+      "nodeId": 50
+    },
+    {
+      "descriptor": [
+        [],
+        3
+      ],
+      "nodeId": 70
+    },
+    {
+      "descriptor": [
+        [
+          "clock_B"
+        ],
+        4
+      ],
+      "nodeId": 84
+    }
+  ],
+  "qualityScoresAssigned": false
+}

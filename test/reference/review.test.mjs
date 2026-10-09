@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtempSync, readFileSync, writeFileSync } from 'node:fs';
+import { mkdirSync, mkdtempSync, readFileSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { buildPacket, packetId, publicPacket } from '../../src/review/packet.js';
@@ -106,4 +106,27 @@ test('本地服务提供原游戏与离线依赖，反馈接口隔离来源且�
     const visible = JSON.stringify(await (await fetch(`${origin}/api/feedback`)).json());
     assert(!visible.includes('familyId'));
     assert(!visible.includes('mapId'));
+});
+
+test('本体预览从指定目录提供页面与本地 pako，反馈与录制仍写独立测试目录', async t => {
+    const directory = mkdtempSync(join(tmpdir(), 'ghost-preview-test-'));
+    const webGameRoot = join(directory, 'game');
+    mkdirSync(join(webGameRoot, 'src/vendor'), { recursive: true });
+    writeFileSync(join(webGameRoot, 'index.html'), '<body><script src="src/vendor/pako.js"></script></body>', { flag: 'wx' });
+    writeFileSync(join(webGameRoot, 'src/vendor/pako.js'), '// 测试本地依赖', { flag: 'wx' });
+    writeFileSync(join(webGameRoot, 'src/main.js'), '// 测试本体预览', { flag: 'wx' });
+    const { server, origin } = await startReviewServer({ port: 0, webGameRoot,
+        feedbackFile: join(directory, 'feedback.jsonl'), recordingsDir: join(directory, 'recordings') });
+    t.after(() => { server.closeAllConnections(); server.close(); });
+    const html = await (await fetch(origin + '/game/')).text();
+    assert(html.includes('src="src/vendor/pako.js"'));
+    assert(html.includes('/recorder.js'));
+    assert(!html.includes('cdnjs.cloudflare'));
+    for (const path of ['/game/src/main.js', '/game/src/vendor/pako.js']) {
+        const response = await fetch(origin + path);
+        assert.equal(response.status, 200);
+        assert((await response.text()).startsWith('// 测试'));
+    }
+    assert.deepEqual(await (await fetch(origin + '/api/recordings')).json(), []);
+    assert.equal((await fetch(origin + '/game/src/../../engine.lock.json')).status, 404);
 });

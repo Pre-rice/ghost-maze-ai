@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-08",
+  "mapId": "47bc1b25c144c77865e76278e69acd7e1d73822fc1cb5251df81a88b1508f858",
+  "recordingMapId": "f308cd1894cf54e70ea7551be28db3a0f060de4d2e658ac1624585199e4c9d95",
+  "source": "analysis_of_retained_browser_recording",
+  "recording": {
+    "id": "08bd69af-eb09-4c4d-92e0-0ad523951d87",
+    "sourceFile": "data/solutions/08bd69af-eb09-4c4d-92e0-0ad523951d87.json",
+    "sourceSha256": "8382665f712636258fcc51859dd779d5c9504e6628213a20779ec82df8661d2d"
+  },
+  "recordingVerification": {
+    "won": true,
+    "cleanWin": false,
+    "totalActions": 78,
+    "allMovementActions": 69,
+    "allButtonActions": 8,
+    "deaths": [
+      31
+    ],
+    "revives": [
+      32
+    ],
+    "finalLifeMovementCounter": 40
+  },
+  "winningSegment": {
+    "beginsAtAction": 33,
+    "totalActions": 46,
+    "movementActions": 40,
+    "buttonActions": 6,
+    "buttonWord": "ABABAB",
+    "actions": [
+      "L",
+      "U",
+      "U",
+      "U",
+      "R",
+      "D",
+      "D",
+      "D",
+      "L",
+      "L",
+      "R",
+      "R",
+      "L",
+      "U",
+      "U",
+      "U",
+      "R",
+      "D",
+      "D",
+      "L",
+      "D",
+      "L",
+      "U",
+      "D",
+      "R",
+      "U",
+      "U",
+      "U",
+      "L",
+      "U",
+      "L",
+      "D",
+      "R",
+      "R",
+      "R",
+      "D",
+      "D",
+      "D",
+      "L",
+      "L",
+      "R",
+      "R",
+      "U",
+      "U",
+      "U",
+      "R"
+    ],
+    "freshMapReplayVerified": true,
+    "sameLengthAsProvenMinimum": true,
+    "sameAsSelectedCertificate": false
+  },
+  "feedbackFile": "data/feedback/interlocked-observation-20261008.json",
+  "conclusions": {
+    "userTargetQualityReached": false,
+    "mechanicalDependenciesDoNotEstablishRequiredForesight": true
+  },
+  "nextReviewHypotheses": [
+    "检查局部可行操作是否一路自然推进，不以操作交替次数当推理要求",
+    "检查是否必须为后续安全条件提前准备，而非看到障碍才切换最近开关",
+    "逐格区分推理承载与纯通行，检查能否压缩已知机制"
+  ],
+  "limitations": [
+    "不包含撤回后丢弃的分支、无效按键或思考时间",
+    "最后通关分支等长最短不代表整个试玩一次无伤或没有试错",
+    "不把假说写成已实现、校准过的质量函数，也不声称已证明局部试探必能通关"
+  ]
+}

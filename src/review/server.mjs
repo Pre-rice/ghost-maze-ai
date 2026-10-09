@@ -9,7 +9,7 @@ import { createRecordingStore } from './recordings.js';
 
 const root = fileURLToPath(new URL('../../', import.meta.url));
 const types = { js: 'text/javascript', css: 'text/css', html: 'text/html', svg: 'image/svg+xml' };
-export async function startReviewServer({ port = 4178, packetFile = resolve(root, 'examples/review-batch-01/packet.json'), feedbackFile, recordingsDir = resolve(root, 'data/solutions') } = {}) {
+export async function startReviewServer({ port = 4178, packetFile = resolve(root, 'examples/review-batch-01/packet.json'), feedbackFile, recordingsDir = resolve(root, 'data/solutions'), webGameRoot = resolve(root, 'vendor/ghost-maze') } = {}) {
     const packet = JSON.parse(readFileSync(packetFile, 'utf8'));
     if (packet.id !== packetId(packet) || packet.ruleset !== checkEnvironment().revision) throw new Error('试玩包标识或引擎版本不一致，请重新构建');
     const store = createFeedbackStore(packet, feedbackFile ?? resolve(root, `data/feedback/${packet.id}.jsonl`));
@@ -50,15 +50,15 @@ export async function startReviewServer({ port = 4178, packetFile = resolve(root
             else if (['/app.js', '/styles.css', '/recorder.js', '/replay.html', '/replay.js'].includes(path)) file = resolve(root, `src/review/web${path}`);
             else if (path === '/trace-core.js') file = resolve(root, 'src/review/trace-core.js');
             else if (path === '/pako.js') file = resolve(root, 'node_modules/pako/dist/browser/pako.umd.min.js');
-            else if (['/game/', '/game/index.html', '/game/help.html', '/game/styles.css', '/game/favicon.svg'].includes(path)) file = resolve(root, 'vendor/ghost-maze', path === '/game/' ? 'index.html' : path.slice(6));
-            else if (/^\/game\/src\/[a-zA-Z0-9_/-]+\.js$/.test(path)) file = resolve(root, 'vendor/ghost-maze', path.slice(6));
+            else if (['/game/', '/game/index.html', '/game/help.html', '/game/styles.css', '/game/favicon.svg'].includes(path)) file = resolve(webGameRoot, path === '/game/' ? 'index.html' : path.slice(6));
+            else if (/^\/game\/src\/[a-zA-Z0-9_/-]+\.js$/.test(path)) file = resolve(webGameRoot, path.slice(6));
             else return send(404, { error: '页面不存在' });
             let content = readFileSync(file, 'utf8');
             if (path === '/game/' || path === '/game/index.html') {
-                // 只替换 HTTP 响应中的 CDN 地址；子模块文件与游戏规则保持原样。
+                // 固定版本默认替换 CDN；本体预览可使用已随页面提供的本地 pako。
                 const cdn = 'https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js';
-                if (!content.includes(cdn)) throw new Error('原游戏依赖入口变化，需要更新本地适配');
-                content = content.replace(cdn, '/pako.js');
+                if (content.includes(cdn)) content = content.replace(cdn, '/pako.js');
+                else if (!content.includes('src/vendor/pako.js')) throw new Error('原游戏依赖入口变化，需要更新本地适配');
                 content = content.replace('</body>', '<script type="module" src="/recorder.js"></script></body>');
             }
             return send(200, content, types[file.split('.').pop()] || 'text/plain');

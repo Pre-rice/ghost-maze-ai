@@ -1,0 +1,20 @@
+{
+  "familyId": "dual-loop-relay-v1",
+  "seed": 9302026,
+  "iterations": 128,
+  "maxDepth": 3,
+  "hypotheses": [
+    {
+      "id": "clock_B",
+      "sequence": [
+        { "type": "all", "events": [
+          { "type": "press", "letter": "B" },
+          { "type": "player_stationary" },
+          { "type": "nearest_ghost_distance", "phase": "before", "distance": 2 },
+          { "type": "nearest_ghost_distance", "phase": "after", "distance": 1 }
+        ] }
+      ]
+    }
+  ],
+  "budget": { "nodeBudget": 10000, "stateBudget": 10000, "budgetMs": 5000 }
+}

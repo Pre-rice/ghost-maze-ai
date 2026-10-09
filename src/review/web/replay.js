@@ -19,8 +19,10 @@ function show(position) {
     document.querySelector('#previous').disabled = index === 0;
     document.querySelector('#next').disabled = index === states.length - 1;
     const step = record.verified.steps[index - 1];
+    const playerText = p => `第 ${p[0] + 1} 层 (${p[1]},${p[2]})`;
+    const ghostText = layers => layers.flatMap((ghosts, layer) => ghosts.map((p, g) => `第 ${layer + 1} 层鬼 ${g + 1} (${p.join(',')})`)).join('；') || '无';
     document.querySelector('#info').textContent = index === 0 ? '初始状态' :
-        `${step.label}\n玩家：${step.playerBefore.join(',')} → ${step.playerAfter.join(',')}\n鬼：${JSON.stringify(step.ghostsBefore)} → ${JSON.stringify(step.ghostsAfter)}\n门变化：${step.gateChanges.map(g => `${g.letter} ${g.axis}(${g.x},${g.y}) ${g.state}`).join('；') || '无'}\n${step.isWon ? '到达终点' : step.isDead ? '死亡' : ''}`;
+        `${step.label}\n玩家：${playerText(step.playerBefore)} → ${playerText(step.playerAfter)}\n鬼：${ghostText(step.ghostsBefore)} → ${ghostText(step.ghostsAfter)}\n门变化：${step.gateChanges.map(g => `${g.letter} ${g.axis === 'h' ? '横边' : '竖边'}(${g.x},${g.y}) ${g.state === 'open' ? '打开' : '关闭'}`).join('；') || '无'}\n${step.isWon ? '到达终点' : step.isDead ? '死亡' : ''}`;
     document.querySelectorAll('#steps button').forEach((button, i) => button.setAttribute('aria-current', String(i + 1 === index)));
 }
 async function load(id) {
@@ -35,7 +37,7 @@ async function load(id) {
     for (const token of record.input.actions) states.push(GameLogic.calculateNextState(states.at(-1), traceAction(token), game.controller.mapDefinition));
     // 隔离的只读回放页使用原版绘制；不触碰原先试玩标签页的控制器。
     const style = frame.contentDocument.createElement('style');
-    style.textContent = '#game-controls,.game-controls{display:none!important}'; frame.contentDocument.head.append(style);
+    style.textContent = '.controls-panel,#layer-panel,#dpad-controls{display:none!important}.main-container{display:block!important}body{margin:0!important;padding:0!important}.canvas-wrapper{max-width:100%}#game-canvas{max-width:100%;height:auto}'; frame.contentDocument.head.append(style);
     document.querySelector('#controls').hidden = false;
     document.querySelector('#position').max = states.length - 1;
     document.querySelector('#download').href = `/api/recordings/${encodeURIComponent(id)}`;

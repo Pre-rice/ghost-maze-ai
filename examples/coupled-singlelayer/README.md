@@ -12,7 +12,7 @@ Y-bgYGZlSGFlYmZikLMTEZNjYGBkYWJgYmRhcGRhZHBatWrVqv36V4NCPUPWXw2FghCtlftCQ0ODVq38
 
 先不看解答，自由尝试、撤回或重置。玩完可以直接在聊天中反馈：是否仍然一眼看穿；如果不是，想通的那一步是否有意思，还是只是多走了几圈。这一题不混入旧的三组成对记录。
 
-已经通过原引擎与浏览器实测，但是否达到你的质量要求尚未确认。
+用户已给出正面评价，并提供更精简的 [优化图](../user-refinements/README.md)。原图保留供对照；关于左上 B 的作用已作修正，见折叠后的设计分析。
 
 <details>
 <summary>设计分析与验证结果（含完整剧透）</summary>

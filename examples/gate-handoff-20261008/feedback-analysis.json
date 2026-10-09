@@ -1,0 +1,664 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-09",
+  "source": "verified_user_retained_recording",
+  "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+  "mapId": "b95b9af75366f75a9c1b1a8b9eeaeac652bfa1b080677a7d5873002bcffd7772",
+  "decodedMapId": "d9d29044e5c3ac2d9b13b62b4cd50978f8cad05c34b7ce3fead2261ebe54db16",
+  "recording": {
+    "id": "bc62283a-f4a3-4e30-a8d9-df3b67b6185c",
+    "sourceFile": "data/solutions/bc62283a-f4a3-4e30-a8d9-df3b67b6185c.json",
+    "sourceSha256": "e0f81fe2adb1dfb4cfe4b3cb1ed1153ade5b3169de553937354531ebe5365e6e"
+  },
+  "wholeRecording": {
+    "totalActions": 26,
+    "movementCostAtEnd": 12,
+    "cleanWin": false,
+    "deaths": [
+      6
+    ],
+    "revives": [
+      7
+    ]
+  },
+  "winningBranch": {
+    "startsAtAction": 8,
+    "totalActions": 19,
+    "movementCost": 12,
+    "buttons": [
+      "A",
+      "B",
+      "B",
+      "B",
+      "B",
+      "A",
+      "B"
+    ],
+    "actions": [
+      "R",
+      "D",
+      "L",
+      "U",
+      "R",
+      "R",
+      "U",
+      "D",
+      "R",
+      "L",
+      "D",
+      "R",
+      "D",
+      "R",
+      "U",
+      "R",
+      "U",
+      "U",
+      "R"
+    ],
+    "fromInitialCleanWin": true,
+    "sameActionsAsSelectedCertificate": true
+  },
+  "localOptions": {
+    "method": "沿实际最终分支枚举成功输入，区分当回合死亡、历史重复与可完成后缀；快可达性诊断不声明最短，成功后缀由原引擎重放。",
+    "summary": {
+      "totalDecisionStates": 19,
+      "oneImmediatelySafeOption": 6,
+      "oneNewImmediatelySafeOption": 13,
+      "oneWinningOption": 6,
+      "unknownOptions": 0
+    },
+    "rows": [
+      {
+        "step": 1,
+        "chosen": "R",
+        "player": [
+          4,
+          5
+        ],
+        "ghosts": [
+          [
+            4,
+            2
+          ]
+        ],
+        "options": [
+          {
+            "action": "U",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          },
+          {
+            "action": "R",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          },
+          {
+            "action": "D",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "chosen": "D",
+        "player": [
+          4,
+          5
+        ],
+        "ghosts": [
+          [
+            4,
+            2
+          ]
+        ],
+        "options": [
+          {
+            "action": "R",
+            "immediatelyDead": false,
+            "previouslyVisited": true,
+            "continuation": "solved"
+          },
+          {
+            "action": "D",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "chosen": "L",
+        "player": [
+          4,
+          5
+        ],
+        "ghosts": [
+          [
+            4,
+            2
+          ]
+        ],
+        "options": [
+          {
+            "action": "R",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          },
+          {
+            "action": "D",
+            "immediatelyDead": false,
+            "previouslyVisited": true,
+            "continuation": "solved"
+          },
+          {
+            "action": "L",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "chosen": "U",
+        "player": [
+          3,
+          5
+        ],
+        "ghosts": [
+          [
+            4,
+            2
+          ]
+        ],
+        "options": [
+          {
+            "action": "U",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          },
+          {
+            "action": "R",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          }
+        ]
+      },
+      {
+        "step": 5,
+        "chosen": "R",
+        "player": [
+          3,
+          4
+        ],
+        "ghosts": [
+          [
+            4,
+            2
+          ]
+        ],
+        "options": [
+          {
+            "action": "R",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          },
+          {
+            "action": "D",
+            "immediatelyDead": false,
+            "previouslyVisited": true,
+            "continuation": "solved"
+          }
+        ]
+      },
+      {
+        "step": 6,
+        "chosen": "R",
+        "player": [
+          4,
+          4
+        ],
+        "ghosts": [
+          [
+            4,
+            2
+          ]
+        ],
+        "options": [
+          {
+            "action": "U",
+            "immediatelyDead": true,
+            "previouslyVisited": false,
+            "continuation": null
+          },
+          {
+            "action": "R",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          },
+          {
+            "action": "L",
+            "immediatelyDead": false,
+            "previouslyVisited": true,
+            "continuation": "solved"
+          }
+        ]
+      },
+      {
+        "step": 7,
+        "chosen": "U",
+        "player": [
+          4,
+          4
+        ],
+        "ghosts": [
+          [
+            4,
+            2
+          ]
+        ],
+        "options": [
+          {
+            "action": "U",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          },
+          {
+            "action": "R",
+            "immediatelyDead": false,
+            "previouslyVisited": true,
+            "continuation": "solved"
+          },
+          {
+            "action": "L",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          }
+        ]
+      },
+      {
+        "step": 8,
+        "chosen": "D",
+        "player": [
+          4,
+          3
+        ],
+        "ghosts": [
+          [
+            4,
+            2
+          ]
+        ],
+        "options": [
+          {
+            "action": "D",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          }
+        ]
+      },
+      {
+        "step": 9,
+        "chosen": "R",
+        "player": [
+          4,
+          4
+        ],
+        "ghosts": [
+          [
+            4,
+            2
+          ]
+        ],
+        "options": [
+          {
+            "action": "U",
+            "immediatelyDead": false,
+            "previouslyVisited": true,
+            "continuation": "solved"
+          },
+          {
+            "action": "R",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          },
+          {
+            "action": "L",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          }
+        ]
+      },
+      {
+        "step": 10,
+        "chosen": "L",
+        "player": [
+          4,
+          4
+        ],
+        "ghosts": [
+          [
+            4,
+            3
+          ]
+        ],
+        "options": [
+          {
+            "action": "U",
+            "immediatelyDead": true,
+            "previouslyVisited": false,
+            "continuation": null
+          },
+          {
+            "action": "R",
+            "immediatelyDead": true,
+            "previouslyVisited": false,
+            "continuation": null
+          },
+          {
+            "action": "L",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          }
+        ]
+      },
+      {
+        "step": 11,
+        "chosen": "D",
+        "player": [
+          3,
+          4
+        ],
+        "ghosts": [
+          [
+            4,
+            4
+          ]
+        ],
+        "options": [
+          {
+            "action": "R",
+            "immediatelyDead": true,
+            "previouslyVisited": false,
+            "continuation": null
+          },
+          {
+            "action": "D",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          }
+        ]
+      },
+      {
+        "step": 12,
+        "chosen": "R",
+        "player": [
+          3,
+          5
+        ],
+        "ghosts": [
+          [
+            3,
+            4
+          ]
+        ],
+        "options": [
+          {
+            "action": "U",
+            "immediatelyDead": true,
+            "previouslyVisited": false,
+            "continuation": null
+          },
+          {
+            "action": "R",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          }
+        ]
+      },
+      {
+        "step": 13,
+        "chosen": "D",
+        "player": [
+          4,
+          5
+        ],
+        "ghosts": [
+          [
+            3,
+            5
+          ]
+        ],
+        "options": [
+          {
+            "action": "R",
+            "immediatelyDead": true,
+            "previouslyVisited": false,
+            "continuation": null
+          },
+          {
+            "action": "D",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          },
+          {
+            "action": "L",
+            "immediatelyDead": true,
+            "previouslyVisited": false,
+            "continuation": null
+          }
+        ]
+      },
+      {
+        "step": 14,
+        "chosen": "R",
+        "player": [
+          4,
+          5
+        ],
+        "ghosts": [
+          [
+            3,
+            5
+          ]
+        ],
+        "options": [
+          {
+            "action": "R",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          },
+          {
+            "action": "D",
+            "immediatelyDead": true,
+            "previouslyVisited": false,
+            "continuation": null
+          }
+        ]
+      },
+      {
+        "step": 15,
+        "chosen": "U",
+        "player": [
+          4,
+          5
+        ],
+        "ghosts": [
+          [
+            3,
+            5
+          ]
+        ],
+        "options": [
+          {
+            "action": "U",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          },
+          {
+            "action": "R",
+            "immediatelyDead": false,
+            "previouslyVisited": true,
+            "continuation": "solved"
+          },
+          {
+            "action": "D",
+            "immediatelyDead": true,
+            "previouslyVisited": false,
+            "continuation": null
+          }
+        ]
+      },
+      {
+        "step": 16,
+        "chosen": "R",
+        "player": [
+          4,
+          4
+        ],
+        "ghosts": [
+          [
+            3,
+            5
+          ]
+        ],
+        "options": [
+          {
+            "action": "U",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          },
+          {
+            "action": "R",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          },
+          {
+            "action": "D",
+            "immediatelyDead": false,
+            "previouslyVisited": true,
+            "continuation": "solved"
+          }
+        ]
+      },
+      {
+        "step": 17,
+        "chosen": "U",
+        "player": [
+          4,
+          4
+        ],
+        "ghosts": [
+          [
+            3,
+            5
+          ]
+        ],
+        "options": [
+          {
+            "action": "U",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          },
+          {
+            "action": "R",
+            "immediatelyDead": false,
+            "previouslyVisited": true,
+            "continuation": "solved"
+          },
+          {
+            "action": "D",
+            "immediatelyDead": true,
+            "previouslyVisited": false,
+            "continuation": null
+          }
+        ]
+      },
+      {
+        "step": 18,
+        "chosen": "U",
+        "player": [
+          4,
+          3
+        ],
+        "ghosts": [
+          [
+            3,
+            5
+          ]
+        ],
+        "options": [
+          {
+            "action": "U",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          },
+          {
+            "action": "D",
+            "immediatelyDead": false,
+            "previouslyVisited": true,
+            "continuation": "solved"
+          }
+        ]
+      },
+      {
+        "step": 19,
+        "chosen": "R",
+        "player": [
+          4,
+          2
+        ],
+        "ghosts": [
+          [
+            3,
+            5
+          ]
+        ],
+        "options": [
+          {
+            "action": "R",
+            "immediatelyDead": false,
+            "previouslyVisited": false,
+            "continuation": "solved"
+          },
+          {
+            "action": "D",
+            "immediatelyDead": false,
+            "previouslyVisited": true,
+            "continuation": "solved"
+          }
+        ]
+      }
+    ]
+  },
+  "limits": [
+    "录制只覆盖当前保留分支，不包含全部撤销、无效输入或思考时间。",
+    "局部选项数量只诊断这条路线，不是人类趣味评分或自动质量筛选条件。",
+    "生成时证据与 humanQuality:null 保持原样；本次不追加训练示范。"
+  ]
+}

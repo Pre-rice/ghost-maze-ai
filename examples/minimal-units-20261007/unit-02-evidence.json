@@ -1,0 +1,2445 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-07",
+  "id": "02",
+  "kind": "junction_interference",
+  "familyId": "two-ghost-junction-v1",
+  "source": "source-02.json",
+  "seed": 7100707,
+  "proposal": 27319,
+  "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+  "mapId": "217553aff9976067a3961fa04c62d40475e6e167edf3bcfca80dc3f0c751e02e",
+  "complexity": [
+    10,
+    2,
+    2,
+    14,
+    0
+  ],
+  "ghostCount": 2,
+  "itemCount": 0,
+  "solution": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+    "mapId": "217553aff9976067a3961fa04c62d40475e6e167edf3bcfca80dc3f0c751e02e",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "withGhosts": true,
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "D",
+        "L",
+        "D",
+        "U",
+        "R",
+        "U",
+        "L",
+        "D",
+        "D",
+        "D",
+        "U",
+        "R",
+        "R",
+        "D"
+      ],
+      "totalActions": 14,
+      "movementCost": 14
+    },
+    "search": {
+      "algorithm": "astar",
+      "expanded": 25,
+      "transitions": 125,
+      "discovered": 28,
+      "resourcePruned": 12,
+      "exhausted": false,
+      "elapsedMs": 0.2601999999999407,
+      "budget": {
+        "nodeBudget": 20000,
+        "stateBudget": 20000,
+        "budgetMs": 5000
+      }
+    }
+  },
+  "reference": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+    "mapId": "217553aff9976067a3961fa04c62d40475e6e167edf3bcfca80dc3f0c751e02e",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "D",
+        "L",
+        "D",
+        "U",
+        "R",
+        "U",
+        "L",
+        "D",
+        "D",
+        "D",
+        "U",
+        "R",
+        "R",
+        "D"
+      ],
+      "totalActions": 14,
+      "movementCost": 14
+    },
+    "search": {
+      "expanded": 98,
+      "transitions": 488,
+      "discovered": 112,
+      "exhausted": false,
+      "elapsedMs": 72.28279999999995,
+      "budget": {
+        "nodeBudget": 100000,
+        "stateBudget": 100000,
+        "budgetMs": 60000
+      }
+    }
+  },
+  "coreChecks": {
+    "accepted": true,
+    "baseline": {
+      "schemaVersion": 1,
+      "status": "solved",
+      "reason": "goal_reached",
+      "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+      "mapId": "217553aff9976067a3961fa04c62d40475e6e167edf3bcfca80dc3f0c751e02e",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "withGhosts": true,
+        "restrictions": []
+      },
+      "optimality": "proven",
+      "solution": {
+        "actions": [
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "U",
+          "L",
+          "D",
+          "D",
+          "D",
+          "U",
+          "R",
+          "R",
+          "D"
+        ],
+        "totalActions": 14,
+        "movementCost": 14
+      },
+      "search": {
+        "algorithm": "astar",
+        "expanded": 25,
+        "transitions": 125,
+        "discovered": 28,
+        "resourcePruned": 12,
+        "exhausted": false,
+        "elapsedMs": 0.2601999999999407,
+        "budget": {
+          "nodeBudget": 20000,
+          "stateBudget": 20000,
+          "budgetMs": 5000
+        }
+      }
+    },
+    "constraints": [
+      {
+        "restrictions": [
+          {
+            "id": "blocked_0",
+            "sequence": [
+              {
+                "type": "ghost_blocked",
+                "index": 0
+              }
+            ]
+          },
+          {
+            "id": "blocked_1",
+            "sequence": [
+              {
+                "type": "ghost_blocked",
+                "index": 1
+              }
+            ]
+          }
+        ],
+        "result": {
+          "schemaVersion": 1,
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+          "mapId": "217553aff9976067a3961fa04c62d40475e6e167edf3bcfca80dc3f0c751e02e",
+          "scope": {
+            "gameMode": "death-loop",
+            "objective": "zero_hit_no_revive",
+            "metric": "successful_actions",
+            "actions": [
+              "U",
+              "R",
+              "D",
+              "L",
+              "STAIR"
+            ],
+            "withGhosts": true,
+            "restrictions": [
+              {
+                "id": "blocked_0",
+                "sequence": [
+                  {
+                    "type": "ghost_blocked",
+                    "index": 0
+                  }
+                ]
+              },
+              {
+                "id": "blocked_1",
+                "sequence": [
+                  {
+                    "type": "ghost_blocked",
+                    "index": 1
+                  }
+                ]
+              }
+            ]
+          },
+          "optimality": null,
+          "solution": null,
+          "search": {
+            "algorithm": "astar",
+            "expanded": 27,
+            "transitions": 135,
+            "discovered": 27,
+            "resourcePruned": 14,
+            "exhausted": true,
+            "elapsedMs": 0.8130999999998494,
+            "budget": {
+              "nodeBudget": 20000,
+              "stateBudget": 20000,
+              "budgetMs": 5000
+            }
+          }
+        }
+      }
+    ],
+    "contrasts": [
+      {
+        "edit": {
+          "id": "reverse_ghost_order"
+        },
+        "result": {
+          "schemaVersion": 1,
+          "status": "solved",
+          "reason": "goal_reached",
+          "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+          "mapId": "b97ef1c94927867277a9e0310096873491406c5aaf9570db6b8ad2fb4392b8cc",
+          "scope": {
+            "gameMode": "death-loop",
+            "objective": "zero_hit_no_revive",
+            "metric": "successful_actions",
+            "actions": [
+              "U",
+              "R",
+              "D",
+              "L",
+              "STAIR"
+            ],
+            "withGhosts": true,
+            "restrictions": []
+          },
+          "optimality": "proven",
+          "solution": {
+            "actions": [
+              "D",
+              "L",
+              "D",
+              "U",
+              "R",
+              "U",
+              "L",
+              "D",
+              "D",
+              "D",
+              "U",
+              "R",
+              "R",
+              "D"
+            ],
+            "totalActions": 14,
+            "movementCost": 14
+          },
+          "search": {
+            "algorithm": "astar",
+            "expanded": 25,
+            "transitions": 125,
+            "discovered": 28,
+            "resourcePruned": 12,
+            "exhausted": false,
+            "elapsedMs": 0.26040000000011787,
+            "budget": {
+              "nodeBudget": 20000,
+              "stateBudget": 20000,
+              "budgetMs": 5000
+            }
+          }
+        },
+        "constrained": {
+          "schemaVersion": 1,
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+          "mapId": "b97ef1c94927867277a9e0310096873491406c5aaf9570db6b8ad2fb4392b8cc",
+          "scope": {
+            "gameMode": "death-loop",
+            "objective": "zero_hit_no_revive",
+            "metric": "successful_actions",
+            "actions": [
+              "U",
+              "R",
+              "D",
+              "L",
+              "STAIR"
+            ],
+            "withGhosts": true,
+            "restrictions": [
+              {
+                "id": "blocked_0",
+                "sequence": [
+                  {
+                    "type": "ghost_blocked",
+                    "index": 0
+                  }
+                ]
+              },
+              {
+                "id": "blocked_1",
+                "sequence": [
+                  {
+                    "type": "ghost_blocked",
+                    "index": 1
+                  }
+                ]
+              }
+            ]
+          },
+          "optimality": null,
+          "solution": null,
+          "search": {
+            "algorithm": "astar",
+            "expanded": 27,
+            "transitions": 135,
+            "discovered": 27,
+            "resourcePruned": 14,
+            "exhausted": true,
+            "elapsedMs": 0.3303000000000793,
+            "budget": {
+              "nodeBudget": 20000,
+              "stateBudget": 20000,
+              "budgetMs": 5000
+            }
+          }
+        }
+      }
+    ]
+  },
+  "referenceConstraints": [
+    {
+      "schemaVersion": 1,
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+      "mapId": "217553aff9976067a3961fa04c62d40475e6e167edf3bcfca80dc3f0c751e02e",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "restrictions": [
+          {
+            "id": "blocked_0",
+            "sequence": [
+              {
+                "type": "ghost_blocked",
+                "index": 0
+              }
+            ]
+          },
+          {
+            "id": "blocked_1",
+            "sequence": [
+              {
+                "type": "ghost_blocked",
+                "index": 1
+              }
+            ]
+          }
+        ]
+      },
+      "optimality": null,
+      "solution": null,
+      "search": {
+        "expanded": 1215,
+        "transitions": 6075,
+        "discovered": 1215,
+        "exhausted": true,
+        "elapsedMs": 1513.0008999999998,
+        "budget": {
+          "nodeBudget": 100000,
+          "stateBudget": 100000,
+          "budgetMs": 60000
+        }
+      }
+    }
+  ],
+  "referenceContrasts": [],
+  "minimality": {
+    "scope": "remove_one_cell_or_entity_or_replace_one_wall_with_empty_or_solid",
+    "audit": [
+      {
+        "edit": {
+          "type": "cell",
+          "x": 1,
+          "y": 2
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 2,
+          "y": 2
+        },
+        "outcome": "invalid",
+        "reason": "地图无效：第 0 层 customStartPos 非法"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 1,
+          "y": 3
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 2,
+          "y": 3
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 1,
+          "y": 4
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 2,
+          "y": 4
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 3,
+          "y": 4
+        },
+        "outcome": "invalid",
+        "reason": "地图无效：第 0 层 ghosts 位置或数组非法"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 1,
+          "y": 5
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 2,
+          "y": 5
+        },
+        "outcome": "invalid",
+        "reason": "地图无效：第 0 层 ghosts 位置或数组非法"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 3,
+          "y": 5
+        },
+        "outcome": "invalid",
+        "reason": "地图无效：第 0 层 endPos 非法"
+      },
+      {
+        "edit": {
+          "type": "remove_entity",
+          "field": "initialGhosts",
+          "index": 0
+        },
+        "outcome": "changed_mechanism"
+      },
+      {
+        "edit": {
+          "type": "remove_entity",
+          "field": "initialGhosts",
+          "index": 1
+        },
+        "outcome": "changed_mechanism"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 1,
+          "y": 3,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 2,
+          "y": 3,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 1,
+          "y": 4,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 2,
+          "y": 4,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "changed_mechanism"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 1,
+          "y": 5,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 2,
+          "y": 5,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "changed_mechanism"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 2,
+          "y": 5,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "changed_mechanism"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 3,
+          "y": 5,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "changed_mechanism"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 2,
+          "y": 2,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 2,
+          "y": 2,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 2,
+          "y": 3,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "not_simpler",
+        "score": [
+          10,
+          2,
+          2,
+          20,
+          1
+        ]
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 2,
+          "y": 4,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "changed_mechanism"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 3,
+          "y": 4,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "changed_mechanism"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 2,
+          "y": 5,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 3,
+          "y": 5,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      }
+    ],
+    "unresolved": 0,
+    "globalMinimumProven": false
+  },
+  "lineage": [
+    {
+      "parentMapId": "78f9ac6481fefabec49683e3e63b4639c434e861c82714407406f09d46595e56",
+      "mapId": "1b543c989a007609c74813ba5d4457582cfcb5bd4847bc09d5daa36f7c81ece9",
+      "edit": {
+        "type": "cell",
+        "x": 1,
+        "y": 1
+      },
+      "before": [
+        15,
+        2,
+        2,
+        14,
+        1
+      ],
+      "after": [
+        14,
+        2,
+        2,
+        14,
+        1
+      ]
+    },
+    {
+      "parentMapId": "1b543c989a007609c74813ba5d4457582cfcb5bd4847bc09d5daa36f7c81ece9",
+      "mapId": "ebdfb5a43d7502e8033fe03c2d4b7dfb1875f4fa6f0ba3f5192d0a4031158525",
+      "edit": {
+        "type": "cell",
+        "x": 2,
+        "y": 1
+      },
+      "before": [
+        14,
+        2,
+        2,
+        14,
+        1
+      ],
+      "after": [
+        13,
+        2,
+        2,
+        14,
+        1
+      ]
+    },
+    {
+      "parentMapId": "ebdfb5a43d7502e8033fe03c2d4b7dfb1875f4fa6f0ba3f5192d0a4031158525",
+      "mapId": "8ba726ce49a298c76d3689b275a3dbb3e2585bb52f8391d8ec5a279222b9b301",
+      "edit": {
+        "type": "cell",
+        "x": 3,
+        "y": 1
+      },
+      "before": [
+        13,
+        2,
+        2,
+        14,
+        1
+      ],
+      "after": [
+        12,
+        2,
+        2,
+        14,
+        1
+      ]
+    },
+    {
+      "parentMapId": "8ba726ce49a298c76d3689b275a3dbb3e2585bb52f8391d8ec5a279222b9b301",
+      "mapId": "59016f90df449906cd3319ed36365c03ab73f8758a4a736b159b41f22b528c85",
+      "edit": {
+        "type": "cell",
+        "x": 3,
+        "y": 2
+      },
+      "before": [
+        12,
+        2,
+        2,
+        14,
+        1
+      ],
+      "after": [
+        11,
+        2,
+        2,
+        14,
+        1
+      ]
+    },
+    {
+      "parentMapId": "59016f90df449906cd3319ed36365c03ab73f8758a4a736b159b41f22b528c85",
+      "mapId": "217553aff9976067a3961fa04c62d40475e6e167edf3bcfca80dc3f0c751e02e",
+      "edit": {
+        "type": "cell",
+        "x": 3,
+        "y": 3
+      },
+      "before": [
+        11,
+        2,
+        2,
+        14,
+        1
+      ],
+      "after": [
+        10,
+        2,
+        2,
+        14,
+        0
+      ]
+    }
+  ],
+  "attempts": 38,
+  "trace": [
+    {
+      "index": 1,
+      "action": "D",
+      "player": [
+        2,
+        3
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "openedLocks": [],
+      "won": false
+    },
+    {
+      "index": 2,
+      "action": "L",
+      "player": [
+        1,
+        3
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "openedLocks": [],
+      "won": false
+    },
+    {
+      "index": 3,
+      "action": "D",
+      "player": [
+        1,
+        4
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "openedLocks": [],
+      "won": false
+    },
+    {
+      "index": 4,
+      "action": "U",
+      "player": [
+        1,
+        3
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "openedLocks": [],
+      "won": false
+    },
+    {
+      "index": 5,
+      "action": "R",
+      "player": [
+        2,
+        3
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "openedLocks": [],
+      "won": false
+    },
+    {
+      "index": 6,
+      "action": "U",
+      "player": [
+        2,
+        2
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "openedLocks": [],
+      "won": false
+    },
+    {
+      "index": 7,
+      "action": "L",
+      "player": [
+        1,
+        2
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "openedLocks": [],
+      "won": false
+    },
+    {
+      "index": 8,
+      "action": "D",
+      "player": [
+        1,
+        3
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "openedLocks": [],
+      "won": false
+    },
+    {
+      "index": 9,
+      "action": "D",
+      "player": [
+        1,
+        4
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "openedLocks": [],
+      "won": false
+    },
+    {
+      "index": 10,
+      "action": "D",
+      "player": [
+        1,
+        5
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "openedLocks": [],
+      "won": false
+    },
+    {
+      "index": 11,
+      "action": "U",
+      "player": [
+        1,
+        4
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "openedLocks": [],
+      "won": false
+    },
+    {
+      "index": 12,
+      "action": "R",
+      "player": [
+        2,
+        4
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "openedLocks": [],
+      "won": false
+    },
+    {
+      "index": 13,
+      "action": "R",
+      "player": [
+        3,
+        4
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "openedLocks": [],
+      "won": false
+    },
+    {
+      "index": 14,
+      "action": "D",
+      "player": [
+        3,
+        5
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "openedLocks": [],
+      "won": true
+    }
+  ],
+  "blockedSteps": [
+    13
+  ],
+  "exitWithoutGoal": {
+    "player": {
+      "layer": 0,
+      "x": 3,
+      "y": 5,
+      "hp": 5,
+      "stamina": 86,
+      "keys": 0,
+      "steps": 14
+    },
+    "isDead": false,
+    "isWon": false,
+    "loopCount": 0,
+    "layers": [
+      {
+        "ghosts": [
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "items": [],
+        "wallStates": {
+          "h": [
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 5,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ]
+          ],
+          "v": [
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 2,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  "noGhost": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+    "mapId": "217553aff9976067a3961fa04c62d40475e6e167edf3bcfca80dc3f0c751e02e",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "withGhosts": false,
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "D",
+        "D",
+        "R",
+        "D"
+      ],
+      "totalActions": 4,
+      "movementCost": 4
+    },
+    "search": {
+      "algorithm": "astar",
+      "expanded": 4,
+      "transitions": 20,
+      "discovered": 8,
+      "resourcePruned": 3,
+      "exhausted": false,
+      "elapsedMs": 0.1493000000000393,
+      "budget": {
+        "nodeBudget": 20000,
+        "stateBudget": 20000,
+        "budgetMs": 5000
+      }
+    }
+  },
+  "relaxedFailure": {
+    "step": 2,
+    "reason": "death",
+    "action": "D"
+  },
+  "sharecode": "Y-bgYGZlSGFmZWJiYGBj4-NjYGBiZmFiZWBYBQZdq7RWflqFAKtDQ7VWdQGFQaCBAQA",
+  "humanQuality": null,
+  "status": "awaiting_user_review"
+}

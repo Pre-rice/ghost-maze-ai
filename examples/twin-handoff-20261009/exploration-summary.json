@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-09",
+  "runs": [
+    {
+      "name": "search-a",
+      "date": "2026-10-09",
+      "seed": 9100901,
+      "requestedIterations": 20000,
+      "counts": {
+        "proven_unsat": 16045,
+        "no_cut": 3955
+      },
+      "accepted": [],
+      "elapsedMs": 29710,
+      "modelUsed": false
+    },
+    {
+      "name": "guided-a",
+      "seed": 9100911,
+      "iterations": 12000,
+      "counts": {
+        "proven_unsat": 304,
+        "candidate": 10,
+        "no_cut": 2,
+        "order_sensitive": 1
+      },
+      "accepted": [
+        25,
+        87,
+        140,
+        165,
+        170,
+        174,
+        200,
+        280,
+        300,
+        316
+      ],
+      "elapsedMs": 768,
+      "provenance": "manual_queue_skeleton_random_side_connections"
+    },
+    {
+      "name": "exit-a",
+      "seed": 9100921,
+      "iterations": 20000,
+      "counts": {
+        "proven_unsat": 14638,
+        "weak_relation": 5362
+      },
+      "accepted": [],
+      "elapsedMs": 29352,
+      "provenance": "manual_two_occupied_goal_and_approach_with_shared_complementary_gates"
+    },
+    {
+      "name": "exit-b",
+      "seed": 9100922,
+      "iterations": 30000,
+      "counts": {
+        "weak_relation": 8097,
+        "proven_unsat": 21903
+      },
+      "accepted": [],
+      "elapsedMs": 83544,
+      "provenance": "manual_two_occupied_goal_and_approach_with_shared_complementary_gates"
+    },
+    {
+      "name": "exit-c",
+      "seed": 9100922,
+      "iterations": 2000,
+      "mode": "staged",
+      "counts": {
+        "weak_relation": 510,
+        "proven_unsat": 1490
+      },
+      "accepted": [],
+      "elapsedMs": 5504,
+      "provenance": "manual_two_occupied_goal_and_approach_with_shared_complementary_gates"
+    },
+    {
+      "name": "exit-read",
+      "seed": 9100922,
+      "iterations": 100,
+      "mode": "all",
+      "counts": {
+        "candidate": 8,
+        "proven_unsat": 15
+      },
+      "accepted": [
+        0,
+        2,
+        6,
+        9,
+        10,
+        15,
+        18,
+        22
+      ],
+      "elapsedMs": 397,
+      "provenance": "manual_two_occupied_goal_and_approach_with_shared_complementary_gates"
+    },
+    {
+      "name": "exit-d",
+      "seed": 9100923,
+      "iterations": 10000,
+      "mode": "interleaved",
+      "counts": {
+        "proven_unsat": 10000
+      },
+      "accepted": [],
+      "elapsedMs": 5666,
+      "provenance": "manual_two_occupied_goal_and_approach_with_shared_complementary_gates"
+    },
+    {
+      "name": "exit-e",
+      "seed": 9100924,
+      "iterations": 20000,
+      "mode": "integrated",
+      "variant": "remote_station",
+      "counts": {
+        "proven_unsat": 18956,
+        "weak_relation": 1044
+      },
+      "accepted": [],
+      "elapsedMs": 22746,
+      "provenance": "manual_two_occupied_goal_and_approach_with_shared_complementary_gates"
+    },
+    {
+      "name": "exit-f",
+      "seed": 9100924,
+      "iterations": 3000,
+      "mode": "integrated",
+      "variant": "remote_station",
+      "counts": {
+        "proven_unsat": 103,
+        "candidate": 8
+      },
+      "accepted": [
+        6,
+        20,
+        32,
+        37,
+        58,
+        67,
+        94,
+        110
+      ],
+      "elapsedMs": 347,
+      "provenance": "manual_two_occupied_goal_and_approach_with_shared_complementary_gates"
+    }
+  ],
+  "selected": {
+    "run": "exit-f",
+    "seed": 9100924,
+    "index": 32
+  },
+  "initialGridCells": 21,
+  "intermediateGridCells": 15,
+  "finalGridCells": 14,
+  "intermediateMinimizationAttempts": 195,
+  "finalMinimizationAttempts": 41,
+  "quality": "awaiting_user_review",
+  "historicalScriptsChangedDuringExploration": true,
+  "reproduction": "最终源地图与编辑谱系已保存；较早探索使用当时模板，当前脚本不重现所有旧轮次。"
+}

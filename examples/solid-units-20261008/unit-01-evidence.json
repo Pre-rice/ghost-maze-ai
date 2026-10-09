@@ -1,0 +1,2755 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-08",
+  "id": "01",
+  "kind": "arrow",
+  "familyId": "one-way-consumed-lock-loop-v1",
+  "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+  "mapId": "1fd5541a231942926074e8c6b65b909ea1aa0f224bdf19875a841b78c4ca8169",
+  "provenance": {
+    "method": "seeded_small_grid_search_then_mechanism_filter_and_local_minimization",
+    "seed": 8100803,
+    "proposal": 840,
+    "node": "v24.19.0",
+    "proposalCells": 12,
+    "proposalActions": 20
+  },
+  "solution": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+    "mapId": "1fd5541a231942926074e8c6b65b909ea1aa0f224bdf19875a841b78c4ca8169",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "withGhosts": true,
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "R",
+        "R",
+        "L",
+        "D",
+        "L",
+        "U",
+        "U",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "D",
+        "L",
+        "U",
+        "U",
+        "R",
+        "R",
+        "R"
+      ],
+      "totalActions": 20,
+      "movementCost": 20
+    },
+    "search": {
+      "algorithm": "astar",
+      "expanded": 44,
+      "transitions": 220,
+      "discovered": 46,
+      "resourcePruned": 27,
+      "exhausted": false,
+      "elapsedMs": 0.4491999999999905,
+      "budget": {
+        "nodeBudget": 20000,
+        "stateBudget": 20000,
+        "budgetMs": 2500
+      }
+    }
+  },
+  "reference": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+    "mapId": "1fd5541a231942926074e8c6b65b909ea1aa0f224bdf19875a841b78c4ca8169",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "R",
+        "R",
+        "D",
+        "L",
+        "L",
+        "U",
+        "U",
+        "D",
+        "D",
+        "R",
+        "U",
+        "R",
+        "D",
+        "L",
+        "L",
+        "U",
+        "U",
+        "R",
+        "R",
+        "R"
+      ],
+      "totalActions": 20,
+      "movementCost": 20
+    },
+    "search": {
+      "expanded": 290,
+      "transitions": 1447,
+      "discovered": 313,
+      "exhausted": false,
+      "elapsedMs": 222.7369,
+      "budget": {
+        "nodeBudget": 100000,
+        "stateBudget": 100000,
+        "budgetMs": 60000
+      }
+    }
+  },
+  "coreChecks": {
+    "accepted": true,
+    "baseline": {
+      "schemaVersion": 1,
+      "status": "solved",
+      "reason": "goal_reached",
+      "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+      "mapId": "1fd5541a231942926074e8c6b65b909ea1aa0f224bdf19875a841b78c4ca8169",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "withGhosts": true,
+        "restrictions": []
+      },
+      "optimality": "proven",
+      "solution": {
+        "actions": [
+          "R",
+          "R",
+          "L",
+          "D",
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "R",
+          "R",
+          "U",
+          "L",
+          "D",
+          "L",
+          "U",
+          "U",
+          "R",
+          "R",
+          "R"
+        ],
+        "totalActions": 20,
+        "movementCost": 20
+      },
+      "search": {
+        "algorithm": "astar",
+        "expanded": 44,
+        "transitions": 220,
+        "discovered": 46,
+        "resourcePruned": 27,
+        "exhausted": false,
+        "elapsedMs": 0.4491999999999905,
+        "budget": {
+          "nodeBudget": 20000,
+          "stateBudget": 20000,
+          "budgetMs": 2500
+        }
+      }
+    },
+    "trace": {
+      "rows": [
+        {
+          "index": 1,
+          "action": "R",
+          "player": [
+            2,
+            2
+          ],
+          "ghosts": [
+            [
+              3,
+              1
+            ]
+          ],
+          "stationary": false,
+          "keys": 0
+        },
+        {
+          "index": 2,
+          "action": "R",
+          "player": [
+            3,
+            2
+          ],
+          "ghosts": [
+            [
+              3,
+              1
+            ]
+          ],
+          "stationary": false,
+          "keys": 1
+        },
+        {
+          "index": 3,
+          "action": "L",
+          "player": [
+            2,
+            2
+          ],
+          "ghosts": [
+            [
+              3,
+              1
+            ]
+          ],
+          "stationary": false,
+          "keys": 1
+        },
+        {
+          "index": 4,
+          "action": "D",
+          "player": [
+            2,
+            3
+          ],
+          "ghosts": [
+            [
+              3,
+              1
+            ]
+          ],
+          "stationary": false,
+          "keys": 1
+        },
+        {
+          "index": 5,
+          "action": "L",
+          "player": [
+            1,
+            3
+          ],
+          "ghosts": [
+            [
+              3,
+              1
+            ]
+          ],
+          "stationary": false,
+          "keys": 1
+        },
+        {
+          "index": 6,
+          "action": "U",
+          "player": [
+            1,
+            2
+          ],
+          "ghosts": [
+            [
+              3,
+              1
+            ]
+          ],
+          "stationary": false,
+          "keys": 1
+        },
+        {
+          "index": 7,
+          "action": "U",
+          "player": [
+            1,
+            1
+          ],
+          "ghosts": [
+            [
+              2,
+              1
+            ]
+          ],
+          "stationary": false,
+          "keys": 1
+        },
+        {
+          "index": 8,
+          "action": "D",
+          "player": [
+            1,
+            2
+          ],
+          "ghosts": [
+            [
+              1,
+              1
+            ]
+          ],
+          "stationary": false,
+          "keys": 1
+        },
+        {
+          "index": 9,
+          "action": "D",
+          "player": [
+            1,
+            3
+          ],
+          "ghosts": [
+            [
+              1,
+              2
+            ]
+          ],
+          "stationary": false,
+          "keys": 1
+        },
+        {
+          "index": 10,
+          "action": "R",
+          "player": [
+            2,
+            3
+          ],
+          "ghosts": [
+            [
+              1,
+              3
+            ]
+          ],
+          "stationary": false,
+          "keys": 1
+        },
+        {
+          "index": 11,
+          "action": "R",
+          "player": [
+            3,
+            3
+          ],
+          "ghosts": [
+            [
+              2,
+              3
+            ]
+          ],
+          "stationary": false,
+          "keys": 1
+        },
+        {
+          "index": 12,
+          "action": "U",
+          "player": [
+            3,
+            2
+          ],
+          "ghosts": [
+            [
+              3,
+              3
+            ]
+          ],
+          "stationary": false,
+          "keys": 1
+        },
+        {
+          "index": 13,
+          "action": "L",
+          "player": [
+            2,
+            2
+          ],
+          "ghosts": [
+            [
+              3,
+              2
+            ]
+          ],
+          "stationary": false,
+          "keys": 1
+        },
+        {
+          "index": 14,
+          "action": "D",
+          "player": [
+            2,
+            3
+          ],
+          "ghosts": [
+            [
+              2,
+              2
+            ]
+          ],
+          "stationary": false,
+          "keys": 1
+        },
+        {
+          "index": 15,
+          "action": "L",
+          "player": [
+            1,
+            3
+          ],
+          "ghosts": [
+            [
+              2,
+              3
+            ]
+          ],
+          "stationary": false,
+          "keys": 1
+        },
+        {
+          "index": 16,
+          "action": "U",
+          "player": [
+            1,
+            2
+          ],
+          "ghosts": [
+            [
+              1,
+              3
+            ]
+          ],
+          "stationary": false,
+          "keys": 1
+        },
+        {
+          "index": 17,
+          "action": "U",
+          "player": [
+            1,
+            1
+          ],
+          "ghosts": [
+            [
+              1,
+              2
+            ]
+          ],
+          "stationary": false,
+          "keys": 1
+        },
+        {
+          "index": 18,
+          "action": "R",
+          "player": [
+            2,
+            1
+          ],
+          "ghosts": [
+            [
+              1,
+              1
+            ]
+          ],
+          "stationary": false,
+          "keys": 1
+        },
+        {
+          "index": 19,
+          "action": "R",
+          "player": [
+            3,
+            1
+          ],
+          "ghosts": [
+            [
+              2,
+              1
+            ]
+          ],
+          "stationary": false,
+          "keys": 1
+        },
+        {
+          "index": 20,
+          "action": "R",
+          "player": [
+            4,
+            1
+          ],
+          "ghosts": [
+            [
+              2,
+              1
+            ]
+          ],
+          "stationary": false,
+          "keys": 1
+        }
+      ],
+      "presses": 0,
+      "ghostMoves": [
+        13
+      ],
+      "ghostUsesLock": true
+    },
+    "noGhost": {
+      "schemaVersion": 1,
+      "status": "solved",
+      "reason": "goal_reached",
+      "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+      "mapId": "1fd5541a231942926074e8c6b65b909ea1aa0f224bdf19875a841b78c4ca8169",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "withGhosts": false,
+        "restrictions": []
+      },
+      "optimality": "proven",
+      "solution": {
+        "actions": [
+          "U",
+          "R",
+          "R",
+          "R"
+        ],
+        "totalActions": 4,
+        "movementCost": 4
+      },
+      "search": {
+        "algorithm": "astar",
+        "expanded": 4,
+        "transitions": 20,
+        "discovered": 7,
+        "resourcePruned": 3,
+        "exhausted": false,
+        "elapsedMs": 0.06569999999999254,
+        "budget": {
+          "nodeBudget": 20000,
+          "stateBudget": 20000,
+          "budgetMs": 2500
+        }
+      }
+    },
+    "contrasts": [
+      {
+        "edit": {
+          "axis": "v",
+          "x": 2,
+          "y": 2,
+          "wall": {
+            "type": 4,
+            "keys": 0,
+            "direction": {
+              "dx": 1,
+              "dy": 0
+            }
+          },
+          "type": 2
+        },
+        "result": {
+          "schemaVersion": 1,
+          "status": "solved",
+          "reason": "goal_reached",
+          "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+          "mapId": "5c93ebb12a5710b1519b4a6e8521dfe238282344df7561fc9ae9be49d2c6d3ee",
+          "scope": {
+            "gameMode": "death-loop",
+            "objective": "zero_hit_no_revive",
+            "metric": "successful_actions",
+            "actions": [
+              "U",
+              "R",
+              "D",
+              "L",
+              "STAIR"
+            ],
+            "withGhosts": true,
+            "restrictions": []
+          },
+          "optimality": "proven",
+          "solution": {
+            "actions": [
+              "R",
+              "R",
+              "L",
+              "L",
+              "U",
+              "D",
+              "D",
+              "R",
+              "U",
+              "L",
+              "U",
+              "R",
+              "R",
+              "R"
+            ],
+            "totalActions": 14,
+            "movementCost": 14
+          },
+          "search": {
+            "algorithm": "astar",
+            "expanded": 38,
+            "transitions": 190,
+            "discovered": 47,
+            "resourcePruned": 26,
+            "exhausted": false,
+            "elapsedMs": 0.3865999999999872,
+            "budget": {
+              "nodeBudget": 20000,
+              "stateBudget": 20000,
+              "budgetMs": 2500
+            }
+          }
+        }
+      },
+      {
+        "edit": {
+          "axis": "v",
+          "x": 2,
+          "y": 3,
+          "wall": {
+            "type": 3,
+            "keys": 1
+          },
+          "type": 2
+        },
+        "result": {
+          "schemaVersion": 1,
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+          "mapId": "331b84b5fde8e8e49b25f252c51c34d5409e154c512e68acbd2a51b4b498582e",
+          "scope": {
+            "gameMode": "death-loop",
+            "objective": "zero_hit_no_revive",
+            "metric": "successful_actions",
+            "actions": [
+              "U",
+              "R",
+              "D",
+              "L",
+              "STAIR"
+            ],
+            "withGhosts": true,
+            "restrictions": []
+          },
+          "optimality": null,
+          "solution": null,
+          "search": {
+            "algorithm": "astar",
+            "expanded": 31,
+            "transitions": 155,
+            "discovered": 31,
+            "resourcePruned": 27,
+            "exhausted": true,
+            "elapsedMs": 0.39809999999999945,
+            "budget": {
+              "nodeBudget": 20000,
+              "stateBudget": 20000,
+              "budgetMs": 2500
+            }
+          }
+        }
+      }
+    ],
+    "constraints": []
+  },
+  "independent": [
+    {
+      "edit": {
+        "axis": "v",
+        "x": 2,
+        "y": 2,
+        "wall": {
+          "type": 4,
+          "keys": 0,
+          "direction": {
+            "dx": 1,
+            "dy": 0
+          }
+        },
+        "type": 2
+      },
+      "result": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+        "mapId": "5c93ebb12a5710b1519b4a6e8521dfe238282344df7561fc9ae9be49d2c6d3ee",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": []
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "R",
+            "R",
+            "L",
+            "L",
+            "U",
+            "D",
+            "D",
+            "R",
+            "U",
+            "L",
+            "U",
+            "R",
+            "R",
+            "R"
+          ],
+          "totalActions": 14,
+          "movementCost": 14
+        },
+        "search": {
+          "expanded": 199,
+          "transitions": 992,
+          "discovered": 225,
+          "exhausted": false,
+          "elapsedMs": 149.7156,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 60000
+          }
+        }
+      }
+    },
+    {
+      "edit": {
+        "axis": "v",
+        "x": 2,
+        "y": 3,
+        "wall": {
+          "type": 3,
+          "keys": 1
+        },
+        "type": 2
+      },
+      "result": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+        "mapId": "331b84b5fde8e8e49b25f252c51c34d5409e154c512e68acbd2a51b4b498582e",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": []
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "expanded": 1492,
+          "transitions": 7460,
+          "discovered": 1492,
+          "exhausted": true,
+          "elapsedMs": 1093.6277,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 60000
+          }
+        }
+      }
+    }
+  ],
+  "complexity": [
+    10,
+    2,
+    2,
+    20,
+    2
+  ],
+  "minimality": {
+    "scope": "remove_one_cell_or_entity_or_replace_one_wall_with_empty_or_solid",
+    "audit": [
+      {
+        "edit": {
+          "type": "cell",
+          "x": 1,
+          "y": 1
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 2,
+          "y": 1
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 3,
+          "y": 1
+        },
+        "outcome": "invalid",
+        "reason": "地图无效：第 0 层 ghosts 位置或数组非法"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 4,
+          "y": 1
+        },
+        "outcome": "invalid",
+        "reason": "地图无效：第 0 层 endPos 非法"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 1,
+          "y": 2
+        },
+        "outcome": "invalid",
+        "reason": "地图无效：第 0 层 customStartPos 非法"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 2,
+          "y": 2
+        },
+        "outcome": "changed_mechanism"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 3,
+          "y": 2
+        },
+        "outcome": "invalid",
+        "reason": "地图无效：第 0 层 items 位置或数组非法"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 1,
+          "y": 3
+        },
+        "outcome": "changed_mechanism"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 2,
+          "y": 3
+        },
+        "outcome": "changed_mechanism"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 3,
+          "y": 3
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "remove_entity",
+          "field": "initialGhosts",
+          "index": 0
+        },
+        "outcome": "changed_mechanism"
+      },
+      {
+        "edit": {
+          "type": "remove_entity",
+          "field": "items",
+          "index": 0
+        },
+        "outcome": "changed_mechanism"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 2,
+          "y": 2,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "weak_interaction"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 3,
+          "y": 2,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "weak_interaction"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 1,
+          "y": 3,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 2,
+          "y": 3,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 3,
+          "y": 3,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 2,
+          "y": 1,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 3,
+          "y": 1,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 4,
+          "y": 1,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 2,
+          "y": 2,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "changed_mechanism"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 2,
+          "y": 2,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "changed_mechanism"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 3,
+          "y": 2,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 2,
+          "y": 3,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "changed_mechanism"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 2,
+          "y": 3,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "changed_mechanism"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 3,
+          "y": 3,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      }
+    ],
+    "unresolved": 0,
+    "globalMinimumProven": false
+  },
+  "lineage": [
+    {
+      "parentMapId": "1f3cd8178362773a75bae4d9c61db954f4504ad085ad5ff1067660a8f1ffcbb5",
+      "mapId": "3525fbc0494d32c2a341c6ebb9787787a3e3eec66c580e4e58bb854fb1b6572f",
+      "edit": {
+        "type": "cell",
+        "x": 4,
+        "y": 2
+      },
+      "before": [
+        12,
+        2,
+        2,
+        20,
+        3
+      ],
+      "after": [
+        11,
+        2,
+        2,
+        20,
+        2
+      ]
+    },
+    {
+      "parentMapId": "3525fbc0494d32c2a341c6ebb9787787a3e3eec66c580e4e58bb854fb1b6572f",
+      "mapId": "1fd5541a231942926074e8c6b65b909ea1aa0f224bdf19875a841b78c4ca8169",
+      "edit": {
+        "type": "cell",
+        "x": 4,
+        "y": 3
+      },
+      "before": [
+        11,
+        2,
+        2,
+        20,
+        2
+      ],
+      "after": [
+        10,
+        2,
+        2,
+        20,
+        2
+      ]
+    }
+  ],
+  "attempts": 46,
+  "trace": [
+    {
+      "index": 1,
+      "action": "R",
+      "player": [
+        2,
+        2
+      ],
+      "ghosts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "keys": 0,
+      "stationary": false,
+      "gates": []
+    },
+    {
+      "index": 2,
+      "action": "R",
+      "player": [
+        3,
+        2
+      ],
+      "ghosts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "keys": 1,
+      "stationary": false,
+      "gates": []
+    },
+    {
+      "index": 3,
+      "action": "L",
+      "player": [
+        2,
+        2
+      ],
+      "ghosts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "keys": 1,
+      "stationary": false,
+      "gates": []
+    },
+    {
+      "index": 4,
+      "action": "D",
+      "player": [
+        2,
+        3
+      ],
+      "ghosts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "keys": 1,
+      "stationary": false,
+      "gates": []
+    },
+    {
+      "index": 5,
+      "action": "L",
+      "player": [
+        1,
+        3
+      ],
+      "ghosts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "keys": 1,
+      "stationary": false,
+      "gates": []
+    },
+    {
+      "index": 6,
+      "action": "U",
+      "player": [
+        1,
+        2
+      ],
+      "ghosts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "keys": 1,
+      "stationary": false,
+      "gates": []
+    },
+    {
+      "index": 7,
+      "action": "U",
+      "player": [
+        1,
+        1
+      ],
+      "ghosts": [
+        [
+          2,
+          1
+        ]
+      ],
+      "keys": 1,
+      "stationary": false,
+      "gates": []
+    },
+    {
+      "index": 8,
+      "action": "D",
+      "player": [
+        1,
+        2
+      ],
+      "ghosts": [
+        [
+          1,
+          1
+        ]
+      ],
+      "keys": 1,
+      "stationary": false,
+      "gates": []
+    },
+    {
+      "index": 9,
+      "action": "D",
+      "player": [
+        1,
+        3
+      ],
+      "ghosts": [
+        [
+          1,
+          2
+        ]
+      ],
+      "keys": 1,
+      "stationary": false,
+      "gates": []
+    },
+    {
+      "index": 10,
+      "action": "R",
+      "player": [
+        2,
+        3
+      ],
+      "ghosts": [
+        [
+          1,
+          3
+        ]
+      ],
+      "keys": 1,
+      "stationary": false,
+      "gates": []
+    },
+    {
+      "index": 11,
+      "action": "R",
+      "player": [
+        3,
+        3
+      ],
+      "ghosts": [
+        [
+          2,
+          3
+        ]
+      ],
+      "keys": 1,
+      "stationary": false,
+      "gates": []
+    },
+    {
+      "index": 12,
+      "action": "U",
+      "player": [
+        3,
+        2
+      ],
+      "ghosts": [
+        [
+          3,
+          3
+        ]
+      ],
+      "keys": 1,
+      "stationary": false,
+      "gates": []
+    },
+    {
+      "index": 13,
+      "action": "L",
+      "player": [
+        2,
+        2
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ]
+      ],
+      "keys": 1,
+      "stationary": false,
+      "gates": []
+    },
+    {
+      "index": 14,
+      "action": "D",
+      "player": [
+        2,
+        3
+      ],
+      "ghosts": [
+        [
+          2,
+          2
+        ]
+      ],
+      "keys": 1,
+      "stationary": false,
+      "gates": []
+    },
+    {
+      "index": 15,
+      "action": "L",
+      "player": [
+        1,
+        3
+      ],
+      "ghosts": [
+        [
+          2,
+          3
+        ]
+      ],
+      "keys": 1,
+      "stationary": false,
+      "gates": []
+    },
+    {
+      "index": 16,
+      "action": "U",
+      "player": [
+        1,
+        2
+      ],
+      "ghosts": [
+        [
+          1,
+          3
+        ]
+      ],
+      "keys": 1,
+      "stationary": false,
+      "gates": []
+    },
+    {
+      "index": 17,
+      "action": "U",
+      "player": [
+        1,
+        1
+      ],
+      "ghosts": [
+        [
+          1,
+          2
+        ]
+      ],
+      "keys": 1,
+      "stationary": false,
+      "gates": []
+    },
+    {
+      "index": 18,
+      "action": "R",
+      "player": [
+        2,
+        1
+      ],
+      "ghosts": [
+        [
+          1,
+          1
+        ]
+      ],
+      "keys": 1,
+      "stationary": false,
+      "gates": []
+    },
+    {
+      "index": 19,
+      "action": "R",
+      "player": [
+        3,
+        1
+      ],
+      "ghosts": [
+        [
+          2,
+          1
+        ]
+      ],
+      "keys": 1,
+      "stationary": false,
+      "gates": []
+    },
+    {
+      "index": 20,
+      "action": "R",
+      "player": [
+        4,
+        1
+      ],
+      "ghosts": [
+        [
+          2,
+          1
+        ]
+      ],
+      "keys": 1,
+      "stationary": false,
+      "gates": []
+    }
+  ],
+  "glassIndependence": {
+    "glassCount": 0,
+    "exactMapIdentity": true,
+    "replacementMapId": "1fd5541a231942926074e8c6b65b909ea1aa0f224bdf19875a841b78c4ca8169",
+    "scope": "all_strategies_same_map_and_rules"
+  },
+  "initialVisibility": {
+    "ghosts": [
+      false
+    ],
+    "goal": false,
+    "knowledgeStrategyProven": false
+  },
+  "exitWithoutGoal": {
+    "player": {
+      "layer": 0,
+      "x": 4,
+      "y": 1,
+      "hp": 5,
+      "stamina": 80,
+      "keys": 1,
+      "steps": 20
+    },
+    "isDead": false,
+    "isWon": false,
+    "loopCount": 0,
+    "layers": [
+      {
+        "ghosts": [
+          [
+            3,
+            1
+          ]
+        ],
+        "items": [],
+        "wallStates": {
+          "h": [
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ]
+          ],
+          "v": [
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 4,
+                "keys": 0,
+                "direction": {
+                  "dx": 1,
+                  "dy": 0
+                },
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 1,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  "sharecode": "Y-bgYGZlSGFhZGRikOPjY2BgYGBkZmRkZmJYtWrVqqmhXKuQQWtoZWi4Fpy7gImZEQA",
+  "humanQuality": null,
+  "status": "awaiting_user_review"
+}

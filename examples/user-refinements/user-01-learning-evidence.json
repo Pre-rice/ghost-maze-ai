@@ -1,0 +1,861 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-30",
+  "source": "verified_human_demonstration",
+  "recordingId": "921c60cd-51e3-4638-98ba-569829fb0864",
+  "sourceSha256": "8f9dd3421b9cbaec702faa6229833cb410009c6bad4f5aa66d913acdc916c3a2",
+  "curatedFile": "examples/user-refinements/user-01-demonstration.json",
+  "familyId": "dual-loop-relay-v1",
+  "splitGroup": "dual-loop-relay-v1",
+  "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+  "mapId": "68b83f37974d5ae2a2a8e4f6068ed781fac1baf034c113621383bc5945319057",
+  "totalActions": 40,
+  "movementCost": 34,
+  "optimality": "proven",
+  "sequenceMatchesPreviousCertificate": true,
+  "ambiguousActions": 0,
+  "samples": 40,
+  "temporal": {
+    "schemaVersion": 1,
+    "featureVersion": "temporal-v1",
+    "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+    "mapId": "68b83f37974d5ae2a2a8e4f6068ed781fac1baf034c113621383bc5945319057",
+    "totalActions": 40,
+    "movementCost": 34,
+    "stationaryActions": 6,
+    "buttonWord": [
+      "B",
+      "A",
+      "A",
+      "B",
+      "A",
+      "B"
+    ],
+    "clockEvents": 1,
+    "events": [
+      {
+        "step": 5,
+        "letter": "B",
+        "roles": [
+          "gate_toggle"
+        ],
+        "player": [
+          0,
+          4,
+          1
+        ],
+        "ghostsBefore": [
+          [
+            [
+              4,
+              2
+            ]
+          ]
+        ],
+        "ghostsAfter": [
+          [
+            [
+              4,
+              2
+            ]
+          ]
+        ],
+        "gateChanges": [
+          {
+            "layer": 0,
+            "axis": "h",
+            "x": 4,
+            "y": 5,
+            "letter": "B",
+            "state": "open"
+          }
+        ],
+        "gatesAfter": [
+          {
+            "layer": 0,
+            "axis": "h",
+            "x": 4,
+            "y": 2,
+            "letter": "A",
+            "state": "closed"
+          },
+          {
+            "layer": 0,
+            "axis": "h",
+            "x": 4,
+            "y": 5,
+            "letter": "B",
+            "state": "open"
+          },
+          {
+            "layer": 0,
+            "axis": "v",
+            "x": 4,
+            "y": 5,
+            "letter": "A",
+            "state": "closed"
+          }
+        ]
+      },
+      {
+        "step": 7,
+        "letter": "A",
+        "roles": [
+          "gate_toggle"
+        ],
+        "player": [
+          0,
+          3,
+          1
+        ],
+        "ghostsBefore": [
+          [
+            [
+              4,
+              2
+            ]
+          ]
+        ],
+        "ghostsAfter": [
+          [
+            [
+              4,
+              2
+            ]
+          ]
+        ],
+        "gateChanges": [
+          {
+            "layer": 0,
+            "axis": "h",
+            "x": 4,
+            "y": 2,
+            "letter": "A",
+            "state": "open"
+          },
+          {
+            "layer": 0,
+            "axis": "v",
+            "x": 4,
+            "y": 5,
+            "letter": "A",
+            "state": "open"
+          }
+        ],
+        "gatesAfter": [
+          {
+            "layer": 0,
+            "axis": "h",
+            "x": 4,
+            "y": 2,
+            "letter": "A",
+            "state": "open"
+          },
+          {
+            "layer": 0,
+            "axis": "h",
+            "x": 4,
+            "y": 5,
+            "letter": "B",
+            "state": "open"
+          },
+          {
+            "layer": 0,
+            "axis": "v",
+            "x": 4,
+            "y": 5,
+            "letter": "A",
+            "state": "open"
+          }
+        ]
+      },
+      {
+        "step": 22,
+        "letter": "A",
+        "roles": [
+          "gate_toggle"
+        ],
+        "player": [
+          0,
+          3,
+          1
+        ],
+        "ghostsBefore": [
+          [
+            [
+              4,
+              4
+            ]
+          ]
+        ],
+        "ghostsAfter": [
+          [
+            [
+              4,
+              4
+            ]
+          ]
+        ],
+        "gateChanges": [
+          {
+            "layer": 0,
+            "axis": "h",
+            "x": 4,
+            "y": 2,
+            "letter": "A",
+            "state": "closed"
+          },
+          {
+            "layer": 0,
+            "axis": "v",
+            "x": 4,
+            "y": 5,
+            "letter": "A",
+            "state": "closed"
+          }
+        ],
+        "gatesAfter": [
+          {
+            "layer": 0,
+            "axis": "h",
+            "x": 4,
+            "y": 2,
+            "letter": "A",
+            "state": "closed"
+          },
+          {
+            "layer": 0,
+            "axis": "h",
+            "x": 4,
+            "y": 5,
+            "letter": "B",
+            "state": "open"
+          },
+          {
+            "layer": 0,
+            "axis": "v",
+            "x": 4,
+            "y": 5,
+            "letter": "A",
+            "state": "closed"
+          }
+        ]
+      },
+      {
+        "step": 24,
+        "letter": "B",
+        "roles": [
+          "gate_toggle"
+        ],
+        "player": [
+          0,
+          4,
+          1
+        ],
+        "ghostsBefore": [
+          [
+            [
+              4,
+              4
+            ]
+          ]
+        ],
+        "ghostsAfter": [
+          [
+            [
+              4,
+              4
+            ]
+          ]
+        ],
+        "gateChanges": [
+          {
+            "layer": 0,
+            "axis": "h",
+            "x": 4,
+            "y": 5,
+            "letter": "B",
+            "state": "closed"
+          }
+        ],
+        "gatesAfter": [
+          {
+            "layer": 0,
+            "axis": "h",
+            "x": 4,
+            "y": 2,
+            "letter": "A",
+            "state": "closed"
+          },
+          {
+            "layer": 0,
+            "axis": "h",
+            "x": 4,
+            "y": 5,
+            "letter": "B",
+            "state": "closed"
+          },
+          {
+            "layer": 0,
+            "axis": "v",
+            "x": 4,
+            "y": 5,
+            "letter": "A",
+            "state": "closed"
+          }
+        ]
+      },
+      {
+        "step": 26,
+        "letter": "A",
+        "roles": [
+          "gate_toggle"
+        ],
+        "player": [
+          0,
+          3,
+          1
+        ],
+        "ghostsBefore": [
+          [
+            [
+              4,
+              4
+            ]
+          ]
+        ],
+        "ghostsAfter": [
+          [
+            [
+              4,
+              4
+            ]
+          ]
+        ],
+        "gateChanges": [
+          {
+            "layer": 0,
+            "axis": "h",
+            "x": 4,
+            "y": 2,
+            "letter": "A",
+            "state": "open"
+          },
+          {
+            "layer": 0,
+            "axis": "v",
+            "x": 4,
+            "y": 5,
+            "letter": "A",
+            "state": "open"
+          }
+        ],
+        "gatesAfter": [
+          {
+            "layer": 0,
+            "axis": "h",
+            "x": 4,
+            "y": 2,
+            "letter": "A",
+            "state": "open"
+          },
+          {
+            "layer": 0,
+            "axis": "h",
+            "x": 4,
+            "y": 5,
+            "letter": "B",
+            "state": "closed"
+          },
+          {
+            "layer": 0,
+            "axis": "v",
+            "x": 4,
+            "y": 5,
+            "letter": "A",
+            "state": "open"
+          }
+        ]
+      },
+      {
+        "step": 28,
+        "letter": "B",
+        "roles": [
+          "gate_toggle",
+          "closes_nearest_ghost_gap_2_to_1"
+        ],
+        "player": [
+          0,
+          4,
+          1
+        ],
+        "ghostsBefore": [
+          [
+            [
+              4,
+              3
+            ]
+          ]
+        ],
+        "ghostsAfter": [
+          [
+            [
+              4,
+              2
+            ]
+          ]
+        ],
+        "gateChanges": [
+          {
+            "layer": 0,
+            "axis": "h",
+            "x": 4,
+            "y": 5,
+            "letter": "B",
+            "state": "open"
+          }
+        ],
+        "gatesAfter": [
+          {
+            "layer": 0,
+            "axis": "h",
+            "x": 4,
+            "y": 2,
+            "letter": "A",
+            "state": "open"
+          },
+          {
+            "layer": 0,
+            "axis": "h",
+            "x": 4,
+            "y": 5,
+            "letter": "B",
+            "state": "open"
+          },
+          {
+            "layer": 0,
+            "axis": "v",
+            "x": 4,
+            "y": 5,
+            "letter": "A",
+            "state": "open"
+          }
+        ]
+      }
+    ],
+    "hypotheses": [
+      {
+        "id": "clock_B",
+        "sequence": [
+          {
+            "type": "all",
+            "events": [
+              {
+                "type": "press",
+                "letter": "B"
+              },
+              {
+                "type": "player_stationary"
+              },
+              {
+                "type": "nearest_ghost_distance",
+                "phase": "before",
+                "distance": 2
+              },
+              {
+                "type": "nearest_ghost_distance",
+                "phase": "after",
+                "distance": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "observed_button_order",
+        "sequence": [
+          {
+            "type": "press",
+            "letter": "B"
+          },
+          {
+            "type": "press",
+            "letter": "A"
+          },
+          {
+            "type": "press",
+            "letter": "A"
+          },
+          {
+            "type": "press",
+            "letter": "B"
+          },
+          {
+            "type": "press",
+            "letter": "A"
+          },
+          {
+            "type": "press",
+            "letter": "B"
+          }
+        ]
+      }
+    ],
+    "interpretation": "trajectory_diagnostics_only",
+    "humanQualityScore": null
+  },
+  "causal": {
+    "schemaVersion": 1,
+    "evaluatorVersion": "counterfactual-v1",
+    "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+    "mapId": "68b83f37974d5ae2a2a8e4f6068ed781fac1baf034c113621383bc5945319057",
+    "baseline": {
+      "schemaVersion": 1,
+      "status": "solved",
+      "reason": "goal_reached",
+      "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+      "mapId": "68b83f37974d5ae2a2a8e4f6068ed781fac1baf034c113621383bc5945319057",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "withGhosts": true,
+        "restrictions": []
+      },
+      "optimality": "proven",
+      "solution": {
+        "actions": [
+          "L",
+          "U",
+          "R",
+          "R",
+          "U",
+          "L",
+          "U",
+          "L",
+          "D",
+          "D",
+          "R",
+          "D",
+          "D",
+          "R",
+          "L",
+          "U",
+          "U",
+          "L",
+          "U",
+          "U",
+          "R",
+          "U",
+          "R",
+          "U",
+          "L",
+          "U",
+          "R",
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "R",
+          "D",
+          "D",
+          "R",
+          "U",
+          "U",
+          "U",
+          "R"
+        ],
+        "totalActions": 40,
+        "movementCost": 34
+      },
+      "search": {
+        "algorithm": "astar",
+        "expanded": 96,
+        "transitions": 480,
+        "discovered": 97,
+        "resourcePruned": 65,
+        "exhausted": false,
+        "elapsedMs": 1.3948000000000036,
+        "budget": {
+          "nodeBudget": 100000,
+          "stateBudget": 100000,
+          "budgetMs": 30000
+        }
+      }
+    },
+    "counterfactuals": [
+      {
+        "hypothesis": {
+          "id": "clock_B",
+          "sequence": [
+            {
+              "type": "all",
+              "events": [
+                {
+                  "type": "press",
+                  "letter": "B"
+                },
+                {
+                  "type": "player_stationary"
+                },
+                {
+                  "type": "nearest_ghost_distance",
+                  "phase": "before",
+                  "distance": 2
+                },
+                {
+                  "type": "nearest_ghost_distance",
+                  "phase": "after",
+                  "distance": 1
+                }
+              ]
+            }
+          ]
+        },
+        "conclusion": "necessary_within_scope",
+        "result": {
+          "schemaVersion": 1,
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+          "mapId": "68b83f37974d5ae2a2a8e4f6068ed781fac1baf034c113621383bc5945319057",
+          "scope": {
+            "gameMode": "death-loop",
+            "objective": "zero_hit_no_revive",
+            "metric": "successful_actions",
+            "actions": [
+              "U",
+              "R",
+              "D",
+              "L",
+              "STAIR"
+            ],
+            "withGhosts": true,
+            "restrictions": [
+              {
+                "id": "clock_B",
+                "sequence": [
+                  {
+                    "type": "all",
+                    "events": [
+                      {
+                        "type": "press",
+                        "letter": "B"
+                      },
+                      {
+                        "type": "player_stationary"
+                      },
+                      {
+                        "type": "nearest_ghost_distance",
+                        "phase": "before",
+                        "distance": 2
+                      },
+                      {
+                        "type": "nearest_ghost_distance",
+                        "phase": "after",
+                        "distance": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "optimality": null,
+          "solution": null,
+          "search": {
+            "algorithm": "astar",
+            "expanded": 73,
+            "transitions": 365,
+            "discovered": 73,
+            "resourcePruned": 64,
+            "exhausted": true,
+            "elapsedMs": 1.1624999999999943,
+            "budget": {
+              "nodeBudget": 100000,
+              "stateBudget": 100000,
+              "budgetMs": 30000
+            }
+          }
+        }
+      },
+      {
+        "hypothesis": {
+          "id": "observed_button_order",
+          "sequence": [
+            {
+              "type": "press",
+              "letter": "B"
+            },
+            {
+              "type": "press",
+              "letter": "A"
+            },
+            {
+              "type": "press",
+              "letter": "A"
+            },
+            {
+              "type": "press",
+              "letter": "B"
+            },
+            {
+              "type": "press",
+              "letter": "A"
+            },
+            {
+              "type": "press",
+              "letter": "B"
+            }
+          ]
+        },
+        "conclusion": "necessary_within_scope",
+        "result": {
+          "schemaVersion": 1,
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+          "mapId": "68b83f37974d5ae2a2a8e4f6068ed781fac1baf034c113621383bc5945319057",
+          "scope": {
+            "gameMode": "death-loop",
+            "objective": "zero_hit_no_revive",
+            "metric": "successful_actions",
+            "actions": [
+              "U",
+              "R",
+              "D",
+              "L",
+              "STAIR"
+            ],
+            "withGhosts": true,
+            "restrictions": [
+              {
+                "id": "observed_button_order",
+                "sequence": [
+                  {
+                    "type": "press",
+                    "letter": "B"
+                  },
+                  {
+                    "type": "press",
+                    "letter": "A"
+                  },
+                  {
+                    "type": "press",
+                    "letter": "A"
+                  },
+                  {
+                    "type": "press",
+                    "letter": "B"
+                  },
+                  {
+                    "type": "press",
+                    "letter": "A"
+                  },
+                  {
+                    "type": "press",
+                    "letter": "B"
+                  }
+                ]
+              }
+            ]
+          },
+          "optimality": null,
+          "solution": null,
+          "search": {
+            "algorithm": "astar",
+            "expanded": 246,
+            "transitions": 1230,
+            "discovered": 248,
+            "resourcePruned": 198,
+            "exhausted": true,
+            "elapsedMs": 3.200400000000002,
+            "budget": {
+              "nodeBudget": 100000,
+              "stateBudget": 100000,
+              "budgetMs": 30000
+            }
+          }
+        }
+      }
+    ],
+    "humanPreference": null
+  },
+  "relaxedDiagnostic": {
+    "source": "ghost_relaxed_solver",
+    "plan": {
+      "schemaVersion": 1,
+      "status": "solved",
+      "reason": "goal_reached",
+      "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+      "mapId": "68b83f37974d5ae2a2a8e4f6068ed781fac1baf034c113621383bc5945319057",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "withGhosts": false,
+        "restrictions": []
+      },
+      "optimality": "proven",
+      "solution": {
+        "actions": [
+          "L",
+          "U",
+          "R",
+          "U",
+          "R",
+          "D",
+          "R"
+        ],
+        "totalActions": 7,
+        "movementCost": 6
+      },
+      "search": {
+        "algorithm": "astar",
+        "expanded": 9,
+        "transitions": 45,
+        "discovered": 15,
+        "resourcePruned": 6,
+        "exhausted": false,
+        "elapsedMs": 0.27789999999998827,
+        "budget": {
+          "nodeBudget": 100000,
+          "stateBudget": 100000,
+          "budgetMs": 30000
+        }
+      }
+    },
+    "replayOnOriginal": {
+      "outcome": "death",
+      "attempted": 5,
+      "player": [
+        0,
+        4,
+        1
+      ]
+    }
+  },
+  "qualityFeedback": {
+    "references": [
+      "data/feedback/singlelayer-01-observation-20260930.json"
+    ],
+    "scope": "用户对原组合设计及自身优化思路的明确正面反馈；未转换为数值质量分或虚构盲评"
+  },
+  "datasetDirectory": "data/generated/user-demonstration-01-v2",
+  "trainingStarted": false
+}
