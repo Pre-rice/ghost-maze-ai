@@ -2,12 +2,14 @@ import { analyzeMap } from './analyze.js';
 import { applyEdit, proposeEdit, seededRandom } from './edits.js';
 import { createReferenceEnvironment } from '../reference/environment.js';
 import { compileRestrictions } from '../search/restrictions.js';
+import { assertButtonAttachments } from './button-support.js';
 
 /** 可复现的有限编辑实验；这是机制证据档案，尚无学得的质量奖励。 */
 export function searchDesigns(map, { familyId, seed = 1, iterations = 24, maxDepth = 3, hypotheses = [], budget = {} } = {}) {
     if (map.editorMode !== 'free' || map.layerCount !== 1 || map.layers?.length) throw new TypeError('编辑搜索目前只支持顶层单层 free 地图');
     if (typeof familyId !== 'string' || !familyId.trim()) throw new TypeError('必须提供 familyId');
     if (!Number.isSafeInteger(iterations) || iterations < 0 || !Number.isSafeInteger(maxDepth) || maxDepth < 1) throw new TypeError('非法搜索预算');
+    assertButtonAttachments(map);
     const random = seededRandom(seed), root = analyzeMap(map, hypotheses, budget);
     const nodes = [{ id: 0, parentId: null, parentMapId: null, mapId: root.mapId, depth: 0, edit: null, map: structuredClone(map), analysis: root }];
     const seen = new Map([[root.mapId, 0]]), attempts = [], buckets = new Map();
@@ -36,7 +38,7 @@ export function searchDesigns(map, { familyId, seed = 1, iterations = 24, maxDep
         nodes.push(node); seen.set(mapId, node.id); archive(node);
         attempts.push({ ...record, status: node.analysis ? node.analysis.baseline.status : 'analysis_error', nodeId: node.id, mapId });
     }
-    return { schemaVersion: 1, generatorVersion: 'free-edit-v1', evaluatorVersion: root.evaluatorVersion,
+    return { schemaVersion: 1, generatorVersion: 'free-edit-v2', evaluatorVersion: root.evaluatorVersion,
         ruleset: root.ruleset, familyId, rootMapId: root.mapId, seed, iterations, maxDepth, budget, hypotheses,
         humanPreference: null, nodes, attempts, archive: [...buckets].map(([descriptor, nodeId]) => ({ descriptor: JSON.parse(descriptor), nodeId })) };
 }

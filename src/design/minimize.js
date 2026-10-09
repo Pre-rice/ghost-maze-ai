@@ -1,6 +1,7 @@
 import { createReferenceEnvironment } from '../reference/environment.js';
 import { WALL_TYPES as W } from '../reference/engine.js';
 import { applyEdit } from './edits.js';
+import { assertButtonAttachments } from './button-support.js';
 
 function edits(map) {
     const proposals = [];
@@ -36,6 +37,7 @@ const lower = (a, b) => { for (let i = 0; i < a.length; i++) if (a[i] !== b[i]) 
 
 /** 保留显式机制条件的逐项精简；最后一轮给出声明编辑集合内的局部不可简化证据。 */
 export function minimizeDesign(source, evaluate) {
+    assertButtonAttachments(source);
     let map = structuredClone(source), evaluation = evaluate(map);
     if (!evaluation.accepted) throw new Error('初始候选不满足保留条件');
     const lineage = [], passes = [];

@@ -1,7 +1,8 @@
 import { createReferenceEnvironment } from '../reference/environment.js';
 import { WALL_TYPES as W } from '../reference/engine.js';
+import { assertButtonAttachments } from './button-support.js';
 
-/** 第一版编辑器限定单层 free 原始地图；每次编辑复制输入，再交权威入口校验。 */
+/** 编辑器限定单层 free 原始地图；复制输入后校验物理数据与按钮依附。 */
 export function applyEdit(source, edit) {
     if (source.editorMode !== 'free' || source.layerCount !== 1 || source.layers?.length) throw new TypeError('编辑器目前只支持顶层单层 free 地图');
     const map = structuredClone(source), { x, y } = edit;
@@ -38,6 +39,7 @@ export function applyEdit(source, edit) {
         map.vWalls[y][x + 1] = { type: W.SOLID, keys: 0 }; set(map.vWalls[y][x + 1], map.activeCells[y][x + 1]);
     } else throw new TypeError('未知编辑类型');
     createReferenceEnvironment(map);
+    assertButtonAttachments(map);
     return map;
 }
 

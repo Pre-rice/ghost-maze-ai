@@ -1,5 +1,7 @@
 # 新单层候选（2026-10-09）
 
+**旧版已撤回**：B 按钮悬空，未通过墙面依附合法性。请使用[修正版入口](../borrowed-shelter-wallfix-20261009/README.md)。下面的地图、验证和精简说明保留为原生成档案，不代表合法性验收，也不直接适用于修正版。
+
 [开始试玩](http://127.0.0.1:4188/game/?map=FcGxDYNAEATA3ds3IkBygFzQHznRn2jAdZBRCsmV4lKcOLZkJMOM-l43PEV23XC_wAwqpkIUGiqLuaQK2ZS5x5zLe_-239EecWp5WmP5vHI9wnOLCIxW6axwOCc4nM4_)
 
 24 个活动格、单层、两只鬼、两把钥匙、四个按钮，默认体力 100，无玻璃和单向门。沿用游戏已有规则。可按需要打开已有的调试视野观察全图；解法先不展开。
