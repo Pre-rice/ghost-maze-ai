@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "source": "user_chat",
+  "date": "2026-10-09",
+  "scope": "map_observation",
+  "map": {
+    "mapId": "6abf5ea76afcb3d6d911ed8e8a4e98d5a34d09df9f9e64e14816604923ffd713",
+    "decodedMapId": "02a9afadced9e97c5be598e3071c56fbf828e53df6dfd611c66622722d005e53",
+    "familyId": "permanent-return-one-way-relay-v1",
+    "splitGroup": "dual-loop-relay-v1"
+  },
+  "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+  "verbatim": "不错的图，通过恰当的方式把两个鬼都困住，关键是要把第一个鬼转移困住的位置，才能让第二个鬼被困住。但是想出解法是不难的，因为地图上的元素指向性比较明显，那个单向门显然是用来甩开鬼的，可以比较线性地想出思路。你可以试着搞点难的图，不要怕太难我解不开。注意，难不是无谓的复杂，要是那种必须通过巧妙的解法才能解开的难。",
+  "explicitSignals": {
+    "played": true,
+    "overallAssessment": "不错的图，但想出解法不难",
+    "identifiedRelation": "转移第一只鬼的困住位置，才能困住第二只鬼",
+    "diagnosis": "元素指向明显，单向门甩鬼的用途明显，可线性推导",
+    "nextDirection": "允许更难，但须靠巧妙解法，避免无谓复杂"
+  },
+  "pairwisePreference": null,
+  "numericRating": null,
+  "targetQualityPositive": false,
+  "recording": {
+    "id": "cde0ed27-e36d-4a1b-992d-72284501777d",
+    "sourceFile": "data/solutions/cde0ed27-e36d-4a1b-992d-72284501777d.json",
+    "sourceSha256": "3690d844a17084ab3a73d9439cac2051bcc8d4533e62539d87fe26011ed62391",
+    "verified": {
+      "id": "cde0ed27-e36d-4a1b-992d-72284501777d",
+      "sha256": "3690d844a17084ab3a73d9439cac2051bcc8d4533e62539d87fe26011ed62391",
+      "totalActions": 112,
+      "movementCost": 50,
+      "cleanWin": false,
+      "won": true,
+      "deathCount": 3,
+      "reviveCount": 3,
+      "finalBranch": {
+        "actions": 67,
+        "movementCost": 50,
+        "buttonWord": "BAAAAAAAAABAAAABA",
+        "won": true,
+        "matchesCertificate": false
+      }
+    }
+  },
+  "interpretationBoundary": "定性肯定与达到精妙质量目标分开；录制只覆盖保留分支，不推断全部尝试次数、思考时间或从复活数反推认知难度；生成证据保持原样，不自动进入训练。"
+}
