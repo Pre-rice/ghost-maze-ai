@@ -1,0 +1,4515 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+  "mapId": "6984252aa1888e9fe79fdc3a967bc277aa4292dab5163ae116afa4f81790d39b",
+  "decodedMapId": "55c9e888052fb72030003416fcd06891afcf4d432e95a72bb5cd83f04adda1ad",
+  "familyId": "single-station-relay-v1",
+  "splitGroup": "dual-loop-relay-v1",
+  "baseline": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+    "mapId": "6984252aa1888e9fe79fdc3a967bc277aa4292dab5163ae116afa4f81790d39b",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "withGhosts": true,
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "R",
+        "U",
+        "U",
+        "U",
+        "L",
+        "R",
+        "D",
+        "D",
+        "D",
+        "D",
+        "U",
+        "U",
+        "U",
+        "D",
+        "D",
+        "D",
+        "L",
+        "L",
+        "U",
+        "U",
+        "R",
+        "D",
+        "R",
+        "D",
+        "R",
+        "L",
+        "L",
+        "U",
+        "U",
+        "U",
+        "L"
+      ],
+      "totalActions": 31,
+      "movementCost": 28
+    },
+    "search": {
+      "algorithm": "astar",
+      "expanded": 87,
+      "transitions": 435,
+      "discovered": 90,
+      "resourcePruned": 45,
+      "exhausted": false,
+      "elapsedMs": 4.0367999999999995,
+      "budget": {
+        "nodeBudget": 180000,
+        "stateBudget": 220000,
+        "budgetMs": 5000
+      }
+    }
+  },
+  "reference": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+    "mapId": "6984252aa1888e9fe79fdc3a967bc277aa4292dab5163ae116afa4f81790d39b",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "R",
+        "U",
+        "U",
+        "U",
+        "L",
+        "R",
+        "D",
+        "D",
+        "D",
+        "D",
+        "U",
+        "U",
+        "U",
+        "D",
+        "D",
+        "D",
+        "L",
+        "L",
+        "U",
+        "U",
+        "R",
+        "D",
+        "R",
+        "D",
+        "R",
+        "L",
+        "L",
+        "U",
+        "U",
+        "U",
+        "L"
+      ],
+      "totalActions": 31,
+      "movementCost": 28
+    },
+    "search": {
+      "expanded": 645,
+      "transitions": 3224,
+      "discovered": 687,
+      "exhausted": false,
+      "elapsedMs": 487.42830000000004,
+      "budget": {
+        "nodeBudget": 120000,
+        "stateBudget": 150000,
+        "budgetMs": 30000
+      }
+    }
+  },
+  "proofs": [
+    {
+      "condition": {
+        "id": "temporary_center_before_B",
+        "sequence": [
+          {
+            "type": "all",
+            "events": [
+              {
+                "type": "press",
+                "letter": "B"
+              },
+              {
+                "type": "ghost_at",
+                "layer": 0,
+                "x": 3,
+                "y": 2
+              },
+              {
+                "type": "gate",
+                "layer": 0,
+                "axis": "h",
+                "x": 3,
+                "y": 2,
+                "state": "closed"
+              }
+            ]
+          }
+        ]
+      },
+      "quick": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+        "mapId": "6984252aa1888e9fe79fdc3a967bc277aa4292dab5163ae116afa4f81790d39b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": [
+            {
+              "id": "temporary_center_before_B",
+              "sequence": [
+                {
+                  "type": "all",
+                  "events": [
+                    {
+                      "type": "press",
+                      "letter": "B"
+                    },
+                    {
+                      "type": "ghost_at",
+                      "layer": 0,
+                      "x": 3,
+                      "y": 2
+                    },
+                    {
+                      "type": "gate",
+                      "layer": 0,
+                      "axis": "h",
+                      "x": 3,
+                      "y": 2,
+                      "state": "closed"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "algorithm": "astar",
+          "expanded": 12,
+          "transitions": 60,
+          "discovered": 12,
+          "resourcePruned": 6,
+          "exhausted": true,
+          "elapsedMs": 0.4660999999999831,
+          "budget": {
+            "nodeBudget": 180000,
+            "stateBudget": 220000,
+            "budgetMs": 5000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+        "mapId": "6984252aa1888e9fe79fdc3a967bc277aa4292dab5163ae116afa4f81790d39b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": [
+            {
+              "id": "temporary_center_before_B",
+              "sequence": [
+                {
+                  "type": "all",
+                  "events": [
+                    {
+                      "type": "press",
+                      "letter": "B"
+                    },
+                    {
+                      "type": "ghost_at",
+                      "layer": 0,
+                      "x": 3,
+                      "y": 2
+                    },
+                    {
+                      "type": "gate",
+                      "layer": 0,
+                      "axis": "h",
+                      "x": 3,
+                      "y": 2,
+                      "state": "closed"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "expanded": 578,
+          "transitions": 2890,
+          "discovered": 578,
+          "exhausted": true,
+          "elapsedMs": 414.3525000000001,
+          "budget": {
+            "nodeBudget": 120000,
+            "stateBudget": 150000,
+            "budgetMs": 30000
+          }
+        }
+      }
+    },
+    {
+      "condition": {
+        "id": "temporary_then_upper_moves",
+        "sequence": [
+          {
+            "type": "all",
+            "events": [
+              {
+                "type": "press",
+                "letter": "B"
+              },
+              {
+                "type": "ghost_at",
+                "layer": 0,
+                "x": 3,
+                "y": 2
+              },
+              {
+                "type": "gate",
+                "layer": 0,
+                "axis": "h",
+                "x": 3,
+                "y": 2,
+                "state": "closed"
+              }
+            ]
+          },
+          {
+            "type": "ghost_cross",
+            "layer": 0,
+            "index": 0,
+            "from": {
+              "x": 2,
+              "y": 1
+            },
+            "to": {
+              "x": 3,
+              "y": 1
+            }
+          }
+        ]
+      },
+      "quick": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+        "mapId": "6984252aa1888e9fe79fdc3a967bc277aa4292dab5163ae116afa4f81790d39b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": [
+            {
+              "id": "temporary_then_upper_moves",
+              "sequence": [
+                {
+                  "type": "all",
+                  "events": [
+                    {
+                      "type": "press",
+                      "letter": "B"
+                    },
+                    {
+                      "type": "ghost_at",
+                      "layer": 0,
+                      "x": 3,
+                      "y": 2
+                    },
+                    {
+                      "type": "gate",
+                      "layer": 0,
+                      "axis": "h",
+                      "x": 3,
+                      "y": 2,
+                      "state": "closed"
+                    }
+                  ]
+                },
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 0,
+                  "from": {
+                    "x": 2,
+                    "y": 1
+                  },
+                  "to": {
+                    "x": 3,
+                    "y": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "algorithm": "astar",
+          "expanded": 59,
+          "transitions": 295,
+          "discovered": 59,
+          "resourcePruned": 30,
+          "exhausted": true,
+          "elapsedMs": 1.3114999999999952,
+          "budget": {
+            "nodeBudget": 180000,
+            "stateBudget": 220000,
+            "budgetMs": 5000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+        "mapId": "6984252aa1888e9fe79fdc3a967bc277aa4292dab5163ae116afa4f81790d39b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": [
+            {
+              "id": "temporary_then_upper_moves",
+              "sequence": [
+                {
+                  "type": "all",
+                  "events": [
+                    {
+                      "type": "press",
+                      "letter": "B"
+                    },
+                    {
+                      "type": "ghost_at",
+                      "layer": 0,
+                      "x": 3,
+                      "y": 2
+                    },
+                    {
+                      "type": "gate",
+                      "layer": 0,
+                      "axis": "h",
+                      "x": 3,
+                      "y": 2,
+                      "state": "closed"
+                    }
+                  ]
+                },
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 0,
+                  "from": {
+                    "x": 2,
+                    "y": 1
+                  },
+                  "to": {
+                    "x": 3,
+                    "y": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "expanded": 2638,
+          "transitions": 13190,
+          "discovered": 2638,
+          "exhausted": true,
+          "elapsedMs": 1887.1608999999999,
+          "budget": {
+            "nodeBudget": 120000,
+            "stateBudget": 150000,
+            "budgetMs": 30000
+          }
+        }
+      }
+    },
+    {
+      "condition": {
+        "id": "leave_center_after_upper_moves",
+        "sequence": [
+          {
+            "type": "ghost_cross",
+            "layer": 0,
+            "index": 0,
+            "from": {
+              "x": 2,
+              "y": 1
+            },
+            "to": {
+              "x": 3,
+              "y": 1
+            }
+          },
+          {
+            "type": "ghost_cross",
+            "layer": 0,
+            "index": 1,
+            "from": {
+              "x": 3,
+              "y": 2
+            },
+            "to": {
+              "x": 3,
+              "y": 3
+            }
+          }
+        ]
+      },
+      "quick": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+        "mapId": "6984252aa1888e9fe79fdc3a967bc277aa4292dab5163ae116afa4f81790d39b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": [
+            {
+              "id": "leave_center_after_upper_moves",
+              "sequence": [
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 0,
+                  "from": {
+                    "x": 2,
+                    "y": 1
+                  },
+                  "to": {
+                    "x": 3,
+                    "y": 1
+                  }
+                },
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 1,
+                  "from": {
+                    "x": 3,
+                    "y": 2
+                  },
+                  "to": {
+                    "x": 3,
+                    "y": 3
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "algorithm": "astar",
+          "expanded": 58,
+          "transitions": 290,
+          "discovered": 58,
+          "resourcePruned": 31,
+          "exhausted": true,
+          "elapsedMs": 1.141999999999996,
+          "budget": {
+            "nodeBudget": 180000,
+            "stateBudget": 220000,
+            "budgetMs": 5000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+        "mapId": "6984252aa1888e9fe79fdc3a967bc277aa4292dab5163ae116afa4f81790d39b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": [
+            {
+              "id": "leave_center_after_upper_moves",
+              "sequence": [
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 0,
+                  "from": {
+                    "x": 2,
+                    "y": 1
+                  },
+                  "to": {
+                    "x": 3,
+                    "y": 1
+                  }
+                },
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 1,
+                  "from": {
+                    "x": 3,
+                    "y": 2
+                  },
+                  "to": {
+                    "x": 3,
+                    "y": 3
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "expanded": 2573,
+          "transitions": 12865,
+          "discovered": 2573,
+          "exhausted": true,
+          "elapsedMs": 2157.4237,
+          "budget": {
+            "nodeBudget": 120000,
+            "stateBudget": 150000,
+            "budgetMs": 30000
+          }
+        }
+      }
+    },
+    {
+      "condition": {
+        "id": "final_shared_seal",
+        "sequence": [
+          {
+            "type": "all",
+            "events": [
+              {
+                "type": "press",
+                "letter": "A"
+              },
+              {
+                "type": "ghost_at",
+                "layer": 0,
+                "x": 4,
+                "y": 3
+              },
+              {
+                "type": "ghost_at",
+                "layer": 0,
+                "x": 3,
+                "y": 1
+              },
+              {
+                "type": "gate",
+                "layer": 0,
+                "axis": "h",
+                "x": 4,
+                "y": 4,
+                "state": "closed"
+              }
+            ]
+          }
+        ]
+      },
+      "quick": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+        "mapId": "6984252aa1888e9fe79fdc3a967bc277aa4292dab5163ae116afa4f81790d39b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": [
+            {
+              "id": "final_shared_seal",
+              "sequence": [
+                {
+                  "type": "all",
+                  "events": [
+                    {
+                      "type": "press",
+                      "letter": "A"
+                    },
+                    {
+                      "type": "ghost_at",
+                      "layer": 0,
+                      "x": 4,
+                      "y": 3
+                    },
+                    {
+                      "type": "ghost_at",
+                      "layer": 0,
+                      "x": 3,
+                      "y": 1
+                    },
+                    {
+                      "type": "gate",
+                      "layer": 0,
+                      "axis": "h",
+                      "x": 4,
+                      "y": 4,
+                      "state": "closed"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "algorithm": "astar",
+          "expanded": 81,
+          "transitions": 405,
+          "discovered": 81,
+          "resourcePruned": 40,
+          "exhausted": true,
+          "elapsedMs": 1.8541000000000167,
+          "budget": {
+            "nodeBudget": 180000,
+            "stateBudget": 220000,
+            "budgetMs": 5000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+        "mapId": "6984252aa1888e9fe79fdc3a967bc277aa4292dab5163ae116afa4f81790d39b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": [
+            {
+              "id": "final_shared_seal",
+              "sequence": [
+                {
+                  "type": "all",
+                  "events": [
+                    {
+                      "type": "press",
+                      "letter": "A"
+                    },
+                    {
+                      "type": "ghost_at",
+                      "layer": 0,
+                      "x": 4,
+                      "y": 3
+                    },
+                    {
+                      "type": "ghost_at",
+                      "layer": 0,
+                      "x": 3,
+                      "y": 1
+                    },
+                    {
+                      "type": "gate",
+                      "layer": 0,
+                      "axis": "h",
+                      "x": 4,
+                      "y": 4,
+                      "state": "closed"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "expanded": 3510,
+          "transitions": 17550,
+          "discovered": 3510,
+          "exhausted": true,
+          "elapsedMs": 2921.7947000000004,
+          "budget": {
+            "nodeBudget": 120000,
+            "stateBudget": 150000,
+            "budgetMs": 30000
+          }
+        }
+      }
+    },
+    {
+      "condition": {
+        "id": "A_reused",
+        "sequence": [
+          {
+            "type": "press",
+            "letter": "A"
+          },
+          {
+            "type": "press",
+            "letter": "A"
+          }
+        ]
+      },
+      "quick": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+        "mapId": "6984252aa1888e9fe79fdc3a967bc277aa4292dab5163ae116afa4f81790d39b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": [
+            {
+              "id": "A_reused",
+              "sequence": [
+                {
+                  "type": "press",
+                  "letter": "A"
+                },
+                {
+                  "type": "press",
+                  "letter": "A"
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "algorithm": "astar",
+          "expanded": 63,
+          "transitions": 315,
+          "discovered": 63,
+          "resourcePruned": 29,
+          "exhausted": true,
+          "elapsedMs": 0.9756000000000142,
+          "budget": {
+            "nodeBudget": 180000,
+            "stateBudget": 220000,
+            "budgetMs": 5000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+        "mapId": "6984252aa1888e9fe79fdc3a967bc277aa4292dab5163ae116afa4f81790d39b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": [
+            {
+              "id": "A_reused",
+              "sequence": [
+                {
+                  "type": "press",
+                  "letter": "A"
+                },
+                {
+                  "type": "press",
+                  "letter": "A"
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "expanded": 2690,
+          "transitions": 13450,
+          "discovered": 2690,
+          "exhausted": true,
+          "elapsedMs": 2269.4624000000003,
+          "budget": {
+            "nodeBudget": 120000,
+            "stateBudget": 150000,
+            "budgetMs": 30000
+          }
+        }
+      }
+    }
+  ],
+  "trace": [
+    {
+      "token": "R",
+      "label": "按 A（原地推进一回合）",
+      "button": "A",
+      "playerBefore": [
+        0,
+        4,
+        4
+      ],
+      "playerAfter": [
+        0,
+        4,
+        4
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "gateChanges": [
+        {
+          "layer": 0,
+          "axis": "h",
+          "x": 3,
+          "y": 4,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "layer": 0,
+          "axis": "h",
+          "x": 4,
+          "y": 4,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "layer": 0,
+          "axis": "v",
+          "x": 3,
+          "y": 1,
+          "letter": "A",
+          "state": "open"
+        }
+      ],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "U",
+      "label": "上",
+      "button": null,
+      "playerBefore": [
+        0,
+        4,
+        4
+      ],
+      "playerAfter": [
+        0,
+        4,
+        3
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "U",
+      "label": "上",
+      "button": null,
+      "playerBefore": [
+        0,
+        4,
+        3
+      ],
+      "playerAfter": [
+        0,
+        4,
+        2
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "U",
+      "label": "上",
+      "button": null,
+      "playerBefore": [
+        0,
+        4,
+        2
+      ],
+      "playerAfter": [
+        0,
+        4,
+        1
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "L",
+      "label": "左",
+      "button": null,
+      "playerBefore": [
+        0,
+        4,
+        1
+      ],
+      "playerAfter": [
+        0,
+        3,
+        1
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "R",
+      "label": "右",
+      "button": null,
+      "playerBefore": [
+        0,
+        3,
+        1
+      ],
+      "playerAfter": [
+        0,
+        4,
+        1
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "D",
+      "label": "下",
+      "button": null,
+      "playerBefore": [
+        0,
+        4,
+        1
+      ],
+      "playerAfter": [
+        0,
+        4,
+        2
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "D",
+      "label": "下",
+      "button": null,
+      "playerBefore": [
+        0,
+        4,
+        2
+      ],
+      "playerAfter": [
+        0,
+        4,
+        3
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "D",
+      "label": "下",
+      "button": null,
+      "playerBefore": [
+        0,
+        4,
+        3
+      ],
+      "playerAfter": [
+        0,
+        4,
+        4
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "D",
+      "label": "按 B（原地推进一回合）",
+      "button": "B",
+      "playerBefore": [
+        0,
+        4,
+        4
+      ],
+      "playerAfter": [
+        0,
+        4,
+        4
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "gateChanges": [
+        {
+          "layer": 0,
+          "axis": "h",
+          "x": 3,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "layer": 0,
+          "axis": "v",
+          "x": 2,
+          "y": 1,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "layer": 0,
+          "axis": "v",
+          "x": 4,
+          "y": 4,
+          "letter": "B",
+          "state": "open"
+        }
+      ],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "U",
+      "label": "上",
+      "button": null,
+      "playerBefore": [
+        0,
+        4,
+        4
+      ],
+      "playerAfter": [
+        0,
+        4,
+        3
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "U",
+      "label": "上",
+      "button": null,
+      "playerBefore": [
+        0,
+        4,
+        3
+      ],
+      "playerAfter": [
+        0,
+        4,
+        2
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "U",
+      "label": "上",
+      "button": null,
+      "playerBefore": [
+        0,
+        4,
+        2
+      ],
+      "playerAfter": [
+        0,
+        4,
+        1
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "D",
+      "label": "下",
+      "button": null,
+      "playerBefore": [
+        0,
+        4,
+        1
+      ],
+      "playerAfter": [
+        0,
+        4,
+        2
+      ],
+      "ghostsBefore": [
+        [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "D",
+      "label": "下",
+      "button": null,
+      "playerBefore": [
+        0,
+        4,
+        2
+      ],
+      "playerAfter": [
+        0,
+        4,
+        3
+      ],
+      "ghostsBefore": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "D",
+      "label": "下",
+      "button": null,
+      "playerBefore": [
+        0,
+        4,
+        3
+      ],
+      "playerAfter": [
+        0,
+        4,
+        4
+      ],
+      "ghostsBefore": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "L",
+      "label": "左",
+      "button": null,
+      "playerBefore": [
+        0,
+        4,
+        4
+      ],
+      "playerAfter": [
+        0,
+        3,
+        4
+      ],
+      "ghostsBefore": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "L",
+      "label": "左",
+      "button": null,
+      "playerBefore": [
+        0,
+        3,
+        4
+      ],
+      "playerAfter": [
+        0,
+        2,
+        4
+      ],
+      "ghostsBefore": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "U",
+      "label": "上",
+      "button": null,
+      "playerBefore": [
+        0,
+        2,
+        4
+      ],
+      "playerAfter": [
+        0,
+        2,
+        3
+      ],
+      "ghostsBefore": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "U",
+      "label": "上",
+      "button": null,
+      "playerBefore": [
+        0,
+        2,
+        3
+      ],
+      "playerAfter": [
+        0,
+        2,
+        2
+      ],
+      "ghostsBefore": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "R",
+      "label": "右",
+      "button": null,
+      "playerBefore": [
+        0,
+        2,
+        2
+      ],
+      "playerAfter": [
+        0,
+        3,
+        2
+      ],
+      "ghostsBefore": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "D",
+      "label": "下",
+      "button": null,
+      "playerBefore": [
+        0,
+        3,
+        2
+      ],
+      "playerAfter": [
+        0,
+        3,
+        3
+      ],
+      "ghostsBefore": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "R",
+      "label": "右",
+      "button": null,
+      "playerBefore": [
+        0,
+        3,
+        3
+      ],
+      "playerAfter": [
+        0,
+        4,
+        3
+      ],
+      "ghostsBefore": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "D",
+      "label": "下",
+      "button": null,
+      "playerBefore": [
+        0,
+        4,
+        3
+      ],
+      "playerAfter": [
+        0,
+        4,
+        4
+      ],
+      "ghostsBefore": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "R",
+      "label": "按 A（原地推进一回合）",
+      "button": "A",
+      "playerBefore": [
+        0,
+        4,
+        4
+      ],
+      "playerAfter": [
+        0,
+        4,
+        4
+      ],
+      "ghostsBefore": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      ],
+      "gateChanges": [
+        {
+          "layer": 0,
+          "axis": "h",
+          "x": 3,
+          "y": 4,
+          "letter": "A",
+          "state": "closed"
+        },
+        {
+          "layer": 0,
+          "axis": "h",
+          "x": 4,
+          "y": 4,
+          "letter": "A",
+          "state": "closed"
+        },
+        {
+          "layer": 0,
+          "axis": "v",
+          "x": 3,
+          "y": 1,
+          "letter": "A",
+          "state": "closed"
+        }
+      ],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "L",
+      "label": "左",
+      "button": null,
+      "playerBefore": [
+        0,
+        4,
+        4
+      ],
+      "playerAfter": [
+        0,
+        3,
+        4
+      ],
+      "ghostsBefore": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "L",
+      "label": "左",
+      "button": null,
+      "playerBefore": [
+        0,
+        3,
+        4
+      ],
+      "playerAfter": [
+        0,
+        2,
+        4
+      ],
+      "ghostsBefore": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "U",
+      "label": "上",
+      "button": null,
+      "playerBefore": [
+        0,
+        2,
+        4
+      ],
+      "playerAfter": [
+        0,
+        2,
+        3
+      ],
+      "ghostsBefore": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "U",
+      "label": "上",
+      "button": null,
+      "playerBefore": [
+        0,
+        2,
+        3
+      ],
+      "playerAfter": [
+        0,
+        2,
+        2
+      ],
+      "ghostsBefore": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "U",
+      "label": "上",
+      "button": null,
+      "playerBefore": [
+        0,
+        2,
+        2
+      ],
+      "playerAfter": [
+        0,
+        2,
+        1
+      ],
+      "ghostsBefore": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "L",
+      "label": "左",
+      "button": null,
+      "playerBefore": [
+        0,
+        2,
+        1
+      ],
+      "playerAfter": [
+        0,
+        1,
+        1
+      ],
+      "ghostsBefore": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": true
+    }
+  ],
+  "naturalPlans": [
+    {
+      "name": "开A后立即按B",
+      "attemptedActions": [
+        "R",
+        "D"
+      ],
+      "executedActions": 2,
+      "steps": [
+        {
+          "token": "R",
+          "label": "按 A（原地推进一回合）",
+          "button": "A",
+          "playerBefore": [
+            0,
+            4,
+            4
+          ],
+          "playerAfter": [
+            0,
+            4,
+            4
+          ],
+          "ghostsBefore": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "gateChanges": [
+            {
+              "layer": 0,
+              "axis": "h",
+              "x": 3,
+              "y": 4,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "layer": 0,
+              "axis": "h",
+              "x": 4,
+              "y": 4,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "layer": 0,
+              "axis": "v",
+              "x": 3,
+              "y": 1,
+              "letter": "A",
+              "state": "open"
+            }
+          ],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "D",
+          "label": "按 B（原地推进一回合）",
+          "button": "B",
+          "playerBefore": [
+            0,
+            4,
+            4
+          ],
+          "playerAfter": [
+            0,
+            4,
+            4
+          ],
+          "ghostsBefore": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                4,
+                4
+              ]
+            ]
+          ],
+          "gateChanges": [
+            {
+              "layer": 0,
+              "axis": "h",
+              "x": 3,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "layer": 0,
+              "axis": "v",
+              "x": 2,
+              "y": 1,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "layer": 0,
+              "axis": "v",
+              "x": 4,
+              "y": 4,
+              "letter": "B",
+              "state": "open"
+            }
+          ],
+          "isDead": true,
+          "isWon": false
+        }
+      ]
+    },
+    {
+      "name": "只绕上方通路后直接按B",
+      "attemptedActions": [
+        "R",
+        "U",
+        "U",
+        "U",
+        "D",
+        "D",
+        "D",
+        "D"
+      ],
+      "executedActions": 8,
+      "steps": [
+        {
+          "token": "R",
+          "label": "按 A（原地推进一回合）",
+          "button": "A",
+          "playerBefore": [
+            0,
+            4,
+            4
+          ],
+          "playerAfter": [
+            0,
+            4,
+            4
+          ],
+          "ghostsBefore": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "gateChanges": [
+            {
+              "layer": 0,
+              "axis": "h",
+              "x": 3,
+              "y": 4,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "layer": 0,
+              "axis": "h",
+              "x": 4,
+              "y": 4,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "layer": 0,
+              "axis": "v",
+              "x": 3,
+              "y": 1,
+              "letter": "A",
+              "state": "open"
+            }
+          ],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "U",
+          "label": "上",
+          "button": null,
+          "playerBefore": [
+            0,
+            4,
+            4
+          ],
+          "playerAfter": [
+            0,
+            4,
+            3
+          ],
+          "ghostsBefore": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "U",
+          "label": "上",
+          "button": null,
+          "playerBefore": [
+            0,
+            4,
+            3
+          ],
+          "playerAfter": [
+            0,
+            4,
+            2
+          ],
+          "ghostsBefore": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "U",
+          "label": "上",
+          "button": null,
+          "playerBefore": [
+            0,
+            4,
+            2
+          ],
+          "playerAfter": [
+            0,
+            4,
+            1
+          ],
+          "ghostsBefore": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "D",
+          "label": "下",
+          "button": null,
+          "playerBefore": [
+            0,
+            4,
+            1
+          ],
+          "playerAfter": [
+            0,
+            4,
+            2
+          ],
+          "ghostsBefore": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "D",
+          "label": "下",
+          "button": null,
+          "playerBefore": [
+            0,
+            4,
+            2
+          ],
+          "playerAfter": [
+            0,
+            4,
+            3
+          ],
+          "ghostsBefore": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "D",
+          "label": "下",
+          "button": null,
+          "playerBefore": [
+            0,
+            4,
+            3
+          ],
+          "playerAfter": [
+            0,
+            4,
+            4
+          ],
+          "ghostsBefore": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "D",
+          "label": "按 B（原地推进一回合）",
+          "button": "B",
+          "playerBefore": [
+            0,
+            4,
+            4
+          ],
+          "playerAfter": [
+            0,
+            4,
+            4
+          ],
+          "ghostsBefore": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                4,
+                4
+              ]
+            ]
+          ],
+          "gateChanges": [
+            {
+              "layer": 0,
+              "axis": "h",
+              "x": 3,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "layer": 0,
+              "axis": "v",
+              "x": 2,
+              "y": 1,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "layer": 0,
+              "axis": "v",
+              "x": 4,
+              "y": 4,
+              "letter": "B",
+              "state": "open"
+            }
+          ],
+          "isDead": true,
+          "isWon": false
+        }
+      ]
+    },
+    {
+      "name": "引出上鬼后直接关A撤离",
+      "attemptedActions": [
+        "R",
+        "U",
+        "U",
+        "U",
+        "L",
+        "R",
+        "D",
+        "D",
+        "D",
+        "D",
+        "U",
+        "U",
+        "U",
+        "D",
+        "D",
+        "D",
+        "R",
+        "L",
+        "L",
+        "U",
+        "U",
+        "U",
+        "L"
+      ],
+      "executedActions": 21,
+      "steps": [
+        {
+          "token": "R",
+          "label": "按 A（原地推进一回合）",
+          "button": "A",
+          "playerBefore": [
+            0,
+            4,
+            4
+          ],
+          "playerAfter": [
+            0,
+            4,
+            4
+          ],
+          "ghostsBefore": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "gateChanges": [
+            {
+              "layer": 0,
+              "axis": "h",
+              "x": 3,
+              "y": 4,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "layer": 0,
+              "axis": "h",
+              "x": 4,
+              "y": 4,
+              "letter": "A",
+              "state": "open"
+            },
+            {
+              "layer": 0,
+              "axis": "v",
+              "x": 3,
+              "y": 1,
+              "letter": "A",
+              "state": "open"
+            }
+          ],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "U",
+          "label": "上",
+          "button": null,
+          "playerBefore": [
+            0,
+            4,
+            4
+          ],
+          "playerAfter": [
+            0,
+            4,
+            3
+          ],
+          "ghostsBefore": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "U",
+          "label": "上",
+          "button": null,
+          "playerBefore": [
+            0,
+            4,
+            3
+          ],
+          "playerAfter": [
+            0,
+            4,
+            2
+          ],
+          "ghostsBefore": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "U",
+          "label": "上",
+          "button": null,
+          "playerBefore": [
+            0,
+            4,
+            2
+          ],
+          "playerAfter": [
+            0,
+            4,
+            1
+          ],
+          "ghostsBefore": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "L",
+          "label": "左",
+          "button": null,
+          "playerBefore": [
+            0,
+            4,
+            1
+          ],
+          "playerAfter": [
+            0,
+            3,
+            1
+          ],
+          "ghostsBefore": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                3
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "R",
+          "label": "右",
+          "button": null,
+          "playerBefore": [
+            0,
+            3,
+            1
+          ],
+          "playerAfter": [
+            0,
+            4,
+            1
+          ],
+          "ghostsBefore": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                3
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "D",
+          "label": "下",
+          "button": null,
+          "playerBefore": [
+            0,
+            4,
+            1
+          ],
+          "playerAfter": [
+            0,
+            4,
+            2
+          ],
+          "ghostsBefore": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "D",
+          "label": "下",
+          "button": null,
+          "playerBefore": [
+            0,
+            4,
+            2
+          ],
+          "playerAfter": [
+            0,
+            4,
+            3
+          ],
+          "ghostsBefore": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "D",
+          "label": "下",
+          "button": null,
+          "playerBefore": [
+            0,
+            4,
+            3
+          ],
+          "playerAfter": [
+            0,
+            4,
+            4
+          ],
+          "ghostsBefore": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "D",
+          "label": "按 B（原地推进一回合）",
+          "button": "B",
+          "playerBefore": [
+            0,
+            4,
+            4
+          ],
+          "playerAfter": [
+            0,
+            4,
+            4
+          ],
+          "ghostsBefore": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "gateChanges": [
+            {
+              "layer": 0,
+              "axis": "h",
+              "x": 3,
+              "y": 2,
+              "letter": "B",
+              "state": "closed"
+            },
+            {
+              "layer": 0,
+              "axis": "v",
+              "x": 2,
+              "y": 1,
+              "letter": "B",
+              "state": "open"
+            },
+            {
+              "layer": 0,
+              "axis": "v",
+              "x": 4,
+              "y": 4,
+              "letter": "B",
+              "state": "open"
+            }
+          ],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "U",
+          "label": "上",
+          "button": null,
+          "playerBefore": [
+            0,
+            4,
+            4
+          ],
+          "playerAfter": [
+            0,
+            4,
+            3
+          ],
+          "ghostsBefore": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "U",
+          "label": "上",
+          "button": null,
+          "playerBefore": [
+            0,
+            4,
+            3
+          ],
+          "playerAfter": [
+            0,
+            4,
+            2
+          ],
+          "ghostsBefore": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "U",
+          "label": "上",
+          "button": null,
+          "playerBefore": [
+            0,
+            4,
+            2
+          ],
+          "playerAfter": [
+            0,
+            4,
+            1
+          ],
+          "ghostsBefore": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "D",
+          "label": "下",
+          "button": null,
+          "playerBefore": [
+            0,
+            4,
+            1
+          ],
+          "playerAfter": [
+            0,
+            4,
+            2
+          ],
+          "ghostsBefore": [
+            [
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "D",
+          "label": "下",
+          "button": null,
+          "playerBefore": [
+            0,
+            4,
+            2
+          ],
+          "playerAfter": [
+            0,
+            4,
+            3
+          ],
+          "ghostsBefore": [
+            [
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "D",
+          "label": "下",
+          "button": null,
+          "playerBefore": [
+            0,
+            4,
+            3
+          ],
+          "playerAfter": [
+            0,
+            4,
+            4
+          ],
+          "ghostsBefore": [
+            [
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "R",
+          "label": "按 A（原地推进一回合）",
+          "button": "A",
+          "playerBefore": [
+            0,
+            4,
+            4
+          ],
+          "playerAfter": [
+            0,
+            4,
+            4
+          ],
+          "ghostsBefore": [
+            [
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "gateChanges": [
+            {
+              "layer": 0,
+              "axis": "h",
+              "x": 3,
+              "y": 4,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "layer": 0,
+              "axis": "h",
+              "x": 4,
+              "y": 4,
+              "letter": "A",
+              "state": "closed"
+            },
+            {
+              "layer": 0,
+              "axis": "v",
+              "x": 3,
+              "y": 1,
+              "letter": "A",
+              "state": "closed"
+            }
+          ],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "L",
+          "label": "左",
+          "button": null,
+          "playerBefore": [
+            0,
+            4,
+            4
+          ],
+          "playerAfter": [
+            0,
+            3,
+            4
+          ],
+          "ghostsBefore": [
+            [
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "L",
+          "label": "左",
+          "button": null,
+          "playerBefore": [
+            0,
+            3,
+            4
+          ],
+          "playerAfter": [
+            0,
+            2,
+            4
+          ],
+          "ghostsBefore": [
+            [
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "U",
+          "label": "上",
+          "button": null,
+          "playerBefore": [
+            0,
+            2,
+            4
+          ],
+          "playerAfter": [
+            0,
+            2,
+            3
+          ],
+          "ghostsBefore": [
+            [
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": false,
+          "isWon": false
+        },
+        {
+          "token": "U",
+          "label": "上",
+          "button": null,
+          "playerBefore": [
+            0,
+            2,
+            3
+          ],
+          "playerAfter": [
+            0,
+            2,
+            2
+          ],
+          "ghostsBefore": [
+            [
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "ghostsAfter": [
+            [
+              [
+                3,
+                1
+              ],
+              [
+                2,
+                2
+              ]
+            ]
+          ],
+          "gateChanges": [],
+          "isDead": true,
+          "isWon": false
+        }
+      ]
+    }
+  ],
+  "ablations": [
+    {
+      "axis": "h",
+      "x": 3,
+      "y": 2,
+      "type": 0,
+      "accepted": false,
+      "reason": "changed_relation"
+    },
+    {
+      "axis": "h",
+      "x": 3,
+      "y": 2,
+      "type": 1,
+      "accepted": false,
+      "reason": "changed_relation"
+    },
+    {
+      "axis": "h",
+      "x": 3,
+      "y": 4,
+      "type": 0,
+      "accepted": false,
+      "reason": "chased_after_final_seal"
+    },
+    {
+      "axis": "h",
+      "x": 3,
+      "y": 4,
+      "type": 1,
+      "accepted": false,
+      "reason": "unsat"
+    },
+    {
+      "axis": "h",
+      "x": 4,
+      "y": 4,
+      "type": 0,
+      "accepted": false,
+      "reason": "changed_relation"
+    },
+    {
+      "axis": "h",
+      "x": 4,
+      "y": 4,
+      "type": 1,
+      "accepted": false,
+      "reason": "changed_relation"
+    },
+    {
+      "axis": "v",
+      "x": 2,
+      "y": 1,
+      "type": 0,
+      "accepted": false,
+      "reason": "unsat"
+    },
+    {
+      "axis": "v",
+      "x": 2,
+      "y": 1,
+      "type": 1,
+      "accepted": false,
+      "reason": "unsat"
+    },
+    {
+      "axis": "v",
+      "x": 3,
+      "y": 1,
+      "type": 0,
+      "accepted": false,
+      "reason": "unsat"
+    },
+    {
+      "axis": "v",
+      "x": 3,
+      "y": 1,
+      "type": 1,
+      "accepted": false,
+      "reason": "unsat"
+    },
+    {
+      "axis": "v",
+      "x": 4,
+      "y": 4,
+      "type": 0,
+      "accepted": false,
+      "reason": "unsat"
+    },
+    {
+      "axis": "v",
+      "x": 4,
+      "y": 4,
+      "type": 1,
+      "accepted": false,
+      "reason": "unsat"
+    }
+  ],
+  "source": {
+    "parent": "手工共用操作格 d",
+    "seed": 1010501,
+    "index": 10743,
+    "proposalsExamined": 20243,
+    "counts": {
+      "proven_unsat": 13668,
+      "separate_or_unused": 1208,
+      "too_many_gates": 3837,
+      "same_attachment": 1127,
+      "chased_to_goal": 339,
+      "sequential": 50,
+      "candidate": 10,
+      "duplicate": 4
+    },
+    "candidates": [
+      3283,
+      4304,
+      4750,
+      7857,
+      10743,
+      12051,
+      13028,
+      13133,
+      18311,
+      20242
+    ],
+    "selection": "人工审查后选中 10743，保留临时安置与再次迁移"
+  },
+  "lineage": [
+    {
+      "parentMapId": "3fb56ba11d85633523a0d208910de867e1b573afeb3c2993cac90147ea94c2e9",
+      "mapId": "6984252aa1888e9fe79fdc3a967bc277aa4292dab5163ae116afa4f81790d39b",
+      "edit": {
+        "type": "wall",
+        "axis": "v",
+        "x": 3,
+        "y": 3,
+        "wall": {
+          "type": 1,
+          "keys": 0
+        }
+      },
+      "before": [
+        13,
+        4,
+        7,
+        29,
+        1
+      ],
+      "after": [
+        13,
+        4,
+        6,
+        31,
+        2
+      ]
+    }
+  ],
+  "attempts": 78,
+  "minimality": {
+    "scope": "remove_one_cell_or_entity_or_replace_one_wall_with_empty_or_solid",
+    "audit": [
+      {
+        "edit": {
+          "type": "cell",
+          "x": 1,
+          "y": 1
+        },
+        "outcome": "invalid",
+        "reason": "地图无效：第 0 层 ghosts 位置或数组非法"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 2,
+          "y": 1
+        },
+        "outcome": "changed_relation"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 3,
+          "y": 1
+        },
+        "outcome": "changed_relation"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 4,
+          "y": 1
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 2,
+          "y": 2
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 3,
+          "y": 2
+        },
+        "outcome": "changed_relation"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 4,
+          "y": 2
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 2,
+          "y": 3
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 3,
+          "y": 3
+        },
+        "outcome": "changed_relation"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 4,
+          "y": 3
+        },
+        "outcome": "changed_relation"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 2,
+          "y": 4
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 3,
+          "y": 4
+        },
+        "outcome": "invalid",
+        "reason": "地图无效：第 0 层 ghosts 位置或数组非法"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 4,
+          "y": 4
+        },
+        "outcome": "invalid",
+        "reason": "地图无效：第 0 层 buttons 位置或数组非法"
+      },
+      {
+        "edit": {
+          "type": "remove_entity",
+          "field": "initialGhosts",
+          "index": 0
+        },
+        "outcome": "changed_relation"
+      },
+      {
+        "edit": {
+          "type": "remove_entity",
+          "field": "initialGhosts",
+          "index": 1
+        },
+        "outcome": "changed_relation"
+      },
+      {
+        "edit": {
+          "type": "remove_entity",
+          "field": "buttons",
+          "index": 0
+        },
+        "outcome": "changed_relation"
+      },
+      {
+        "edit": {
+          "type": "remove_entity",
+          "field": "buttons",
+          "index": 1
+        },
+        "outcome": "changed_relation"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 2,
+          "y": 2,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 3,
+          "y": 2,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "changed_relation"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 3,
+          "y": 2,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "changed_relation"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 4,
+          "y": 2,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 2,
+          "y": 3,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 3,
+          "y": 3,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 4,
+          "y": 3,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 2,
+          "y": 4,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 3,
+          "y": 4,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 3,
+          "y": 4,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "chased_after_final_seal"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 4,
+          "y": 4,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "changed_relation"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 4,
+          "y": 4,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "changed_relation"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 2,
+          "y": 1,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 2,
+          "y": 1,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 3,
+          "y": 1,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 3,
+          "y": 1,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 4,
+          "y": 1,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 3,
+          "y": 2,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "relation_avoidable"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 4,
+          "y": 2,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 3,
+          "y": 3,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "chased_after_final_seal"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 4,
+          "y": 3,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 3,
+          "y": 4,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 4,
+          "y": 4,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 4,
+          "y": 4,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "unsat"
+      }
+    ],
+    "unresolved": 0,
+    "globalMinimumProven": false
+  },
+  "attachmentCheck": {
+    "source": true,
+    "final": true,
+    "decoded": true
+  },
+  "sharecode": "HcbBCYAwEEXBt9kvJGgJi7WY1KAdWJqFebCHgHgQPQyM5-wDu5nEHBFAMnORJK-SNTY9eD9XgLFfZTnK_X1qVqm03ws",
+  "humanQuality": null,
+  "status": "awaiting_user_review",
+  "limits": [
+    "无伤无复活的全信息物理范围",
+    "必要性不证明人类质量",
+    "不证明唯一完整顺序",
+    "未证明迷雾知识策略"
+  ]
+}
