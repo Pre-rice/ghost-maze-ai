@@ -1,0 +1,968 @@
+{
+  "map": {
+    "width": 8,
+    "height": 8,
+    "editorMode": "free",
+    "gameMode": "death-loop",
+    "initialHealth": 5,
+    "initialStamina": 100,
+    "startPos": {
+      "x": 2,
+      "y": 5
+    },
+    "customStartPos": {
+      "x": 2,
+      "y": 5
+    },
+    "endPos": {
+      "x": 0,
+      "y": 2
+    },
+    "multiLayerMode": false,
+    "layerCount": 1,
+    "layers": [],
+    "stairs": [],
+    "buttons": [
+      {
+        "x": 2,
+        "y": 5,
+        "letter": "A",
+        "direction": {
+          "dx": 0,
+          "dy": 1
+        }
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "letter": "B",
+        "direction": {
+          "dx": 1,
+          "dy": 0
+        }
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "letter": "A",
+        "direction": {
+          "dx": 0,
+          "dy": -1
+        }
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "letter": "B",
+        "direction": {
+          "dx": 0,
+          "dy": -1
+        }
+      }
+    ],
+    "items": [],
+    "initialGhosts": [
+      {
+        "x": 1,
+        "y": 1,
+        "id": 0
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "id": 1
+      }
+    ],
+    "activeCells": [
+      [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    ],
+    "hWalls": [
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 6,
+          "letter": "B",
+          "initialState": "open"
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 6,
+          "letter": "A",
+          "initialState": "open"
+        },
+        {
+          "type": 6,
+          "letter": "A",
+          "initialState": "closed"
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 6,
+          "letter": "B",
+          "initialState": "open"
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 6,
+          "letter": "B",
+          "initialState": "closed"
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ]
+    ],
+    "vWalls": [
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 6,
+          "letter": "A",
+          "initialState": "open"
+        },
+        {
+          "type": 6,
+          "letter": "A",
+          "initialState": "closed"
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 6,
+          "letter": "B",
+          "initialState": "open"
+        },
+        {
+          "type": 6,
+          "letter": "B",
+          "initialState": "closed"
+        },
+        {
+          "type": 6,
+          "letter": "B",
+          "initialState": "closed"
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 6,
+          "letter": "A",
+          "initialState": "open"
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ]
+    ]
+  },
+  "generation": {
+    "proposal": "规整矩形中的临时停位、源格操作站和重新安置；让已生效的保护与目标开放发生冲突。",
+    "manualParent": "runs/return-to-source-20261010/repair-4.json",
+    "repairVariants": 40,
+    "seed": 1010308,
+    "distinctProposals": 6428,
+    "testedThroughIndex": 6906,
+    "candidates": [
+      2411,
+      3233,
+      4010,
+      4828,
+      5116,
+      6122,
+      6560,
+      6906
+    ],
+    "selectedIndex": 4010,
+    "budget": {
+      "nodeBudget": 12000,
+      "stateBudget": 16000,
+      "budgetMs": 120
+    },
+    "proofBudget": {
+      "nodeBudget": 90000,
+      "stateBudget": 120000,
+      "budgetMs": 800
+    },
+    "edges": [
+      [
+        "v",
+        2,
+        1
+      ],
+      [
+        "v",
+        3,
+        1
+      ],
+      [
+        "h",
+        2,
+        2
+      ],
+      [
+        "h",
+        3,
+        2
+      ],
+      [
+        "v",
+        2,
+        2
+      ],
+      [
+        "v",
+        3,
+        2
+      ]
+    ],
+    "values": [
+      {
+        "type": 0,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 6,
+        "letter": "A",
+        "initialState": "open"
+      },
+      {
+        "type": 6,
+        "letter": "A",
+        "initialState": "closed"
+      },
+      {
+        "type": 6,
+        "letter": "B",
+        "initialState": "open"
+      },
+      {
+        "type": 6,
+        "letter": "B",
+        "initialState": "closed"
+      }
+    ],
+    "selection": [
+      2,
+      3,
+      1,
+      0,
+      5,
+      5
+    ],
+    "sourceMapId": "3dd65b96ff970b58f4b59238586fca1dca42f29b8eb6dddd19ac28bf6b3a12e6",
+    "reducedStationsFrom": 6,
+    "reducedStationsTo": 4,
+    "modelTrainingUsed": false,
+    "selectionScope": "机制关系粗筛后人工审查；不是人类质量评分"
+  },
+  "parent": "repair-4",
+  "result": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+    "mapId": "3dd65b96ff970b58f4b59238586fca1dca42f29b8eb6dddd19ac28bf6b3a12e6",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "withGhosts": true,
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "U",
+        "L",
+        "R",
+        "R",
+        "R",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "U",
+        "L",
+        "L",
+        "D",
+        "R",
+        "D",
+        "U",
+        "U",
+        "U",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "U",
+        "U",
+        "R",
+        "U",
+        "R",
+        "D",
+        "U",
+        "L",
+        "U",
+        "L",
+        "U",
+        "D",
+        "L"
+      ],
+      "totalActions": 37,
+      "movementCost": 27
+    },
+    "search": {
+      "algorithm": "astar",
+      "expanded": 190,
+      "transitions": 950,
+      "discovered": 195,
+      "resourcePruned": 143,
+      "exhausted": false,
+      "elapsedMs": 1.4109000000025844,
+      "budget": {
+        "nodeBudget": 12000,
+        "stateBudget": 16000,
+        "budgetMs": 120
+      }
+    }
+  }
+}

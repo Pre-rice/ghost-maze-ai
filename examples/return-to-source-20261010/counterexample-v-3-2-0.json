@@ -1,0 +1,2535 @@
+{
+  "map": {
+    "width": 8,
+    "height": 8,
+    "editorMode": "free",
+    "gameMode": "death-loop",
+    "initialHealth": 5,
+    "initialStamina": 100,
+    "startPos": {
+      "x": 2,
+      "y": 5
+    },
+    "customStartPos": {
+      "x": 2,
+      "y": 5
+    },
+    "endPos": {
+      "x": 0,
+      "y": 2
+    },
+    "multiLayerMode": false,
+    "layerCount": 1,
+    "layers": [],
+    "stairs": [],
+    "buttons": [
+      {
+        "x": 2,
+        "y": 5,
+        "letter": "A",
+        "direction": {
+          "dx": 0,
+          "dy": 1
+        }
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "letter": "B",
+        "direction": {
+          "dx": 1,
+          "dy": 0
+        }
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "letter": "A",
+        "direction": {
+          "dx": 0,
+          "dy": -1
+        }
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "letter": "B",
+        "direction": {
+          "dx": 0,
+          "dy": -1
+        }
+      }
+    ],
+    "items": [],
+    "initialGhosts": [
+      {
+        "x": 1,
+        "y": 1,
+        "id": 0
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "id": 1
+      }
+    ],
+    "activeCells": [
+      [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    ],
+    "hWalls": [
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 6,
+          "letter": "B",
+          "initialState": "open"
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 6,
+          "letter": "A",
+          "initialState": "open"
+        },
+        {
+          "type": 6,
+          "letter": "A",
+          "initialState": "closed"
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 6,
+          "letter": "B",
+          "initialState": "open"
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 6,
+          "letter": "B",
+          "initialState": "closed"
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ]
+    ],
+    "vWalls": [
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 6,
+          "letter": "A",
+          "initialState": "open"
+        },
+        {
+          "type": 6,
+          "letter": "A",
+          "initialState": "closed"
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 6,
+          "letter": "B",
+          "initialState": "open"
+        },
+        {
+          "type": 6,
+          "letter": "B",
+          "initialState": "closed"
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 6,
+          "letter": "A",
+          "initialState": "open"
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 1,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ],
+      [
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        },
+        {
+          "type": 0,
+          "keys": 0
+        }
+      ]
+    ]
+  },
+  "edit": {
+    "axis": "v",
+    "x": 3,
+    "y": 2,
+    "type": 0
+  },
+  "condition": {
+    "id": "upper_final_placement",
+    "sequence": [
+      {
+        "type": "ghost_cross",
+        "layer": 0,
+        "index": 0,
+        "from": {
+          "x": 3,
+          "y": 2
+        },
+        "to": {
+          "x": 3,
+          "y": 1
+        }
+      }
+    ]
+  },
+  "result": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "9825376f2cf93f844146c83214f680425c22498b",
+    "mapId": "e39dcbfeaad1783c70806abc3bb2177b9936120c18222768cd7e0a08f1e30363",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "withGhosts": true,
+      "restrictions": [
+        {
+          "id": "upper_final_placement",
+          "sequence": [
+            {
+              "type": "ghost_cross",
+              "layer": 0,
+              "index": 0,
+              "from": {
+                "x": 3,
+                "y": 2
+              },
+              "to": {
+                "x": 3,
+                "y": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "U",
+        "L",
+        "R",
+        "R",
+        "R",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "U",
+        "L",
+        "L",
+        "D",
+        "R",
+        "D",
+        "U",
+        "U",
+        "U",
+        "U",
+        "U",
+        "L",
+        "U",
+        "R",
+        "D",
+        "R",
+        "D",
+        "L",
+        "D",
+        "L",
+        "U",
+        "U",
+        "L"
+      ],
+      "totalActions": 33,
+      "movementCost": 27
+    },
+    "search": {
+      "algorithm": "astar",
+      "expanded": 205,
+      "transitions": 1025,
+      "discovered": 211,
+      "resourcePruned": 161,
+      "exhausted": false,
+      "elapsedMs": 4.102599999999995,
+      "budget": {
+        "nodeBudget": 200000,
+        "stateBudget": 250000,
+        "budgetMs": 2500
+      }
+    }
+  },
+  "trace": [
+    {
+      "token": "U",
+      "label": "上",
+      "button": null,
+      "playerBefore": [
+        0,
+        2,
+        5
+      ],
+      "playerAfter": [
+        0,
+        2,
+        4
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "L",
+      "label": "左",
+      "button": null,
+      "playerBefore": [
+        0,
+        2,
+        4
+      ],
+      "playerAfter": [
+        0,
+        1,
+        4
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "R",
+      "label": "右",
+      "button": null,
+      "playerBefore": [
+        0,
+        1,
+        4
+      ],
+      "playerAfter": [
+        0,
+        2,
+        4
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "R",
+      "label": "右",
+      "button": null,
+      "playerBefore": [
+        0,
+        2,
+        4
+      ],
+      "playerAfter": [
+        0,
+        3,
+        4
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "R",
+      "label": "按 B（原地推进一回合）",
+      "button": "B",
+      "playerBefore": [
+        0,
+        3,
+        4
+      ],
+      "playerAfter": [
+        0,
+        3,
+        4
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "gateChanges": [
+        {
+          "layer": 0,
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "layer": 0,
+          "axis": "h",
+          "x": 1,
+          "y": 4,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "layer": 0,
+          "axis": "h",
+          "x": 1,
+          "y": 5,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "layer": 0,
+          "axis": "v",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "layer": 0,
+          "axis": "v",
+          "x": 2,
+          "y": 2,
+          "letter": "B",
+          "state": "open"
+        }
+      ],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "L",
+      "label": "左",
+      "button": null,
+      "playerBefore": [
+        0,
+        3,
+        4
+      ],
+      "playerAfter": [
+        0,
+        2,
+        4
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "D",
+      "label": "下",
+      "button": null,
+      "playerBefore": [
+        0,
+        2,
+        4
+      ],
+      "playerAfter": [
+        0,
+        2,
+        5
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "D",
+      "label": "按 A（原地推进一回合）",
+      "button": "A",
+      "playerBefore": [
+        0,
+        2,
+        5
+      ],
+      "playerAfter": [
+        0,
+        2,
+        5
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ]
+      ],
+      "gateChanges": [
+        {
+          "layer": 0,
+          "axis": "h",
+          "x": 1,
+          "y": 3,
+          "letter": "A",
+          "state": "closed"
+        },
+        {
+          "layer": 0,
+          "axis": "h",
+          "x": 2,
+          "y": 3,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "layer": 0,
+          "axis": "v",
+          "x": 2,
+          "y": 1,
+          "letter": "A",
+          "state": "closed"
+        },
+        {
+          "layer": 0,
+          "axis": "v",
+          "x": 3,
+          "y": 1,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "layer": 0,
+          "axis": "v",
+          "x": 2,
+          "y": 5,
+          "letter": "A",
+          "state": "closed"
+        }
+      ],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "D",
+      "label": "按 A（原地推进一回合）",
+      "button": "A",
+      "playerBefore": [
+        0,
+        2,
+        5
+      ],
+      "playerAfter": [
+        0,
+        2,
+        5
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      ],
+      "gateChanges": [
+        {
+          "layer": 0,
+          "axis": "h",
+          "x": 1,
+          "y": 3,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "layer": 0,
+          "axis": "h",
+          "x": 2,
+          "y": 3,
+          "letter": "A",
+          "state": "closed"
+        },
+        {
+          "layer": 0,
+          "axis": "v",
+          "x": 2,
+          "y": 1,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "layer": 0,
+          "axis": "v",
+          "x": 3,
+          "y": 1,
+          "letter": "A",
+          "state": "closed"
+        },
+        {
+          "layer": 0,
+          "axis": "v",
+          "x": 2,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "R",
+      "label": "右",
+      "button": null,
+      "playerBefore": [
+        0,
+        2,
+        5
+      ],
+      "playerAfter": [
+        0,
+        3,
+        5
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            5
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "U",
+      "label": "上",
+      "button": null,
+      "playerBefore": [
+        0,
+        3,
+        5
+      ],
+      "playerAfter": [
+        0,
+        3,
+        4
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            5
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "L",
+      "label": "左",
+      "button": null,
+      "playerBefore": [
+        0,
+        3,
+        4
+      ],
+      "playerAfter": [
+        0,
+        2,
+        4
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "L",
+      "label": "左",
+      "button": null,
+      "playerBefore": [
+        0,
+        2,
+        4
+      ],
+      "playerAfter": [
+        0,
+        1,
+        4
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "D",
+      "label": "下",
+      "button": null,
+      "playerBefore": [
+        0,
+        1,
+        4
+      ],
+      "playerAfter": [
+        0,
+        1,
+        5
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "R",
+      "label": "右",
+      "button": null,
+      "playerBefore": [
+        0,
+        1,
+        5
+      ],
+      "playerAfter": [
+        0,
+        2,
+        5
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "D",
+      "label": "按 A（原地推进一回合）",
+      "button": "A",
+      "playerBefore": [
+        0,
+        2,
+        5
+      ],
+      "playerAfter": [
+        0,
+        2,
+        5
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "gateChanges": [
+        {
+          "layer": 0,
+          "axis": "h",
+          "x": 1,
+          "y": 3,
+          "letter": "A",
+          "state": "closed"
+        },
+        {
+          "layer": 0,
+          "axis": "h",
+          "x": 2,
+          "y": 3,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "layer": 0,
+          "axis": "v",
+          "x": 2,
+          "y": 1,
+          "letter": "A",
+          "state": "closed"
+        },
+        {
+          "layer": 0,
+          "axis": "v",
+          "x": 3,
+          "y": 1,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "layer": 0,
+          "axis": "v",
+          "x": 2,
+          "y": 5,
+          "letter": "A",
+          "state": "closed"
+        }
+      ],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "U",
+      "label": "上",
+      "button": null,
+      "playerBefore": [
+        0,
+        2,
+        5
+      ],
+      "playerAfter": [
+        0,
+        2,
+        4
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "U",
+      "label": "上",
+      "button": null,
+      "playerBefore": [
+        0,
+        2,
+        4
+      ],
+      "playerAfter": [
+        0,
+        2,
+        3
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "U",
+      "label": "上",
+      "button": null,
+      "playerBefore": [
+        0,
+        2,
+        3
+      ],
+      "playerAfter": [
+        0,
+        2,
+        2
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "U",
+      "label": "上",
+      "button": null,
+      "playerBefore": [
+        0,
+        2,
+        2
+      ],
+      "playerAfter": [
+        0,
+        2,
+        1
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "U",
+      "label": "按 A（原地推进一回合）",
+      "button": "A",
+      "playerBefore": [
+        0,
+        2,
+        1
+      ],
+      "playerAfter": [
+        0,
+        2,
+        1
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "gateChanges": [
+        {
+          "layer": 0,
+          "axis": "h",
+          "x": 1,
+          "y": 3,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "layer": 0,
+          "axis": "h",
+          "x": 2,
+          "y": 3,
+          "letter": "A",
+          "state": "closed"
+        },
+        {
+          "layer": 0,
+          "axis": "v",
+          "x": 2,
+          "y": 1,
+          "letter": "A",
+          "state": "open"
+        },
+        {
+          "layer": 0,
+          "axis": "v",
+          "x": 3,
+          "y": 1,
+          "letter": "A",
+          "state": "closed"
+        },
+        {
+          "layer": 0,
+          "axis": "v",
+          "x": 2,
+          "y": 5,
+          "letter": "A",
+          "state": "open"
+        }
+      ],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "L",
+      "label": "左",
+      "button": null,
+      "playerBefore": [
+        0,
+        2,
+        1
+      ],
+      "playerAfter": [
+        0,
+        1,
+        1
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "U",
+      "label": "按 B（原地推进一回合）",
+      "button": "B",
+      "playerBefore": [
+        0,
+        1,
+        1
+      ],
+      "playerAfter": [
+        0,
+        1,
+        1
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "gateChanges": [
+        {
+          "layer": 0,
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "layer": 0,
+          "axis": "h",
+          "x": 1,
+          "y": 4,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "layer": 0,
+          "axis": "h",
+          "x": 1,
+          "y": 5,
+          "letter": "B",
+          "state": "closed"
+        },
+        {
+          "layer": 0,
+          "axis": "v",
+          "x": 1,
+          "y": 2,
+          "letter": "B",
+          "state": "open"
+        },
+        {
+          "layer": 0,
+          "axis": "v",
+          "x": 2,
+          "y": 2,
+          "letter": "B",
+          "state": "closed"
+        }
+      ],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "R",
+      "label": "右",
+      "button": null,
+      "playerBefore": [
+        0,
+        1,
+        1
+      ],
+      "playerAfter": [
+        0,
+        2,
+        1
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "D",
+      "label": "下",
+      "button": null,
+      "playerBefore": [
+        0,
+        2,
+        1
+      ],
+      "playerAfter": [
+        0,
+        2,
+        2
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "R",
+      "label": "右",
+      "button": null,
+      "playerBefore": [
+        0,
+        2,
+        2
+      ],
+      "playerAfter": [
+        0,
+        3,
+        2
+      ],
+      "ghostsBefore": [
+        [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "D",
+      "label": "下",
+      "button": null,
+      "playerBefore": [
+        0,
+        3,
+        2
+      ],
+      "playerAfter": [
+        0,
+        3,
+        3
+      ],
+      "ghostsBefore": [
+        [
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            3,
+            2
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "L",
+      "label": "左",
+      "button": null,
+      "playerBefore": [
+        0,
+        3,
+        3
+      ],
+      "playerAfter": [
+        0,
+        2,
+        3
+      ],
+      "ghostsBefore": [
+        [
+          [
+            3,
+            2
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "D",
+      "label": "下",
+      "button": null,
+      "playerBefore": [
+        0,
+        2,
+        3
+      ],
+      "playerAfter": [
+        0,
+        2,
+        4
+      ],
+      "ghostsBefore": [
+        [
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "L",
+      "label": "左",
+      "button": null,
+      "playerBefore": [
+        0,
+        2,
+        4
+      ],
+      "playerAfter": [
+        0,
+        1,
+        4
+      ],
+      "ghostsBefore": [
+        [
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "U",
+      "label": "上",
+      "button": null,
+      "playerBefore": [
+        0,
+        1,
+        4
+      ],
+      "playerAfter": [
+        0,
+        1,
+        3
+      ],
+      "ghostsBefore": [
+        [
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "U",
+      "label": "上",
+      "button": null,
+      "playerBefore": [
+        0,
+        1,
+        3
+      ],
+      "playerAfter": [
+        0,
+        1,
+        2
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": false
+    },
+    {
+      "token": "L",
+      "label": "左",
+      "button": null,
+      "playerBefore": [
+        0,
+        1,
+        2
+      ],
+      "playerAfter": [
+        0,
+        0,
+        2
+      ],
+      "ghostsBefore": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "ghostsAfter": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      ],
+      "gateChanges": [],
+      "isDead": false,
+      "isWon": true
+    }
+  ]
+}
