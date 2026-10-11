@@ -1,0 +1,4588 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "title": "《先手》",
+  "mapId": "2cbfb6b389e975d84bc98fb7af3df20397b1d18da4913d787f86e07573bc015b",
+  "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+  "engineCommit": "ca344e48303740f169b58f56b3d94f6d3b5af4b3",
+  "node": "v22.21.1",
+  "familyId": "prepared-release-and-consumed-return-v1",
+  "splitGroup": "prepared-release-and-consumed-return-v1",
+  "provenance": {
+    "method": "手工逆向构造机制困局，再搜索核验与条件内精简；未使用训练模型",
+    "originalCells": 23,
+    "attempts": 184,
+    "acceptedEdits": 7,
+    "globalMinimumProven": false,
+    "trainedModelUsed": false
+  },
+  "fast": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+    "mapId": "2cbfb6b389e975d84bc98fb7af3df20397b1d18da4913d787f86e07573bc015b",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "withGhosts": true,
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "R",
+        "D",
+        "U",
+        "L",
+        "U",
+        "D",
+        "D",
+        "D",
+        "U",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "R",
+        "U",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U"
+      ],
+      "totalActions": 31,
+      "movementCost": 29
+    },
+    "search": {
+      "algorithm": "astar",
+      "expanded": 146,
+      "transitions": 730,
+      "discovered": 153,
+      "exhausted": false,
+      "elapsedMs": 7.556958999999999,
+      "budget": {
+        "nodeBudget": 100000,
+        "stateBudget": 100000,
+        "budgetMs": 10000
+      }
+    }
+  },
+  "reference": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+    "mapId": "2cbfb6b389e975d84bc98fb7af3df20397b1d18da4913d787f86e07573bc015b",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "R",
+        "D",
+        "U",
+        "L",
+        "U",
+        "D",
+        "D",
+        "D",
+        "U",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "R",
+        "U",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U"
+      ],
+      "totalActions": 31,
+      "movementCost": 29
+    },
+    "search": {
+      "expanded": 155,
+      "transitions": 771,
+      "discovered": 157,
+      "exhausted": false,
+      "elapsedMs": 21.52583899999999,
+      "budget": {
+        "nodeBudget": 100000,
+        "stateBudget": 100000,
+        "budgetMs": 10000
+      }
+    }
+  },
+  "requirements": [
+    {
+      "restriction": {
+        "id": "park-before-key",
+        "sequence": [
+          {
+            "type": "ghost_cross",
+            "layer": 0,
+            "index": 0,
+            "from": {
+              "x": 4,
+              "y": 3
+            },
+            "to": {
+              "x": 4,
+              "y": 2
+            }
+          },
+          {
+            "type": "pickup_key"
+          }
+        ]
+      },
+      "fast": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "2cbfb6b389e975d84bc98fb7af3df20397b1d18da4913d787f86e07573bc015b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": [
+            {
+              "id": "park-before-key",
+              "sequence": [
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 0,
+                  "from": {
+                    "x": 4,
+                    "y": 3
+                  },
+                  "to": {
+                    "x": 4,
+                    "y": 2
+                  }
+                },
+                {
+                  "type": "pickup_key"
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "algorithm": "astar",
+          "expanded": 75,
+          "transitions": 375,
+          "discovered": 75,
+          "exhausted": true,
+          "elapsedMs": 2.93356,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "2cbfb6b389e975d84bc98fb7af3df20397b1d18da4913d787f86e07573bc015b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": [
+            {
+              "id": "park-before-key",
+              "sequence": [
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 0,
+                  "from": {
+                    "x": 4,
+                    "y": 3
+                  },
+                  "to": {
+                    "x": 4,
+                    "y": 2
+                  }
+                },
+                {
+                  "type": "pickup_key"
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "expanded": 75,
+          "transitions": 375,
+          "discovered": 75,
+          "exhausted": true,
+          "elapsedMs": 11.408355,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      }
+    },
+    {
+      "restriction": {
+        "id": "park-seal-key",
+        "sequence": [
+          {
+            "type": "ghost_cross",
+            "layer": 0,
+            "index": 0,
+            "from": {
+              "x": 4,
+              "y": 3
+            },
+            "to": {
+              "x": 4,
+              "y": 2
+            }
+          },
+          {
+            "type": "all",
+            "events": [
+              {
+                "type": "press",
+                "letter": "A"
+              },
+              {
+                "type": "gate",
+                "layer": 0,
+                "axis": "h",
+                "x": 4,
+                "y": 3,
+                "state": "closed"
+              }
+            ]
+          },
+          {
+            "type": "pickup_key"
+          }
+        ]
+      },
+      "fast": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "2cbfb6b389e975d84bc98fb7af3df20397b1d18da4913d787f86e07573bc015b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": [
+            {
+              "id": "park-seal-key",
+              "sequence": [
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 0,
+                  "from": {
+                    "x": 4,
+                    "y": 3
+                  },
+                  "to": {
+                    "x": 4,
+                    "y": 2
+                  }
+                },
+                {
+                  "type": "all",
+                  "events": [
+                    {
+                      "type": "press",
+                      "letter": "A"
+                    },
+                    {
+                      "type": "gate",
+                      "layer": 0,
+                      "axis": "h",
+                      "x": 4,
+                      "y": 3,
+                      "state": "closed"
+                    }
+                  ]
+                },
+                {
+                  "type": "pickup_key"
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "algorithm": "astar",
+          "expanded": 84,
+          "transitions": 420,
+          "discovered": 84,
+          "exhausted": true,
+          "elapsedMs": 4.421490999999989,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "2cbfb6b389e975d84bc98fb7af3df20397b1d18da4913d787f86e07573bc015b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": [
+            {
+              "id": "park-seal-key",
+              "sequence": [
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 0,
+                  "from": {
+                    "x": 4,
+                    "y": 3
+                  },
+                  "to": {
+                    "x": 4,
+                    "y": 2
+                  }
+                },
+                {
+                  "type": "all",
+                  "events": [
+                    {
+                      "type": "press",
+                      "letter": "A"
+                    },
+                    {
+                      "type": "gate",
+                      "layer": 0,
+                      "axis": "h",
+                      "x": 4,
+                      "y": 3,
+                      "state": "closed"
+                    }
+                  ]
+                },
+                {
+                  "type": "pickup_key"
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "expanded": 84,
+          "transitions": 420,
+          "discovered": 84,
+          "exhausted": true,
+          "elapsedMs": 12.83053000000001,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      }
+    },
+    {
+      "restriction": {
+        "id": "key-unlock-reopen-release",
+        "sequence": [
+          {
+            "type": "pickup_key"
+          },
+          {
+            "type": "locked_opened",
+            "layer": 0,
+            "axis": "v",
+            "x": 4,
+            "y": 4
+          },
+          {
+            "type": "all",
+            "events": [
+              {
+                "type": "press",
+                "letter": "A"
+              },
+              {
+                "type": "gate",
+                "layer": 0,
+                "axis": "h",
+                "x": 4,
+                "y": 3,
+                "state": "open"
+              }
+            ]
+          },
+          {
+            "type": "ghost_cross",
+            "layer": 0,
+            "index": 0,
+            "from": {
+              "x": 4,
+              "y": 2
+            },
+            "to": {
+              "x": 4,
+              "y": 3
+            }
+          }
+        ]
+      },
+      "fast": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "2cbfb6b389e975d84bc98fb7af3df20397b1d18da4913d787f86e07573bc015b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": [
+            {
+              "id": "key-unlock-reopen-release",
+              "sequence": [
+                {
+                  "type": "pickup_key"
+                },
+                {
+                  "type": "locked_opened",
+                  "layer": 0,
+                  "axis": "v",
+                  "x": 4,
+                  "y": 4
+                },
+                {
+                  "type": "all",
+                  "events": [
+                    {
+                      "type": "press",
+                      "letter": "A"
+                    },
+                    {
+                      "type": "gate",
+                      "layer": 0,
+                      "axis": "h",
+                      "x": 4,
+                      "y": 3,
+                      "state": "open"
+                    }
+                  ]
+                },
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 0,
+                  "from": {
+                    "x": 4,
+                    "y": 2
+                  },
+                  "to": {
+                    "x": 4,
+                    "y": 3
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "algorithm": "astar",
+          "expanded": 166,
+          "transitions": 830,
+          "discovered": 166,
+          "exhausted": true,
+          "elapsedMs": 9.003791000000007,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "2cbfb6b389e975d84bc98fb7af3df20397b1d18da4913d787f86e07573bc015b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": [
+            {
+              "id": "key-unlock-reopen-release",
+              "sequence": [
+                {
+                  "type": "pickup_key"
+                },
+                {
+                  "type": "locked_opened",
+                  "layer": 0,
+                  "axis": "v",
+                  "x": 4,
+                  "y": 4
+                },
+                {
+                  "type": "all",
+                  "events": [
+                    {
+                      "type": "press",
+                      "letter": "A"
+                    },
+                    {
+                      "type": "gate",
+                      "layer": 0,
+                      "axis": "h",
+                      "x": 4,
+                      "y": 3,
+                      "state": "open"
+                    }
+                  ]
+                },
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 0,
+                  "from": {
+                    "x": 4,
+                    "y": 2
+                  },
+                  "to": {
+                    "x": 4,
+                    "y": 3
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "expanded": 166,
+          "transitions": 830,
+          "discovered": 166,
+          "exhausted": true,
+          "elapsedMs": 24.676139000000006,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      }
+    },
+    {
+      "restriction": {
+        "id": "two-presses",
+        "sequence": [
+          {
+            "type": "press",
+            "letter": "A"
+          },
+          {
+            "type": "press",
+            "letter": "A"
+          }
+        ]
+      },
+      "fast": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "2cbfb6b389e975d84bc98fb7af3df20397b1d18da4913d787f86e07573bc015b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": [
+            {
+              "id": "two-presses",
+              "sequence": [
+                {
+                  "type": "press",
+                  "letter": "A"
+                },
+                {
+                  "type": "press",
+                  "letter": "A"
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "algorithm": "astar",
+          "expanded": 140,
+          "transitions": 700,
+          "discovered": 140,
+          "exhausted": true,
+          "elapsedMs": 4.120157000000006,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "2cbfb6b389e975d84bc98fb7af3df20397b1d18da4913d787f86e07573bc015b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": [
+            {
+              "id": "two-presses",
+              "sequence": [
+                {
+                  "type": "press",
+                  "letter": "A"
+                },
+                {
+                  "type": "press",
+                  "letter": "A"
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "expanded": 140,
+          "transitions": 700,
+          "discovered": 140,
+          "exhausted": true,
+          "elapsedMs": 16.920258999999987,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      }
+    },
+    {
+      "restriction": {
+        "id": "key-ghost-cross-number",
+        "sequence": [
+          {
+            "type": "ghost_cross",
+            "layer": 0,
+            "index": 1,
+            "from": {
+              "x": 3,
+              "y": 4
+            },
+            "to": {
+              "x": 4,
+              "y": 4
+            }
+          }
+        ]
+      },
+      "fast": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "2cbfb6b389e975d84bc98fb7af3df20397b1d18da4913d787f86e07573bc015b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": [
+            {
+              "id": "key-ghost-cross-number",
+              "sequence": [
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 1,
+                  "from": {
+                    "x": 3,
+                    "y": 4
+                  },
+                  "to": {
+                    "x": 4,
+                    "y": 4
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "algorithm": "astar",
+          "expanded": 95,
+          "transitions": 475,
+          "discovered": 95,
+          "exhausted": true,
+          "elapsedMs": 2.2883360000000152,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "2cbfb6b389e975d84bc98fb7af3df20397b1d18da4913d787f86e07573bc015b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": [
+            {
+              "id": "key-ghost-cross-number",
+              "sequence": [
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 1,
+                  "from": {
+                    "x": 3,
+                    "y": 4
+                  },
+                  "to": {
+                    "x": 4,
+                    "y": 4
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "expanded": 95,
+          "transitions": 475,
+          "discovered": 95,
+          "exhausted": true,
+          "elapsedMs": 10.193231999999995,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      }
+    },
+    {
+      "restriction": {
+        "id": "key-ghost-number-return-reopen",
+        "sequence": [
+          {
+            "type": "ghost_cross",
+            "layer": 0,
+            "index": 1,
+            "from": {
+              "x": 3,
+              "y": 4
+            },
+            "to": {
+              "x": 4,
+              "y": 4
+            }
+          },
+          {
+            "type": "ghost_cross",
+            "layer": 0,
+            "index": 1,
+            "from": {
+              "x": 6,
+              "y": 3
+            },
+            "to": {
+              "x": 6,
+              "y": 2
+            }
+          },
+          {
+            "type": "all",
+            "events": [
+              {
+                "type": "press",
+                "letter": "A"
+              },
+              {
+                "type": "gate",
+                "layer": 0,
+                "axis": "h",
+                "x": 4,
+                "y": 3,
+                "state": "open"
+              }
+            ]
+          }
+        ]
+      },
+      "fast": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "2cbfb6b389e975d84bc98fb7af3df20397b1d18da4913d787f86e07573bc015b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": [
+            {
+              "id": "key-ghost-number-return-reopen",
+              "sequence": [
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 1,
+                  "from": {
+                    "x": 3,
+                    "y": 4
+                  },
+                  "to": {
+                    "x": 4,
+                    "y": 4
+                  }
+                },
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 1,
+                  "from": {
+                    "x": 6,
+                    "y": 3
+                  },
+                  "to": {
+                    "x": 6,
+                    "y": 2
+                  }
+                },
+                {
+                  "type": "all",
+                  "events": [
+                    {
+                      "type": "press",
+                      "letter": "A"
+                    },
+                    {
+                      "type": "gate",
+                      "layer": 0,
+                      "axis": "h",
+                      "x": 4,
+                      "y": 3,
+                      "state": "open"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "algorithm": "astar",
+          "expanded": 141,
+          "transitions": 705,
+          "discovered": 141,
+          "exhausted": true,
+          "elapsedMs": 1.755611000000016,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "2cbfb6b389e975d84bc98fb7af3df20397b1d18da4913d787f86e07573bc015b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": [
+            {
+              "id": "key-ghost-number-return-reopen",
+              "sequence": [
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 1,
+                  "from": {
+                    "x": 3,
+                    "y": 4
+                  },
+                  "to": {
+                    "x": 4,
+                    "y": 4
+                  }
+                },
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 1,
+                  "from": {
+                    "x": 6,
+                    "y": 3
+                  },
+                  "to": {
+                    "x": 6,
+                    "y": 2
+                  }
+                },
+                {
+                  "type": "all",
+                  "events": [
+                    {
+                      "type": "press",
+                      "letter": "A"
+                    },
+                    {
+                      "type": "gate",
+                      "layer": 0,
+                      "axis": "h",
+                      "x": 4,
+                      "y": 3,
+                      "state": "open"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "expanded": 141,
+          "transitions": 705,
+          "discovered": 141,
+          "exhausted": true,
+          "elapsedMs": 13.601116999999988,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      }
+    },
+    {
+      "restriction": {
+        "id": "two-ghosts-temporary-shelters-before-release",
+        "sequence": [
+          {
+            "type": "all",
+            "events": [
+              {
+                "type": "press",
+                "letter": "A"
+              },
+              {
+                "type": "gate",
+                "layer": 0,
+                "axis": "h",
+                "x": 4,
+                "y": 3,
+                "state": "open"
+              },
+              {
+                "type": "ghost_at",
+                "layer": 0,
+                "x": 4,
+                "y": 2
+              },
+              {
+                "type": "ghost_at",
+                "layer": 0,
+                "x": 6,
+                "y": 2
+              }
+            ]
+          },
+          {
+            "type": "ghost_cross",
+            "layer": 0,
+            "index": 0,
+            "from": {
+              "x": 4,
+              "y": 2
+            },
+            "to": {
+              "x": 4,
+              "y": 3
+            }
+          }
+        ]
+      },
+      "fast": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "2cbfb6b389e975d84bc98fb7af3df20397b1d18da4913d787f86e07573bc015b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": [
+            {
+              "id": "two-ghosts-temporary-shelters-before-release",
+              "sequence": [
+                {
+                  "type": "all",
+                  "events": [
+                    {
+                      "type": "press",
+                      "letter": "A"
+                    },
+                    {
+                      "type": "gate",
+                      "layer": 0,
+                      "axis": "h",
+                      "x": 4,
+                      "y": 3,
+                      "state": "open"
+                    },
+                    {
+                      "type": "ghost_at",
+                      "layer": 0,
+                      "x": 4,
+                      "y": 2
+                    },
+                    {
+                      "type": "ghost_at",
+                      "layer": 0,
+                      "x": 6,
+                      "y": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 0,
+                  "from": {
+                    "x": 4,
+                    "y": 2
+                  },
+                  "to": {
+                    "x": 4,
+                    "y": 3
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "algorithm": "astar",
+          "expanded": 166,
+          "transitions": 830,
+          "discovered": 166,
+          "exhausted": true,
+          "elapsedMs": 2.7663900000000012,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "2cbfb6b389e975d84bc98fb7af3df20397b1d18da4913d787f86e07573bc015b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": [
+            {
+              "id": "two-ghosts-temporary-shelters-before-release",
+              "sequence": [
+                {
+                  "type": "all",
+                  "events": [
+                    {
+                      "type": "press",
+                      "letter": "A"
+                    },
+                    {
+                      "type": "gate",
+                      "layer": 0,
+                      "axis": "h",
+                      "x": 4,
+                      "y": 3,
+                      "state": "open"
+                    },
+                    {
+                      "type": "ghost_at",
+                      "layer": 0,
+                      "x": 4,
+                      "y": 2
+                    },
+                    {
+                      "type": "ghost_at",
+                      "layer": 0,
+                      "x": 6,
+                      "y": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 0,
+                  "from": {
+                    "x": 4,
+                    "y": 2
+                  },
+                  "to": {
+                    "x": 4,
+                    "y": 3
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "expanded": 166,
+          "transitions": 830,
+          "discovered": 166,
+          "exhausted": true,
+          "elapsedMs": 18.857563999999996,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "edge": {
+        "axis": "h",
+        "x": 4,
+        "y": 2
+      },
+      "type": 0,
+      "fast": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "7183a2981ebb67bfbb24871f8801b816a0d4ac082bb25045fbfd8f46b9f9e91e",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": []
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "algorithm": "astar",
+          "expanded": 117,
+          "transitions": 585,
+          "discovered": 117,
+          "exhausted": true,
+          "elapsedMs": 1.395091999999977,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "7183a2981ebb67bfbb24871f8801b816a0d4ac082bb25045fbfd8f46b9f9e91e",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": []
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "expanded": 117,
+          "transitions": 585,
+          "discovered": 117,
+          "exhausted": true,
+          "elapsedMs": 12.023228999999958,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      }
+    },
+    {
+      "edge": {
+        "axis": "h",
+        "x": 4,
+        "y": 2
+      },
+      "type": 1,
+      "fast": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "5098357a8ba0f2309ee6968bc78925f0e7167a667689684d951e8872314a4daa",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": []
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "algorithm": "astar",
+          "expanded": 45,
+          "transitions": 225,
+          "discovered": 45,
+          "exhausted": true,
+          "elapsedMs": 0.8387910000000147,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "5098357a8ba0f2309ee6968bc78925f0e7167a667689684d951e8872314a4daa",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": []
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "expanded": 45,
+          "transitions": 225,
+          "discovered": 45,
+          "exhausted": true,
+          "elapsedMs": 4.712321000000031,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      }
+    },
+    {
+      "edge": {
+        "axis": "v",
+        "x": 4,
+        "y": 4
+      },
+      "type": 0,
+      "fast": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "fbd43358f29daf5d37c4bff3921e95143ef6b7fc87f14d608c1e44a95a63608b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": []
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "R",
+            "D",
+            "U",
+            "L",
+            "D",
+            "D",
+            "D",
+            "R",
+            "R",
+            "U",
+            "U"
+          ],
+          "totalActions": 11,
+          "movementCost": 11
+        },
+        "search": {
+          "algorithm": "astar",
+          "expanded": 31,
+          "transitions": 155,
+          "discovered": 39,
+          "exhausted": false,
+          "elapsedMs": 0.7519060000000195,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "fbd43358f29daf5d37c4bff3921e95143ef6b7fc87f14d608c1e44a95a63608b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": []
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "R",
+            "D",
+            "U",
+            "L",
+            "D",
+            "D",
+            "D",
+            "R",
+            "R",
+            "U",
+            "U"
+          ],
+          "totalActions": 11,
+          "movementCost": 11
+        },
+        "search": {
+          "expanded": 52,
+          "transitions": 256,
+          "discovered": 61,
+          "exhausted": false,
+          "elapsedMs": 7.2669689999999605,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      }
+    },
+    {
+      "edge": {
+        "axis": "v",
+        "x": 4,
+        "y": 4
+      },
+      "type": 2,
+      "fast": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "f5a1e523fc91cee4e216e399db8887a856587ffb00535a439c22c439613a5ab0",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": []
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "R",
+            "D",
+            "U",
+            "L",
+            "D",
+            "D",
+            "D",
+            "R",
+            "R",
+            "U",
+            "U"
+          ],
+          "totalActions": 11,
+          "movementCost": 11
+        },
+        "search": {
+          "algorithm": "astar",
+          "expanded": 34,
+          "transitions": 170,
+          "discovered": 42,
+          "exhausted": false,
+          "elapsedMs": 1.2054509999999823,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "f5a1e523fc91cee4e216e399db8887a856587ffb00535a439c22c439613a5ab0",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": []
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "R",
+            "D",
+            "U",
+            "L",
+            "D",
+            "D",
+            "D",
+            "R",
+            "R",
+            "U",
+            "U"
+          ],
+          "totalActions": 11,
+          "movementCost": 11
+        },
+        "search": {
+          "expanded": 62,
+          "transitions": 306,
+          "discovered": 70,
+          "exhausted": false,
+          "elapsedMs": 6.791201999999998,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      }
+    },
+    {
+      "edge": {
+        "axis": "v",
+        "x": 4,
+        "y": 4
+      },
+      "type": 1,
+      "fast": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "9b6939397f1ef84010063cd166fa075b80bfe5c3a414b50eef266c328efa9fa0",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": []
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "algorithm": "astar",
+          "expanded": 94,
+          "transitions": 470,
+          "discovered": 94,
+          "exhausted": true,
+          "elapsedMs": 1.0714619999999968,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "9b6939397f1ef84010063cd166fa075b80bfe5c3a414b50eef266c328efa9fa0",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": []
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "expanded": 94,
+          "transitions": 470,
+          "discovered": 94,
+          "exhausted": true,
+          "elapsedMs": 8.978211999999985,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      }
+    },
+    {
+      "edge": {
+        "axis": "h",
+        "x": 6,
+        "y": 2
+      },
+      "type": 0,
+      "fast": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "3d1d24010c586da3801e166a170e61405d6010d248509bd1be679b2f32c05972",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": []
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "R",
+            "R",
+            "R",
+            "D",
+            "D",
+            "L",
+            "U"
+          ],
+          "totalActions": 7,
+          "movementCost": 7
+        },
+        "search": {
+          "algorithm": "astar",
+          "expanded": 12,
+          "transitions": 60,
+          "discovered": 18,
+          "exhausted": false,
+          "elapsedMs": 0.811963999999989,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "3d1d24010c586da3801e166a170e61405d6010d248509bd1be679b2f32c05972",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": []
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "R",
+            "R",
+            "R",
+            "D",
+            "D",
+            "L",
+            "U"
+          ],
+          "totalActions": 7,
+          "movementCost": 7
+        },
+        "search": {
+          "expanded": 34,
+          "transitions": 166,
+          "discovered": 43,
+          "exhausted": false,
+          "elapsedMs": 6.623108000000002,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      }
+    },
+    {
+      "edge": {
+        "axis": "h",
+        "x": 6,
+        "y": 2
+      },
+      "type": 2,
+      "fast": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "60a128e4112d8814d43b58a817b0d6caad255b8c03e088f438d6a7e8df9a3b7b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": []
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "R",
+            "R",
+            "R",
+            "D",
+            "D",
+            "L",
+            "U"
+          ],
+          "totalActions": 7,
+          "movementCost": 7
+        },
+        "search": {
+          "algorithm": "astar",
+          "expanded": 12,
+          "transitions": 60,
+          "discovered": 18,
+          "exhausted": false,
+          "elapsedMs": 0.8180929999999762,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "60a128e4112d8814d43b58a817b0d6caad255b8c03e088f438d6a7e8df9a3b7b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": []
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "R",
+            "R",
+            "R",
+            "D",
+            "D",
+            "L",
+            "U"
+          ],
+          "totalActions": 7,
+          "movementCost": 7
+        },
+        "search": {
+          "expanded": 34,
+          "transitions": 166,
+          "discovered": 43,
+          "exhausted": false,
+          "elapsedMs": 4.715700999999967,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      }
+    },
+    {
+      "edge": {
+        "axis": "h",
+        "x": 6,
+        "y": 2
+      },
+      "type": 1,
+      "fast": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "63ec2215c1077756e513f4d8168c8770901b851ac1f2bafbabde9cb81d4f0be8",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": []
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "algorithm": "astar",
+          "expanded": 125,
+          "transitions": 625,
+          "discovered": 125,
+          "exhausted": true,
+          "elapsedMs": 1.3948930000000246,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "63ec2215c1077756e513f4d8168c8770901b851ac1f2bafbabde9cb81d4f0be8",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": []
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "expanded": 125,
+          "transitions": 625,
+          "discovered": 125,
+          "exhausted": true,
+          "elapsedMs": 10.262106000000017,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      }
+    }
+  ],
+  "branches": [
+    {
+      "id": "key-before-preparation",
+      "actions": [
+        "U",
+        "D",
+        "D",
+        "D",
+        "U",
+        "L",
+        "L",
+        "D"
+      ],
+      "expected": "proven_unsat",
+      "fast": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "prefix": [
+          "U",
+          "D",
+          "D",
+          "D",
+          "U",
+          "L",
+          "L",
+          "D"
+        ],
+        "actions": null,
+        "optimality": null,
+        "search": {
+          "algorithm": "fast_bfs",
+          "expanded": 20,
+          "discovered": 20,
+          "exhausted": true,
+          "elapsedMs": 0.3384950000000231,
+          "nodeBudget": 100000,
+          "budgetMs": 10000
+        }
+      },
+      "reference": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "prefix": [
+          "U",
+          "D",
+          "D",
+          "D",
+          "U",
+          "L",
+          "L",
+          "D"
+        ],
+        "actions": null,
+        "optimality": null,
+        "search": {
+          "algorithm": "reference_bfs",
+          "expanded": 20,
+          "discovered": 20,
+          "exhausted": true,
+          "elapsedMs": 1.4481030000000032,
+          "nodeBudget": 100000,
+          "budgetMs": 10000
+        }
+      }
+    },
+    {
+      "id": "left-button-after-prepared-key",
+      "actions": [
+        "R",
+        "D",
+        "U",
+        "L",
+        "U",
+        "D",
+        "D",
+        "D",
+        "U",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "U"
+      ],
+      "expected": "proven_unsat",
+      "fast": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "prefix": [
+          "R",
+          "D",
+          "U",
+          "L",
+          "U",
+          "D",
+          "D",
+          "D",
+          "U",
+          "L",
+          "L",
+          "D",
+          "R",
+          "R",
+          "U",
+          "U",
+          "U"
+        ],
+        "actions": null,
+        "optimality": null,
+        "search": {
+          "algorithm": "fast_bfs",
+          "expanded": 4,
+          "discovered": 4,
+          "exhausted": true,
+          "elapsedMs": 0.04304100000001654,
+          "nodeBudget": 100000,
+          "budgetMs": 10000
+        }
+      },
+      "reference": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "prefix": [
+          "R",
+          "D",
+          "U",
+          "L",
+          "U",
+          "D",
+          "D",
+          "D",
+          "U",
+          "L",
+          "L",
+          "D",
+          "R",
+          "R",
+          "U",
+          "U",
+          "U"
+        ],
+        "actions": null,
+        "optimality": null,
+        "search": {
+          "algorithm": "reference_bfs",
+          "expanded": 4,
+          "discovered": 4,
+          "exhausted": true,
+          "elapsedMs": 0.26618400000000975,
+          "nodeBudget": 100000,
+          "budgetMs": 10000
+        }
+      }
+    },
+    {
+      "id": "early-button-still-recoverable",
+      "actions": [
+        "U",
+        "D",
+        "D"
+      ],
+      "expected": "solved",
+      "fast": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "U",
+          "D",
+          "D"
+        ],
+        "actions": [
+          "U",
+          "U",
+          "U",
+          "R",
+          "D",
+          "U",
+          "L",
+          "U",
+          "D",
+          "D",
+          "D",
+          "U",
+          "L",
+          "L",
+          "D",
+          "R",
+          "R",
+          "R",
+          "U",
+          "R",
+          "R",
+          "U",
+          "U",
+          "L",
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "D",
+          "R",
+          "R",
+          "U",
+          "U"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "fast_bfs",
+          "expanded": 158,
+          "discovered": 162,
+          "exhausted": false,
+          "elapsedMs": 3.041567999999984,
+          "nodeBudget": 100000,
+          "budgetMs": 10000
+        }
+      },
+      "reference": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "U",
+          "D",
+          "D"
+        ],
+        "actions": [
+          "U",
+          "U",
+          "U",
+          "R",
+          "D",
+          "U",
+          "L",
+          "U",
+          "D",
+          "D",
+          "D",
+          "U",
+          "L",
+          "L",
+          "D",
+          "R",
+          "R",
+          "R",
+          "U",
+          "R",
+          "R",
+          "U",
+          "U",
+          "L",
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "D",
+          "R",
+          "R",
+          "U",
+          "U"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "reference_bfs",
+          "expanded": 158,
+          "discovered": 162,
+          "exhausted": false,
+          "elapsedMs": 14.629433000000006,
+          "nodeBudget": 100000,
+          "budgetMs": 10000
+        }
+      }
+    }
+  ],
+  "ghostRemoval": [
+    {
+      "removedIndex": 0,
+      "fast": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "bbdee2ada317d12e350c6aa03e7d862107ccc2abce82efe8a9724763a0adf0dc",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": []
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "R",
+            "D",
+            "D",
+            "R",
+            "U"
+          ],
+          "totalActions": 5,
+          "movementCost": 5
+        },
+        "search": {
+          "algorithm": "astar",
+          "expanded": 5,
+          "transitions": 25,
+          "discovered": 12,
+          "exhausted": false,
+          "elapsedMs": 0.44782700000001796,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "bbdee2ada317d12e350c6aa03e7d862107ccc2abce82efe8a9724763a0adf0dc",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": []
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "R",
+            "D",
+            "D",
+            "R",
+            "U"
+          ],
+          "totalActions": 5,
+          "movementCost": 5
+        },
+        "search": {
+          "expanded": 20,
+          "transitions": 96,
+          "discovered": 23,
+          "exhausted": false,
+          "elapsedMs": 3.886829999999975,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      }
+    },
+    {
+      "removedIndex": 1,
+      "fast": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "9f64b4a747a6dda898d557ef308c93970995a59d9d12221e8213ed15e9fa554b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": []
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "R",
+            "D",
+            "U",
+            "L",
+            "D",
+            "D",
+            "L",
+            "L",
+            "D",
+            "U",
+            "R",
+            "R",
+            "D",
+            "R",
+            "R",
+            "U",
+            "U"
+          ],
+          "totalActions": 17,
+          "movementCost": 17
+        },
+        "search": {
+          "algorithm": "astar",
+          "expanded": 80,
+          "transitions": 400,
+          "discovered": 94,
+          "exhausted": false,
+          "elapsedMs": 1.9687309999999911,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "9f64b4a747a6dda898d557ef308c93970995a59d9d12221e8213ed15e9fa554b",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": []
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "R",
+            "D",
+            "U",
+            "L",
+            "D",
+            "D",
+            "L",
+            "L",
+            "D",
+            "U",
+            "R",
+            "R",
+            "D",
+            "R",
+            "R",
+            "U",
+            "U"
+          ],
+          "totalActions": 17,
+          "movementCost": 17
+        },
+        "search": {
+          "expanded": 102,
+          "transitions": 506,
+          "discovered": 108,
+          "exhausted": false,
+          "elapsedMs": 20.139454,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      }
+    }
+  ],
+  "reversed": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+    "mapId": "12764282838a789f0d8836ff30defceda6f350e1ed53b58b9945bdfe301a15b7",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "R",
+        "D",
+        "U",
+        "L",
+        "U",
+        "D",
+        "D",
+        "D",
+        "U",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "R",
+        "U",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U"
+      ],
+      "totalActions": 31,
+      "movementCost": 29
+    },
+    "search": {
+      "expanded": 155,
+      "transitions": 771,
+      "discovered": 157,
+      "exhausted": false,
+      "elapsedMs": 20.015907999999968,
+      "budget": {
+        "nodeBudget": 100000,
+        "stateBudget": 100000,
+        "budgetMs": 10000
+      }
+    }
+  },
+  "trace": [
+    {
+      "step": 1,
+      "action": "R",
+      "player": [
+        4,
+        1
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          4,
+          4
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "pocket": "open",
+      "vault": "closed",
+      "numeric": 3
+    },
+    {
+      "step": 2,
+      "action": "D",
+      "player": [
+        4,
+        2
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          4,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "pocket": "open",
+      "vault": "closed",
+      "numeric": 3
+    },
+    {
+      "step": 3,
+      "action": "U",
+      "player": [
+        4,
+        1
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "pocket": "open",
+      "vault": "closed",
+      "numeric": 3
+    },
+    {
+      "step": 4,
+      "action": "L",
+      "player": [
+        3,
+        1
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "pocket": "open",
+      "vault": "closed",
+      "numeric": 3
+    },
+    {
+      "step": 5,
+      "action": "U",
+      "player": [
+        3,
+        1
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "pocket": "closed",
+      "vault": "open",
+      "numeric": 3
+    },
+    {
+      "step": 6,
+      "action": "D",
+      "player": [
+        3,
+        2
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "pocket": "closed",
+      "vault": "open",
+      "numeric": 3
+    },
+    {
+      "step": 7,
+      "action": "D",
+      "player": [
+        3,
+        3
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "pocket": "closed",
+      "vault": "open",
+      "numeric": 3
+    },
+    {
+      "step": 8,
+      "action": "D",
+      "player": [
+        3,
+        4
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "pocket": "closed",
+      "vault": "open",
+      "numeric": 3
+    },
+    {
+      "step": 9,
+      "action": "U",
+      "player": [
+        3,
+        3
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "pocket": "closed",
+      "vault": "open",
+      "numeric": 3
+    },
+    {
+      "step": 10,
+      "action": "L",
+      "player": [
+        2,
+        3
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "pocket": "closed",
+      "vault": "open",
+      "numeric": 3
+    },
+    {
+      "step": 11,
+      "action": "L",
+      "player": [
+        1,
+        3
+      ],
+      "keys": 0,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "pocket": "closed",
+      "vault": "open",
+      "numeric": 3
+    },
+    {
+      "step": 12,
+      "action": "D",
+      "player": [
+        1,
+        4
+      ],
+      "keys": 1,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "pocket": "closed",
+      "vault": "open",
+      "numeric": 3
+    },
+    {
+      "step": 13,
+      "action": "R",
+      "player": [
+        2,
+        4
+      ],
+      "keys": 1,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "pocket": "closed",
+      "vault": "open",
+      "numeric": 3
+    },
+    {
+      "step": 14,
+      "action": "R",
+      "player": [
+        3,
+        4
+      ],
+      "keys": 1,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "pocket": "closed",
+      "vault": "open",
+      "numeric": 3
+    },
+    {
+      "step": 15,
+      "action": "R",
+      "player": [
+        4,
+        4
+      ],
+      "keys": 1,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "pocket": "closed",
+      "vault": "open",
+      "numeric": 0
+    },
+    {
+      "step": 16,
+      "action": "U",
+      "player": [
+        4,
+        3
+      ],
+      "keys": 1,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "pocket": "closed",
+      "vault": "open",
+      "numeric": 0
+    },
+    {
+      "step": 17,
+      "action": "R",
+      "player": [
+        5,
+        3
+      ],
+      "keys": 1,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "pocket": "closed",
+      "vault": "open",
+      "numeric": 0
+    },
+    {
+      "step": 18,
+      "action": "R",
+      "player": [
+        6,
+        3
+      ],
+      "keys": 1,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "pocket": "closed",
+      "vault": "open",
+      "numeric": 0
+    },
+    {
+      "step": 19,
+      "action": "U",
+      "player": [
+        6,
+        2
+      ],
+      "keys": 1,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "pocket": "closed",
+      "vault": "open",
+      "numeric": 0
+    },
+    {
+      "step": 20,
+      "action": "U",
+      "player": [
+        6,
+        1
+      ],
+      "keys": 1,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "pocket": "closed",
+      "vault": "open",
+      "numeric": 0
+    },
+    {
+      "step": 21,
+      "action": "L",
+      "player": [
+        5,
+        1
+      ],
+      "keys": 1,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "pocket": "closed",
+      "vault": "open",
+      "numeric": 0
+    },
+    {
+      "step": 22,
+      "action": "U",
+      "player": [
+        5,
+        1
+      ],
+      "keys": 1,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "pocket": "open",
+      "vault": "closed",
+      "numeric": 0
+    },
+    {
+      "step": 23,
+      "action": "L",
+      "player": [
+        4,
+        1
+      ],
+      "keys": 1,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "pocket": "open",
+      "vault": "closed",
+      "numeric": 0
+    },
+    {
+      "step": 24,
+      "action": "L",
+      "player": [
+        3,
+        1
+      ],
+      "keys": 1,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "pocket": "open",
+      "vault": "closed",
+      "numeric": 0
+    },
+    {
+      "step": 25,
+      "action": "D",
+      "player": [
+        3,
+        2
+      ],
+      "keys": 1,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "pocket": "open",
+      "vault": "closed",
+      "numeric": 0
+    },
+    {
+      "step": 26,
+      "action": "D",
+      "player": [
+        3,
+        3
+      ],
+      "keys": 1,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "pocket": "open",
+      "vault": "closed",
+      "numeric": 0
+    },
+    {
+      "step": 27,
+      "action": "D",
+      "player": [
+        3,
+        4
+      ],
+      "keys": 1,
+      "ghosts": [
+        [
+          4,
+          2
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "pocket": "open",
+      "vault": "closed",
+      "numeric": 0
+    },
+    {
+      "step": 28,
+      "action": "R",
+      "player": [
+        4,
+        4
+      ],
+      "keys": 1,
+      "ghosts": [
+        [
+          4,
+          3
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "pocket": "open",
+      "vault": "closed",
+      "numeric": 0
+    },
+    {
+      "step": 29,
+      "action": "R",
+      "player": [
+        5,
+        4
+      ],
+      "keys": 1,
+      "ghosts": [
+        [
+          4,
+          4
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "pocket": "open",
+      "vault": "closed",
+      "numeric": 0
+    },
+    {
+      "step": 30,
+      "action": "U",
+      "player": [
+        5,
+        3
+      ],
+      "keys": 1,
+      "ghosts": [
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "pocket": "open",
+      "vault": "closed",
+      "numeric": 0
+    },
+    {
+      "step": 31,
+      "action": "U",
+      "player": [
+        5,
+        2
+      ],
+      "keys": 1,
+      "ghosts": [
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "pocket": "open",
+      "vault": "closed",
+      "numeric": 0
+    }
+  ],
+  "withoutGoal": {
+    "player": {
+      "layer": 0,
+      "x": 5,
+      "y": 2,
+      "hp": 5,
+      "keys": 1,
+      "steps": 31
+    },
+    "isDead": false,
+    "isWon": false,
+    "loopCount": 0,
+    "layers": [
+      {
+        "ghosts": [
+          [
+            5,
+            3
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "items": [],
+        "wallStates": {
+          "h": [
+            [
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 2,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 4,
+                "keys": 0,
+                "direction": {
+                  "dx": 0,
+                  "dy": -1
+                },
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 6,
+                "keys": 0,
+                "direction": null,
+                "letter": "A",
+                "initialState": "open",
+                "currentState": "open"
+              },
+              {
+                "type": 6,
+                "keys": 0,
+                "direction": null,
+                "letter": "A",
+                "initialState": "open",
+                "currentState": "open"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ]
+          ],
+          "v": [
+            [
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 6,
+                "keys": 0,
+                "direction": null,
+                "letter": "A",
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 1,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0,
+                "direction": null,
+                "letter": null,
+                "initialState": "closed",
+                "currentState": "closed"
+              }
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  "sharecode": "AADAADw8_PgAAAEwIDF0AdAQABAAAVQMWinOAEVUAAAAAAQgqoiIuMoAAAAACCAAgA",
+  "replayCode": "CGA9wTHSFSn88IpXwA",
+  "checks": {
+    "mapCodeRoundtrip": true,
+    "replayCodeRoundtrip": true,
+    "perStepPhysicalIdentity": true,
+    "buttonsAttached": true,
+    "glassCount": 0,
+    "glassToSolidExactIdentity": true,
+    "reversedCertificateWins": true,
+    "fogKnowledgeStrategyProven": false
+  },
+  "humanQuality": null,
+  "status": "awaiting_user_review"
+}
