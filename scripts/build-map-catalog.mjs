@@ -20,6 +20,8 @@ const short = file => relative(root, file).replaceAll('\\', '/');
 const hash = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
 const sources = [], skipped = [], entries = new Map();
 const names = {
+    'door-units-20261011/unit-01': ['《两面》', '2026-10-11 新交付；尚未试玩，待用户评价。12 格、两只鬼、一扇普通门，没有按钮或玻璃。'],
+    'door-units-20261011/unit-02': ['《开路》', '2026-10-11 新交付；尚未试玩，待用户评价。11 格、两只鬼、普通门与一次性数字门各一扇，没有按钮或玻璃。'],
     'coupled-singlelayer/map': ['单层组合题', '“太妙了！好设计！”；想了好一阵子，指出左上 B 门没有作用。'],
     'user-refinements/user-01': ['用户优化图', '用户亲自精简，认为关键思路比旧图的绕行更精妙；40 步真人路线与参考证书一致。不作为另一张 AI 独立作品。'],
     'twin-handoff-20261009/map': ['双鬼交接', '“妙！”“想了好久才想出来”“媲美第一张图”；明确设计正反馈。'],

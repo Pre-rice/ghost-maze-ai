@@ -7,7 +7,8 @@
 ## 当前交付
 
 - [本轮产品结果与验收](../ghost-maze/docs/architecture-delivery-20261011.md)：功能、性能、地图及迁移边界。
-- [AI 地图总目录](../ghost-maze/docs/ai-map-catalog.md)：384 份来源去重为 336 张，319 张合法新地图码，291 条当前规则无伤参考路线；含历史候选与对照，不等于正式作品数。
+- [AI 地图总目录](../ghost-maze/docs/ai-map-catalog.md)：393 份来源去重为 343 张，326 张合法新地图码，298 条当前规则无伤参考路线；含历史候选与对照，不等于正式作品数。
+- [门单元《两面》《开路》](examples/door-units-20261011/README.md)：12／11 格，无按钮和玻璃，最短 19／21 动作；已核验，质量待用户试玩。
 - 14 份真人保留路线全部迁移并核对物理终局。原 `data/solutions/` 与地图不变，新结果在 `data/generated/recordings-current/`。
 - 17 张历史地图存在悬空按钮或数据冲突，目录列原因，不能生成假入口。其中两张跨层图的全局配对楼梯与层内空表冲突，本轮未猜测修复。
 - 本体 148 项、AI 126 项测试通过，共同规则内容锁与两个原种子检查通过；Windows 与 Linux 云端迁移验收均通过。两仓 main 已同步 GitHub，线上游戏已更新；本地验收服务 4206 保留。
@@ -73,7 +74,7 @@ npm run catalog
 - [训练方案](docs/ai-training-plan.md)与[研究背景](docs/ai-puzzle-generation-research.md)
 - [双鬼正反馈复盘](docs/twin-handoff-review-20261009.md)、[《回环》试玩复盘](docs/shelter-exchange-review-20261010.md)
 
-历史文档里的体力、旧码、旧独立回放与测试数字属于当时规则，不能当作当前入口或新规则证据。旧工具仍可作为对照，实际迁移也调用共同规则；重复 `src/engine` 物理实现已删除。本轮没有生成新题、开始训练、提交、推送或部署。
+历史文档里的体力、旧码、旧独立回放与测试数字属于当时规则，不能当作当前入口或新规则证据。旧工具仍可作为对照，实际迁移也调用共同规则；重复 `src/engine` 物理实现已删除。迁移结束后按用户新授权恢复门单元设计，模型训练尚未开始。
 ## 云端开发
 
 多仓库环境与资料恢复见 [Codex 云端交接](docs/codex-cloud.md)。统一验收使用 `npm run cloud:check`，预览使用 `npm run cloud:serve -- 4206`；两个仓库默认以 `main` 开发。

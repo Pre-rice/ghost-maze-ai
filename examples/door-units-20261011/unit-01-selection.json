@@ -1,0 +1,463 @@
+{
+  "sourceIndex": 43268,
+  "specs": [
+    {
+      "id": "two-side-placement",
+      "sequence": [
+        {
+          "type": "ghost_cross",
+          "layer": 0,
+          "index": 1,
+          "from": {
+            "x": 1,
+            "y": 2
+          },
+          "to": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "type": "ghost_cross",
+          "layer": 0,
+          "index": 1,
+          "from": {
+            "x": 2,
+            "y": 2
+          },
+          "to": {
+            "x": 2,
+            "y": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "door-side-return",
+      "sequence": [
+        {
+          "type": "visit",
+          "layer": 0,
+          "x": 1,
+          "y": 1
+        },
+        {
+          "type": "visit",
+          "layer": 0,
+          "x": 2,
+          "y": 1
+        },
+        {
+          "type": "visit",
+          "layer": 0,
+          "x": 1,
+          "y": 1
+        }
+      ]
+    }
+  ],
+  "complexity": [
+    12,
+    2,
+    1,
+    19,
+    0
+  ],
+  "lineage": [
+    {
+      "parentMapId": "38087e472431fe3e272b007c371e546fc12524298ff05dee6e9d781347abe711",
+      "mapId": "c45cadf78c9a8791d5bbf57861ed994025b6820e480b5022b4ed37cf7694e125",
+      "edit": {
+        "type": "cell",
+        "x": 4,
+        "y": 2
+      },
+      "before": [
+        15,
+        2,
+        1,
+        19,
+        2
+      ],
+      "after": [
+        14,
+        2,
+        1,
+        19,
+        2
+      ]
+    },
+    {
+      "parentMapId": "c45cadf78c9a8791d5bbf57861ed994025b6820e480b5022b4ed37cf7694e125",
+      "mapId": "d70574e256e2f3aa280d835f9ebccea4f9ffcd83422a86b073eef957c0b1b7b7",
+      "edit": {
+        "type": "cell",
+        "x": 3,
+        "y": 3
+      },
+      "before": [
+        14,
+        2,
+        1,
+        19,
+        2
+      ],
+      "after": [
+        13,
+        2,
+        1,
+        19,
+        1
+      ]
+    },
+    {
+      "parentMapId": "d70574e256e2f3aa280d835f9ebccea4f9ffcd83422a86b073eef957c0b1b7b7",
+      "mapId": "87d8ee0bba0504d7f8aea20714e51a7ad6fbbd58cecfa5e1b7ad3a1edbcda57d",
+      "edit": {
+        "type": "cell",
+        "x": 4,
+        "y": 3
+      },
+      "before": [
+        13,
+        2,
+        1,
+        19,
+        1
+      ],
+      "after": [
+        12,
+        2,
+        1,
+        19,
+        0
+      ]
+    }
+  ],
+  "attempts": 54,
+  "localMinimality": {
+    "scope": "remove_one_cell_or_entity_or_replace_one_wall_with_empty_or_solid",
+    "audit": [
+      {
+        "edit": {
+          "type": "cell",
+          "x": 1,
+          "y": 1
+        },
+        "outcome": "changed_mechanism"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 2,
+          "y": 1
+        },
+        "outcome": "changed_mechanism"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 3,
+          "y": 1
+        },
+        "outcome": "proven_unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 4,
+          "y": 1
+        },
+        "outcome": "invalid",
+        "reason": "地图无效：起点或终点必须位于活动格"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 1,
+          "y": 2
+        },
+        "outcome": "proven_unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 2,
+          "y": 2
+        },
+        "outcome": "proven_unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 1,
+          "y": 3
+        },
+        "outcome": "invalid",
+        "reason": "地图无效：实体必须位于活动格"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 2,
+          "y": 3
+        },
+        "outcome": "proven_unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 1,
+          "y": 4
+        },
+        "outcome": "proven_unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 2,
+          "y": 4
+        },
+        "outcome": "proven_unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 3,
+          "y": 4
+        },
+        "outcome": "invalid",
+        "reason": "地图无效：实体必须位于活动格"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 4,
+          "y": 4
+        },
+        "outcome": "invalid",
+        "reason": "地图无效：起点或终点必须位于活动格"
+      },
+      {
+        "edit": {
+          "type": "remove_entity",
+          "field": "initialGhosts",
+          "index": 0
+        },
+        "outcome": "changed_mechanism"
+      },
+      {
+        "edit": {
+          "type": "remove_entity",
+          "field": "initialGhosts",
+          "index": 1
+        },
+        "outcome": "changed_mechanism"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "proven_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 2,
+          "y": 2,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "proven_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 1,
+          "y": 3,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "proven_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 2,
+          "y": 3,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "proven_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 1,
+          "y": 4,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "proven_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 2,
+          "y": 4,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "proven_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 2,
+          "y": 1,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "changed_mechanism"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 2,
+          "y": 1,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "changed_mechanism"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 3,
+          "y": 1,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "proven_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 4,
+          "y": 1,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "proven_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 2,
+          "y": 2,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "not_simpler",
+        "score": [
+          12,
+          2,
+          1,
+          19,
+          1
+        ]
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 2,
+          "y": 3,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "proven_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 2,
+          "y": 4,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "proven_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 3,
+          "y": 4,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "proven_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 4,
+          "y": 4,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "proven_unsat"
+      }
+    ],
+    "unresolved": 0,
+    "globalMinimumProven": false
+  }
+}
