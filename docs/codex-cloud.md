@@ -6,6 +6,7 @@
 
 - Node.js 22.21.1、Python 3；`npm ci`，不新增项目依赖。
 - 私下上传 `cloud-data.zip`，运行 `python3 scripts/restore-cloud-data.py <资料包路径>`，逐文件核对且不覆盖不同内容。
+- 新增私人资料后用 `python3 scripts/export-cloud-data.py artifacts/cloud-data-日期.zip` 导出新包并提供下载；新任务恢复最新包或重新发布环境，不覆盖旧包。
 - `npm run cloud:check`：本体、AI、共同规则锁、原种子和 HTTP 入口一并核验。
 - `npm run cloud:serve -- 4206`：启动共用本体的游玩／编辑入口与后台研究留档。需要云端预览代理时设置 `GHOST_MAZE_HOST=0.0.0.0`，将 `GHOST_MAZE_ORIGIN` 设置为真实预览地址的协议和主机。
 - 完整真人录制、未跟踪反馈、迁移结果与研究输出通过私人资料包恢复；已有历史和文档中的反馈摘要继续保留，公开范围见本体交接。新增资料也要导出。
