@@ -5,7 +5,8 @@ import {createFastEnvironment,physicalState} from '../../src/search/fast-environ
 import {solveReferenceMap} from '../../src/search/reference-solver.js';
 import {solveFastMap} from '../../src/search/fast-solver.js';
 import {DataSerializer,WALL_TYPES as W} from '../../src/reference/engine.js';
-import {traceState,describeStep} from '../../src/review/trace-core.js';
+import { traceState } from '../../src/review/trace-core.js';
+import { describeStep } from '../../src/review/step-description.js';
 import {budget,referenceBudget,constraints,edges,proved} from './evaluate.mjs';
 
 // 使用已完成的精简输出，不重跑提案，不覆盖历史证据。
@@ -38,8 +39,8 @@ for(let index=0;index<2;index++){const changed=structuredClone(map);changed.init
 const noGhost=solveFastMap(map,{...budget,withGhosts:false});assert(proved(noGhost));
 const encoded=DataSerializer.generateShareCode(map);assert(encoded.success);
 const decoded=DataSerializer.loadFromShareCode(encoded.code);assert(decoded.success);
-const {mapData,gameMode,initialHealth,initialStamina}=decoded.data;
-const restored=createReferenceEnvironment({...mapData,gameMode,initialHealth,initialStamina});
+const {mapData,gameMode,initialHealth}=decoded.data;
+const restored=createReferenceEnvironment({...mapData,gameMode,initialHealth});
 let a=env.initialState(),b=fast.initialState(),c=restored.initialState();
 assert.deepEqual(physicalState(a),physicalState(c));
 const trace=[],browserTrace=[{physical:traceState(c),seenCells:c.seenCells}];
@@ -60,4 +61,4 @@ const evidence={schemaVersion:1,date:'2026-10-09',ruleset:env.ruleset,mapId:env.
     initialVisibility:{knowledgeStrategyProven:false},humanQuality:null,status:'awaiting_user_review'};
 save('map.json',map);save('evidence.json',evidence);save('browser-trace.json',{mapId:restored.mapId,actions,trace:browserTrace});
 save('manifest.json',[{mapId:env.mapId,ruleset:env.ruleset,cells:minimized.complexity[0],ghosts:2,buttons:map.buttons.length,keys:2,actions:actions.length,sharecode:encoded.code,familyId:evidence.familyId,splitGroup:evidence.splitGroup,status:evidence.status}]);
-console.log(JSON.stringify({check:'finished',cells:minimized.complexity[0],T:actions.length,L:a.player.steps,stamina:a.player.stamina,word:trace.map(t=>t.button??'').join(''),shareLength:encoded.code.length}));
+console.log(JSON.stringify({check:'finished',cells:minimized.complexity[0],T:actions.length,L:env.replay(actions).movementCost,word:trace.map(t=>t.button??'').join(''),shareLength:encoded.code.length}));

@@ -1,9 +1,10 @@
+import { freshDecode, historicalPhysical, withoutGoal } from './current-format.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { coupledMap, hypotheses, failedPlans } from '../../examples/coupled-singlelayer/build.mjs';
 import { createReferenceEnvironment } from '../../src/reference/environment.js';
-import { DataSerializer, WALL_TYPES as W } from '../../src/reference/engine.js';
+import { DataSerializer, normalizeMapData, WALL_TYPES as W } from '../../src/reference/engine.js';
 import { solveFastMap } from '../../src/search/fast-solver.js';
 import { physicalState } from '../../src/search/fast-environment.js';
 
@@ -11,7 +12,7 @@ const read = file => JSON.parse(readFileSync(new URL(`../../examples/coupled-sin
 
 test('单层组合题可复建，起点可见守门鬼与终点，按钮不覆盖可通行边', () => {
     const map = read('map.json'), env = createReferenceEnvironment(map);
-    assert.deepEqual(map, coupledMap());
+    assert.deepEqual(normalizeMapData(map), normalizeMapData(coupledMap()));
     assert.equal(map.activeCells.flat().filter(Boolean).length, 18);
     assert.equal(map.initialGhosts.length, 1);
     assert(env.initialState().seenCells[0][2][4]);
@@ -22,8 +23,8 @@ test('单层组合题可复建，起点可见守门鬼与终点，按钮不覆�
 test('组合题证书原引擎与分享码逐步一致；去终点仍可安全完成', () => {
     const map = read('map.json'), evidence = read('evidence.json');
     const env = createReferenceEnvironment(map);
-    assert.equal(env.mapId, evidence.mapId);
-    const decoded = DataSerializer.loadFromShareCode(evidence.sharecode);
+    assert.notEqual(env.mapId, evidence.mapId, '新规则标识不得冒充历史规则标识');
+    const decoded = freshDecode(map);
     assert(decoded.success);
     const { mapData, gameMode, initialHealth, initialStamina } = decoded.data;
     const restored = createReferenceEnvironment({ ...mapData, gameMode, initialHealth, initialStamina });
@@ -31,14 +32,14 @@ test('组合题证书原引擎与分享码逐步一致；去终点仍可安全�
     for (const [i, action] of evidence.analysis.baseline.solution.actions.entries()) {
         state = env.step(state, action); other = restored.step(other, action);
         assert.deepEqual(physicalState(other), physicalState(state));
-        assert.deepEqual(state.player, { ...state.player, ...evidence.trace[i + 1].player });
+        assert.deepEqual(historicalPhysical({player:state.player}), historicalPhysical({player:{...state.player,...evidence.trace[i + 1].player}}));
         assert.deepEqual(state.layerStates[0].ghosts.map(g => [g.x, g.y]), evidence.trace[i + 1].ghosts);
         assert(!state.isDead);
     }
     assert(state.isWon);
-    assert.equal(state.player.steps, 34);
-    const exit = createReferenceEnvironment({ ...map, endPos: null }).replay(evidence.analysis.baseline.solution.actions);
-    assert.deepEqual(physicalState(exit.state), evidence.exitWithoutGoal);
+    assert.equal(state.player.steps, 37);
+    const exit = createReferenceEnvironment(withoutGoal(map)).replay(evidence.analysis.baseline.solution.actions);
+    assert.deepEqual(historicalPhysical(physicalState(exit.state),map), historicalPhysical(evidence.exitWithoutGoal,map));
 });
 
 test('组合题关键顺序与鬼的两次位移必要，保留更长的替代路线而不宣称唯一解', () => {

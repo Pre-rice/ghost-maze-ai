@@ -17,17 +17,17 @@ export function trace(map, actions) {
     let state = env.initialState();
     for (const [index, action] of actions.entries()) {
         const next = env.step(state, action), [dx, dy] = direction[action];
-        const button = next.player.steps === state.player.steps ? map.buttons.find(b => b.x === state.player.x && b.y === state.player.y && b.direction.dx === dx && b.direction.dy === dy) : null;
+        const button = next !== state && next.player.x === state.player.x && next.player.y === state.player.y && next.player.layer === state.player.layer ? map.buttons.find(b => b.x === state.player.x && b.y === state.player.y && b.direction.dx === dx && b.direction.dy === dy) : null;
         const changes = [];
-        for (const axis of ['h', 'v']) state.layers[0].wallStates[axis].forEach((row, y) => row.forEach((wall, x) => {
-            if (wall.type !== W.LETTER_DOOR || wall.currentState === next.layers[0].wallStates[axis][y][x].currentState) return;
-            const change = { axis, x, y, letter: wall.letter, state: next.layers[0].wallStates[axis][y][x].currentState };
+        for (const axis of ['h', 'v']) state.layerStates[0].wallStates[axis].forEach((row, y) => row.forEach((wall, x) => {
+            if (wall.type !== W.LETTER_DOOR || wall.currentState === next.layerStates[0].wallStates[axis][y][x].currentState) return;
+            const change = { axis, x, y, letter: wall.letter, state: next.layerStates[0].wallStates[axis][y][x].currentState };
             changes.push(change);
-            const ends = pair(axis, x, y), ghosts = state.layers[0].ghosts;
-            if (change.state === 'closed' && ends.every(p => ghosts.some(g => at(g, p)))) cuts.push({ step: index + 1, ...change, player: [state.player.x, state.player.y], before: ghosts.map(g => [g.x, g.y]), after: next.layers[0].ghosts.map(g => [g.x, g.y]) });
+            const ends = pair(axis, x, y), ghosts = state.layerStates[0].ghosts;
+            if (change.state === 'closed' && ends.every(p => ghosts.some(g => at(g, p)))) cuts.push({ step: index + 1, ...change, player: [state.player.x, state.player.y], before: ghosts.map(g => [g.x, g.y]), after: next.layerStates[0].ghosts.map(g => [g.x, g.y]) });
         }));
-        next.layers[0].ghosts.forEach((g, i) => { if (g.x !== state.layers[0].ghosts[i].x || g.y !== state.layers[0].ghosts[i].y) moves[i]++; });
-        rows.push({ step: index + 1, action, button: button?.letter ?? null, player: [next.player.x, next.player.y], ghosts: next.layers[0].ghosts.map(g => [g.x, g.y]), changes });
+        next.layerStates[0].ghosts.forEach((g, i) => { if (g.x !== state.layerStates[0].ghosts[i].x || g.y !== state.layerStates[0].ghosts[i].y) moves[i]++; });
+        rows.push({ step: index + 1, action, button: button?.letter ?? null, player: [next.player.x, next.player.y], ghosts: next.layerStates[0].ghosts.map(g => [g.x, g.y]), changes });
         state = next;
     }
     return { rows, cuts, moves, word: rows.filter(r => r.button).map(r => r.button).join('') };

@@ -1,3 +1,4 @@
+import { freshDecode, historicalPhysical, withoutGoal } from './current-format.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
@@ -15,7 +16,7 @@ const read = file => JSON.parse(readFileSync(new URL(file, directory), 'utf8'));
 test('新单元分享码逐步重放与原图一致；移除终点仍可安全完成', () => {
     for (const id of ['01', '02']) {
         const map = read(`unit-${id}.json`), evidence = read(`unit-${id}-evidence.json`);
-        const decoded = DataSerializer.loadFromShareCode(evidence.sharecode); assert(decoded.success);
+        const decoded = freshDecode(map); assert(decoded.success);
         const { mapData, gameMode, initialHealth, initialStamina } = decoded.data;
         const env = createReferenceEnvironment(map), restored = createReferenceEnvironment({ ...mapData, gameMode, initialHealth, initialStamina });
         let a = env.initialState(), b = restored.initialState();
@@ -23,9 +24,9 @@ test('新单元分享码逐步重放与原图一致；移除终点仍可安全�
             a = env.step(a, action); b = restored.step(b, action);
             assert.deepEqual(physicalState(a), physicalState(b)); assert(!a.isDead);
         }
-        assert(a.isWon); assert.equal(env.mapId, evidence.mapId);
-        const exit = createReferenceEnvironment({ ...map, endPos: null }).replay(evidence.solution.solution.actions);
-        assert.deepEqual(physicalState(exit.state), evidence.exitWithoutGoal);
+        assert(a.isWon); assert.notEqual(env.mapId, evidence.mapId, '新规则标识不得冒充历史规则标识');
+        const exit = createReferenceEnvironment(withoutGoal(map)).replay(evidence.solution.solution.actions);
+        assert.deepEqual(historicalPhysical(physicalState(exit.state),map), historicalPhysical(evidence.exitWithoutGoal,map));
         assert.equal(evidence.humanQuality, null);
     }
 });

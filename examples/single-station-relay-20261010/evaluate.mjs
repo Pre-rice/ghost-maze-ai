@@ -29,8 +29,7 @@ export function createEvaluator() {
         catch { return { accepted: false, reason: 'invalid' }; }
         if (cache.has(env.mapId)) return cache.get(env.mapId);
         const done = value => { cache.set(env.mapId, value); return value; };
-        if (map.initialGhosts.length !== 2 || map.buttons.length !== 2 || map.items.length || map.initialStamina !== 100 ||
-            ![[3, 2], [3, 1], [2, 1], [4, 3], [3, 3]].every(([x, y]) => map.activeCells[y]?.[x]) ||
+        if (map.initialGhosts.length !== 2 || map.buttons.length !== 2 || map.items.length || ![[3, 2], [3, 1], [2, 1], [4, 3], [3, 3]].every(([x, y]) => map.activeCells[y]?.[x]) ||
             ![['h', 3, 2], ['h', 4, 4]].every(([axis, x, y]) => map[axis + 'Walls'][y][x].type === W.LETTER_DOOR)) return done({ accepted: false, reason: 'changed_relation' });
         const baseline = solveFastMap(map, budget);
         if (baseline.status !== 'solved' || baseline.optimality !== 'proven') return done({ accepted: false, reason: baseline.status === 'unknown' ? 'unknown' : 'unsat' });
@@ -38,7 +37,7 @@ export function createEvaluator() {
         let state = env.initialState(), lastPress = -1, lastMove = -1;
         for (const [i, action] of baseline.solution.actions.entries()) {
             const next = env.step(state, action);
-            if (next.player.steps === state.player.steps) lastPress = i;
+            if (next !== state && next.player.x === state.player.x && next.player.y === state.player.y && next.player.layer === state.player.layer) lastPress = i;
             if (next.layerStates[0].ghosts.some((g, j) =>
                 g.x !== state.layerStates[0].ghosts[j].x || g.y !== state.layerStates[0].ghosts[j].y)) lastMove = i;
             state = next;

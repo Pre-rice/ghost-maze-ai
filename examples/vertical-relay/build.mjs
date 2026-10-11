@@ -17,7 +17,7 @@ export function verticalRelayMap(control = false) {
     return { ...lower, multiLayerMode: true, layerCount: 2,
         layers: [lower, upper].map((m, layer) => ({
             hWalls: m.hWalls, vWalls: m.vWalls, activeCells: m.activeCells, ghosts: [], items: m.items,
-            buttons: m.buttons, stairs: [], endPos: m.endPos, customStartPos: layer === 0 ? m.customStartPos : null
+            buttons: m.buttons, endPos: m.endPos, customStartPos: layer === 0 ? m.customStartPos : null
         })),
         stairs: [{ x: 2, y: 4, layer: 0, direction: 'up' }, { x: 2, y: 4, layer: 1, direction: 'down' }]
     };
@@ -38,9 +38,9 @@ export function buildVerticalExamples() {
         assert(encoded.success);
         const decoded = DataSerializer.loadFromShareCode(encoded.code);
         assert(decoded.success);
-        const { mapData, gameMode, initialHealth, initialStamina } = decoded.data;
+        const { mapData, gameMode, initialHealth } = decoded.data;
         const original = createReferenceEnvironment(map).replay(analysis.baseline.solution.actions);
-        const restored = createReferenceEnvironment({ ...mapData, gameMode, initialHealth, initialStamina }).replay(analysis.baseline.solution.actions);
+        const restored = createReferenceEnvironment({ ...mapData, gameMode, initialHealth }).replay(analysis.baseline.solution.actions);
         assert.deepEqual(physicalState(restored.state), physicalState(original.state));
         writeFileSync(new URL(`${id}.json`, import.meta.url), JSON.stringify(map, null, 2) + '\n');
         return { id, familyId: 'vertical-relay-v1', source: 'hand_designed_controlled_example',

@@ -24,9 +24,9 @@ export function stairMap(withButtons = false) {
     const layers = [lower, upper].map((map, li) => ({
         hWalls: map.hWalls, vWalls: map.vWalls, activeCells: map.activeCells,
         items: map.items, ghosts: map.initialGhosts, buttons: map.buttons,
-        stairs: [], endPos: map.endPos, customStartPos: li === 0 ? map.customStartPos : null
+        endPos: map.endPos, customStartPos: li === 0 ? map.customStartPos : null
     }));
-    return { ...lower, multiLayerMode: true, layerCount: 2, layers,
+    return { width: lower.width, height: lower.height, editorMode: lower.editorMode, gameMode: lower.gameMode, initialHealth: lower.initialHealth, multiLayerMode: true, layerCount: 2, layers,
         stairs: [{ x: 2, y: 2, layer: 0, direction: 'up' }, { x: 2, y: 2, layer: 1, direction: 'down' }]
     };
 }

@@ -1,3 +1,4 @@
+import { freshDecode, historicalPhysical, withoutGoal } from './current-format.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
@@ -12,25 +13,25 @@ const map = read('map.json'), e = read('evidence.json');
 
 test('双鬼交接证书与原引擎、快实现、分享码逐状态一致；反序与移除终点仍安全', () => {
     const env = createReferenceEnvironment(map), fast = createFastEnvironment(map);
-    assert.equal(env.mapId, e.mapId); assert.equal(map.initialStamina, 100);
+    assert.notEqual(env.mapId, e.mapId, '新规则标识不得冒充历史规则标识'); assert.equal(map.initialStamina, 100);
     assert.equal(map.activeCells.flat().filter(Boolean).length, 14);
     const glassReplacement = structuredClone(map);
     for (const rows of [glassReplacement.hWalls, glassReplacement.vWalls]) for (const row of rows) for (const wall of row) if (wall.type === W.GLASS) wall.type = W.SOLID;
     assert.deepEqual(glassReplacement, map);
-    const decoded = DataSerializer.loadFromShareCode(e.sharecode); assert(decoded.success);
+    const decoded = freshDecode(map); assert(decoded.success);
     const { mapData, gameMode, initialHealth, initialStamina } = decoded.data;
     const restored = createReferenceEnvironment({ ...mapData, gameMode, initialHealth, initialStamina });
-    assert.equal(restored.mapId, e.decodedMapId);
+    assert.equal(restored.mapId, createReferenceEnvironment(map).mapId);
     let a = env.initialState(), b = fast.initialState(), c = restored.initialState();
     for (const action of e.solution.solution.actions) {
         a = env.step(a, action); b = fast.step(b, action); c = restored.step(c, action);
         assert(!a.isDead); assert.deepEqual(physicalState(a), physicalState(b)); assert.deepEqual(physicalState(a), physicalState(c));
         assert.deepEqual(a.seenCells, c.seenCells);
     }
-    assert(a.isWon); assert.equal(a.player.steps, 25); assert.equal(a.player.stamina, 75);
+    assert(a.isWon); assert.equal(a.player.steps, 31);
     const reversed = structuredClone(map); reversed.initialGhosts.reverse();
     assert(createReferenceEnvironment(reversed).replay(e.solution.solution.actions).state.isWon);
-    assert.deepEqual(physicalState(createReferenceEnvironment({ ...map, endPos: null }).replay(e.solution.solution.actions).state), e.exitWithoutGoal);
+    assert.deepEqual(historicalPhysical(physicalState(createReferenceEnvironment(withoutGoal(map)).replay(e.solution.solution.actions).state),map), historicalPhysical(e.exitWithoutGoal,map));
     assert.equal(e.humanQuality, null); assert.equal(e.minimality.unresolved, 0);
 });
 

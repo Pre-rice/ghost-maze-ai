@@ -10,8 +10,8 @@ import { analyzeMap } from '../design/analyze.js';
 export function mapFromSharecode(sharecode) {
     const decoded = DataSerializer.loadFromShareCode(sharecode);
     if (!decoded.success) throw new TypeError('示范地图分享码无效');
-    const { mapData, gameMode, initialHealth, initialStamina } = decoded.data;
-    return { ...mapData, gameMode, initialHealth, initialStamina };
+    const { mapData, gameMode, initialHealth } = decoded.data;
+    return { ...mapData, gameMode, initialHealth };
 }
 
 /** 无鬼规划只作直觉路线诊断，不能标成实际人类想法或人类质量分。 */

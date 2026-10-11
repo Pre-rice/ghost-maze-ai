@@ -90,8 +90,8 @@ export function buildCoupled() {
     assert(encoded.success);
     const decoded = DataSerializer.loadFromShareCode(encoded.code);
     assert(decoded.success);
-    const { mapData, gameMode, initialHealth, initialStamina } = decoded.data;
-    const restored = createReferenceEnvironment({ ...mapData, gameMode, initialHealth, initialStamina });
+    const { mapData, gameMode, initialHealth } = decoded.data;
+    const restored = createReferenceEnvironment({ ...mapData, gameMode, initialHealth });
     assert.deepEqual(trace(restored, analysis.baseline.solution.actions).rows, solutionTrace.rows);
     const noGoal = { ...map, endPos: null };
     const exit = createReferenceEnvironment(noGoal).replay(analysis.baseline.solution.actions);

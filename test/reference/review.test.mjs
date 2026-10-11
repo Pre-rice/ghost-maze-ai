@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdirSync, mkdtempSync, readFileSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
+import { pathToFileURL } from 'node:url';
 import { buildPacket, packetId, publicPacket } from '../../src/review/packet.js';
 import { createFeedbackStore, validateFeedback } from '../../src/review/feedback.js';
 import { startReviewServer } from '../../src/review/server.mjs';
@@ -11,7 +12,21 @@ import { solveReferenceMap } from '../../src/search/reference-solver.js';
 import { solveFastMap } from '../../src/search/fast-solver.js';
 import { createReferenceEnvironment } from '../../src/reference/environment.js';
 
-const packet = JSON.parse(readFileSync(new URL('../../examples/review-batch-01/packet.json', import.meta.url), 'utf8'));
+// 新结构仅写入临时测试目录，不覆盖有冲突的历史原图或原试玩包。
+const fixtureDirectory = mkdtempSync(join(tmpdir(), 'ghost-review-maps-'));
+const fixtureFiles = [false, true].map(control => {
+    const file = join(fixtureDirectory, control ? 'control.json' : 'relay.json');
+    writeFileSync(file, JSON.stringify(verticalRelayMap(control)), { flag: 'wx' });
+    return pathToFileURL(file).href;
+});
+const groups = [
+    ['lure-loop-v1', 'examples/puzzle-units/unit-01.json', 'examples/puzzle-units/unit-02.json'],
+    ['complementary-switch-v1', 'examples/mechanism-lab/complementary-switch.json', 'examples/mechanism-lab/bypass-control.json'],
+    ['vertical-relay-v1', ...fixtureFiles]
+];
+const packet = buildPacket(20260930, groups);
+const packetFile = join(fixtureDirectory, 'packet.json');
+writeFileSync(packetFile, JSON.stringify(packet), { flag: 'wx' });
 const temp = () => join(mkdtempSync(join(tmpdir(), 'ghost-review-test-')), 'feedback.jsonl');
 const input = (overrides = {}) => ({ eventId: 'test-event-0001', packetId: packet.id, pairId: packet.pairs[0].id,
     choice: 'a', playedA: 'completed', playedB: 'tried', priorExposure: 'none', reason: '自动化测试，不是真实偏好', ...overrides });
@@ -31,7 +46,7 @@ test('跨层家族的解与必要性由 BFS / A* 分别确认，对照仍需跨�
 });
 
 test('试玩包固定侧序与地图绑定，公开投影没有解法、家族或设计名称', () => {
-    assert.deepEqual(buildPacket(packet.assignmentSeed), packet);
+    assert.deepEqual(buildPacket(packet.assignmentSeed, groups), packet);
     assert.equal(packet.id, packetId(packet));
     const view = publicPacket(packet), text = JSON.stringify(view);
     assert.equal(view.pairs.length, 3);
@@ -41,11 +56,23 @@ test('试玩包固定侧序与地图绑定，公开投影没有解法、家族�
         assert.equal(pair.a.familyId, pair.b.familyId);
         families.add(pair.a.familyId);
         for (const side of ['a', 'b']) {
-            const map = JSON.parse(readFileSync(new URL(`../../${pair[side].file}`, import.meta.url), 'utf8'));
+            const map = JSON.parse(readFileSync(new URL(pair[side].file, new URL('../../', import.meta.url)), 'utf8'));
             assert.equal(createReferenceEnvironment(map).mapId, pair[side].mapId);
         }
     }
     assert.equal(families.size, 3);
+});
+
+test('试玩包拒绝原始楼梯冲突，保留历史原图和原包', () => {
+    const files = ['examples/vertical-relay/remote-switch.json', 'examples/vertical-relay/local-key-control.json',
+        'examples/review-batch-01/packet.json'].map(file => new URL(`../../${file}`, import.meta.url));
+    const original = files.map(file => readFileSync(file, 'utf8'));
+    assert.throws(() => buildPacket(), /层内与全局楼梯数据冲突/);
+    assert.deepEqual(files.map(file => readFileSync(file, 'utf8')), original);
+    const invalidFile = join(fixtureDirectory, 'conflicting-stairs.json');
+    const map = verticalRelayMap(); map.layers[0].stairs = [];
+    writeFileSync(invalidFile, JSON.stringify(map), { flag: 'wx' });
+    assert.throws(() => buildPacket(20260930, [['invalid', pathToFileURL(invalidFile).href, fixtureFiles[0]]]), /层内与全局楼梯数据冲突/);
 });
 
 test('未试玩不能强制投票；无法判断与平局分开，旧包和伪造字段被拒绝', () => {
@@ -85,12 +112,12 @@ test('平局导出 0.5；损坏或错绑地图的历史日志不能混入数据'
 
 test('本地服务提供原游戏与离线依赖，反馈接口隔离来源且不泄露证书', async t => {
     const file = temp();
-    const { server, origin } = await startReviewServer({ port: 0, feedbackFile: file });
+    const { server, origin } = await startReviewServer({ port: 0, packetFile, feedbackFile: file });
     t.after(() => { server.closeAllConnections(); server.close(); });
     const game = await (await fetch(`${origin}/game/`)).text();
-    assert(game.includes('src="/pako.js"'));
+    assert(game.includes('src/vendor/pako.js'));
     assert(!game.includes('cdnjs.cloudflare'));
-    for (const path of ['/pako.js', '/game/src/main.js', '/game/styles.css', '/']) assert.equal((await fetch(origin + path)).status, 200);
+    for (const path of ['/game/src/vendor/pako.js', '/game/src/main.js', '/game/styles.css', '/']) assert.equal((await fetch(origin + path)).status, 200);
     for (const path of ['/examples/vertical-relay/evidence.json', '/packet.json', '/game/.git', '/game/%2e%2e%2fengine.lock.json']) assert.equal((await fetch(origin + path)).status, 404);
     const feedback = await (await fetch(`${origin}/api/feedback`)).json();
     assert.deepEqual(feedback, {});
@@ -115,7 +142,7 @@ test('本体预览从指定目录提供页面与本地 pako，反馈与录制仍
     writeFileSync(join(webGameRoot, 'index.html'), '<body><script src="src/vendor/pako.js"></script></body>', { flag: 'wx' });
     writeFileSync(join(webGameRoot, 'src/vendor/pako.js'), '// 测试本地依赖', { flag: 'wx' });
     writeFileSync(join(webGameRoot, 'src/main.js'), '// 测试本体预览', { flag: 'wx' });
-    const { server, origin } = await startReviewServer({ port: 0, webGameRoot,
+    const { server, origin } = await startReviewServer({ port: 0, packetFile, webGameRoot,
         feedbackFile: join(directory, 'feedback.jsonl'), recordingsDir: join(directory, 'recordings') });
     t.after(() => { server.closeAllConnections(); server.close(); });
     const html = await (await fetch(origin + '/game/')).text();

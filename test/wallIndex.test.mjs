@@ -1,4 +1,4 @@
-import { WALL_TYPES } from '../src/engine/constants.js';
+import { WALL_TYPES } from '../src/reference/engine.js';
 import {
     DIRS4,
     wallBetween,

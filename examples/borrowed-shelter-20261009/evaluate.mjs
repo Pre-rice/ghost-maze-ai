@@ -31,7 +31,7 @@ export function createEvaluator(){
     return map=>{
         const id=createReferenceEnvironment(map).mapId;if(cache.has(id))return cache.get(id);
         const finish=result=>{cache.set(id,result);return result;};
-        if(map.initialStamina!==100||map.initialGhosts.length!==2||map.items.length!==2||
+        if(map.initialGhosts.length!==2||map.items.length!==2||
             edges(map).some(e=>[W.GLASS,W.ONE_WAY].includes(e.wall.type))||
             ![['h',3,3],['v',1,3],['h',2,4],['v',2,4],['v',2,3]].every(([axis,x,y])=>map[axis+'Walls'][y][x].type===W.LETTER_DOOR)||
             ![[0,3],[1,2],[1,3],[1,5],[2,4],[3,2],[3,3]].every(([x,y])=>map.activeCells[y]?.[x])||

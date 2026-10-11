@@ -26,7 +26,7 @@ export function createEvaluator() {
         const id = createReferenceEnvironment(map).mapId;
         if (cache.has(id)) return cache.get(id);
         const finish = result => { cache.set(id, result); return result; };
-        if (map.initialStamina !== 100 || map.initialGhosts.length !== 2 || map.buttons.length !== 3 ||
+        if (map.initialGhosts.length !== 2 || map.buttons.length !== 3 ||
             map.items.length || edges(map).some(e => e.wall.type === W.GLASS) ||
             map.vWalls[1][3].type !== W.LETTER_DOOR ||
             map.hWalls[3][2].type !== W.LETTER_DOOR || map.hWalls[4][4].type !== W.LETTER_DOOR) return finish({ accepted: false, reason: 'changed_relation' });

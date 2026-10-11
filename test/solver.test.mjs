@@ -1,5 +1,5 @@
 // 保留历史测试地图分布，物理规则使用固定版本原引擎。
-import { generateFullMaze } from '../src/engine/mazeGenerator.js';
+import { generateFullMaze } from '../src/reference/engine.js';
 import { WALL_TYPES, GameLogic, MapDefinition } from '../src/reference/engine.js';
 /**
  * 阶段 2 验证：求解器 + 验证器
@@ -9,7 +9,7 @@ import { WALL_TYPES, GameLogic, MapDefinition } from '../src/reference/engine.js
  * 3. 端到端回放（最强闸门）：solver moves 驱动真实 GameLogic.calculateNextState，
  *    断言全程无伤（isDead 恒 false）且最终 isWon
  * 4. 手工"看似不可解但有巧妙解法"关卡：钥匙必须绕路先拿 → 解法特征齐全
- * 5. stamina 约束：同图不同初始体力，短体力不可解
+ * 5. 旧体力字段不影响当前规则下的可解性和计步
  * 6. 超预算降级：高鬼数图不崩溃
  */
 import { solveMap } from '../src/validate/solver.js';
@@ -187,17 +187,18 @@ test('端到端回放：钥匙绕路关卡驱动真实 gameLogic 胜利', () => 
     replayAndAssert(md, result, '钥匙绕路');
 });
 
-test('stamina 约束：初始体力不足以覆盖最短路径 → 不可解', () => {
+test('旧体力字段不限制当前规则的路线与计步', () => {
     const g = makeGrid(6, 5);
     // 直线 9 步：起点 (0,4) → 终点 (5,0)
     const base = wrapMapData(g, { startPos: { x: 0, y: 4 }, endPos: { x: 5, y: 0 } });
     const mdOk = { ...base, initialStamina: 10 };
     const rOk = solveMap(mdOk, { withGhosts: false });
-    assert(rOk.solvable, '体力 10 ≥ 步数 9 应可解');
+    assert(rOk.solvable, '路线应可解');
     assertEq(rOk.minSteps, 9, '最短 9 步');
     const mdFail = { ...base, initialStamina: 8 };
     const rFail = solveMap(mdFail, { withGhosts: false });
-    assert(!rFail.solvable, '体力 8 < 步数 9 应不可解（耗尽判死）');
+    assert(rFail.solvable, '旧体力字段不再限制路线');
+    assertEq(rFail.minSteps, 9);
 });
 
 test('随机图：无鬼兼容接口一致 + 有解图端到端回放无伤胜利', () => {
@@ -213,7 +214,7 @@ test('随机图：无鬼兼容接口一致 + 有解图端到端回放无伤胜�
         if (r.status === 'proven_unsat') unsat++;
         if (r.solvable) {
             solved++;
-            assert(r.solution.movementCost <= 100, `seed${seed} 移动成本 ≤ stamina`);
+            assert(r.solution.movementCost <= r.solution.totalActions, `seed${seed} 位移数不超过总步数`);
             replayAndAssert(md, r, `随机图 seed${seed}`);
             assert(r.difficulty.minHits === 0, '无伤硬门');
         }

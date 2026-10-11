@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
 import {createReferenceEnvironment} from '../../src/reference/environment.js';
-import {describeStep} from '../../src/review/trace-core.js';
+import { describeStep } from '../../src/review/step-description.js';
 import {WALL_TYPES as W} from '../../src/reference/engine.js';
 
 const read=name=>JSON.parse(readFileSync(new URL(name,import.meta.url),'utf8'));

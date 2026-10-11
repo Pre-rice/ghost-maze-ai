@@ -1,3 +1,4 @@
+import { freshDecode, historicalPhysical, withoutGoal } from './current-format.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
@@ -16,8 +17,8 @@ test('新两题的玻璃替换是完整地图恒等；分享码与快实现逐�
         for (const axis of ['h', 'v']) for (const row of replacement[axis + 'Walls']) for (const wall of row) if (wall.type === W.GLASS) wall.type = W.SOLID;
         assert.deepEqual(replacement, map);
         const env = createReferenceEnvironment(map), identical = createReferenceEnvironment(replacement), fast = createFastEnvironment(map);
-        assert.equal(identical.mapId, env.mapId); assert.equal(env.mapId, evidence.mapId);
-        const decoded = DataSerializer.loadFromShareCode(evidence.sharecode); assert(decoded.success);
+        assert.equal(identical.mapId, env.mapId); assert.notEqual(env.mapId, evidence.mapId, '新规则标识不得冒充历史规则标识');
+        const decoded = freshDecode(map); assert(decoded.success);
         const { mapData, gameMode, initialHealth, initialStamina } = decoded.data;
         const restored = createReferenceEnvironment({ ...mapData, gameMode, initialHealth, initialStamina });
         let a = env.initialState(), b = fast.initialState(), c = restored.initialState();
@@ -27,8 +28,8 @@ test('新两题的玻璃替换是完整地图恒等；分享码与快实现逐�
             assert.deepEqual(a.seenCells, c.seenCells); assert(!a.isDead);
         }
         assert(a.isWon);
-        const exit = createReferenceEnvironment({ ...map, endPos: null }).replay(evidence.solution.solution.actions);
-        assert.deepEqual(physicalState(exit.state), evidence.exitWithoutGoal);
+        const exit = createReferenceEnvironment(withoutGoal(map)).replay(evidence.solution.solution.actions);
+        assert.deepEqual(historicalPhysical(physicalState(exit.state),map), historicalPhysical(evidence.exitWithoutGoal,map));
         assert.equal(evidence.humanQuality, null);
     }
 });

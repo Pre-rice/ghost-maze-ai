@@ -1,6 +1,6 @@
 import { WALL_TYPES } from '../reference/engine.js';
-import { wallStateBetween, isGhostVisionBlocked } from './wallIndex.js';
-import { step } from './simulator.js';
+import { wallStateBetween } from './wallIndex.js';
+import { step, canGhostSeePlayer } from './simulator.js';
 import { createFastEnvironment } from '../search/fast-environment.js';
 import { solveFastMap } from '../search/fast-solver.js';
 import { relaxedDistField } from '../search/relaxed-distance.js';
@@ -11,31 +11,13 @@ const hOf = (sim, fields, state) => fields[state.player.layer][state.player.y][s
 
 function ghostInteraction(sim, state) {
     const playerPos = { x: state.player.x, y: state.player.y };
-    const ghosts = state.layers[state.player.layer].ghosts;
-    const ws = state.layers[state.player.layer].wallStates;
+    const ghosts = state.layerStates[state.player.layer].ghosts;
     let seen = false;
     let minDist = Infinity;
     for (const g of ghosts) {
         const d = Math.abs(g.x - playerPos.x) + Math.abs(g.y - playerPos.y);
         if (d < minDist) minDist = d;
-        if (g.x !== playerPos.x && g.y !== playerPos.y) continue;
-        let blocked = false;
-        if (g.x === playerPos.x) {
-            const y0 = Math.min(g.y, playerPos.y);
-            const y1 = Math.max(g.y, playerPos.y);
-            for (let y = y0; y < y1; y++) {
-                const w = ws.h[y + 1] ? ws.h[y + 1][g.x] : null;
-                if (w && isGhostVisionBlocked(w)) { blocked = true; break; }
-            }
-        } else {
-            const x0 = Math.min(g.x, playerPos.x);
-            const x1 = Math.max(g.x, playerPos.x);
-            for (let x = x0; x < x1; x++) {
-                const w = ws.v[g.y] ? ws.v[g.y][x + 1] : null;
-                if (w && isGhostVisionBlocked(w)) { blocked = true; break; }
-            }
-        }
-        if (!blocked) seen = true;
+        if (canGhostSeePlayer(sim, state, state.player.layer, g, playerPos)) seen = true;
     }
     return { seen, minDist };
 }
@@ -60,7 +42,7 @@ function computeFeatures(sim, fields, start, moves) {
     for (const m of moves) {
         const next = step(s, m, sim);
         if (m.type === 'MOVE' && (next.player.x !== s.player.x || next.player.y !== s.player.y)) {
-            const ws = s.layers[s.player.layer].wallStates;
+            const ws = s.layerStates[s.player.layer].wallStates;
             const wall = wallStateBetween(s.player.x, s.player.y, m.payload.dx, m.payload.dy, ws);
             // 通过 LOCKED 门时记录需求（先查后步，通过后动态墙已变 EMPTY）
             if (wall && wall.type === WALL_TYPES.LOCKED) {

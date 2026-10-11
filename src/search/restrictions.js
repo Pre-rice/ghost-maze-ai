@@ -1,6 +1,5 @@
 import { actionFromName } from '../reference/environment.js';
 import { WALL_TYPES as W, GameLogic } from '../reference/engine.js';
-import { makeSimulator, step as compactStep } from '../validate/simulator.js';
 
 const fail = message => { throw new TypeError(`反事实条件：${message}`); };
 function fields(value, names) {
@@ -13,14 +12,13 @@ function fields(value, names) {
 export function compileRestrictions(def, input = []) {
     if (!Array.isArray(input)) fail('restrictions 必须为数组');
     const specs = structuredClone(input), ids = new Set();
-    let compactSimulator;
     const compile = event => {
         if (event?.type === 'locked_opened') {
             fields(event, ['type', 'layer', 'axis', 'x', 'y']);
             if (![event.layer, event.x, event.y].every(Number.isInteger) || !['h', 'v'].includes(event.axis) ||
                 def.layers[event.layer]?.initialWalls[event.axis]?.[event.y]?.[event.x]?.type !== W.LOCKED) fail('开锁事件位置不是数字门');
-            return (before, _action, after) => (before.layerStates || before.layers)[event.layer].wallStates[event.axis][event.y][event.x].type === W.LOCKED &&
-                (after.layerStates || after.layers)[event.layer].wallStates[event.axis][event.y][event.x].type === W.EMPTY;
+            return (before, _action, after) => before.layerStates[event.layer].wallStates[event.axis][event.y][event.x].type === W.LOCKED &&
+                after.layerStates[event.layer].wallStates[event.axis][event.y][event.x].type === W.EMPTY;
         }
         if (event?.type === 'ghost_cross') {
             fields(event, ['type', 'layer', 'index', 'from', 'to']);
@@ -29,8 +27,8 @@ export function compileRestrictions(def, input = []) {
                 event.index >= (def.layers[event.layer]?.initialEntities.ghosts.length ?? 0) || !valid(event.from) || !valid(event.to) ||
                 Math.abs(event.from.x - event.to.x) + Math.abs(event.from.y - event.to.y) !== 1) fail('鬼跨边事件非法');
             return (before, _action, after) => {
-                const a = (before.layerStates || before.layers)[event.layer].ghosts[event.index];
-                const b = (after.layerStates || after.layers)[event.layer].ghosts[event.index];
+                const a = before.layerStates[event.layer].ghosts[event.index];
+                const b = after.layerStates[event.layer].ghosts[event.index];
                 return a.x === event.from.x && a.y === event.from.y && b.x === event.to.x && b.y === event.to.y;
             };
         }
@@ -59,7 +57,7 @@ export function compileRestrictions(def, input = []) {
             // 当前层鬼的最小曼哈顿距离，是状态事实，不代表路径距离、视野或跨步个体身份。
             return (before, _action, after) => {
                 const state = event.phase === 'before' ? before : after, p = state.player;
-                const ghosts = (state.layerStates || state.layers)[p.layer].ghosts;
+                const ghosts = state.layerStates[p.layer].ghosts;
                 return Math.min(...ghosts.map(g => Math.abs(g.x - p.x) + Math.abs(g.y - p.y))) === event.distance;
             };
         }
@@ -68,18 +66,11 @@ export function compileRestrictions(def, input = []) {
             if (def.layerCount !== 1 || !Number.isInteger(event.index) || event.index < 0 ||
                 event.index >= def.layers[0].initialEntities.ghosts.length) fail('挡鬼事件仅支持单层有效鬼索引');
             return (before, action, after) => {
-                const layers = before.layerStates || before.layers, nextLayers = after.layerStates || after.layers;
+                const layers = before.layerStates, nextLayers = after.layerStates;
                 const ghost = layers[0].ghosts[event.index], actual = nextLayers[0].ghosts[event.index];
                 if (layers[0].ghosts.length < 2 || !ghost || !actual || actual.x !== ghost.x || actual.y !== ghost.y) return false;
-                let withoutOthers;
-                if (before.layerStates) {
-                    const copy = before.clone(); copy.layerStates[0].ghosts = [copy.layerStates[0].ghosts[event.index]];
-                    withoutOthers = GameLogic.calculateNextState(copy, actionFromName(action), def).layerStates[0].ghosts[0];
-                } else {
-                    compactSimulator ??= makeSimulator(def);
-                    const copy = { ...before, layers: [{ ...layers[0], ghosts: [{ ...ghost }] }] };
-                    withoutOthers = compactStep(copy, actionFromName(action), compactSimulator).layers[0].ghosts[0];
-                }
+                const copy = before.clone(); copy.layerStates[0].ghosts = [copy.layerStates[0].ghosts[event.index]];
+                const withoutOthers = GameLogic.calculateNextState(copy, actionFromName(action), def, { trails: false, visibility: false }).layerStates[0].ghosts[0];
                 // 同一步只移除其他鬼作局部诊断；实际搜索地图、墙态与后继均保持真实规则。
                 return withoutOthers.x !== ghost.x || withoutOthers.y !== ghost.y;
             };
@@ -89,14 +80,14 @@ export function compileRestrictions(def, input = []) {
             if (![event.layer, event.x, event.y].every(Number.isInteger) || !def.layers[event.layer]?.activeCells[event.y]?.[event.x]) fail('事件位置不在活动格');
             return (_before, _action, after) => event.type === 'visit'
                 ? after.player.layer === event.layer && after.player.x === event.x && after.player.y === event.y
-                : (after.layerStates || after.layers)[event.layer].ghosts.some(g => g.x === event.x && g.y === event.y);
+                : after.layerStates[event.layer].ghosts.some(g => g.x === event.x && g.y === event.y);
         }
         if (event?.type === 'gate') {
             fields(event, ['type', 'layer', 'axis', 'x', 'y', 'state']);
             if (![event.layer, event.x, event.y].every(Number.isInteger) || !['h', 'v'].includes(event.axis) ||
                 def.layers[event.layer]?.initialWalls[event.axis]?.[event.y]?.[event.x]?.type !== W.LETTER_DOOR ||
                 !['open', 'closed'].includes(event.state)) fail('字母门事件非法');
-            return (_before, _action, after) => (after.layerStates || after.layers)[event.layer].wallStates[event.axis][event.y][event.x].currentState === event.state;
+            return (_before, _action, after) => after.layerStates[event.layer].wallStates[event.axis][event.y][event.x].currentState === event.state;
         }
         if (event?.type === 'all') {
             fields(event, ['type', 'events']);

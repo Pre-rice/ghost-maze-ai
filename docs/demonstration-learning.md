@@ -1,5 +1,7 @@
 # 从真实解法到监督数据与机制诊断
 
+> 2026-10-11 更新：以下实验数字和证据是 2026-09-30 的历史记录，原录制与输出保留。当前数据制备直接调用同级本体共同规则，取消体力，统一有效动作计步；原录制需指定明确原图 JSON 导入。全量 14 份真人路线的新码迁移见[录制说明](solution-recording.md)，没有重新训练或冒称旧测量为新规则成绩。
+
 2026-09-30：已核验用户录制，并建立第一版可复现的数据制备和时序特征流程。尚未启动模型训练。
 
 ## 真实录制的核验
@@ -43,7 +45,7 @@
 
 当前图的核心假说为“按 B，玩家原地不动，最近鬼距离从 2 变为 1”。它不依赖地图坐标，可随字母关系重命名为 X/Y。距离是曼哈顿距离，不是可通行路径长度；多鬼时前后最近者可能不同，不能据此推断同一鬼的身份或当前可见性。当前图只有一只鬼，身份不存在此歧义。
 
-新条件不依赖体力、计步或观察知识，同样纳入原有历史监控；同进度下的体力支配剪枝仍适用。后续若增加资源或观察相关条件，仍须重新审查剪枝。
+新条件不依赖计步或观察知识，同样纳入历史监控；旧实验的体力维度已从当前规则和剪枝移除。后续若增加资源或观察相关条件，仍须重新审查剪枝。
 
 ## 原图中的证据
 
@@ -71,7 +73,7 @@
 ## 使用与下一步
 
 ```text
-npm run prepare:demo -- data/solutions/921c60cd-51e3-4638-98ba-569829fb0864.json data/generated/user-demonstration-new dual-loop-relay-v1
+npm run prepare:demo -- data/solutions/921c60cd-51e3-4638-98ba-569829fb0864.json data/generated/user-demonstration-new dual-loop-relay-v1 examples/user-refinements/user-01.json
 npm run search:design -- examples/user-refinements/user-01.json examples/user-refinements/temporal-search-config.json
 ```
 

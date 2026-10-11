@@ -2,7 +2,6 @@ import { performance } from 'node:perf_hooks';
 import assert from 'node:assert/strict';
 import { createFastEnvironment, physicalState } from './fast-environment.js';
 import { relaxedDistField } from './relaxed-distance.js';
-import { stateKey as compactStateKey } from '../validate/simulator.js';
 import { compileRestrictions, replayRestricted } from './restrictions.js';
 
 // 堆节点保留自己的 g、父节点和动作，不能用可被覆盖的状态键回溯旧分支。
@@ -48,16 +47,8 @@ export function solveFastMap(mapData, options = {}) {
     const started = performance.now(), initial = env.initialState(), firstProgress = monitor.initial();
     const keyOf = (state, progress) => `${env.stateKey(state)}|monitor:${progress.join(',')}`;
     const firstKey = keyOf(initial, firstProgress);
-    const bestG = new Map([[firstKey, 0]]), queue = new Queue(), resources = new Map();
-    let expanded = 0, transitions = 0, incumbent = null, order = 0, resourcePruned = 0;
-    // 此分组键只用于资源支配，不用于等价去重。当前固定规则中体力更多不会减少无伤后续能力。
-    const resourceKey = (state, progress) => `${compactStateKey({ ...state, player: { ...state.player, stamina: null } }, env.sim)}|monitor:${progress.join(',')}`;
-    const dominated = (key, g, stamina, strict = false) => (resources.get(key) || []).some(label =>
-        label.g <= g && label.stamina >= stamina && (!strict || label.g < g || label.stamina > stamina));
-    const remember = (key, g, stamina) => {
-        const labels = (resources.get(key) || []).filter(label => !(g <= label.g && stamina >= label.stamina));
-        labels.push({ g, stamina }); resources.set(key, labels);
-    };
+    const bestG = new Map([[firstKey, 0]]), queue = new Queue();
+    let expanded = 0, transitions = 0, incumbent = null, order = 0;
     const finish = (status, reason, optimality = null) => {
         const elapsedMs = performance.now() - started;
         let solution = null;
@@ -75,7 +66,7 @@ export function solveFastMap(mapData, options = {}) {
             schemaVersion: 1, status, reason, ruleset: reference.ruleset, mapId: env.sourceMapId,
             scope: { gameMode: reference.mapDefinition.gameMode, objective: 'zero_hit_no_revive', metric: 'successful_actions', actions: reference.actions, withGhosts, restrictions: monitor.specs },
             optimality, solution,
-            search: { algorithm: 'astar', expanded, transitions, discovered: bestG.size, resourcePruned, exhausted: reason === 'frontier_exhausted', elapsedMs, budget }
+            search: { algorithm: 'astar', expanded, transitions, discovered: bestG.size, exhausted: reason === 'frontier_exhausted', elapsedMs, budget }
         };
     };
     const interrupted = reason => finish(incumbent ? 'solved' : 'unknown', reason, incumbent ? 'not_proven' : null);
@@ -85,15 +76,12 @@ export function solveFastMap(mapData, options = {}) {
     const h = state => fields[state.player.layer][state.player.y][state.player.x];
     if (performance.now() - started >= budget.budgetMs) return interrupted('time_budget');
     if (!Number.isFinite(h(initial))) return finish('proven_unsat', 'relaxed_unreachable');
-    const initialResourceKey = resourceKey(initial, firstProgress);
-    remember(initialResourceKey, 0, initial.player.stamina);
-    queue.push({ key: firstKey, resourceKey: initialResourceKey, progress: firstProgress, state: initial, g: 0, f: h(initial), parent: null, action: null, order: order++ });
+    queue.push({ key: firstKey, progress: firstProgress, state: initial, g: 0, f: h(initial), parent: null, action: null, order: order++ });
     while (queue.nodes.length) {
         if (expanded >= budget.nodeBudget) return interrupted('node_budget');
         if (performance.now() - started >= budget.budgetMs) return interrupted('time_budget');
         const node = queue.pop();
         if (node.g !== bestG.get(node.key)) continue;
-        if (dominated(node.resourceKey, node.g, node.state.player.stamina, true)) { resourcePruned++; continue; }
         if (node.state.isWon) { incumbent = node; return finish('solved', 'goal_reached', 'proven'); }
         expanded++;
         for (const action of reference.actions) {
@@ -104,13 +92,10 @@ export function solveFastMap(mapData, options = {}) {
             if (progress === null) continue;
             const key = keyOf(next, progress), g = node.g + 1, lower = h(next);
             if (g >= (bestG.get(key) ?? Infinity) || !Number.isFinite(lower)) continue;
-            const rk = resourceKey(next, progress);
-            if (dominated(rk, g, next.player.stamina)) { resourcePruned++; continue; }
-            const child = { key, resourceKey: rk, progress, state: next, g, f: g + lower, parent: node, action, order: order++ };
+            const child = { key, progress, state: next, g, f: g + lower, parent: node, action, order: order++ };
             if (next.isWon && (!incumbent || g < incumbent.g)) incumbent = child;
             if (!bestG.has(key) && bestG.size >= budget.stateBudget) return interrupted('state_budget');
             bestG.set(key, g);
-            remember(rk, g, next.player.stamina);
             queue.push(child);
         }
         // 父链只保留回溯信息；不能修改 g、key、parent 或 action。

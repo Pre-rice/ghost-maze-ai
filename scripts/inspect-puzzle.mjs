@@ -22,12 +22,12 @@ const actions = input.solution?.solution?.actions;
 if (actions) {
     const env = createFastEnvironment(map); let state = env.initialState();
     for (const [i, action] of actions.entries()) {
-        const next = env.step(state, action), pressed = next.player.steps === state.player.steps;
+        const next = env.step(state, action), pressed = next !== state && next.player.x === state.player.x && next.player.y === state.player.y && next.player.layer === state.player.layer;
         const gates = ['h', 'v'].flatMap(axis => map[axis + 'Walls'].flatMap((row, y) => row.flatMap((w, x) => w.type === W.LETTER_DOOR ?
-            [`${w.letter}${axis}${x},${y}:${next.layers[0].wallStates[axis][y][x].currentState[0]}`] : [])));
-        const unlocked = input.lock && state.layers[0].wallStates[input.lock.axis][input.lock.y][input.lock.x].type !== next.layers[0].wallStates[input.lock.axis][input.lock.y][input.lock.x].type;
+            [`${w.letter}${axis}${x},${y}:${next.layerStates[0].wallStates[axis][y][x].currentState[0]}`] : [])));
+        const unlocked = input.lock && state.layerStates[0].wallStates[input.lock.axis][input.lock.y][input.lock.x].type !== next.layerStates[0].wallStates[input.lock.axis][input.lock.y][input.lock.x].type;
         const [dx, dy] = { U: [0, -1], R: [1, 0], D: [0, 1], L: [-1, 0] }[action];
-        console.log(`${String(i + 1).padStart(2)} ${action}${pressed ? ':' + map.buttons.find(b => b.x === state.player.x && b.y === state.player.y && b.direction.dx === dx && b.direction.dy === dy).letter : '  '} P(${next.player.x},${next.player.y}) G[${next.layers[0].ghosts.map(g => `${g.x},${g.y}`).join(';')}] ${gates.join(' ')}${unlocked ? ' 开锁' : ''}`);
+        console.log(`${String(i + 1).padStart(2)} ${action}${pressed ? ':' + map.buttons.find(b => b.x === state.player.x && b.y === state.player.y && b.direction.dx === dx && b.direction.dy === dy).letter : '  '} P(${next.player.x},${next.player.y}) G[${next.layerStates[0].ghosts.map(g => `${g.x},${g.y}`).join(';')}] ${gates.join(' ')}${unlocked ? ' 开锁' : ''}`);
         state = next;
     }
 }

@@ -20,9 +20,9 @@ export function earlyUnlock(map, lock, limit = 500) {
         const node = queue[head];
         for (const [, , action] of directions) {
             const next = env.step(node.state, action);
-            if (next === node.state || next.isDead || next.isWon || next.player.steps === node.state.player.steps) continue;
+            if (next === node.state || next.isDead || next.isWon || (next.player.x === node.state.player.x && next.player.y === node.state.player.y && next.player.layer === node.state.player.layer)) continue;
             const actions = [...node.actions, action];
-            if (next.layers[0].wallStates[lock.axis][lock.y][lock.x].type === W.EMPTY) return actions;
+            if (next.layerStates[0].wallStates[lock.axis][lock.y][lock.x].type === W.EMPTY) return actions;
             const k = env.stateKey(next);
             if (!seen.has(k)) { seen.add(k); queue.push({ state: next, actions }); }
         }
@@ -93,9 +93,9 @@ for (let index = 0; index < iterations; index++) {
     const env = createFastEnvironment(map); let state = env.initialState(), unlockStep = null, word = [], moved = map.initialGhosts.map(() => 0);
     for (const [i, action] of solution.solution.actions.entries()) {
         const next = env.step(state, action);
-        if (state.layers[0].wallStates[lock.axis][lock.y][lock.x].type === W.LOCKED && next.layers[0].wallStates[lock.axis][lock.y][lock.x].type === W.EMPTY) unlockStep = i + 1;
-        if (next.player.steps === state.player.steps) word.push({ step: i + 1, letter: map.buttons.find(b => b.x === state.player.x && b.y === state.player.y).letter });
-        next.layers[0].ghosts.forEach((g, j) => { if (g.x !== state.layers[0].ghosts[j].x || g.y !== state.layers[0].ghosts[j].y) moved[j]++; }); state = next;
+        if (state.layerStates[0].wallStates[lock.axis][lock.y][lock.x].type === W.LOCKED && next.layerStates[0].wallStates[lock.axis][lock.y][lock.x].type === W.EMPTY) unlockStep = i + 1;
+        if (next !== state && next.player.x === state.player.x && next.player.y === state.player.y && next.player.layer === state.player.layer) word.push({ step: i + 1, letter: map.buttons.find(b => b.x === state.player.x && b.y === state.player.y).letter });
+        next.layerStates[0].ghosts.forEach((g, j) => { if (g.x !== state.layerStates[0].ghosts[j].x || g.y !== state.layerStates[0].ghosts[j].y) moved[j]++; }); state = next;
     }
     if (unlockStep === null) { count('lock_avoidable'); continue; }
     if (word.length < 4) { count('few_presses'); continue; }

@@ -34,7 +34,7 @@ export function createEvaluator() {
         const id = createReferenceEnvironment(map).mapId;
         if (cache.has(id)) return cache.get(id);
         const finish = result => { cache.set(id, result); return result; };
-        if (map.initialStamina !== 100 || map.initialGhosts.length !== 2 || map.items.length !== 1 ||
+        if (map.initialGhosts.length !== 2 || map.items.length !== 1 ||
             edges(map).some(e => e.wall.type === W.GLASS) || map.vWalls[2][3].type !== W.LOCKED ||
             map.hWalls[2][2].type !== W.LETTER_DOOR || map.hWalls[3][3].type !== W.LETTER_DOOR ||
             map.hWalls[4][2].type !== W.LETTER_DOOR || map.hWalls[5][2].type !== W.LETTER_DOOR ||

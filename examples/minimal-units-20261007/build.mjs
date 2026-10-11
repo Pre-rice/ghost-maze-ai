@@ -40,7 +40,7 @@ export function createUnitEvaluator(kind) {
             const fast = createFastEnvironment(map), moves = [0, 0]; let state = fast.initialState();
             for (const action of baseline.solution.actions) {
                 const next = fast.step(state, action);
-                for (let i = 0; i < 2; i++) if (state.layers[0].ghosts[i].x !== next.layers[0].ghosts[i].x || state.layers[0].ghosts[i].y !== next.layers[0].ghosts[i].y) moves[i]++;
+                for (let i = 0; i < 2; i++) if (state.layerStates[0].ghosts[i].x !== next.layerStates[0].ghosts[i].x || state.layerStates[0].ghosts[i].y !== next.layerStates[0].ghosts[i].y) moves[i]++;
                 state = next;
             }
             if (moves.some(n => n === 0)) return finish({ accepted: false, reason: 'changed_mechanism', baseline });
@@ -88,8 +88,8 @@ export function buildUnits() {
         const original = trace(env, actions);
         const encoded = DataSerializer.generateShareCode(map); assert(encoded.success);
         const decoded = DataSerializer.loadFromShareCode(encoded.code); assert(decoded.success);
-        const { mapData, gameMode, initialHealth, initialStamina } = decoded.data;
-        const restored = trace(createReferenceEnvironment({ ...mapData, gameMode, initialHealth, initialStamina }), actions);
+        const { mapData, gameMode, initialHealth } = decoded.data;
+        const restored = trace(createReferenceEnvironment({ ...mapData, gameMode, initialHealth }), actions);
         assert.deepEqual(physicalState(restored.state), physicalState(original.state));
         assert.deepEqual(restored.rows, original.rows);
         const exit = createReferenceEnvironment({ ...map, endPos: null }).replay(actions);

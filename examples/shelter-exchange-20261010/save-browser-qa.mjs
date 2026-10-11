@@ -19,8 +19,8 @@ const verified=verifyRecording(saved.input);assert(verified.cleanWin);assert.dee
 assert.equal(verified.mapId,evidence.decodedMapId);
 assert(result.share.success);
 const code=result.share.code,decoded=DataSerializer.loadFromShareCode(code);assert(decoded.success);
-const{mapData,gameMode,initialHealth,initialStamina}=decoded.data;assertButtonAttachments(mapData);
-const env=createReferenceEnvironment({...mapData,gameMode,initialHealth,initialStamina});
+const{mapData,gameMode,initialHealth}=decoded.data;assertButtonAttachments(mapData);
+const env=createReferenceEnvironment({...mapData,gameMode,initialHealth});
 assert.equal(env.mapId,evidence.decodedMapId);
 let state=env.initialState();assert.deepEqual({physical:traceState(state),seenCells:state.seenCells},expected.trace[0]);
 for(const[action,index]of expected.actions.map((action,index)=>[action,index])){

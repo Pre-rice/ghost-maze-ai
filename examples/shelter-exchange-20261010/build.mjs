@@ -6,7 +6,8 @@ import {createFastEnvironment,physicalState} from '../../src/search/fast-environ
 import {solveFastMap} from '../../src/search/fast-solver.js';
 import {solveReferenceMap} from '../../src/search/reference-solver.js';
 import {assertButtonAttachments} from '../../src/design/button-support.js';
-import {traceState,describeStep} from '../../src/review/trace-core.js';
+import { traceState } from '../../src/review/trace-core.js';
+import { describeStep } from '../../src/review/step-description.js';
 import {budget,referenceBudget,constraints} from './evaluate.mjs';
 
 const read=name=>JSON.parse(readFileSync(new URL(name,import.meta.url),'utf8'));
@@ -37,8 +38,8 @@ const proofs=[];for(const condition of constraints){const quick=checked(conditio
     proofs.push({condition,quick,reference:result});console.log(JSON.stringify({check:condition.id,states:result.search.discovered}));}
 const encoded=DataSerializer.generateShareCode(map);assert(encoded.success);
 const decoded=DataSerializer.loadFromShareCode(encoded.code);assert(decoded.success);
-const{mapData,gameMode,initialHealth,initialStamina}=decoded.data;assertButtonAttachments(mapData);
-const restored=createReferenceEnvironment({...mapData,gameMode,initialHealth,initialStamina});
+const{mapData,gameMode,initialHealth}=decoded.data;assertButtonAttachments(mapData);
+const restored=createReferenceEnvironment({...mapData,gameMode,initialHealth});
 const actions=baseline.solution.actions,trace=[],browserTrace=[];let a=env.initialState(),b=fast.initialState(),c=restored.initialState();
 browserTrace.push({physical:traceState(c),seenCells:c.seenCells});
 for(const action of actions){const before=a;a=env.step(a,action);b=fast.step(b,action);c=restored.step(c,action);
@@ -61,5 +62,5 @@ save('browser-trace.json',{mapId:restored.mapId,actions,trace:browserTrace});
 save('manifest.json',{date:'2026-10-10',ruleset:env.ruleset,mapId:env.mapId,decodedMapId:restored.mapId,
     familyId:evidence.familyId,splitGroup:evidence.splitGroup,source:evidence.source,activeCells:map.activeCells.flat().filter(Boolean).length,
     ghostCount:3,itemCount:2,buttonCount:map.buttons.length,totalActions:actions.length,movementCost:baseline.solution.movementCost,
-    initialStamina:100,sharecode:encoded.code,humanQuality:null});
-console.log(JSON.stringify({check:'finished',T:actions.length,L:a.player.steps,stamina:a.player.stamina,shareLength:encoded.code.length}));
+    sharecode:encoded.code,humanQuality:null});
+console.log(JSON.stringify({check:'finished',T:actions.length,L:env.replay(actions).movementCost,shareLength:encoded.code.length}));

@@ -1,8 +1,9 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { DataSerializer, GameLogic, WALL_TYPES } from '../reference/engine.js';
+import { DataSerializer, GameLogic, WALL_TYPES, replayStep } from '../reference/engine.js';
 import { createReferenceEnvironment } from '../reference/environment.js';
-import { traceState, traceAction, describeStep } from './trace-core.js';
+import { traceState } from './trace-core.js';
+import { describeStep } from './step-description.js';
 
 export function verifyRecording(input) {
     if (!input || input.schemaVersion !== 1 || input.coverage !== 'retained_branch' ||
@@ -11,20 +12,25 @@ export function verifyRecording(input) {
         !Array.isArray(input.actions) || input.actions.length > 2000) throw new TypeError('录制格式非法');
     const decoded = DataSerializer.loadFromShareCode(input.sharecode);
     if (!decoded.success) throw new TypeError('录制中的地图分享码无效');
-    const { mapData, gameMode, initialHealth, initialStamina } = decoded.data;
-    const env = createReferenceEnvironment({ ...mapData, gameMode, initialHealth, initialStamina });
-    let state = env.initialState(), clean = true;
+    const { mapData, gameMode, initialHealth } = decoded.data;
+    const env = createReferenceEnvironment({ ...mapData, gameMode, initialHealth });
+    let state = env.initialState(), clean = true, movementCost = 0;
     const steps = [];
     for (const token of input.actions) {
-        const next = GameLogic.calculateNextState(state, traceAction(token), env.mapDefinition);
+        let base = state;
+        if (state.isDead) { clean = false; base = GameLogic.handleRevive(state, env.mapDefinition); }
+        let next;
+        try { next = replayStep(state, token, env.mapDefinition, steps.length + 1); }
+        catch (error) { throw new TypeError('录制包含无效或未知动作、或终止后的多余动作：' + error.message); }
+        if (next.player.x !== base.player.x || next.player.y !== base.player.y || next.player.layer !== base.player.layer) movementCost++;
         if (next === state) throw new TypeError('录制包含无效动作或终止后的多余动作');
-        steps.push(describeStep(state, next, token, env.mapDefinition, WALL_TYPES));
-        if (next.isDead || token === 'REVIVE') clean = false;
+        steps.push(describeStep(base, next, token, env.mapDefinition, WALL_TYPES));
+        if (next.isDead) clean = false;
         state = next;
     }
     if (JSON.stringify(traceState(state)) !== JSON.stringify(input.final)) throw new TypeError('录制终局与原引擎重放不一致');
     return { ruleset: env.ruleset, mapId: env.mapId, won: state.isWon, cleanWin: clean && state.isWon,
-        totalActions: input.actions.length, movementCost: state.player.steps, steps };
+        totalActions: input.actions.length, movementCost, steps };
 }
 
 export function createRecordingStore(directory) {

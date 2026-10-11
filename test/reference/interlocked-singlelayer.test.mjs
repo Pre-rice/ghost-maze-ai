@@ -1,3 +1,4 @@
+import { freshDecode, historicalPhysical, withoutGoal } from './current-format.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
@@ -17,21 +18,21 @@ test('双开关新题无玻璃，原引擎、快实现、分享码逐步一致�
     for (const edge of edges(replacement)) if (edge.wall.type === W.GLASS) replacement[edge.axis + 'Walls'][edge.y][edge.x] = { type: W.SOLID, keys: 0 };
     assert.deepEqual(replacement, map);
     const original = createReferenceEnvironment(map), fast = createFastEnvironment(map);
-    assert.equal(original.mapId, evidence.mapId);
+    assert.notEqual(original.mapId, evidence.mapId, '新规则标识不得冒充历史规则标识');
     assert.equal(createReferenceEnvironment(replacement).mapId, original.mapId);
-    const decoded = DataSerializer.loadFromShareCode(evidence.sharecode); assert(decoded.success);
+    const decoded = freshDecode(map); assert(decoded.success);
     const { mapData, gameMode, initialHealth, initialStamina } = decoded.data;
     const restored = createReferenceEnvironment({ ...mapData, gameMode, initialHealth, initialStamina });
-    assert.equal(restored.mapId, evidence.decodedMapId);
+    assert.equal(restored.mapId, createReferenceEnvironment(map).mapId);
     let a = original.initialState(), b = fast.initialState(), c = restored.initialState();
     for (const action of evidence.solution.solution.actions) {
         a = original.step(a, action); b = fast.step(b, action); c = restored.step(c, action);
         assert.deepEqual(physicalState(a), physicalState(b)); assert.deepEqual(physicalState(a), physicalState(c));
         assert.deepEqual(a.seenCells, c.seenCells); assert(!a.isDead);
     }
-    assert(a.isWon); assert.equal(a.player.steps, 40); assert.equal(a.player.stamina, 60);
-    const exit = createReferenceEnvironment({ ...map, endPos: null }).replay(evidence.solution.solution.actions);
-    assert.deepEqual(physicalState(exit.state), evidence.exitWithoutGoal);
+    assert(a.isWon); assert.equal(a.player.steps, 46);
+    const exit = createReferenceEnvironment(withoutGoal(map)).replay(evidence.solution.solution.actions);
+    assert.deepEqual(historicalPhysical(physicalState(exit.state),map), historicalPhysical(evidence.exitWithoutGoal,map));
     assert.equal(evidence.humanQuality, null);
 });
 

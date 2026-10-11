@@ -7,7 +7,8 @@ import { solveReferenceMap } from '../../src/search/reference-solver.js';
 import { solveFastMap } from '../../src/search/fast-solver.js';
 import { minimizeDesign } from '../../src/design/minimize.js';
 import { DataSerializer, WALL_TYPES as W } from '../../src/reference/engine.js';
-import { traceState, describeStep } from '../../src/review/trace-core.js';
+import { traceState } from '../../src/review/trace-core.js';
+import { describeStep } from '../../src/review/step-description.js';
 import { budget, referenceBudget, createEvaluator, constraints, edges, proved } from './evaluate.mjs';
 
 const save = (name, value) => writeFileSync(new URL(name, import.meta.url), JSON.stringify(value, null, 2) + '\n', { flag: 'wx' });
@@ -41,8 +42,8 @@ for (let index = 0; index < 2; index++) {
 const noGhost = solveFastMap(map, { ...budget, withGhosts: false }); assert(proved(noGhost));
 const encoded = DataSerializer.generateShareCode(map); assert(encoded.success);
 const decoded = DataSerializer.loadFromShareCode(encoded.code); assert(decoded.success);
-const { mapData, gameMode, initialHealth, initialStamina } = decoded.data;
-const restored = createReferenceEnvironment({ ...mapData, gameMode, initialHealth, initialStamina });
+const { mapData, gameMode, initialHealth } = decoded.data;
+const restored = createReferenceEnvironment({ ...mapData, gameMode, initialHealth });
 let a = env.initialState(), b = fast.initialState(), c = restored.initialState();
 const browserTrace = [{ physical: traceState(c), seenCells: c.seenCells }], trace = [];
 for (const action of actions) {
@@ -70,5 +71,5 @@ const evidence = { schemaVersion: 1, date: '2026-10-09', ruleset: env.ruleset, m
 save('map.json', map); save('evidence.json', evidence); save('browser-trace.json', { mapId: restored.mapId, actions, trace: browserTrace });
 save('manifest.json', [{ mapId: env.mapId, ruleset: env.ruleset, cells: minimized.complexity[0], ghosts: 2, buttons: map.buttons.length,
     actions: actions.length, sharecode: encoded.code, familyId: evidence.familyId, splitGroup: evidence.splitGroup, status: evidence.status }]);
-console.log(JSON.stringify({ check: 'finished', cells: minimized.complexity[0], actions: actions.length, moves: a.player.steps,
+console.log(JSON.stringify({ check: 'finished', cells: minimized.complexity[0], actions: actions.length, moves: env.replay(actions).movementCost,
     noGhost: noGhost.solution.totalActions, audit: minimized.localMinimality.audit.length, sharecode: encoded.code }));

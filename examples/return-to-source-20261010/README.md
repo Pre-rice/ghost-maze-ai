@@ -1,5 +1,7 @@
 # 《回位》
 
+> 历史作品说明（2026-10-11）：下文保留原地图、反馈与当时验收证据。旧分享码、体力与独立回放地址已弃用；最新有效试玩和同页回放统一见[AI 地图总目录](../../../ghost-maze/docs/ai-map-catalog.md)。不从旧证据自动推断当前最短性，冲突／非法图在总目录明确列出。
+
 [试玩入口](http://127.0.0.1:4212/game/?map=Y-bgYGZlSGFgYmJl4OPn4-NjYGBiZGRiYmBhYmV0ZGZhdmJiZHBkZGRwYggRf6B_v-EP8weuBgYGhv11TX9_f-Fy6BB_AuSJOTE6MjoyODE6McBoEAsA)
 
 [参考解法回放（剧透，自动播放、显示全图）](http://127.0.0.1:4213/replay.html?id=99d1ca99-1ebf-495d-8ac3-7f6e08900ab2&autoplay=1&vision=full)

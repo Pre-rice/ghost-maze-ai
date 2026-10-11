@@ -1,3 +1,4 @@
+import { freshDecode, historicalPhysical, withoutGoal } from './current-format.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
@@ -88,9 +89,7 @@ test('同位置同方向的按钮按原引擎顺序选第一个，不能误记�
     const map = smallMap([[1, 1], [2, 1]], [1, 1], [2, 1]);
     map.buttons = ['A', 'B'].map(letter => ({ x: 1, y: 1, direction: { dx: 0, dy: -1 }, letter }));
     map.vWalls[1][2] = { type: W.LETTER_DOOR, letter: 'A', initialState: 'closed' };
-    const env = createReferenceEnvironment(map);
-    assert(replayRestricted(env, ['U', 'R'], [forbid('B', { type: 'press', letter: 'B' })]).state.isWon);
-    assert.throws(() => replayRestricted(env, ['U', 'R'], [forbid('A', press)]), /违反/);
+    assert.throws(() => createReferenceEnvironment(map), /重复实体/);
 });
 
 test('钥匙事件检查实际拾取，不把到达旧钥匙坐标当成拿钥匙', () => {
@@ -122,7 +121,7 @@ test('自由编辑搜索保留来源、未知与修改链，同种子重复可�
 
 test('编辑关闭有实体的活动格会被拒绝；有效提案不污染原图', () => {
     const map = complementaryMap(), before = structuredClone(map);
-    assert.throws(() => applyEdit(map, { type: 'cell', x: 3, y: 4 }), /出生点|位置|非法/);
+    assert.throws(() => applyEdit(map, { type: 'cell', x: 3, y: 4 }), /出生点|位置|非法|活动格/);
     assert.throws(() => applyEdit(map, { type: 'wall', axis: 'h', x: -1, y: 2, wall: { type: 0 } }), TypeError);
     applyEdit(map, { type: 'cell', x: 2, y: 2 });
     assert.deepEqual(map, before);
@@ -133,8 +132,8 @@ test('已导出的新单元及旁路对照证书在原引擎和分享码往返�
     for (const record of records) {
         const map = JSON.parse(readFileSync(new URL(`../../examples/mechanism-lab/${record.id}.json`, import.meta.url), 'utf8'));
         const env = createReferenceEnvironment(map);
-        assert.equal(env.mapId, record.mapId);
-        const decoded = DataSerializer.loadFromShareCode(record.sharecode);
+        assert.notEqual(env.mapId, record.mapId, '新规则标识不得冒充历史规则标识');
+        const decoded = freshDecode(map);
         assert(decoded.success);
         const { mapData, gameMode, initialHealth, initialStamina } = decoded.data;
         const restored = createReferenceEnvironment({ ...mapData, gameMode, initialHealth, initialStamina });

@@ -30,7 +30,7 @@ export function createEvaluator() {
         const id = createReferenceEnvironment(map).mapId;
         if (cache.has(id)) return cache.get(id);
         const finish = e => { cache.set(id, e); return e; };
-        if (map.initialStamina !== 100 || map.initialGhosts.length !== 1 || map.buttons.length !== 3 || map.items.length !== 1 ||
+        if (map.initialGhosts.length !== 1 || map.buttons.length !== 3 || map.items.length !== 1 ||
             edges(map).some(e => e.wall.type === W.GLASS) || map.hWalls[4][4].type !== W.LOCKED ||
             map.hWalls[3][4].type !== W.LETTER_DOOR || map.vWalls[5][4].type !== W.LETTER_DOOR) return finish({ accepted: false, reason: 'changed_scope' });
         const baseline = solveFastMap(map, budget);

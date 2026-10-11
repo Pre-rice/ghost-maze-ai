@@ -5,14 +5,14 @@ import { WALL_TYPES as W } from '../reference/engine.js';
 const DIRECTIONS = [[0, -1, 'U'], [1, 0, 'R'], [0, 1, 'D'], [-1, 0, 'L']];
 const key = state => JSON.stringify([
     state.player.x, state.player.y, state.player.keys,
-    state.layers[0].ghosts.map(g => [g.x, g.y]), state.layers[0].items,
-    state.layers[0].wallStates
+    state.layerStates[0].ghosts.map(g => [g.x, g.y]), state.layerStates[0].items,
+    state.layerStates[0].wallStates
 ]);
 
 // 静态距离只描述当前通路；闭机关按三步代价估计，不搜索开关操作或鬼的未来。
 function distance(map, state) {
     const costs = new Map([[`${map.endPos.x},${map.endPos.y}`, 0]]);
-    const queue = [[map.endPos.x, map.endPos.y, 0]], walls = state.layers[0].wallStates;
+    const queue = [[map.endPos.x, map.endPos.y, 0]], walls = state.layerStates[0].wallStates;
     while (queue.length) {
         queue.sort((a, b) => a[2] - b[2]);
         const [x, y, cost] = queue.shift();
@@ -67,13 +67,13 @@ export function runLocalPolicy(map, { horizon = 3, seed = 11, maxActions = 180 }
         const chosen = candidates[0], before = state;
         state = chosen.next; actions.push(chosen.action);
         visits.set(key(state), (visits.get(key(state)) ?? 0) + 1);
-        decisions.push({ turn: turn + 1, action: chosen.action, player: [state.player.x, state.player.y], ghosts: state.layers[0].ghosts.map(g => [g.x, g.y]),
-            button: state.player.steps === before.player.steps ? map.buttons.find(b => b.x === before.player.x && b.y === before.player.y &&
+        decisions.push({ turn: turn + 1, action: chosen.action, player: [state.player.x, state.player.y], ghosts: state.layerStates[0].ghosts.map(g => [g.x, g.y]),
+            button: state.player.x === before.player.x && state.player.y === before.player.y ? map.buttons.find(b => b.x === before.player.x && b.y === before.player.y &&
                 DIRECTIONS.some(([dx, dy, action]) => action === chosen.action && b.direction.dx === dx && b.direction.dy === dy))?.letter ?? null : null,
             candidates: candidates.map(({ action, value, repeats }) => ({ action, value, repeats })) });
     }
     if (state.isWon) reason = 'won';
     env.reference.replay(actions);
     return { policy: 'local-current-gates-v1', horizon, seed, maxActions, fullInformation: true, completeSolverUsedForDecisions: false,
-        won: state.isWon, reason, totalActions: actions.length, movementCost: state.player.steps, simulated, actions, decisions };
+        won: state.isWon, reason, totalActions: actions.length, movementCost: env.reference.replay(actions).movementCost, simulated, actions, decisions };
 }

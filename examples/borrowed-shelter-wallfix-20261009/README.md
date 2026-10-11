@@ -1,5 +1,7 @@
 # 按钮依附修正版（2026-10-09）
 
+> 历史作品说明（2026-10-11）：下文保留原地图、反馈与当时验收证据。旧分享码、体力与独立回放地址已弃用；最新有效试玩和同页回放统一见[AI 地图总目录](../../../ghost-maze/docs/ai-map-catalog.md)。不从旧证据自动推断当前最短性，冲突／非法图在总目录明确列出。
+
 [开始试玩](http://127.0.0.1:4190/game/?map=FcGxDYNAEATA3ds3IkBygFzQHznRn2jAdZBRCsmV4lKcOLZkJMOM-l43PEV23XC_wAwqpkIUGioLXFKFbMrcY87lvX_b72iPOLU8rbF8Xrke4blFBEardFY4nBMcTucf)
 
 原版 B 按钮指向空通路，违反必须依附墙面的规则。本次将它改为依附同格已有的上墙，四个按钮的位置和墙体布局未改。原版已撤回。

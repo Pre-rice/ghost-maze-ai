@@ -6,7 +6,8 @@ import { createFastEnvironment, physicalState } from '../../src/search/fast-envi
 import { solveFastMap } from '../../src/search/fast-solver.js';
 import { solveReferenceMap } from '../../src/search/reference-solver.js';
 import { assertButtonAttachments, findUnsupportedButtons } from '../../src/design/button-support.js';
-import { traceState, describeStep } from '../../src/review/trace-core.js';
+import { traceState } from '../../src/review/trace-core.js';
+import { describeStep } from '../../src/review/step-description.js';
 import { budget, referenceBudget, constraints } from '../borrowed-shelter-20261009/evaluate.mjs';
 
 const read = name => JSON.parse(readFileSync(new URL(name, import.meta.url), 'utf8'));
@@ -33,9 +34,9 @@ for (const condition of constraints) {
 }
 const encoded = DataSerializer.generateShareCode(map); assert(encoded.success);
 const decoded = DataSerializer.loadFromShareCode(encoded.code); assert(decoded.success);
-const { mapData, gameMode, initialHealth, initialStamina } = decoded.data;
+const { mapData, gameMode, initialHealth } = decoded.data;
 assertButtonAttachments(mapData);
-const restored = createReferenceEnvironment({ ...mapData, gameMode, initialHealth, initialStamina });
+const restored = createReferenceEnvironment({ ...mapData, gameMode, initialHealth });
 let a = env.initialState(), b = fast.initialState(), c = restored.initialState(), d = old.initialState();
 const trace = [], browserTrace = [{ physical: traceState(c), seenCells: c.seenCells }];
 for (const [index, action] of actions.entries()) {
@@ -57,4 +58,4 @@ const evidence = { schemaVersion: 1, date: '2026-10-09', mapId: env.mapId, decod
     baseline, reference, proofs, trace, sharecode: encoded.code, familyId: previous.familyId, splitGroup: previous.splitGroup,
     minimalityRecomputed: false, oldAblationsTransferred: false, humanQuality: null, status: 'awaiting_user_review' };
 save('map.json', map); save('evidence.json', evidence); save('browser-trace.json', { mapId: restored.mapId, actions, trace: browserTrace });
-console.log(JSON.stringify({ check: 'finished', T: actions.length, L: a.player.steps, stamina: a.player.stamina, unsupportedButtons: 0 }));
+console.log(JSON.stringify({ check: 'finished', T: actions.length, L: env.replay(actions).movementCost, unsupportedButtons: 0 }));

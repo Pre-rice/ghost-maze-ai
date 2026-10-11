@@ -1,5 +1,4 @@
-import { MapDefinition } from '../reference/engine.js';
-import { getButtonHotspotAtPos } from '../../vendor/ghost-maze/src/core/pathfinding.js';
+import { MapDefinition, getButtonHotspotAtPos } from '../reference/engine.js';
 
 /** 按钮依附校验复用本体编辑器热点规则；地图边界也视为实际墙面。 */
 export function findUnsupportedButtons(map) {

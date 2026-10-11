@@ -1,7 +1,7 @@
 import { createReferenceEnvironment, actionFromName } from '../reference/environment.js';
 import { makeSimulator, createInitState, step, stateKey } from '../validate/simulator.js';
 
-/** 快环境仅接受真实玩家动作；规则校验和证书重放仍交给原引擎。 */
+/** 快环境仅接受真实玩家动作；规则校验和证书重放均调用共同引擎。 */
 export function createFastEnvironment(mapData, { withGhosts = true } = {}) {
     const source = createReferenceEnvironment(mapData);
     let reference = source;
@@ -24,9 +24,9 @@ export function createFastEnvironment(mapData, { withGhosts = true } = {}) {
 export function physicalState(state) {
     const p = state.player;
     return {
-        player: { layer: p.layer, x: p.x, y: p.y, hp: p.hp, stamina: p.stamina, keys: p.keys, steps: p.steps },
+        player: { layer: p.layer, x: p.x, y: p.y, hp: p.hp, keys: p.keys, steps: p.steps },
         isDead: state.isDead, isWon: state.isWon, loopCount: state.loopCount,
-        layers: (state.layerStates || state.layers).map(layer => ({
+        layers: state.layerStates.map(layer => ({
             ghosts: layer.ghosts.map(g => [g.x, g.y]), items: layer.items, wallStates: layer.wallStates
         }))
     };

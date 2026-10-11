@@ -5,7 +5,8 @@ import { createReferenceEnvironment } from '../../src/reference/environment.js';
 import { createFastEnvironment, physicalState } from '../../src/search/fast-environment.js';
 import { solveReferenceMap } from '../../src/search/reference-solver.js';
 import { assertButtonAttachments } from '../../src/design/button-support.js';
-import { traceState, describeStep } from '../../src/review/trace-core.js';
+import { traceState } from '../../src/review/trace-core.js';
+import { describeStep } from '../../src/review/step-description.js';
 import { createEvaluator, constraints, referenceBudget } from './evaluate.mjs';
 
 const read = name => JSON.parse(readFileSync(new URL(name, import.meta.url), 'utf8'));
@@ -25,9 +26,9 @@ for (const [i, condition] of constraints.entries()) {
 }
 const encoded = DataSerializer.generateShareCode(map); assert(encoded.success);
 const decoded = DataSerializer.loadFromShareCode(encoded.code); assert(decoded.success);
-const { mapData, gameMode, initialHealth, initialStamina } = decoded.data; assertButtonAttachments(mapData);
+const { mapData, gameMode, initialHealth } = decoded.data; assertButtonAttachments(mapData);
 const env = createReferenceEnvironment(map), fast = createFastEnvironment(map);
-const restored = createReferenceEnvironment({ ...mapData, gameMode, initialHealth, initialStamina });
+const restored = createReferenceEnvironment({ ...mapData, gameMode, initialHealth });
 const actions = baseline.solution.actions, trace = [], browserTrace = [];
 let a = env.initialState(), b = fast.initialState(), c = restored.initialState();
 browserTrace.push({ physical: traceState(c), seenCells: c.seenCells });
@@ -70,6 +71,6 @@ save('manifest.json', { schemaVersion: 1, date: '2026-10-10', title: '借位', m
     ruleset: env.ruleset, familyId: evidence.familyId, splitGroup: evidence.splitGroup, source: source.search,
     activeCells: map.activeCells.flat().filter(Boolean).length, ghostCount: map.initialGhosts.length, buttonCount: map.buttons.length,
     gateCount: [...map.hWalls.flat(), ...map.vWalls.flat()].filter(w => w.type === W.LETTER_DOOR).length,
-    itemCount: map.items.length, initialStamina: 100, totalActions: actions.length, movementCost: baseline.solution.movementCost,
+    itemCount: map.items.length,  totalActions: actions.length, movementCost: baseline.solution.movementCost,
     sharecode: encoded.code, humanQuality: null });
-console.log(JSON.stringify({ check: 'finished', T: actions.length, word: trace.map(t => t.button ?? '').join(''), stamina: a.player.stamina, shareLength: encoded.code.length }));
+console.log(JSON.stringify({ check: 'finished', T: actions.length, word: trace.map(t => t.button ?? '').join(''), shareLength: encoded.code.length }));

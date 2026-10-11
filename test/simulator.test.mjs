@@ -1,18 +1,18 @@
 // 保留历史测试地图分布，物理规则使用固定版本原引擎。
-import { generateFullMaze } from '../src/engine/mazeGenerator.js';
+import { generateFullMaze } from '../src/reference/engine.js';
 import { WALL_TYPES, GameLogic, MapDefinition } from '../src/reference/engine.js';
 /**
  * 阶段 1 验证：simulator 与 gameLogic 一致性双跑测试
  *
  * 核心方法：随机动作序列双跑 `GameLogic.calculateNextState` vs `simulator.step`，
- * 断言玩家位置/钥匙/体力/步数、鬼位、物品、墙体状态、isWon/isDead 全等（忽略 trail/seenCells）。
+ * 断言玩家位置/钥匙/生命/步数、鬼位、物品、墙体状态、isWon/isDead 全等（忽略 trail/seenCells）。
  *
  * 覆盖地图：
  * - generateFullMaze 随机地图（固定 seed 的 LCG 替换 Math.random 保证可复现）
  * - 手工 6×6 全元素图（LOCKED+钥匙 / LETTER_DOOR+按钮 / ONE_WAY / GLASS / 鬼）
  * 覆盖模式：exploration 与 death-loop（含死亡 REVIVE 全重置语义）
  */
-import { makeSimulator, createInitState, step, stateKey, canGhostSeePlayer } from '../src/validate/simulator.js';
+import { makeSimulator, createInitState, step, stateKey, canGhostSeePlayer, wallBits } from '../src/validate/simulator.js';
 import { DIRS4 } from '../src/validate/wallIndex.js';
 import { suite, test, assert, assertEq, assertDeepEq, summary } from './_assert.mjs';
 
@@ -44,12 +44,13 @@ function genMap(seed, size = 10, ghosts = 3) {
 
 /** 手工 6×6 全元素图（覆盖 LOCKED/字母门+按钮/ONE_WAY/GLASS/钥匙/鬼） */
 function makeManualMap() {
-    const width = 6;
-    const height = 6;
+    const width = 8;
+    const height = 8;
     const empty = () => ({ type: WALL_TYPES.EMPTY, keys: 0 });
     const hWalls = Array(height + 1).fill(null).map(() => Array(width).fill(null).map(empty));
     const vWalls = Array(height).fill(null).map(() => Array(width + 1).fill(null).map(empty));
 
+    hWalls[1][2] = { type: WALL_TYPES.SOLID };
     hWalls[3][2] = { type: WALL_TYPES.LETTER_DOOR, keys: 0, letter: 'A', initialState: 'closed' };
     vWalls[2][3] = { type: WALL_TYPES.LOCKED, keys: 1 };
     vWalls[1][2] = { type: WALL_TYPES.ONE_WAY, keys: 0, direction: { dx: 1, dy: 0 } };
@@ -60,7 +61,7 @@ function makeManualMap() {
         hWalls, vWalls,
         activeCells: Array(height).fill(null).map(() => Array(width).fill(true)),
         items: [{ x: 5, y: 5, type: 'key' }, { x: 0, y: 0, type: 'key' }],
-        buttons: [{ x: 2, y: 1, direction: { dx: 1, dy: 0 }, letter: 'A' }],
+        buttons: [{ x: 2, y: 1, direction: { dx: 0, dy: -1 }, letter: 'A' }],
         initialGhosts: [{ x: 4, y: 2 }, { x: 1, y: 1 }],
         startPos: { x: 1, y: 4 },
         endPos: { x: 5, y: 0 },
@@ -73,7 +74,7 @@ function makeManualMap() {
             activeCells: Array(height).fill(null).map(() => Array(width).fill(true)),
             ghosts: [{ x: 4, y: 2 }, { x: 1, y: 1 }],
             items: [{ x: 5, y: 5, type: 'key' }, { x: 0, y: 0, type: 'key' }],
-            buttons: [{ x: 2, y: 1, direction: { dx: 1, dy: 0 }, letter: 'A' }],
+            buttons: [{ x: 2, y: 1, direction: { dx: 0, dy: -1 }, letter: 'A' }],
             stairs: [],
             endPos: { x: 5, y: 0 },
             customStartPos: null
@@ -91,17 +92,17 @@ function assertStatesEqual(gs, ss, stepIdx, action, label) {
     assertEq(p2.x, p1.x, `${tag} x`);
     assertEq(p2.y, p1.y, `${tag} y`);
     assertEq(p2.hp, p1.hp, `${tag} hp`);
-    assertEq(p2.stamina, p1.stamina, `${tag} stamina`);
+    assert(!('stamina' in p1) && !('stamina' in p2), `${tag} 不含体力字段`);
     assertEq(p2.keys, p1.keys, `${tag} keys`);
     assertEq(p2.steps, p1.steps, `${tag} steps`);
     assertEq(ss.isWon, gs.isWon, `${tag} isWon`);
     assertEq(ss.isDead, gs.isDead, `${tag} isDead`);
     for (let i = 0; i < gs.layerStates.length; i++) {
         const g1 = gs.layerStates[i].ghosts.map(g => `${g.x},${g.y}`).join('|');
-        const g2 = ss.layers[i].ghosts.map(g => `${g.x},${g.y}`).join('|');
+        const g2 = ss.layerStates[i].ghosts.map(g => `${g.x},${g.y}`).join('|');
         assertEq(g2, g1, `${tag} layer${i} ghosts`);
-        assertDeepEq(ss.layers[i].items, gs.layerStates[i].items, `${tag} layer${i} items`);
-        assertDeepEq(ss.layers[i].wallStates, gs.layerStates[i].wallStates, `${tag} layer${i} wallStates`);
+        assertDeepEq(ss.layerStates[i].items, gs.layerStates[i].items, `${tag} layer${i} items`);
+        assertDeepEq(ss.layerStates[i].wallStates, gs.layerStates[i].wallStates, `${tag} layer${i} wallStates`);
     }
 }
 
@@ -175,20 +176,20 @@ test('无效动作返回原状态引用（出界移动 / 无此字母按钮）',
     assert(s3 === s0, '无效按钮应返回原引用');
     // 未死亡/胜利时 REVIVE 的 exploration 语义：hp>0 → 回出生点（有效转移）
     const s4 = step(s0, { type: 'REVIVE' }, sim);
-    assert(s4 !== s0 && s4.player.x === 1 && s4.player.y === 4, 'exploration REVIVE 应回出生点');
+    assert(s4 === s0, '活态复活无效');
 });
 
 test('withGhosts:false 时鬼完全不动', () => {
     const map = genMap(5);
     const sim = makeSimulator(map, { withGhosts: false });
     const s0 = createInitState(sim);
-    const before = s0.layers[0].ghosts.map(g => `${g.x},${g.y}`).join('|');
+    const before = s0.layerStates[0].ghosts.map(g => `${g.x},${g.y}`).join('|');
     let s = s0;
     for (let i = 0; i < 200; i++) {
         const d = DIRS4[i % 4];
         s = step(s, { type: 'MOVE', payload: { dx: d.dx, dy: d.dy } }, sim);
     }
-    assertEq(s.layers[0].ghosts.map(g => `${g.x},${g.y}`).join('|'), before, '无鬼模式下鬼位不应变化');
+    assertEq(s.layerStates[0].ghosts.map(g => `${g.x},${g.y}`).join('|'), before, '无鬼模式下鬼位不应变化');
 });
 
 test('stateKey：相同状态键相同、不同状态键不同、物品状态参与键', () => {
@@ -215,15 +216,16 @@ test('锁门消耗与字母门翻转写入 wallBits（位掩码一致性）', ()
     const map = makeManualMap();
     const sim = makeSimulator(map);
     const s0 = createInitState(sim);
-    const initialBits = s0.wallBits;
+    s0.player.x=2;s0.player.y=1;s0.layerStates[0].ghosts=[];
+    const initialBits = wallBits(s0,sim);
     // 捡钥匙 (0,0)：向下？起点 (1,4)。先走到 (0,0) 再开锁门比较繁琐；
     // 这里只验证：按下按钮 A → 字母门翻转 → wallBits 变化
-    const sBtn = step(s0, { type: 'PRESS_BUTTON', payload: { letter: 'A' } }, sim);
+    const sBtn = step(s0, { type: 'MOVE', payload: { dx:0, dy:-1 } }, sim);
     assert(sBtn !== s0, '按 A 应有效');
-    assert(sBtn.wallBits !== initialBits, '字母门翻转后 wallBits 应变化');
+    assert(wallBits(sBtn,sim) !== initialBits, '字母门翻转后 wallBits 应变化');
     // 再按一次 → 翻转回来 → wallBits 恢复
-    const sBtn2 = step(sBtn, { type: 'PRESS_BUTTON', payload: { letter: 'A' } }, sim);
-    assertEq(sBtn2.wallBits, initialBits, '再按一次应恢复初始位');
+    const sBtn2 = step(sBtn, { type: 'MOVE', payload: { dx:0, dy:-1 } }, sim);
+    assertEq(wallBits(sBtn2,sim), initialBits, '再按一次应恢复初始位');
     // 字母门打开后可通行（双跑一致性已覆盖，此处补充 wallBits 参与去重键）
     assertEq(stateKey(sBtn, sim), stateKey(sBtn, sim), '键稳定');
 });
@@ -233,11 +235,11 @@ test('canGhostSeePlayer 导出回归：直线视野判定可导入且可调用',
     const sim = makeSimulator(map);
     const s = createInitState(sim);
     // 鬼 (4,2) vs 玩家 (4,0)：同列、中间无阻挡墙（hWalls[1][4]/[2][4] 均 EMPTY）→ 可见
-    const g = s.layers[0].ghosts.find(gh => gh.x === 4 && gh.y === 2);
+    const g = s.layerStates[0].ghosts.find(gh => gh.x === 4 && gh.y === 2);
     assert(g, '应找到 (4,2) 鬼');
     assertEq(canGhostSeePlayer(sim, s, 0, g, { x: 4, y: 0 }), true, '同列无阻挡 → 鬼应看到玩家');
     // 鬼 (1,1) vs 玩家 (4,0)：不同行不同列 → 不可见
-    const g2 = s.layers[0].ghosts.find(gh => gh.x === 1 && gh.y === 1);
+    const g2 = s.layerStates[0].ghosts.find(gh => gh.x === 1 && gh.y === 1);
     assertEq(canGhostSeePlayer(sim, s, 0, g2, { x: 4, y: 0 }), false, '不同行不同列 → 不可见');
     // 假想玩家位（逃生评分用）：鬼 (4,2) 对 (2,0)（不同列）不可见
     assertEq(canGhostSeePlayer(sim, s, 0, g, { x: 2, y: 0 }), false, '假想位不同列 → 不可见');

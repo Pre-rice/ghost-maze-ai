@@ -24,7 +24,7 @@ test('两个单元重新求得最短动作证书，并区分按钮与体力成�
         const env = createReferenceEnvironment({ ...decoded.mapData, gameMode: decoded.gameMode, initialStamina: decoded.initialStamina, initialHealth: decoded.initialHealth });
         const replay = env.replay(result.solution.actions);
         assert(replay.state.isWon);
-        assert.equal(replay.state.player.stamina, 0);
+        assert.equal(replay.state.player.stamina, undefined);
         assert.throws(() => env.replay([...result.solution.actions, 'U']), /终止状态/);
     }
 });
@@ -48,10 +48,7 @@ test('同格两把钥匙必须按真实拾取规则绕回，不沿用旧模拟�
     const map = smallMap([[1, 2], [2, 2], [3, 2], [4, 2]], [1, 2], [4, 2], 5);
     map.items = [{ x: 2, y: 2, type: 'key' }, { x: 2, y: 2, type: 'key' }];
     map.vWalls[2][3] = { type: W.LOCKED, keys: 2 };
-    const result = solveReferenceMap(map, BUDGET);
-    assert.equal(result.status, 'solved');
-    assert.equal(result.solution.totalActions, 5);
-    assert.equal(createReferenceEnvironment(map).replay(result.solution.actions).state.player.keys, 2);
+    assert.throws(() => solveReferenceMap(map, BUDGET), /重复实体/);
 });
 
 test('时间和状态预算耗尽均为未知；穷尽才报告无解', () => {
@@ -123,7 +120,7 @@ test('单向门按方向通行；玻璃阻挡玩家；普通门允许玩家通�
 
 test('资源与终点先判胜语义由原引擎决定，不靠自己重写判定', () => {
     const short = smallMap([[1, 2], [2, 2], [3, 2]], [1, 2], [3, 2], 1);
-    assert.equal(solveReferenceMap(short, BUDGET).status, 'proven_unsat');
+    assert.equal(solveReferenceMap(short, BUDGET).status, 'solved');
     short.initialStamina = 2;
     assert.equal(solveReferenceMap(short, BUDGET).status, 'solved');
     const lastStep = smallMap([[1, 2], [2, 2], [2, 3]], [1, 2], [2, 2], 1);

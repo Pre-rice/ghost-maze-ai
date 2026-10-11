@@ -36,8 +36,8 @@ export function buildExamples() {
         if (!encoded.success) throw new Error(encoded.error);
         const decoded = DataSerializer.loadFromShareCode(encoded.code);
         if (!decoded.success) throw new Error(decoded.error);
-        const { mapData, gameMode, initialHealth, initialStamina } = decoded.data;
-        const replay = createReferenceEnvironment({ ...mapData, gameMode, initialHealth, initialStamina }).replay(analysis.baseline.solution.actions);
+        const { mapData, gameMode, initialHealth } = decoded.data;
+        const replay = createReferenceEnvironment({ ...mapData, gameMode, initialHealth }).replay(analysis.baseline.solution.actions);
         if (!replay.state.isWon) throw new Error('分享码解码后的地图未胜利');
         return { ...metadata, familyId: 'complementary-switch-v1', source: 'hand_designed_controlled_example',
             mapId: analysis.mapId, ruleset: analysis.ruleset, analysis, sharecode: encoded.code, humanPreference: null };

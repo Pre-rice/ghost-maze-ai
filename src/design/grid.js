@@ -1,11 +1,11 @@
 import { WALL_TYPES as W, MAP_SIZE_MIN } from '../reference/engine.js';
 
-export function smallMap(cells, start, end, stamina = 100) {
+export function smallMap(cells, start, end) {
     const size = MAP_SIZE_MIN;
     const solid = () => ({ type: W.SOLID, keys: 0 });
     const map = {
         width: size, height: size, editorMode: 'free', gameMode: 'death-loop',
-        initialHealth: 5, initialStamina: stamina,
+        initialHealth: 5,
         startPos: { x: start[0], y: start[1] }, customStartPos: { x: start[0], y: start[1] },
         endPos: end ? { x: end[0], y: end[1] } : null,
         multiLayerMode: false, layerCount: 1, layers: [], stairs: [], buttons: [], items: [], initialGhosts: [],

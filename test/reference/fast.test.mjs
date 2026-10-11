@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { GameLogic, MapDefinition, WALL_TYPES as W } from '../../src/reference/engine.js';
 import { createReferenceEnvironment, actionFromName } from '../../src/reference/environment.js';
 import { createFastEnvironment, physicalState } from '../../src/search/fast-environment.js';
-import { makeSimulator, createInitState, step, stateKey } from '../../src/validate/simulator.js';
+import { makeSimulator, createInitState, step, stateKey, wallBits } from '../../src/validate/simulator.js';
 import { solveFastMap } from '../../src/search/fast-solver.js';
 import { solveReferenceMap } from '../../src/search/reference-solver.js';
 import { solveMap } from '../../src/validate/solver.js';
@@ -75,6 +75,7 @@ test('多层动作差分：全局按钮、楼梯、鬼转层与死亡后重置',
 
 test('33 扇以上动态门的初态、翻转与开锁位互不碰撞', () => {
     const map = smallMap([[3, 6], [4, 6], [5, 6]], [3, 6], [5, 6]);
+    map.activeCells = map.activeCells.map(row=>row.map(()=>true));
     for (let index = 0; index < 33; index++) map.hWalls[Math.floor(index / map.width)][index % map.width] = {
         type: W.LETTER_DOOR, letter: index === 0 ? 'A' : index === 32 ? 'B' : 'C', initialState: 'closed'
     };
@@ -84,15 +85,15 @@ test('33 扇以上动态门的初态、翻转与开锁位互不碰撞', () => {
     ];
     const env = createFastEnvironment(map), original = env.initialState();
     const a = env.step(original, 'U'), b = env.step(original, 'D');
-    assert.equal(a.wallBits, 1n);
-    assert.equal(b.wallBits, 1n << 32n);
+    assert.equal(wallBits(a, env.sim), 1n);
+    assert.equal(wallBits(b, env.sim), 1n << 32n);
     assert.notEqual(env.stateKey(a), env.stateKey(b));
-    assert.equal(env.step(b, 'D').wallBits, 0n);
+    assert.equal(wallBits(env.step(b, 'D'), env.sim), 0n);
     map.hWalls[4][0].initialState = 'open';
-    assert.equal(createInitState(makeSimulator(map)).wallBits, 1n << 32n);
+    const indexed=makeSimulator(map);assert.equal(wallBits(createInitState(indexed), indexed), 1n << 32n);
     map.vWalls[6][4] = { type: W.LOCKED, keys: 0 };
     const locks = createFastEnvironment(map), crossed = locks.step(locks.initialState(), 'R');
-    assert.equal(crossed.wallBits & (1n << 33n), 1n << 33n);
+    assert.equal(wallBits(crossed, locks.sim) & (1n << 33n), 1n << 33n);
     assert.deepEqual(physicalState(crossed), physicalState(locks.reference.step(locks.reference.initialState(), 'R')));
 });
 
@@ -101,16 +102,16 @@ test('写时复制不污染共享父态和兄弟分支；状态键保留顺序�
     const before = JSON.stringify(physicalState(initial));
     const closed = env.step(initial, 'L'), peeked = env.step(initial, 'U');
     assert.equal(JSON.stringify(physicalState(initial)), before);
-    assert.equal(closed.layers[0].wallStates.v[2][3].currentState, 'closed');
-    assert.equal(peeked.layers[0].wallStates.v[2][3].currentState, 'open');
-    const clone = structuredClone(initial); clone.player.stamina--;
+    assert.equal(closed.layerStates[0].wallStates.v[2][3].currentState, 'closed');
+    assert.equal(peeked.layerStates[0].wallStates.v[2][3].currentState, 'open');
+    const clone = structuredClone(initial); clone.player.hp--;
     assert.notEqual(env.stateKey(initial), env.stateKey(clone));
     const sim = makeSimulator(seedMap('unit-01')), a = createInitState(sim);
-    a.layers[0].ghosts = [{ x: 1, y: 2 }, { x: 2, y: 1 }];
-    a.layers[0].items = [{ x: 1, y: 3, type: 'key' }, { x: 2, y: 4, type: 'key' }];
-    const b = structuredClone(a); b.layers[0].ghosts.reverse();
+    a.layerStates[0].ghosts = [{ x: 1, y: 2 }, { x: 2, y: 1 }];
+    a.layerStates[0].items = [{ x: 1, y: 3, type: 'key' }, { x: 2, y: 4, type: 'key' }];
+    const b = structuredClone(a); b.layerStates[0].ghosts.reverse();
     assert.notEqual(stateKey(a, sim), stateKey(b, sim));
-    const c = structuredClone(a); c.layers[0].items.reverse();
+    const c = structuredClone(a); c.layerStates[0].items.reverse();
     assert.notEqual(stateKey(a, sim), stateKey(c, sim));
     const d = structuredClone(a); d.isWon = true;
     assert.notEqual(stateKey(a, sim), stateKey(d, sim));
@@ -129,7 +130,7 @@ test('独立参考 BFS 对照：24 张微图的可解性和最短动作一致', 
     }
 });
 
-test('种子、钥匙、按钮和楼梯的解与参考一致，最后一步体力为零仍按原规则判胜', () => {
+test('种子、钥匙、按钮和楼梯的解与参考一致，取消体力限制后仍由共同规则判胜', () => {
     for (const map of [seedMap('unit-01'), seedMap('unit-02'), keyDetourMap(), stairMap(), stairMap(true)]) {
         const expected = solveReferenceMap(map, BUDGET), result = solveFastMap(map, BUDGET);
         assert.equal(result.status, 'solved');
@@ -140,7 +141,7 @@ test('种子、钥匙、按钮和楼梯的解与参考一致，最后一步体�
     const duplicate = smallMap([[1, 2], [2, 2], [3, 2], [4, 2]], [1, 2], [4, 2], 5);
     duplicate.items = [{ x: 2, y: 2, type: 'key' }, { x: 2, y: 2, type: 'key' }];
     duplicate.vWalls[2][3] = { type: W.LOCKED, keys: 2 };
-    assert.equal(solveFastMap(duplicate, BUDGET).solution.totalActions, 5);
+    assert.throws(()=>solveFastMap(duplicate, BUDGET), /重复实体/);
 });
 
 test('预算区分未知、已发现解但未证明最优，以及真正无解', () => {
@@ -159,7 +160,7 @@ test('预算区分未知、已发现解但未证明最优，以及真正无解',
     const result = solveFastMap(impossible, BUDGET);
     assert.equal(result.status, 'proven_unsat'); assert.equal(result.reason, 'relaxed_unreachable');
     const short = smallMap([[1, 2], [2, 2], [3, 2]], [1, 2], [3, 2], 1);
-    assert.equal(solveFastMap(short, BUDGET).reason, 'frontier_exhausted');
+    assert.equal(solveFastMap(short, BUDGET).status, 'solved');
 });
 
 test('低层可达不等于已判胜：出生点恰好是终点仍需要真实动作', () => {
@@ -183,7 +184,6 @@ test('旧接口保留 nullable 可解性，无鬼验证明确标注松弛范围'
 
 test('出生点规范化不再读取已淘汰的 mapStartPos 字段', () => {
     const map = smallMap([[1, 2], [2, 2], [3, 2]], [1, 2], [3, 2]);
-    map.customStartPos = null;
     map.mapStartPos = { x: 2, y: 2 };
     assert.deepEqual(makeSimulator(map).startPos, new MapDefinition(map).playerStart);
 });

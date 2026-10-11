@@ -1,13 +1,15 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtempSync, readFileSync } from 'node:fs';
+import { mkdtempSync, readFileSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { GameLogic } from '../../src/reference/engine.js';
+import { ActionHistory, GameLogic, DataSerializer } from '../../src/reference/engine.js';
 import { createReferenceEnvironment } from '../../src/reference/environment.js';
-import { recoverBranch, traceState, traceAction } from '../../src/review/trace-core.js';
+import { traceState } from '../../src/review/trace-core.js';
+import { recoverBranch, traceAction } from '../../src/review/historical-trace.js';
 import { createRecordingStore, verifyRecording } from '../../src/review/recordings.js';
 import { startReviewServer } from '../../src/review/server.mjs';
+import { buildPacket } from '../../src/review/packet.js';
 
 const read = file => JSON.parse(readFileSync(new URL(`../../examples/coupled-singlelayer/${file}`, import.meta.url), 'utf8'));
 const map = read('map.json'), evidence = read('evidence.json');
@@ -18,11 +20,11 @@ function history(actions) {
     return states;
 }
 function recording(actions = evidence.analysis.baseline.solution.actions, id = 'recording-test-001') {
-    return { schemaVersion: 1, id, coverage: 'retained_branch', capturedAt: '2026-09-30T00:00:00Z', sharecode: evidence.sharecode,
-        ...recoverBranch(history(actions), env.mapDefinition, GameLogic) };
+    return { schemaVersion: 1, id, coverage: 'retained_branch', capturedAt: '2026-09-30T00:00:00Z', sharecode: DataSerializer.generateShareCode(map).code,
+        actions, ambiguities: [], final: traceState(new ActionHistory(env.mapDefinition,actions).stateAt(actions.length)) };
 }
 
-test('从原控制器历史恢复按钮动作，不把原地推进的三个回合漏成移动轨迹', () => {
+test('直接记录操作，原地按钮的三个回合全部计入步数', () => {
     const recovered = recording();
     assert.deepEqual(recovered.actions, evidence.analysis.baseline.solution.actions);
     const result = verifyRecording(recovered);
@@ -45,7 +47,7 @@ test('撤回后只恢复当前分支，渲染轨迹裁剪不影响历史识别',
 
 test('死亡与复活可以如实记录，但不得冒充无伤证书；篡改终局或非法动作被拒绝', () => {
     const failed = read('evidence.json').failedPlans[0].actions;
-    const revived = recording([...failed, 'REVIVE']);
+    const revived = recording(failed);
     assert.equal(verifyRecording(revived).cleanWin, false);
     const bad = recording(); bad.final.player.x = 0;
     assert.throws(() => verifyRecording(bad), /终局/);
@@ -65,10 +67,13 @@ test('录制独立保存，重试幂等且拒绝覆盖另一条路线', () => {
 
 test('录制服务注入独立模块，不改游戏文件，并可校验保存和加载回放', async t => {
     const temp = mkdtempSync(join(tmpdir(), 'ghost-recording-http-'));
-    const { server, origin } = await startReviewServer({ port: 0, feedbackFile: join(temp, 'feedback.jsonl'), recordingsDir: join(temp, 'solutions') });
+    const packet = buildPacket(20260930, [['recorder-test', 'examples/puzzle-units/unit-01.json', 'examples/puzzle-units/unit-02.json']]);
+    const packetFile = join(temp, 'packet.json');
+    writeFileSync(packetFile, JSON.stringify(packet), { flag: 'wx' });
+    const { server, origin } = await startReviewServer({ port: 0, packetFile, feedbackFile: join(temp, 'feedback.jsonl'), recordingsDir: join(temp, 'solutions') });
     t.after(() => { server.closeAllConnections(); server.close(); });
     assert((await (await fetch(origin + '/game/')).text()).includes('/recorder.js'));
-    for (const path of ['/recorder.js', '/trace-core.js', '/replay.html', '/replay.js']) assert.equal((await fetch(origin + path)).status, 200);
+    for (const path of ['/recorder.js', '/trace-core.js', '/game/editor.html']) assert.equal((await fetch(origin + path)).status, 200);
     const input = recording();
     const response = await fetch(origin + '/api/recordings', { method: 'POST', headers: { 'Content-Type': 'application/json', Origin: origin }, body: JSON.stringify(input) });
     assert.equal(response.status, 200, await response.clone().text());

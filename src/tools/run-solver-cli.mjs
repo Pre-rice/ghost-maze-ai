@@ -17,7 +17,7 @@ export function runSolverCli(solver, command = 'solve') {
             }
             const raw = JSON.parse(readFileSync(args[0], 'utf8'));
             const map = raw.mapData ? { ...raw.mapData } : raw;
-            if (raw.mapData) for (const key of ['gameMode', 'initialHealth', 'initialStamina']) if (Object.hasOwn(raw, key)) map[key] = raw[key];
+            if (raw.mapData) for (const key of ['gameMode', 'initialHealth']) if (Object.hasOwn(raw, key)) map[key] = raw[key];
             const result = solver(map, options);
             console.log(JSON.stringify(result, null, 2));
             process.exitCode = { solved: 0, proven_unsat: 1, unknown: 3 }[result.status];

@@ -23,7 +23,7 @@ for(let i=0;i<40000;i++){
  if(r.status==='unknown')unknown++;
  if(r.status!=='solved')continue;solved++;
  const env=createFastEnvironment(m);let s=env.initialState(),presses=[];
- for(const a of r.solution.actions){const n=env.step(s,a);if(s.player.steps===n.player.steps)presses.push(m.buttons.find(b=>b.x===s.player.x&&b.y===s.player.y).letter);s=n;}
+ for(const a of r.solution.actions){const n=env.step(s,a);if(n!==s&&s.player.x===n.player.x&&s.player.y===n.player.y&&s.player.layer===n.player.layer)presses.push(m.buttons.find(b=>b.x===s.player.x&&b.y===s.player.y).letter);s=n;}
  if(r.solution.totalActions<18 || presses.length<3 || !presses.includes('A') || !presses.includes('B'))continue;
  const ng=solveFastMap(m,{withGhosts:false,nodeBudget:5000,stateBudget:9000,budgetMs:70});
  if(ng.status!=='solved'||r.solution.totalActions-ng.solution.totalActions<5)continue;

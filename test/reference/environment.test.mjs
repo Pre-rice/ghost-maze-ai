@@ -12,8 +12,8 @@ test('动作入口禁止远程按钮、复活、任意位移和伪装成字符�
     }
     const pressed = env.step(state, 'L');
     assert.equal(pressed.layerStates[0].wallStates.v[2][3].currentState, 'closed');
-    assert.equal(pressed.player.steps, 0);
-    assert.equal(pressed.player.stamina, state.player.stamina);
+    assert.equal(pressed.player.steps, 1);
+    assert.equal('stamina' in pressed.player, false);
     assert.equal(env.step(state, 'STAIR'), state);
     assert.throws(() => env.replay(['STAIR']), /无效动作/);
 });
@@ -36,13 +36,13 @@ test('状态键保留鬼的顺序，同键不再吞并不同冲突后继', () =>
     assert.notEqual(env.stateKey(env.step(first, 'R')), env.stateKey(env.step(reversed, 'R')));
 });
 
-test('状态键区分相同位置的体力、钥匙、物品集合及动态门', () => {
+test('状态键区分相同位置的生命、钥匙、物品集合及动态门', () => {
     const env = createReferenceEnvironment(keyDetourMap()), state = env.initialState();
     for (const change of [
-        s => s.player.stamina--,
+        s => s.player.hp--,
         s => s.player.keys++,
         s => s.layerStates[0].items.pop(),
-        s => { s.layerStates[0].wallStates.v[3][4].type = W.EMPTY; }
+        s => { s.setWall(0,'v',4,3,{type:W.EMPTY}); }
     ]) {
         const altered = state.clone(); change(altered);
         assert.notEqual(env.stateKey(state), env.stateKey(altered));
@@ -51,13 +51,13 @@ test('状态键区分相同位置的体力、钥匙、物品集合及动态门',
     assert.notEqual(gates.stateKey(initial), gates.stateKey(gates.step(initial, 'L')));
 });
 
-test('体力相差一格会导致不同胜负，状态键必须区分', () => {
+test('取消体力后移动只计步，不产生体力死亡', () => {
     const env = createReferenceEnvironment(smallMap([[1, 2], [2, 2], [3, 2]], [1, 2], [3, 2], 2));
     const full = env.initialState(), low = full.clone();
     low.player.stamina = 1;
-    assert.notEqual(env.stateKey(full), env.stateKey(low));
+    assert.equal(env.stateKey(full), env.stateKey(low));
     assert.equal(env.step(full, 'R').isDead, false);
-    assert.equal(env.step(low, 'R').isDead, true);
+    assert.equal(env.step(low, 'R').isDead, false);
 });
 
 test('物理状态键忽略轨迹、探索记录、计步与复活标记，区分终止状态', () => {
@@ -82,7 +82,7 @@ test('物品顺序和非当前层的鬼及墙状态都进入键', () => {
     for (const change of [
         s => s.layerStates[0].items.reverse(),
         s => s.layerStates[1].ghosts.pop(),
-        s => { s.layerStates[1].wallStates.v[2][3].currentState = 'open'; }
+        s => { s.setWall(1,'v',3,2,{currentState:'open'}); }
     ]) {
         const altered = state.clone(); change(altered);
         assert.notEqual(env.stateKey(state), env.stateKey(altered));
@@ -103,7 +103,7 @@ test('坏地图抛输入错误，不进入无解标签；缺配对或非活动�
     assert.throws(() => createReferenceEnvironment(null), TypeError);
     for (const change of [
         m => { m.width = 0; }, m => { m.hWalls.pop(); },
-        m => { m.initialStamina = 0; }, m => { m.initialGhosts[0].x = 99; },
+        m => { m.initialHealth = 0; }, m => { m.initialGhosts[0].x = 99; },
         m => { m.activeCells[3][1] = false; }, m => { m.vWalls[2][2].type = 99; }
     ]) {
         const map = seedMap('unit-01'); change(map);
@@ -112,5 +112,5 @@ test('坏地图抛输入错误，不进入无解标签；缺配对或非活动�
     const unpaired = stairMap(); unpaired.stairs.pop();
     assert.throws(() => createReferenceEnvironment(unpaired), /配对/);
     const inactive = stairMap(); inactive.layers[1].activeCells[2][2] = false;
-    assert.throws(() => createReferenceEnvironment(inactive), /楼梯/);
+    assert.throws(() => createReferenceEnvironment(inactive), /楼梯|实体/);
 });

@@ -1,5 +1,7 @@
 # 七格单层候选：机关交接
 
+> 历史作品说明（2026-10-11）：下文保留原地图、反馈与当时验收证据。旧分享码、体力与独立回放地址已弃用；最新有效试玩和同页回放统一见[AI 地图总目录](../../../ghost-maze/docs/ai-map-catalog.md)。不从旧证据自动推断当前最短性，冲突／非法图在总目录明确列出。
+
 [开始试玩](http://127.0.0.1:4178/game/?map=Y-bgYGZlSGFlYmFlYDAQkJBgYGBkYWJkZmVmYWV2ZGFldGJhYXZaBQF_Q8NDg7-GIgGtVatW7Q8NrQNLL-B0YmB0ZHRkcGIAAA)
 
 单层、一只鬼、两组字母机关、三个按钮、一把钥匙，体力保持默认 100。完全没有玻璃，替换后完整地图恒等，全部策略不变。

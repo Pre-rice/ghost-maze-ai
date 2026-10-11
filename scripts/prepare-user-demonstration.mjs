@@ -3,17 +3,19 @@ import { resolve, relative, isAbsolute } from 'node:path';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { prepareDemonstration } from '../src/training/demonstration.js';
+import { importHistoricalRecording } from '../src/review/import-recording.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 try {
-    const [sourceFile, outputDirectory, familyId, ...extra] = process.argv.slice(2);
-    if (!sourceFile || !outputDirectory || !familyId || extra.length) throw new TypeError('用法：node scripts/prepare-user-demonstration.mjs <data/solutions/录制.json> <新输出目录> <familyId>');
+    const [sourceFile, outputDirectory, familyId, sourceMapFile, ...extra] = process.argv.slice(2);
+    if (!sourceFile || !outputDirectory || !familyId || extra.length) throw new TypeError('用法：node scripts/prepare-user-demonstration.mjs <data/solutions/录制.json> <新输出目录> <familyId> [旧录制的明确原图.json]');
     const sourcePath = realpathSync(resolve(sourceFile));
     const sourceRelative = relative(realpathSync(resolve(root, 'data/solutions')), sourcePath);
     if (isAbsolute(sourceRelative) || sourceRelative.startsWith('..')) throw new TypeError('人类示范只能从真实解法目录导入，不能从 runs 中导入测试录制');
     if (existsSync(outputDirectory)) throw new TypeError('输出目录已存在，请使用新的目录，避免覆盖');
     const raw = readFileSync(sourcePath), recorded = JSON.parse(raw.toString('utf8'));
-    const result = prepareDemonstration(recorded.input, { familyId, source: 'human_recording',
+    const input = sourceMapFile ? importHistoricalRecording(recorded.input, JSON.parse(readFileSync(sourceMapFile, 'utf8'))) : recorded.input;
+    const result = prepareDemonstration(input, { familyId, source: 'human_recording',
         budget: { nodeBudget: 100000, stateBudget: 100000, budgetMs: 30000 } });
     const { rows, ...manifest } = result;
     manifest.sourceFile = relative(root, sourcePath).replaceAll('\\', '/');

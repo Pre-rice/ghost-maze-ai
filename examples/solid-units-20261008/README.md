@@ -1,5 +1,7 @@
 # 2026-10-08：两张无玻璃单层候选
 
+> 历史作品说明（2026-10-11）：下文保留原地图、反馈与当时验收证据。旧分享码、体力与独立回放地址已弃用；最新有效试玩和同页回放统一见[AI 地图总目录](../../../ghost-maze/docs/ai-map-catalog.md)。不从旧证据自动推断当前最短性，冲突／非法图在总目录明确列出。
+
 - [试玩单元 01](http://127.0.0.1:4178/game/?map=Y-bgYGZlSGFhZGRikOPjY2BgYGBkZmRkZmJYtWrVqqmhXKuQQWtoZWi4Fpy7gImZEQA)：10 个活动格，一只鬼、一把钥匙。
 - [试玩单元 02](http://127.0.0.1:4178/game/?map=Y-bgYGZlSGFkZmJm4ODj42FgYGBkZmRgZGZhdFy1atWqlaGqofahKEA01GvVUig7gMmRAQA)：9 个活动格，一只鬼、一个按钮。
 

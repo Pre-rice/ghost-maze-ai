@@ -28,7 +28,7 @@ function makeMap({ rows, gate }) {
     const solid = () => ({ type: W.SOLID, keys: 0 });
     const empty = () => ({ type: W.EMPTY, keys: 0 });
     const map = {
-        width, height, gameMode: 'death-loop', initialHealth: 5, initialStamina: 100,
+        width, height, gameMode: 'death-loop', initialHealth: 5,
         editorMode: 'free', multiLayerMode: false, layerCount: 1,
         layers: [], stairs: [], items: [], buttons: [], initialGhosts: [],
         activeCells: rows.map(row => [...row].map(cell => cell !== ' ')),
@@ -84,7 +84,7 @@ function replay(map, sequence) {
         player: [state.player.x, state.player.y],
         ghosts: state.layerStates[0].ghosts.map(ghost => [ghost.x, ghost.y]),
         gate: map.buttons.length ? gateState(state) : null,
-        steps: state.player.steps, stamina: state.player.stamina,
+        steps: state.player.steps,
         won: state.isWon, dead: state.isDead
     });
     const trace = [{ action: null, ...snapshot() }];
@@ -104,8 +104,8 @@ const results = layouts.map((layout, index) => {
     if (!encoded.success) throw new Error(encoded.error);
     const decoded = DataSerializer.loadFromShareCode(encoded.code);
     if (!decoded.success) throw new Error(decoded.error);
-    const { mapData, gameMode, initialHealth, initialStamina } = decoded.data;
-    const decodedMap = { ...mapData, gameMode, initialHealth, initialStamina };
+    const { mapData, gameMode, initialHealth } = decoded.data;
+    const decodedMap = { ...mapData, gameMode, initialHealth };
     const trace = replay(decodedMap, search.shortest);
     if (!trace.at(-1).won || trace.some(frame => frame.dead)) throw new Error('分享码重放失败');
     if (JSON.stringify(trace) !== JSON.stringify(replay(map, search.shortest))) throw new Error('编码前后轨迹不一致');

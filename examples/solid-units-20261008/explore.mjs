@@ -25,12 +25,12 @@ export function summarizeTrace(map, actions) {
     for (const [index, action] of actions.entries()) {
         const next = env.step(state, action), stationary = state.player.x === next.player.x && state.player.y === next.player.y;
         if (stationary) presses++;
-        for (const [i, ghost] of state.layers[0].ghosts.entries()) {
-            const after = next.layers[0].ghosts[i];
+        for (const [i, ghost] of state.layerStates[0].ghosts.entries()) {
+            const after = next.layerStates[0].ghosts[i];
             if (ghost.x !== after.x || ghost.y !== after.y) moves[i]++;
             if (locks.some(edge => cross(ghost, after, edge))) ghostUsesLock = true;
         }
-        rows.push({ index: index + 1, action, player: [next.player.x, next.player.y], ghosts: next.layers[0].ghosts.map(g => [g.x, g.y]), stationary, keys: next.player.keys });
+        rows.push({ index: index + 1, action, player: [next.player.x, next.player.y], ghosts: next.layerStates[0].ghosts.map(g => [g.x, g.y]), stationary, keys: next.player.keys });
         state = next;
     }
     return { rows, presses, ghostMoves: moves, ghostUsesLock };

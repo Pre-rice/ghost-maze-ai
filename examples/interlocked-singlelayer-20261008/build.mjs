@@ -62,8 +62,8 @@ export function build() {
     const replacementMapId = createReferenceEnvironment(replacement).mapId; assert.equal(replacementMapId, original.mapId);
     const encoded = DataSerializer.generateShareCode(map); assert(encoded.success);
     const decoded = DataSerializer.loadFromShareCode(encoded.code); assert(decoded.success);
-    const { mapData, gameMode, initialHealth, initialStamina } = decoded.data;
-    const restored = createReferenceEnvironment({ ...mapData, gameMode, initialHealth, initialStamina });
+    const { mapData, gameMode, initialHealth } = decoded.data;
+    const restored = createReferenceEnvironment({ ...mapData, gameMode, initialHealth });
     let a = original.initialState(), b = fast.initialState(), c = restored.initialState();
     const browserTrace = [{ physical: traceState(c), seenCells: c.seenCells }];
     for (const action of actions) {

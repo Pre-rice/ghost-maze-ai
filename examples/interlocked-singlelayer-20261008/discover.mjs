@@ -13,10 +13,10 @@ export function trace(map, actions) {
     let state = env.initialState();
     for (const [index, action] of actions.entries()) {
         const next = env.step(state, action);
-        const button = next.player.steps === state.player.steps ? map.buttons.find(b => b.x === state.player.x && b.y === state.player.y) : null;
+        const button = next !== state && next.player.x === state.player.x && next.player.y === state.player.y && next.player.layer === state.player.layer ? map.buttons.find(b => b.x === state.player.x && b.y === state.player.y) : null;
         if (button) word.push(button.letter);
-        next.layers[0].ghosts.forEach((g, i) => { if (g.x !== state.layers[0].ghosts[i].x || g.y !== state.layers[0].ghosts[i].y) moves[i]++; });
-        rows.push({ index: index + 1, action, button: button?.letter ?? null, player: [next.player.x, next.player.y], ghosts: next.layers[0].ghosts.map(g => [g.x, g.y]), keys: next.player.keys });
+        next.layerStates[0].ghosts.forEach((g, i) => { if (g.x !== state.layerStates[0].ghosts[i].x || g.y !== state.layerStates[0].ghosts[i].y) moves[i]++; });
+        rows.push({ index: index + 1, action, button: button?.letter ?? null, player: [next.player.x, next.player.y], ghosts: next.layerStates[0].ghosts.map(g => [g.x, g.y]), keys: next.player.keys });
         state = next;
     }
     return { word, moves, rows };

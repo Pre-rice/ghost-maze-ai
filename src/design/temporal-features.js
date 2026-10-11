@@ -1,6 +1,6 @@
 import { createReferenceEnvironment } from '../reference/environment.js';
 import { compileRestrictions } from '../search/restrictions.js';
-import { describeStep } from '../review/trace-core.js';
+import { describeStep } from '../review/step-description.js';
 import { WALL_TYPES } from '../reference/engine.js';
 
 /** 坐标无关的候选假说；计时作用必须由原图受限搜索确认，不能从一条轨迹直接宣布必要。 */

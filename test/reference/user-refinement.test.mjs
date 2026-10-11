@@ -1,3 +1,4 @@
+import { freshDecode, historicalPhysical, withoutGoal } from './current-format.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
@@ -10,12 +11,12 @@ const root = new URL('../../examples/user-refinements/', import.meta.url);
 const map = JSON.parse(readFileSync(new URL('user-01.json', root), 'utf8'));
 const evidence = JSON.parse(readFileSync(new URL('user-01-evidence.json', root), 'utf8'));
 test('用户优化图保持分享码原始内容，40 次动作可无伤通关', () => {
-    const decoded = DataSerializer.loadFromShareCode(evidence.sharecode);
+    const decoded = freshDecode(map);
     assert(decoded.success);
     const { mapData, gameMode, initialHealth, initialStamina } = decoded.data;
-    assert.deepEqual(map, { ...mapData, gameMode, initialHealth, initialStamina });
+    assert.deepEqual(createReferenceEnvironment(map).mapDefinition, createReferenceEnvironment(mapData).mapDefinition);
     const env = createReferenceEnvironment(map);
-    assert.equal(env.mapId, evidence.mapId);
+    assert.notEqual(env.mapId, evidence.mapId, '新规则标识不得冒充历史规则标识');
     const result = solveFastMap(map);
     assert.equal(result.solution.totalActions, 40);
     assert.equal(result.solution.movementCost, 34);

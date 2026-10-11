@@ -10,13 +10,13 @@
  * 四道硬门（全部通过才可进入评审/试玩）：
  *   ① 结构合法  mapDataValidator（形状/边界/实体/阶段一要素约束）
  *   ② 结构可解  isStructurallySolvable（无鬼 BFS 钥匙约束可达）
- *   ③ 无伤可通  solveMap（带鬼 A*，stamina 内零伤路径存在）
+ *   ③ 无伤可通  solveMap（带鬼 A*，存在无伤路径）
  *   ④ 威胁实质  解法路径被鬼盯 ≥1 步（鬼不是摆设）
  *
  * 输出附带解法特征（巧妙性的量化信号）：最优步数/绕路量/回头/钥匙序深度/被盯步数。
  */
 import { readFileSync } from 'node:fs';
-import { WALL_TYPES } from '../engine/constants.js';
+import { WALL_TYPES } from '../reference/engine.js';
 import { validateMapData } from '../validate/mapDataValidator.js';
 import { verifyStructuralSolvability } from '../validate/solvabilityVerifier.js';
 import { solveMap } from '../validate/solver.js';
@@ -44,7 +44,6 @@ function countElements(mapData) {
     return {
         size: `${width}×${height}`,
         mode: mapData.gameMode || 'exploration',
-        stamina: mapData.initialStamina,
         doors,
         locked,
         keys: (mapData.items || []).length,
@@ -111,7 +110,7 @@ function run(file, opts) {
         const s = report.stats;
         console.log('══════════════════ 地图硬门验证 ══════════════════');
         console.log(`文件: ${file}`);
-        console.log(`尺寸: ${s.size}  模式: ${s.mode}  体力: ${s.stamina}`);
+        console.log(`尺寸: ${s.size}  模式: ${s.mode}`);
         console.log(`要素: 钥匙×${s.keys}  锁门×${s.locked}  DOOR×${s.doors}  鬼×${s.ghosts}`
             + (s.oneWay || s.glass || s.letterDoors || s.buttons || s.multiLayer
                 ? `  [注意: 含阶段二要素 oneWay=${s.oneWay} glass=${s.glass} letterDoor=${s.letterDoors} button=${s.buttons} multiLayer=${s.multiLayer}]`
