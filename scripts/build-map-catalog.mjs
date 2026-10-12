@@ -20,6 +20,7 @@ const short = file => relative(root, file).replaceAll('\\', '/');
 const hash = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
 const sources = [], skipped = [], entries = new Map();
 const names = {
+    'room-transfer-20261012/map': ['《换边》', '11 格、一鬼、一按钮的新候选；保护位置、钥匙房与目标入口相互制约。机械核验通过，等待真实试玩，尚无质量评价。'],
     'prepared-release-20261011/map': ['《先手》', '“很容易就解出来了”“没有什么新意”；未达到目标质量。用户指出两个 A 留一个即可，已核验删右 A 仍最短 31，删左 A 仍可解。'],
     'door-units-20261011/unit-01': ['《两面》', '“太简单”“过于毫无难度”；体现用门甩鬼的基本思想，但解法明显，未达到目标质量。'],
     'door-units-20261011/unit-02': ['《开路》', '“太简单”“过于毫无难度”；体现用门甩鬼的基本思想，但解法明显，未达到目标质量。'],
