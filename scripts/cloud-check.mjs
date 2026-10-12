@@ -20,13 +20,14 @@ for (const [cwd, script] of [[game, 'test/run-all.mjs'], [root, 'scripts/check-e
 const { startCloudServer } = await import('./cloud-serve.mjs');
 const { server, origin } = await startCloudServer({ port: 0, recordingsDir: resolve(root, 'runs/cloud/qa-recordings') });
 try {
-    for (const path of ['/game/', '/game/editor.html', '/game/help.html', '/game/styles.css',
+    for (const path of ['/game/', '/game/editor.html', '/game/help.html', '/game/maps.html', '/game/styles.css',
+        '/game/src/maps/gallery.js', '/game/src/maps/ai-gallery.js',
         '/game/src/main.js', '/game/src/core/gameLogic.js', '/game/src/vendor/pako.js', '/api/packet']) {
         const response = await fetch(origin + path);
         assert.equal(response.status, 200, `云端入口不可用：${path}`);
         assert((await response.text()).length > 0, `云端入口内容为空：${path}`);
     }
-    console.log('✓ 云端工作流：本体、AI、规则锁、原种子及 8 个 HTTP 入口全部通过');
+    console.log('✓ 云端工作流：本体、AI、规则锁、原种子及 11 个 HTTP 入口全部通过');
 } finally {
     await new Promise((done, reject) => server.close(error => error ? reject(error) : done()));
 }

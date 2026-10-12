@@ -117,7 +117,7 @@ test('本地服务提供原游戏与离线依赖，反馈接口隔离来源且�
     const game = await (await fetch(`${origin}/game/`)).text();
     assert(game.includes('src/vendor/pako.js'));
     assert(!game.includes('cdnjs.cloudflare'));
-    for (const path of ['/game/src/vendor/pako.js', '/game/src/main.js', '/game/styles.css', '/']) assert.equal((await fetch(origin + path)).status, 200);
+    for (const path of ['/game/src/vendor/pako.js', '/game/src/main.js', '/game/styles.css', '/game/maps.html', '/game/src/maps/gallery.js', '/game/src/maps/ai-gallery.js', '/']) assert.equal((await fetch(origin + path)).status, 200);
     for (const path of ['/examples/vertical-relay/evidence.json', '/packet.json', '/game/.git', '/game/%2e%2e%2fengine.lock.json']) assert.equal((await fetch(origin + path)).status, 404);
     const feedback = await (await fetch(`${origin}/api/feedback`)).json();
     assert.deepEqual(feedback, {});

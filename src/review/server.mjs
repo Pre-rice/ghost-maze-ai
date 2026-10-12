@@ -54,7 +54,7 @@ export async function startReviewServer({ port = 4178, host = '127.0.0.1', publi
             if (path === '/') file = resolve(root, 'src/review/web/index.html');
             else if (['/app.js', '/styles.css', '/recorder.js'].includes(path)) file = resolve(root, `src/review/web${path}`);
             else if (path === '/trace-core.js') file = resolve(root, 'src/review/trace-core.js');
-            else if (['/game/', '/game/index.html', '/game/help.html', '/game/editor.html', '/game/styles.css', '/game/favicon.svg'].includes(path)) file = resolve(webGameRoot, path === '/game/' ? 'index.html' : path.slice(6));
+            else if (['/game/', '/game/index.html', '/game/help.html', '/game/editor.html', '/game/maps.html', '/game/styles.css', '/game/favicon.svg'].includes(path)) file = resolve(webGameRoot, path === '/game/' ? 'index.html' : path.slice(6));
             else if (/^\/game\/src\/[a-zA-Z0-9_/-]+\.js$/.test(path)) file = resolve(webGameRoot, path.slice(6));
             else return send(404, { error: '页面不存在' });
             let content = readFileSync(file, 'utf8');
