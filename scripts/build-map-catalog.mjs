@@ -20,6 +20,7 @@ const short = file => relative(root, file).replaceAll('\\', '/');
 const hash = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
 const sources = [], skipped = [], entries = new Map();
 const names = {
+    'deferred-key-cold-entry-20261012/map': ['《后路》', '新候选，尚无用户评价；23 格、两鬼、三钥匙，A/B 各一按钮。开局无追逐，指定外部入场与初态一致；59 动作无伤核验通过，延后取物与一次性门准备关系已核验。交付本题后按用户要求暂停地图设计，转向本体修改。'],
     'shelter-role-exchange-20261012/map': ['《换岗》', '“不错的谜题”；复杂性还可以、需要动脑、布局简洁，但每一步容易想到，没有眼前一亮或顿悟感。后续尽量避免开局被追，并核验从整图进入单元当步的状态一致。'],
     'room-transfer-20261012/map': ['《换边》', '“不错”，比前面几题更巧、简洁；解法仍简单、容易想到，地图复杂性有限。有甜点单元／靠前简单关的价值，尚未达到主线挑战目标。'],
     'prepared-release-20261011/map': ['《先手》', '“很容易就解出来了”“没有什么新意”；未达到目标质量。用户指出两个 A 留一个即可，已核验删右 A 仍最短 31，删左 A 仍可解。'],
