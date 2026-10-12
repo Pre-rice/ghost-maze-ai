@@ -20,6 +20,7 @@ const short = file => relative(root, file).replaceAll('\\', '/');
 const hash = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
 const sources = [], skipped = [], entries = new Map();
 const names = {
+    'queued-ghost-exchange-20261012/map': ['《易位》', '新候选，尚无用户试玩评价；22 格、两鬼、两钥匙，无按钮或字母门，中性入口。普通门与一次性门保留鬼位换序关系；机械核验不代表精妙，未加入网页地图集。'],
     'deferred-key-cold-entry-20261012/map': ['《后路》', '“不错，比上一张有进步”；需要考虑先捡哪个钥匙、规划路线，但推理仍线性，很快想到。期待更精妙、有新意与再次眼前一亮；本轮暂停设计，转向本体修改。'],
     'shelter-role-exchange-20261012/map': ['《换岗》', '“不错的谜题”；复杂性还可以、需要动脑、布局简洁，但每一步容易想到，没有眼前一亮或顿悟感。后续尽量避免开局被追，并核验从整图进入单元当步的状态一致。'],
     'room-transfer-20261012/map': ['《换边》', '“不错”，比前面几题更巧、简洁；解法仍简单、容易想到，地图复杂性有限。有甜点单元／靠前简单关的价值，尚未达到主线挑战目标。'],
