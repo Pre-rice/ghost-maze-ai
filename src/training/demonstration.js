@@ -6,6 +6,7 @@ import { traceState } from '../review/trace-core.js';
 import { verifyRecording } from '../review/recordings.js';
 import { extractTemporalFeatures } from '../design/temporal-features.js';
 import { analyzeMap } from '../design/analyze.js';
+import { auditPuzzleBoundaries } from '../design/rule-boundaries.js';
 
 export function mapFromSharecode(sharecode) {
     const decoded = DataSerializer.loadFromShareCode(sharecode);
@@ -32,7 +33,7 @@ export function diagnoseRelaxedPlan(map, budget) {
 }
 
 /** 制备求解器监督数据；只标示一条已证最优延续，不把未选择动作当成已证错误。 */
-export function prepareDemonstration(input, { familyId, source, budget = {}, feedbackReferences = [] } = {}) {
+export function prepareDemonstration(input, { familyId, source, budget = {}, boundaryBudget = budget, feedbackReferences = [] } = {}) {
     if (typeof familyId !== 'string' || !familyId || !['human_recording', 'solver_certificate'].includes(source)) throw new TypeError('必须声明家族与示范来源');
     const verified = verifyRecording(input);
     if (!verified.cleanWin || input.ambiguities?.length) throw new TypeError('首版求解器示范要求无伤、无复活、无按键歧义的通关轨迹');
@@ -40,6 +41,9 @@ export function prepareDemonstration(input, { familyId, source, budget = {}, fee
     const solved = solveFastMap(map, budget);
     if (solved.status !== 'solved' || solved.optimality !== 'proven') throw new Error('示范最优性未完成验证');
     if (solved.solution.totalActions !== input.actions.length) throw new Error('示范不是最短成功动作解');
+    // 一条安全的最优路线仍可能有利用重合的同长替代解；资料制备必须验收整张图。
+    const boundaries = auditPuzzleBoundaries(map, boundaryBudget);
+    if (boundaries.status !== 'safe') throw new Error(`示范地图边界审查未通过：${boundaries.status}/${boundaries.reason}`);
     const rows = [];
     let state = env.initialState();
     for (const [index, chosenAction] of input.actions.entries()) {
@@ -52,18 +56,21 @@ export function prepareDemonstration(input, { familyId, source, budget = {}, fee
         }
         const dynamic = traceState(state);
         delete dynamic.player.steps;
+        // 原录制保留初始身份供研究追踪；规划输入仅保留玩家可见的鬼位置和同格数量。
+        for (const layer of dynamic.layers) layer.ghosts.sort((a, b) => a[1] - b[1] || a[0] - b[0]);
         rows.push({ schemaVersion: 1, input: { mapId: env.mapId, dynamic, acceptedActions, safeActions },
             expectedOutput: { chosenAction, optimalRemainingActions: input.actions.length - index },
             metadata: { demonstrationId: input.id, familyId, source, ruleset: env.ruleset, index,
-                observationScope: 'full_information', policyTarget: 'one_optimal_continuation', splitGroup: familyId } });
+                observationScope: 'full_information', policyTarget: 'one_optimal_continuation', splitGroup: familyId,
+                boundaryPolicy: boundaries.policy, ghostRepresentation: 'positions_and_counts' } });
         assert(safeActions.includes(chosenAction));
         state = env.step(state, chosenAction);
     }
     const temporal = extractTemporalFeatures(map, input.actions);
     const causal = analyzeMap(map, temporal.hypotheses, budget);
     const relaxedDiagnostic = diagnoseRelaxedPlan(map, budget);
-    return { schemaVersion: 1, datasetVersion: 'demonstration-v1', source, demonstrationId: input.id,
+    return { schemaVersion: 1, datasetVersion: 'demonstration-v3-physical-boundaries', source, demonstrationId: input.id,
         familyId, splitGroup: familyId, ruleset: env.ruleset, mapId: env.mapId, map, rows,
-        verified, optimality: solved, temporal, causal, relaxedDiagnostic, feedbackReferences,
+        verified, optimality: solved, boundaries, temporal, causal, relaxedDiagnostic, feedbackReferences,
         qualityScore: null, trainStarted: false };
 }
