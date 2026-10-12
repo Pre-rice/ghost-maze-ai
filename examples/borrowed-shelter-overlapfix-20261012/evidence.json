@@ -1,0 +1,2539 @@
+{
+  "date": "2026-10-12",
+  "ruleset": "sha256:c588e3aeeef0fe67237ca78500d7299c3addd56afa45522d21449162faa207f4",
+  "mapId": "d07c12c2adfea1108149541a8ea978162bd4fe679d8c53cf3555d8aaa3bbd35c",
+  "source": {
+    "file": "examples/borrowed-shelter-wallfix-20261009/map.json",
+    "sha256": "e0d505a5487db845a6aec82784057fa56267ca8b940fd8a4c53bffbe8faa7a3f",
+    "oldMapId": "1f6cfa5ea62fd0583786b1f5c1914cc8fc905fbea5529df7eae8228ad0ccf9d9"
+  },
+  "edit": {
+    "axis": "h",
+    "x": 0,
+    "y": 4,
+    "old": {
+      "type": 0,
+      "keys": 0
+    },
+    "new": {
+      "type": 6,
+      "keys": 0,
+      "letter": "A",
+      "initialState": "open"
+    }
+  },
+  "baseline": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "sha256:c588e3aeeef0fe67237ca78500d7299c3addd56afa45522d21449162faa207f4",
+    "mapId": "d07c12c2adfea1108149541a8ea978162bd4fe679d8c53cf3555d8aaa3bbd35c",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "withGhosts": true,
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "U",
+        "L",
+        "U",
+        "U",
+        "L",
+        "U",
+        "R",
+        "R",
+        "R",
+        "D",
+        "R",
+        "D",
+        "U",
+        "L",
+        "D",
+        "L",
+        "U",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "U",
+        "R",
+        "U",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U",
+        "L",
+        "U",
+        "U",
+        "L",
+        "R",
+        "D",
+        "D",
+        "R",
+        "U"
+      ],
+      "totalActions": 59,
+      "movementCost": 53
+    },
+    "search": {
+      "algorithm": "astar",
+      "expanded": 474,
+      "transitions": 2370,
+      "discovered": 492,
+      "exhausted": false,
+      "elapsedMs": 11.129325999999992,
+      "budget": {
+        "nodeBudget": 1000000,
+        "stateBudget": 1000000,
+        "budgetMs": 15000
+      }
+    }
+  },
+  "reference": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "sha256:c588e3aeeef0fe67237ca78500d7299c3addd56afa45522d21449162faa207f4",
+    "mapId": "d07c12c2adfea1108149541a8ea978162bd4fe679d8c53cf3555d8aaa3bbd35c",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "U",
+        "L",
+        "U",
+        "U",
+        "L",
+        "U",
+        "R",
+        "R",
+        "R",
+        "D",
+        "R",
+        "D",
+        "U",
+        "L",
+        "D",
+        "L",
+        "U",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "U",
+        "R",
+        "U",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U",
+        "L",
+        "U",
+        "U",
+        "L",
+        "R",
+        "D",
+        "D",
+        "R",
+        "U"
+      ],
+      "totalActions": 59,
+      "movementCost": 53
+    },
+    "search": {
+      "expanded": 526,
+      "transitions": 2626,
+      "discovered": 534,
+      "exhausted": false,
+      "elapsedMs": 67.10671300000001,
+      "budget": {
+        "nodeBudget": 1000000,
+        "stateBudget": 1000000,
+        "budgetMs": 15000
+      }
+    }
+  },
+  "boundary": {
+    "status": "safe",
+    "reason": "all_optimal_routes_avoid_overlap",
+    "mapId": "d07c12c2adfea1108149541a8ea978162bd4fe679d8c53cf3555d8aaa3bbd35c",
+    "ruleset": "sha256:c588e3aeeef0fe67237ca78500d7299c3addd56afa45522d21449162faa207f4",
+    "policy": "all_optimal_routes_avoid_overlap_v2",
+    "glassCount": 0,
+    "expanded": 528,
+    "transitions": 2640,
+    "discovered": 538,
+    "optimum": 59,
+    "ignoredFatalOverlap": 11,
+    "observedNonFatalOverlap": null,
+    "safeOptimalWitness": [
+      "U",
+      "L",
+      "U",
+      "U",
+      "L",
+      "U",
+      "R",
+      "R",
+      "R",
+      "D",
+      "R",
+      "D",
+      "U",
+      "L",
+      "D",
+      "L",
+      "U",
+      "D",
+      "D",
+      "R",
+      "R",
+      "U",
+      "U",
+      "U",
+      "L",
+      "L",
+      "L",
+      "L",
+      "U",
+      "R",
+      "U",
+      "L",
+      "D",
+      "D",
+      "D",
+      "R",
+      "R",
+      "R",
+      "D",
+      "L",
+      "L",
+      "L",
+      "U",
+      "U",
+      "R",
+      "U",
+      "R",
+      "U",
+      "R",
+      "U",
+      "L",
+      "U",
+      "U",
+      "L",
+      "R",
+      "D",
+      "D",
+      "R",
+      "U"
+    ],
+    "elapsedMs": 45,
+    "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+  },
+  "originalActions": [
+    "U",
+    "L",
+    "U",
+    "U",
+    "L",
+    "U",
+    "R",
+    "R",
+    "R",
+    "D",
+    "R",
+    "D",
+    "U",
+    "L",
+    "D",
+    "L",
+    "U",
+    "D",
+    "D",
+    "R",
+    "R",
+    "U",
+    "U",
+    "U",
+    "L",
+    "L",
+    "L",
+    "L",
+    "U",
+    "R",
+    "U",
+    "L",
+    "D",
+    "D",
+    "D",
+    "R",
+    "R",
+    "R",
+    "D",
+    "L",
+    "L",
+    "L",
+    "U",
+    "U",
+    "R",
+    "U",
+    "R",
+    "U",
+    "R",
+    "U",
+    "L",
+    "U",
+    "U",
+    "L",
+    "R",
+    "D",
+    "D",
+    "R",
+    "U"
+  ],
+  "originalRoutePlayerGhostItemsIdentical": true,
+  "favouritePlacement": {
+    "restriction": {
+      "id": "without_A_below_placement",
+      "sequence": [
+        {
+          "type": "all",
+          "events": [
+            {
+              "type": "ghost_cross",
+              "layer": 0,
+              "index": 0,
+              "from": {
+                "x": 2,
+                "y": 5
+              },
+              "to": {
+                "x": 1,
+                "y": 5
+              }
+            },
+            {
+              "type": "gate",
+              "layer": 0,
+              "axis": "h",
+              "x": 1,
+              "y": 5,
+              "state": "closed"
+            }
+          ]
+        }
+      ]
+    },
+    "fast": {
+      "schemaVersion": 1,
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "ruleset": "sha256:c588e3aeeef0fe67237ca78500d7299c3addd56afa45522d21449162faa207f4",
+      "mapId": "d07c12c2adfea1108149541a8ea978162bd4fe679d8c53cf3555d8aaa3bbd35c",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "withGhosts": true,
+        "restrictions": [
+          {
+            "id": "without_A_below_placement",
+            "sequence": [
+              {
+                "type": "all",
+                "events": [
+                  {
+                    "type": "ghost_cross",
+                    "layer": 0,
+                    "index": 0,
+                    "from": {
+                      "x": 2,
+                      "y": 5
+                    },
+                    "to": {
+                      "x": 1,
+                      "y": 5
+                    }
+                  },
+                  {
+                    "type": "gate",
+                    "layer": 0,
+                    "axis": "h",
+                    "x": 1,
+                    "y": 5,
+                    "state": "closed"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "optimality": null,
+      "solution": null,
+      "search": {
+        "algorithm": "astar",
+        "expanded": 517,
+        "transitions": 2585,
+        "discovered": 517,
+        "exhausted": true,
+        "elapsedMs": 19.150149999999996,
+        "budget": {
+          "nodeBudget": 1000000,
+          "stateBudget": 1000000,
+          "budgetMs": 15000
+        }
+      }
+    },
+    "reference": {
+      "schemaVersion": 1,
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "ruleset": "sha256:c588e3aeeef0fe67237ca78500d7299c3addd56afa45522d21449162faa207f4",
+      "mapId": "d07c12c2adfea1108149541a8ea978162bd4fe679d8c53cf3555d8aaa3bbd35c",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "restrictions": [
+          {
+            "id": "without_A_below_placement",
+            "sequence": [
+              {
+                "type": "all",
+                "events": [
+                  {
+                    "type": "ghost_cross",
+                    "layer": 0,
+                    "index": 0,
+                    "from": {
+                      "x": 2,
+                      "y": 5
+                    },
+                    "to": {
+                      "x": 1,
+                      "y": 5
+                    }
+                  },
+                  {
+                    "type": "gate",
+                    "layer": 0,
+                    "axis": "h",
+                    "x": 1,
+                    "y": 5,
+                    "state": "closed"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "optimality": null,
+      "solution": null,
+      "search": {
+        "expanded": 517,
+        "transitions": 2585,
+        "discovered": 517,
+        "exhausted": true,
+        "elapsedMs": 77.255349,
+        "budget": {
+          "nodeBudget": 1000000,
+          "stateBudget": 1000000,
+          "budgetMs": 15000
+        }
+      }
+    }
+  },
+  "trace": [
+    {
+      "step": 1,
+      "action": "U",
+      "player": [
+        1,
+        5
+      ],
+      "ghosts": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 2,
+      "action": "L",
+      "player": [
+        0,
+        5
+      ],
+      "ghosts": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 3,
+      "action": "U",
+      "player": [
+        0,
+        4
+      ],
+      "ghosts": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 4,
+      "action": "U",
+      "player": [
+        0,
+        3
+      ],
+      "ghosts": [
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 5,
+      "action": "L",
+      "player": [
+        0,
+        3
+      ],
+      "ghosts": [
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 6,
+      "action": "U",
+      "player": [
+        0,
+        2
+      ],
+      "ghosts": [
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 7,
+      "action": "R",
+      "player": [
+        1,
+        2
+      ],
+      "ghosts": [
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 8,
+      "action": "R",
+      "player": [
+        2,
+        2
+      ],
+      "ghosts": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 9,
+      "action": "R",
+      "player": [
+        3,
+        2
+      ],
+      "ghosts": [
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 10,
+      "action": "D",
+      "player": [
+        3,
+        3
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 11,
+      "action": "R",
+      "player": [
+        3,
+        3
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "open"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "closed"
+      }
+    },
+    {
+      "step": 12,
+      "action": "D",
+      "player": [
+        3,
+        4
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "open"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "closed"
+      }
+    },
+    {
+      "step": 13,
+      "action": "U",
+      "player": [
+        3,
+        3
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "open"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "closed"
+      }
+    },
+    {
+      "step": 14,
+      "action": "L",
+      "player": [
+        2,
+        3
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "open"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "closed"
+      }
+    },
+    {
+      "step": 15,
+      "action": "D",
+      "player": [
+        2,
+        4
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "open"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "closed"
+      }
+    },
+    {
+      "step": 16,
+      "action": "L",
+      "player": [
+        1,
+        4
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "open"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "closed"
+      }
+    },
+    {
+      "step": 17,
+      "action": "U",
+      "player": [
+        1,
+        4
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "open"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "closed"
+      }
+    },
+    {
+      "step": 18,
+      "action": "D",
+      "player": [
+        1,
+        5
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "open"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "closed"
+      }
+    },
+    {
+      "step": 19,
+      "action": "D",
+      "player": [
+        1,
+        6
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "open"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "closed"
+      }
+    },
+    {
+      "step": 20,
+      "action": "R",
+      "player": [
+        2,
+        6
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "open"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "closed"
+      }
+    },
+    {
+      "step": 21,
+      "action": "R",
+      "player": [
+        3,
+        6
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "open"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "closed"
+      }
+    },
+    {
+      "step": 22,
+      "action": "U",
+      "player": [
+        3,
+        5
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "open"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "closed"
+      }
+    },
+    {
+      "step": 23,
+      "action": "U",
+      "player": [
+        3,
+        4
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "open"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "closed"
+      }
+    },
+    {
+      "step": 24,
+      "action": "U",
+      "player": [
+        3,
+        3
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "open"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "closed"
+      }
+    },
+    {
+      "step": 25,
+      "action": "L",
+      "player": [
+        2,
+        3
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "open"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "closed"
+      }
+    },
+    {
+      "step": 26,
+      "action": "L",
+      "player": [
+        1,
+        3
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "open"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "closed"
+      }
+    },
+    {
+      "step": 27,
+      "action": "L",
+      "player": [
+        0,
+        3
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "open"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "closed"
+      }
+    },
+    {
+      "step": 28,
+      "action": "L",
+      "player": [
+        0,
+        3
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "open"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "closed"
+      }
+    },
+    {
+      "step": 29,
+      "action": "U",
+      "player": [
+        0,
+        2
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "open"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "closed"
+      }
+    },
+    {
+      "step": 30,
+      "action": "R",
+      "player": [
+        1,
+        2
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "open"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "closed"
+      }
+    },
+    {
+      "step": 31,
+      "action": "U",
+      "player": [
+        1,
+        2
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 32,
+      "action": "L",
+      "player": [
+        0,
+        2
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 33,
+      "action": "D",
+      "player": [
+        0,
+        3
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 34,
+      "action": "D",
+      "player": [
+        0,
+        4
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 35,
+      "action": "D",
+      "player": [
+        0,
+        5
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 36,
+      "action": "R",
+      "player": [
+        1,
+        5
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 37,
+      "action": "R",
+      "player": [
+        2,
+        5
+      ],
+      "ghosts": [
+        [
+          3,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 38,
+      "action": "R",
+      "player": [
+        3,
+        5
+      ],
+      "ghosts": [
+        [
+          3,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 39,
+      "action": "D",
+      "player": [
+        3,
+        6
+      ],
+      "ghosts": [
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 40,
+      "action": "L",
+      "player": [
+        2,
+        6
+      ],
+      "ghosts": [
+        [
+          3,
+          5
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 41,
+      "action": "L",
+      "player": [
+        1,
+        6
+      ],
+      "ghosts": [
+        [
+          3,
+          5
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 42,
+      "action": "L",
+      "player": [
+        0,
+        6
+      ],
+      "ghosts": [
+        [
+          3,
+          5
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 43,
+      "action": "U",
+      "player": [
+        0,
+        5
+      ],
+      "ghosts": [
+        [
+          2,
+          5
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 44,
+      "action": "U",
+      "player": [
+        0,
+        4
+      ],
+      "ghosts": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 45,
+      "action": "R",
+      "player": [
+        1,
+        4
+      ],
+      "ghosts": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 46,
+      "action": "U",
+      "player": [
+        1,
+        4
+      ],
+      "ghosts": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 47,
+      "action": "R",
+      "player": [
+        2,
+        4
+      ],
+      "ghosts": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 48,
+      "action": "U",
+      "player": [
+        2,
+        3
+      ],
+      "ghosts": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 49,
+      "action": "R",
+      "player": [
+        3,
+        3
+      ],
+      "ghosts": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 50,
+      "action": "U",
+      "player": [
+        3,
+        2
+      ],
+      "ghosts": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 51,
+      "action": "L",
+      "player": [
+        2,
+        2
+      ],
+      "ghosts": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 52,
+      "action": "U",
+      "player": [
+        2,
+        1
+      ],
+      "ghosts": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 53,
+      "action": "U",
+      "player": [
+        2,
+        0
+      ],
+      "ghosts": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 54,
+      "action": "L",
+      "player": [
+        1,
+        0
+      ],
+      "ghosts": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 55,
+      "action": "R",
+      "player": [
+        2,
+        0
+      ],
+      "ghosts": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 56,
+      "action": "D",
+      "player": [
+        2,
+        1
+      ],
+      "ghosts": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 57,
+      "action": "D",
+      "player": [
+        2,
+        2
+      ],
+      "ghosts": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 58,
+      "action": "R",
+      "player": [
+        3,
+        2
+      ],
+      "ghosts": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    },
+    {
+      "step": 59,
+      "action": "U",
+      "player": [
+        3,
+        1
+      ],
+      "ghosts": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "Aunder": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "closed",
+        "currentState": "closed"
+      },
+      "addedDoor": {
+        "type": 6,
+        "keys": 0,
+        "direction": null,
+        "letter": "A",
+        "initialState": "open",
+        "currentState": "open"
+      }
+    }
+  ],
+  "humanQuality": null,
+  "familyId": "dual-loop-relay-v1"
+}
