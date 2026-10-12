@@ -20,6 +20,7 @@ const short = file => relative(root, file).replaceAll('\\', '/');
 const hash = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
 const sources = [], skipped = [], entries = new Map();
 const names = {
+    'shelter-role-exchange-20261012/map': ['《换岗》', '21 格、两鬼、两钥匙、A/B 各一个；两处普通门与临时保护需要接续交接。68 动作与全解关系核验通过，尚无用户质量评价，不自评精妙。'],
     'room-transfer-20261012/map': ['《换边》', '“不错”，比前面几题更巧、简洁；解法仍简单、容易想到，地图复杂性有限。有甜点单元／靠前简单关的价值，尚未达到主线挑战目标。'],
     'prepared-release-20261011/map': ['《先手》', '“很容易就解出来了”“没有什么新意”；未达到目标质量。用户指出两个 A 留一个即可，已核验删右 A 仍最短 31，删左 A 仍可解。'],
     'door-units-20261011/unit-01': ['《两面》', '“太简单”“过于毫无难度”；体现用门甩鬼的基本思想，但解法明显，未达到目标质量。'],
@@ -51,6 +52,7 @@ const names = {
 
 // 点评只取真实反馈和已保存的复盘；“不错”不自动等于达到精妙目标。
 const reviews = {
+    'shelter-role-exchange-20261012/map': { date: '2026-10-12', evidence: 'examples/shelter-role-exchange-20261012/README.md' },
     'room-transfer-20261012/map': { date: '2026-10-12', positive: true, evidence: 'docs/room-transfer-review-20261012.md' },
     'prepared-release-20261011/map': { date: '2026-10-12', evidence: 'docs/prepared-release-review-20261012.md' },
     'door-units-20261011/unit-01': { date: '2026-10-11', evidence: 'docs/door-units-review-20261011.md' },

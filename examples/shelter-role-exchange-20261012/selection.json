@@ -1,0 +1,1639 @@
+{
+  "evaluation": {
+    "accepted": true,
+    "baseline": {
+      "schemaVersion": 1,
+      "status": "solved",
+      "reason": "goal_reached",
+      "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+      "mapId": "85f10bc35943c45fee79fdac182e58c34a6f23065fd5f563639eaefa419a5b7d",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "withGhosts": true,
+        "restrictions": []
+      },
+      "optimality": "proven",
+      "solution": {
+        "actions": [
+          "L",
+          "U",
+          "R",
+          "R",
+          "U",
+          "L",
+          "D",
+          "L",
+          "D",
+          "L",
+          "R",
+          "R",
+          "D",
+          "D",
+          "R",
+          "D",
+          "L",
+          "U",
+          "R",
+          "U",
+          "U",
+          "R",
+          "L",
+          "L",
+          "L",
+          "L",
+          "R",
+          "R",
+          "L",
+          "L",
+          "U",
+          "R",
+          "R",
+          "U",
+          "R",
+          "U",
+          "L",
+          "D",
+          "D",
+          "D",
+          "D",
+          "D",
+          "D",
+          "R",
+          "L",
+          "U",
+          "U",
+          "U",
+          "U",
+          "U",
+          "L",
+          "D",
+          "L",
+          "D",
+          "L",
+          "R",
+          "R",
+          "R",
+          "R",
+          "L",
+          "L",
+          "L",
+          "U",
+          "R",
+          "U",
+          "L",
+          "U",
+          "L"
+        ],
+        "totalActions": 68,
+        "movementCost": 62
+      },
+      "search": {
+        "algorithm": "astar",
+        "expanded": 680,
+        "transitions": 3400,
+        "discovered": 693,
+        "exhausted": false,
+        "elapsedMs": 9.03549299999986,
+        "budget": {
+          "nodeBudget": 100000,
+          "stateBudget": 100000,
+          "budgetMs": 3000
+        }
+      }
+    },
+    "requirements": [
+      {
+        "restriction": {
+          "id": "g0-two-ordinary-shelters",
+          "sequence": [
+            {
+              "type": "ghost_cross",
+              "layer": 0,
+              "index": 0,
+              "from": {
+                "x": 3,
+                "y": 2
+              },
+              "to": {
+                "x": 3,
+                "y": 1
+              }
+            },
+            {
+              "type": "ghost_cross",
+              "layer": 0,
+              "index": 0,
+              "from": {
+                "x": 4,
+                "y": 1
+              },
+              "to": {
+                "x": 4,
+                "y": 0
+              }
+            }
+          ]
+        },
+        "result": {
+          "schemaVersion": 1,
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+          "mapId": "85f10bc35943c45fee79fdac182e58c34a6f23065fd5f563639eaefa419a5b7d",
+          "scope": {
+            "gameMode": "death-loop",
+            "objective": "zero_hit_no_revive",
+            "metric": "successful_actions",
+            "actions": [
+              "U",
+              "R",
+              "D",
+              "L",
+              "STAIR"
+            ],
+            "withGhosts": true,
+            "restrictions": [
+              {
+                "id": "g0-two-ordinary-shelters",
+                "sequence": [
+                  {
+                    "type": "ghost_cross",
+                    "layer": 0,
+                    "index": 0,
+                    "from": {
+                      "x": 3,
+                      "y": 2
+                    },
+                    "to": {
+                      "x": 3,
+                      "y": 1
+                    }
+                  },
+                  {
+                    "type": "ghost_cross",
+                    "layer": 0,
+                    "index": 0,
+                    "from": {
+                      "x": 4,
+                      "y": 1
+                    },
+                    "to": {
+                      "x": 4,
+                      "y": 0
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "optimality": null,
+          "solution": null,
+          "search": {
+            "algorithm": "astar",
+            "expanded": 928,
+            "transitions": 4640,
+            "discovered": 928,
+            "exhausted": true,
+            "elapsedMs": 15.675375999999915,
+            "budget": {
+              "nodeBudget": 100000,
+              "stateBudget": 100000,
+              "budgetMs": 3000
+            }
+          }
+        }
+      },
+      {
+        "restriction": {
+          "id": "g0-upper-before-g1-lower",
+          "sequence": [
+            {
+              "type": "ghost_cross",
+              "layer": 0,
+              "index": 0,
+              "from": {
+                "x": 4,
+                "y": 1
+              },
+              "to": {
+                "x": 4,
+                "y": 0
+              }
+            },
+            {
+              "type": "ghost_cross",
+              "layer": 0,
+              "index": 1,
+              "from": {
+                "x": 3,
+                "y": 2
+              },
+              "to": {
+                "x": 3,
+                "y": 1
+              }
+            }
+          ]
+        },
+        "result": {
+          "schemaVersion": 1,
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+          "mapId": "85f10bc35943c45fee79fdac182e58c34a6f23065fd5f563639eaefa419a5b7d",
+          "scope": {
+            "gameMode": "death-loop",
+            "objective": "zero_hit_no_revive",
+            "metric": "successful_actions",
+            "actions": [
+              "U",
+              "R",
+              "D",
+              "L",
+              "STAIR"
+            ],
+            "withGhosts": true,
+            "restrictions": [
+              {
+                "id": "g0-upper-before-g1-lower",
+                "sequence": [
+                  {
+                    "type": "ghost_cross",
+                    "layer": 0,
+                    "index": 0,
+                    "from": {
+                      "x": 4,
+                      "y": 1
+                    },
+                    "to": {
+                      "x": 4,
+                      "y": 0
+                    }
+                  },
+                  {
+                    "type": "ghost_cross",
+                    "layer": 0,
+                    "index": 1,
+                    "from": {
+                      "x": 3,
+                      "y": 2
+                    },
+                    "to": {
+                      "x": 3,
+                      "y": 1
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "optimality": null,
+          "solution": null,
+          "search": {
+            "algorithm": "astar",
+            "expanded": 672,
+            "transitions": 3360,
+            "discovered": 672,
+            "exhausted": true,
+            "elapsedMs": 11.64449999999988,
+            "budget": {
+              "nodeBudget": 100000,
+              "stateBudget": 100000,
+              "budgetMs": 3000
+            }
+          }
+        }
+      },
+      {
+        "restriction": {
+          "id": "g1-from-B-shelter-to-first-ordinary",
+          "sequence": [
+            {
+              "type": "ghost_cross",
+              "layer": 0,
+              "index": 1,
+              "from": {
+                "x": 4,
+                "y": 4
+              },
+              "to": {
+                "x": 4,
+                "y": 5
+              }
+            },
+            {
+              "type": "ghost_cross",
+              "layer": 0,
+              "index": 1,
+              "from": {
+                "x": 3,
+                "y": 2
+              },
+              "to": {
+                "x": 3,
+                "y": 1
+              }
+            }
+          ]
+        },
+        "result": {
+          "schemaVersion": 1,
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+          "mapId": "85f10bc35943c45fee79fdac182e58c34a6f23065fd5f563639eaefa419a5b7d",
+          "scope": {
+            "gameMode": "death-loop",
+            "objective": "zero_hit_no_revive",
+            "metric": "successful_actions",
+            "actions": [
+              "U",
+              "R",
+              "D",
+              "L",
+              "STAIR"
+            ],
+            "withGhosts": true,
+            "restrictions": [
+              {
+                "id": "g1-from-B-shelter-to-first-ordinary",
+                "sequence": [
+                  {
+                    "type": "ghost_cross",
+                    "layer": 0,
+                    "index": 1,
+                    "from": {
+                      "x": 4,
+                      "y": 4
+                    },
+                    "to": {
+                      "x": 4,
+                      "y": 5
+                    }
+                  },
+                  {
+                    "type": "ghost_cross",
+                    "layer": 0,
+                    "index": 1,
+                    "from": {
+                      "x": 3,
+                      "y": 2
+                    },
+                    "to": {
+                      "x": 3,
+                      "y": 1
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "optimality": null,
+          "solution": null,
+          "search": {
+            "algorithm": "astar",
+            "expanded": 605,
+            "transitions": 3025,
+            "discovered": 605,
+            "exhausted": true,
+            "elapsedMs": 11.303693000000067,
+            "budget": {
+              "nodeBudget": 100000,
+              "stateBudget": 100000,
+              "budgetMs": 3000
+            }
+          }
+        }
+      },
+      {
+        "restriction": {
+          "id": "second-key-then-g1-transfer-then-reopen-B",
+          "sequence": [
+            {
+              "type": "visit",
+              "layer": 0,
+              "x": 4,
+              "y": 1
+            },
+            {
+              "type": "ghost_cross",
+              "layer": 0,
+              "index": 1,
+              "from": {
+                "x": 3,
+                "y": 2
+              },
+              "to": {
+                "x": 3,
+                "y": 1
+              }
+            },
+            {
+              "type": "all",
+              "events": [
+                {
+                  "type": "press",
+                  "letter": "B"
+                },
+                {
+                  "type": "gate",
+                  "layer": 0,
+                  "axis": "h",
+                  "x": 4,
+                  "y": 4,
+                  "state": "open"
+                }
+              ]
+            }
+          ]
+        },
+        "result": {
+          "schemaVersion": 1,
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+          "mapId": "85f10bc35943c45fee79fdac182e58c34a6f23065fd5f563639eaefa419a5b7d",
+          "scope": {
+            "gameMode": "death-loop",
+            "objective": "zero_hit_no_revive",
+            "metric": "successful_actions",
+            "actions": [
+              "U",
+              "R",
+              "D",
+              "L",
+              "STAIR"
+            ],
+            "withGhosts": true,
+            "restrictions": [
+              {
+                "id": "second-key-then-g1-transfer-then-reopen-B",
+                "sequence": [
+                  {
+                    "type": "visit",
+                    "layer": 0,
+                    "x": 4,
+                    "y": 1
+                  },
+                  {
+                    "type": "ghost_cross",
+                    "layer": 0,
+                    "index": 1,
+                    "from": {
+                      "x": 3,
+                      "y": 2
+                    },
+                    "to": {
+                      "x": 3,
+                      "y": 1
+                    }
+                  },
+                  {
+                    "type": "all",
+                    "events": [
+                      {
+                        "type": "press",
+                        "letter": "B"
+                      },
+                      {
+                        "type": "gate",
+                        "layer": 0,
+                        "axis": "h",
+                        "x": 4,
+                        "y": 4,
+                        "state": "open"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "optimality": null,
+          "solution": null,
+          "search": {
+            "algorithm": "astar",
+            "expanded": 778,
+            "transitions": 3890,
+            "discovered": 778,
+            "exhausted": true,
+            "elapsedMs": 15.400513000000046,
+            "budget": {
+              "nodeBudget": 100000,
+              "stateBudget": 100000,
+              "budgetMs": 3000
+            }
+          }
+        }
+      },
+      {
+        "restriction": {
+          "id": "B-two",
+          "sequence": [
+            {
+              "type": "press",
+              "letter": "B"
+            },
+            {
+              "type": "press",
+              "letter": "B"
+            }
+          ]
+        },
+        "result": {
+          "schemaVersion": 1,
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+          "mapId": "85f10bc35943c45fee79fdac182e58c34a6f23065fd5f563639eaefa419a5b7d",
+          "scope": {
+            "gameMode": "death-loop",
+            "objective": "zero_hit_no_revive",
+            "metric": "successful_actions",
+            "actions": [
+              "U",
+              "R",
+              "D",
+              "L",
+              "STAIR"
+            ],
+            "withGhosts": true,
+            "restrictions": [
+              {
+                "id": "B-two",
+                "sequence": [
+                  {
+                    "type": "press",
+                    "letter": "B"
+                  },
+                  {
+                    "type": "press",
+                    "letter": "B"
+                  }
+                ]
+              }
+            ]
+          },
+          "optimality": null,
+          "solution": null,
+          "search": {
+            "algorithm": "astar",
+            "expanded": 642,
+            "transitions": 3210,
+            "discovered": 642,
+            "exhausted": true,
+            "elapsedMs": 10.292643000000226,
+            "budget": {
+              "nodeBudget": 100000,
+              "stateBudget": 100000,
+              "budgetMs": 3000
+            }
+          }
+        }
+      },
+      {
+        "restriction": {
+          "id": "first-key-before-B",
+          "sequence": [
+            {
+              "type": "visit",
+              "layer": 0,
+              "x": 3,
+              "y": 3
+            },
+            {
+              "type": "press",
+              "letter": "B"
+            }
+          ]
+        },
+        "result": {
+          "schemaVersion": 1,
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+          "mapId": "85f10bc35943c45fee79fdac182e58c34a6f23065fd5f563639eaefa419a5b7d",
+          "scope": {
+            "gameMode": "death-loop",
+            "objective": "zero_hit_no_revive",
+            "metric": "successful_actions",
+            "actions": [
+              "U",
+              "R",
+              "D",
+              "L",
+              "STAIR"
+            ],
+            "withGhosts": true,
+            "restrictions": [
+              {
+                "id": "first-key-before-B",
+                "sequence": [
+                  {
+                    "type": "visit",
+                    "layer": 0,
+                    "x": 3,
+                    "y": 3
+                  },
+                  {
+                    "type": "press",
+                    "letter": "B"
+                  }
+                ]
+              }
+            ]
+          },
+          "optimality": null,
+          "solution": null,
+          "search": {
+            "algorithm": "astar",
+            "expanded": 352,
+            "transitions": 1760,
+            "discovered": 352,
+            "exhausted": true,
+            "elapsedMs": 7.524211000000378,
+            "budget": {
+              "nodeBudget": 100000,
+              "stateBudget": 100000,
+              "budgetMs": 3000
+            }
+          }
+        }
+      }
+    ]
+  },
+  "complexity": [
+    21,
+    6,
+    8,
+    68,
+    3
+  ],
+  "lineage": [
+    {
+      "parentMapId": "4a54cba83aaaa1ccc93353bc54801f9402a349b5aad8d2c66f9ed25f283367da",
+      "mapId": "72e6c7eb5991324239a0dca9de80cb4ddfb41e60d4063805aa3d596abe2f4a47",
+      "edit": {
+        "type": "cell",
+        "x": 4,
+        "y": 2
+      },
+      "before": [
+        23,
+        6,
+        13,
+        68,
+        5
+      ],
+      "after": [
+        22,
+        6,
+        12,
+        68,
+        4
+      ]
+    },
+    {
+      "parentMapId": "72e6c7eb5991324239a0dca9de80cb4ddfb41e60d4063805aa3d596abe2f4a47",
+      "mapId": "afcfd13171e36d637003fc61aa595e279868c1a948d04b5439be888025e7ac20",
+      "edit": {
+        "type": "wall",
+        "axis": "h",
+        "x": 1,
+        "y": 1,
+        "wall": {
+          "type": 0,
+          "keys": 0
+        }
+      },
+      "before": [
+        22,
+        6,
+        12,
+        68,
+        4
+      ],
+      "after": [
+        22,
+        6,
+        11,
+        68,
+        4
+      ]
+    },
+    {
+      "parentMapId": "afcfd13171e36d637003fc61aa595e279868c1a948d04b5439be888025e7ac20",
+      "mapId": "351dc4939280b5181b343ecf3aff53ac1593d47ebdb4e3522ca9e4761d0f46fc",
+      "edit": {
+        "type": "wall",
+        "axis": "h",
+        "x": 3,
+        "y": 1,
+        "wall": {
+          "type": 0,
+          "keys": 0
+        }
+      },
+      "before": [
+        22,
+        6,
+        11,
+        68,
+        4
+      ],
+      "after": [
+        22,
+        6,
+        10,
+        68,
+        4
+      ]
+    },
+    {
+      "parentMapId": "351dc4939280b5181b343ecf3aff53ac1593d47ebdb4e3522ca9e4761d0f46fc",
+      "mapId": "65bf0b23b0cdeb545dd42ccf241e01edf99c2cbdcea572d756f5c749ff78c6b0",
+      "edit": {
+        "type": "wall",
+        "axis": "h",
+        "x": 1,
+        "y": 2,
+        "wall": {
+          "type": 1,
+          "keys": 0
+        }
+      },
+      "before": [
+        22,
+        6,
+        10,
+        68,
+        4
+      ],
+      "after": [
+        22,
+        6,
+        9,
+        70,
+        5
+      ]
+    },
+    {
+      "parentMapId": "65bf0b23b0cdeb545dd42ccf241e01edf99c2cbdcea572d756f5c749ff78c6b0",
+      "mapId": "42920c7c33726139153133dd8d94c5aac5ccada34c167d86889b614e52214491",
+      "edit": {
+        "type": "wall",
+        "axis": "v",
+        "x": 3,
+        "y": 2,
+        "wall": {
+          "type": 0,
+          "keys": 0
+        }
+      },
+      "before": [
+        22,
+        6,
+        9,
+        70,
+        5
+      ],
+      "after": [
+        22,
+        6,
+        9,
+        70,
+        4
+      ]
+    },
+    {
+      "parentMapId": "42920c7c33726139153133dd8d94c5aac5ccada34c167d86889b614e52214491",
+      "mapId": "133ccb8332833908834606ebcf277ea30dc3d870bc79b5e124c8d53e93f53b27",
+      "edit": {
+        "type": "wall",
+        "axis": "v",
+        "x": 3,
+        "y": 3,
+        "wall": {
+          "type": 0,
+          "keys": 0
+        }
+      },
+      "before": [
+        22,
+        6,
+        9,
+        70,
+        4
+      ],
+      "after": [
+        22,
+        6,
+        8,
+        68,
+        4
+      ]
+    },
+    {
+      "parentMapId": "133ccb8332833908834606ebcf277ea30dc3d870bc79b5e124c8d53e93f53b27",
+      "mapId": "a2c465dd4c960bc606c84ae5d1ee8ae2663904da0f3f9f2af9a53c43571ac50b",
+      "edit": {
+        "type": "cell",
+        "x": 2,
+        "y": 4
+      },
+      "before": [
+        22,
+        6,
+        8,
+        68,
+        4
+      ],
+      "after": [
+        21,
+        6,
+        8,
+        68,
+        4
+      ]
+    },
+    {
+      "parentMapId": "a2c465dd4c960bc606c84ae5d1ee8ae2663904da0f3f9f2af9a53c43571ac50b",
+      "mapId": "85f10bc35943c45fee79fdac182e58c34a6f23065fd5f563639eaefa419a5b7d",
+      "edit": {
+        "type": "wall",
+        "axis": "v",
+        "x": 4,
+        "y": 5,
+        "wall": {
+          "type": 0,
+          "keys": 0
+        }
+      },
+      "before": [
+        21,
+        6,
+        8,
+        68,
+        4
+      ],
+      "after": [
+        21,
+        6,
+        8,
+        68,
+        3
+      ]
+    }
+  ],
+  "attempts": 365,
+  "passes": [
+    {
+      "tested": 11,
+      "accepted": true
+    },
+    {
+      "tested": 29,
+      "accepted": true
+    },
+    {
+      "tested": 30,
+      "accepted": true
+    },
+    {
+      "tested": 31,
+      "accepted": true
+    },
+    {
+      "tested": 57,
+      "accepted": true
+    },
+    {
+      "tested": 60,
+      "accepted": true
+    },
+    {
+      "tested": 15,
+      "accepted": true
+    },
+    {
+      "tested": 61,
+      "accepted": true
+    },
+    {
+      "tested": 63,
+      "accepted": false
+    }
+  ],
+  "localMinimality": {
+    "scope": "remove_one_cell_or_entity_or_replace_one_wall_with_empty_or_solid",
+    "audit": [
+      {
+        "edit": {
+          "type": "cell",
+          "x": 0,
+          "y": 0
+        },
+        "outcome": "invalid",
+        "reason": "地图无效：起点或终点必须位于活动格"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 1,
+          "y": 0
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 3,
+          "y": 0
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 4,
+          "y": 0
+        },
+        "outcome": "event_geometry_or_entity_removed"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 1,
+          "y": 1
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 2,
+          "y": 1
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 3,
+          "y": 1
+        },
+        "outcome": "event_geometry_or_entity_removed"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 4,
+          "y": 1
+        },
+        "outcome": "invalid",
+        "reason": "地图无效：实体必须位于活动格"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 1,
+          "y": 2
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 2,
+          "y": 2
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 3,
+          "y": 2
+        },
+        "outcome": "event_geometry_or_entity_removed"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 1,
+          "y": 3
+        },
+        "outcome": "invalid",
+        "reason": "地图无效：实体必须位于活动格"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 2,
+          "y": 3
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 3,
+          "y": 3
+        },
+        "outcome": "invalid",
+        "reason": "地图无效：实体必须位于活动格"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 4,
+          "y": 3
+        },
+        "outcome": "invalid",
+        "reason": "地图无效：实体必须位于活动格"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 3,
+          "y": 4
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 4,
+          "y": 4
+        },
+        "outcome": "event_geometry_or_entity_removed"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 3,
+          "y": 5
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 4,
+          "y": 5
+        },
+        "outcome": "event_geometry_or_entity_removed"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 3,
+          "y": 6
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "cell",
+          "x": 4,
+          "y": 6
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "remove_entity",
+          "field": "initialGhosts",
+          "index": 0
+        },
+        "outcome": "event_geometry_or_entity_removed"
+      },
+      {
+        "edit": {
+          "type": "remove_entity",
+          "field": "initialGhosts",
+          "index": 1
+        },
+        "outcome": "event_geometry_or_entity_removed"
+      },
+      {
+        "edit": {
+          "type": "remove_entity",
+          "field": "items",
+          "index": 0
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "remove_entity",
+          "field": "items",
+          "index": 1
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "remove_entity",
+          "field": "buttons",
+          "index": 0
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "remove_entity",
+          "field": "buttons",
+          "index": 1
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 1,
+          "y": 1,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 3,
+          "y": 1,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 4,
+          "y": 1,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 1,
+          "y": 2,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "bypass-g0-two-ordinary-shelters"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 2,
+          "y": 2,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 3,
+          "y": 2,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 1,
+          "y": 3,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 2,
+          "y": 3,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "bypass-g0-two-ordinary-shelters"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 3,
+          "y": 3,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 3,
+          "y": 3,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 3,
+          "y": 4,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 4,
+          "y": 4,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "event_geometry_or_entity_removed"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 4,
+          "y": 4,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "event_geometry_or_entity_removed"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 3,
+          "y": 5,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 4,
+          "y": 5,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 3,
+          "y": 6,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "h",
+          "x": 4,
+          "y": 6,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 1,
+          "y": 0,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 1,
+          "y": 0,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "bypass-g0-two-ordinary-shelters"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 4,
+          "y": 0,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 4,
+          "y": 0,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 2,
+          "y": 1,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 2,
+          "y": 1,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "bypass-g0-upper-before-g1-lower"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 3,
+          "y": 1,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 3,
+          "y": 1,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 4,
+          "y": 1,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 4,
+          "y": 1,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "bypass-g0-upper-before-g1-lower"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 2,
+          "y": 2,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 3,
+          "y": 2,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 2,
+          "y": 3,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 3,
+          "y": 3,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 4,
+          "y": 3,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 4,
+          "y": 3,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 4,
+          "y": 4,
+          "wall": {
+            "type": 0,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 4,
+          "y": 5,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "not_simpler",
+        "score": [
+          21,
+          6,
+          8,
+          68,
+          4
+        ]
+      },
+      {
+        "edit": {
+          "type": "wall",
+          "axis": "v",
+          "x": 4,
+          "y": 6,
+          "wall": {
+            "type": 1,
+            "keys": 0
+          }
+        },
+        "outcome": "baseline_unsat"
+      }
+    ],
+    "unresolved": 0,
+    "globalMinimumProven": false
+  }
+}
