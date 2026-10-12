@@ -20,7 +20,7 @@ const short = file => relative(root, file).replaceAll('\\', '/');
 const hash = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
 const sources = [], skipped = [], entries = new Map();
 const names = {
-    'prepared-release-20261011/map': ['《先手》', '新候选：取钥匙、回程与重开出口相互制约；机械核验通过，等待真实试玩，尚无用户质量评价。'],
+    'prepared-release-20261011/map': ['《先手》', '“很容易就解出来了”“没有什么新意”；未达到目标质量。用户指出两个 A 留一个即可，已核验删右 A 仍最短 31，删左 A 仍可解。'],
     'door-units-20261011/unit-01': ['《两面》', '“太简单”“过于毫无难度”；体现用门甩鬼的基本思想，但解法明显，未达到目标质量。'],
     'door-units-20261011/unit-02': ['《开路》', '“太简单”“过于毫无难度”；体现用门甩鬼的基本思想，但解法明显，未达到目标质量。'],
     'coupled-singlelayer/map': ['单层组合题', '“太妙了！好设计！”；想了好一阵子，指出左上 B 门没有作用。'],
@@ -50,6 +50,7 @@ const names = {
 
 // 点评只取真实反馈和已保存的复盘；“不错”不自动等于达到精妙目标。
 const reviews = {
+    'prepared-release-20261011/map': { date: '2026-10-12', evidence: 'docs/prepared-release-review-20261012.md' },
     'door-units-20261011/unit-01': { date: '2026-10-11', evidence: 'docs/door-units-review-20261011.md' },
     'door-units-20261011/unit-02': { date: '2026-10-11', evidence: 'docs/door-units-review-20261011.md' },
     'coupled-singlelayer/map': { date: '2026-09-30', positive: true, evidence: 'docs/status.md' },
@@ -148,7 +149,7 @@ const sourceLinks = entry => entry.sources.map(source => {
     return '[' + source + '](../../ghost-maze-ai/' + file + ')';
 }).join('、');
 const valid = [...entries.values()].filter(entry => entry.code);
-let document = '# AI 地图总目录\n\n更新：2026-10-11。游玩、AI 和回放已使用同一规则；下列码全部为当前格式。旧码弃用，原地图、原证据和真人录制保持原样。\n\n';
+let document = '# AI 地图总目录\n\n更新：2026-10-12。游玩、AI 和回放已使用同一规则；下列码全部为当前格式。旧码弃用，原地图、原证据和真人录制保持原样。\n\n';
 document += '扫描 ' + sources.length + ' 份明确保存的地图资料，按完整地图内容去重得到 ' + entries.size + ' 张；其中 ' + valid.length + ' 张可生成并重新打开，' + valid.filter(entry => entry.route).length + ' 张已有当前规则的无伤参考路线。数量包括母图、对照和实验候选，不等于正式作品数量。\n\n';
 document += '本文件是地图、解法和用户评述的统一目录。默认试玩入口为正式站 `https://ghostmaze.novic.cc/`；当前目录使用 `' + origin + '`。正式站已同步当前规则和分享格式。只有地图码是普通游玩，追加操作码才进入回放。\n\n';
 document += '参考步数表示新规则下路线成功执行的有效操作数；本次没有重新证明这些路线最短，也没有重新评价谜题质量。按钮、移动和楼梯均计步。参考回放和路线放在折叠区。\n\n';

@@ -1,0 +1,505 @@
+{
+  "date": "2026-10-12",
+  "parentMapId": "2cbfb6b389e975d84bc98fb7af3df20397b1d18da4913d787f86e07573bc015b",
+  "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+  "purpose": "删按钮对照，核验用户指出的冗余；不是新题或人类质量证明",
+  "originalOptimalActions": 31,
+  "audit": [
+    {
+      "removed": {
+        "letter": "A",
+        "x": 3,
+        "y": 1,
+        "direction": {
+          "dx": 0,
+          "dy": -1
+        }
+      },
+      "remaining": [
+        {
+          "letter": "A",
+          "x": 5,
+          "y": 1,
+          "direction": {
+            "dx": 0,
+            "dy": -1
+          }
+        }
+      ],
+      "fast": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "e891e199db31f650203567e868b93991f343009c54969f30b89feb93038b5a87",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": []
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "R",
+            "D",
+            "U",
+            "R",
+            "U",
+            "L",
+            "L",
+            "D",
+            "D",
+            "D",
+            "U",
+            "L",
+            "L",
+            "D",
+            "R",
+            "R",
+            "R",
+            "U",
+            "R",
+            "R",
+            "U",
+            "U",
+            "L",
+            "U",
+            "L",
+            "L",
+            "D",
+            "D",
+            "D",
+            "R",
+            "R",
+            "U",
+            "U"
+          ],
+          "totalActions": 33,
+          "movementCost": 31
+        },
+        "search": {
+          "algorithm": "astar",
+          "expanded": 146,
+          "transitions": 730,
+          "discovered": 153,
+          "exhausted": false,
+          "elapsedMs": 11.046807999999999,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "e891e199db31f650203567e868b93991f343009c54969f30b89feb93038b5a87",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": []
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "R",
+            "D",
+            "U",
+            "R",
+            "U",
+            "L",
+            "L",
+            "D",
+            "D",
+            "D",
+            "U",
+            "L",
+            "L",
+            "D",
+            "R",
+            "R",
+            "R",
+            "U",
+            "R",
+            "R",
+            "U",
+            "U",
+            "L",
+            "U",
+            "L",
+            "L",
+            "D",
+            "D",
+            "D",
+            "R",
+            "R",
+            "U",
+            "U"
+          ],
+          "totalActions": 33,
+          "movementCost": 31
+        },
+        "search": {
+          "expanded": 155,
+          "transitions": 771,
+          "discovered": 157,
+          "exhausted": false,
+          "elapsedMs": 31.390194000000008,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      },
+      "sharecode": "AADAADw8_PgAAAEwIDF0AdABAAAVQMWinOAEVUAAAAAAQgqoiIuMoAAAAACCAAg",
+      "replayCode": "GJrxjp3TKVKfzwilfAA",
+      "requiredRelations": [
+        {
+          "id": "park-before-key",
+          "fast": "proven_unsat",
+          "reference": "proven_unsat"
+        },
+        {
+          "id": "park-seal-key",
+          "fast": "proven_unsat",
+          "reference": "proven_unsat"
+        },
+        {
+          "id": "key-unlock-reopen-release",
+          "fast": "proven_unsat",
+          "reference": "proven_unsat"
+        },
+        {
+          "id": "two-presses",
+          "fast": "proven_unsat",
+          "reference": "proven_unsat"
+        },
+        {
+          "id": "key-ghost-cross-number",
+          "fast": "proven_unsat",
+          "reference": "proven_unsat"
+        },
+        {
+          "id": "key-ghost-number-return-reopen",
+          "fast": "proven_unsat",
+          "reference": "proven_unsat"
+        },
+        {
+          "id": "two-ghosts-temporary-shelters-before-release",
+          "fast": "proven_unsat",
+          "reference": "proven_unsat"
+        }
+      ],
+      "checks": {
+        "buttonAttachments": true,
+        "mapCodeRoundtrip": true,
+        "replayCodeRoundtrip": true,
+        "withoutGoalSafe": true
+      }
+    },
+    {
+      "removed": {
+        "letter": "A",
+        "x": 5,
+        "y": 1,
+        "direction": {
+          "dx": 0,
+          "dy": -1
+        }
+      },
+      "remaining": [
+        {
+          "letter": "A",
+          "x": 3,
+          "y": 1,
+          "direction": {
+            "dx": 0,
+            "dy": -1
+          }
+        }
+      ],
+      "fast": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "9ac1b1cb7fa38ed4c3104d6511f43caecfc7e6024ff24dd7a170bb40f69d58ac",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "withGhosts": true,
+          "restrictions": []
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "R",
+            "D",
+            "U",
+            "L",
+            "U",
+            "D",
+            "D",
+            "D",
+            "U",
+            "L",
+            "L",
+            "D",
+            "R",
+            "R",
+            "R",
+            "U",
+            "R",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L",
+            "L",
+            "U",
+            "D",
+            "D",
+            "D",
+            "R",
+            "R",
+            "U",
+            "U"
+          ],
+          "totalActions": 31,
+          "movementCost": 29
+        },
+        "search": {
+          "algorithm": "astar",
+          "expanded": 146,
+          "transitions": 730,
+          "discovered": 153,
+          "exhausted": false,
+          "elapsedMs": 1.7526889999999753,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      },
+      "reference": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+        "mapId": "9ac1b1cb7fa38ed4c3104d6511f43caecfc7e6024ff24dd7a170bb40f69d58ac",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": []
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "R",
+            "D",
+            "U",
+            "L",
+            "U",
+            "D",
+            "D",
+            "D",
+            "U",
+            "L",
+            "L",
+            "D",
+            "R",
+            "R",
+            "R",
+            "U",
+            "R",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L",
+            "L",
+            "U",
+            "D",
+            "D",
+            "D",
+            "R",
+            "R",
+            "U",
+            "U"
+          ],
+          "totalActions": 31,
+          "movementCost": 29
+        },
+        "search": {
+          "expanded": 155,
+          "transitions": 771,
+          "discovered": 157,
+          "exhausted": false,
+          "elapsedMs": 18.748152000000005,
+          "budget": {
+            "nodeBudget": 100000,
+            "stateBudget": 100000,
+            "budgetMs": 10000
+          }
+        }
+      },
+      "sharecode": "AADAADw8_PgAAAEwIDF0AdAAAAAVQMWinOAEVUAAAAAAQgqoiIuMoAAAAACCAAg",
+      "replayCode": "CKaRbZXSFSn88KhXwA",
+      "requiredRelations": [
+        {
+          "id": "park-before-key",
+          "fast": "proven_unsat",
+          "reference": "proven_unsat"
+        },
+        {
+          "id": "park-seal-key",
+          "fast": "proven_unsat",
+          "reference": "proven_unsat"
+        },
+        {
+          "id": "key-unlock-reopen-release",
+          "fast": "proven_unsat",
+          "reference": "proven_unsat"
+        },
+        {
+          "id": "two-presses",
+          "fast": "proven_unsat",
+          "reference": "proven_unsat"
+        },
+        {
+          "id": "key-ghost-cross-number",
+          "fast": "proven_unsat",
+          "reference": "proven_unsat"
+        },
+        {
+          "id": "key-ghost-number-return-reopen",
+          "fast": "proven_unsat",
+          "reference": "proven_unsat"
+        },
+        {
+          "id": "two-ghosts-temporary-shelters-before-release",
+          "fast": "proven_unsat",
+          "reference": "proven_unsat"
+        }
+      ],
+      "checks": {
+        "buttonAttachments": true,
+        "mapCodeRoundtrip": true,
+        "replayCodeRoundtrip": true,
+        "withoutGoalSafe": true
+      }
+    }
+  ],
+  "removeBoth": {
+    "fast": {
+      "schemaVersion": 1,
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+      "mapId": "606a58d70f5dc3196d084841452a0c90d0b6c2beacc7f1b724e4e52ea293f45c",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "withGhosts": true,
+        "restrictions": []
+      },
+      "optimality": null,
+      "solution": null,
+      "search": {
+        "algorithm": "astar",
+        "expanded": 19,
+        "transitions": 95,
+        "discovered": 19,
+        "exhausted": true,
+        "elapsedMs": 0.6198689999999942,
+        "budget": {
+          "nodeBudget": 100000,
+          "stateBudget": 100000,
+          "budgetMs": 10000
+        }
+      }
+    },
+    "reference": {
+      "schemaVersion": 1,
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "ruleset": "sha256:5cbe15023dbe0892c58febad1e399cf8cc81266a09c57cca210777124f2ffec5",
+      "mapId": "606a58d70f5dc3196d084841452a0c90d0b6c2beacc7f1b724e4e52ea293f45c",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "restrictions": []
+      },
+      "optimality": null,
+      "solution": null,
+      "search": {
+        "expanded": 19,
+        "transitions": 95,
+        "discovered": 19,
+        "exhausted": true,
+        "elapsedMs": 2.5206610000000182,
+        "budget": {
+          "nodeBudget": 100000,
+          "stateBudget": 100000,
+          "budgetMs": 10000
+        }
+      }
+    }
+  },
+  "minimalityScopeCorrection": "原精简显式保留两鬼、一钥匙、两按钮；两按钮未被证明必需。",
+  "humanQuality": null
+}
