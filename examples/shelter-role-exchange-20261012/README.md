@@ -2,7 +2,7 @@
 
 21 格、单层、两只鬼、两把钥匙，A/B 各一个按钮，普通门和数字门各两扇、字母门四扇，无玻璃与单向门。没有改页面或规则，也没有训练模型。
 
-[试玩](https://ghostmaze.novic.cc/?map=AADBsPDg8DAwMAEC4C10BaeArgOw0oSAiBcgpwAAAKABZrEDmOQCBGYCoCQEgAAAwIMIBA)。这是更深组合关系的待审候选，尚无用户质量评价，不把 68 动作或机械依赖称为精妙。入口、参考解与后续评述统一加入[地图总目录](../../../ghost-maze/docs/ai-map-catalog.md)。
+[试玩](https://ghostmaze.novic.cc/?map=AADBsPDg8DAwMAEC4C10BaeArgOw0oSAiBcgpwAAAKABZrEDmOQCBGYCoCQEgAAAwIMIBA)。2026-10-12 用户评价“不错的谜题”、复杂性还可以、需要动脑且简洁，但每一步容易想到，没有眼前一亮或顿悟感。用户要求后续尽量避免开局被追，并考虑进入整图新区域当步已经推进鬼的问题，见[反馈与入口要求](../../docs/shelter-role-exchange-review-20261012.md)。原图与生成证据保留，入口、参考解和评述统一加入[地图总目录](../../../ghost-maze/docs/ai-map-catalog.md)。
 
 本题接续《换边》反馈：保留简洁单元的甜点／早期关价值，主线转向两个部分会相互改变可行条件的组合。实际过程是手工逆向构造保护位置的竞争，完整状态搜索排查捷径；初版有无需新增机关的捷径，封住该路又出现控制死结，均拒绝。逐项按钮删除找到只用 A/B 各一个的方案，未固定保留四个站位。随后调整门的相位与中间连接，23 格原图形成保护交接关系，再接受八项删减到 21 格；365 次尝试、末轮 63 项审计、未决零，只是明确关系与单项编辑范围内的局部精简，不宣称全局最小。
 
