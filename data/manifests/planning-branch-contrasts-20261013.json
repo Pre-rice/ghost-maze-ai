@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-13",
+  "datasetVersion": "planning-branch-contrasts-v1",
+  "pairs": [
+    {
+      "title": "借道",
+      "mapId": "da04fd50773b66da2c809a099933edeb94a74e0b29cb2d2e70d59e8894e69def",
+      "familyId": "door-cooperation-20261013-v1",
+      "goodPrefixLength": 24,
+      "badPrefixLength": 22,
+      "outcomes": [
+        {
+          "label": "winning",
+          "status": "solved",
+          "expanded": 28
+        },
+        {
+          "label": "dead_end",
+          "status": "proven_unsat",
+          "expanded": 24
+        }
+      ],
+      "physicalDifferences": [
+        {
+          "path": "/layers/0/walls/0/4/4/0",
+          "before": 3,
+          "after": 0
+        }
+      ],
+      "visibleStateDifference": true
+    },
+    {
+      "title": "折返",
+      "mapId": "84740f396722ae5e1ae281b7abe7a7334ee1760de66a0d41f2c260baa2a40e13",
+      "familyId": "door-cooperation-20261013-v1",
+      "goodPrefixLength": 28,
+      "badPrefixLength": 27,
+      "outcomes": [
+        {
+          "label": "winning",
+          "status": "solved",
+          "expanded": 12
+        },
+        {
+          "label": "dead_end",
+          "status": "proven_unsat",
+          "expanded": 3
+        }
+      ],
+      "physicalDifferences": [
+        {
+          "path": "/player/y",
+          "before": 1,
+          "after": 2
+        },
+        {
+          "path": "/player/keys",
+          "before": 1,
+          "after": 2
+        },
+        {
+          "path": "/layers/0/ghosts/0/0",
+          "before": 2,
+          "after": 1
+        },
+        {
+          "path": "/layers/0/ghosts/0/1",
+          "before": 1,
+          "after": 3
+        },
+        {
+          "path": "/layers/0/ghosts/1/0",
+          "before": 1,
+          "after": 2
+        },
+        {
+          "path": "/layers/0/ghosts/1/1",
+          "before": 5,
+          "after": 3
+        },
+        {
+          "path": "/layers/0/items/0",
+          "before": [
+            1,
+            2,
+            "key"
+          ]
+        }
+      ],
+      "visibleStateDifference": true
+    }
+  ],
+  "rows": 4,
+  "maps": 2,
+  "conservativeSplitGroups": [
+    "door-cooperation-20261013-v1"
+  ],
+  "sourceScope": "规划证据，不是真人错误或质量标签；正例为已证最优路线的前缀，反例双求解器续解穷尽无解，所有前缀实际安全，静态图已通过全部最优边界",
+  "rowSha256": "5c7345e5d0f4df778e72092cd2ae2b59b689fb08e22d6a2a8a36fc86d8064289",
+  "humanQualitySamplesAdded": 0,
+  "trainStarted": false,
+  "qualityScore": null,
+  "dataDirectory": "runs/door-mainline-20261013/planning-branch-contrasts-v1"
+}

@@ -267,7 +267,9 @@
     ],
     "verificationRun": "delayed-cooperation-search-20.json"
   },
-  "selectedWorks": [],
+  "selectedWorks": [
+    "examples/returning-guard-20261013"
+  ],
   "humanQuality": null,
   "rawResearchDirectory": "runs/door-mainline-20261013/research",
   "familyPolicy": "沿用同一保守研究家族，不将五题或大量提案计作独立质量样本",
@@ -367,5 +369,30 @@
       }
     ],
     "result": "六件在最优范围内有双鬼阻挡，并且指定开门事件顺序为全部通关所需；但后开门全部可删且最短不变。这否定它们作为延迟开门功能题的依据，而不是否定最优阻挡事实。未选第二件交付。"
+  },
+  "sharedCorridorFollowup": {
+    "seed": 101324,
+    "counts": {
+      "proposals": 30000,
+      "cold": 15704,
+      "solved": 5348,
+      "unknown": 0,
+      "range": 748,
+      "bothMoving": 589,
+      "bothGatesCrossed": 294,
+      "functionalGates": 7,
+      "blockingNecessary": 4,
+      "ghostReturns": 1,
+      "requiredOrder": 1,
+      "safe": 1
+    },
+    "elapsedMs": 31163,
+    "selectedIndex": 22647,
+    "initialShortest": 38,
+    "sourceCells": 23,
+    "finalCells": 22,
+    "finalShortest": 38,
+    "finalMapId": "84740f396722ae5e1ae281b7abe7a7334ee1760de66a0d41f2c260baa2a40e13",
+    "result": "加入共用短通道后找到全部通关需鬼阻挡、两0门换空边均无解的样本；指定鬼跨下门往返后才开上门全解必要。删支路和多余普通门，独立参考及最优边界/真实入场核验后交付《折返》。两项右侧具体转弯仅最优必要，有40步替代；上0门换普通门38步仍可，原单位输出不同，未过度宣称全部类型不可替代。"
   }
 }
