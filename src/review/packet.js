@@ -5,6 +5,7 @@ import { DataSerializer, validateMapData } from '../reference/engine.js';
 import { physicalState } from '../search/fast-environment.js';
 import { solveFastMap } from '../search/fast-solver.js';
 import { seededRandom } from '../design/edits.js';
+import { assertPuzzleBoundarySafety } from '../design/rule-boundaries.js';
 import assert from 'node:assert/strict';
 
 const root = new URL('../../', import.meta.url);
@@ -28,6 +29,7 @@ export function buildPacket(seed = 20260930, groups = defaultGroups) {
             const checked = validateMapData(JSON.parse(readFileSync(new URL(file, root), 'utf8')));
             if (!checked.valid) throw new TypeError(`${file} 地图无效：${checked.error}`);
             const map = checked.mapData;
+            assertPuzzleBoundarySafety(map, { nodeBudget: 30000, budgetMs: 10000 });
             const env = createReferenceEnvironment(map);
             const result = solveFastMap(map, { nodeBudget: 30000, stateBudget: 30000, budgetMs: 10000 });
             assert.equal(result.status, 'solved', `${file} 没有通关证书`);

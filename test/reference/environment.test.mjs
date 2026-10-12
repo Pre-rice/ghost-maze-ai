@@ -76,11 +76,12 @@ test('物理状态键忽略轨迹、探索记录、计步与复活标记，区�
 
 test('物品顺序和非当前层的鬼及墙状态都进入键', () => {
     const map = stairMap(true);
-    map.layers[0].items = [{ x: 1, y: 2, type: 'key' }, { x: 2, y: 2, type: 'key' }];
+    map.layers[0].items = [{ x: 2, y: 2, type: 'key' }];
+    map.layers[1].items = [{ x: 2, y: 2, type: 'key' }, { x: 3, y: 2, type: 'key' }];
     map.layers[1].ghosts = [{ x: 3, y: 2, id: 0 }];
     const env = createReferenceEnvironment(map), state = env.initialState();
     for (const change of [
-        s => s.layerStates[0].items.reverse(),
+        s => s.layerStates[1].items.reverse(),
         s => s.layerStates[1].ghosts.pop(),
         s => { s.setWall(1,'v',3,2,{currentState:'open'}); }
     ]) {

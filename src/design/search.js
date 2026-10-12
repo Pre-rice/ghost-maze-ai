@@ -3,6 +3,7 @@ import { applyEdit, proposeEdit, seededRandom } from './edits.js';
 import { createReferenceEnvironment } from '../reference/environment.js';
 import { compileRestrictions } from '../search/restrictions.js';
 import { assertButtonAttachments } from './button-support.js';
+import { auditPuzzleBoundaries } from './rule-boundaries.js';
 
 /** 可复现的有限编辑实验；这是机制证据档案，尚无学得的质量奖励。 */
 export function searchDesigns(map, { familyId, seed = 1, iterations = 24, maxDepth = 3, hypotheses = [], budget = {} } = {}) {
@@ -15,6 +16,8 @@ export function searchDesigns(map, { familyId, seed = 1, iterations = 24, maxDep
     const seen = new Map([[root.mapId, 0]]), attempts = [], buckets = new Map();
     const archive = node => {
         if (node.analysis?.baseline.status !== 'solved') return;
+        node.boundaryAudit = auditPuzzleBoundaries(node.map, { nodeBudget: budget.nodeBudget ?? 250000, budgetMs: budget.budgetMs ?? 10000 });
+        if (node.boundaryAudit.status !== 'safe') return;
         const necessary = node.analysis.counterfactuals.filter(c => c.conclusion === 'necessary_within_scope').map(c => c.hypothesis.id).sort();
         // 动作分桶只用于取样多样性；不把步数越多当作越好玩。
         const descriptor = JSON.stringify([necessary, Math.floor(node.analysis.baseline.solution.totalActions / 4)]);

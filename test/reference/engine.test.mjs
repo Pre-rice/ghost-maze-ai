@@ -26,7 +26,7 @@ test('参考规则保持当前游戏每次动作只拾取同格一个物品的�
     assert.equal(state.layerStates[0].items.length, 1);
 });
 
-test('多鬼顺序是规则状态的一部分：同一目标格冲突产生不同后继', () => {
+test('鬼编号与排列不决定追击：同一可见局面产生同一后继', () => {
     const map = seed();
     map.activeCells = map.activeCells.map(row => row.map(() => true));
     map.hWalls = map.hWalls.map((row, y) => row.map(() => ({ type: y === 0 || y === map.height ? W.SOLID : W.EMPTY })));
@@ -36,8 +36,8 @@ test('多鬼顺序是规则状态的一部分：同一目标格冲突产生不�
     const positions = ghosts => {
         const def = new MapDefinition({ ...map, initialGhosts: ghosts });
         return GameLogic.calculateNextState(GameLogic.createInitialState(def), { type: 'MOVE', payload: { dx: 1, dy: 0 } }, def)
-            .layerStates[0].ghosts.map(g => [g.x, g.y]);
+            .layerStates[0].ghosts.map(g => [g.x, g.y]).sort((a, b) => a[0] - b[0] || a[1] - b[1]);
     };
-    assert.deepEqual(positions(map.initialGhosts), [[2, 2], [2, 1]]);
-    assert.deepEqual(positions([...map.initialGhosts].reverse()), [[2, 2], [1, 2]]);
+    assert.deepEqual(positions(map.initialGhosts), [[2, 1], [2, 2]]);
+    assert.deepEqual(positions([...map.initialGhosts].reverse()), [[2, 1], [2, 2]]);
 });

@@ -7,10 +7,16 @@ import { DataSerializer, ReplaySerializer, validateMapData } from '../src/refere
 import { createReferenceEnvironment } from '../src/reference/environment.js';
 import { solveFastMap } from '../src/search/fast-solver.js';
 import { verifyRecording } from '../src/review/recordings.js';
+import { updateCatalogReviewOverlay } from './catalog-review-overlay.mjs';
 
 // 汇总明确落盘的地图，不展开大型搜索日志中的批量失败编辑；原图与证据只读。
 const root = fileURLToPath(new URL('../', import.meta.url));
 const destination = resolve(root, '../ghost-maze/docs/ai-map-catalog.md');
+if (existsSync(resolve(root, 'data/manifests/rule-boundaries-20261012.json'))) {
+    updateCatalogReviewOverlay(root, destination);
+    console.log('已更新现行规则审查；保留历史评述，不重新求解旧实验地图。');
+    process.exit(0);
+}
 const output = resolve(root, 'runs/map-catalog');
 const origin = process.argv[2] || 'https://ghostmaze.novic.cc/';
 const walk = folder => existsSync(folder) ? readdirSync(folder, { withFileTypes: true }).flatMap(entry =>

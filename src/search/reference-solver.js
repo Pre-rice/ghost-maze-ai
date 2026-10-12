@@ -32,6 +32,7 @@ export function solveReferenceMap(mapData, options = {}) {
         solution,
         search: { expanded, transitions, discovered: visited.size, exhausted: status === 'proven_unsat', elapsedMs: performance.now() - started, budget }
     });
+    if (initial.isWon) return finish('solved', 'goal_reached', { actions: [], totalActions: 0, movementCost: 0 });
     for (let head = 0; head < entries.length; head++) {
         if (expanded >= budget.nodeBudget) return finish('unknown', 'node_budget');
         if (performance.now() - started >= budget.budgetMs) return finish('unknown', 'time_budget');

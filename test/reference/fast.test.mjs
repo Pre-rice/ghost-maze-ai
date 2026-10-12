@@ -163,10 +163,10 @@ test('预算区分未知、已发现解但未证明最优，以及真正无解',
     assert.equal(solveFastMap(short, BUDGET).status, 'solved');
 });
 
-test('低层可达不等于已判胜：出生点恰好是终点仍需要真实动作', () => {
+test('出生点恰好是终点时共同规则立即判胜，最短为零动作', () => {
     const map = smallMap([[1, 2], [2, 2]], [1, 2], [1, 2]);
-    assert.equal(solveFastMap(map, BUDGET).solution.totalActions, 2);
-    assert.equal(solveReferenceMap(map, BUDGET).solution.totalActions, 2);
+    assert.equal(solveFastMap(map, BUDGET).solution.totalActions, 0);
+    assert.equal(solveReferenceMap(map, BUDGET).solution.totalActions, 0);
 });
 
 test('旧接口保留 nullable 可解性，无鬼验证明确标注松弛范围', () => {
