@@ -1,0 +1,747 @@
+{
+  "width": 8,
+  "height": 8,
+  "editorMode": "free",
+  "gameMode": "death-loop",
+  "initialHealth": 5,
+  "startPos": {
+    "x": 0,
+    "y": 3
+  },
+  "customStartPos": {
+    "x": 0,
+    "y": 3
+  },
+  "endPos": {
+    "x": 7,
+    "y": 2
+  },
+  "multiLayerMode": false,
+  "layerCount": 1,
+  "layers": [],
+  "stairs": [],
+  "items": [],
+  "buttons": [
+    {
+      "x": 3,
+      "y": 4,
+      "letter": "A",
+      "direction": {
+        "dx": -1,
+        "dy": 0
+      }
+    }
+  ],
+  "initialGhosts": [
+    {
+      "x": 5,
+      "y": 4,
+      "id": 0
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "id": 1
+    }
+  ],
+  "activeCells": [
+    [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    [
+      false,
+      true,
+      true,
+      false,
+      false,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    [
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    [
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  ],
+  "hWalls": [
+    [
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      }
+    ],
+    [
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      }
+    ],
+    [
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 0,
+        "keys": 0
+      },
+      {
+        "type": 0,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 0,
+        "keys": 0
+      },
+      {
+        "type": 5,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      }
+    ],
+    [
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 0,
+        "keys": 0
+      },
+      {
+        "type": 0,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 0,
+        "keys": 0
+      },
+      {
+        "type": 6,
+        "keys": 0,
+        "letter": "A",
+        "initialState": "open"
+      },
+      {
+        "type": 1,
+        "keys": 0
+      }
+    ],
+    [
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 0,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 2,
+        "keys": 0
+      },
+      {
+        "type": 0,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      }
+    ],
+    [
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 0,
+        "keys": 0
+      },
+      {
+        "type": 2,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      }
+    ],
+    [
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      }
+    ],
+    [
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      }
+    ],
+    [
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      }
+    ]
+  ],
+  "vWalls": [
+    [
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      }
+    ],
+    [
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 0,
+        "keys": 0
+      },
+      {
+        "type": 0,
+        "keys": 0
+      },
+      {
+        "type": 0,
+        "keys": 0
+      },
+      {
+        "type": 0,
+        "keys": 0
+      },
+      {
+        "type": 2,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      }
+    ],
+    [
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 0,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 2,
+        "keys": 0
+      },
+      {
+        "type": 6,
+        "keys": 0,
+        "letter": "A",
+        "initialState": "closed"
+      },
+      {
+        "type": 1,
+        "keys": 0
+      }
+    ],
+    [
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 0,
+        "keys": 0
+      },
+      {
+        "type": 0,
+        "keys": 0
+      },
+      {
+        "type": 0,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 0,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      }
+    ],
+    [
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 0,
+        "keys": 0
+      },
+      {
+        "type": 0,
+        "keys": 0
+      },
+      {
+        "type": 0,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      }
+    ],
+    [
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 0,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      }
+    ],
+    [
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      }
+    ],
+    [
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      },
+      {
+        "type": 1,
+        "keys": 0
+      }
+    ]
+  ]
+}

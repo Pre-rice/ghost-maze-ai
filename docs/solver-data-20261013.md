@@ -1,7 +1,13 @@
 # 2026-10-13 求解器资料制备
 
 
-当前更新：已含《暂驻》39行，12图547个全信息规划状态；两组保守亲缘，尚未训练。九图保持，两个候选未评，《折返》已有否决评述／不入集。求解器示范仍可用于规划事实，不能变成好图正例或自动质量分。
+最新更新：含《借舍》43行，当前13图590个全信息规划状态；两个保守亲缘组，三候选未评、《折返》有用户否决，九图保持。模型未训练。清单[planning-library-20261013-v3.json](../data/manifests/planning-library-20261013-v3.json)；旧12图行与九图源码校验和一致，旧11/12图快照保留。
+
+复现：`node scripts/prepare-planning-library.mjs runs/planning-library-new-13 examples/borrowed-route-20261013/share.json examples/returning-guard-20261013/share.json examples/temporary-stay-20261013/share.json examples/borrowed-room-20261013/share.json`。
+
+
+
+上一轮更新：已含《暂驻》39行，12图547个全信息规划状态；两组保守亲缘，尚未训练。九图保持，两个候选未评，《折返》已有否决评述／不入集。求解器示范仍可用于规划事实，不能变成好图正例或自动质量分。
 
 新清单：[planning-library-20261013-v2.json](../data/manifests/planning-library-20261013-v2.json)。旧11图的行校验和及九图源码校验和保持一致，旧清单原样保留。来源状态区分上架、未评和已否决候选，定性反馈与空数值质量分分开。
 

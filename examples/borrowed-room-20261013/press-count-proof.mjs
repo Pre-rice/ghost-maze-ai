@@ -1,0 +1,7 @@
+import{createReferenceEnvironment}from'../../src/reference/environment.js';
+export function solveWithAtLeastPresses(map,minimum=3,{nodeBudget=1000000,budgetMs=18000}={}){
+const env=createReferenceEnvironment(map),started=Date.now(),initial=env.initialState(),queue=[{state:initial,count:0,parent:-1,action:null}],seen=new Set([env.stateKey(initial)+'|presses:0']);let expanded=0;
+const finish=(status,head=-1,reason='frontier_exhausted')=>{let actions=null;if(head>=0){actions=[];for(let i=head;queue[i].parent>=0;i=queue[i].parent)actions.push(queue[i].action);actions.reverse();env.replay(actions);}return{status,reason,minimum,actions,totalActions:actions?.length??null,expanded,discovered:seen.size,exhausted:status==='proven_unsat',elapsedMs:Date.now()-started,scope:'共同规则完整状态BFS，A计数饱和后进入完整状态键；找到带至少指定次数按钮的最短无伤无复活路线'};};
+for(let head=0;head<queue.length;head++){if(expanded>=nodeBudget||Date.now()-started>=budgetMs)return finish('unknown',-1,'budget');const node=queue[head];if(node.state.isWon){if(node.count>=minimum)return finish('solved',head,'goal_reached');continue;}expanded++;for(const action of env.actions){const next=env.step(node.state,action);if(next===node.state||next.isDead)continue;const pressed=node.state.player.x===next.player.x&&node.state.player.y===next.player.y&&action==='L'&&node.state.player.x===3&&node.state.player.y===4,count=Math.min(minimum,node.count+Number(pressed)),key=env.stateKey(next)+'|presses:'+count;if(seen.has(key))continue;seen.add(key);queue.push({state:next,count,parent:head,action});}}
+return finish('proven_unsat');
+}

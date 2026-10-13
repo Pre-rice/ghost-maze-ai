@@ -270,7 +270,8 @@
   "selectedWorks": [
     "examples/borrowed-route-20261013",
     "examples/returning-guard-20261013",
-    "examples/temporary-stay-20261013"
+    "examples/temporary-stay-20261013",
+    "examples/borrowed-room-20261013"
   ],
   "humanQuality": null,
   "rawResearchDirectory": "runs/door-mainline-20261013/research",
@@ -551,6 +552,37 @@
       "51顶部改道使鬼连续追而不是停车，52在取物前提前移走可绕过“取物后移走”",
       "54封侧向捷径且出口在原停车旁邻格之后，恢复真正停车与后清路",
       "56单纯按格数少会增加12动作，57/60保留规则外环"
+    ]
+  },
+  "borrowedRoomFollowup": {
+    "date": "2026-10-13",
+    "title": "借舍",
+    "selectedMapId": "ed7ad43baeb7489b7806fc3a33ad4b373411fb4f9172533d9f042efabe639ab8",
+    "selectedWork": "examples/borrowed-room-20261013/README.md",
+    "cells": 23,
+    "ghosts": 2,
+    "buttons": 1,
+    "keys": 0,
+    "shortestActions": 43,
+    "allOptimalPresses": 1,
+    "atLeastThreePressesShortest": 45,
+    "optimalSuffixWitnesses": 2,
+    "glassUse": "only_observation_full_physical_strategy_invariance",
+    "observationRoom": "safe_initial_guard_view_without_ghost_move",
+    "simplification": "delete_original_room_A_and_zero_gate; remove_unused_branches_without_longer_routes; compact_guard_region; 31/50 -> 23/43",
+    "familyId": "door-cooperation-20261013-v1",
+    "humanQuality": null,
+    "galleryStatus": "not_added_requires_explicit_user_selection",
+    "planningMaps": 13,
+    "planningRows": 590,
+    "splitGroups": 2,
+    "trainStarted": false,
+    "scopeCautions": [
+      "pair_press某次全通关必要，不要求多按路线每次均就位",
+      "初始鬼最后停哪一侧不作全通关固定身份",
+      "两个最优收尾见证不证明只有两种解",
+      "三按原型早关活困局不移至一按版",
+      "观察室安全与物理玻璃恒等不证明迷雾知识最短"
     ]
   }
 }
