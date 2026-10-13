@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-13",
+  "datasetVersion": "planning-branch-contrasts-v1",
+  "title": "再借",
+  "mapId": "24c627386996698e350f1a317fa6b20c2e390c800664aa38de8c9e64be92b549",
+  "ruleset": "sha256:c588e3aeeef0fe67237ca78500d7299c3addd56afa45522d21449162faa207f4",
+  "rows": 2,
+  "maps": 1,
+  "qualityScore": null,
+  "actualHumanAttemptsAdded": 0,
+  "trainStarted": false,
+  "familyId": "door-cooperation-20261013-v1",
+  "splitGroup": "door-cooperation-20261013-v1",
+  "rowSha256": "998a8ea10b901402122d03f14c35caadc420aa3ad592bc72d6bea429d1dc75f4",
+  "dataDirectory": "runs/door-mainline-20261013/recruited-planning-contrast-v1",
+  "physicalDifferences": [
+    {
+      "path": "/layers/0/ghosts/1/1",
+      "winning": 4,
+      "deadEnd": 3
+    }
+  ],
+  "scope": "两个等长四动作前缀，玩家与墙门完全相同，只有原下鬼公开位置差一格；一方可40步后续通关，一方双续解求解器穷尽无伤无复活范围无解。不是相同场景由内部编号分歧，也不是真人试错或质量偏好。与14图634条最优动作监督分开，不当新地图或独立家族。",
+  "graphSummary": {
+    "complete": true,
+    "reachableLabelledStates": 340,
+    "canonicalPhysicalStates": 340,
+    "transitions": 1690,
+    "winningReachableStates": 269,
+    "aliveDeadEndStates": 71,
+    "aliveIrreversibleEdges": 25,
+    "allEqualPhysicalStatesHaveEqualRemainingCost": true
+  },
+  "positivePrefix": [
+    "R",
+    "U",
+    "U",
+    "R"
+  ],
+  "negativePrefix": [
+    "R",
+    "U",
+    "R",
+    "U"
+  ],
+  "identityPermutationCheck": {
+    "passed": true,
+    "successorsCompared": 1690,
+    "evidence": "examples/recruited-return-20261013/branch-analysis.json"
+  }
+}

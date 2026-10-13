@@ -707,5 +707,42 @@
     "planningRows": 44,
     "evidence": "examples/recruited-return-20261013/evidence.json",
     "preciseReuse": "examples/recruited-return-20261013/helper-reuse.json"
+  },
+  "recruitedAfterDelivery": {
+    "sideDoorContrasts": {
+      "count": 8,
+      "solvedWithoutGuardHelp": 7,
+      "unsat": 1,
+      "source": "runs/door-mainline-20261013/research/side-door-contrasts-107.json",
+      "newWorkSelected": false
+    },
+    "sharedProtectionSearch": {
+      "proposed": 55000,
+      "cold": 19634,
+      "solved": 10984,
+      "unknown": 0,
+      "range": 1511,
+      "requiredBlocking": 0,
+      "mutualBlockingAndBothButtons": 0,
+      "safe": 0
+    },
+    "branchGraph": {
+      "reachableLabelledStates": 340,
+      "canonicalPhysicalStates": 340,
+      "transitions": 1690,
+      "physicalSuccessorPermutationComparisons": 1690,
+      "winningReachableStates": 269,
+      "aliveDeadEndStates": 71,
+      "aliveIrreversibleEdges": 25
+    },
+    "pairedStateContrast": {
+      "rows": 2,
+      "pairs": 1,
+      "humanAttempts": 0,
+      "manifest": "data/manifests/planning-branch-contrasts-recruited-20261013.json",
+      "onlyVisibleGhostPositionDiffers": true
+    },
+    "mapAndShareUnchanged": true,
+    "trainStarted": false
   }
 }

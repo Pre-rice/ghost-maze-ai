@@ -1,3 +1,7 @@
+# 当前收尾（2026-10-13）
+
+《再借》按用户明确决定上架，地图集按首次交付排序。最新清单[planning-library-20261013-v7.json](../data/manifests/planning-library-20261013-v7.json)：14图634行，十一上架／三候选，一件未评候选；十四图逐行校验和完全保持，两个保守亲缘组，未训练。新输出`runs/door-mainline-20261013/planning-library-v3-gallery-11`；下文保留以前各快照，不视为当前状态。
+
 # 2026-10-13 求解器资料制备
 
 最新更新：《再借》44行已纳入[planning-library-20261013-v6.json](../data/manifests/planning-library-20261013-v6.json)，当前14图634状态、十上架与四候选，两个保守亲缘组；原十三图行与十图源码相同。借道／再借未评、借舍一般、折返明确否决；定性评价独立，质量分空，未训练。
@@ -65,3 +69,9 @@ node scripts/prepare-planning-library.mjs runs/planning-library-new examples/bor
 《借道》的正反例玩家位置、两鬼位置、钥匙／物品和其他机关全部相同，唯一差别是下方0门仍关闭或已经打开。物理可见状态确有差别，不能称为相同局面由隐藏编号产生不同结果。该对照学习前瞻开路的影响；《折返》对照右侧调距后安全取钥匙与错误返回上方入口的活着困局。
 
 清单见[planning-branch-contrasts-20261013.json](../data/manifests/planning-branch-contrasts-20261013.json)，原行与完整求解证据保存在忽略的runs/door-mainline-20261013/planning-branch-contrasts-v1。全信息范围明确，质量标签空，全部仍归新题的同一亲缘组，未训练。
+
+## 《再借》提前控距的对照
+
+新增加一对、两个全信息状态，见[清单](../data/manifests/planning-branch-contrasts-recruited-20261013.json)。RUUR与RURU均四个有效无伤动作，到同一玩家位置、同一门态，只有原下鬼公开位置差一格；前者可40步续解（原最优前缀），后者仍活着但双续解求解器穷尽无解。全部原本体可达分支及1690个编号／排列换位后继核验通过，未将不同鬼位称为完全相同场景。
+
+与前四状态为三对六状态，和14图634个最优动作监督分开，不当六个新谜题、真人错误或质量偏好。原行和十图保持，未训练。完整原始行／证据在忽略runs/door-mainline-20261013/recruited-planning-contrast-v1；[分支证据及只读核验](../examples/recruited-return-20261013/README.md)在作品内。
