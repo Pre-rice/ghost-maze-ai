@@ -268,7 +268,9 @@
     "verificationRun": "delayed-cooperation-search-20.json"
   },
   "selectedWorks": [
-    "examples/returning-guard-20261013"
+    "examples/borrowed-route-20261013",
+    "examples/returning-guard-20261013",
+    "examples/temporary-stay-20261013"
   ],
   "humanQuality": null,
   "rawResearchDirectory": "runs/door-mainline-20261013/research",
@@ -393,6 +395,162 @@
     "finalCells": 22,
     "finalShortest": 38,
     "finalMapId": "84740f396722ae5e1ae281b7abe7a7334ee1760de66a0d41f2c260baa2a40e13",
-    "result": "加入共用短通道后找到全部通关需鬼阻挡、两0门换空边均无解的样本；指定鬼跨下门往返后才开上门全解必要。删支路和多余普通门，独立参考及最优边界/真实入场核验后交付《折返》。两项右侧具体转弯仅最优必要，有40步替代；上0门换普通门38步仍可，原单位输出不同，未过度宣称全部类型不可替代。"
+    "result": "加入共用短通道后找到全部通关需鬼阻挡、两0门换空边均无解的样本；指定鬼跨下门往返后才开上门全解必要。删支路和多余普通门，独立参考及最优边界/真实入场核验后交付《折返》。两项右侧具体转弯仅最优必要，有40步替代；上0门换普通门38步仍可，原单位输出不同，未过度宣称全部类型不可替代。",
+    "currentUserFeedback": {
+      "date": "2026-10-13",
+      "quote": "太容易想到了，也没什么新意",
+      "galleryDecision": "do_not_add",
+      "source": "docs/returning-guard-review-20261013.md"
+    }
+  },
+  "essentialHelperFollowup": {
+    "date": "2026-10-13",
+    "seed": 101337,
+    "limit": 30000,
+    "counters": {
+      "proposals": 30000,
+      "cold": 14624,
+      "solved": 4934,
+      "unknown": 0,
+      "range": 2262,
+      "bothMoving": 1452,
+      "helperRemovalUnsat": 0,
+      "guardBlockingRequired": 0,
+      "helperCrossesZero": 0,
+      "requiredCross": 0,
+      "zeroFunctional": 0,
+      "safe": 0
+    },
+    "elapsedMs": 24700,
+    "scope": "仅一个守钥匙鬼、一个无钥匙助手；删助手无解、所有通关都需助手挡守卫且过0门，删0门无解；冷入口，所有最优无重合；不据这些代理性质自动认定人类精妙",
+    "selectedWorks": []
+  },
+  "ghostOnlyGateFollowup": {
+    "date": "2026-10-13",
+    "seed": 101338,
+    "limit": 30000,
+    "counts": {
+      "proposed": 30000,
+      "cold": 13974,
+      "solved": 4176,
+      "unknown": 0,
+      "range": 2007,
+      "playerAvoidsGate": 140,
+      "helperCrosses": 22,
+      "guardMustBeBlocked": 0,
+      "releaseCloseNeeded": 0,
+      "gateFunctional": 0,
+      "safe": 0
+    },
+    "elapsedMs": 23984,
+    "scope": "一按钮一A门，玩家选中最优不穿门，助手必须穿门后关门再取钥匙，原图通关需助手阻挡守卫；A门换空/墙无解，全部最优无重合。删助手不是唯一标准，没有人类巧妙标签",
+    "selectedWorks": []
+  },
+  "keyRetreatFollowup": {
+    "date": "2026-10-13",
+    "seed": 101339,
+    "limit": 40000,
+    "counts": {
+      "proposed": 40000,
+      "cold": 26570,
+      "solved": 6084,
+      "unknown": 1,
+      "range": 5598,
+      "clearBranch": 5598,
+      "repeatedBoth": 29,
+      "allGateFunctional": 12,
+      "buttonsNecessary": 10,
+      "safe": 3
+    },
+    "elapsedMs": 171389,
+    "scope": "真实两格钥匙死端、两个按钮、三到四字母门；守卫须离开死端，选中最优重复两按钮，每门删后最优有差异、每按钮删无解；这些只是机械过滤，非巧妙评语。未知拒绝。",
+    "curatedWorks": [],
+    "decision": "3个安全机械样本仍主要为关门绕回取物，未交付；长解不当新意。"
+  },
+  "singleKeyRetreatFollowup": {
+    "date": "2026-10-13",
+    "seed": 101340,
+    "limit": 60000,
+    "counts": {
+      "proposed": 44678,
+      "cold": 31677,
+      "solved": 13501,
+      "unknown": 0,
+      "range": 13045,
+      "bothMove": 9877,
+      "bothZerosCrossed": 2657,
+      "guardBlockingNecessary": 78,
+      "helperRemovalUnsat": 0,
+      "functionalZeros": 0,
+      "safe": 0
+    },
+    "elapsedMs": 240001,
+    "scope": "单钥匙两鬼，真实两格钥匙死端，普通门+两0门；所有通关需助手挡守卫，两0门换空均无解。删助手只是对照；搜索必要性不当趣味评价。",
+    "curatedWorks": [],
+    "decision": "78个原图通关需助手阻挡守卫，但没有两0门各删均无解的样本；未交付、不据此证明不可能。"
+  },
+  "crossShaftsFollowup": {
+    "date": "2026-10-13",
+    "seed": 101341,
+    "limit": 60000,
+    "counts": {
+      "proposed": 28428,
+      "cold": 24124,
+      "solved": 12871,
+      "unknown": 0,
+      "range": 3756,
+      "bothMove": 3222,
+      "blockingNecessary": 29,
+      "zeroFunctional": 5,
+      "safe": 5
+    },
+    "elapsedMs": 86072,
+    "scope": "两处取物支路，含内侧连接通道；全部通关需要某鬼被另一鬼阻挡，至少一0门换空无解；其余门要继续删除/逐解审查，必要性不是巧妙评价。",
+    "curatedWorks": [],
+    "decision": "5个机械样本保留对照；其中多个0门未在选中最优打开，可换实墙或删冗余；不自动交付。"
+  },
+  "keyPocketFollowup": {
+    "date": "2026-10-13",
+    "counts": {
+      "proposed": 540,
+      "solved": 360,
+      "range": 192,
+      "ghostVisitsKey": 108,
+      "visitNecessary": 6,
+      "blockingNecessary": 6,
+      "safe": 6,
+      "unknown": 0
+    },
+    "scope": "手工钥匙侧格构造的540个门/上支路/助手位置对照；初态钥匙格无鬼，所有通关必须让鬼占该格后才取物，另需真实鬼阻挡；机械代理不等于人类新意。",
+    "curatedWorks": [],
+    "decision": "6条机械通过记录仅3张去重地图，鬼在钥匙格只是经过而未在该处受挡停位；未达到提出的先停后清构造，继续修订。"
+  },
+  "temporaryStayFollowup": {
+    "date": "2026-10-13",
+    "selectedMapId": "7019c7d90939874cfc0c4516534fbf032329e535d3f3c0896cf39d0868375bb8",
+    "title": "暂驻",
+    "cells": 26,
+    "ghosts": 2,
+    "buttons": 1,
+    "keys": 0,
+    "shortestActions": 39,
+    "mainEvidence": "examples/temporary-stay-20261013/evidence.json",
+    "preciseConditions": "指定鬼真实受挡停按钮格、静止停出口前，均在首次到按钮前；首次到按钮后再次移走；不是仅经过或固定方向",
+    "redundancy": "删除两个必经物品和2门，删除1门属性和一面内墙；保留规律外环，25格51步版本未采用",
+    "scope": "所有无伤无复活通关关系；全部并列最优无重合；原引擎单向入场和码往返逐状态一致",
+    "humanQuality": null,
+    "galleryStatus": "not_added_requires_explicit_user_selection",
+    "familyId": "door-cooperation-20261013-v1",
+    "selectedWork": "examples/temporary-stay-20261013/README.md",
+    "rejectedIntermediateReasons": [
+      "41、44中的鬼经过钥匙格不等于在该格受挡停住",
+      "45的字面条件存在固定鬼与any鬼位置歧义，最终用精确历史BFS补核验",
+      "47、53出口移动绕过另一鬼，或38步并列最优重合",
+      "48重复同门面只在部分最优必要，仍有较长常规解",
+      "50删除钥匙任务改变必须关系",
+      "51顶部改道使鬼连续追而不是停车，52在取物前提前移走可绕过“取物后移走”",
+      "54封侧向捷径且出口在原停车旁邻格之后，恢复真正停车与后清路",
+      "56单纯按格数少会增加12动作，57/60保留规则外环"
+    ]
   }
 }
