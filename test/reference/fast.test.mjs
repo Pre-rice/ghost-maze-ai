@@ -73,6 +73,22 @@ test('多层动作差分：全局按钮、楼梯、鬼转层与死亡后重置',
     assert.throws(() => env.step(env.initialState(), 'REVIVE'), TypeError);
 });
 
+test('参考与快速环境同步楼梯当步追击及到达层行动，不能额外停一回合', () => {
+    for (const mode of ['death-loop', 'exploration']) for (const scenario of ['enter_endpoint', 'use_stair']) {
+        const map = stairMap(); map.gameMode = mode;
+        map.layers[1].ghosts = [{ x: scenario === 'enter_endpoint' ? 2 : 3, y: 2, id: 91 }];
+        const reference = createReferenceEnvironment(map), fast = createFastEnvironment(map);
+        let a = reference.step(reference.initialState(), 'R'), b = fast.step(fast.initialState(), 'R');
+        assert.deepEqual(physicalState(a), physicalState(b));
+        if (scenario === 'use_stair') {
+            assert(!a.isDead);
+            a = reference.step(a, 'STAIR'); b = fast.step(b, 'STAIR');
+        }
+        assert(a.isDead); assert.deepEqual(physicalState(a), physicalState(b));
+        assert.equal(a.player.hp, mode === 'exploration' ? 4 : 5);
+    }
+});
+
 test('33 扇以上动态门的初态、翻转与开锁位互不碰撞', () => {
     const map = smallMap([[3, 6], [4, 6], [5, 6]], [3, 6], [5, 6]);
     map.activeCells = map.activeCells.map(row=>row.map(()=>true));

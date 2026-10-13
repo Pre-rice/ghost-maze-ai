@@ -1,49 +1,41 @@
 {
   "date": "2026-10-13",
-  "ruleset": "sha256:c588e3aeeef0fe67237ca78500d7299c3addd56afa45522d21449162faa207f4",
+  "ruleset": "sha256:0682d2fbd577f641d3030444c2693aa55025319ea31b2ec1b66d3b75470259c7",
   "defaultStatus": "historical_not_reviewed_do_not_present_or_reuse",
   "presentableMapIds": [
-    "59b73eb8fb5e93a69134ea2653771c558576a4f0c16049c27a16be8d9e30a6b6",
-    "85f10bc35943c45fee79fdac182e58c34a6f23065fd5f563639eaefa419a5b7d",
-    "ec6dbc7738c836baf3af954c11de993c6a2decf9e3f6378408d4682efad406e9",
+    "68ea8600719d5a5b0ab8fd7161b8f41d01e1ba5e4f972701c1c8134f45ca905b",
+    "1589b34f0c060a9e71c3f46e5a21de953e7b787ff8b3a5559f785e0e31bd41a0",
+    "eff99b816d9fe4af0e5dd61894113a74b0cd8a0e7e420b12c5257ba1c5233078",
+    "d07c12c2adfea1108149541a8ea978162bd4fe679d8c53cf3555d8aaa3bbd35c",
     "b76d1e9209f5ea4c42fec71b6e69745119d382ef35497575383145c693126b3b",
     "8e364828efdeb4858ae856a1e9c9f4b627555f8e0658a88d9a0053c8febe7102",
-    "d07c12c2adfea1108149541a8ea978162bd4fe679d8c53cf3555d8aaa3bbd35c",
-    "eff99b816d9fe4af0e5dd61894113a74b0cd8a0e7e420b12c5257ba1c5233078",
-    "1589b34f0c060a9e71c3f46e5a21de953e7b787ff8b3a5559f785e0e31bd41a0",
-    "68ea8600719d5a5b0ab8fd7161b8f41d01e1ba5e4f972701c1c8134f45ca905b",
-    "c71a23ca2a72acad87293794e541f2d93d61498edf4d03adebb22e978d35ca4f",
-    "5e8be62539b2eb5dfd382ab063a7a1e857bde619172e4b005bfff6d1d9bebc06",
-    "297f3fdd7396aa0be16ef09e49b3e020e97b41184050db53c2e9934a3d7704d2",
-    "e16a97bba3e98cfc01b0aea9e0fdc52b1d0494fda8d1d67f0eccf8691cf4f62b",
-    "08c025c8247901fa5e4b37d0a9cfee670dc39b445518acfb8e48e64ecd3f8df0",
-    "ebc227e45967f58c0690259aab0de44a5bb5c0fbee5aad5f9cdedc6438749df1",
+    "ec6dbc7738c836baf3af954c11de993c6a2decf9e3f6378408d4682efad406e9",
+    "85f10bc35943c45fee79fdac182e58c34a6f23065fd5f563639eaefa419a5b7d",
+    "59b73eb8fb5e93a69134ea2653771c558576a4f0c16049c27a16be8d9e30a6b6",
+    "7019c7d90939874cfc0c4516534fbf032329e535d3f3c0896cf39d0868375bb8",
+    "24c627386996698e350f1a317fa6b20c2e390c800664aa38de8c9e64be92b549",
     "da04fd50773b66da2c809a099933edeb94a74e0b29cb2d2e70d59e8894e69def",
     "84740f396722ae5e1ae281b7abe7a7334ee1760de66a0d41f2c260baa2a40e13",
-    "7019c7d90939874cfc0c4516534fbf032329e535d3f3c0896cf39d0868375bb8",
-    "ed7ad43baeb7489b7806fc3a33ad4b373411fb4f9172533d9f042efabe639ab8",
-    "24c627386996698e350f1a317fa6b20c2e390c800664aa38de8c9e64be92b549",
-    "39e2a07b02398c38449b7d3da8dec407a3ebb38e92e8cf5c71e12926ed05a1da",
-    "38f3d762a022a446f6771eba19fd037a04cad9c33e88e9c6196679643234ee55"
+    "ed7ad43baeb7489b7806fc3a33ad4b373411fb4f9172533d9f042efabe639ab8"
   ],
-  "galleryPendingDecision": [
-    "38f3d762a022a446f6771eba19fd037a04cad9c33e88e9c6196679643234ee55"
-  ],
+  "galleryPendingDecision": [],
   "retiredMapIds": [
     "fc9465801c80df6301490706e1c8a707f7e0a8189a35b4ba40a007e86f1b371a",
     "1b61fe5125b776470cdaf5361f9d7da3ac4be73940d1417f1a190539c4297be9",
-    "1068e0beaad74b0ba3f9a6c14b0c3bf466c02406de73ecbeb047cb063eb173f7"
+    "1068e0beaad74b0ba3f9a6c14b0c3bf466c02406de73ecbeb047cb063eb173f7",
+    "38f3d762a022a446f6771eba19fd037a04cad9c33e88e9c6196679643234ee55"
   ],
   "requirements": [
     "全部无伤无复活最优解不得经过非死亡鬼重合；检查所有并列最优解",
     "夹击死亡及非最优走法中的重合不构成拒绝",
     "玻璃换实墙全部可达物理策略结果一致，允许观察差异",
     "鬼编号和列表排列不影响后继",
-    "最优性或边界审查未完成时为未知，不得交付"
+    "最优性或边界审查未完成时为未知，不得交付",
+    "配对楼梯格是相邻格；抵达即互见追击，上下楼时两层各按新旧位置行动一步；不能利用额外停顿"
   ],
   "policy": "all_optimal_routes_avoid_overlap_v2",
   "previousStrictAudit": "data/manifests/rule-boundaries-20261012.json",
-  "currentEvidence": "data/manifests/optimal-boundaries-20261012.json",
+  "currentEvidence": "data/manifests/stair-mechanics-20261013.json",
   "additionalEvidence": [
     {
       "mapId": "da04fd50773b66da2c809a099933edeb94a74e0b29cb2d2e70d59e8894e69def",
@@ -85,13 +77,6 @@
       "role": "user_selected_gallery_intro_map",
       "familyId": "multilayer-stair-relocation-v1",
       "feedback": "docs/archive/reviews/stair-relocation-review-20261013.md"
-    },
-    {
-      "mapId": "38f3d762a022a446f6771eba19fd037a04cad9c33e88e9c6196679643234ee55",
-      "path": "examples/stair-valve-20261013/evidence.json",
-      "role": "unrated_new_stair_mechanism_candidate",
-      "familyId": "door-cooperation-20261013-v1",
-      "mechanismFamilyId": "cross-floor-stair-valve-v1"
     }
   ],
   "planningFamilyIds": {
@@ -161,5 +146,27 @@
       "gallerySelectionGiven": true,
       "eurekaConfirmedByUser": null
     }
-  ]
+  ],
+  "quarantinedMaps": [
+    {
+      "mapId": "39e2a07b02398c38449b7d3da8dec407a3ebb38e92e8cf5c71e12926ed05a1da",
+      "title": "楼间",
+      "reason": "楼梯当步追击及到达层行动修正后，原参考第3步死亡，原图穷尽无伤无复活后无解",
+      "originalGallerySelectionPreserved": true,
+      "originalMapAndEvidencePreserved": true,
+      "allowPlanningReuse": false,
+      "audit": "data/manifests/stair-mechanics-20261013.json"
+    }
+  ],
+  "retiredEvidence": [
+    {
+      "mapId": "38f3d762a022a446f6771eba19fd037a04cad9c33e88e9c6196679643234ee55",
+      "title": "留客",
+      "reason": "依赖配对楼梯另一端延迟追击，修正规则后无解",
+      "originalCommit": "084568b",
+      "originalDirectory": "examples/stair-valve-20261013",
+      "audit": "data/manifests/stair-mechanics-20261013.json"
+    }
+  ],
+  "previousEvidence": "data/manifests/optimal-boundaries-20261012.json"
 }

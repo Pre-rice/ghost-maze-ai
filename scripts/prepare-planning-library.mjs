@@ -19,6 +19,7 @@ const read = path => JSON.parse(readFileSync(path, 'utf8'));
 const digest = bytes => createHash('sha256').update(bytes).digest('hex');
 const policy = read(root + 'data/manifests/puzzle-library-policy.json');
 const allowed = new Set(policy.presentableMapIds);
+const quarantined = new Map((policy.quarantinedMaps || []).map(record => [record.mapId, record]));
 const galleryFile = new URL('../../ghost-maze/src/maps/ai-gallery.js', import.meta.url);
 const gallerySha256 = digest(readFileSync(galleryFile));
 const sources = aiMaps.map(record => ({ ...record,
@@ -30,10 +31,17 @@ for (const filename of candidateFiles) {
         humanFeedbackStatus: share.humanFeedback?.length ? 'feedback_available' : 'not_reviewed',
         galleryDecision: share.galleryStatus ?? 'not_added_requires_explicit_user_selection' });
 }
-const records = [], seen = new Set(), started = Date.now();
+const records = [], excludedSources = [], seen = new Set(), started = Date.now();
 mkdirSync(output, { recursive: true });
 for (const source of sources) {
     const map = mapFromSharecode(source.mapCode), env = createReferenceEnvironment(map);
+    if (quarantined.has(env.mapId)) {
+        assert(!allowed.has(env.mapId), '隔离地图不能同时通过复用名单');
+        const record = { title: source.title, ...quarantined.get(env.mapId), sourceFile: source.sourceFile };
+        excludedSources.push(record);
+        console.log(JSON.stringify({ excluded: true, ...record }));
+        continue;
+    }
     assert(!seen.has(env.mapId), '不能重复收录同一地图');
     seen.add(env.mapId);
     assert(allowed.has(env.mapId), '当前复用名单未通过');
@@ -75,8 +83,10 @@ for (const source of sources) {
 assert.equal(digest(readFileSync(galleryFile)), gallerySha256, '制备期间地图集发生变化');
 const summary = { createdAtUtc: new Date().toISOString(), datasetVersion: 'demonstration-v3-physical-boundaries',
     ruleset: policy.ruleset, records, maps: records.length, rows: records.reduce((n, record) => n + record.rows, 0),
-    conservativeSplitGroups: [...new Set(records.map(record => record.splitGroup))], galleryMaps: aiMaps.length,
-    candidateMaps: records.length - aiMaps.length,
+    conservativeSplitGroups: [...new Set(records.map(record => record.splitGroup))],
+    galleryMaps: records.filter(record => record.sourceRole === 'approved_gallery_solver_reference').length,
+    galleryTotalMaps: aiMaps.length, excludedSources,
+    candidateMaps: records.filter(record => record.sourceRole === 'candidate_solver_reference').length,
     unreviewedCandidates: records.filter(record => record.humanFeedbackStatus === 'not_reviewed').length,
     userRejectedCandidates: records.filter(record => record.galleryDecision === 'rejected_by_user').length,
     galleryUnchanged: true, gallerySourceSha256: gallerySha256,
