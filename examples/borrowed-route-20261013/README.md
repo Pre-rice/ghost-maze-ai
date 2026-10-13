@@ -2,12 +2,12 @@
 
 更新：2026-10-13。22格、两鬼、两钥匙；一扇普通门、两道0门和出口2门，没有按钮或玻璃。开局与进入区域的当步均中性。新候选未上架九图地图集，暂无真人评述与路线，`humanQuality:null`。
 
-[试玩](https://ghostmaze-ui-preview-20261012.prerice.chatgpt.site/?map=AADIAHwo-Ln4AAEkICAsBA8AFVCSKQacJAqqAAAABHdBVCCFRECAAAAAAAg)。默认保持迷雾，初态和桌面／手机入口已核验。
+[试玩](https://ghostmaze.novic.cc/?map=AADIAHwo-Ln4AAEkICAsBA8AFVCSKQacJAqqAAAABHdBVCCFRECAAAAAAAg)。默认保持迷雾，初态和桌面／手机入口已核验。
 
 <details>
 <summary>参考解法与设计说明（含答案）</summary>
 
-[参考回放](https://ghostmaze-ui-preview-20261012.prerice.chatgpt.site/?map=AADIAHwo-Ln4AAEkICAsBA8AFVCSKQacJAqqAAAABHdBVCCFRECAAAAAAAg&replay=AMmRO4T_xgqXzwLVaoPC_w)，默认暂停。最短44个有效动作；独立A*／BFS一致，全部并列最优解均不经过非死亡鬼重合。
+[参考回放](https://ghostmaze.novic.cc/?map=AADIAHwo-Ln4AAEkICAsBA8AFVCSKQacJAqqAAAABHdBVCCFRECAAAAAAAg&replay=AMmRO4T_xgqXzwLVaoPC_w)，默认暂停。最短44个有效动作；独立A*／BFS一致，全部并列最优解均不经过非死亡鬼重合。
 
 需要先拿右下钥匙，提前打开下方0门，再安排左侧普通门上方的鬼，才打开上方0门释放守钥匙的鬼。回程中两鬼先后互相挡住，提前打开的下门使走廊鬼能向下退入停位，为玩家留出上行取钥匙的通道；同一普通门两面先后停放不同的鬼。编号不是行动优先条件。
 
