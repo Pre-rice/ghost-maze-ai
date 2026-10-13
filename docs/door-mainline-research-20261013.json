@@ -271,7 +271,15 @@
     "examples/borrowed-route-20261013",
     "examples/returning-guard-20261013",
     "examples/temporary-stay-20261013",
-    "examples/borrowed-room-20261013"
+    "examples/borrowed-room-20261013",
+    {
+      "title": "再借",
+      "mapId": "24c627386996698e350f1a317fa6b20c2e390c800664aa38de8c9e64be92b549",
+      "cells": 21,
+      "shortest": 44,
+      "humanQuality": null,
+      "evidence": "examples/recruited-return-20261013/evidence.json"
+    }
   ],
   "humanQuality": null,
   "rawResearchDirectory": "runs/door-mainline-20261013/research",
@@ -637,5 +645,67 @@
     "elapsedMs": 64246,
     "result": "有限的单A/普通门/可选0门双三鬼形状中248件所有通关需阻挡，但未找到删助手后无解的构造。未作为新题交付，不证明该机制不可能。",
     "source": "runs/door-mainline-20261013/research/beneficial-helper-search-90.json"
+  },
+  "lostProtectionFollowup": {
+    "seed": 101394,
+    "counts": {
+      "proposed": 65000,
+      "cold": 23500,
+      "solved": 8934,
+      "unknown": 0,
+      "range": 646,
+      "bothMoving": 162,
+      "blockingRequired": 10,
+      "zeroEmptyUnsat": 2,
+      "zeroUsed": 119,
+      "safe": 2
+    },
+    "source": "runs/door-mainline-20261013/research/lost-protection-search-94.json",
+    "selection": "两机械样本保留研究；不自动当挑战题"
+  },
+  "replacedShelterFollowup": {
+    "edits": 18,
+    "source": "runs/door-mainline-20261013/research/replaced-shelter-search-95.json",
+    "result": "加取物回程仍有直接收尾，未实现预期后续困局、不作为新交付"
+  },
+  "mutualSupportFollowup": {
+    "zeroDoors": {
+      "proposed": 70000,
+      "cold": 29425,
+      "solved": 11665,
+      "unknown": 1,
+      "range": 845,
+      "bothMoving": 267,
+      "blockingRequired": 0,
+      "zeroEmptyUnsat": 0,
+      "zeroUsed": 146,
+      "safe": 0
+    },
+    "singleA": {
+      "proposed": 85000,
+      "cold": 28272,
+      "solved": 15232,
+      "unknown": 0,
+      "range": 1814,
+      "requiredBlocking": 8,
+      "mutualBlockingAndThreePresses": 0,
+      "safe": 0
+    },
+    "decision": "双方各自受挡全通关必要的强条件未找到，单A八件至少三A与一方获助；改审旧安置鬼实际再启用，不宣称双方互帮或机制不可能"
+  },
+  "recruitedReturnSelected": {
+    "title": "再借",
+    "mapId": "24c627386996698e350f1a317fa6b20c2e390c800664aa38de8c9e64be92b549",
+    "sourceMapId": "eb94cf73dbf7a62958db5727e42782afd2b050092d9ebbda717afe87a95b6cb6",
+    "cells": 21,
+    "shortest": 44,
+    "helperReuseStates": 749,
+    "helperReuseAllWinning": true,
+    "boundary": "safe",
+    "browserChecksPassed": 11,
+    "humanQuality": null,
+    "planningRows": 44,
+    "evidence": "examples/recruited-return-20261013/evidence.json",
+    "preciseReuse": "examples/recruited-return-20261013/helper-reuse.json"
   }
 }
