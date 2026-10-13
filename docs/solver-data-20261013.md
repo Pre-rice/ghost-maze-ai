@@ -1,7 +1,11 @@
 # 2026-10-13 求解器资料制备
 
+最新上架更新：《暂驻》获用户“好图、简洁、一定挑战性”的真实肯定并明确选入地图集。十张上架与三个候选仍共13图590个全信息规划状态，十三图逐行校验和保持；借道／借舍未评、折返否决，两个保守亲缘组。最新清单[planning-library-20261013-v4.json](../data/manifests/planning-library-20261013-v4.json)。上架与肯定见[评述](temporary-stay-review-20261013.md)，没有伪造数值质量分、真人路线或模型训练。
 
-最新更新：含《借舍》43行，当前13图590个全信息规划状态；两个保守亲缘组，三候选未评、《折返》有用户否决，九图保持。模型未训练。清单[planning-library-20261013-v3.json](../data/manifests/planning-library-20261013-v3.json)；旧12图行与九图源码校验和一致，旧11/12图快照保留。
+复现：`node scripts/prepare-planning-library.mjs runs/planning-library-new-gallery-10 examples/borrowed-route-20261013/share.json examples/returning-guard-20261013/share.json examples/borrowed-room-20261013/share.json`。本题已从地图集读取，不重复传为候选；旧快照保持。
+
+
+上架前更新：含《借舍》43行，当前13图590个全信息规划状态；两个保守亲缘组，三候选未评、《折返》有用户否决，九图保持。模型未训练。清单[planning-library-20261013-v3.json](../data/manifests/planning-library-20261013-v3.json)；旧12图行与九图源码校验和一致，旧11/12图快照保留。
 
 复现：`node scripts/prepare-planning-library.mjs runs/planning-library-new-13 examples/borrowed-route-20261013/share.json examples/returning-guard-20261013/share.json examples/temporary-stay-20261013/share.json examples/borrowed-room-20261013/share.json`。
 
