@@ -34,7 +34,7 @@ const replay = env.replay(['U', 'D', 'L']);
 
 ## 求解
 
-入口：[solveReferenceMap](../src/search/reference-solver.js)。当前为完整物理状态 BFS，优化成功动作数 `T`，即产品步数。移动／楼梯成本 `L` 单独统计，不代替按钮在内的总步数。
+入口：[solveReferenceMap](../src/search/reference-solver.js)。BFS 队列已抽至本体 `src/solver/breadthFirst.js`，与网站求解共用；此入口仍使用完整物理状态键，优化成功动作数 `T`，即产品步数。移动／楼梯成本 `L` 单独统计，不代替按钮在内的总步数。
 
 ```js
 const result = solveReferenceMap(mapData, {
@@ -60,7 +60,7 @@ const result = solveReferenceMap(mapData, {
 
 地图输入、预算或运行错误抛异常，不混入三态标签。环境可以用于没有终点的单元前缀分析，但求解入口要求至少一个终点。
 
-`nodeBudget` 是展开次数；`stateBudget` 是累计保存的去重状态上限，不是精确字节内存限制，也不包含直接返回的胜利节点。时间预算只约束搜索循环，不包含环境初始化和证书重放；单次引擎调用不强制抢占。不要据此宣称硬实时或硬内存上限。
+`nodeBudget` 是展开次数；`stateBudget` 是累计保存的去重状态上限，不是精确字节内存限制，包含胜利节点。时间预算只约束搜索循环，不包含环境初始化和证书重放；单次引擎调用不强制抢占。不要据此宣称硬实时或硬内存上限。
 
 这个参考版优先正确与可审查性，使用共同引擎局面；大图可能在预算内返回未知，不能推断训练吞吐或收敛速度。
 A* 使用同一物理规则，保留自己的队列、布局和紧凑状态索引，见 [快验证约定](fast-verification.md)。BFS 继续保留为对照；A* 的预算内证书可以标为 `not_proven`，不能把所有 `solved` 都解释成已证最优。

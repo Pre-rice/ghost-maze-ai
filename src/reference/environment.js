@@ -1,5 +1,6 @@
 import { createHash } from 'node:crypto';
 import { GameLogic, MapDefinition, validateMapData, actionFromName } from './engine.js';
+import { physicalStateKey } from '../../../ghost-maze/src/solver/searchEnvironment.js';
 import { checkEnvironment } from '../../scripts/check-environment.mjs';
 
 export { actionFromName } from './engine.js';
@@ -23,14 +24,7 @@ export function createReferenceEnvironment(mapData) {
     const mapId = createHash('sha256').update(JSON.stringify(checked.mapData)).digest('hex');
     const initialState = () => GameLogic.createInitialState(mapDefinition);
     const step = (state, action) => GameLogic.calculateNextState(state, actionFromName(action), mapDefinition, { trails: false, visibility: false });
-    const stateKey = state => {
-        const p = state.player;
-        return JSON.stringify([
-            mapId, p.layer, p.x, p.y, p.hp, p.keys, state.isDead, state.isWon,
-            state.layerStates.map(layer => [layer.ghosts.map(g => [g.x, g.y]),
-                layer.items.map(item => [item.x, item.y, item.type]), layer.wallStates])
-        ]);
-    };
+    const stateKey = state => physicalStateKey(state, mapId);
     const replay = actions => {
         if (!Array.isArray(actions)) throw new TypeError('证书 actions 必须为动作名称数组');
         let state = initialState(), movementCost = 0;

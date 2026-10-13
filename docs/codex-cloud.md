@@ -6,4 +6,4 @@
 
 试玩与回放用正式域名；Sites只预览站点改动。GitHub推送自动部署至Vercel，只核验推送。当前写凭据已实际验证，不沿用旧“缺授权”状态。
 
-新私人反馈／研究须导出新文件名包；保留旧包与原录制，不公开私人资料。旧环境交接的全文见[快照](archive/worklogs/codex-cloud-before-reorganization-20261013.md)。当前按用户任务完成重整后暂停，不自动启训练。
+新私人反馈／研究须导出新文件名包；保留旧包与原录制，不公开私人资料。旧环境交接的全文见[快照](archive/worklogs/codex-cloud-before-reorganization-20261013.md)。当前按新授权自行验收推送网站求解改动后持续设计新谜题，不自动启训练。
