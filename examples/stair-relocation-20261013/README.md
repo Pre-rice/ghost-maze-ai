@@ -1,6 +1,6 @@
-# 《楼间》：候选单元
+# 《楼间》：基础多层入门关
 
-2026-10-13。两层共11格、一鬼、一个A按钮、两扇反相A门、一扇普通门、两对楼梯，无钥匙或玻璃。开局可先观察，未获用户评价，不入地图集。
+2026-10-13。两层共11格、一鬼、一个A按钮、两扇反相A门、一扇普通门、两对楼梯，无钥匙或玻璃。开局可先观察。用户明确选入地图集，定位为基础多层的简单起始作品，用于了解楼梯基本机制；不是已确认的高难度或精妙主线突破。见[真实评述](../../docs/archive/reviews/stair-relocation-review-20261013.md)。
 
 [正式站试玩](https://ghostmaze.novic.cc/?map=AWN4wMDAwOR8gIGBiYGBgcWxi6WBAQy0FrRAGI0gFSwOUgwODAwc3FOEoPIBgifAtAMTCwA)。网站“求解”提供全部最优解入口，下面的说明含关键。
 
@@ -11,7 +11,7 @@
 
 楼梯承担搬运和重新安置的作用。两扇反相门使“先开另一处楼梯通路”和“最后重开目标”互相约束。只有一只鬼，不依赖争位、重合、玻璃或编号。
 
-[参考回放](https://ghostmaze.novic.cc/?map=AWN4wMDAwOR8gIGBiYGBgcWxi6WBAQy0FrRAGI0gFSwOUgwODAwc3FOEoPIBgifAtAMTCwA&replay=OmPml1EpstcImB8UeA)。最短26，唯一并列最优；该路线搬鬼下、上、下。所有无伤通关至少需要三次鬼跨层。当前是设计者预期的认识变化，不能记为用户实际顿悟或高难度评价。
+[参考回放](https://ghostmaze.novic.cc/?map=AWN4wMDAwOR8gIGBiYGBgcWxi6WBAQy0FrRAGI0gFSwOUgwODAwc3FOEoPIBgifAtAMTCwA&replay=OmPml1EpstcImB8UeA)。最短26，最优路线唯一；该路线搬鬼下、上、下。所有无伤通关至少需要三次鬼跨层。当前是设计者预期的认识变化，不能记为用户实际顿悟或高难度评价。
 
 </details>
 
@@ -19,4 +19,4 @@
 
 验证：两种求解与网站一致；全部最优不重合，去终点仍安全，楼梯落地不利用相邻鬼的延迟移动。普通门改空或实墙都无解；删去可移除的非实体格均无解。指定从下层左侧实际进入与单元初态及参考逐步物理状态一致。八项本地网页求解／跨层／返回检查通过，未检查正式站或部署。
 
-重验：`node examples/stair-relocation-20261013/verify.mjs`。原图、公开证据与来源分别见 [map.json](map.json)、[evidence.json](evidence.json)、[source.json](source.json)；私人研究原件在资料包的 runs，公开文件不包含真人记录。当前规划库仍是原14图634行，本题尚未混入训练或好图标签。
+重验：`node examples/stair-relocation-20261013/verify.mjs`。原图、公开证据与来源分别见 [map.json](map.json)、[evidence.json](evidence.json)、[source.json](source.json)；私人研究原件在资料包的 runs，公开文件不包含真人记录。上架决定与原生成资料分开记录；source.json与share.json保留生成时状态，不作为当前上架状态。当前最优规划库同步本题26条示范，不作为高质量标签或真人路线；模型未训练。
