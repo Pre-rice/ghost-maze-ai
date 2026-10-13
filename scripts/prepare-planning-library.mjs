@@ -26,7 +26,9 @@ const sources = aiMaps.map(record => ({ ...record,
 for (const filename of candidateFiles) {
     const share = read(filename);
     assert(typeof share.familyId === 'string' && share.familyId, '候选证书缺少家族');
-    sources.push({ ...share, sourceRole: 'unrated_candidate_solver_reference', sourceFile: filename });
+    sources.push({ ...share, sourceRole: 'candidate_solver_reference', sourceFile: filename,
+        humanFeedbackStatus: share.humanFeedback?.length ? 'feedback_available' : 'not_reviewed',
+        galleryDecision: share.galleryStatus ?? 'not_added_requires_explicit_user_selection' });
 }
 const records = [], seen = new Set(), started = Date.now();
 mkdirSync(output, { recursive: true });
@@ -38,7 +40,7 @@ for (const source of sources) {
     assert.equal(env.ruleset, policy.ruleset);
     const familyId = policy.planningFamilyIds?.[env.mapId];
     assert(typeof familyId === 'string' && familyId, '地图缺少已记录的规划拆分组');
-    if (source.sourceRole === 'unrated_candidate_solver_reference') {
+    if (source.sourceRole === 'candidate_solver_reference') {
         assert.equal(source.mapId, env.mapId, '候选证书地图不一致');
         assert.equal(source.ruleset, env.ruleset, '候选证书规则不一致');
         assert.equal(source.familyId, familyId, '候选家族与当前拆分登记不一致');
@@ -55,7 +57,9 @@ for (const source of sources) {
     const path = output + '/' + env.mapId;
     mkdirSync(path);
     Object.assign(manifest, { samples: rows.length, title: source.title, sourceFile: source.sourceFile,
-        sourceRole: source.sourceRole, gallerySourceSha256: gallerySha256 });
+        sourceRole: source.sourceRole, gallerySourceSha256: gallerySha256,
+        humanFeedbackStatus: source.humanFeedbackStatus ?? 'gallery_selected_by_user',
+        galleryDecision: source.galleryDecision ?? 'selected_by_user' });
     writeFileSync(path + '/manifest.json', JSON.stringify(manifest, null, 2) + '\n', { flag: 'wx' });
     const lines = rows.map(row => JSON.stringify(row)).join('\n') + '\n';
     writeFileSync(path + '/transitions.jsonl', lines, { flag: 'wx' });
@@ -63,6 +67,8 @@ for (const source of sources) {
         source: 'solver_certificate', sourceRole: source.sourceRole, sourceFile: source.sourceFile,
         rows: rows.length, shortest: result.optimality.solution.totalActions,
         boundaryStatus: result.boundaries.status, qualityScore: null, rowsSha256: digest(lines),
+        humanFeedbackStatus: manifest.humanFeedbackStatus, galleryDecision: manifest.galleryDecision,
+        humanFeedbackSource: source.sourceRole === 'candidate_solver_reference' ? source.sourceFile : null,
         dataDirectory: outputArgument.replaceAll('\\', '/') + '/' + env.mapId });
     console.log(JSON.stringify({ title: source.title, rows: rows.length, boundary: result.boundaries.status, familyId }));
 }
@@ -70,7 +76,10 @@ assert.equal(digest(readFileSync(galleryFile)), gallerySha256, '制备期间地�
 const summary = { createdAtUtc: new Date().toISOString(), datasetVersion: 'demonstration-v3-physical-boundaries',
     ruleset: policy.ruleset, records, maps: records.length, rows: records.reduce((n, record) => n + record.rows, 0),
     conservativeSplitGroups: [...new Set(records.map(record => record.splitGroup))], galleryMaps: aiMaps.length,
-    unratedCandidates: records.length - aiMaps.length, galleryUnchanged: true, gallerySourceSha256: gallerySha256,
+    candidateMaps: records.length - aiMaps.length,
+    unreviewedCandidates: records.filter(record => record.humanFeedbackStatus === 'not_reviewed').length,
+    userRejectedCandidates: records.filter(record => record.galleryDecision === 'rejected_by_user').length,
+    galleryUnchanged: true, gallerySourceSha256: gallerySha256,
     qualityScore: null, trainStarted: false, humanQualitySamplesAdded: 0, observationScope: 'full_information',
     policyTarget: 'one_optimal_continuation',
     scope: '只作规划监督，全部并列最优解边界通过、未知拒绝；各亲缘组整体拆分，不混作真人资料或质量标签',

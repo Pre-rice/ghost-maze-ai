@@ -1,5 +1,17 @@
 # 2026-10-13 求解器资料制备
 
+
+当前更新：已含《暂驻》39行，12图547个全信息规划状态；两组保守亲缘，尚未训练。九图保持，两个候选未评，《折返》已有否决评述／不入集。求解器示范仍可用于规划事实，不能变成好图正例或自动质量分。
+
+新清单：[planning-library-20261013-v2.json](../data/manifests/planning-library-20261013-v2.json)。旧11图的行校验和及九图源码校验和保持一致，旧清单原样保留。来源状态区分上架、未评和已否决候选，定性反馈与空数值质量分分开。
+
+复现到新目录：
+
+```sh
+node scripts/prepare-planning-library.mjs runs/planning-library-new-12 examples/borrowed-route-20261013/share.json examples/returning-guard-20261013/share.json examples/temporary-stay-20261013/share.json
+```
+
+
 [《借道》](../examples/borrowed-route-20261013/README.md)已生成44个规划状态监督样本，版本 demonstration-v3-physical-boundaries。每行包含全信息物理局面、可执行／当前安全动作、一条最优延续动作及精确剩余动作数；没有把未选动作标成错误，也没有把样本当作真实探索玩家的视野数据。
 
 来源固定为 solver_certificate，地图与规则标识、分享地图、动作码、亲缘家族均核对。真实录制使用原有独立入口；求解器证书不写入 data/solutions 或 feedback。质量标签为空，真人评述与参考仍独立保存，trainStarted:false。44行是一个题一家族的44个局面，不能作为44个独立偏好样本。
@@ -18,7 +30,7 @@ node scripts/prepare-solver-demonstration.mjs examples/borrowed-route-20261013/m
 
 这一成果为求解器学习准备监督数据，没有启动训练，也没有宣称质量模型能识别顿悟。当前仍缺新的真人路线、比较反馈和更多独立设计家族；主线仍优先构造有新意、简洁的谜题，而非用大量亲缘改图填满数据。
 
-## 当前规划库
+## 上一轮规划库（11图快照）
 
 已对当前九张上架图与《借道》《折返》重新制备：11图、508行，每条参考均最优且整图所有最优路线边界通过。正式清单见[data/manifests/planning-library-20261013.json](../data/manifests/planning-library-20261013.json)。资料归两个保守亲缘组，按组整体划分；不能把11图或508个状态当成独立质量样本。新增真人质量标签零，模型未训练。重复制备逐行校验和一致，九图地图集源码也保持。
 

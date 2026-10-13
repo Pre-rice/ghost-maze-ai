@@ -21,6 +21,8 @@
 
 [地图](map.json)、[分享码与动作](share.json)、[来源](source.json)、[条件精简](minimization.json)、[0门作用](zero-gate-role.json)、[页面核验](browser-check.json)。仍属保守的`door-cooperation-20261013-v1`亲缘组，不当新独立训练家族；未训练，不继承任何旧图评价。
 
+[资料制备](data-preparation.json)已纳入12图547状态的新规划清单，本题39行，来源求解器、全信息、质量分空、未训练。
+
 只读复核：`node examples/temporary-stay-20261013/verify.mjs`。不覆盖证据或原始反馈。
 
 </details>
