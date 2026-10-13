@@ -1,0 +1,589 @@
+{
+  "fast": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "sha256:0682d2fbd577f641d3030444c2693aa55025319ea31b2ec1b66d3b75470259c7",
+    "mapId": "05f34641c0857e4927cbac3ba4f6363c072376b23d8df99c296b95e65be9fa33",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "withGhosts": true,
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "U",
+        "STAIR",
+        "U",
+        "STAIR",
+        "D",
+        "R",
+        "R",
+        "R",
+        "U",
+        "STAIR",
+        "STAIR",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "STAIR",
+        "R",
+        "U"
+      ],
+      "totalActions": 19,
+      "movementCost": 18
+    },
+    "search": {
+      "algorithm": "astar",
+      "expanded": 32,
+      "transitions": 160,
+      "discovered": 34,
+      "exhausted": false,
+      "elapsedMs": 4.3975539999999995,
+      "budget": {
+        "nodeBudget": 100000,
+        "stateBudget": 100000,
+        "budgetMs": 30000
+      }
+    }
+  },
+  "reference": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "sha256:0682d2fbd577f641d3030444c2693aa55025319ea31b2ec1b66d3b75470259c7",
+    "mapId": "05f34641c0857e4927cbac3ba4f6363c072376b23d8df99c296b95e65be9fa33",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "U",
+        "STAIR",
+        "U",
+        "STAIR",
+        "D",
+        "R",
+        "R",
+        "R",
+        "U",
+        "STAIR",
+        "STAIR",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "STAIR",
+        "R",
+        "U"
+      ],
+      "totalActions": 19,
+      "movementCost": 18
+    },
+    "search": {
+      "expanded": 32,
+      "transitions": 156,
+      "discovered": 33,
+      "exhausted": false,
+      "elapsedMs": 8.896295000000002,
+      "budget": {
+        "nodeBudget": 100000,
+        "stateBudget": 100000,
+        "budgetMs": 30000
+      }
+    }
+  },
+  "result": {
+    "status": "solved",
+    "reason": "goal_reached",
+    "expanded": 32,
+    "transitions": 160,
+    "discovered": 34,
+    "totalActions": 19
+  },
+  "optimalCount": "1",
+  "noTransfers": {
+    "status": "proven_unsat",
+    "reason": "frontier_exhausted",
+    "expanded": 19,
+    "transitions": 95,
+    "discovered": 19,
+    "totalActions": null
+  },
+  "boundary": {
+    "status": "safe",
+    "reason": "all_optimal_routes_avoid_overlap",
+    "mapId": "05f34641c0857e4927cbac3ba4f6363c072376b23d8df99c296b95e65be9fa33",
+    "ruleset": "sha256:0682d2fbd577f641d3030444c2693aa55025319ea31b2ec1b66d3b75470259c7",
+    "policy": "all_optimal_routes_avoid_overlap_v2",
+    "glassCount": 0,
+    "expanded": 32,
+    "transitions": 160,
+    "discovered": 33,
+    "optimum": 19,
+    "ignoredFatalOverlap": 0,
+    "observedNonFatalOverlap": null,
+    "safeOptimalWitness": [
+      "U",
+      "STAIR",
+      "U",
+      "STAIR",
+      "D",
+      "R",
+      "R",
+      "R",
+      "U",
+      "STAIR",
+      "STAIR",
+      "D",
+      "L",
+      "L",
+      "L",
+      "U",
+      "STAIR",
+      "R",
+      "U"
+    ],
+    "elapsedMs": 6,
+    "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+  },
+  "allOptimalNoEndSafe": true,
+  "removedRedundantOrdinaryDoor": true,
+  "capTransfers": [
+    {
+      "max": 0,
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 19,
+        "transitions": 95,
+        "discovered": 19,
+        "totalActions": null
+      }
+    },
+    {
+      "max": 1,
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 31,
+        "transitions": 155,
+        "discovered": 31,
+        "totalActions": null
+      }
+    }
+  ],
+  "trace": [
+    {
+      "step": 1,
+      "a": "U",
+      "p": [
+        0,
+        2,
+        3
+      ],
+      "g": [
+        [],
+        [
+          [
+            5,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "step": 2,
+      "a": "STAIR",
+      "p": [
+        1,
+        2,
+        3
+      ],
+      "g": [
+        [],
+        [
+          [
+            5,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "step": 3,
+      "a": "U",
+      "p": [
+        1,
+        2,
+        3
+      ],
+      "g": [
+        [],
+        [
+          [
+            4,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "step": 4,
+      "a": "STAIR",
+      "p": [
+        0,
+        2,
+        3
+      ],
+      "g": [
+        [],
+        [
+          [
+            3,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "step": 5,
+      "a": "D",
+      "p": [
+        0,
+        2,
+        4
+      ],
+      "g": [
+        [],
+        [
+          [
+            3,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "step": 6,
+      "a": "R",
+      "p": [
+        0,
+        3,
+        4
+      ],
+      "g": [
+        [],
+        [
+          [
+            3,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "step": 7,
+      "a": "R",
+      "p": [
+        0,
+        4,
+        4
+      ],
+      "g": [
+        [],
+        [
+          [
+            3,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "step": 8,
+      "a": "R",
+      "p": [
+        0,
+        5,
+        4
+      ],
+      "g": [
+        [],
+        [
+          [
+            3,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "step": 9,
+      "a": "U",
+      "p": [
+        0,
+        5,
+        3
+      ],
+      "g": [
+        [],
+        [
+          [
+            3,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "step": 10,
+      "a": "STAIR",
+      "p": [
+        1,
+        5,
+        3
+      ],
+      "g": [
+        [],
+        [
+          [
+            4,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "step": 11,
+      "a": "STAIR",
+      "p": [
+        0,
+        5,
+        3
+      ],
+      "g": [
+        [],
+        [
+          [
+            5,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "step": 12,
+      "a": "D",
+      "p": [
+        0,
+        5,
+        4
+      ],
+      "g": [
+        [
+          [
+            5,
+            3
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "step": 13,
+      "a": "L",
+      "p": [
+        0,
+        4,
+        4
+      ],
+      "g": [
+        [
+          [
+            5,
+            4
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "step": 14,
+      "a": "L",
+      "p": [
+        0,
+        3,
+        4
+      ],
+      "g": [
+        [
+          [
+            4,
+            4
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "step": 15,
+      "a": "L",
+      "p": [
+        0,
+        2,
+        4
+      ],
+      "g": [
+        [
+          [
+            3,
+            4
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "step": 16,
+      "a": "U",
+      "p": [
+        0,
+        2,
+        3
+      ],
+      "g": [
+        [
+          [
+            2,
+            4
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "step": 17,
+      "a": "STAIR",
+      "p": [
+        1,
+        2,
+        3
+      ],
+      "g": [
+        [
+          [
+            2,
+            3
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "step": 18,
+      "a": "R",
+      "p": [
+        1,
+        3,
+        3
+      ],
+      "g": [
+        [],
+        [
+          [
+            2,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "step": 19,
+      "a": "U",
+      "p": [
+        1,
+        3,
+        2
+      ],
+      "g": [
+        [],
+        [
+          [
+            2,
+            3
+          ]
+        ]
+      ]
+    }
+  ],
+  "verification": {
+    "title": "楼间",
+    "role": "selected_intro_repair",
+    "T": 19,
+    "optimalCount": "1",
+    "allWinsRequireAtLeastTwoGhostTransfers": true,
+    "originalPreserved": true,
+    "actualColdEntry": true,
+    "allOptimalNoEndSafe": true,
+    "economy": [
+      {
+        "layer": 0,
+        "x": 3,
+        "y": 4,
+        "status": "proven_unsat"
+      },
+      {
+        "layer": 0,
+        "x": 4,
+        "y": 4,
+        "status": "proven_unsat"
+      },
+      {
+        "layer": 0,
+        "x": 5,
+        "y": 4,
+        "status": "proven_unsat"
+      },
+      {
+        "layer": 1,
+        "x": 3,
+        "y": 3,
+        "status": "proven_unsat"
+      },
+      {
+        "layer": 1,
+        "x": 4,
+        "y": 3,
+        "status": "solved",
+        "T": 5
+      }
+    ],
+    "mapCode": "AWN4wMDAwOR8gIGBiYGBgcVhgQcDGDCt4nAAMzjkQKQLkwILkG7Y6agBkWdllGmAsBQcAA",
+    "replayCode": "NnxkDKcpsteXxcA"
+  }
+}
