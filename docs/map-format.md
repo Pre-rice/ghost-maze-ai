@@ -1,16 +1,11 @@
-# 地图与证书格式入口
+# 当前地图与证书格式入口
 
-地图复用固定游戏子模块中的 `MapDefinition` 与 `DataSerializer`，不维护第二套新协议。
+地图、游玩、AI与分享复用同级本体接口，不维护第二套物理或协议。
 
-- [游戏地图定义](../vendor/ghost-maze/src/core/mapDefinition.js)
-- [分享码 v3 编解码](../vendor/ghost-maze/src/core/dataSerializer.js)
-- [游戏协议文档](../vendor/ghost-maze/docs/protocol-v2.md)
-- [可执行的第一题数据](../examples/puzzle-units/unit-01.json)
-- [可执行的第二题数据](../examples/puzzle-units/unit-02.json)
-- [种子版本与内容清单](../data/manifests/seed-units.json)
+- [MapDefinition](https://github.com/Pre-rice/ghost-maze/blob/main/src/core/mapDefinition.js)与[完整装配校验](https://github.com/Pre-rice/ghost-maze/blob/main/src/core/mapDataUtils.js)。
+- [地图码与操作码协议](https://github.com/Pre-rice/ghost-maze/blob/main/docs/share-codes.md)，不写格式版本，无旧码兼容。
+- [唯一地图形状](https://github.com/Pre-rice/ghost-maze/blob/main/docs/architecture.md#唯一地图形状)：活动格、墙、鬼、物品与按钮均在layers，全局stairs，无体力。历史顶层结构只能经严格装配接入，冲突拒绝。
+- [原种子1](../examples/puzzle-units/unit-01.json)、[原种子2](../examples/puzzle-units/unit-02.json)、[种子清单](../data/manifests/seed-units.json)：原件保持，不能为文档整理重新生成。
+- [参考环境与证明范围](reference-contract.md)。
 
-小单元使用 free 模式与 customStartPos，在 8×8 画布上通过 activeCells 描述较小有效区域。保留 gameMode、initialHealth、initialStamina；单层 layers 可为空。墙位于格子边上，横墙为 (height+1)×width，竖墙为 height×(width+1)。
-
-证书、家族、搜索预算、质量标签放在研究侧伴随记录，不塞进游戏分享码。当前两个单元的证书在 examples/puzzle-units/verification.json；其完整状态穷尽只适用于这些固定案例，不代表通用验证器已完成。
-
-旧格式说明在 [归档](archive/llm-workflow-v1/docs/map-format.md)，仅用于理解旧管线。
+证书、规则锁、家族、搜索预算、质量反馈单独记录，不塞进游戏分享码。合法性、可解、最优与质量是不同结论，设计要求见[现行边界](design-boundaries.md)。旧字段与v3说明见[原格式快照](archive/worklogs/map-format-before-reorganization-20261013.md)，只作历史。

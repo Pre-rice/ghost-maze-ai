@@ -2,7 +2,7 @@
 
 2026-10-12：应用户要求，正式命名为《接力》，旧称“双鬼交接”。原图、参考解、反馈与当时证据保持；下文旧标题与称呼留作历史记录。
 
-> 历史作品说明（2026-10-11）：下文保留原地图、反馈与当时验收证据。旧分享码、体力与独立回放地址已弃用；最新有效试玩和同页回放统一见[AI 地图总目录](../../../ghost-maze/docs/ai-map-catalog.md)。不从旧证据自动推断当前最短性，冲突／非法图在总目录明确列出。
+> 历史作品说明（2026-10-11）：下文保留原地图、反馈与当时验收证据。旧分享码、体力与独立回放地址已弃用；最新有效试玩和同页回放统一见[AI 地图总目录](https://github.com/Pre-rice/ghost-maze/blob/main/docs/ai-map-catalog.md)。不从旧证据自动推断当前最短性，冲突／非法图在总目录明确列出。
 
 [开始试玩](http://127.0.0.1:4178/game/?map=Y-bgYGZlSGFkZGJlkBORkeFhYGBiZGRiYmBmYmV0ZGJkcGJhYXZatWrVqiWr9nut-BsqGgoDdX9AwnWrVqxaCeYHcDkyODE4MTgyOjEAAA)
 
@@ -14,7 +14,7 @@
 
 关系筛选检查的是：解除一处危险后是否仍妨碍下一阶段；临时保护能否直接留到终点；后续重开是否需要改变操作站位。对关键事件逐项禁止并完整搜索，排除绕过这些安排的胜利路线，再做逐门对照。证据不能替代玩家对精妙程度的判断。
 
-原引擎 BFS、快实现、分享码逐状态和浏览器真实方向键已核对。无伤自动录制仅写独立 QA 目录，不作为真实玩家示范。具体筛选过程见 [本轮说明](../../docs/twin-handoff-selection-20261009.md)。
+原引擎 BFS、快实现、分享码逐状态和浏览器真实方向键已核对。无伤自动录制仅写独立 QA 目录，不作为真实玩家示范。具体筛选过程见 [本轮说明](../../docs/archive/selection/twin-handoff-selection-20261009.md)。
 
 <details>
 <summary>机制死结、合理计划、突破与完整解法（剧透）</summary>

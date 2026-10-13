@@ -2,7 +2,7 @@
 
 2026-10-12：应用户要求，正式命名为《归途》，旧称“永久回路”。原图、参考解、反馈与当时证据保持；下文旧标题与称呼留作历史记录。
 
-> 历史作品说明（2026-10-11）：下文保留原地图、反馈与当时验收证据。旧分享码、体力与独立回放地址已弃用；最新有效试玩和同页回放统一见[AI 地图总目录](../../../ghost-maze/docs/ai-map-catalog.md)。不从旧证据自动推断当前最短性，冲突／非法图在总目录明确列出。
+> 历史作品说明（2026-10-11）：下文保留原地图、反馈与当时验收证据。旧分享码、体力与独立回放地址已弃用；最新有效试玩和同页回放统一见[AI 地图总目录](https://github.com/Pre-rice/ghost-maze/blob/main/docs/ai-map-catalog.md)。不从旧证据自动推断当前最短性，冲突／非法图在总目录明确列出。
 
 [开始试玩](http://127.0.0.1:4186/game/?map=FcahDYBADEbh_u1BUCSM1EoUguYkhpXQBIGgDMEkSJZAwX3PPGkaqWgGoa5TWxAzSYIkAbMisQmLRuw-xfHGuuQ1Ni_6iDhvz49Pl49_7kOnUDKQEcP-MXw)
 
@@ -23,7 +23,7 @@ node examples/permanent-return-20261009/serve.mjs
 <details>
 <summary>详细机制筛选、设计与解法（剧透）</summary>
 
-见 [本轮关系筛选](../../docs/permanent-return-selection-20261009.md)、[逐阶段解法](design.md)、[原引擎证据](evidence.json)、[直觉路线审查](strategy-review.json)、[浏览器核验](browser-qa.json)、[正式分享码](share.json)。
+见 [本轮关系筛选](../../docs/archive/selection/permanent-return-selection-20261009.md)、[逐阶段解法](design.md)、[原引擎证据](evidence.json)、[直觉路线审查](strategy-review.json)、[浏览器核验](browser-qa.json)、[正式分享码](share.json)。
 
 </details>
 

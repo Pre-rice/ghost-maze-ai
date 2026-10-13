@@ -2,7 +2,7 @@
 
 23 格、单层、两只鬼、三把钥匙，A/B 各一个按钮。普通门与数字门各三扇、字母门六扇，无玻璃或单向门。开局有效移动或操作均不引动鬼，可以先观察。图中的 **0 门无需钥匙，穿过后永久消失**。
 
-[试玩](https://ghostmaze.novic.cc/?map=AADBsPDg8DAwMDEC4C90CaeUBXAdhpQlwEQLkFOAAABzIFCzWIHMcgECMwEgLEBUBIBABhgAGGEAgA)。用户评价“不错，比上一张有进步”，认可取物次序与路线规划，同时指出推理线性、很快想到，仍期待新意和惊喜；见[反馈记录](../../docs/deferred-key-cold-entry-review-20261012.md)。没有新增真人路线，生成证据保持。地图、参考解与以后收到的评述统一列入[地图总目录](../../../ghost-maze/docs/ai-map-catalog.md)。
+[试玩](https://ghostmaze.novic.cc/?map=AADBsPDg8DAwMDEC4C90CaeUBXAdhpQlwEQLkFOAAABzIFCzWIHMcgECMwEgLEBUBIBABhgAGGEAgA)。用户评价“不错，比上一张有进步”，认可取物次序与路线规划，同时指出推理线性、很快想到，仍期待新意和惊喜；见[反馈记录](../../docs/archive/reviews/deferred-key-cold-entry-review-20261012.md)。没有新增真人路线，生成证据保持。地图、参考解与以后收到的评述统一列入[地图总目录](https://github.com/Pre-rice/ghost-maze/blob/main/docs/ai-map-catalog.md)。
 
 实际过程：手工逆向构造取物顺序与一次性门的联系，先验证机制，再依据《换岗》的入场反馈调整守物鬼位置和上方门初态。简单添加安全入口的版本产生了捷径，未采用。最终保留可观察开局和实际安全错误分支，142 次单项删改尝试接受一次内部实墙删除；末轮 73 项审计、未决零。这是指定关系下的局部精简，不是全局最小证明。正式站初态已加载并目视核对，HTTP 200、23 格、零页面错误。
 

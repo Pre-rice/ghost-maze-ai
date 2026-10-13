@@ -60,26 +60,26 @@ const names = {
 
 // 点评只取真实反馈和已保存的复盘；“不错”不自动等于达到精妙目标。
 const reviews = {
-    'deferred-key-cold-entry-20261012/map': { date: '2026-10-12', positive: true, evidence: 'docs/deferred-key-cold-entry-review-20261012.md' },
-    'shelter-role-exchange-20261012/map': { date: '2026-10-12', positive: true, evidence: 'docs/shelter-role-exchange-review-20261012.md' },
-    'room-transfer-20261012/map': { date: '2026-10-12', positive: true, evidence: 'docs/room-transfer-review-20261012.md' },
-    'prepared-release-20261011/map': { date: '2026-10-12', evidence: 'docs/prepared-release-review-20261012.md' },
-    'door-units-20261011/unit-01': { date: '2026-10-11', evidence: 'docs/door-units-review-20261011.md' },
-    'door-units-20261011/unit-02': { date: '2026-10-11', evidence: 'docs/door-units-review-20261011.md' },
-    'coupled-singlelayer/map': { date: '2026-09-30', positive: true, evidence: 'docs/status.md' },
+    'deferred-key-cold-entry-20261012/map': { date: '2026-10-12', positive: true, evidence: 'docs/archive/reviews/deferred-key-cold-entry-review-20261012.md' },
+    'shelter-role-exchange-20261012/map': { date: '2026-10-12', positive: true, evidence: 'docs/archive/reviews/shelter-role-exchange-review-20261012.md' },
+    'room-transfer-20261012/map': { date: '2026-10-12', positive: true, evidence: 'docs/archive/reviews/room-transfer-review-20261012.md' },
+    'prepared-release-20261011/map': { date: '2026-10-12', evidence: 'docs/archive/reviews/prepared-release-review-20261012.md' },
+    'door-units-20261011/unit-01': { date: '2026-10-11', evidence: 'docs/archive/reviews/door-units-review-20261011.md' },
+    'door-units-20261011/unit-02': { date: '2026-10-11', evidence: 'docs/archive/reviews/door-units-review-20261011.md' },
+    'coupled-singlelayer/map': { date: '2026-09-30', positive: true, evidence: 'docs/archive/worklogs/status-before-reorganization-20261013.md' },
     'user-refinements/user-01': { date: '2026-09-30', evidence: 'examples/user-refinements/README.md' },
-    'twin-handoff-20261009/map': { date: '2026-10-09', positive: true, evidence: 'docs/twin-handoff-review-20261009.md' },
-    'borrowed-shelter-wallfix-20261009/map': { date: '2026-10-10', positive: true, evidence: 'docs/borrowed-shelter-review-20261010.md' },
-    'shelter-exchange-20261010/map': { date: '2026-10-10', positive: true, evidence: 'docs/shelter-exchange-review-20261010.md' },
-    'single-station-relay-20261010/map': { date: '2026-10-10', evidence: 'docs/single-station-relay-review-20261010.md' },
-    'return-to-source-20261010/map': { date: '2026-10-10', positive: true, evidence: 'docs/architecture-diagnosis-handoff-20261010.md' },
-    'interlocked-singlelayer-20261008/map': { date: '2026-10-08', evidence: 'docs/interlocked-review-20261008.md' },
-    'gate-handoff-20261008/map': { date: '2026-10-09', evidence: 'docs/gate-handoff-review-20261009.md' },
-    'permanent-return-20261009/map': { date: '2026-10-09', positive: true, evidence: 'docs/permanent-return-review-20261009.md' },
-    'minimal-units-20261007/unit-01': { date: '2026-10-08', evidence: 'docs/status.md' },
-    'minimal-units-20261007/unit-02': { date: '2026-10-08', evidence: 'docs/status.md' },
-    'solid-units-20261008/unit-01': { date: '2026-10-08', evidence: 'docs/mechanism-selection-20261008.md' },
-    'solid-units-20261008/unit-02': { date: '2026-10-08', evidence: 'docs/mechanism-selection-20261008.md' }
+    'twin-handoff-20261009/map': { date: '2026-10-09', positive: true, evidence: 'docs/archive/reviews/twin-handoff-review-20261009.md' },
+    'borrowed-shelter-wallfix-20261009/map': { date: '2026-10-10', positive: true, evidence: 'docs/archive/reviews/borrowed-shelter-review-20261010.md' },
+    'shelter-exchange-20261010/map': { date: '2026-10-10', positive: true, evidence: 'docs/archive/reviews/shelter-exchange-review-20261010.md' },
+    'single-station-relay-20261010/map': { date: '2026-10-10', evidence: 'docs/archive/reviews/single-station-relay-review-20261010.md' },
+    'return-to-source-20261010/map': { date: '2026-10-10', positive: true, evidence: 'docs/archive/reviews/architecture-diagnosis-handoff-20261010.md' },
+    'interlocked-singlelayer-20261008/map': { date: '2026-10-08', evidence: 'docs/archive/reviews/interlocked-review-20261008.md' },
+    'gate-handoff-20261008/map': { date: '2026-10-09', evidence: 'docs/archive/reviews/gate-handoff-review-20261009.md' },
+    'permanent-return-20261009/map': { date: '2026-10-09', positive: true, evidence: 'docs/archive/reviews/permanent-return-review-20261009.md' },
+    'minimal-units-20261007/unit-01': { date: '2026-10-08', evidence: 'docs/archive/worklogs/status-before-reorganization-20261013.md' },
+    'minimal-units-20261007/unit-02': { date: '2026-10-08', evidence: 'docs/archive/worklogs/status-before-reorganization-20261013.md' },
+    'solid-units-20261008/unit-01': { date: '2026-10-08', evidence: 'docs/archive/selection/mechanism-selection-20261008.md' },
+    'solid-units-20261008/unit-02': { date: '2026-10-08', evidence: 'docs/archive/selection/mechanism-selection-20261008.md' }
 };
 
 for (const folder of ['examples', 'runs', 'data/maps', 'data/generated']) {

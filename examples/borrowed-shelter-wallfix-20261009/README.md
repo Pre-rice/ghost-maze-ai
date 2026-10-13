@@ -2,7 +2,7 @@
 
 2026-10-12：应用户要求，正式命名为《借影》，旧称“借用庇护·修正版”。原图、参考解、反馈与当时证据保持；下文旧标题与称呼留作历史记录。
 
-> 历史作品说明（2026-10-11）：下文保留原地图、反馈与当时验收证据。旧分享码、体力与独立回放地址已弃用；最新有效试玩和同页回放统一见[AI 地图总目录](../../../ghost-maze/docs/ai-map-catalog.md)。不从旧证据自动推断当前最短性，冲突／非法图在总目录明确列出。
+> 历史作品说明（2026-10-11）：下文保留原地图、反馈与当时验收证据。旧分享码、体力与独立回放地址已弃用；最新有效试玩和同页回放统一见[AI 地图总目录](https://github.com/Pre-rice/ghost-maze/blob/main/docs/ai-map-catalog.md)。不从旧证据自动推断当前最短性，冲突／非法图在总目录明确列出。
 
 [开始试玩](http://127.0.0.1:4190/game/?map=FcGxDYNAEATA3ds3IkBygFzQHznRn2jAdZBRCsmV4lKcOLZkJMOM-l43PEV23XC_wAwqpkIUGioLXFKFbMrcY87lvX_b72iPOLU8rbF8Xrke4blFBEardFY4nBMcTucf)
 
@@ -27,8 +27,8 @@ B 站为 `(1,4)`，朝向从左改上，依附 `hWalls[4][1]` 的实墙；证书
 
 - [最终地图](map.json)、[独立验证证据](evidence.json)、[直觉计划与逐格作用](strategy-review.json)。
 - [浏览器验收](browser-qa.json)、[正式分享码](share.json)、[可核对的完整轨迹](browser-trace.json)。
-- [错误原因与修正范围](../../docs/button-attachment-fix-20261009.md)。
-- [原生成过程与旧版对照](../../docs/borrowed-shelter-selection-20261009.md)：仅作为历史来源，旧版局部精简和逐门消融未转移到修正版。
+- [错误原因与修正范围](../../docs/archive/delivery/button-attachment-fix-20261009.md)。
+- [原生成过程与旧版对照](../../docs/archive/selection/borrowed-shelter-selection-20261009.md)：仅作为历史来源，旧版局部精简和逐门消融未转移到修正版。
 
 全仓 129 项测试通过；独立浏览器 59 次方向键与 60 个物理及探索状态一致，录制经原引擎另行核验。正式码 128 字符，参考码 130，压缩前 106 字节相同；一次本地初态核对约 173ms，不作为公网或冷缓存保证。
 

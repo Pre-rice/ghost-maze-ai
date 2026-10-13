@@ -1,6 +1,6 @@
 # 回环
 
-> 历史作品说明（2026-10-11）：下文保留原地图、反馈与当时验收证据。旧分享码、体力与独立回放地址已弃用；最新有效试玩和同页回放统一见[AI 地图总目录](../../../ghost-maze/docs/ai-map-catalog.md)。不从旧证据自动推断当前最短性，冲突／非法图在总目录明确列出。
+> 历史作品说明（2026-10-11）：下文保留原地图、反馈与当时验收证据。旧分享码、体力与独立回放地址已弃用；最新有效试玩和同页回放统一见[AI 地图总目录](https://github.com/Pre-rice/ghost-maze/blob/main/docs/ai-map-catalog.md)。不从旧证据自动推断当前最短性，冲突／非法图在总目录明确列出。
 
 [开始试玩](http://127.0.0.1:4192/game/?map=FYsxDkBAFAXf38_aTuUIGrfYVdGI8G7gHA70j6JXO4VCIbGmmWSS0RC0xKYivqoz3kMdtACcZKk4RCmQcu3Ndg7nyJbNyp-Zy83psPfhdJmRnZnVUVxEkj5PSSI-)
 
@@ -10,7 +10,7 @@
 
 这次先提出“当前安全安排会妨碍后续任务”的矛盾，再做结构提案和有限编辑搜索。淘汰了新增部分只带来独立追逐的图；最后一轮 5500 个提案中选出一张母图，作 60 个结构变体，再从 27 格精简到 23 格。原引擎与真实浏览器均已无伤通关，五项机制关系经独立复核。是否达到你要的巧妙程度，等待实际试玩反馈。
 
-过程和筛选细节包含剧透，建议玩后再读：[按机制关系筛选](../../docs/shelter-exchange-selection-20261010.md)。
+过程和筛选细节包含剧透，建议玩后再读：[按机制关系筛选](../../docs/archive/selection/shelter-exchange-selection-20261010.md)。
 
 正式分享码 124 字符，保存在 [share.json](share.json)。一次本地初态核对约 110ms，不代表公网或冷缓存加载保证。试玩录制自动保存真实保留分支；QA 录制仅在独立 `runs/shelter-exchange-20261010/qa-recordings`，旧局保留。
 

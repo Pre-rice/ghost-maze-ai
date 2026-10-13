@@ -1,6 +1,6 @@
 # 《折返》
 
-更新：2026-10-13。22格、两鬼、两钥匙；一普通门、两0门与出口2门，无按钮和玻璃，中性开局。用户已明确不入地图集，评价“太容易想到了，也没什么新意”（2026-10-13）。暂无真人路线，生成时`humanQuality:null`原样保留；定性反馈与数值评分分开。[反馈复盘](../../docs/returning-guard-review-20261013.md)。
+更新：2026-10-13。22格、两鬼、两钥匙；一普通门、两0门与出口2门，无按钮和玻璃，中性开局。用户已明确不入地图集，评价“太容易想到了，也没什么新意”（2026-10-13）。暂无真人路线，生成时`humanQuality:null`原样保留；定性反馈与数值评分分开。[反馈复盘](../../docs/archive/reviews/returning-guard-review-20261013.md)。
 
 [试玩](https://ghostmaze.novic.cc/?map=AADIAfiI-Jj8AAGoICg0BeYAVVF1QKgUDqIqqAAAAIEKqhBCqQsOgAAAAAAQ)。默认迷雾，桌面／手机入口和回放关键局面均已核验。
 

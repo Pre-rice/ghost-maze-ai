@@ -17,7 +17,7 @@
 
 [地图](map.json)、[证据](evidence.json)、[动作与分享码](share.json)、[来源与家族](source.json)、[条件精简记录](minimization.json)、[浏览器关键局面核验](browser-check.json)。实际单向入场、原机关初态、零钥匙且区域外无鬼时，玩家／鬼／物品／区域内机关逐步一致；新增外格和入口边界不是原单元内部墙。分享码往返、编号顺序互换、去掉目标后完整路线均通过。
 
-[求解器资料制备](../../docs/solver-data-20261013.md)已完成44个全信息状态样本，来源与版本见[data-preparation.json](data-preparation.json)，只监督一条最优延续，质量分为空、未训练。
+[求解器资料制备](../../docs/archive/worklogs/solver-data-20261013.md)已完成44个全信息状态样本，来源与版本见[data-preparation.json](data-preparation.json)，只监督一条最优延续，质量分为空、未训练。
 
 所有亲缘母图、删门、换门对照均归同一 `door-cooperation-20261013-v1`，不算独立真人质量样本。不启动模型训练；未来训练拆分必须按家族隔离，不能将参考动作证书当“精妙”标签。
 

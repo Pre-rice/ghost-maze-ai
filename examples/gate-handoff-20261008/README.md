@@ -1,6 +1,6 @@
 # 七格单层候选：机关交接
 
-> 历史作品说明（2026-10-11）：下文保留原地图、反馈与当时验收证据。旧分享码、体力与独立回放地址已弃用；最新有效试玩和同页回放统一见[AI 地图总目录](../../../ghost-maze/docs/ai-map-catalog.md)。不从旧证据自动推断当前最短性，冲突／非法图在总目录明确列出。
+> 历史作品说明（2026-10-11）：下文保留原地图、反馈与当时验收证据。旧分享码、体力与独立回放地址已弃用；最新有效试玩和同页回放统一见[AI 地图总目录](https://github.com/Pre-rice/ghost-maze/blob/main/docs/ai-map-catalog.md)。不从旧证据自动推断当前最短性，冲突／非法图在总目录明确列出。
 
 [开始试玩](http://127.0.0.1:4178/game/?map=Y-bgYGZlSGFlYmFlYDAQkJBgYGBkYWJkZmVmYWV2ZGFldGJhYXZaBQF_Q8NDg7-GIgGtVatW7Q8NrQNLL-B0YmB0ZHRkcGIAAA)
 
@@ -14,11 +14,11 @@
 
 原引擎 BFS、快实现、分享码和浏览器真实按键通关均已核对。QA 录制在独立 `runs/gate-handoff-20261008/qa-recordings`，不作为人类示范。源地图与分享码地图的标识分开保存在证据中。质量等待真实试玩反馈。
 
-2026-10-09 后续真实反馈：“还可以，有些复杂性，但是随便试试也过了”，缺少看似不可解后的巧妙解法，未达到目标质量。[本次复盘](../../docs/gate-handoff-review-20261009.md)核验了真实录制并说明筛选缺口；地图与生成时证据保持原样。
+2026-10-09 后续真实反馈：“还可以，有些复杂性，但是随便试试也过了”，缺少看似不可解后的巧妙解法，未达到目标质量。[本次复盘](../../docs/archive/reviews/gate-handoff-review-20261009.md)核验了真实录制并说明筛选缺口；地图与生成时证据保持原样。
 
 <details>
 <summary>机制关系、对照与解法（剧透）</summary>
 
-见 [逐阶段分析](design.md)、[完整证据](evidence.json)、[实际筛选说明](../../docs/foresight-selection-20261009.md)。
+见 [逐阶段分析](design.md)、[完整证据](evidence.json)、[实际筛选说明](../../docs/archive/selection/foresight-selection-20261009.md)。
 
 </details>
