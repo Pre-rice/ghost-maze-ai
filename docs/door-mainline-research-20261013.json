@@ -593,5 +593,49 @@
     "numericQuality": null,
     "actualRouteAvailable": false,
     "mapAndReplayUnchanged": true
+  },
+  "borrowedRoomUserReview": {
+    "date": "2026-10-13",
+    "quote": "《借舍》设计得就一般。首先，地图有一些冗余格，即左上角的几个格子。出生点也可以右移，左边突出一格放出生点是无意义的。然后解谜思路上，无非就是困鬼和二次引鬼，没有什么新意。没有什么难点。",
+    "review": "docs/borrowed-room-review-20261013.md",
+    "sameReplayAfterStartShift": true,
+    "bestDeletionContrast": {
+      "cells": 20,
+      "shortest": 42,
+      "boundary": "safe",
+      "deletedCells": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    "originalMapAndEvidenceUnchanged": true,
+    "actualHumanRouteAvailable": false
+  },
+  "beneficialHelperFollowup": {
+    "date": "2026-10-13",
+    "seed": 101390,
+    "counts": {
+      "proposed": 45000,
+      "cold": 18852,
+      "solved": 8898,
+      "unknown": 0,
+      "range": 1236,
+      "requiredBlocking": 248,
+      "helperRemovalUnsat": 0,
+      "safe": 0
+    },
+    "elapsedMs": 64246,
+    "result": "有限的单A/普通门/可选0门双三鬼形状中248件所有通关需阻挡，但未找到删助手后无解的构造。未作为新题交付，不证明该机制不可能。",
+    "source": "runs/door-mainline-20261013/research/beneficial-helper-search-90.json"
   }
 }
