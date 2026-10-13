@@ -1,0 +1,806 @@
+{
+  "role": "research_not_user_quality",
+  "title": "楼间",
+  "cells": 11,
+  "ghosts": 1,
+  "fast": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "sha256:c588e3aeeef0fe67237ca78500d7299c3addd56afa45522d21449162faa207f4",
+    "mapId": "39e2a07b02398c38449b7d3da8dec407a3ebb38e92e8cf5c71e12926ed05a1da",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "withGhosts": true,
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "U",
+        "STAIR",
+        "U",
+        "STAIR",
+        "D",
+        "R",
+        "R",
+        "R",
+        "U",
+        "STAIR",
+        "L",
+        "L",
+        "L",
+        "R",
+        "R",
+        "R",
+        "STAIR",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "STAIR",
+        "U",
+        "R",
+        "U"
+      ],
+      "totalActions": 26,
+      "movementCost": 24
+    },
+    "search": {
+      "algorithm": "astar",
+      "expanded": 47,
+      "transitions": 235,
+      "discovered": 51,
+      "exhausted": false,
+      "elapsedMs": 5.135230999999997,
+      "budget": {
+        "nodeBudget": 150000,
+        "stateBudget": 150000,
+        "budgetMs": 30000
+      }
+    }
+  },
+  "reference": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "sha256:c588e3aeeef0fe67237ca78500d7299c3addd56afa45522d21449162faa207f4",
+    "mapId": "39e2a07b02398c38449b7d3da8dec407a3ebb38e92e8cf5c71e12926ed05a1da",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "U",
+        "STAIR",
+        "U",
+        "STAIR",
+        "D",
+        "R",
+        "R",
+        "R",
+        "U",
+        "STAIR",
+        "L",
+        "L",
+        "L",
+        "R",
+        "R",
+        "R",
+        "STAIR",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "STAIR",
+        "U",
+        "R",
+        "U"
+      ],
+      "totalActions": 26,
+      "movementCost": 24
+    },
+    "search": {
+      "expanded": 47,
+      "transitions": 231,
+      "discovered": 50,
+      "exhausted": false,
+      "elapsedMs": 9.287687999999996,
+      "budget": {
+        "nodeBudget": 150000,
+        "stateBudget": 150000,
+        "budgetMs": 30000
+      }
+    }
+  },
+  "result": {
+    "status": "solved",
+    "reason": "goal_reached",
+    "expanded": 49,
+    "transitions": 245,
+    "discovered": 52,
+    "totalActions": 26
+  },
+  "optimalCount": "1",
+  "capTransfers": [
+    {
+      "max": 0,
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 19,
+        "transitions": 95,
+        "discovered": 19,
+        "totalActions": null
+      }
+    },
+    {
+      "max": 1,
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 34,
+        "transitions": 170,
+        "discovered": 34,
+        "totalActions": null
+      }
+    },
+    {
+      "max": 2,
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 38,
+        "transitions": 190,
+        "discovered": 38,
+        "totalActions": null
+      }
+    }
+  ],
+  "boundary": {
+    "status": "safe",
+    "reason": "all_optimal_routes_avoid_overlap",
+    "mapId": "39e2a07b02398c38449b7d3da8dec407a3ebb38e92e8cf5c71e12926ed05a1da",
+    "ruleset": "sha256:c588e3aeeef0fe67237ca78500d7299c3addd56afa45522d21449162faa207f4",
+    "policy": "all_optimal_routes_avoid_overlap_v2",
+    "glassCount": 0,
+    "expanded": 49,
+    "transitions": 245,
+    "discovered": 51,
+    "optimum": 26,
+    "ignoredFatalOverlap": 0,
+    "observedNonFatalOverlap": null,
+    "safeOptimalWitness": [
+      "U",
+      "STAIR",
+      "U",
+      "STAIR",
+      "D",
+      "R",
+      "R",
+      "R",
+      "U",
+      "STAIR",
+      "L",
+      "L",
+      "L",
+      "R",
+      "R",
+      "R",
+      "STAIR",
+      "D",
+      "L",
+      "L",
+      "L",
+      "U",
+      "STAIR",
+      "U",
+      "R",
+      "U"
+    ],
+    "elapsedMs": 7,
+    "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+  },
+  "trace": [
+    {
+      "step": 1,
+      "action": "U",
+      "p": [
+        0,
+        2,
+        3
+      ],
+      "g": [
+        [],
+        [
+          [
+            4,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "step": 2,
+      "action": "STAIR",
+      "p": [
+        1,
+        2,
+        3
+      ],
+      "g": [
+        [],
+        [
+          [
+            4,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "step": 3,
+      "action": "U",
+      "p": [
+        1,
+        2,
+        3
+      ],
+      "g": [
+        [],
+        [
+          [
+            3,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "step": 4,
+      "action": "STAIR",
+      "p": [
+        0,
+        2,
+        3
+      ],
+      "g": [
+        [],
+        [
+          [
+            2,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "step": 5,
+      "action": "D",
+      "p": [
+        0,
+        2,
+        4
+      ],
+      "g": [
+        [
+          [
+            2,
+            3
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "step": 6,
+      "action": "R",
+      "p": [
+        0,
+        3,
+        4
+      ],
+      "g": [
+        [
+          [
+            2,
+            3
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "step": 7,
+      "action": "R",
+      "p": [
+        0,
+        4,
+        4
+      ],
+      "g": [
+        [
+          [
+            2,
+            3
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "step": 8,
+      "action": "R",
+      "p": [
+        0,
+        5,
+        4
+      ],
+      "g": [
+        [
+          [
+            2,
+            3
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "step": 9,
+      "action": "U",
+      "p": [
+        0,
+        5,
+        3
+      ],
+      "g": [
+        [
+          [
+            2,
+            3
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "step": 10,
+      "action": "STAIR",
+      "p": [
+        1,
+        5,
+        3
+      ],
+      "g": [
+        [
+          [
+            2,
+            3
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "step": 11,
+      "action": "L",
+      "p": [
+        1,
+        4,
+        3
+      ],
+      "g": [
+        [
+          [
+            2,
+            3
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "step": 12,
+      "action": "L",
+      "p": [
+        1,
+        3,
+        3
+      ],
+      "g": [
+        [
+          [
+            2,
+            3
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "step": 13,
+      "action": "L",
+      "p": [
+        1,
+        2,
+        3
+      ],
+      "g": [
+        [
+          [
+            2,
+            3
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "step": 14,
+      "action": "R",
+      "p": [
+        1,
+        3,
+        3
+      ],
+      "g": [
+        [],
+        [
+          [
+            2,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "step": 15,
+      "action": "R",
+      "p": [
+        1,
+        4,
+        3
+      ],
+      "g": [
+        [],
+        [
+          [
+            3,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "step": 16,
+      "action": "R",
+      "p": [
+        1,
+        5,
+        3
+      ],
+      "g": [
+        [],
+        [
+          [
+            4,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "step": 17,
+      "action": "STAIR",
+      "p": [
+        0,
+        5,
+        3
+      ],
+      "g": [
+        [],
+        [
+          [
+            5,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "step": 18,
+      "action": "D",
+      "p": [
+        0,
+        5,
+        4
+      ],
+      "g": [
+        [
+          [
+            5,
+            3
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "step": 19,
+      "action": "L",
+      "p": [
+        0,
+        4,
+        4
+      ],
+      "g": [
+        [
+          [
+            5,
+            4
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "step": 20,
+      "action": "L",
+      "p": [
+        0,
+        3,
+        4
+      ],
+      "g": [
+        [
+          [
+            4,
+            4
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "step": 21,
+      "action": "L",
+      "p": [
+        0,
+        2,
+        4
+      ],
+      "g": [
+        [
+          [
+            3,
+            4
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "step": 22,
+      "action": "U",
+      "p": [
+        0,
+        2,
+        3
+      ],
+      "g": [
+        [
+          [
+            2,
+            4
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "step": 23,
+      "action": "STAIR",
+      "p": [
+        1,
+        2,
+        3
+      ],
+      "g": [
+        [
+          [
+            2,
+            4
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "step": 24,
+      "action": "U",
+      "p": [
+        1,
+        2,
+        3
+      ],
+      "g": [
+        [
+          [
+            2,
+            4
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "step": 25,
+      "action": "R",
+      "p": [
+        1,
+        3,
+        3
+      ],
+      "g": [
+        [
+          [
+            2,
+            4
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "step": 26,
+      "action": "U",
+      "p": [
+        1,
+        3,
+        2
+      ],
+      "g": [
+        [
+          [
+            2,
+            4
+          ]
+        ],
+        []
+      ]
+    }
+  ],
+  "shares": {
+    "map": {
+      "success": true,
+      "code": "AWN4wMDAwOR8gIGBiYGBgcWxi6WBAQy0FrRAGI0gFSwOUgwODAwc3FOEoPIBgifAtAMTCwA"
+    },
+    "replay": {
+      "success": true,
+      "code": "OmPml1EpstcImB8UeA"
+    }
+  },
+  "economyReason": "去掉第二鬼及其熟悉的困鬼房间后，跨层重安排与至少三次搬运仍为全部通关所需；不以四步额外困鬼任务代表新挑战。",
+  "verification": {
+    "title": "楼间",
+    "cells": 11,
+    "ghosts": 1,
+    "T": 26,
+    "optimalCount": "1",
+    "requiredTransfers": "at_least_three_all_wins",
+    "coldEntry": true,
+    "allOptimalSafe": true,
+    "removedNonEntityCellsUnsat": [
+      {
+        "layer": 0,
+        "x": 3,
+        "y": 4
+      },
+      {
+        "layer": 0,
+        "x": 4,
+        "y": 4
+      },
+      {
+        "layer": 0,
+        "x": 5,
+        "y": 4
+      },
+      {
+        "layer": 1,
+        "x": 3,
+        "y": 3
+      }
+    ],
+    "contrastResults": [
+      {
+        "edit": {
+          "layer": 0,
+          "axis": "h",
+          "x": 2,
+          "y": 4,
+          "type": 0
+        },
+        "status": "proven_unsat"
+      },
+      {
+        "edit": {
+          "layer": 0,
+          "axis": "h",
+          "x": 2,
+          "y": 4,
+          "type": 1
+        },
+        "status": "proven_unsat"
+      },
+      {
+        "edit": {
+          "layer": 1,
+          "axis": "h",
+          "x": 3,
+          "y": 3,
+          "type": 0
+        },
+        "status": "solved",
+        "T": 13
+      },
+      {
+        "edit": {
+          "layer": 1,
+          "axis": "h",
+          "x": 3,
+          "y": 3,
+          "type": 1
+        },
+        "status": "proven_unsat"
+      },
+      {
+        "edit": {
+          "layer": 1,
+          "axis": "v",
+          "x": 5,
+          "y": 3,
+          "type": 0
+        },
+        "status": "solved",
+        "T": 14
+      },
+      {
+        "edit": {
+          "layer": 1,
+          "axis": "v",
+          "x": 5,
+          "y": 3,
+          "type": 1
+        },
+        "status": "proven_unsat"
+      }
+    ],
+    "mapId": "39e2a07b02398c38449b7d3da8dec407a3ebb38e92e8cf5c71e12926ed05a1da",
+    "mapCode": "AWN4wMDAwOR8gIGBiYGBgcWxi6WBAQy0FrRAGI0gFSwOUgwODAwc3FOEoPIBgifAtAMTCwA",
+    "replayCode": "OmPml1EpstcImB8UeA"
+  }
+}
