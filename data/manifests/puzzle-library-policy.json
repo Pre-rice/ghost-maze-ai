@@ -1,6 +1,6 @@
 {
   "date": "2026-10-14",
-  "ruleset": "sha256:0682d2fbd577f641d3030444c2693aa55025319ea31b2ec1b66d3b75470259c7",
+  "ruleset": "sha256:9a26362752ae9747499e6265c7de656ff7adb634fdaec1f5f0f7c14e399669f9",
   "defaultStatus": "historical_not_reviewed_do_not_present_or_reuse",
   "presentableMapIds": [
     "68ea8600719d5a5b0ab8fd7161b8f41d01e1ba5e4f972701c1c8134f45ca905b",
@@ -32,11 +32,12 @@
     "玻璃换实墙全部可达物理策略结果一致，允许观察差异",
     "鬼编号和列表排列不影响后继",
     "最优性或边界审查未完成时为未知，不得交付",
-    "配对楼梯格是相邻格；抵达即互见追击，上下楼时两层各按新旧位置行动一步；不能利用额外停顿"
+    "配对楼梯格是相邻格；抵达即互见追击，上下楼时两层各按新旧位置行动一步；不能利用额外停顿",
+    "活动格虚空中断玩家与鬼的直线视野，不得依赖隔空追击"
   ],
   "policy": "all_optimal_routes_avoid_overlap_v2",
   "previousStrictAudit": "data/manifests/rule-boundaries-20261012.json",
-  "currentEvidence": "data/manifests/stair-mechanics-20261013.json",
+  "currentEvidence": "data/manifests/void-visibility-20261014.json",
   "additionalEvidence": [
     {
       "mapId": "da04fd50773b66da2c809a099933edeb94a74e0b29cb2d2e70d59e8894e69def",
@@ -187,5 +188,5 @@
       "audit": "data/manifests/stair-mechanics-20261013.json"
     }
   ],
-  "previousEvidence": "data/manifests/optimal-boundaries-20261012.json"
+  "previousEvidence": "data/manifests/stair-mechanics-20261013.json"
 }
