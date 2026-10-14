@@ -1,0 +1,161 @@
+{
+  "id": "back-route-reframe",
+  "base": "后路",
+  "restriction": {
+    "id": "zero_door_before_lower_key",
+    "sequence": [
+      {
+        "type": "locked_opened",
+        "layer": 0,
+        "axis": "h",
+        "x": 4,
+        "y": 7
+      },
+      {
+        "type": "all",
+        "events": [
+          {
+            "type": "visit",
+            "layer": 0,
+            "x": 4,
+            "y": 5
+          },
+          {
+            "type": "pickup_key"
+          }
+        ]
+      }
+    ]
+  },
+  "noOverlap": false,
+  "results": [
+    {
+      "role": "original",
+      "result": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:9a26362752ae9747499e6265c7de656ff7adb634fdaec1f5f0f7c14e399669f9",
+        "mapId": "59b73eb8fb5e93a69134ea2653771c558576a4f0c16049c27a16be8d9e30a6b6",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": [
+            {
+              "id": "zero_door_before_lower_key",
+              "sequence": [
+                {
+                  "type": "locked_opened",
+                  "layer": 0,
+                  "axis": "h",
+                  "x": 4,
+                  "y": 7
+                },
+                {
+                  "type": "all",
+                  "events": [
+                    {
+                      "type": "visit",
+                      "layer": 0,
+                      "x": 4,
+                      "y": 5
+                    },
+                    {
+                      "type": "pickup_key"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "expanded": 1455,
+          "transitions": 7275,
+          "discovered": 1455,
+          "exhausted": true,
+          "elapsedMs": 154.49689900000004,
+          "budget": {
+            "nodeBudget": 1000000,
+            "stateBudget": 1000000,
+            "budgetMs": 30000
+          }
+        }
+      }
+    },
+    {
+      "role": "candidate",
+      "result": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:9a26362752ae9747499e6265c7de656ff7adb634fdaec1f5f0f7c14e399669f9",
+        "mapId": "b7d003fee5bf5b81a03a57e05a9e42f39f2a847b8993cc1a0cb32ae87e32abaf",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": [
+            {
+              "id": "zero_door_before_lower_key",
+              "sequence": [
+                {
+                  "type": "locked_opened",
+                  "layer": 0,
+                  "axis": "h",
+                  "x": 4,
+                  "y": 7
+                },
+                {
+                  "type": "all",
+                  "events": [
+                    {
+                      "type": "visit",
+                      "layer": 0,
+                      "x": 4,
+                      "y": 5
+                    },
+                    {
+                      "type": "pickup_key"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "expanded": 1471,
+          "transitions": 7355,
+          "discovered": 1471,
+          "exhausted": true,
+          "elapsedMs": 150.753465,
+          "budget": {
+            "nodeBudget": 1000000,
+            "stateBudget": 1000000,
+            "budgetMs": 30000
+          }
+        }
+      }
+    }
+  ]
+}

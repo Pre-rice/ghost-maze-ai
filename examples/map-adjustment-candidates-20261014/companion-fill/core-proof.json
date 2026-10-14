@@ -1,0 +1,38 @@
+{
+  "id": "companion-fill",
+  "base": "同行",
+  "restriction": {
+    "id": "third_guard_blocked",
+    "sequence": [
+      {
+        "type": "ghost_blocked",
+        "index": 2
+      }
+    ]
+  },
+  "noOverlap": true,
+  "results": [
+    {
+      "role": "original",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 321,
+        "transitions": 1605,
+        "discovered": 321,
+        "totalActions": null
+      }
+    },
+    {
+      "role": "candidate",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 340,
+        "transitions": 1700,
+        "discovered": 340,
+        "totalActions": null
+      }
+    }
+  ]
+}

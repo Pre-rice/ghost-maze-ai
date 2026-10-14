@@ -1,0 +1,143 @@
+{
+  "id": "stay-compact",
+  "base": "暂驻",
+  "restriction": {
+    "id": "temporarily_parked_at_A",
+    "sequence": [
+      {
+        "type": "all",
+        "events": [
+          {
+            "type": "press",
+            "letter": "A"
+          },
+          {
+            "type": "ghost_at",
+            "layer": 0,
+            "x": 4,
+            "y": 2
+          }
+        ]
+      }
+    ]
+  },
+  "noOverlap": false,
+  "results": [
+    {
+      "role": "original",
+      "result": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:9a26362752ae9747499e6265c7de656ff7adb634fdaec1f5f0f7c14e399669f9",
+        "mapId": "7019c7d90939874cfc0c4516534fbf032329e535d3f3c0896cf39d0868375bb8",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": [
+            {
+              "id": "temporarily_parked_at_A",
+              "sequence": [
+                {
+                  "type": "all",
+                  "events": [
+                    {
+                      "type": "press",
+                      "letter": "A"
+                    },
+                    {
+                      "type": "ghost_at",
+                      "layer": 0,
+                      "x": 4,
+                      "y": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "expanded": 449,
+          "transitions": 2245,
+          "discovered": 449,
+          "exhausted": true,
+          "elapsedMs": 42.61720500000001,
+          "budget": {
+            "nodeBudget": 1000000,
+            "stateBudget": 1000000,
+            "budgetMs": 30000
+          }
+        }
+      }
+    },
+    {
+      "role": "candidate",
+      "result": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:9a26362752ae9747499e6265c7de656ff7adb634fdaec1f5f0f7c14e399669f9",
+        "mapId": "6da2930a1ebb76d7504fe587f530cff989943be8ffcfe11dedb71ae9e1fc24ca",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": [
+            {
+              "id": "temporarily_parked_at_A",
+              "sequence": [
+                {
+                  "type": "all",
+                  "events": [
+                    {
+                      "type": "press",
+                      "letter": "A"
+                    },
+                    {
+                      "type": "ghost_at",
+                      "layer": 0,
+                      "x": 4,
+                      "y": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "expanded": 435,
+          "transitions": 2175,
+          "discovered": 435,
+          "exhausted": true,
+          "elapsedMs": 29.884318000000007,
+          "budget": {
+            "nodeBudget": 1000000,
+            "stateBudget": 1000000,
+            "budgetMs": 30000
+          }
+        }
+      }
+    }
+  ]
+}

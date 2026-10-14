@@ -1,0 +1,268 @@
+{
+  "id": "return-key",
+  "base": "归途",
+  "restriction": {
+    "id": "lower_guard_prepares_goal_release",
+    "sequence": [
+      {
+        "type": "ghost_cross",
+        "layer": 0,
+        "index": 1,
+        "from": {
+          "x": 1,
+          "y": 6
+        },
+        "to": {
+          "x": 1,
+          "y": 5
+        }
+      },
+      {
+        "type": "ghost_cross",
+        "layer": 0,
+        "index": 0,
+        "from": {
+          "x": 2,
+          "y": 0
+        },
+        "to": {
+          "x": 2,
+          "y": 1
+        }
+      }
+    ]
+  },
+  "noOverlap": false,
+  "results": [
+    {
+      "role": "original",
+      "result": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "sha256:9a26362752ae9747499e6265c7de656ff7adb634fdaec1f5f0f7c14e399669f9",
+        "mapId": "eff99b816d9fe4af0e5dd61894113a74b0cd8a0e7e420b12c5257ba1c5233078",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": [
+            {
+              "id": "lower_guard_prepares_goal_release",
+              "sequence": [
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 1,
+                  "from": {
+                    "x": 1,
+                    "y": 6
+                  },
+                  "to": {
+                    "x": 1,
+                    "y": 5
+                  }
+                },
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 0,
+                  "from": {
+                    "x": 2,
+                    "y": 0
+                  },
+                  "to": {
+                    "x": 2,
+                    "y": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "U",
+            "U",
+            "L",
+            "U",
+            "U",
+            "L",
+            "D",
+            "R",
+            "R",
+            "D",
+            "D",
+            "D",
+            "L",
+            "R",
+            "U",
+            "L",
+            "L",
+            "U",
+            "U",
+            "R",
+            "U",
+            "R",
+            "R",
+            "L",
+            "L",
+            "L",
+            "D",
+            "D",
+            "L",
+            "R",
+            "L",
+            "L",
+            "U",
+            "R",
+            "U",
+            "R",
+            "R",
+            "L",
+            "U",
+            "U",
+            "L"
+          ],
+          "totalActions": 41,
+          "movementCost": 34
+        },
+        "search": {
+          "expanded": 764,
+          "transitions": 3819,
+          "discovered": 776,
+          "exhausted": false,
+          "elapsedMs": 124.40318800000001,
+          "budget": {
+            "nodeBudget": 1000000,
+            "stateBudget": 1000000,
+            "budgetMs": 30000
+          }
+        }
+      }
+    },
+    {
+      "role": "candidate",
+      "result": {
+        "schemaVersion": 1,
+        "status": "solved",
+        "reason": "goal_reached",
+        "ruleset": "sha256:9a26362752ae9747499e6265c7de656ff7adb634fdaec1f5f0f7c14e399669f9",
+        "mapId": "e9bdf78911aaa8f6405acacf5922ec1f7252792180626eff10b72bfc3c8e145f",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": [
+            {
+              "id": "lower_guard_prepares_goal_release",
+              "sequence": [
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 1,
+                  "from": {
+                    "x": 1,
+                    "y": 6
+                  },
+                  "to": {
+                    "x": 1,
+                    "y": 5
+                  }
+                },
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 0,
+                  "from": {
+                    "x": 2,
+                    "y": 0
+                  },
+                  "to": {
+                    "x": 2,
+                    "y": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": "proven",
+        "solution": {
+          "actions": [
+            "U",
+            "U",
+            "L",
+            "U",
+            "U",
+            "L",
+            "D",
+            "R",
+            "R",
+            "D",
+            "D",
+            "D",
+            "L",
+            "R",
+            "U",
+            "L",
+            "L",
+            "U",
+            "U",
+            "R",
+            "U",
+            "R",
+            "R",
+            "L",
+            "L",
+            "L",
+            "D",
+            "D",
+            "L",
+            "R",
+            "L",
+            "L",
+            "U",
+            "R",
+            "U",
+            "R",
+            "R",
+            "L",
+            "U",
+            "U",
+            "L"
+          ],
+          "totalActions": 41,
+          "movementCost": 34
+        },
+        "search": {
+          "expanded": 768,
+          "transitions": 3839,
+          "discovered": 780,
+          "exhausted": false,
+          "elapsedMs": 118.074895,
+          "budget": {
+            "nodeBudget": 1000000,
+            "stateBudget": 1000000,
+            "budgetMs": 30000
+          }
+        }
+      }
+    }
+  ]
+}

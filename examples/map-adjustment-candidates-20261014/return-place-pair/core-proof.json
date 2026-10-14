@@ -1,0 +1,215 @@
+{
+  "id": "return-place-pair",
+  "base": "回位",
+  "restriction": {
+    "id": "lower_parking_before_upper_relocation",
+    "sequence": [
+      {
+        "type": "ghost_cross",
+        "layer": 0,
+        "index": 1,
+        "from": {
+          "x": 1,
+          "y": 4
+        },
+        "to": {
+          "x": 1,
+          "y": 5
+        }
+      },
+      {
+        "type": "ghost_cross",
+        "layer": 0,
+        "index": 0,
+        "from": {
+          "x": 1,
+          "y": 3
+        },
+        "to": {
+          "x": 1,
+          "y": 2
+        }
+      },
+      {
+        "type": "ghost_cross",
+        "layer": 0,
+        "index": 0,
+        "from": {
+          "x": 3,
+          "y": 2
+        },
+        "to": {
+          "x": 3,
+          "y": 1
+        }
+      }
+    ]
+  },
+  "noOverlap": false,
+  "results": [
+    {
+      "role": "original",
+      "result": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:9a26362752ae9747499e6265c7de656ff7adb634fdaec1f5f0f7c14e399669f9",
+        "mapId": "8e364828efdeb4858ae856a1e9c9f4b627555f8e0658a88d9a0053c8febe7102",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": [
+            {
+              "id": "lower_parking_before_upper_relocation",
+              "sequence": [
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 1,
+                  "from": {
+                    "x": 1,
+                    "y": 4
+                  },
+                  "to": {
+                    "x": 1,
+                    "y": 5
+                  }
+                },
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 0,
+                  "from": {
+                    "x": 1,
+                    "y": 3
+                  },
+                  "to": {
+                    "x": 1,
+                    "y": 2
+                  }
+                },
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 0,
+                  "from": {
+                    "x": 3,
+                    "y": 2
+                  },
+                  "to": {
+                    "x": 3,
+                    "y": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "expanded": 309,
+          "transitions": 1545,
+          "discovered": 309,
+          "exhausted": true,
+          "elapsedMs": 35.46551899999997,
+          "budget": {
+            "nodeBudget": 1000000,
+            "stateBudget": 1000000,
+            "budgetMs": 30000
+          }
+        }
+      }
+    },
+    {
+      "role": "candidate",
+      "result": {
+        "schemaVersion": 1,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "ruleset": "sha256:9a26362752ae9747499e6265c7de656ff7adb634fdaec1f5f0f7c14e399669f9",
+        "mapId": "98fe75f8f0fca96da3679d224cf3d48b7b9d3191fb2edb688c6ee1efbd6c4b61",
+        "scope": {
+          "gameMode": "death-loop",
+          "objective": "zero_hit_no_revive",
+          "metric": "successful_actions",
+          "actions": [
+            "U",
+            "R",
+            "D",
+            "L",
+            "STAIR"
+          ],
+          "restrictions": [
+            {
+              "id": "lower_parking_before_upper_relocation",
+              "sequence": [
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 1,
+                  "from": {
+                    "x": 1,
+                    "y": 4
+                  },
+                  "to": {
+                    "x": 1,
+                    "y": 5
+                  }
+                },
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 0,
+                  "from": {
+                    "x": 1,
+                    "y": 3
+                  },
+                  "to": {
+                    "x": 1,
+                    "y": 2
+                  }
+                },
+                {
+                  "type": "ghost_cross",
+                  "layer": 0,
+                  "index": 0,
+                  "from": {
+                    "x": 3,
+                    "y": 2
+                  },
+                  "to": {
+                    "x": 3,
+                    "y": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "optimality": null,
+        "solution": null,
+        "search": {
+          "expanded": 286,
+          "transitions": 1430,
+          "discovered": 286,
+          "exhausted": true,
+          "elapsedMs": 42.190472,
+          "budget": {
+            "nodeBudget": 1000000,
+            "stateBudget": 1000000,
+            "budgetMs": 30000
+          }
+        }
+      }
+    }
+  ]
+}

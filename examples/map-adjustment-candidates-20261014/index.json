@@ -1,0 +1,383 @@
+{
+  "date": "2026-10-14",
+  "gallerySelection": null,
+  "role": "candidates_waiting_for_user_review_not_gallery_replacements",
+  "maps": [
+    {
+      "id": "return-key",
+      "title": "归途·钥匙移位",
+      "base": "归途",
+      "comparison": "same_actions",
+      "purpose": "钥匙从鬼初始位移到同阶段必经的邻格，清除初始叠放，不增加赶路。",
+      "mapId": "e9bdf78911aaa8f6405acacf5922ec1f7252792180626eff10b72bfc3c8e145f",
+      "familyId": "dual-loop-relay-v1",
+      "cells": 18,
+      "ghosts": 2,
+      "keys": 1,
+      "T": 39,
+      "count": "3",
+      "originalT": 39,
+      "cold": true,
+      "entry": {
+        "external": [
+          0,
+          0,
+          6
+        ],
+        "actions": [
+          "R"
+        ],
+        "unitArrival": [
+          0,
+          1,
+          6
+        ],
+        "internal": [
+          0,
+          1,
+          6
+        ],
+        "keys": 0,
+        "externalGhosts": 0,
+        "exteriorSealedExceptEntrance": true,
+        "initialInteriorEqual": true,
+        "afterGhosts": [
+          [
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        ],
+        "wholeOptimalRoutesInteriorEqual": true
+      }
+    },
+    {
+      "id": "return-place-pair",
+      "title": "回位·控制并置",
+      "base": "回位",
+      "comparison": "same_control_stages",
+      "purpose": "下方B移到右下角，与A操作位相邻；总步数不变，控制更集中。",
+      "mapId": "98fe75f8f0fca96da3679d224cf3d48b7b9d3191fb2edb688c6ee1efbd6c4b61",
+      "familyId": "dual-loop-relay-v1",
+      "cells": 16,
+      "ghosts": 2,
+      "keys": 0,
+      "T": 35,
+      "count": "2",
+      "originalT": 35,
+      "cold": true,
+      "entry": {
+        "external": [
+          0,
+          3,
+          6
+        ],
+        "actions": [
+          "U",
+          "L"
+        ],
+        "unitArrival": [
+          0,
+          3,
+          5
+        ],
+        "internal": [
+          0,
+          2,
+          5
+        ],
+        "keys": 0,
+        "externalGhosts": 0,
+        "exteriorSealedExceptEntrance": true,
+        "initialInteriorEqual": true,
+        "afterGhosts": [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ]
+        ],
+        "wholeOptimalRoutesInteriorEqual": true
+      }
+    },
+    {
+      "id": "back-route-reframe",
+      "title": "后路·轮廓整理",
+      "base": "后路",
+      "comparison": "last_L_to_R",
+      "purpose": "把终点及3钥匙门搬入左上缺口，保留只能从原左房进入；右侧凹口填一格单入口死路。",
+      "mapId": "b7d003fee5bf5b81a03a57e05a9e42f39f2a847b8993cc1a0cb32ae87e32abaf",
+      "familyId": "dual-loop-relay-v1",
+      "cells": 24,
+      "ghosts": 2,
+      "keys": 3,
+      "T": 59,
+      "count": "4",
+      "originalT": 59,
+      "cold": true,
+      "entry": {
+        "external": [
+          0,
+          1,
+          4
+        ],
+        "actions": [
+          "U"
+        ],
+        "unitArrival": [
+          0,
+          1,
+          3
+        ],
+        "internal": [
+          0,
+          1,
+          3
+        ],
+        "keys": 0,
+        "externalGhosts": 0,
+        "exteriorSealedExceptEntrance": true,
+        "initialInteriorEqual": true,
+        "afterGhosts": [
+          [
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              3
+            ]
+          ]
+        ],
+        "wholeOptimalRoutesInteriorEqual": true
+      }
+    },
+    {
+      "id": "stay-compact",
+      "title": "暂驻·紧凑版",
+      "base": "暂驻",
+      "comparison": "omit_first_and_last",
+      "purpose": "出生与终点各内移一格，去掉初始与收尾的两步赶路；核心环形留空保持。",
+      "mapId": "6da2930a1ebb76d7504fe587f530cff989943be8ffcfe11dedb71ae9e1fc24ca",
+      "familyId": "door-cooperation-20261013-v1",
+      "cells": 24,
+      "ghosts": 2,
+      "keys": 0,
+      "T": 37,
+      "count": "4",
+      "originalT": 39,
+      "cold": true,
+      "entry": {
+        "external": [
+          0,
+          0,
+          3
+        ],
+        "actions": [
+          "R"
+        ],
+        "unitArrival": [
+          0,
+          1,
+          3
+        ],
+        "internal": [
+          0,
+          1,
+          3
+        ],
+        "keys": 0,
+        "externalGhosts": 0,
+        "exteriorSealedExceptEntrance": true,
+        "initialInteriorEqual": true,
+        "afterGhosts": [
+          [
+            [
+              3,
+              3
+            ],
+            [
+              5,
+              5
+            ]
+          ]
+        ],
+        "wholeOptimalRoutesInteriorEqual": true
+      }
+    },
+    {
+      "id": "stay-filled",
+      "title": "暂驻·轮廓版",
+      "base": "暂驻",
+      "comparison": "omit_first_and_last",
+      "purpose": "同样减少两步赶路，再将中央两处虚空填成单入口死路；A按钮依附墙保持，作为审美备选。",
+      "mapId": "df5820de550cab3dabf35533463f7203937c6b24523bd2ad2df77e078e00977c",
+      "familyId": "door-cooperation-20261013-v1",
+      "cells": 26,
+      "ghosts": 2,
+      "keys": 0,
+      "T": 37,
+      "count": "4",
+      "originalT": 39,
+      "cold": true,
+      "entry": {
+        "external": [
+          0,
+          0,
+          3
+        ],
+        "actions": [
+          "R"
+        ],
+        "unitArrival": [
+          0,
+          1,
+          3
+        ],
+        "internal": [
+          0,
+          1,
+          3
+        ],
+        "keys": 0,
+        "externalGhosts": 0,
+        "exteriorSealedExceptEntrance": true,
+        "initialInteriorEqual": true,
+        "afterGhosts": [
+          [
+            [
+              3,
+              3
+            ],
+            [
+              5,
+              5
+            ]
+          ]
+        ],
+        "wholeOptimalRoutesInteriorEqual": true
+      }
+    },
+    {
+      "id": "companion-fill",
+      "title": "同行·轮廓整理",
+      "base": "同行",
+      "comparison": "same_actions",
+      "purpose": "将A旁左下凹口补为向上连接的单入口死路，B的墙面不打开，原最优的提前引鬼保留。",
+      "mapId": "759914374ccd5199575a50561d86cc16869dae8f9b246751332773e0ba3c7ba3",
+      "familyId": "dual-loop-relay-v1",
+      "cells": 20,
+      "ghosts": 3,
+      "keys": 0,
+      "T": 51,
+      "count": "12",
+      "originalT": 51,
+      "cold": true,
+      "entry": {
+        "external": [
+          0,
+          1,
+          4
+        ],
+        "actions": [
+          "R"
+        ],
+        "unitArrival": [
+          0,
+          2,
+          4
+        ],
+        "internal": [
+          0,
+          2,
+          4
+        ],
+        "keys": 0,
+        "externalGhosts": 0,
+        "exteriorSealedExceptEntrance": true,
+        "initialInteriorEqual": true,
+        "afterGhosts": [
+          [
+            [
+              3,
+              2
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        "wholeOptimalRoutesInteriorEqual": true
+      }
+    },
+    {
+      "id": "reborrow-narrow-wall",
+      "title": "再借·窄环版",
+      "base": "再借",
+      "comparison": "core_discovery_preserved_with_changed_stages",
+      "purpose": "左环由三列收为两列，移出生并保留中部实墙防止31步普通解绕过重引；保留核心，外围门态准备减少，作为较大改动候选。",
+      "mapId": "b90330352c5e027977bfdf0d3c295a5f4a7af605cc067c0c0d409053c4c62d03",
+      "familyId": "door-cooperation-20261013-v1",
+      "cells": 19,
+      "ghosts": 2,
+      "keys": 0,
+      "T": 27,
+      "count": "2",
+      "originalT": 44,
+      "cold": true,
+      "entry": {
+        "external": [
+          0,
+          1,
+          3
+        ],
+        "actions": [
+          "R"
+        ],
+        "unitArrival": [
+          0,
+          2,
+          3
+        ],
+        "internal": [
+          0,
+          2,
+          3
+        ],
+        "keys": 0,
+        "externalGhosts": 0,
+        "exteriorSealedExceptEntrance": true,
+        "initialInteriorEqual": true,
+        "afterGhosts": [
+          [
+            [
+              3,
+              5
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        ],
+        "wholeOptimalRoutesInteriorEqual": true
+      }
+    }
+  ]
+}

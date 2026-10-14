@@ -28,18 +28,27 @@ export function auditMap(map,mapCode){
   }
  }
  const interior=s=>JSON.stringify({p:[s.player.layer,s.player.x,s.player.y,s.player.keys,s.player.hp],dead:s.isDead,won:s.isWon,g:s.layerStates.map(l=>l.ghosts.map(g=>[g.x,g.y])),i:s.layerStates.map(l=>l.items),w:s.layerStates.map((l,li)=>Object.fromEntries(['h','v'].map(axis=>[axis,l.wallStates[axis].flatMap((row,y)=>row.flatMap((w,x)=>{const ac=map.layers[li].activeCells;return ac[y]?.[x]&&(axis==='h'?ac[y-1]?.[x]:ac[y]?.[x-1])?[[x,y,w]]:[];}))])))});
- const start=map.layers[0].customStartPos;let entry=null,entryEnv=null;
- for(const[dx,dy,action]of[[1,0,'R'],[-1,0,'L'],[0,1,'D'],[0,-1,'U']]){
-  const x=start.x-dx,y=start.y-dy,l=map.layers[0];if(x<0||y<0||x>=map.width||y>=map.height||l.activeCells[y][x])continue;
-  const entryMap=structuredClone(map),el=entryMap.layers[0];el.activeCells[y][x]=true;el.customStartPos={x,y};const axis=dx?'v':'h',wx=Math.max(start.x,x),wy=Math.max(start.y,y);el[axis+'Walls'][wy][wx]={type:W.ONE_WAY,keys:0,direction:{dx,dy}};
+ const start=map.layers[0].customStartPos;let entry=null,entryEnv=null,firstMismatch=null;
+ const arrivals=[{x:start.x,y:start.y,settle:[]}];
+ for(const[dx,dy,settle]of[[1,0,'L'],[-1,0,'R'],[0,1,'U'],[0,-1,'D']])if(map.layers[0].activeCells[start.y+dy]?.[start.x+dx])arrivals.push({x:start.x+dx,y:start.y+dy,settle:[settle]});
+ entrySearch:for(const target of arrivals)for(const[dx,dy,action]of[[1,0,'R'],[-1,0,'L'],[0,1,'D'],[0,-1,'U']]){
+  const x=target.x-dx,y=target.y-dy,l=map.layers[0];if(x<0||y<0||x>=map.width||y>=map.height||l.activeCells[y][x])continue;
+  const entryMap=structuredClone(map),el=entryMap.layers[0];el.activeCells[y][x]=true;el.customStartPos={x,y};
+  for(const[ex,ey]of[[1,0],[-1,0],[0,1],[0,-1]])if(el.activeCells[y+ey]?.[x+ex])el[(ex?'v':'h')+'Walls'][y+(ey===1?1:0)][x+(ex===1?1:0)]={type:W.SOLID,keys:0};
+  el[(dx?'v':'h')+'Walls'][Math.max(target.y,y)][Math.max(target.x,x)]={type:W.ONE_WAY,keys:0,direction:{dx,dy}};
   const checked=validateMapData(normalizeVoidWalls(entryMap));if(!checked.valid)continue;
-  const tryEnv=createReferenceEnvironment(checked.mapData),state=tryEnv.step(tryEnv.initialState(),action);if(state.player.x!==start.x||state.player.y!==start.y)continue;
-  entry={external:[0,x,y],action,internal:[0,start.x,start.y],keys:0,externalGhosts:0,initialInteriorEqual:interior(initial)===interior(state),afterGhosts:state.layerStates.map(l=>l.ghosts.map(g=>[g.x,g.y]))};entryEnv=tryEnv;break;
+  const tryEnv=createReferenceEnvironment(checked.mapData),prefix=[action,...target.settle];let state=tryEnv.initialState(),valid=true;
+  for(const a of prefix){const next=tryEnv.step(state,a);if(next===state||next.isDead){valid=false;break;}state=next;}
+  if(!valid||state.player.x!==start.x||state.player.y!==start.y)continue;
+  const observed={external:[0,x,y],actions:prefix,unitArrival:[0,target.x,target.y],internal:[0,start.x,start.y],keys:0,externalGhosts:0,exteriorSealedExceptEntrance:true,initialInteriorEqual:interior(initial)===interior(state),afterGhosts:state.layerStates.map(l=>l.ghosts.map(g=>[g.x,g.y]))};
+  if(observed.initialInteriorEqual){entry=observed;entryEnv=tryEnv;break entrySearch;}
+  firstMismatch??=observed;
  }
+ entry??=firstMismatch;
  const noEnd=structuredClone(map);noEnd.layers[0].endPos=null;const noEndEnv=createReferenceEnvironment(noEnd),routes=[];assert(all.routeCount()<=10000n,'路线过多，须分开证据而不是跳过边界审查');
  for(const actions of all.routes()){
   const replay=ReplaySerializer.generateShareCode(map,actions);assert(replay.success);assert.deepEqual(ReplaySerializer.loadFromShareCode(map,replay.code).actions,actions);
-  let state=env.initialState(),entered=entry?.initialInteriorEqual?entryEnv.step(entryEnv.initialState(),entry.action):null;const trace=[],controls=[];
+  let state=env.initialState(),entered=entry?.initialInteriorEqual?entry.actions.reduce((s,a)=>entryEnv.step(s,a),entryEnv.initialState()):null;const trace=[],controls=[];
   for(const[i,a]of actions.entries()){const before=state,diagnostics=[];state=GameLogic.calculateNextState(state,actionFromName(a),env.mapDefinition,{trails:false,visibility:false,ghostDiagnostics:diagnostics});
    assert(!state.isDead);if(entered){entered=entryEnv.step(entered,a);assert.equal(interior(state),interior(entered));}
    if(before.player.x===state.player.x&&before.player.y===state.player.y){const b=map.layers[0].buttons.find(b=>b.x===before.player.x&&b.y===before.player.y&&((a==='U'&&b.direction.dy===-1)||(a==='D'&&b.direction.dy===1)||(a==='L'&&b.direction.dx===-1)||(a==='R'&&b.direction.dx===1)));assert(b);controls.push({step:i+1,letter:b.letter,at:[b.x,b.y]});}
