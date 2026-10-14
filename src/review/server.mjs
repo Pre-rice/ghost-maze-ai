@@ -59,7 +59,7 @@ export async function startReviewServer({ port = 4178, host = '127.0.0.1', publi
             else return send(404, { error: '页面不存在' });
             let content = readFileSync(file, 'utf8');
             if (path === '/game/' || path === '/game/index.html') {
-                if (!content.includes('src/vendor/pako.js')) throw new Error('本体依赖入口变化，需要更新本地适配');
+                if (!content.includes('src/vendor/pako.js') && !content.includes('src/app.js')) throw new Error('本体依赖入口变化，需要更新本地适配');
                 content = content.replace('</body>', '<script type="module" src="/recorder.js"></script></body>');
             }
             return send(200, content, types[file.split('.').pop()] || 'text/plain');
