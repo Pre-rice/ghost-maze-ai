@@ -22,10 +22,7 @@
     "9d6ff40dc2c47f3f76e2dbb0b92a799d284ae95fd50bb27754c6c118e0ed2549",
     "8f3d1d3d87c58f50efe56273228cf24efcd2c0390dd41573a9a9e9643301bd4a"
   ],
-  "galleryPendingDecision": [
-    "4c871b9f2939847b08c243a4ae0ce0a41db6cf6ec4afa071850e8d8e47a3ec17",
-    "8f3d1d3d87c58f50efe56273228cf24efcd2c0390dd41573a9a9e9643301bd4a"
-  ],
+  "galleryPendingDecision": [],
   "retiredMapIds": [
     "fc9465801c80df6301490706e1c8a707f7e0a8189a35b4ba40a007e86f1b371a",
     "1b61fe5125b776470cdaf5361f9d7da3ac4be73940d1417f1a190539c4297be9",
@@ -114,9 +111,10 @@
     {
       "mapId": "8f3d1d3d87c58f50efe56273228cf24efcd2c0390dd41573a9a9e9643301bd4a",
       "path": "examples/reciprocal-braking-20261014/evidence.json",
-      "role": "unrated_new_candidate",
+      "role": "mechanically_valid_user_reviewed_as_trivial",
       "familyId": "door-cooperation-20261013-v1",
-      "planningManifestIncluded": false
+      "planningManifestIncluded": false,
+      "feedback": "docs/archive/reviews/reciprocal-braking-review-20261014.md"
     }
   ],
   "planningFamilyIds": {
@@ -193,6 +191,14 @@
       "decision": "withdraw",
       "reason": "《楼间》也撤掉。每步操作都几乎只有一种选择，毫无思考难度",
       "feedback": "docs/archive/reviews/multilayer-rejection-20261014.md"
+    },
+    {
+      "date": "2026-10-14",
+      "mapId": "8f3d1d3d87c58f50efe56273228cf24efcd2c0390dd41573a9a9e9643301bd4a",
+      "title": "相让",
+      "decision": "not_added_without_explicit_user_selection",
+      "feedback": "docs/archive/reviews/reciprocal-braking-review-20261014.md",
+      "reason": "复杂性太低，主要只有第2步后左右选择；默认不入集"
     }
   ],
   "qualityReviews": [
@@ -233,6 +239,18 @@
       "feedback": "docs/archive/reviews/multilayer-rejection-20261014.md",
       "gallerySelectionGiven": true,
       "currentGallerySelected": false
+    },
+    {
+      "date": "2026-10-14",
+      "mapId": "8f3d1d3d87c58f50efe56273228cf24efcd2c0390dd41573a9a9e9643301bd4a",
+      "title": "相让",
+      "summary": "复杂性太低，随手即解；唯一需要考虑的是第2步后左或下",
+      "numericScore": null,
+      "userReportsCleared": true,
+      "actualActions": null,
+      "gallerySelectionGiven": false,
+      "currentGallerySelected": false,
+      "feedback": "docs/archive/reviews/reciprocal-braking-review-20261014.md"
     }
   ],
   "quarantinedMaps": [
@@ -256,5 +274,7 @@
       "audit": "data/manifests/stair-mechanics-20261013.json"
     }
   ],
-  "previousEvidence": "data/manifests/stair-mechanics-20261013.json"
+  "previousEvidence": "data/manifests/stair-mechanics-20261013.json",
+  "defaultGalleryStatus": "not_selected_unless_user_explicitly_adds",
+  "galleryApprovalRequests": false
 }
