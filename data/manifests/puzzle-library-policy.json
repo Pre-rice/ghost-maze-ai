@@ -22,8 +22,7 @@
     "9d6ff40dc2c47f3f76e2dbb0b92a799d284ae95fd50bb27754c6c118e0ed2549"
   ],
   "galleryPendingDecision": [
-    "4c871b9f2939847b08c243a4ae0ce0a41db6cf6ec4afa071850e8d8e47a3ec17",
-    "9d6ff40dc2c47f3f76e2dbb0b92a799d284ae95fd50bb27754c6c118e0ed2549"
+    "4c871b9f2939847b08c243a4ae0ce0a41db6cf6ec4afa071850e8d8e47a3ec17"
   ],
   "retiredMapIds": [
     "fc9465801c80df6301490706e1c8a707f7e0a8189a35b4ba40a007e86f1b371a",
@@ -88,11 +87,12 @@
     {
       "mapId": "05f34641c0857e4927cbac3ba4f6363c072376b23d8df99c296b95e65be9fa33",
       "path": "examples/stair-relocation-repair-20261014/evidence.json",
-      "role": "maintenance_of_selected_intro",
+      "role": "mechanically_valid_user_withdrawn_from_gallery",
       "parentMapId": "39e2a07b02398c38449b7d3da8dec407a3ebb38e92e8cf5c71e12926ed05a1da",
       "familyId": "multilayer-stair-relocation-v1",
-      "humanReviewOfRepair": null,
-      "originalFeedbackAppliesToOriginalOnly": true
+      "humanReviewOfRepair": "每步操作都几乎只有一种选择，毫无思考难度",
+      "originalFeedbackAppliesToOriginalOnly": true,
+      "feedback": "docs/archive/reviews/multilayer-rejection-20261014.md"
     },
     {
       "mapId": "4c871b9f2939847b08c243a4ae0ce0a41db6cf6ec4afa071850e8d8e47a3ec17",
@@ -104,9 +104,10 @@
     {
       "mapId": "9d6ff40dc2c47f3f76e2dbb0b92a799d284ae95fd50bb27754c6c118e0ed2549",
       "path": "examples/control-face-20261014/evidence.json",
-      "role": "unrated_new_candidate",
+      "role": "mechanically_valid_user_rejected_for_gallery",
       "familyId": "door-cooperation-20261013-v1",
-      "planningManifestIncluded": false
+      "planningManifestIncluded": false,
+      "feedback": "docs/archive/reviews/multilayer-rejection-20261014.md"
     }
   ],
   "planningFamilyIds": {
@@ -166,6 +167,22 @@
       "title": "楼间",
       "parentMapId": "39e2a07b02398c38449b7d3da8dec407a3ebb38e92e8cf5c71e12926ed05a1da",
       "reason": "继续执行中修补已选入门关；原图与旧评述不覆盖，不新占地图集位置"
+    },
+    {
+      "date": "2026-10-14",
+      "mapId": "9d6ff40dc2c47f3f76e2dbb0b92a799d284ae95fd50bb27754c6c118e0ed2549",
+      "title": "隔岸",
+      "decision": "do_not_add",
+      "reason": "不入。这张图里面楼梯根本没有发挥关键性作用啊。在两层间来回和在两个区域间来回没有什么区别，反复切换只会增加玩家的操作复杂度。而且观察起来也不便。",
+      "feedback": "docs/archive/reviews/multilayer-rejection-20261014.md"
+    },
+    {
+      "date": "2026-10-14",
+      "mapId": "05f34641c0857e4927cbac3ba4f6363c072376b23d8df99c296b95e65be9fa33",
+      "title": "楼间",
+      "decision": "withdraw",
+      "reason": "《楼间》也撤掉。每步操作都几乎只有一种选择，毫无思考难度",
+      "feedback": "docs/archive/reviews/multilayer-rejection-20261014.md"
     }
   ],
   "qualityReviews": [
@@ -186,6 +203,26 @@
       "numericScore": null,
       "gallerySelectionGiven": true,
       "eurekaConfirmedByUser": null
+    },
+    {
+      "date": "2026-10-14",
+      "mapId": "9d6ff40dc2c47f3f76e2dbb0b92a799d284ae95fd50bb27754c6c118e0ed2549",
+      "title": "隔岸",
+      "summary": "不入。这张图里面楼梯根本没有发挥关键性作用啊。在两层间来回和在两个区域间来回没有什么区别，反复切换只会增加玩家的操作复杂度。而且观察起来也不便。",
+      "numericScore": null,
+      "feedback": "docs/archive/reviews/multilayer-rejection-20261014.md",
+      "gallerySelectionGiven": true,
+      "currentGallerySelected": false
+    },
+    {
+      "date": "2026-10-14",
+      "mapId": "05f34641c0857e4927cbac3ba4f6363c072376b23d8df99c296b95e65be9fa33",
+      "title": "楼间",
+      "summary": "《楼间》也撤掉。每步操作都几乎只有一种选择，毫无思考难度",
+      "numericScore": null,
+      "feedback": "docs/archive/reviews/multilayer-rejection-20261014.md",
+      "gallerySelectionGiven": true,
+      "currentGallerySelected": false
     }
   ],
   "quarantinedMaps": [

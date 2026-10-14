@@ -6,10 +6,10 @@
 
 - [当前状态](docs/status.md)：只保留有效结果与下一步停点。
 - [持续设计方法](docs/methodology.md)：尤里卡时刻、正反经验、设计卡与反馈循环，每次设计前读。
-- [地图集设计小册](https://github.com/Pre-rice/ghost-maze/blob/main/docs/map-design-guide.md)：十二张已上架图的基本信息、设计思想、关键发现和简评；含答案。
+- [地图集设计小册](https://github.com/Pre-rice/ghost-maze/blob/main/docs/map-design-guide.md)：十一张已上架图的基本信息、设计思想、关键发现和简评；含答案。
 - [文档索引](docs/README.md)：工程、资料与历史按任务查阅。
 
-《再借》获“妙、非常棒、很有新意”的肯定；《楼间》被定位为基础多层入门并选入，十二张按首次交付顺序。《楼间》原件留存，现已完成原入门位置的规则修补；当前十五图653条最优动作状态、三个保守亲缘组已制备，虚空视线修正后全部物理观察／动作保持，原资料不覆盖；动作行数和拆分组数不等于独立质量样本。详见[状态](docs/status.md)及[清单v11](data/manifests/planning-library-20261014-v11.json)。
+《再借》获“妙、非常棒、很有新意”的肯定；《隔岸》明确不入集，《楼间》因操作几乎唯一而撤出，当前十一张按首次交付顺序。既有十五图653条规划事实保持，三组亲缘关系不变；仅撤图身份和反馈元数据迁移，不作为质量正例。详见[状态](docs/status.md)及[清单v12](data/manifests/planning-library-20261014-v12.json)。
 
 ## 运行
 
@@ -33,4 +33,4 @@ check、verify:seeds分别核对引擎与原种子；真实core修改才更新�
 
 每次交付或反馈更新本体[总目录](https://github.com/Pre-rice/ghost-maze/blob/main/docs/ai-map-catalog.md)；上架图同步小册，经验只提炼至方法文档，过程进archive。源代码通过Git保存；完整真人资料、未跟踪反馈和runs通过[私人资料包](docs/codex-cloud.md)另存新快照。
 
-当前按用户要求完成中途重整，报告交付后暂停，不自动开始新图或训练。此前训练计划与旧交接保留为[档案](docs/archive/README.md)，不是必须执行的路线。
+当前按用户要求自主持续推进谜题设计，候选与提交不是停点，模型训练不自动启动。此前训练计划与旧交接保留为[档案](docs/archive/README.md)，不是必须执行的路线。

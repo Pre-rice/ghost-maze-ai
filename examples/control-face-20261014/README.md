@@ -1,6 +1,6 @@
 # 《隔岸》
 
-2026-10-14 新候选。两层共13格、一只鬼、两个A按钮、三扇A门、一扇普通门、两对楼梯；没有钥匙或玻璃。出生点就在下层按钮，可以先观察两层。尚无真人评价，未入地图集。
+2026-10-14 新候选。两层共13格、一只鬼、两个A按钮、三扇A门、一扇普通门、两对楼梯；没有钥匙或玻璃。出生点就在下层按钮，可以先观察两层。用户2026-10-14明确不入集：认为两层往返与两个普通区域往返相同，楼梯不具关键价值，反而增加操作和观察负担。[原话及复盘](../../docs/archive/reviews/multilayer-rejection-20261014.md)。
 
 [试玩](https://ghostmaze.novic.cc/?map=AWN4wMDA2MjIwMDA4qDDwMDI0ACEICDEyLCAASjH2NwMkuVwYGWoYWBuiGFoLGAByTMyzGhUEAErdWAqAAA)。网站“求解”可查看最优解，当前19步且唯一；这不代表已达到高挑战或精妙目标。
 
@@ -11,7 +11,7 @@
 
 楼梯在这里用来改变“谁能安全操作开关”的关系，而非只把原来的困鬼流程送上楼。两个可达局面中，鬼位、门态、玩家平面坐标、钥匙和生命都相同，只是玩家所在层不同：在上层再按A死亡，在下层按A安全，鬼保持原位。差别来自可观察的楼层，不来自隐藏编号或步数。
 
-这个用途改变只是设计者预期，尚未收到用户的顿悟反馈。[参考回放](https://ghostmaze.novic.cc/?map=AWN4wMDA2MjIwMDA4qDDwMDI0ACEICDEyLCAASjH2NwMkuVwYGWoYWBuiGFoLGAByTMyzGhUEAErdWAqAAA&replay=NuJdNPCoRJb52YA)，19步，其中三次A操作；没有证明所有通关都恰好三次A。
+这个用途改变是原设计者预期，已被用户指出不足：普通区域可保留同一推理，不能据机械必要性宣称楼梯价值。[参考回放](https://ghostmaze.novic.cc/?map=AWN4wMDA2MjIwMDA4qDDwMDI0ACEICDEyLCAASjH2NwMkuVwYGWoYWBuiGFoLGAByTMyzGhUEAErdWAqAAA&replay=NuJdNPCoRJb52YA)，19步，其中三次A操作；没有证明所有通关都恰好三次A。
 
 </details>
 

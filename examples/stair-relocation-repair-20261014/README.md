@@ -1,6 +1,6 @@
 # 《楼间》规则修补版
 
-2026-10-14。两层共11格、一鬼、一个A按钮、两扇同相A门、两对楼梯，无钥匙、普通门或玻璃。延续已选入的基础多层入门位置，不作为新独立作品或高难度主线突破。用户对[原版](../stair-relocation-20261013/README.md)的评价保留，修补版没有收到新的真人评价，humanQuality:null。
+2026-10-14。两层共11格、一鬼、一个A按钮、两扇同相A门、两对楼梯，无钥匙、普通门或玻璃。曾维护已选入的基础多层入门位置；2026-10-14用户因“每步操作都几乎只有一种选择，毫无思考难度”撤出地图集。[原话及复盘](../../docs/archive/reviews/multilayer-rejection-20261014.md)。用户对[原版](../stair-relocation-20261013/README.md)的评价保留，生成时humanQuality:null保持；新的定性负反馈另存，不补造数值分。
 
 [正式站试玩](https://ghostmaze.novic.cc/?map=AWN4wMDAwOR8gIGBiYGBgcVhgQcDGDCt4nAAMzjkQKQLkwILkG7Y6agBkWdllGmAsBQcAA)。网站“求解”提供全部最优路线；下文含关键。
 
@@ -13,7 +13,7 @@
 
 普通门在修补后删去也保持19步、原最优动作与核心关系，故去除。最短19且唯一；所有无伤无复活通关都需至少两次鬼跨层。去掉终点重放仍安全。五个可删非实体格中，桥接格删除会无解，隔离鬼的连接格删除会退化为5步直达，不是冗余格。
 
-[参考回放](REhttps://ghostmaze.novic.cc/?map=AWN4wMDAwOR8gIGBiYGBgcVhgQcDGDCt4nAAMzjkQKQLkwILkG7Y6agBkWdllGmAsBQcAA)。这是一版入门关维护，不能把机械必要性或亲缘原版的好评当作新顿悟证据。
+[参考回放](https://ghostmaze.novic.cc/?map=AWN4wMDAwOR8gIGBiYGBgcVhgQcDGDCt4nAAMzjkQKQLkwILkG7Y6agBkWdllGmAsBQcAA&replay=NnxkDKcpsteXxcA)。这是一版入门关维护，不能把机械必要性或亲缘原版的好评当作新顿悟证据。
 
 </details>
 
