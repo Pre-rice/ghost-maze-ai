@@ -1,6 +1,6 @@
 # 《周转》
 
-2026-10-14。单层17格、两只鬼、A／B各一个按钮、五扇字母门与两扇普通门；无钥匙、玻璃或楼梯，初态可观察。未获真人评价，默认未入地图集。
+2026-10-14。单层17格、两只鬼、A／B各一个按钮、五扇字母门与两扇普通门；无钥匙、玻璃或楼梯，初态可观察。生成时未获评价；本轮用户评价“难度一般，但设计还不错”，明确上架的是[用户15格优化版](../gallery-adjustments-20261014/README.md)，本17格原图及证据留档。
 
 [试玩](https://ghostmaze.novic.cc/?map=AADAAGBgfHh4AAFCYCM6AggEggBQEAcqHCgOBVAAAAAkBICOchCCwxAAAAQIYAY)。网站求解可查看全部最优入口。
 

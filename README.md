@@ -6,10 +6,10 @@
 
 - [当前状态](docs/status.md)：只保留有效结果与下一步停点。
 - [持续设计方法](docs/methodology.md)：尤里卡时刻、正反经验、设计卡与反馈循环，每次设计前读。
-- [地图集设计小册](https://github.com/Pre-rice/ghost-maze/blob/main/docs/map-design-guide.md)：十一张已上架图的基本信息、设计思想、关键发现和简评；含答案。
+- [地图集设计小册](https://github.com/Pre-rice/ghost-maze/blob/main/docs/map-design-guide.md)：十三张已上架图的基本信息、设计思想、关键发现和简评；含答案。
 - [文档索引](docs/README.md)：工程、资料与历史按任务查阅。
 
-《再借》获“妙、非常棒、很有新意”的肯定；《隔岸》明确不入集，《楼间》因操作几乎唯一而撤出，当前十一张按首次交付顺序。既有十五图653条规划事实保持，三组亲缘关系不变；仅撤图身份和反馈元数据迁移，不作为质量正例。详见[状态](docs/status.md)及[清单v12](data/manifests/planning-library-20261014-v12.json)。
+《再借》获“妙、非常棒、很有新意”的肯定；《隔岸》明确不入集，《楼间》因操作几乎唯一而撤出，当前十三张按首次交付顺序。既有十五图653条规划事实保持，三组亲缘关系不变；仅撤图身份和反馈元数据迁移，不作为质量正例。详见[状态](docs/status.md)及[清单v12](data/manifests/planning-library-20261014-v12.json)。
 
 ## 运行
 
