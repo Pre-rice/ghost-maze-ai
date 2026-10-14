@@ -1,0 +1,906 @@
+{
+  "humanQuality": null,
+  "mapId": "9d6ff40dc2c47f3f76e2dbb0b92a799d284ae95fd50bb27754c6c118e0ed2549",
+  "ruleset": "sha256:9a26362752ae9747499e6265c7de656ff7adb634fdaec1f5f0f7c14e399669f9",
+  "fast": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "sha256:9a26362752ae9747499e6265c7de656ff7adb634fdaec1f5f0f7c14e399669f9",
+    "mapId": "9d6ff40dc2c47f3f76e2dbb0b92a799d284ae95fd50bb27754c6c118e0ed2549",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "withGhosts": true,
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "R",
+        "D",
+        "STAIR",
+        "U",
+        "R",
+        "L",
+        "U",
+        "R",
+        "R",
+        "STAIR",
+        "L",
+        "D",
+        "R",
+        "U",
+        "R",
+        "STAIR",
+        "U",
+        "L",
+        "U"
+      ],
+      "totalActions": 19,
+      "movementCost": 16
+    },
+    "search": {
+      "algorithm": "astar",
+      "expanded": 48,
+      "transitions": 240,
+      "discovered": 52,
+      "exhausted": false,
+      "elapsedMs": 5.485109999999999,
+      "budget": {
+        "nodeBudget": 250000,
+        "stateBudget": 250000,
+        "budgetMs": 30000
+      }
+    }
+  },
+  "reference": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "sha256:9a26362752ae9747499e6265c7de656ff7adb634fdaec1f5f0f7c14e399669f9",
+    "mapId": "9d6ff40dc2c47f3f76e2dbb0b92a799d284ae95fd50bb27754c6c118e0ed2549",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "R",
+        "D",
+        "STAIR",
+        "U",
+        "R",
+        "L",
+        "U",
+        "R",
+        "R",
+        "STAIR",
+        "L",
+        "D",
+        "R",
+        "U",
+        "R",
+        "STAIR",
+        "U",
+        "L",
+        "U"
+      ],
+      "totalActions": 19,
+      "movementCost": 16
+    },
+    "search": {
+      "expanded": 59,
+      "transitions": 291,
+      "discovered": 63,
+      "exhausted": false,
+      "elapsedMs": 12.524370999999995,
+      "budget": {
+        "nodeBudget": 250000,
+        "stateBudget": 250000,
+        "budgetMs": 30000
+      }
+    }
+  },
+  "allOptimal": {
+    "status": "solved",
+    "reason": "goal_reached",
+    "expanded": 60,
+    "transitions": 300,
+    "discovered": 64,
+    "totalActions": 19
+  },
+  "count": "1",
+  "proofs": [
+    {
+      "name": "without_upper_button",
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "expanded": 16,
+      "transitions": 80,
+      "discovered": 16,
+      "totalActions": null,
+      "scope": "原图全部无伤无复活通关必要；按钮使用历史进入完整状态键，非删图证明"
+    },
+    {
+      "name": "without_lower_reopening_after_upper_button",
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "expanded": 48,
+      "transitions": 240,
+      "discovered": 48,
+      "totalActions": null,
+      "scope": "原图全部无伤无复活通关必要；按钮使用历史进入完整状态键，非删图证明"
+    }
+  ],
+  "trace": [
+    {
+      "step": 1,
+      "action": "R",
+      "p": [
+        0,
+        3,
+        3
+      ],
+      "ghosts": [
+        [],
+        [
+          [
+            3,
+            1
+          ]
+        ]
+      ],
+      "diagnostics": []
+    },
+    {
+      "step": 2,
+      "action": "D",
+      "p": [
+        0,
+        3,
+        4
+      ],
+      "ghosts": [
+        [],
+        [
+          [
+            3,
+            1
+          ]
+        ]
+      ],
+      "diagnostics": []
+    },
+    {
+      "step": 3,
+      "action": "STAIR",
+      "p": [
+        1,
+        3,
+        4
+      ],
+      "ghosts": [
+        [],
+        [
+          [
+            3,
+            1
+          ]
+        ]
+      ],
+      "diagnostics": []
+    },
+    {
+      "step": 4,
+      "action": "U",
+      "p": [
+        1,
+        3,
+        3
+      ],
+      "ghosts": [
+        [],
+        [
+          [
+            3,
+            1
+          ]
+        ]
+      ],
+      "diagnostics": []
+    },
+    {
+      "step": 5,
+      "action": "R",
+      "p": [
+        1,
+        3,
+        3
+      ],
+      "ghosts": [
+        [],
+        [
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "diagnostics": []
+    },
+    {
+      "step": 6,
+      "action": "L",
+      "p": [
+        1,
+        2,
+        3
+      ],
+      "ghosts": [
+        [],
+        [
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "diagnostics": []
+    },
+    {
+      "step": 7,
+      "action": "U",
+      "p": [
+        1,
+        2,
+        2
+      ],
+      "ghosts": [
+        [],
+        [
+          [
+            2,
+            3
+          ]
+        ]
+      ],
+      "diagnostics": []
+    },
+    {
+      "step": 8,
+      "action": "R",
+      "p": [
+        1,
+        3,
+        2
+      ],
+      "ghosts": [
+        [],
+        [
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "diagnostics": []
+    },
+    {
+      "step": 9,
+      "action": "R",
+      "p": [
+        1,
+        4,
+        2
+      ],
+      "ghosts": [
+        [],
+        [
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "diagnostics": []
+    },
+    {
+      "step": 10,
+      "action": "STAIR",
+      "p": [
+        0,
+        4,
+        2
+      ],
+      "ghosts": [
+        [],
+        [
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "diagnostics": []
+    },
+    {
+      "step": 11,
+      "action": "L",
+      "p": [
+        0,
+        3,
+        2
+      ],
+      "ghosts": [
+        [],
+        [
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "diagnostics": []
+    },
+    {
+      "step": 12,
+      "action": "D",
+      "p": [
+        0,
+        3,
+        3
+      ],
+      "ghosts": [
+        [],
+        [
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "diagnostics": []
+    },
+    {
+      "step": 13,
+      "action": "R",
+      "p": [
+        0,
+        3,
+        3
+      ],
+      "ghosts": [
+        [],
+        [
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "diagnostics": []
+    },
+    {
+      "step": 14,
+      "action": "U",
+      "p": [
+        0,
+        3,
+        2
+      ],
+      "ghosts": [
+        [],
+        [
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "diagnostics": []
+    },
+    {
+      "step": 15,
+      "action": "R",
+      "p": [
+        0,
+        4,
+        2
+      ],
+      "ghosts": [
+        [],
+        [
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "diagnostics": []
+    },
+    {
+      "step": 16,
+      "action": "STAIR",
+      "p": [
+        1,
+        4,
+        2
+      ],
+      "ghosts": [
+        [],
+        [
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "diagnostics": []
+    },
+    {
+      "step": 17,
+      "action": "U",
+      "p": [
+        1,
+        4,
+        1
+      ],
+      "ghosts": [
+        [],
+        [
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "diagnostics": []
+    },
+    {
+      "step": 18,
+      "action": "L",
+      "p": [
+        1,
+        3,
+        1
+      ],
+      "ghosts": [
+        [],
+        [
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "diagnostics": []
+    },
+    {
+      "step": 19,
+      "action": "U",
+      "p": [
+        1,
+        3,
+        0
+      ],
+      "ghosts": [
+        [],
+        [
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "diagnostics": []
+    }
+  ],
+  "physicalAudit": {
+    "reachable": 69,
+    "transitions": 335,
+    "compared": 1005,
+    "sourceAnnotationsIgnorePhysics": true,
+    "reverseOrderAndRenumber": true,
+    "includesFatalActions": true
+  },
+  "controlFaceContrast": {
+    "upperPrefix": [
+      "R",
+      "D",
+      "STAIR",
+      "U",
+      "R"
+    ],
+    "lowerPrefix": [
+      "R",
+      "D",
+      "STAIR",
+      "U",
+      "R",
+      "L",
+      "U",
+      "R",
+      "R",
+      "STAIR",
+      "L",
+      "D"
+    ],
+    "sameGhostsGatesXYKeysHealth": true,
+    "difference": "玩家可见楼层",
+    "upperThirdA": "dead",
+    "lowerThirdA": "safe_ghosts_unchanged"
+  },
+  "entry": {
+    "external": [
+      0,
+      2,
+      3
+    ],
+    "action": "R",
+    "internal": [
+      0,
+      3,
+      3
+    ],
+    "keys": 0,
+    "externalGhosts": 0,
+    "wholeRouteInteriorEqual": true
+  },
+  "trimmedSpawn": {
+    "position": [
+      0,
+      3,
+      3
+    ],
+    "cold": true,
+    "reason": "删冗余下层鬼与两格走廊后，出生直接放在下层按钮，无突出出生格"
+  },
+  "contrasts": [
+    {
+      "edit": {
+        "removeButtonLayer": 0
+      },
+      "status": "proven_unsat"
+    },
+    {
+      "edit": {
+        "removeCell": [
+          0,
+          3,
+          2
+        ]
+      },
+      "status": "proven_unsat"
+    },
+    {
+      "edit": {
+        "removeGhostLayer": 1
+      },
+      "status": "solved",
+      "T": 7,
+      "actions": [
+        "R",
+        "U",
+        "R",
+        "STAIR",
+        "U",
+        "L",
+        "U"
+      ]
+    },
+    {
+      "edit": {
+        "removeButtonLayer": 1
+      },
+      "status": "proven_unsat"
+    },
+    {
+      "edit": {
+        "layer": 1,
+        "axis": "h",
+        "x": 3,
+        "y": 1,
+        "from": {
+          "type": 6,
+          "keys": 0,
+          "letter": "A",
+          "initialState": "closed"
+        },
+        "to": 0
+      },
+      "status": "solved",
+      "T": 10,
+      "actions": [
+        "R",
+        "D",
+        "STAIR",
+        "U",
+        "R",
+        "L",
+        "U",
+        "R",
+        "U",
+        "U"
+      ]
+    },
+    {
+      "edit": {
+        "layer": 1,
+        "axis": "h",
+        "x": 3,
+        "y": 1,
+        "from": {
+          "type": 6,
+          "keys": 0,
+          "letter": "A",
+          "initialState": "closed"
+        },
+        "to": 1
+      },
+      "status": "proven_unsat"
+    },
+    {
+      "edit": {
+        "layer": 1,
+        "axis": "h",
+        "x": 3,
+        "y": 2,
+        "from": {
+          "type": 6,
+          "keys": 0,
+          "letter": "A",
+          "initialState": "open"
+        },
+        "to": 0
+      },
+      "status": "solved",
+      "T": 11,
+      "actions": [
+        "R",
+        "D",
+        "STAIR",
+        "STAIR",
+        "U",
+        "U",
+        "R",
+        "STAIR",
+        "U",
+        "L",
+        "U"
+      ]
+    },
+    {
+      "edit": {
+        "layer": 1,
+        "axis": "h",
+        "x": 3,
+        "y": 2,
+        "from": {
+          "type": 6,
+          "keys": 0,
+          "letter": "A",
+          "initialState": "open"
+        },
+        "to": 1
+      },
+      "status": "proven_unsat"
+    },
+    {
+      "edit": {
+        "layer": 1,
+        "axis": "h",
+        "x": 3,
+        "y": 4,
+        "from": {
+          "type": 6,
+          "keys": 0,
+          "letter": "A",
+          "initialState": "closed"
+        },
+        "to": 0
+      },
+      "status": "solved",
+      "T": 11,
+      "actions": [
+        "D",
+        "STAIR",
+        "STAIR",
+        "U",
+        "R",
+        "U",
+        "R",
+        "STAIR",
+        "U",
+        "L",
+        "U"
+      ]
+    },
+    {
+      "edit": {
+        "layer": 1,
+        "axis": "h",
+        "x": 3,
+        "y": 4,
+        "from": {
+          "type": 6,
+          "keys": 0,
+          "letter": "A",
+          "initialState": "closed"
+        },
+        "to": 1
+      },
+      "status": "solved",
+      "T": 21,
+      "actions": [
+        "R",
+        "U",
+        "R",
+        "STAIR",
+        "L",
+        "D",
+        "R",
+        "L",
+        "U",
+        "R",
+        "R",
+        "STAIR",
+        "L",
+        "D",
+        "R",
+        "U",
+        "R",
+        "STAIR",
+        "U",
+        "L",
+        "U"
+      ]
+    },
+    {
+      "edit": {
+        "layer": 1,
+        "axis": "v",
+        "x": 4,
+        "y": 2,
+        "from": {
+          "type": 2,
+          "keys": 0
+        },
+        "to": 0
+      },
+      "status": "proven_unsat"
+    },
+    {
+      "edit": {
+        "layer": 1,
+        "axis": "v",
+        "x": 4,
+        "y": 2,
+        "from": {
+          "type": 2,
+          "keys": 0
+        },
+        "to": 1
+      },
+      "status": "proven_unsat"
+    },
+    {
+      "edit": {
+        "removeCell": [
+          1,
+          4,
+          1
+        ]
+      },
+      "status": "proven_unsat"
+    },
+    {
+      "edit": {
+        "removeCell": [
+          1,
+          2,
+          2
+        ]
+      },
+      "status": "proven_unsat"
+    },
+    {
+      "edit": {
+        "removeCell": [
+          1,
+          3,
+          2
+        ]
+      },
+      "status": "proven_unsat"
+    },
+    {
+      "edit": {
+        "removeCell": [
+          1,
+          2,
+          3
+        ]
+      },
+      "status": "proven_unsat"
+    }
+  ],
+  "boundary": {
+    "status": "safe",
+    "reason": "all_optimal_routes_avoid_overlap",
+    "mapId": "9d6ff40dc2c47f3f76e2dbb0b92a799d284ae95fd50bb27754c6c118e0ed2549",
+    "ruleset": "sha256:9a26362752ae9747499e6265c7de656ff7adb634fdaec1f5f0f7c14e399669f9",
+    "policy": "all_optimal_routes_avoid_overlap_v2",
+    "glassCount": 0,
+    "expanded": 60,
+    "transitions": 300,
+    "discovered": 63,
+    "optimum": 19,
+    "ignoredFatalOverlap": 0,
+    "observedNonFatalOverlap": null,
+    "safeOptimalWitness": [
+      "R",
+      "D",
+      "STAIR",
+      "U",
+      "R",
+      "L",
+      "U",
+      "R",
+      "R",
+      "STAIR",
+      "L",
+      "D",
+      "R",
+      "U",
+      "R",
+      "STAIR",
+      "U",
+      "L",
+      "U"
+    ],
+    "elapsedMs": 8,
+    "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+  },
+  "actions": [
+    "R",
+    "D",
+    "STAIR",
+    "U",
+    "R",
+    "L",
+    "U",
+    "R",
+    "R",
+    "STAIR",
+    "L",
+    "D",
+    "R",
+    "U",
+    "R",
+    "STAIR",
+    "U",
+    "L",
+    "U"
+  ],
+  "mapCode": "AWN4wMDA2MjIwMDA4qDDwMDI0ACEICDEyLCAASjH2NwMkuVwYGWoYWBuiGFoLGAByTMyzGhUEAErdWAqAAA",
+  "replayCode": "NuJdNPCoRJb52YA"
+}
