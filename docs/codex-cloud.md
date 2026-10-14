@@ -4,6 +4,6 @@
 
 两个仓库同级、main开发；Node.js22.21.1、Python3，AI仓npm ci。统一验收npm run cloud:check，联调npm run cloud:serve -- 4206。运行规则只来自同级本体，vendor为历史。
 
-试玩与回放用正式域名；Sites只预览站点改动。GitHub推送自动部署至Vercel，只核验推送。当前写凭据已实际验证，不沿用旧“缺授权”状态。
+试玩与回放用正式域名；Sites只预览站点改动。网站先给 Sites 预览，用户明确验收后才推送 main；GitHub推送自动部署至Vercel，只核验推送。当前写凭据已实际验证，不沿用旧“缺授权”状态。
 
-新私人反馈／研究须导出新文件名包；保留旧包与原录制，不公开私人资料。旧环境交接的全文见[快照](archive/worklogs/codex-cloud-before-reorganization-20261013.md)。当前任务及停点以[当前状态](status.md)为准；本轮获准维护、边界修正与反思发布后停下，不自动启训练。
+新私人反馈／研究须导出新文件名包；保留旧包与原录制，不公开私人资料。旧环境交接的全文见[快照](archive/worklogs/codex-cloud-before-reorganization-20261013.md)。当前任务及停点以[当前状态](status.md)为准；当前正式版恢复已获准；新版只作预览，交付后等待用户逐项指出编辑器问题，不自动启训练。
