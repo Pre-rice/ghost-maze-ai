@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-14",
+  "kind": "gallery_maintenance_after_user_review",
+  "title": "后路",
+  "initialHumanQuality": null,
+  "humanQuality": null,
+  "parentMapId": "59b73eb8fb5e93a69134ea2653771c558576a4f0c16049c27a16be8d9e30a6b6",
+  "proposalMapId": "b7d003fee5bf5b81a03a57e05a9e42f39f2a847b8993cc1a0cb32ae87e32abaf",
+  "familyId": "dual-loop-relay-v1",
+  "proposalSource": "examples/map-adjustment-candidates-20261014/back-route-reframe/source.json",
+  "feedback": "data/feedback/map-maintenance-review-20261014.json",
+  "originalFeedbackNotTransferred": true,
+  "comparison": {
+    "kind": "last_L_to_R",
+    "originalMapId": "59b73eb8fb5e93a69134ea2653771c558576a4f0c16049c27a16be8d9e30a6b6",
+    "originalT": 59,
+    "originalCount": "4",
+    "allOptimalActionsMapped": true,
+    "allOptimalControlLettersAndGhostPositionsMatched": true,
+    "scope": "只证明全部最优路线的明确映射／控制阶段，不声称所有人类体验或非最优策略完全等价"
+  },
+  "corrections": [
+    {
+      "layer": 0,
+      "axis": "v",
+      "x": 1,
+      "y": 0,
+      "before": {
+        "type": 3,
+        "keys": 3
+      },
+      "after": {
+        "type": 1,
+        "keys": 0
+      },
+      "reason": "旧终点搬移后残留在虚空边界的数字门，改成实墙，不新增通路"
+    }
+  ]
+}

@@ -1,9 +1,9 @@
-# 地图调整候选
+# 地图调整候选原件
 
-2026-10-14。七份机械验收通过、尚未获用户认可的调整；不替换地图集，不继承原图质量标签。
+2026-10-14。此目录保留提交评审时的七份原图、来源、地图码和旧规则证据，生成时的 humanQuality:null 不覆盖。原机械验收漏掉《后路》遗留边界门；不再把当时求解成功称为完整合法性通过。
 
-[逐项调整、试玩与参考报告](https://github.com/Pre-rice/ghost-maze/blob/main/docs/map-adjustments-20261014.md)是给人查阅的入口。各子目录保留map、share、source与evidence；核心反事实另记core-proof。
+本轮用户取消《回位》《同行》改稿，选择《暂驻·轮廓版》，并批准其余改稿更新地图集。《暂驻·紧凑版》只是未选备选，没有负评价。真实决定见[评述](../../docs/archive/reviews/map-maintenance-review-20261014.md)，当前合法版本及新规则证据见[维护目录](../gallery-maintenance-20261014/README.md)。
 
-只读复验：`node examples/map-adjustment-candidates-20261014/verify.mjs`。与原图的比较区分完整最优动作映射、控制阶段和核心发现三种范围，不能混用。
+《后路》原码含非法边界门，现行载入会拒绝；原图、码和旧证据仅留追溯，不能继续作为试玩或复用入口。修补版只把旧边界门改成墙，全部四条最优动作与此原稿一致。
 
-[网页检查](browser-check.json)只作QA，不作真人体验。全部候选中性开局与指定实际入场通过；外部入口除进入边外封墙、零钥匙、无外部鬼，不能扩大为任意整图入口。
+复验现行获准版：`node examples/gallery-maintenance-20261014/verify.mjs`。本目录旧verify入口会明确转到该复验，不重新推荐取消稿。旧[网页检查](browser-check.json)只作当时QA，不是当前合法性证书或真人体验。

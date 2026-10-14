@@ -65,9 +65,9 @@ test('时间和状态预算耗尽均为未知；穷尽才报告无解', () => {
 });
 
 test('无解地图上的零体力消耗按钮循环能被完整去重', () => {
-    const map = smallMap([[1, 2], [3, 2]], [1, 2], [3, 2]);
+    const map = smallMap([[1, 2], [3, 2], [4, 2]], [1, 2], [3, 2]);
     map.buttons = [{ x: 1, y: 2, direction: { dx: 0, dy: -1 }, letter: 'A' }];
-    map.vWalls[2][3] = { type: W.LETTER_DOOR, letter: 'A', initialState: 'closed' };
+    map.vWalls[2][4] = { type: W.LETTER_DOOR, letter: 'A', initialState: 'closed' };
     const result = solveReferenceMap(map, BUDGET);
     assert.equal(result.status, 'proven_unsat');
     assert.equal(result.search.discovered, 2);

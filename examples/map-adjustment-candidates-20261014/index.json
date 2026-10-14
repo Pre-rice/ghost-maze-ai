@@ -1,7 +1,7 @@
 {
   "date": "2026-10-14",
-  "gallerySelection": null,
-  "role": "candidates_waiting_for_user_review_not_gallery_replacements",
+  "gallerySelection": "see_current_maintenance_index",
+  "role": "historical_proposals_reviewed",
   "maps": [
     {
       "id": "return-key",
@@ -54,7 +54,9 @@
           ]
         ],
         "wholeOptimalRoutesInteriorEqual": true
-      }
+      },
+      "reviewDecision": "approve_revision",
+      "successor": "../gallery-maintenance-20261014/return-key"
     },
     {
       "id": "return-place-pair",
@@ -108,7 +110,8 @@
           ]
         ],
         "wholeOptimalRoutesInteriorEqual": true
-      }
+      },
+      "reviewDecision": "reject_revision_keep_original"
     },
     {
       "id": "back-route-reframe",
@@ -161,7 +164,10 @@
           ]
         ],
         "wholeOptimalRoutesInteriorEqual": true
-      }
+      },
+      "reviewDecision": "approve_revision_with_boundary_repair",
+      "successor": "../gallery-maintenance-20261014/back-route-reframe",
+      "currentLegality": "historical_invalid_boundary_source_preserved"
     },
     {
       "id": "stay-compact",
@@ -214,7 +220,8 @@
           ]
         ],
         "wholeOptimalRoutesInteriorEqual": true
-      }
+      },
+      "reviewDecision": "alternative_not_selected_no_negative_feedback"
     },
     {
       "id": "stay-filled",
@@ -267,7 +274,9 @@
           ]
         ],
         "wholeOptimalRoutesInteriorEqual": true
-      }
+      },
+      "reviewDecision": "approve_revision",
+      "successor": "../gallery-maintenance-20261014/stay-filled"
     },
     {
       "id": "companion-fill",
@@ -324,7 +333,8 @@
           ]
         ],
         "wholeOptimalRoutesInteriorEqual": true
-      }
+      },
+      "reviewDecision": "reject_revision_keep_original"
     },
     {
       "id": "reborrow-narrow-wall",
@@ -377,7 +387,11 @@
           ]
         ],
         "wholeOptimalRoutesInteriorEqual": true
-      }
+      },
+      "reviewDecision": "approve_revision",
+      "successor": "../gallery-maintenance-20261014/reborrow-narrow-wall"
     }
-  ]
+  ],
+  "review": "../../data/feedback/map-maintenance-review-20261014.json",
+  "currentMaintenance": "../gallery-maintenance-20261014/index.json"
 }

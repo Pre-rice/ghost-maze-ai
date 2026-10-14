@@ -1,6 +1,6 @@
 {
   "date": "2026-10-14",
-  "ruleset": "sha256:9a26362752ae9747499e6265c7de656ff7adb634fdaec1f5f0f7c14e399669f9",
+  "ruleset": "sha256:045d5a8353422b89980b2d2f0e2a1bf4bebdada54436f8d37792fc42bc675441",
   "defaultStatus": "historical_not_reviewed_do_not_present_or_reuse",
   "presentableMapIds": [
     "68ea8600719d5a5b0ab8fd7161b8f41d01e1ba5e4f972701c1c8134f45ca905b",
@@ -29,12 +29,9 @@
     "f1b00c65b1dbb814bace7e71bbaee38f4687e96920c24421912e486021c24186",
     "4de4193aba5f2f72469f0c421a530e04c436d4e91777d8a6a60901974cd4a995",
     "e9bdf78911aaa8f6405acacf5922ec1f7252792180626eff10b72bfc3c8e145f",
-    "98fe75f8f0fca96da3679d224cf3d48b7b9d3191fb2edb688c6ee1efbd6c4b61",
-    "b7d003fee5bf5b81a03a57e05a9e42f39f2a847b8993cc1a0cb32ae87e32abaf",
-    "6da2930a1ebb76d7504fe587f530cff989943be8ffcfe11dedb71ae9e1fc24ca",
     "df5820de550cab3dabf35533463f7203937c6b24523bd2ad2df77e078e00977c",
-    "759914374ccd5199575a50561d86cc16869dae8f9b246751332773e0ba3c7ba3",
-    "b90330352c5e027977bfdf0d3c295a5f4a7af605cc067c0c0d409053c4c62d03"
+    "b90330352c5e027977bfdf0d3c295a5f4a7af605cc067c0c0d409053c4c62d03",
+    "5176ec3d2668cf7a3c1f15af0a13752781e78ccdb9b9d37d9642beb4ffa26281"
   ],
   "galleryPendingDecision": [],
   "retiredMapIds": [
@@ -50,11 +47,12 @@
     "鬼编号和列表排列不影响后继",
     "最优性或边界审查未完成时为未知，不得交付",
     "配对楼梯格是相邻格；抵达即互见追击，上下楼时两层各按新旧位置行动一步；不能利用额外停顿",
-    "活动格虚空中断玩家与鬼的直线视野，不得依赖隔空追击"
+    "活动格虚空中断玩家与鬼的直线视野，不得依赖隔空追击",
+    "门和玻璃的两侧必须为活动格；外圈和虚空边界为墙，原始非法输入不得以规范化求解放行"
   ],
   "policy": "all_optimal_routes_avoid_overlap_v2",
   "previousStrictAudit": "data/manifests/rule-boundaries-20261012.json",
-  "currentEvidence": "data/manifests/void-visibility-20261014.json",
+  "currentEvidence": "data/manifests/boundary-integrity-20261014.json",
   "additionalEvidence": [
     {
       "mapId": "da04fd50773b66da2c809a099933edeb94a74e0b29cb2d2e70d59e8894e69def",
@@ -198,16 +196,17 @@
     {
       "mapId": "e9bdf78911aaa8f6405acacf5922ec1f7252792180626eff10b72bfc3c8e145f",
       "path": "examples/map-adjustment-candidates-20261014/return-key/evidence.json",
-      "role": "mechanically_valid_unapproved_revision_candidate",
+      "role": "historical_proposal_revalidated_as_authorized_maintenance",
       "familyId": "dual-loop-relay-v1",
       "planningManifestIncluded": false,
-      "gallerySelected": false,
-      "comparisonScope": "same_actions"
+      "gallerySelected": true,
+      "comparisonScope": "same_actions",
+      "currentEvidence": "examples/gallery-maintenance-20261014/index.json"
     },
     {
       "mapId": "98fe75f8f0fca96da3679d224cf3d48b7b9d3191fb2edb688c6ee1efbd6c4b61",
       "path": "examples/map-adjustment-candidates-20261014/return-place-pair/evidence.json",
-      "role": "mechanically_valid_unapproved_revision_candidate",
+      "role": "historical_reviewed_revision_not_current_reuse",
       "familyId": "dual-loop-relay-v1",
       "planningManifestIncluded": false,
       "gallerySelected": false,
@@ -216,7 +215,7 @@
     {
       "mapId": "b7d003fee5bf5b81a03a57e05a9e42f39f2a847b8993cc1a0cb32ae87e32abaf",
       "path": "examples/map-adjustment-candidates-20261014/back-route-reframe/evidence.json",
-      "role": "mechanically_valid_unapproved_revision_candidate",
+      "role": "historical_reviewed_revision_not_current_reuse",
       "familyId": "dual-loop-relay-v1",
       "planningManifestIncluded": false,
       "gallerySelected": false,
@@ -225,7 +224,7 @@
     {
       "mapId": "6da2930a1ebb76d7504fe587f530cff989943be8ffcfe11dedb71ae9e1fc24ca",
       "path": "examples/map-adjustment-candidates-20261014/stay-compact/evidence.json",
-      "role": "mechanically_valid_unapproved_revision_candidate",
+      "role": "historical_reviewed_revision_not_current_reuse",
       "familyId": "door-cooperation-20261013-v1",
       "planningManifestIncluded": false,
       "gallerySelected": false,
@@ -234,16 +233,17 @@
     {
       "mapId": "df5820de550cab3dabf35533463f7203937c6b24523bd2ad2df77e078e00977c",
       "path": "examples/map-adjustment-candidates-20261014/stay-filled/evidence.json",
-      "role": "mechanically_valid_unapproved_revision_candidate",
+      "role": "historical_proposal_revalidated_as_authorized_maintenance",
       "familyId": "door-cooperation-20261013-v1",
       "planningManifestIncluded": false,
-      "gallerySelected": false,
-      "comparisonScope": "omit_first_and_last"
+      "gallerySelected": true,
+      "comparisonScope": "omit_first_and_last",
+      "currentEvidence": "examples/gallery-maintenance-20261014/index.json"
     },
     {
       "mapId": "759914374ccd5199575a50561d86cc16869dae8f9b246751332773e0ba3c7ba3",
       "path": "examples/map-adjustment-candidates-20261014/companion-fill/evidence.json",
-      "role": "mechanically_valid_unapproved_revision_candidate",
+      "role": "historical_reviewed_revision_not_current_reuse",
       "familyId": "dual-loop-relay-v1",
       "planningManifestIncluded": false,
       "gallerySelected": false,
@@ -252,10 +252,51 @@
     {
       "mapId": "b90330352c5e027977bfdf0d3c295a5f4a7af605cc067c0c0d409053c4c62d03",
       "path": "examples/map-adjustment-candidates-20261014/reborrow-narrow-wall/evidence.json",
-      "role": "mechanically_valid_unapproved_revision_candidate",
+      "role": "historical_proposal_revalidated_as_authorized_maintenance",
       "familyId": "door-cooperation-20261013-v1",
       "planningManifestIncluded": false,
-      "gallerySelected": false,
+      "gallerySelected": true,
+      "comparisonScope": "core_discovery_preserved_with_changed_stages",
+      "currentEvidence": "examples/gallery-maintenance-20261014/index.json"
+    },
+    {
+      "mapId": "e9bdf78911aaa8f6405acacf5922ec1f7252792180626eff10b72bfc3c8e145f",
+      "path": "examples/gallery-maintenance-20261014/return-key/evidence.json",
+      "role": "user_authorized_gallery_maintenance_current_certificate",
+      "familyId": "dual-loop-relay-v1",
+      "ruleset": "sha256:045d5a8353422b89980b2d2f0e2a1bf4bebdada54436f8d37792fc42bc675441",
+      "planningManifestIncluded": false,
+      "gallerySelected": true,
+      "comparisonScope": "same_actions"
+    },
+    {
+      "mapId": "5176ec3d2668cf7a3c1f15af0a13752781e78ccdb9b9d37d9642beb4ffa26281",
+      "path": "examples/gallery-maintenance-20261014/back-route-reframe/evidence.json",
+      "role": "user_authorized_gallery_maintenance_current_certificate",
+      "familyId": "dual-loop-relay-v1",
+      "ruleset": "sha256:045d5a8353422b89980b2d2f0e2a1bf4bebdada54436f8d37792fc42bc675441",
+      "planningManifestIncluded": false,
+      "gallerySelected": true,
+      "comparisonScope": "last_L_to_R"
+    },
+    {
+      "mapId": "df5820de550cab3dabf35533463f7203937c6b24523bd2ad2df77e078e00977c",
+      "path": "examples/gallery-maintenance-20261014/stay-filled/evidence.json",
+      "role": "user_authorized_gallery_maintenance_current_certificate",
+      "familyId": "door-cooperation-20261013-v1",
+      "ruleset": "sha256:045d5a8353422b89980b2d2f0e2a1bf4bebdada54436f8d37792fc42bc675441",
+      "planningManifestIncluded": false,
+      "gallerySelected": true,
+      "comparisonScope": "omit_first_and_last"
+    },
+    {
+      "mapId": "b90330352c5e027977bfdf0d3c295a5f4a7af605cc067c0c0d409053c4c62d03",
+      "path": "examples/gallery-maintenance-20261014/reborrow-narrow-wall/evidence.json",
+      "role": "user_authorized_gallery_maintenance_current_certificate",
+      "familyId": "door-cooperation-20261013-v1",
+      "ruleset": "sha256:045d5a8353422b89980b2d2f0e2a1bf4bebdada54436f8d37792fc42bc675441",
+      "planningManifestIncluded": false,
+      "gallerySelected": true,
       "comparisonScope": "core_discovery_preserved_with_changed_stages"
     }
   ],
@@ -293,7 +334,8 @@
     "6da2930a1ebb76d7504fe587f530cff989943be8ffcfe11dedb71ae9e1fc24ca": "door-cooperation-20261013-v1",
     "df5820de550cab3dabf35533463f7203937c6b24523bd2ad2df77e078e00977c": "door-cooperation-20261013-v1",
     "759914374ccd5199575a50561d86cc16869dae8f9b246751332773e0ba3c7ba3": "dual-loop-relay-v1",
-    "b90330352c5e027977bfdf0d3c295a5f4a7af605cc067c0c0d409053c4c62d03": "door-cooperation-20261013-v1"
+    "b90330352c5e027977bfdf0d3c295a5f4a7af605cc067c0c0d409053c4c62d03": "door-cooperation-20261013-v1",
+    "5176ec3d2668cf7a3c1f15af0a13752781e78ccdb9b9d37d9642beb4ffa26281": "dual-loop-relay-v1"
   },
   "galleryDecisions": [
     {
@@ -355,6 +397,60 @@
       "decision": "not_added_without_explicit_user_selection",
       "feedback": "docs/archive/reviews/reciprocal-braking-review-20261014.md",
       "reason": "复杂性太低，主要只有第2步后左右选择；默认不入集"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "归途",
+      "mapId": "e9bdf78911aaa8f6405acacf5922ec1f7252792180626eff10b72bfc3c8e145f",
+      "proposalMapId": "e9bdf78911aaa8f6405acacf5922ec1f7252792180626eff10b72bfc3c8e145f",
+      "decision": "approve_revision",
+      "reason": "由其余改稿获准确定；未单独报告质量评价。",
+      "feedback": "docs/archive/reviews/map-maintenance-review-20261014.md"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "回位",
+      "mapId": "98fe75f8f0fca96da3679d224cf3d48b7b9d3191fb2edb688c6ee1efbd6c4b61",
+      "proposalMapId": "98fe75f8f0fca96da3679d224cf3d48b7b9d3191fb2edb688c6ee1efbd6c4b61",
+      "decision": "reject_revision_keep_original",
+      "reason": "原按钮B在2×3空白区中间，居中匀称；不是否定原图。",
+      "feedback": "docs/archive/reviews/map-maintenance-review-20261014.md"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "后路",
+      "mapId": "5176ec3d2668cf7a3c1f15af0a13752781e78ccdb9b9d37d9642beb4ffa26281",
+      "proposalMapId": "b7d003fee5bf5b81a03a57e05a9e42f39f2a847b8993cc1a0cb32ae87e32abaf",
+      "decision": "approve_revision_with_boundary_repair",
+      "reason": "认可轮廓，另要求边界必须是墙；遗留边界门清理后更新。",
+      "feedback": "docs/archive/reviews/map-maintenance-review-20261014.md"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "暂驻",
+      "mapId": "df5820de550cab3dabf35533463f7203937c6b24523bd2ad2df77e078e00977c",
+      "proposalMapId": "df5820de550cab3dabf35533463f7203937c6b24523bd2ad2df77e078e00977c",
+      "decision": "approve_revision",
+      "reason": "选择轮廓版；不把另一备选写成负评价。",
+      "feedback": "docs/archive/reviews/map-maintenance-review-20261014.md"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "同行",
+      "mapId": "759914374ccd5199575a50561d86cc16869dae8f9b246751332773e0ba3c7ba3",
+      "proposalMapId": "759914374ccd5199575a50561d86cc16869dae8f9b246751332773e0ba3c7ba3",
+      "decision": "reject_revision_keep_original",
+      "reason": "原转角无须填补；新增格冗余；不是否定原图。",
+      "feedback": "docs/archive/reviews/map-maintenance-review-20261014.md"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "再借",
+      "mapId": "b90330352c5e027977bfdf0d3c295a5f4a7af605cc067c0c0d409053c4c62d03",
+      "proposalMapId": "b90330352c5e027977bfdf0d3c295a5f4a7af605cc067c0c0d409053c4c62d03",
+      "decision": "approve_revision",
+      "reason": "保留重新引动已安置鬼阻挡另一鬼的核心，认可大胆简化。",
+      "feedback": "docs/archive/reviews/map-maintenance-review-20261014.md"
     }
   ],
   "qualityReviews": [
@@ -407,6 +503,56 @@
       "gallerySelectionGiven": false,
       "currentGallerySelected": false,
       "feedback": "docs/archive/reviews/reciprocal-braking-review-20261014.md"
+    },
+    {
+      "date": "2026-10-14",
+      "mapId": "98fe75f8f0fca96da3679d224cf3d48b7b9d3191fb2edb688c6ee1efbd6c4b61",
+      "title": "回位",
+      "summary": "《回位》改得不好，本来也没离多远，你这样一改反而不美观了，按钮B本来放在2*3空白区的中间，停匀称的，取消该更改。",
+      "numericScore": null,
+      "actualActions": null,
+      "feedback": "docs/archive/reviews/map-maintenance-review-20261014.md",
+      "scope": "本轮调整稿，不否定原图或继承原图好评"
+    },
+    {
+      "date": "2026-10-14",
+      "mapId": "5176ec3d2668cf7a3c1f15af0a13752781e78ccdb9b9d37d9642beb4ffa26281",
+      "title": "后路",
+      "summary": "《后路》改得不错",
+      "numericScore": null,
+      "actualActions": null,
+      "feedback": "docs/archive/reviews/map-maintenance-review-20261014.md",
+      "scope": "本轮调整稿，不否定原图或继承原图好评"
+    },
+    {
+      "date": "2026-10-14",
+      "mapId": "df5820de550cab3dabf35533463f7203937c6b24523bd2ad2df77e078e00977c",
+      "title": "暂驻",
+      "summary": "暂驻·轮廓版不错，美观了很多。",
+      "numericScore": null,
+      "actualActions": null,
+      "feedback": "docs/archive/reviews/map-maintenance-review-20261014.md",
+      "scope": "本轮调整稿，不否定原图或继承原图好评"
+    },
+    {
+      "date": "2026-10-14",
+      "mapId": "759914374ccd5199575a50561d86cc16869dae8f9b246751332773e0ba3c7ba3",
+      "title": "同行",
+      "summary": "《同行》改的是何意味？本来也没什么问题，你一加多了个冗余块了。而且改不改都是一个转角啊，也没什么凹不凹啊，取消该更改。",
+      "numericScore": null,
+      "actualActions": null,
+      "feedback": "docs/archive/reviews/map-maintenance-review-20261014.md",
+      "scope": "本轮调整稿，不否定原图或继承原图好评"
+    },
+    {
+      "date": "2026-10-14",
+      "mapId": "b90330352c5e027977bfdf0d3c295a5f4a7af605cc067c0c0d409053c4c62d03",
+      "title": "再借",
+      "summary": "《再借》改得很好！保留解谜核心的同时大胆简化，这是一个很好的示范。",
+      "numericScore": null,
+      "actualActions": null,
+      "feedback": "docs/archive/reviews/map-maintenance-review-20261014.md",
+      "scope": "本轮调整稿，不否定原图或继承原图好评"
     }
   ],
   "quarantinedMaps": [
@@ -430,26 +576,26 @@
       "audit": "data/manifests/stair-mechanics-20261013.json"
     }
   ],
-  "previousEvidence": "data/manifests/stair-mechanics-20261013.json",
+  "previousEvidence": "data/manifests/void-visibility-20261014.json",
   "defaultGalleryStatus": "not_selected_unless_user_explicitly_adds",
   "galleryApprovalRequests": false,
-  "currentGalleryRevisionIndex": "examples/gallery-adjustments-20261014/index.json",
+  "currentGalleryRevisionIndex": "examples/gallery-maintenance-20261014/index.json",
   "currentGalleryMapIds": [
     "e3d3a67fcbc7bc13f1a1457d00bd44652d6dce67085c55f77600ae1b582bb161",
     "e2e2d43f2fdf4182f1952731b746260cdde29266422b7d760f2cf253e2b2b771",
-    "eff99b816d9fe4af0e5dd61894113a74b0cd8a0e7e420b12c5257ba1c5233078",
+    "e9bdf78911aaa8f6405acacf5922ec1f7252792180626eff10b72bfc3c8e145f",
     "f1b00c65b1dbb814bace7e71bbaee38f4687e96920c24421912e486021c24186",
     "b76d1e9209f5ea4c42fec71b6e69745119d382ef35497575383145c693126b3b",
     "8e364828efdeb4858ae856a1e9c9f4b627555f8e0658a88d9a0053c8febe7102",
     "ec6dbc7738c836baf3af954c11de993c6a2decf9e3f6378408d4682efad406e9",
     "4de4193aba5f2f72469f0c421a530e04c436d4e91777d8a6a60901974cd4a995",
-    "59b73eb8fb5e93a69134ea2653771c558576a4f0c16049c27a16be8d9e30a6b6",
-    "7019c7d90939874cfc0c4516534fbf032329e535d3f3c0896cf39d0868375bb8",
-    "24c627386996698e350f1a317fa6b20c2e390c800664aa38de8c9e64be92b549",
+    "5176ec3d2668cf7a3c1f15af0a13752781e78ccdb9b9d37d9642beb4ffa26281",
+    "df5820de550cab3dabf35533463f7203937c6b24523bd2ad2df77e078e00977c",
+    "b90330352c5e027977bfdf0d3c295a5f4a7af605cc067c0c0d409053c4c62d03",
     "d5b5556b7b76c88ca20fa3030e97f0a91cc1aaeded50e218e0c3de54b749df75",
     "aab359502f4254db6cc01006be752b2b9e0b23522a866ab4c301784ca15673b5"
   ],
-  "galleryRevisionDecision": "docs/archive/reviews/map-adjustments-20261014.md",
+  "galleryRevisionDecision": "docs/archive/reviews/map-maintenance-review-20261014.md",
   "currentGalleryCount": 13,
-  "planningManifestScope": "planning-library-20261014-v12保留旧15图653行历史机械事实；五份用户新版本和七份自行调整候选未加入，不能把旧图证书当当前地图证书。"
+  "planningManifestScope": "planning-library-20261014-v12保留旧15图653行历史机械事实，边界修正下物理兼容通过；现行四份维护不写入旧清单，不继承质量标签。"
 }

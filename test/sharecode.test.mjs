@@ -35,6 +35,7 @@ test('稀疏自由地图与非默认生命完整往返', () => {
 
 test('多层配对楼梯与所有机关参数完整往返', () => {
     const map = stairMap(true), layer = map.layers[1];
+    for (const y of [1, 2, 3]) for (const x of [2, 3]) layer.activeCells[y][x] = true;
     layer.hWalls[2][2] = {type: W.LOCKED, keys: 256};
     layer.hWalls[3][2] = {type: W.ONE_WAY, direction:{dx:0,dy:1}};
     layer.hWalls[2][3] = {type: W.GLASS};

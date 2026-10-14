@@ -14,3 +14,5 @@
 真实反馈不因归档消失，也不将亲缘图视为新独立好图。现在持续要用的经验在AI[方法](../methodology.md)，人读摘要在本体[设计小册](https://github.com/Pre-rice/ghost-maze/blob/main/docs/map-design-guide.md)。日常入口见[文档索引](../README.md)。
 
 `llm-workflow-v1`为早先保留的原文及清单，未改其字节或校验和；它不限定当前阶段。
+
+本轮[地图改稿评述与反思](reviews/map-maintenance-review-20261014.md)记录取消两稿、采用四稿与边界审查；持续经验已归方法文档。

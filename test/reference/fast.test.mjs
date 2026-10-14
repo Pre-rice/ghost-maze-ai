@@ -92,7 +92,7 @@ test('参考与快速环境同步楼梯当步追击及到达层行动，不能�
 test('33 扇以上动态门的初态、翻转与开锁位互不碰撞', () => {
     const map = smallMap([[3, 6], [4, 6], [5, 6]], [3, 6], [5, 6]);
     map.activeCells = map.activeCells.map(row=>row.map(()=>true));
-    for (let index = 0; index < 33; index++) map.hWalls[Math.floor(index / map.width)][index % map.width] = {
+    for (let index = 0; index < 33; index++) map.hWalls[1 + Math.floor(index / map.width)][index % map.width] = {
         type: W.LETTER_DOOR, letter: index === 0 ? 'A' : index === 32 ? 'B' : 'C', initialState: 'closed'
     };
     map.buttons = [
@@ -105,7 +105,7 @@ test('33 扇以上动态门的初态、翻转与开锁位互不碰撞', () => {
     assert.equal(wallBits(b, env.sim), 1n << 32n);
     assert.notEqual(env.stateKey(a), env.stateKey(b));
     assert.equal(wallBits(env.step(b, 'D'), env.sim), 0n);
-    map.hWalls[4][0].initialState = 'open';
+    map.hWalls[5][0].initialState = 'open';
     const indexed=makeSimulator(map);assert.equal(wallBits(createInitState(indexed), indexed), 1n << 32n);
     map.vWalls[6][4] = { type: W.LOCKED, keys: 0 };
     const locks = createFastEnvironment(map), crossed = locks.step(locks.initialState(), 'R');
