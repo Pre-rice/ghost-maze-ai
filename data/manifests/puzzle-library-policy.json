@@ -1,6 +1,6 @@
 {
   "date": "2026-10-14",
-  "ruleset": "sha256:045d5a8353422b89980b2d2f0e2a1bf4bebdada54436f8d37792fc42bc675441",
+  "ruleset": "sha256:bbe45fc86133d3ddb11cf07f355473a0e905fe6871e89584356dc614c1cdb9f1",
   "defaultStatus": "historical_not_reviewed_do_not_present_or_reuse",
   "presentableMapIds": [
     "68ea8600719d5a5b0ab8fd7161b8f41d01e1ba5e4f972701c1c8134f45ca905b",
@@ -52,7 +52,7 @@
   ],
   "policy": "all_optimal_routes_avoid_overlap_v2",
   "previousStrictAudit": "data/manifests/rule-boundaries-20261012.json",
-  "currentEvidence": "data/manifests/boundary-integrity-20261014.json",
+  "currentEvidence": "data/manifests/single-app-compatibility-20261014.json",
   "additionalEvidence": [
     {
       "mapId": "da04fd50773b66da2c809a099933edeb94a74e0b29cb2d2e70d59e8894e69def",
@@ -576,7 +576,7 @@
       "audit": "data/manifests/stair-mechanics-20261013.json"
     }
   ],
-  "previousEvidence": "data/manifests/void-visibility-20261014.json",
+  "previousEvidence": "data/manifests/boundary-integrity-20261014.json",
   "defaultGalleryStatus": "not_selected_unless_user_explicitly_adds",
   "galleryApprovalRequests": false,
   "currentGalleryRevisionIndex": "examples/gallery-maintenance-20261014/index.json",
@@ -597,5 +597,7 @@
   ],
   "galleryRevisionDecision": "docs/archive/reviews/map-maintenance-review-20261014.md",
   "currentGalleryCount": 13,
-  "planningManifestScope": "planning-library-20261014-v12保留旧15图653行历史机械事实，边界修正下物理兼容通过；现行四份维护不写入旧清单，不继承质量标签。"
+  "planningManifestScope": "planning-library-20261014-v12保留旧15图653行历史机械事实，边界修正下物理兼容通过；现行四份维护不写入旧清单，不继承质量标签。",
+  "displaySolutionGrouping": "逐有效操作比较所有层鬼位，保留停顿；不以内部编号区分；仅网站展示，不缩减全部最优安全审查",
+  "siteOptimizationEvidence": "data/manifests/single-app-browser-20261014.json"
 }

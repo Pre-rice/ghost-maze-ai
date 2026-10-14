@@ -11,6 +11,8 @@
 | 现行规则与设计硬边界 | [design-boundaries](design-boundaries.md) |
 | 全部地图、参考和评述查证 | 本体[总目录](https://github.com/Pre-rice/ghost-maze/blob/main/docs/ai-map-catalog.md) |
 
+集中站点优化的产品结果与兼容验收见本体[交付记录](https://github.com/Pre-rice/ghost-maze/blob/main/docs/archive/delivery/site-optimization-20261014.md)。
+
 ## 按任务查阅
 
 | 任务 | 文档 |
