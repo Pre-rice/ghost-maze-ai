@@ -1,6 +1,8 @@
 # 当前状态
 
-更新：2026-10-14。历史档案不作为现行规则；日常读本页、[方法](methodology.md)与本体[设计小册](https://github.com/Pre-rice/ghost-maze/blob/main/docs/map-design-guide.md)。
+更新：2026-10-15。历史档案不作为现行规则；日常读本页、[方法](methodology.md)与本体[设计小册](https://github.com/Pre-rice/ghost-maze/blob/main/docs/map-design-guide.md)。
+
+- 用户批准的[AI试玩skill](https://github.com/Pre-rice/ghost-maze/blob/main/docs/ai-playtest.md)在本体main实现：手动调用、自主试玩、规则探索、仅给最优步数的挑战，输出过程与感受。29项专项、本体20文件、AI102参考项与4旧工具文件、锁／2原种子／11HTTP检查通过；引擎规则和训练资料未改。普通ChatGPT账号端安装与首次调用尚未实测，见本体交付目录；不将工程演练当真人反馈，主线继续暂停。
 
 - 当前正式版恢复到集中站点优化前；新版与验收原件完整保存在两仓 preview/site-optimization-20261014 分支。错误原因是把实施许可误当发布许可；现行规则为网站先预览、明确认可后才推送 main。恢复授权仅用于旧版恢复，新版地图集调整只在预览。
 - 本轮评审已执行：《回位》《同行》取消改稿，原码保持；《归途》《后路》《暂驻·轮廓版》《再借·窄环版》按授权替换原槽位。当前十三图、名称与顺序不变。[交付报告](https://github.com/Pre-rice/ghost-maze/blob/main/docs/map-adjustments-20261014.md)与[反馈反思](archive/reviews/map-maintenance-review-20261014.md)。
@@ -18,6 +20,6 @@
 
 ## 下一步
 
-交付恢复结果和地图集预览后停下，等待用户逐项提出编辑器问题；不继续新地图设计、生成或训练。
+交付AI试玩安装包与实际验收边界；网站改版仍待用户验收，不继续新地图设计、生成或训练。
 
 最终目标仍是极棒的谜题，实现路线开放；模型训练、付费和GPU不自动启动。发布通过 GitHub main 触发 Vercel，只核验推送；试玩／回放只用正式域名，Sites只作站点改动预览。
