@@ -3,7 +3,7 @@
 更新：2026-10-15。历史档案不作为现行规则；日常读本页、[方法](methodology.md)与本体[设计小册](https://github.com/Pre-rice/ghost-maze/blob/main/docs/map-design-guide.md)。
 
 - 用户最新要求已落实：阶段性主线研究已完成复核与归档，暂停训练，回到本体优化；[阶段结果](https://github.com/Pre-rice/ghost-maze-ai/blob/research/planner-baseline-20261015/docs/planner-training.md)。不再自动开始训练或地图生成。
-- 最新本体35项站点专项与两仓统一验收通过：楼层顺序、两栏间距和控件高度／行距已修正，随机组件预热复用。自检发现视野缩小累积、手机部分层数切栏跳高、键盘焦点等问题，已给方案，按本轮要求待用户审批；正式站未改，主线暂停。[自检报告](https://github.com/Pre-rice/ghost-maze/blob/preview/site-optimization-20261014/docs/archive/reviews/site-ui-ux-20261015.md)、[35项证据](../data/manifests/site-ui-ux-audit-20261015.json)。
+- 最新按授权完成精品13张全景折叠预载、窗口视野稳定、手机多层占位、键盘焦点／选中提示、两区拖动及比例记忆、小字对比；删除保持直接执行，无撤回。59项站点专项／回归及两仓统一验收通过，正式站未改，主线暂停。[执行报告](https://github.com/Pre-rice/ghost-maze/blob/preview/site-optimization-20261014/docs/archive/reviews/site-ui-ux-20261015.md)、[59项证据](../data/manifests/site-ui-polish-20261015.json)。
 - 本轮两阶段43项浏览器验收与两仓统一检查通过：修复越界悬停与经典房间编辑后的视野丢失，数字楼层左右加减，等量留白／统一地图尺度，紧凑工具及输入。追加叠放滑条、点击切换、双列临时存档、四项信息同行、持续求解、编辑两种本地保存和解法卡片，仅更新同一预览。[23项证据](../data/manifests/editor-layout-browser-20261015.json)、[追加20项](../data/manifests/ui-followup-browser-20261015.json)、[逐项交付](https://github.com/Pre-rice/ghost-maze/blob/preview/site-optimization-20261014/docs/archive/delivery/editor-layout-fix-20261015.md)。
 - 上轮验收反馈已落实：主图／全景边缘裁剪、五圆方向键、框内开关与连排按钮、元件就地参数及Tab循环、尺寸适应、顶层删除、清空／填充和临时点删除；仅更新同一独立预览。物理模块、规则锁和十三图保持，详见[本轮QA](../data/manifests/four-column-refinements-browser-20261015.json)。
 - 本分支为四栏目重整预览；正式两个main保持恢复版本。地图／游玩／回放／编辑共用首页，帮助为宽弹窗，旧独立页删除；会话撤销跨死亡与重置、URL存档与未完成草稿、原图形工具／手机手势、渐进加载已完成。仅提交预览分支与既有Sites预览，认可前不正式发布。[本轮交付](https://github.com/Pre-rice/ghost-maze/blob/preview/site-optimization-20261014/docs/archive/delivery/four-column-workspace-20261015.md)。
@@ -25,6 +25,6 @@
 
 ## 下一步
 
-等待用户审核本轮站点修正与新增优化方案；未经明确同意不执行额外方案、不更新正式main，也不自动恢复训练或地图设计。此前“持续推进训练”的步骤已由用户后续“完成阶段后停下、优化本体”的指令覆盖。
+用户已批准的UI方案完成后，等待本轮预览验收；未经明确同意不更新正式main，也不自动恢复训练或地图设计。此前“持续推进训练”的步骤已由用户后续“完成阶段后停下、优化本体”的指令覆盖。
 
 最终目标仍是极棒的谜题，实现路线开放；模型训练、付费和GPU不自动启动。发布通过 GitHub main 触发 Vercel，只核验推送；试玩／回放只用正式域名，Sites只作站点改动预览。
