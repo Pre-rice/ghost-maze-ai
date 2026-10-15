@@ -7,6 +7,7 @@ import {smallMap,keyDetourMap,stairMap} from './fixtures.mjs';
 import {createTreePredictor} from '../../src/training/tree-predictor.js';
 import {solveFastMap} from '../../src/search/fast-solver.js';
 import {solveBacktracking} from '../../src/training/backtracking-solver.js';
+import {buildGhostRelaxation} from '../../src/search/ghost-relaxation.js';
 
 test('完整图的标签包含所有并列最优动作；预算未知不提供精确距离',()=>{
  const m=smallMap([[1,1],[2,1],[1,2],[2,2]],[1,1],[2,2]),g=enumeratePlanningGraph(m);assert.equal(g.status,'exhausted');assert.equal(g.distance[0],2);assert.deepEqual(g.nodes[0].edges.filter(e=>g.distance[e.to]===1).map(e=>e.action).sort(),['D','R']);
@@ -47,4 +48,11 @@ test('原生回溯保留所有分支、重放证书，但不冒称最优',()=>{
  const result=solveBacktracking(keyDetourMap(),{rankCandidate:(s,a,n)=>-n.player.x});assert.equal(result.status,'solved');assert.equal(result.optimality,null);assert(createReferenceEnvironment(keyDetourMap()).replay(result.solution.actions).state.isWon);
  assert.equal(solveBacktracking(keyDetourMap(),{nodeBudget:0}).status,'unknown');assert.equal(solveBacktracking(keyDetourMap(),{stateBudget:1}).status,'unknown');assert.equal(solveBacktracking(keyDetourMap(),{budgetMs:0}).status,'unknown');
  const corridor=smallMap([[1,1],[2,1],[3,1]],[1,1],[3,1]);const forced=solveBacktracking(corridor,{rankCandidate:()=>{throw new Error('唯一新分支不应付推理成本');}});assert.equal(forced.status,'solved');assert.equal(forced.search.rankCalls,0);
+});
+test('关系输入区分隔门冷鬼与开门可见，不改变V2输入或物理局面',()=>{
+ const map=smallMap([[1,1],[2,1],[3,1],[4,1],[1,2],[2,2],[3,2],[4,2]],[1,1],[4,2]);map.initialGhosts=[{x:3,y:1,id:55}];map.vWalls[1][3]={type:6,letter:'A',initialState:'closed'};const env=createReferenceEnvironment(map),s=env.initialState(),open=structuredClone(s);open.layerStates[0].wallStates.v[1][3].currentState='open';const legacy=createPlanningEncoder(map,{version:2}),relational=createPlanningEncoder(map,{version:3}),n=legacy.summarize(s).length,before=JSON.stringify(s);assert.deepEqual(relational.summarize(s).slice(0,n),legacy.summarize(s));assert.equal(relational.summarize(s)[n],0);assert.equal(relational.summarize(open)[n],1);assert(relational.summarize(open)[n+1]<relational.summarize(s)[n+1]);assert.equal(JSON.stringify(s),before);
+});
+test('去鬼子问题保留资源与机关，完整时给下界、预算未知不给假精确值',()=>{
+ const map=keyDetourMap(),env=createReferenceEnvironment(map),table=buildGhostRelaxation(map,{budgetMs:5000});assert.equal(table.status,'exhausted');assert.equal(table.lowerBound(env.initialState()),6);assert.equal(buildGhostRelaxation(map,{nodeBudget:0}).status,'unknown');assert.equal(buildGhostRelaxation(map,{nodeBudget:0}).lowerBound(env.initialState()),null);
+ for(const m of [map,stairMap()]){const a=solveFastMap(m),b=solveFastMap(m,{ghostRelaxation:{budgetMs:5000}}),fallback=solveFastMap(m,{ghostRelaxation:{nodeBudget:0}});assert.equal(b.optimality,'proven');assert.equal(b.solution.totalActions,a.solution.totalActions);assert.equal(fallback.solution.totalActions,a.solution.totalActions);}
 });
