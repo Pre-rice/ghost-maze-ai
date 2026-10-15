@@ -15,9 +15,9 @@ const required={
     finalHandoff:(b,a,n)=>b.player.x===4&&b.player.y===5&&a==='D'&&at(b,0,4,4)&&at(b,1,3,5)&&at(n,0,4,5)&&at(n,1,3,5)
 };
 
-export function verify(){
-    const map=JSON.parse(fs.readFileSync(root+'map.json')),qa=auditMap(map),graph=enumeratePlanningGraph(map);
-    assert.equal(qa.allResult.totalActions,38);assert.equal(qa.count,'2');assert(qa.cold&&qa.entry?.wholeOptimalRoutesInteriorEqual);
+export function verify({map=JSON.parse(fs.readFileSync(root+'map.json')),optimalCount='2'}={}){
+    const qa=auditMap(map),graph=enumeratePlanningGraph(map);
+    assert.equal(qa.allResult.totalActions,38);assert.equal(qa.count,optimalCount);assert(qa.cold&&qa.entry?.wholeOptimalRoutesInteriorEqual);
     assert.equal(graph.status,'exhausted');assert.equal(graph.distance[0],38);assert.equal(graph.safeDistance[0],38);
     const necessity=Object.entries(required).map(([name,forbidden])=>{
         const queue=[0],seen=new Set(queue);let solved=false;

@@ -1,0 +1,131 @@
+{
+  "role": "unpublished_same_family_variant_not_new_quality_sample",
+  "parentMapId": "d0ce276b18920b387d7122a7fa485d9727a8996af43206bb28def0209a233e8e",
+  "variantMapId": "2dd271ecde585e6ff53bccd51ba59a8de3b361772b8f660f1f7da6f8eabb55c1",
+  "engineRevision": "sha256:5861b72bee934007e2679b60f38e3820ad1e2302a6d0a309bb7a59793eefb109",
+  "cells": 15,
+  "ghosts": 2,
+  "shortest": 38,
+  "optimalCount": "1",
+  "necessity": [
+    {
+      "name": "closeWithGuardAbove",
+      "status": "proven_unsat",
+      "states": 73,
+      "scope": "原图全部无伤无复活路线，允许非致死重合；不是改图消融或最短路线过滤"
+    },
+    {
+      "name": "repositionWhileClosed",
+      "status": "proven_unsat",
+      "states": 107,
+      "scope": "原图全部无伤无复活路线，允许非致死重合；不是改图消融或最短路线过滤"
+    },
+    {
+      "name": "releaseNewGuard",
+      "status": "proven_unsat",
+      "states": 233,
+      "scope": "原图全部无伤无复活路线，允许非致死重合；不是改图消融或最短路线过滤"
+    },
+    {
+      "name": "finalHandoff",
+      "status": "proven_unsat",
+      "states": 289,
+      "scope": "原图全部无伤无复活路线，允许非致死重合；不是改图消融或最短路线过滤"
+    }
+  ],
+  "timing": {
+    "withoutOpening": {
+      "status": "proven_unsat",
+      "states": 118
+    },
+    "earlyOpeningCanWin": false,
+    "historyProductStates": 466,
+    "scope": "完整物理图与A关闭／重新打开阶段及早开标记的乘积；所有无伤无复活路线，允许非致死重合",
+    "temptingShortcut": {
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "prefix": [
+        "R",
+        "R",
+        "L",
+        "L",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "actions": null,
+      "optimality": null,
+      "search": {
+        "algorithm": "reference_bfs",
+        "expanded": 66,
+        "discovered": 66,
+        "exhausted": true,
+        "elapsedMs": 8.438216999999895,
+        "nodeBudget": 10000,
+        "budgetMs": 60000
+      }
+    }
+  },
+  "withoutOuterGate": {
+    "shortest": 38,
+    "withoutOpening": {
+      "status": "solved",
+      "steps": 40,
+      "states": 202
+    },
+    "interpretation": "同为38步，但移除外路A门后可永远保留0门40步通关；同最短不表示核心条件保持。"
+  },
+  "QA": {
+    "boundary": "safe",
+    "cold": true,
+    "entry": {
+      "external": [
+        0,
+        1,
+        5
+      ],
+      "actions": [
+        "R",
+        "R"
+      ],
+      "unitArrival": [
+        0,
+        2,
+        5
+      ],
+      "internal": [
+        0,
+        3,
+        5
+      ],
+      "keys": 0,
+      "externalGhosts": 0,
+      "exteriorSealedExceptEntrance": true,
+      "initialInteriorEqual": true,
+      "afterGhosts": [
+        [
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      ],
+      "wholeOptimalRoutesInteriorEqual": true
+    },
+    "physical": {
+      "reachable": 291,
+      "transitions": 1450,
+      "permutations": 2,
+      "compared": 2900,
+      "includesFatalActions": true
+    }
+  },
+  "deliveryStatus": "同一核心的机制研究备选，未作为新独立作品交付，原版《换手》不替换，地图集不变。",
+  "humanQuality": null,
+  "privateEvidenceSha256": "7d0edf320180a6a899450c125c27670df5969a5a349eb786657e98f91c181608"
+}
