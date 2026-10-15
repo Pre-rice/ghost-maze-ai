@@ -1,0 +1,620 @@
+{
+  "role": "fixed_data_goal_recovery_objective_ablation_not_quality",
+  "engineRevision": "sha256:5861b72bee934007e2679b60f38e3820ad1e2302a6d0a309bb7a59793eefb109",
+  "publishedWebsiteCommit": "4d143d1f73189456755d1194c16db3f1684a0ffe",
+  "websiteUnchangedByExperiment": true,
+  "galleryChanged": false,
+  "newHumanQualityLabels": 0,
+  "newMaps": 0,
+  "initialDiagnosis": {
+    "sameGenerator": {
+      "must_vacate": {
+        "tasks": 2,
+        "maps": 1,
+        "attempts": 6,
+        "succeeded": 1,
+        "failed": 5,
+        "failuresEnteringIrrecoverableState": 5,
+        "failuresStillReachable": 0
+      },
+      "must_keep": {
+        "tasks": 7,
+        "maps": 4,
+        "attempts": 21,
+        "succeeded": 12,
+        "failed": 9,
+        "failuresEnteringIrrecoverableState": 9,
+        "failuresStillReachable": 0
+      }
+    },
+    "gallery": {
+      "must_vacate": {
+        "tasks": 15,
+        "maps": 8,
+        "attempts": 45,
+        "succeeded": 0,
+        "failed": 45,
+        "failuresEnteringIrrecoverableState": 45,
+        "failuresStillReachable": 0
+      },
+      "must_keep": {
+        "tasks": 14,
+        "maps": 8,
+        "attempts": 42,
+        "succeeded": 19,
+        "failed": 23,
+        "failuresEnteringIrrecoverableState": 23,
+        "failuresStillReachable": 0
+      }
+    }
+  },
+  "trainingCounts": {
+    "eligible": 7921,
+    "viable": 7279,
+    "preferred": 4234,
+    "not_preferred": 3687,
+    "irrecoverable": 642
+  },
+  "protocol": {
+    "role": "fixed_data_goal_recovery_objective_ablation_not_quality",
+    "seeds": [
+      17,
+      29,
+      53
+    ],
+    "config": {
+      "n_estimators": 64,
+      "max_depth": 22,
+      "min_samples_leaf": 4,
+      "max_features": 0.6,
+      "n_jobs": 4
+    },
+    "classifierClassWeight": "balanced",
+    "combinedViabilityThreshold": 0.5,
+    "modes": [
+      "recovery",
+      "value",
+      "combined"
+    ],
+    "sourceSha256": "b07a70034fd5f4914376b5d7c2e96c4f396d79cd9705d8232360decceb07b1d7",
+    "dependencies": {
+      "train-planning-baseline.py": "cc6e33cd7118f9a190dd5b56b59b51af9c933c2def214d71cb1b8b62240ba42f",
+      "train-parked-policy.py": "bbf030adb96500ab6168534d20f6e464e2aa04c75a69055902c5a1694f6e2d9d"
+    },
+    "sources": {
+      "runs/planning-cpu-20261015/parked-train-data": "9d4c6b1483bd73a571ca85b7f4b4b3ce1afc9bbc7709f298aedad0d97feedbbd",
+      "runs/planning-cpu-20261015/parked-test-data": "0588f14047b0943516eac94a4c1917071a25bc87625d1caa2f7b5645778f7348",
+      "runs/planning-cpu-20261015/parked-gallery-data": "fbf5e73d973e643fad5fc2d13ec3b33f66716ae7c0a82a5b714af337d4bdb266"
+    },
+    "split": "whole parent maps held out, same one-generator curriculum; gallery is reused development challenge",
+    "unchangedInputs": 1650,
+    "trainingRows": 7921,
+    "trainReachable": 7279,
+    "trainIrrecoverable": 642,
+    "inferenceExcludes": [
+      "exact_distance",
+      "kind",
+      "anchor",
+      "originalAtAnchor",
+      "witness",
+      "future_graph_queries"
+    ],
+    "controller": "same one-step safe actions, canonical-state visit avoidance, immediate requested goal completion, 256 steps",
+    "noNewMaps": true,
+    "noNewHumanFeedback": true,
+    "websiteIntegrated": false
+  },
+  "experiments": [
+    {
+      "seed": 17,
+      "scope": "same_generator",
+      "mode": "recovery",
+      "aggregate": {
+        "tasks": 9,
+        "maps": 4,
+        "goalReached": 3,
+        "optimalToGoal": 1,
+        "macroMapSuccess": 0.375,
+        "byKind": {
+          "must_vacate": {
+            "tasks": 2,
+            "maps": 1,
+            "goalReached": 0,
+            "optimalToGoal": 0
+          },
+          "must_keep": {
+            "tasks": 7,
+            "maps": 4,
+            "goalReached": 3,
+            "optimalToGoal": 1
+          }
+        }
+      }
+    },
+    {
+      "seed": 17,
+      "scope": "same_generator",
+      "mode": "value",
+      "aggregate": {
+        "tasks": 9,
+        "maps": 4,
+        "goalReached": 4,
+        "optimalToGoal": 3,
+        "macroMapSuccess": 0.4583333333333333,
+        "byKind": {
+          "must_vacate": {
+            "tasks": 2,
+            "maps": 1,
+            "goalReached": 0,
+            "optimalToGoal": 0
+          },
+          "must_keep": {
+            "tasks": 7,
+            "maps": 4,
+            "goalReached": 4,
+            "optimalToGoal": 3
+          }
+        }
+      }
+    },
+    {
+      "seed": 17,
+      "scope": "same_generator",
+      "mode": "combined",
+      "aggregate": {
+        "tasks": 9,
+        "maps": 4,
+        "goalReached": 4,
+        "optimalToGoal": 2,
+        "macroMapSuccess": 0.4583333333333333,
+        "byKind": {
+          "must_vacate": {
+            "tasks": 2,
+            "maps": 1,
+            "goalReached": 0,
+            "optimalToGoal": 0
+          },
+          "must_keep": {
+            "tasks": 7,
+            "maps": 4,
+            "goalReached": 4,
+            "optimalToGoal": 2
+          }
+        }
+      }
+    },
+    {
+      "seed": 17,
+      "scope": "gallery_given_goals",
+      "mode": "recovery",
+      "aggregate": {
+        "tasks": 29,
+        "maps": 9,
+        "goalReached": 3,
+        "optimalToGoal": 0,
+        "macroMapSuccess": 0.12037037037037036,
+        "byKind": {
+          "must_vacate": {
+            "tasks": 15,
+            "maps": 8,
+            "goalReached": 0,
+            "optimalToGoal": 0
+          },
+          "must_keep": {
+            "tasks": 14,
+            "maps": 8,
+            "goalReached": 3,
+            "optimalToGoal": 0
+          }
+        }
+      }
+    },
+    {
+      "seed": 17,
+      "scope": "gallery_given_goals",
+      "mode": "value",
+      "aggregate": {
+        "tasks": 29,
+        "maps": 9,
+        "goalReached": 5,
+        "optimalToGoal": 1,
+        "macroMapSuccess": 0.15740740740740738,
+        "byKind": {
+          "must_vacate": {
+            "tasks": 15,
+            "maps": 8,
+            "goalReached": 1,
+            "optimalToGoal": 0
+          },
+          "must_keep": {
+            "tasks": 14,
+            "maps": 8,
+            "goalReached": 4,
+            "optimalToGoal": 1
+          }
+        }
+      }
+    },
+    {
+      "seed": 17,
+      "scope": "gallery_given_goals",
+      "mode": "combined",
+      "aggregate": {
+        "tasks": 29,
+        "maps": 9,
+        "goalReached": 3,
+        "optimalToGoal": 1,
+        "macroMapSuccess": 0.09259259259259259,
+        "byKind": {
+          "must_vacate": {
+            "tasks": 15,
+            "maps": 8,
+            "goalReached": 0,
+            "optimalToGoal": 0
+          },
+          "must_keep": {
+            "tasks": 14,
+            "maps": 8,
+            "goalReached": 3,
+            "optimalToGoal": 1
+          }
+        }
+      }
+    },
+    {
+      "seed": 29,
+      "scope": "same_generator",
+      "mode": "recovery",
+      "aggregate": {
+        "tasks": 9,
+        "maps": 4,
+        "goalReached": 4,
+        "optimalToGoal": 1,
+        "macroMapSuccess": 0.5,
+        "byKind": {
+          "must_vacate": {
+            "tasks": 2,
+            "maps": 1,
+            "goalReached": 0,
+            "optimalToGoal": 0
+          },
+          "must_keep": {
+            "tasks": 7,
+            "maps": 4,
+            "goalReached": 4,
+            "optimalToGoal": 1
+          }
+        }
+      }
+    },
+    {
+      "seed": 29,
+      "scope": "same_generator",
+      "mode": "value",
+      "aggregate": {
+        "tasks": 9,
+        "maps": 4,
+        "goalReached": 4,
+        "optimalToGoal": 2,
+        "macroMapSuccess": 0.5,
+        "byKind": {
+          "must_vacate": {
+            "tasks": 2,
+            "maps": 1,
+            "goalReached": 0,
+            "optimalToGoal": 0
+          },
+          "must_keep": {
+            "tasks": 7,
+            "maps": 4,
+            "goalReached": 4,
+            "optimalToGoal": 2
+          }
+        }
+      }
+    },
+    {
+      "seed": 29,
+      "scope": "same_generator",
+      "mode": "combined",
+      "aggregate": {
+        "tasks": 9,
+        "maps": 4,
+        "goalReached": 4,
+        "optimalToGoal": 0,
+        "macroMapSuccess": 0.5,
+        "byKind": {
+          "must_vacate": {
+            "tasks": 2,
+            "maps": 1,
+            "goalReached": 0,
+            "optimalToGoal": 0
+          },
+          "must_keep": {
+            "tasks": 7,
+            "maps": 4,
+            "goalReached": 4,
+            "optimalToGoal": 0
+          }
+        }
+      }
+    },
+    {
+      "seed": 29,
+      "scope": "gallery_given_goals",
+      "mode": "recovery",
+      "aggregate": {
+        "tasks": 29,
+        "maps": 9,
+        "goalReached": 2,
+        "optimalToGoal": 0,
+        "macroMapSuccess": 0.09259259259259259,
+        "byKind": {
+          "must_vacate": {
+            "tasks": 15,
+            "maps": 8,
+            "goalReached": 0,
+            "optimalToGoal": 0
+          },
+          "must_keep": {
+            "tasks": 14,
+            "maps": 8,
+            "goalReached": 2,
+            "optimalToGoal": 0
+          }
+        }
+      }
+    },
+    {
+      "seed": 29,
+      "scope": "gallery_given_goals",
+      "mode": "value",
+      "aggregate": {
+        "tasks": 29,
+        "maps": 9,
+        "goalReached": 4,
+        "optimalToGoal": 1,
+        "macroMapSuccess": 0.12962962962962962,
+        "byKind": {
+          "must_vacate": {
+            "tasks": 15,
+            "maps": 8,
+            "goalReached": 1,
+            "optimalToGoal": 0
+          },
+          "must_keep": {
+            "tasks": 14,
+            "maps": 8,
+            "goalReached": 3,
+            "optimalToGoal": 1
+          }
+        }
+      }
+    },
+    {
+      "seed": 29,
+      "scope": "gallery_given_goals",
+      "mode": "combined",
+      "aggregate": {
+        "tasks": 29,
+        "maps": 9,
+        "goalReached": 4,
+        "optimalToGoal": 1,
+        "macroMapSuccess": 0.12962962962962962,
+        "byKind": {
+          "must_vacate": {
+            "tasks": 15,
+            "maps": 8,
+            "goalReached": 1,
+            "optimalToGoal": 0
+          },
+          "must_keep": {
+            "tasks": 14,
+            "maps": 8,
+            "goalReached": 3,
+            "optimalToGoal": 1
+          }
+        }
+      }
+    },
+    {
+      "seed": 53,
+      "scope": "same_generator",
+      "mode": "recovery",
+      "aggregate": {
+        "tasks": 9,
+        "maps": 4,
+        "goalReached": 3,
+        "optimalToGoal": 1,
+        "macroMapSuccess": 0.375,
+        "byKind": {
+          "must_vacate": {
+            "tasks": 2,
+            "maps": 1,
+            "goalReached": 0,
+            "optimalToGoal": 0
+          },
+          "must_keep": {
+            "tasks": 7,
+            "maps": 4,
+            "goalReached": 3,
+            "optimalToGoal": 1
+          }
+        }
+      }
+    },
+    {
+      "seed": 53,
+      "scope": "same_generator",
+      "mode": "value",
+      "aggregate": {
+        "tasks": 9,
+        "maps": 4,
+        "goalReached": 5,
+        "optimalToGoal": 4,
+        "macroMapSuccess": 0.5833333333333334,
+        "byKind": {
+          "must_vacate": {
+            "tasks": 2,
+            "maps": 1,
+            "goalReached": 0,
+            "optimalToGoal": 0
+          },
+          "must_keep": {
+            "tasks": 7,
+            "maps": 4,
+            "goalReached": 5,
+            "optimalToGoal": 4
+          }
+        }
+      }
+    },
+    {
+      "seed": 53,
+      "scope": "same_generator",
+      "mode": "combined",
+      "aggregate": {
+        "tasks": 9,
+        "maps": 4,
+        "goalReached": 4,
+        "optimalToGoal": 3,
+        "macroMapSuccess": 0.4583333333333333,
+        "byKind": {
+          "must_vacate": {
+            "tasks": 2,
+            "maps": 1,
+            "goalReached": 0,
+            "optimalToGoal": 0
+          },
+          "must_keep": {
+            "tasks": 7,
+            "maps": 4,
+            "goalReached": 4,
+            "optimalToGoal": 3
+          }
+        }
+      }
+    },
+    {
+      "seed": 53,
+      "scope": "gallery_given_goals",
+      "mode": "recovery",
+      "aggregate": {
+        "tasks": 29,
+        "maps": 9,
+        "goalReached": 4,
+        "optimalToGoal": 0,
+        "macroMapSuccess": 0.17592592592592593,
+        "byKind": {
+          "must_vacate": {
+            "tasks": 15,
+            "maps": 8,
+            "goalReached": 1,
+            "optimalToGoal": 0
+          },
+          "must_keep": {
+            "tasks": 14,
+            "maps": 8,
+            "goalReached": 3,
+            "optimalToGoal": 0
+          }
+        }
+      }
+    },
+    {
+      "seed": 53,
+      "scope": "gallery_given_goals",
+      "mode": "value",
+      "aggregate": {
+        "tasks": 29,
+        "maps": 9,
+        "goalReached": 4,
+        "optimalToGoal": 1,
+        "macroMapSuccess": 0.12037037037037036,
+        "byKind": {
+          "must_vacate": {
+            "tasks": 15,
+            "maps": 8,
+            "goalReached": 0,
+            "optimalToGoal": 0
+          },
+          "must_keep": {
+            "tasks": 14,
+            "maps": 8,
+            "goalReached": 4,
+            "optimalToGoal": 1
+          }
+        }
+      }
+    },
+    {
+      "seed": 53,
+      "scope": "gallery_given_goals",
+      "mode": "combined",
+      "aggregate": {
+        "tasks": 29,
+        "maps": 9,
+        "goalReached": 3,
+        "optimalToGoal": 1,
+        "macroMapSuccess": 0.08333333333333333,
+        "byKind": {
+          "must_vacate": {
+            "tasks": 15,
+            "maps": 8,
+            "goalReached": 0,
+            "optimalToGoal": 0
+          },
+          "must_keep": {
+            "tasks": 14,
+            "maps": 8,
+            "goalReached": 3,
+            "optimalToGoal": 1
+          }
+        }
+      }
+    }
+  ],
+  "nativeRoutes": {
+    "role": "native_given_goal_route_QA_not_game_victory_or_quality",
+    "inputSha256": "4b5c9435d210ba90fcbabbe618c4eda8d3f3950bb98c3ef4549a9bc046afbe0e",
+    "routes": 342,
+    "uniqueRoutes": 194,
+    "maps": 13,
+    "actions": 20051,
+    "goalReached": 67,
+    "optimalToGivenGoal": 23,
+    "includesFailedPrefixes": true,
+    "allPassed": true
+  },
+  "verification": {
+    "pythonTests": 9,
+    "cloudCheck": "passed: game 26 files, AI 117 reference tests and 4 legacy files, rule lock, 2 seeds, 22 HTTP entries and proxy"
+  },
+  "sourceSha256": {
+    "scripts/diagnose-parked-failures.py": "84e46c8f70f7a035f565a0694506c2ee6ff90c84ceff3162de0232b0bd7bab2e",
+    "scripts/train-parked-recovery.py": "b07a70034fd5f4914376b5d7c2e96c4f396d79cd9705d8232360decceb07b1d7",
+    "test/training/test_parked_recovery.py": "1a4bbc310c09c28e21d333dd1194106d4d15b904b5ef1f4fcdf03c0195df018e"
+  },
+  "artifactSha256": {
+    "protocol.json": "b40d332273a1aad0e4569319081912dcb5a3cc9fccbdb2c8ca3fc5753902f2b1",
+    "summary.json": "c54424068f883dc038cac20eac203434c6a35fb16e7fdce645a89c50c7e3af0d",
+    "routes.jsonl": "4b5c9435d210ba90fcbabbe618c4eda8d3f3950bb98c3ef4549a9bc046afbe0e",
+    "native-routes.json": "46870f1c99202e81fe7825ef5adbfebd145928210e8b33225f1c9a78b1e3939c"
+  },
+  "modelsSha256": {
+    "recovery-29.json": "f7f0f3c38db38984bbfeaf59f611d0989117000e4f68e515ac6056ae06570b85",
+    "value-53.json": "654af67d2d28b43d5015a208abe81f197b7abccf9a1da173df7701b5fb39531f",
+    "recovery-53.json": "63bde4cd5777f7bee72a6946687a63a3b3b5ef34e1fd3e0cdbb4b1abd2ee0d6e",
+    "value-17.json": "927da70b19907a4c3da64df55c2babdd0c33beb05b135dd4aec0b6948675104c",
+    "value-29.json": "7c9e1282f5e214ff96498d2a13550e350de87c078e6838341dcfad593d369702",
+    "recovery-17.json": "cf4fd2a73a29f9dd23bfeb05344f7a63ed84dec60aa6aa320b979820bc0ea582"
+  },
+  "diagnosisSha256": "2d15db95676ceaf31a6f4fe6d5b9af3e0da640aa3a9d05664ab9fda08253cc28",
+  "decision": "Changing only one-step objectives did not yield stable gains. The bounded-lookahead follow-up is completed separately; retain the original models and compare search contribution explicitly. No website integration or quality claim.",
+  "reproducedVersion": "objective-ablation-v2",
+  "budgetBoundaryFix": {
+    "lastAllowedActionCanReachGoal": true,
+    "all342RoutesAndSummaryUnchanged": true,
+    "originalExecutionAndSourcesPreserved": true
+  }
+}

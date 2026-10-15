@@ -1,0 +1,1343 @@
+{
+  "role": "bounded_task_deadend_preflight_not_puzzle_quality",
+  "engineRevision": "sha256:5861b72bee934007e2679b60f38e3820ad1e2302a6d0a309bb7a59793eefb109",
+  "protocol": {
+    "role": "bounded_deadend_preflight_not_model_or_quality_claim",
+    "sourceSha256": "871f6c8d50976816272689e39e8ad2fc61cfdd41035c4fc9e931b7d9f321181e",
+    "baseline": "runs/planning-cpu-20261015/parked-policy-baseline",
+    "baselineProtocolSha256": "594b3d518b53f8bd398258bfd4ee7e32bacfb4480df142a7b82a0c2d04641671",
+    "perCandidateExpansionBudgets": [
+      0,
+      8,
+      64
+    ],
+    "totalExpansionsPerTask": 4096,
+    "stepBudget": 256,
+    "seeds": [
+      17,
+      29,
+      53
+    ],
+    "noNewTraining": true,
+    "noNewMaps": true,
+    "websiteIntegrated": false,
+    "inferenceExcludes": [
+      "distance",
+      "anchorOccupied",
+      "originalAtAnchor",
+      "kind",
+      "witness"
+    ],
+    "noOraclePruning": true,
+    "unknownSuccessorsRetained": true,
+    "graphUse": "Native-preverified graph as a transition cache, queried only at expanded states. Offline expansion counts, no native wall-time claim.",
+    "scope": "given goals on reused development challenges, not autonomous goal choice or full puzzle generation",
+    "cache": "per-task canonical visible state; cache bounded unknown as unknown, never as unsolvable"
+  },
+  "summary": {
+    "role": "bounded_deadend_preflight_not_model_or_quality_claim",
+    "baselineRoutesMatched": 266,
+    "experiments": [
+      {
+        "scope": "same_generator",
+        "mode": "progress",
+        "seed": 0,
+        "perProbe": 0,
+        "aggregate": {
+          "tasks": 9,
+          "maps": 4,
+          "goalReached": 5,
+          "optimalToGoal": 4,
+          "macroMapSuccess": 0.625,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 2,
+              "maps": 1,
+              "goalReached": 0,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 7,
+              "maps": 4,
+              "goalReached": 5,
+              "optimalToGoal": 4
+            }
+          },
+          "expanded": 0,
+          "rejectedProvenDeadendActions": 0,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "same_generator",
+        "mode": "progress",
+        "seed": 0,
+        "perProbe": 8,
+        "aggregate": {
+          "tasks": 9,
+          "maps": 4,
+          "goalReached": 9,
+          "optimalToGoal": 4,
+          "macroMapSuccess": 1.0,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 2,
+              "maps": 1,
+              "goalReached": 2,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 7,
+              "maps": 4,
+              "goalReached": 7,
+              "optimalToGoal": 4
+            }
+          },
+          "expanded": 1987,
+          "rejectedProvenDeadendActions": 15,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "same_generator",
+        "mode": "progress",
+        "seed": 0,
+        "perProbe": 64,
+        "aggregate": {
+          "tasks": 9,
+          "maps": 4,
+          "goalReached": 9,
+          "optimalToGoal": 4,
+          "macroMapSuccess": 1.0,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 2,
+              "maps": 1,
+              "goalReached": 2,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 7,
+              "maps": 4,
+              "goalReached": 7,
+              "optimalToGoal": 4
+            }
+          },
+          "expanded": 8962,
+          "rejectedProvenDeadendActions": 19,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "same_generator",
+        "mode": "learned",
+        "seed": 17,
+        "perProbe": 0,
+        "aggregate": {
+          "tasks": 9,
+          "maps": 4,
+          "goalReached": 5,
+          "optimalToGoal": 2,
+          "macroMapSuccess": 0.5833333333333334,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 2,
+              "maps": 1,
+              "goalReached": 1,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 7,
+              "maps": 4,
+              "goalReached": 4,
+              "optimalToGoal": 2
+            }
+          },
+          "expanded": 0,
+          "rejectedProvenDeadendActions": 0,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "same_generator",
+        "mode": "learned",
+        "seed": 17,
+        "perProbe": 8,
+        "aggregate": {
+          "tasks": 9,
+          "maps": 4,
+          "goalReached": 6,
+          "optimalToGoal": 2,
+          "macroMapSuccess": 0.6666666666666666,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 2,
+              "maps": 1,
+              "goalReached": 2,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 7,
+              "maps": 4,
+              "goalReached": 4,
+              "optimalToGoal": 2
+            }
+          },
+          "expanded": 3528,
+          "rejectedProvenDeadendActions": 215,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "same_generator",
+        "mode": "learned",
+        "seed": 17,
+        "perProbe": 64,
+        "aggregate": {
+          "tasks": 9,
+          "maps": 4,
+          "goalReached": 7,
+          "optimalToGoal": 2,
+          "macroMapSuccess": 0.7916666666666666,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 2,
+              "maps": 1,
+              "goalReached": 2,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 7,
+              "maps": 4,
+              "goalReached": 5,
+              "optimalToGoal": 2
+            }
+          },
+          "expanded": 15864,
+          "rejectedProvenDeadendActions": 35,
+          "searchBudgetReached": 2
+        }
+      },
+      {
+        "scope": "same_generator",
+        "mode": "random",
+        "seed": 17,
+        "perProbe": 0,
+        "aggregate": {
+          "tasks": 9,
+          "maps": 4,
+          "goalReached": 2,
+          "optimalToGoal": 1,
+          "macroMapSuccess": 0.25,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 2,
+              "maps": 1,
+              "goalReached": 0,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 7,
+              "maps": 4,
+              "goalReached": 2,
+              "optimalToGoal": 1
+            }
+          },
+          "expanded": 0,
+          "rejectedProvenDeadendActions": 0,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "same_generator",
+        "mode": "random",
+        "seed": 17,
+        "perProbe": 8,
+        "aggregate": {
+          "tasks": 9,
+          "maps": 4,
+          "goalReached": 5,
+          "optimalToGoal": 1,
+          "macroMapSuccess": 0.5833333333333334,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 2,
+              "maps": 1,
+              "goalReached": 0,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 7,
+              "maps": 4,
+              "goalReached": 5,
+              "optimalToGoal": 1
+            }
+          },
+          "expanded": 1456,
+          "rejectedProvenDeadendActions": 446,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "same_generator",
+        "mode": "random",
+        "seed": 17,
+        "perProbe": 64,
+        "aggregate": {
+          "tasks": 9,
+          "maps": 4,
+          "goalReached": 9,
+          "optimalToGoal": 1,
+          "macroMapSuccess": 1.0,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 2,
+              "maps": 1,
+              "goalReached": 2,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 7,
+              "maps": 4,
+              "goalReached": 7,
+              "optimalToGoal": 1
+            }
+          },
+          "expanded": 11629,
+          "rejectedProvenDeadendActions": 41,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "same_generator",
+        "mode": "learned",
+        "seed": 29,
+        "perProbe": 0,
+        "aggregate": {
+          "tasks": 9,
+          "maps": 4,
+          "goalReached": 5,
+          "optimalToGoal": 2,
+          "macroMapSuccess": 0.5833333333333334,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 2,
+              "maps": 1,
+              "goalReached": 0,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 7,
+              "maps": 4,
+              "goalReached": 5,
+              "optimalToGoal": 2
+            }
+          },
+          "expanded": 0,
+          "rejectedProvenDeadendActions": 0,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "same_generator",
+        "mode": "learned",
+        "seed": 29,
+        "perProbe": 8,
+        "aggregate": {
+          "tasks": 9,
+          "maps": 4,
+          "goalReached": 5,
+          "optimalToGoal": 2,
+          "macroMapSuccess": 0.5833333333333334,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 2,
+              "maps": 1,
+              "goalReached": 0,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 7,
+              "maps": 4,
+              "goalReached": 5,
+              "optimalToGoal": 2
+            }
+          },
+          "expanded": 1612,
+          "rejectedProvenDeadendActions": 390,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "same_generator",
+        "mode": "learned",
+        "seed": 29,
+        "perProbe": 64,
+        "aggregate": {
+          "tasks": 9,
+          "maps": 4,
+          "goalReached": 8,
+          "optimalToGoal": 2,
+          "macroMapSuccess": 0.875,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 2,
+              "maps": 1,
+              "goalReached": 2,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 7,
+              "maps": 4,
+              "goalReached": 6,
+              "optimalToGoal": 2
+            }
+          },
+          "expanded": 13143,
+          "rejectedProvenDeadendActions": 47,
+          "searchBudgetReached": 1
+        }
+      },
+      {
+        "scope": "same_generator",
+        "mode": "random",
+        "seed": 29,
+        "perProbe": 0,
+        "aggregate": {
+          "tasks": 9,
+          "maps": 4,
+          "goalReached": 4,
+          "optimalToGoal": 1,
+          "macroMapSuccess": 0.4583333333333333,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 2,
+              "maps": 1,
+              "goalReached": 1,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 7,
+              "maps": 4,
+              "goalReached": 3,
+              "optimalToGoal": 1
+            }
+          },
+          "expanded": 0,
+          "rejectedProvenDeadendActions": 0,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "same_generator",
+        "mode": "random",
+        "seed": 29,
+        "perProbe": 8,
+        "aggregate": {
+          "tasks": 9,
+          "maps": 4,
+          "goalReached": 8,
+          "optimalToGoal": 1,
+          "macroMapSuccess": 0.875,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 2,
+              "maps": 1,
+              "goalReached": 2,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 7,
+              "maps": 4,
+              "goalReached": 6,
+              "optimalToGoal": 1
+            }
+          },
+          "expanded": 2466,
+          "rejectedProvenDeadendActions": 100,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "same_generator",
+        "mode": "random",
+        "seed": 29,
+        "perProbe": 64,
+        "aggregate": {
+          "tasks": 9,
+          "maps": 4,
+          "goalReached": 8,
+          "optimalToGoal": 1,
+          "macroMapSuccess": 0.875,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 2,
+              "maps": 1,
+              "goalReached": 2,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 7,
+              "maps": 4,
+              "goalReached": 6,
+              "optimalToGoal": 1
+            }
+          },
+          "expanded": 11649,
+          "rejectedProvenDeadendActions": 47,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "same_generator",
+        "mode": "learned",
+        "seed": 53,
+        "perProbe": 0,
+        "aggregate": {
+          "tasks": 9,
+          "maps": 4,
+          "goalReached": 3,
+          "optimalToGoal": 2,
+          "macroMapSuccess": 0.3333333333333333,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 2,
+              "maps": 1,
+              "goalReached": 0,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 7,
+              "maps": 4,
+              "goalReached": 3,
+              "optimalToGoal": 2
+            }
+          },
+          "expanded": 0,
+          "rejectedProvenDeadendActions": 0,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "same_generator",
+        "mode": "learned",
+        "seed": 53,
+        "perProbe": 8,
+        "aggregate": {
+          "tasks": 9,
+          "maps": 4,
+          "goalReached": 5,
+          "optimalToGoal": 2,
+          "macroMapSuccess": 0.5833333333333334,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 2,
+              "maps": 1,
+              "goalReached": 0,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 7,
+              "maps": 4,
+              "goalReached": 5,
+              "optimalToGoal": 2
+            }
+          },
+          "expanded": 1772,
+          "rejectedProvenDeadendActions": 290,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "same_generator",
+        "mode": "learned",
+        "seed": 53,
+        "perProbe": 64,
+        "aggregate": {
+          "tasks": 9,
+          "maps": 4,
+          "goalReached": 8,
+          "optimalToGoal": 2,
+          "macroMapSuccess": 0.875,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 2,
+              "maps": 1,
+              "goalReached": 2,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 7,
+              "maps": 4,
+              "goalReached": 6,
+              "optimalToGoal": 2
+            }
+          },
+          "expanded": 12698,
+          "rejectedProvenDeadendActions": 37,
+          "searchBudgetReached": 1
+        }
+      },
+      {
+        "scope": "same_generator",
+        "mode": "random",
+        "seed": 53,
+        "perProbe": 0,
+        "aggregate": {
+          "tasks": 9,
+          "maps": 4,
+          "goalReached": 4,
+          "optimalToGoal": 1,
+          "macroMapSuccess": 0.5,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 2,
+              "maps": 1,
+              "goalReached": 0,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 7,
+              "maps": 4,
+              "goalReached": 4,
+              "optimalToGoal": 1
+            }
+          },
+          "expanded": 0,
+          "rejectedProvenDeadendActions": 0,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "same_generator",
+        "mode": "random",
+        "seed": 53,
+        "perProbe": 8,
+        "aggregate": {
+          "tasks": 9,
+          "maps": 4,
+          "goalReached": 7,
+          "optimalToGoal": 1,
+          "macroMapSuccess": 0.7916666666666666,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 2,
+              "maps": 1,
+              "goalReached": 1,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 7,
+              "maps": 4,
+              "goalReached": 6,
+              "optimalToGoal": 1
+            }
+          },
+          "expanded": 1776,
+          "rejectedProvenDeadendActions": 193,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "same_generator",
+        "mode": "random",
+        "seed": 53,
+        "perProbe": 64,
+        "aggregate": {
+          "tasks": 9,
+          "maps": 4,
+          "goalReached": 7,
+          "optimalToGoal": 1,
+          "macroMapSuccess": 0.7916666666666666,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 2,
+              "maps": 1,
+              "goalReached": 1,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 7,
+              "maps": 4,
+              "goalReached": 6,
+              "optimalToGoal": 1
+            }
+          },
+          "expanded": 12618,
+          "rejectedProvenDeadendActions": 46,
+          "searchBudgetReached": 1
+        }
+      },
+      {
+        "scope": "gallery_given_goals",
+        "mode": "progress",
+        "seed": 0,
+        "perProbe": 0,
+        "aggregate": {
+          "tasks": 29,
+          "maps": 9,
+          "goalReached": 3,
+          "optimalToGoal": 0,
+          "macroMapSuccess": 0.1111111111111111,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 15,
+              "maps": 8,
+              "goalReached": 0,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 14,
+              "maps": 8,
+              "goalReached": 3,
+              "optimalToGoal": 0
+            }
+          },
+          "expanded": 0,
+          "rejectedProvenDeadendActions": 0,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "gallery_given_goals",
+        "mode": "progress",
+        "seed": 0,
+        "perProbe": 8,
+        "aggregate": {
+          "tasks": 29,
+          "maps": 9,
+          "goalReached": 12,
+          "optimalToGoal": 0,
+          "macroMapSuccess": 0.3888888888888889,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 15,
+              "maps": 8,
+              "goalReached": 4,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 14,
+              "maps": 8,
+              "goalReached": 8,
+              "optimalToGoal": 0
+            }
+          },
+          "expanded": 11958,
+          "rejectedProvenDeadendActions": 434,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "gallery_given_goals",
+        "mode": "progress",
+        "seed": 0,
+        "perProbe": 64,
+        "aggregate": {
+          "tasks": 29,
+          "maps": 9,
+          "goalReached": 15,
+          "optimalToGoal": 0,
+          "macroMapSuccess": 0.4907407407407407,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 15,
+              "maps": 8,
+              "goalReached": 4,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 14,
+              "maps": 8,
+              "goalReached": 11,
+              "optimalToGoal": 0
+            }
+          },
+          "expanded": 80831,
+          "rejectedProvenDeadendActions": 267,
+          "searchBudgetReached": 12
+        }
+      },
+      {
+        "scope": "gallery_given_goals",
+        "mode": "learned",
+        "seed": 17,
+        "perProbe": 0,
+        "aggregate": {
+          "tasks": 29,
+          "maps": 9,
+          "goalReached": 5,
+          "optimalToGoal": 0,
+          "macroMapSuccess": 0.15740740740740738,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 15,
+              "maps": 8,
+              "goalReached": 0,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 14,
+              "maps": 8,
+              "goalReached": 5,
+              "optimalToGoal": 0
+            }
+          },
+          "expanded": 0,
+          "rejectedProvenDeadendActions": 0,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "gallery_given_goals",
+        "mode": "learned",
+        "seed": 17,
+        "perProbe": 8,
+        "aggregate": {
+          "tasks": 29,
+          "maps": 9,
+          "goalReached": 17,
+          "optimalToGoal": 0,
+          "macroMapSuccess": 0.537037037037037,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 15,
+              "maps": 8,
+              "goalReached": 7,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 14,
+              "maps": 8,
+              "goalReached": 10,
+              "optimalToGoal": 0
+            }
+          },
+          "expanded": 19131,
+          "rejectedProvenDeadendActions": 819,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "gallery_given_goals",
+        "mode": "learned",
+        "seed": 17,
+        "perProbe": 64,
+        "aggregate": {
+          "tasks": 29,
+          "maps": 9,
+          "goalReached": 17,
+          "optimalToGoal": 0,
+          "macroMapSuccess": 0.5555555555555556,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 15,
+              "maps": 8,
+              "goalReached": 6,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 14,
+              "maps": 8,
+              "goalReached": 11,
+              "optimalToGoal": 0
+            }
+          },
+          "expanded": 79856,
+          "rejectedProvenDeadendActions": 265,
+          "searchBudgetReached": 12
+        }
+      },
+      {
+        "scope": "gallery_given_goals",
+        "mode": "random",
+        "seed": 17,
+        "perProbe": 0,
+        "aggregate": {
+          "tasks": 29,
+          "maps": 9,
+          "goalReached": 4,
+          "optimalToGoal": 2,
+          "macroMapSuccess": 0.12037037037037036,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 15,
+              "maps": 8,
+              "goalReached": 0,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 14,
+              "maps": 8,
+              "goalReached": 4,
+              "optimalToGoal": 2
+            }
+          },
+          "expanded": 0,
+          "rejectedProvenDeadendActions": 0,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "gallery_given_goals",
+        "mode": "random",
+        "seed": 17,
+        "perProbe": 8,
+        "aggregate": {
+          "tasks": 29,
+          "maps": 9,
+          "goalReached": 14,
+          "optimalToGoal": 2,
+          "macroMapSuccess": 0.43518518518518523,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 15,
+              "maps": 8,
+              "goalReached": 7,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 14,
+              "maps": 8,
+              "goalReached": 7,
+              "optimalToGoal": 2
+            }
+          },
+          "expanded": 13229,
+          "rejectedProvenDeadendActions": 502,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "gallery_given_goals",
+        "mode": "random",
+        "seed": 17,
+        "perProbe": 64,
+        "aggregate": {
+          "tasks": 29,
+          "maps": 9,
+          "goalReached": 18,
+          "optimalToGoal": 2,
+          "macroMapSuccess": 0.6018518518518517,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 15,
+              "maps": 8,
+              "goalReached": 7,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 14,
+              "maps": 8,
+              "goalReached": 11,
+              "optimalToGoal": 2
+            }
+          },
+          "expanded": 73893,
+          "rejectedProvenDeadendActions": 255,
+          "searchBudgetReached": 9
+        }
+      },
+      {
+        "scope": "gallery_given_goals",
+        "mode": "learned",
+        "seed": 29,
+        "perProbe": 0,
+        "aggregate": {
+          "tasks": 29,
+          "maps": 9,
+          "goalReached": 7,
+          "optimalToGoal": 0,
+          "macroMapSuccess": 0.25,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 15,
+              "maps": 8,
+              "goalReached": 0,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 14,
+              "maps": 8,
+              "goalReached": 7,
+              "optimalToGoal": 0
+            }
+          },
+          "expanded": 0,
+          "rejectedProvenDeadendActions": 0,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "gallery_given_goals",
+        "mode": "learned",
+        "seed": 29,
+        "perProbe": 8,
+        "aggregate": {
+          "tasks": 29,
+          "maps": 9,
+          "goalReached": 17,
+          "optimalToGoal": 0,
+          "macroMapSuccess": 0.574074074074074,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 15,
+              "maps": 8,
+              "goalReached": 5,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 14,
+              "maps": 8,
+              "goalReached": 12,
+              "optimalToGoal": 0
+            }
+          },
+          "expanded": 19187,
+          "rejectedProvenDeadendActions": 519,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "gallery_given_goals",
+        "mode": "learned",
+        "seed": 29,
+        "perProbe": 64,
+        "aggregate": {
+          "tasks": 29,
+          "maps": 9,
+          "goalReached": 14,
+          "optimalToGoal": 0,
+          "macroMapSuccess": 0.4629629629629629,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 15,
+              "maps": 8,
+              "goalReached": 3,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 14,
+              "maps": 8,
+              "goalReached": 11,
+              "optimalToGoal": 0
+            }
+          },
+          "expanded": 80234,
+          "rejectedProvenDeadendActions": 264,
+          "searchBudgetReached": 14
+        }
+      },
+      {
+        "scope": "gallery_given_goals",
+        "mode": "random",
+        "seed": 29,
+        "perProbe": 0,
+        "aggregate": {
+          "tasks": 29,
+          "maps": 9,
+          "goalReached": 3,
+          "optimalToGoal": 0,
+          "macroMapSuccess": 0.1111111111111111,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 15,
+              "maps": 8,
+              "goalReached": 0,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 14,
+              "maps": 8,
+              "goalReached": 3,
+              "optimalToGoal": 0
+            }
+          },
+          "expanded": 0,
+          "rejectedProvenDeadendActions": 0,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "gallery_given_goals",
+        "mode": "random",
+        "seed": 29,
+        "perProbe": 8,
+        "aggregate": {
+          "tasks": 29,
+          "maps": 9,
+          "goalReached": 14,
+          "optimalToGoal": 0,
+          "macroMapSuccess": 0.45370370370370366,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 15,
+              "maps": 8,
+              "goalReached": 5,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 14,
+              "maps": 8,
+              "goalReached": 9,
+              "optimalToGoal": 0
+            }
+          },
+          "expanded": 16444,
+          "rejectedProvenDeadendActions": 548,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "gallery_given_goals",
+        "mode": "random",
+        "seed": 29,
+        "perProbe": 64,
+        "aggregate": {
+          "tasks": 29,
+          "maps": 9,
+          "goalReached": 17,
+          "optimalToGoal": 0,
+          "macroMapSuccess": 0.574074074074074,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 15,
+              "maps": 8,
+              "goalReached": 5,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 14,
+              "maps": 8,
+              "goalReached": 12,
+              "optimalToGoal": 0
+            }
+          },
+          "expanded": 79062,
+          "rejectedProvenDeadendActions": 196,
+          "searchBudgetReached": 13
+        }
+      },
+      {
+        "scope": "gallery_given_goals",
+        "mode": "learned",
+        "seed": 53,
+        "perProbe": 0,
+        "aggregate": {
+          "tasks": 29,
+          "maps": 9,
+          "goalReached": 7,
+          "optimalToGoal": 0,
+          "macroMapSuccess": 0.25,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 15,
+              "maps": 8,
+              "goalReached": 0,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 14,
+              "maps": 8,
+              "goalReached": 7,
+              "optimalToGoal": 0
+            }
+          },
+          "expanded": 0,
+          "rejectedProvenDeadendActions": 0,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "gallery_given_goals",
+        "mode": "learned",
+        "seed": 53,
+        "perProbe": 8,
+        "aggregate": {
+          "tasks": 29,
+          "maps": 9,
+          "goalReached": 18,
+          "optimalToGoal": 0,
+          "macroMapSuccess": 0.6111111111111112,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 15,
+              "maps": 8,
+              "goalReached": 7,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 14,
+              "maps": 8,
+              "goalReached": 11,
+              "optimalToGoal": 0
+            }
+          },
+          "expanded": 20199,
+          "rejectedProvenDeadendActions": 487,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "gallery_given_goals",
+        "mode": "learned",
+        "seed": 53,
+        "perProbe": 64,
+        "aggregate": {
+          "tasks": 29,
+          "maps": 9,
+          "goalReached": 17,
+          "optimalToGoal": 0,
+          "macroMapSuccess": 0.5555555555555556,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 15,
+              "maps": 8,
+              "goalReached": 6,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 14,
+              "maps": 8,
+              "goalReached": 11,
+              "optimalToGoal": 0
+            }
+          },
+          "expanded": 80772,
+          "rejectedProvenDeadendActions": 279,
+          "searchBudgetReached": 13
+        }
+      },
+      {
+        "scope": "gallery_given_goals",
+        "mode": "random",
+        "seed": 53,
+        "perProbe": 0,
+        "aggregate": {
+          "tasks": 29,
+          "maps": 9,
+          "goalReached": 1,
+          "optimalToGoal": 0,
+          "macroMapSuccess": 0.027777777777777776,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 15,
+              "maps": 8,
+              "goalReached": 0,
+              "optimalToGoal": 0
+            },
+            "must_keep": {
+              "tasks": 14,
+              "maps": 8,
+              "goalReached": 1,
+              "optimalToGoal": 0
+            }
+          },
+          "expanded": 0,
+          "rejectedProvenDeadendActions": 0,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "gallery_given_goals",
+        "mode": "random",
+        "seed": 53,
+        "perProbe": 8,
+        "aggregate": {
+          "tasks": 29,
+          "maps": 9,
+          "goalReached": 10,
+          "optimalToGoal": 1,
+          "macroMapSuccess": 0.3055555555555556,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 15,
+              "maps": 8,
+              "goalReached": 4,
+              "optimalToGoal": 1
+            },
+            "must_keep": {
+              "tasks": 14,
+              "maps": 8,
+              "goalReached": 6,
+              "optimalToGoal": 0
+            }
+          },
+          "expanded": 18009,
+          "rejectedProvenDeadendActions": 689,
+          "searchBudgetReached": 0
+        }
+      },
+      {
+        "scope": "gallery_given_goals",
+        "mode": "random",
+        "seed": 53,
+        "perProbe": 64,
+        "aggregate": {
+          "tasks": 29,
+          "maps": 9,
+          "goalReached": 11,
+          "optimalToGoal": 1,
+          "macroMapSuccess": 0.39814814814814814,
+          "byKind": {
+            "must_vacate": {
+              "tasks": 15,
+              "maps": 8,
+              "goalReached": 4,
+              "optimalToGoal": 1
+            },
+            "must_keep": {
+              "tasks": 14,
+              "maps": 8,
+              "goalReached": 7,
+              "optimalToGoal": 0
+            }
+          },
+          "expanded": 91642,
+          "rejectedProvenDeadendActions": 247,
+          "searchBudgetReached": 19
+        }
+      }
+    ]
+  },
+  "nativeRoutes": {
+    "role": "native_given_goal_route_QA_not_game_victory_or_quality",
+    "inputSha256": "98ef6d3e5b8752d36d72dabad926a831823c772f1f5f8b68dcf3ee6eacbbee04",
+    "routes": 798,
+    "uniqueRoutes": 563,
+    "maps": 13,
+    "actions": 71276,
+    "goalReached": 370,
+    "optimalToGivenGoal": 47,
+    "includesFailedPrefixes": true,
+    "allPassed": true
+  },
+  "trapClosureDiagnostic": {
+    "8": 35,
+    "16": 35,
+    "32": 36,
+    "64": 37,
+    "128": 37,
+    "256": 37,
+    "512": 37
+  },
+  "sourceSha256": {
+    "scripts/evaluate-parked-lookahead.py": "871f6c8d50976816272689e39e8ad2fc61cfdd41035c4fc9e931b7d9f321181e",
+    "test/training/test_parked_lookahead.py": "0bfd3d869c758f6c3d8b28c495fc884e4f70a0f463198bd04702aafe0cc60523"
+  },
+  "artifactSha256": {
+    "protocol.json": "4d9a496dcf625c77b3798d0f8926a1c1fee07b97da5e1730008dd3064ab93889",
+    "summary.json": "42800d7db3cad881ccc9da9930f3217a757242f389cb36b4efb324d7eb755901",
+    "routes.jsonl": "98ef6d3e5b8752d36d72dabad926a831823c772f1f5f8b68dcf3ee6eacbbee04",
+    "native-routes.json": "b4060d9740f062a163ac413fda4cc72d3c540bd13e35f559383a148f7ae9a0b7"
+  },
+  "trapClosureAuditSha256": "db061dd889433bca5e60b944ee172262c2954f116a76cef62adcd7072dd28a03",
+  "humanQualityLabelsAdded": 0,
+  "newMaps": 0,
+  "websiteIntegrated": false,
+  "verification": {
+    "pythonTests": 9,
+    "cloudCheck": "passed: 26 game files, 117 AI reference, 4 legacy files, rule lock, 2 seeds, 22 HTTP checks"
+  },
+  "decision": "An 8-expansion preflight improves supplied-goal completion for all orderings. The learned policy reaches 17/17/18 of 29 gallery development tasks, 7/5/7 of 15 must-vacate tasks, no optimal completion. Search contributes materially; model alone remains insufficient. Larger probes can use the shared cap too early. Do not deploy or claim independent generalization, autonomous goal choice, full game victory, or puzzle generation."
+}
