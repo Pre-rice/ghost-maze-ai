@@ -124,7 +124,7 @@ def main():
         raise ValueError("拒绝覆盖已有训练结果")
     manifest = json.loads((args.source / "manifest.json").read_text())
     assert manifest["role"] == "solver_supervision_not_human_quality"
-    for filename, expected in manifest["files"].items():
+    for filename, expected in {**manifest["files"], **manifest.get("graphFiles", {})}.items():
         assert digest(args.source / filename) == expected, filename
     metadata = [json.loads(line) for line in (args.source / "rows.jsonl").read_text().splitlines()]
     assert [r["row"] for r in metadata] == list(range(manifest["rows"]))

@@ -8,10 +8,17 @@ const minimum=xs=>xs.length?Math.min(...xs):100;
 const countAt=(list,x,y)=>list.filter(p=>p.x===x&&p.y===y).length;
 const cell=(def,x,y)=>!!def.activeCells[y]?.[x];
 const wall=(ls,x,y,dx,dy)=>dx?ls.wallStates.v[y]?.[x+(dx===1?1:0)]:ls.wallStates.h[y+(dy===1?1:0)]?.[x];
+export const PLANNING_FEATURE_VERSION=2;
 
 /** 全信息物理特征。没有mapId、家族、标题、动作步号、精确剩余成本或轨迹后缀。 */
-export function createPlanningEncoder(map) {
+export function createPlanningEncoder(map,{version=PLANNING_FEATURE_VERSION}={}) {
+    if(![1,2].includes(version))throw new TypeError('未知求解特征版本');
     const fast=createFastEnvironment(map),md=fast.reference.mapDefinition,goalFields=relaxedDistField(fast.sim),cache=new WeakMap();
+    const spatial=(a,b)=>a.layer-b.layer||a.y-b.y||a.x-b.x||String(a.axis??'').localeCompare(String(b.axis??''));
+    const allButtons=md.layers.flatMap((l,layer)=>l.initialEntities.buttons.map(b=>({...b,layer}))).sort(spatial),dynamicWalls=[];
+    md.layers.forEach((l,layer)=>{for(const axis of ['h','v'])l.initialWalls[axis].forEach((row,y)=>row.forEach((w,x)=>{if([W.LETTER_DOOR,W.LOCKED].includes(w.type))dynamicWalls.push({...w,layer,axis,x,y});}));});dynamicWalls.sort(spatial);
+    const letters=[...new Set([...allButtons,...dynamicWalls].filter(t=>t.letter).sort(spatial).map(t=>t.letter))],groupId=t=>t.letter?letters.indexOf(t.letter)+1:0;
+    if(version===2&&(dynamicWalls.length>16||allButtons.length>16||md.stairs.length>8||md.layers.flatMap(l=>l.initialEntities.ghosts).length>4||md.layers.flatMap(l=>l.initialEntities.items).length>8||md.layers.filter(l=>l.initialEntities.endPos).length>4))throw new RangeError('当前实验编码容量不足，必须扩容并重训，不能静默截断地图');
     const summarize=state=>{
         if(cache.has(state))return cache.get(state);
         const p=state.player,ls=state.layerStates[p.layer],def=md.layers[p.layer],features=[];
@@ -32,7 +39,15 @@ export function createPlanningEncoder(map) {
         state.layerStates.forEach((l,layer)=>{for(const axis of ['h','v'])l.wallStates[axis].forEach((row,y)=>row.forEach((w,x)=>{if(w.type===W.LETTER_DOOR){if(!groups.has(w.letter))groups.set(w.letter,{buttons:[],doors:[]});groups.get(w.letter).doors.push({x,y,layer,open:w.currentState==='open'});}}));});
         const ordered=[...groups.values()].map(g=>({...g,d:minimum(g.buttons.map(dist))})).sort((a,b)=>a.d-b.d||a.doors.length-b.doors.length);
         for(let i=0;i<4;i++){const g=ordered[i];if(g)push(g.buttons.length,g.doors.length,g.doors.filter(d=>d.open).length,g.d,minimum(g.doors.map(dist)));else push(0,0,0,100,100);}
+        if(version===2){
+            // 显式保留每扇动态门：同字母反相初态和远处已消耗数字门不能压成总数。
+            for(let i=0;i<16;i++){const d=dynamicWalls[i];if(d){const w=state.layerStates[d.layer].wallStates[d.axis][d.y][d.x];push(1,d.x-p.x,d.y-p.y,d.layer-p.layer,d.axis==='h'?0:1,d.type,w.type,d.initialState==='open'?1:0,w.currentState==='open'?1:0,w.keys??0,groupId(d));}else push(...Array(11).fill(0));}
+            for(let i=0;i<16;i++){const b=allButtons[i];if(b)push(1,b.x-p.x,b.y-p.y,b.layer-p.layer,b.direction?.dx??0,b.direction?.dy??0,groupId(b));else push(...Array(7).fill(0));}
+            const tokens=(list,limit,extra=()=>[])=>{const sorted=[...list].sort(spatial);for(let i=0;i<limit;i++){const t=sorted[i];if(t)push(1,t.x-p.x,t.y-p.y,t.layer-p.layer,...extra(t));else push(...Array(4+(list===md.stairs?1:0)).fill(0));}};
+            tokens(keys,8);tokens(ends,4);tokens(md.stairs,8,t=>[t.direction==='up'?1:-1]);
+            for(const [dx,dy] of dirs){const w=wall(ls,p.x,p.y,dx,dy);push(w?.direction?.dx??0,w?.direction?.dy??0);}
+        }
         cache.set(state,features);return features;
     };
-    return {dimension:null,summarize,encode(before,action,after){const a=summarize(before),b=summarize(after),p=before.player,q=after.player;return [...actions.map(token=>token===action?1:0),q.x-p.x,q.y-p.y,q.layer-p.layer,p.x===q.x&&p.y===q.y&&p.layer===q.layer?1:0,q.keys-p.keys,...a,...b];},relaxed:state=>finite(goalFields[state.player.layer][state.player.y][state.player.x])};
+    return {version,summarize,encode(before,action,after){const a=summarize(before),b=summarize(after),p=before.player,q=after.player;return [...actions.map(token=>token===action?1:0),q.x-p.x,q.y-p.y,q.layer-p.layer,p.x===q.x&&p.y===q.y&&p.layer===q.layer?1:0,q.keys-p.keys,...a,...b];},relaxed:state=>finite(goalFields[state.player.layer][state.player.y][state.player.x])};
 }

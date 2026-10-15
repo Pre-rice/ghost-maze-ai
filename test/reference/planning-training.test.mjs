@@ -4,6 +4,8 @@ import {enumeratePlanningGraph,reverseDistances} from '../../src/training/planni
 import {createPlanningEncoder} from '../../src/training/planning-features.js';
 import {createReferenceEnvironment} from '../../src/reference/environment.js';
 import {smallMap,keyDetourMap,stairMap} from './fixtures.mjs';
+import {createTreePredictor} from '../../src/training/tree-predictor.js';
+import {solveFastMap} from '../../src/search/fast-solver.js';
 
 test('完整图的标签包含所有并列最优动作；预算未知不提供精确距离',()=>{
  const m=smallMap([[1,1],[2,1],[1,2],[2,2]],[1,1],[2,2]),g=enumeratePlanningGraph(m);assert.equal(g.status,'exhausted');assert.equal(g.distance[0],2);assert.deepEqual(g.nodes[0].edges.filter(e=>g.distance[e.to]===1).map(e=>e.action).sort(),['D','R']);
@@ -21,4 +23,22 @@ test('单层与楼梯动作使用同维输入；距离标签经共同规则确�
  const a=keyDetourMap(),b=stairMap(),ae=createReferenceEnvironment(a),be=createReferenceEnvironment(b),av=ae.initialState(),bv=be.step(be.initialState(),'R');
  assert.equal(createPlanningEncoder(a).encode(av,'R',ae.step(av,'R')).length,createPlanningEncoder(b).encode(bv,'STAIR',be.step(bv,'STAIR')).length);
  const graph=enumeratePlanningGraph(b);assert.equal(graph.distance[0],3);assert.equal(graph.safeDistance[0],3);
+});
+test('远处消耗过的数字门不能与未经过的门压成同一输入',()=>{
+ const map=smallMap([[1,1],[2,1],[3,1],[4,1],[5,1],[6,1],[6,2]],[1,1],[6,2]);map.vWalls[1][5]={type:3,keys:0};const env=createReferenceEnvironment(map),initial=env.initialState();let consumed=initial;for(const action of ['R','R','R','R','L','L','L','L'])consumed=env.step(consumed,action);
+ assert.equal(consumed.player.x,initial.player.x);assert.equal(consumed.layerStates[0].wallStates.v[1][5].type,0);
+ const old=createPlanningEncoder(map,{version:1}),current=createPlanningEncoder(map);assert.deepEqual(old.encode(initial,'R',env.step(initial,'R')),old.encode(consumed,'R',env.step(consumed,'R')));assert.notDeepEqual(current.encode(initial,'R',env.step(initial,'R')),current.encode(consumed,'R',env.step(consumed,'R')));
+});
+test('导出树推理使用float32分裂，错误维数与环被拒绝',()=>{
+ const model={schemaVersion:1,modelType:'extra_trees_binary',dimension:1,trees:[{left:[1,-1,-1],right:[2,-1,-1],feature:[0,-2,-2],threshold:[1.00000001,-2,-2],probability:[0.5,0.2,0.8]}]},predictor=createTreePredictor(model);
+ assert.equal(predictor.predict([1.00000002]),0.2);assert.equal(predictor.predict([2]),0.8);assert.throws(()=>predictor.predict([]));assert.throws(()=>predictor.predict([NaN]));const bad=structuredClone(model);bad.trees[0].left[0]=0;assert.throws(()=>createTreePredictor(bad),/有环/);
+});
+test('敌对候选排序也不能改A*最优性，预算仍返回未知',()=>{
+ for(const map of [keyDetourMap(),stairMap(),smallMap([[1,1],[2,1],[1,2],[2,2]],[1,1],[2,2])]){
+  const baseline=solveFastMap(map),guided=solveFastMap(map,{rankCandidate:(s,a,next)=>1000*next.player.x-next.player.y});assert.equal(guided.optimality,'proven');assert.equal(guided.solution.totalActions,baseline.solution.totalActions);
+ }
+ assert.equal(solveFastMap(keyDetourMap(),{nodeBudget:0,rankCandidate:()=>0}).status,'unknown');assert.throws(()=>solveFastMap(keyDetourMap(),{rankCandidate:()=>NaN}),/有限/);
+});
+test('真实双鬼的数组顺序与编号不成为训练输入',()=>{
+ const map=smallMap(Array.from({length:3},(_,y)=>Array.from({length:4},(_,x)=>[x+1,y+1])).flat(),[1,1],[4,1]);map.initialGhosts=[{x:3,y:3,id:0},{x:4,y:3,id:1}];const env=createReferenceEnvironment(map),s=env.initialState(),copy=structuredClone(s),encoder=createPlanningEncoder(map);copy.layerStates[0].ghosts.reverse().forEach((g,i)=>g.id=100+i);assert.deepEqual(encoder.summarize(s),encoder.summarize(copy));
 });
