@@ -3,7 +3,7 @@
 更新：2026-10-15。历史档案不作为现行规则；日常读本页、[方法](methodology.md)与本体[设计小册](https://github.com/Pre-rice/ghost-maze/blob/main/docs/map-design-guide.md)。
 
 - 用户最新要求已落实：阶段性主线研究已完成复核与归档，暂停训练，回到本体优化；[阶段结果](https://github.com/Pre-rice/ghost-maze-ai/blob/research/planner-baseline-20261015/docs/planner-training.md)。不再自动开始训练或地图生成。
-- 本轮显示与布局修正完成23项浏览器专项和两仓统一验收：范围外悬停不再引起绘制偏移，纯数字楼层左右加减，侧框420px／两侧等量留白，工具每排8个，极简渐变输入，生命与宽高同行，三栏目地图同尺度。仅更新同一独立预览。[本轮QA](../data/manifests/editor-layout-browser-20261015.json)、[逐项交付](https://github.com/Pre-rice/ghost-maze/blob/preview/site-optimization-20261014/docs/archive/delivery/editor-layout-fix-20261015.md)。
+- 本轮两阶段43项浏览器验收与两仓统一检查通过：修复越界悬停与经典房间编辑后的视野丢失，数字楼层左右加减，等量留白／统一地图尺度，紧凑工具及输入。追加叠放滑条、点击切换、双列临时存档、四项信息同行、持续求解、编辑两种本地保存和解法卡片，仅更新同一预览。[23项证据](../data/manifests/editor-layout-browser-20261015.json)、[追加20项](../data/manifests/ui-followup-browser-20261015.json)、[逐项交付](https://github.com/Pre-rice/ghost-maze/blob/preview/site-optimization-20261014/docs/archive/delivery/editor-layout-fix-20261015.md)。
 - 上轮验收反馈已落实：主图／全景边缘裁剪、五圆方向键、框内开关与连排按钮、元件就地参数及Tab循环、尺寸适应、顶层删除、清空／填充和临时点删除；仅更新同一独立预览。物理模块、规则锁和十三图保持，详见[本轮QA](../data/manifests/four-column-refinements-browser-20261015.json)。
 - 本分支为四栏目重整预览；正式两个main保持恢复版本。地图／游玩／回放／编辑共用首页，帮助为宽弹窗，旧独立页删除；会话撤销跨死亡与重置、URL存档与未完成草稿、原图形工具／手机手势、渐进加载已完成。仅提交预览分支与既有Sites预览，认可前不正式发布。[本轮交付](https://github.com/Pre-rice/ghost-maze/blob/preview/site-optimization-20261014/docs/archive/delivery/four-column-workspace-20261015.md)。
 - 求解按每个有效操作后所有层鬼位归并，保留移动／停顿时序，不合并物理搜索局面。十三图原码、名称和发现顺序不变，本轮重新求得完整最优分类并预置缓存；《接力》20条→1种、《归途》3种、《同行》12条→1种，原最短步数保持。
