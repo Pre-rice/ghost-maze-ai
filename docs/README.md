@@ -24,6 +24,7 @@
 | AI自主试玩 | 本体[skill说明](https://github.com/Pre-rice/ghost-maze/blob/main/docs/ai-playtest.md)；工程体验与真人反馈分开 |
 | 分享、录制与旧资料导入 | [solution-recording](solution-recording.md) |
 | 示范数据接口 | [demonstration-learning](demonstration-learning.md)；当前清单以status为准 |
+| 本地CPU求解训练与留出诊断 | [planner-training](planner-training.md)；规划监督不是质量评分 |
 | 地图与旧格式范围 | [map-format](map-format.md)、本体[架构](https://github.com/Pre-rice/ghost-maze/blob/main/docs/architecture.md)与[协议](https://github.com/Pre-rice/ghost-maze/blob/main/docs/share-codes.md) |
 
 ## 追溯与可选路线

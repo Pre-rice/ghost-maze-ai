@@ -1,0 +1,804 @@
+{
+  "baseline-v1": {
+    "schemaVersion": 1,
+    "createdAtUtc": "2026-10-15T03:48:57.956553+00:00",
+    "role": "solver_training_development_diagnostic",
+    "trainStarted": true,
+    "sources": {
+      "manifestSha256": "394c5fed985b0bd2dc4b0ee074f91a14c862c663e4fb37ab2882fe3609e6c83f",
+      "rows": 18982,
+      "maps": 13,
+      "families": 2
+    },
+    "environment": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "sklearn": "1.8.0",
+      "device": "cpu",
+      "paidCalls": 0
+    },
+    "manualBaseline": {
+      "maps": 13,
+      "macroActionAccuracy": 0.6851242674414991,
+      "rolloutWon": 0,
+      "rolloutOptimal": 0,
+      "astarOptimal": 13,
+      "astarExpanded": 8345
+    },
+    "experiments": [
+      {
+        "variant": "reference_states",
+        "seed": 17,
+        "aggregate": {
+          "maps": 13,
+          "macroActionAccuracy": 0.6251086893612923,
+          "rolloutWon": 0,
+          "rolloutOptimal": 0,
+          "astarOptimal": 13,
+          "astarExpanded": 8411
+        }
+      },
+      {
+        "variant": "reference_states",
+        "seed": 29,
+        "aggregate": {
+          "maps": 13,
+          "macroActionAccuracy": 0.6200993380485038,
+          "rolloutWon": 0,
+          "rolloutOptimal": 0,
+          "astarOptimal": 13,
+          "astarExpanded": 8412
+        }
+      },
+      {
+        "variant": "reference_states",
+        "seed": 53,
+        "aggregate": {
+          "maps": 13,
+          "macroActionAccuracy": 0.6258145407767396,
+          "rolloutWon": 0,
+          "rolloutOptimal": 0,
+          "astarOptimal": 13,
+          "astarExpanded": 8412
+        }
+      },
+      {
+        "variant": "reachable_states",
+        "seed": 17,
+        "aggregate": {
+          "maps": 13,
+          "macroActionAccuracy": 0.6585123999167244,
+          "rolloutWon": 0,
+          "rolloutOptimal": 0,
+          "astarOptimal": 13,
+          "astarExpanded": 8417
+        }
+      },
+      {
+        "variant": "reachable_states",
+        "seed": 29,
+        "aggregate": {
+          "maps": 13,
+          "macroActionAccuracy": 0.6593633899623033,
+          "rolloutWon": 0,
+          "rolloutOptimal": 0,
+          "astarOptimal": 13,
+          "astarExpanded": 8412
+        }
+      },
+      {
+        "variant": "reachable_states",
+        "seed": 53,
+        "aggregate": {
+          "maps": 13,
+          "macroActionAccuracy": 0.6606078443197355,
+          "rolloutWon": 0,
+          "rolloutOptimal": 0,
+          "astarOptimal": 13,
+          "astarExpanded": 8420
+        }
+      }
+    ],
+    "limits": [
+      "只有两个保守家族，不能声称已学会创造精妙谜题",
+      "局面全信息，与迷雾知识策略不同",
+      "离线图搜索节点减少不等于端到端速度提升",
+      "此实验不产生人类质量标签或地图集变更"
+    ]
+  },
+  "baseline-v2": {
+    "schemaVersion": 1,
+    "createdAtUtc": "2026-10-15T03:54:46.155698+00:00",
+    "role": "solver_training_development_diagnostic",
+    "trainStarted": true,
+    "sources": {
+      "manifestSha256": "4d801780f7e9d1eabd28d7d396aea9bde0e57487a3505d2cd388f4ef24206e08",
+      "rows": 18982,
+      "maps": 13,
+      "families": 2
+    },
+    "environment": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "sklearn": "1.8.0",
+      "device": "cpu",
+      "paidCalls": 0
+    },
+    "manualBaseline": {
+      "maps": 13,
+      "macroActionAccuracy": 0.6851242674414991,
+      "rolloutWon": 0,
+      "rolloutOptimal": 0,
+      "astarOptimal": 13,
+      "astarExpanded": 8345
+    },
+    "experiments": [
+      {
+        "variant": "reference_states",
+        "seed": 17,
+        "aggregate": {
+          "maps": 13,
+          "macroActionAccuracy": 0.6129986519560758,
+          "rolloutWon": 0,
+          "rolloutOptimal": 0,
+          "astarOptimal": 13,
+          "astarExpanded": 8412
+        }
+      },
+      {
+        "variant": "reference_states",
+        "seed": 29,
+        "aggregate": {
+          "maps": 13,
+          "macroActionAccuracy": 0.6228092274010456,
+          "rolloutWon": 0,
+          "rolloutOptimal": 0,
+          "astarOptimal": 13,
+          "astarExpanded": 8411
+        }
+      },
+      {
+        "variant": "reference_states",
+        "seed": 53,
+        "aggregate": {
+          "maps": 13,
+          "macroActionAccuracy": 0.6212736151364123,
+          "rolloutWon": 0,
+          "rolloutOptimal": 0,
+          "astarOptimal": 13,
+          "astarExpanded": 8411
+        }
+      },
+      {
+        "variant": "reachable_states",
+        "seed": 17,
+        "aggregate": {
+          "maps": 13,
+          "macroActionAccuracy": 0.6570369185947793,
+          "rolloutWon": 0,
+          "rolloutOptimal": 0,
+          "astarOptimal": 13,
+          "astarExpanded": 8424
+        }
+      },
+      {
+        "variant": "reachable_states",
+        "seed": 29,
+        "aggregate": {
+          "maps": 13,
+          "macroActionAccuracy": 0.6563461241137531,
+          "rolloutWon": 0,
+          "rolloutOptimal": 0,
+          "astarOptimal": 13,
+          "astarExpanded": 8421
+        }
+      },
+      {
+        "variant": "reachable_states",
+        "seed": 53,
+        "aggregate": {
+          "maps": 13,
+          "macroActionAccuracy": 0.6595447274780978,
+          "rolloutWon": 0,
+          "rolloutOptimal": 0,
+          "astarOptimal": 13,
+          "astarExpanded": 8416
+        }
+      }
+    ],
+    "limits": [
+      "只有两个保守家族，不能声称已学会创造精妙谜题",
+      "局面全信息，与迷雾知识策略不同",
+      "离线图搜索节点减少不等于端到端速度提升",
+      "此实验不产生人类质量标签或地图集变更"
+    ]
+  },
+  "fit-v1": {
+    "role": "in_sample_fit_diagnostic_not_generalization",
+    "fittedRows": 7629,
+    "elapsedSeconds": 4.481970560998889,
+    "rowAccuracy": 0.9636911783982173,
+    "aggregate": {
+      "maps": 13,
+      "macroActionAccuracy": 0.976400438025524,
+      "rolloutWon": 10,
+      "rolloutOptimal": 7,
+      "astarOptimal": 13,
+      "astarExpanded": 8340
+    },
+    "modelSha256": "689e2d5a7f5fada571eed1aece29463410ec2654e7571e0807d2fa9152f6fdbe",
+    "independentTestMaps": 0
+  },
+  "fit-v2": {
+    "role": "in_sample_fit_diagnostic_not_generalization",
+    "fittedRows": 7629,
+    "elapsedSeconds": 8.577455032995204,
+    "rowAccuracy": 1.0,
+    "aggregate": {
+      "maps": 13,
+      "macroActionAccuracy": 1.0,
+      "rolloutWon": 13,
+      "rolloutOptimal": 13,
+      "astarOptimal": 13,
+      "astarExpanded": 8334
+    },
+    "modelSha256": "a9678ce1da816e80062680cedf4e5b374599ac440b71d658c55362a07ae43042",
+    "independentTestMaps": 0
+  },
+  "value-v2": {
+    "role": "first_solution_development_diagnostic",
+    "manual": {
+      "maps": 13,
+      "solved": 13,
+      "coincidesWithOptimum": 8,
+      "expanded": 6998,
+      "solvedWithinBudget": {
+        "64": 1,
+        "256": 7,
+        "1024": 10,
+        "10000": 13
+      }
+    },
+    "experiments": [
+      {
+        "seed": 17,
+        "mode": "greedy_value",
+        "aggregate": {
+          "maps": 13,
+          "solved": 13,
+          "coincidesWithOptimum": 6,
+          "expanded": 10528,
+          "solvedWithinBudget": {
+            "64": 1,
+            "256": 6,
+            "1024": 10,
+            "10000": 13
+          }
+        }
+      },
+      {
+        "seed": 17,
+        "mode": "weighted",
+        "aggregate": {
+          "maps": 13,
+          "solved": 13,
+          "coincidesWithOptimum": 8,
+          "expanded": 10029,
+          "solvedWithinBudget": {
+            "64": 1,
+            "256": 6,
+            "1024": 10,
+            "10000": 13
+          }
+        }
+      },
+      {
+        "seed": 29,
+        "mode": "greedy_value",
+        "aggregate": {
+          "maps": 13,
+          "solved": 13,
+          "coincidesWithOptimum": 5,
+          "expanded": 10371,
+          "solvedWithinBudget": {
+            "64": 1,
+            "256": 7,
+            "1024": 10,
+            "10000": 13
+          }
+        }
+      },
+      {
+        "seed": 29,
+        "mode": "weighted",
+        "aggregate": {
+          "maps": 13,
+          "solved": 13,
+          "coincidesWithOptimum": 6,
+          "expanded": 9956,
+          "solvedWithinBudget": {
+            "64": 1,
+            "256": 6,
+            "1024": 10,
+            "10000": 13
+          }
+        }
+      },
+      {
+        "seed": 53,
+        "mode": "greedy_value",
+        "aggregate": {
+          "maps": 13,
+          "solved": 13,
+          "coincidesWithOptimum": 6,
+          "expanded": 9964,
+          "solvedWithinBudget": {
+            "64": 1,
+            "256": 6,
+            "1024": 10,
+            "10000": 13
+          }
+        }
+      },
+      {
+        "seed": 53,
+        "mode": "weighted",
+        "aggregate": {
+          "maps": 13,
+          "solved": 13,
+          "coincidesWithOptimum": 7,
+          "expanded": 10121,
+          "solvedWithinBudget": {
+            "64": 1,
+            "256": 6,
+            "1024": 10,
+            "10000": 13
+          }
+        }
+      }
+    ],
+    "qualityLabelsAdded": 0,
+    "galleryChanged": false
+  },
+  "native-v2": {
+    "role": "native_timing_development_diagnostic",
+    "maps": 13,
+    "allRoutesNativeVerified": true,
+    "allOptimal": true,
+    "totals": {
+      "manual": {
+        "summedPerMapMedianMs": 114.21901200000107,
+        "expanded": 8345
+      },
+      "learned": {
+        "summedPerMapMedianMs": 662.1597219999994,
+        "expanded": 8424
+      }
+    },
+    "speedRatio": 5.7972811216401805,
+    "limitations": [
+      "三次交错计时是本机开发诊断，不等于手机或网站体验",
+      "未计模型网络下载与初次载入；二者只会增加学习方案成本",
+      "两个家族留出不能证明独立泛化"
+    ]
+  },
+  "featureAliasAudit": {
+    "1": {
+      "eligibleRows": 7629,
+      "uniqueFeatures": 5379,
+      "contradictoryFeatures": 225,
+      "contradictoryRows": 554,
+      "withinMapContradictoryFeatures": 225,
+      "withinMapContradictoryRows": 554
+    },
+    "2": {
+      "eligibleRows": 7629,
+      "uniqueFeatures": 7281,
+      "contradictoryFeatures": 0,
+      "contradictoryRows": 0,
+      "withinMapContradictoryFeatures": 0,
+      "withinMapContradictoryRows": 0
+    }
+  },
+  "tieCeiling": {
+    "role": "admissible_frontier_ceiling_not_model_performance",
+    "proof": "一致下界下，f严格小于最优成本的所有可达局面在最优A*终止前必须展开；学习仅排序同f无法省去它们",
+    "mandatoryExpanded": 8269,
+    "maps": [
+      {
+        "title": "错位",
+        "mapId": "e3d3a67fcbc7bc13f1a1457d00bd44652d6dce67085c55f77600ae1b582bb161",
+        "optimal": 32,
+        "mandatoryLowerF": 60
+      },
+      {
+        "title": "接力",
+        "mapId": "e2e2d43f2fdf4182f1952731b746260cdde29266422b7d760f2cf253e2b2b771",
+        "optimal": 31,
+        "mandatoryLowerF": 153
+      },
+      {
+        "title": "归途",
+        "mapId": "e9bdf78911aaa8f6405acacf5922ec1f7252792180626eff10b72bfc3c8e145f",
+        "optimal": 39,
+        "mandatoryLowerF": 363
+      },
+      {
+        "title": "借影",
+        "mapId": "f1b00c65b1dbb814bace7e71bbaee38f4687e96920c24421912e486021c24186",
+        "optimal": 53,
+        "mandatoryLowerF": 445
+      },
+      {
+        "title": "回环",
+        "mapId": "b76d1e9209f5ea4c42fec71b6e69745119d382ef35497575383145c693126b3b",
+        "optimal": 70,
+        "mandatoryLowerF": 3537
+      },
+      {
+        "title": "回位",
+        "mapId": "8e364828efdeb4858ae856a1e9c9f4b627555f8e0658a88d9a0053c8febe7102",
+        "optimal": 35,
+        "mandatoryLowerF": 208
+      },
+      {
+        "title": "换边",
+        "mapId": "ec6dbc7738c836baf3af954c11de993c6a2decf9e3f6378408d4682efad406e9",
+        "optimal": 28,
+        "mandatoryLowerF": 56
+      },
+      {
+        "title": "换岗",
+        "mapId": "4de4193aba5f2f72469f0c421a530e04c436d4e91777d8a6a60901974cd4a995",
+        "optimal": 76,
+        "mandatoryLowerF": 1114
+      },
+      {
+        "title": "后路",
+        "mapId": "5176ec3d2668cf7a3c1f15af0a13752781e78ccdb9b9d37d9642beb4ffa26281",
+        "optimal": 59,
+        "mandatoryLowerF": 1442
+      },
+      {
+        "title": "暂驻",
+        "mapId": "df5820de550cab3dabf35533463f7203937c6b24523bd2ad2df77e078e00977c",
+        "optimal": 37,
+        "mandatoryLowerF": 188
+      },
+      {
+        "title": "再借",
+        "mapId": "b90330352c5e027977bfdf0d3c295a5f4a7af605cc067c0c0d409053c4c62d03",
+        "optimal": 27,
+        "mandatoryLowerF": 193
+      },
+      {
+        "title": "周转",
+        "mapId": "d5b5556b7b76c88ca20fa3030e97f0a91cc1aaeded50e218e0c3de54b749df75",
+        "optimal": 36,
+        "mandatoryLowerF": 222
+      },
+      {
+        "title": "同行",
+        "mapId": "aab359502f4254db6cc01006be752b2b9e0b23522a866ab4c301784ca15673b5",
+        "optimal": 51,
+        "mandatoryLowerF": 288
+      }
+    ]
+  },
+  "nativeValueRoutes": {
+    "allPassed": true,
+    "routes": 78
+  },
+  "dataRole": "solver_development_diagnostic_not_human_quality",
+  "newHumanQualityLabels": 0,
+  "rulesChanged": false,
+  "galleryChanged": false,
+  "curriculum": {
+    "role": "mechanical_curriculum_development_diagnostic",
+    "trainEligibleRows": 5394,
+    "trainMaps": 48,
+    "manual": {
+      "same_generator": {
+        "maps": 24,
+        "macroActionAccuracy": 0.869727881978811,
+        "rolloutWon": 16,
+        "rolloutOptimal": 7,
+        "astarOptimal": 24,
+        "astarExpanded": 497
+      },
+      "gallery_challenge": {
+        "maps": 13,
+        "macroActionAccuracy": 0.6851242674414991,
+        "rolloutWon": 0,
+        "rolloutOptimal": 0,
+        "astarOptimal": 13,
+        "astarExpanded": 8345
+      }
+    },
+    "experiments": [
+      {
+        "seed": 17,
+        "scope": "same_generator",
+        "modelFile": "models/curriculum-17.json",
+        "modelSha256": "ba7a38872fdff63f7fd29e956d57875014d1eedce157d7abbc19ed044e4ac7d8",
+        "aggregate": {
+          "maps": 24,
+          "macroActionAccuracy": 0.8684660459834067,
+          "rolloutWon": 20,
+          "rolloutOptimal": 8,
+          "astarOptimal": 24,
+          "astarExpanded": 487
+        }
+      },
+      {
+        "seed": 17,
+        "scope": "gallery_challenge",
+        "modelFile": "models/curriculum-17.json",
+        "modelSha256": "ba7a38872fdff63f7fd29e956d57875014d1eedce157d7abbc19ed044e4ac7d8",
+        "aggregate": {
+          "maps": 13,
+          "macroActionAccuracy": 0.7049425101989623,
+          "rolloutWon": 0,
+          "rolloutOptimal": 0,
+          "astarOptimal": 13,
+          "astarExpanded": 8370
+        }
+      },
+      {
+        "seed": 29,
+        "scope": "same_generator",
+        "modelFile": "models/curriculum-29.json",
+        "modelSha256": "f87d416faafb73160c17fdb5d4d79e02fa7c00635e30106e4fb92842a0b9bc48",
+        "aggregate": {
+          "maps": 24,
+          "macroActionAccuracy": 0.8663415920669806,
+          "rolloutWon": 19,
+          "rolloutOptimal": 7,
+          "astarOptimal": 24,
+          "astarExpanded": 489
+        }
+      },
+      {
+        "seed": 29,
+        "scope": "gallery_challenge",
+        "modelFile": "models/curriculum-29.json",
+        "modelSha256": "f87d416faafb73160c17fdb5d4d79e02fa7c00635e30106e4fb92842a0b9bc48",
+        "aggregate": {
+          "maps": 13,
+          "macroActionAccuracy": 0.7128014530201253,
+          "rolloutWon": 0,
+          "rolloutOptimal": 0,
+          "astarOptimal": 13,
+          "astarExpanded": 8371
+        }
+      },
+      {
+        "seed": 53,
+        "scope": "same_generator",
+        "modelFile": "models/curriculum-53.json",
+        "modelSha256": "6a3c9d7524e98ac328fa23c05622c8fdee82f3848c20ac03fdd1431b6fb7281c",
+        "aggregate": {
+          "maps": 24,
+          "macroActionAccuracy": 0.8717016045688268,
+          "rolloutWon": 19,
+          "rolloutOptimal": 7,
+          "astarOptimal": 24,
+          "astarExpanded": 487
+        }
+      },
+      {
+        "seed": 53,
+        "scope": "gallery_challenge",
+        "modelFile": "models/curriculum-53.json",
+        "modelSha256": "6a3c9d7524e98ac328fa23c05622c8fdee82f3848c20ac03fdd1431b6fb7281c",
+        "aggregate": {
+          "maps": 13,
+          "macroActionAccuracy": 0.7002171426448474,
+          "rolloutWon": 0,
+          "rolloutOptimal": 0,
+          "astarOptimal": 13,
+          "astarExpanded": 8379
+        }
+      }
+    ]
+  },
+  "backtracking": {
+    "backtracking-gallery": [
+      {
+        "seed": 17,
+        "mode": "relaxed_distance",
+        "maps": 13,
+        "solved": 13,
+        "matchesKnownOptimum": 1,
+        "expanded": 7144,
+        "solvedWithin256": 8
+      },
+      {
+        "seed": 17,
+        "mode": "random",
+        "maps": 13,
+        "solved": 13,
+        "matchesKnownOptimum": 1,
+        "expanded": 5661,
+        "solvedWithin256": 8
+      },
+      {
+        "seed": 17,
+        "mode": "learned",
+        "maps": 13,
+        "solved": 13,
+        "matchesKnownOptimum": 2,
+        "expanded": 4329,
+        "solvedWithin256": 8
+      },
+      {
+        "seed": 29,
+        "mode": "relaxed_distance",
+        "maps": 13,
+        "solved": 13,
+        "matchesKnownOptimum": 1,
+        "expanded": 7144,
+        "solvedWithin256": 8
+      },
+      {
+        "seed": 29,
+        "mode": "random",
+        "maps": 13,
+        "solved": 13,
+        "matchesKnownOptimum": 1,
+        "expanded": 5050,
+        "solvedWithin256": 9
+      },
+      {
+        "seed": 29,
+        "mode": "learned",
+        "maps": 13,
+        "solved": 13,
+        "matchesKnownOptimum": 2,
+        "expanded": 6170,
+        "solvedWithin256": 8
+      },
+      {
+        "seed": 53,
+        "mode": "relaxed_distance",
+        "maps": 13,
+        "solved": 13,
+        "matchesKnownOptimum": 1,
+        "expanded": 7144,
+        "solvedWithin256": 8
+      },
+      {
+        "seed": 53,
+        "mode": "random",
+        "maps": 13,
+        "solved": 13,
+        "matchesKnownOptimum": 2,
+        "expanded": 6917,
+        "solvedWithin256": 9
+      },
+      {
+        "seed": 53,
+        "mode": "learned",
+        "maps": 13,
+        "solved": 13,
+        "matchesKnownOptimum": 2,
+        "expanded": 6324,
+        "solvedWithin256": 9
+      }
+    ],
+    "backtracking-curriculum": [
+      {
+        "seed": 17,
+        "mode": "relaxed_distance",
+        "maps": 24,
+        "solved": 24,
+        "matchesKnownOptimum": 16,
+        "expanded": 280,
+        "solvedWithin256": 24
+      },
+      {
+        "seed": 17,
+        "mode": "random",
+        "maps": 24,
+        "solved": 24,
+        "matchesKnownOptimum": 10,
+        "expanded": 439,
+        "solvedWithin256": 24
+      },
+      {
+        "seed": 17,
+        "mode": "learned",
+        "maps": 24,
+        "solved": 24,
+        "matchesKnownOptimum": 17,
+        "expanded": 285,
+        "solvedWithin256": 24
+      },
+      {
+        "seed": 29,
+        "mode": "relaxed_distance",
+        "maps": 24,
+        "solved": 24,
+        "matchesKnownOptimum": 16,
+        "expanded": 280,
+        "solvedWithin256": 24
+      },
+      {
+        "seed": 29,
+        "mode": "random",
+        "maps": 24,
+        "solved": 24,
+        "matchesKnownOptimum": 6,
+        "expanded": 502,
+        "solvedWithin256": 24
+      },
+      {
+        "seed": 29,
+        "mode": "learned",
+        "maps": 24,
+        "solved": 24,
+        "matchesKnownOptimum": 16,
+        "expanded": 292,
+        "solvedWithin256": 24
+      },
+      {
+        "seed": 53,
+        "mode": "relaxed_distance",
+        "maps": 24,
+        "solved": 24,
+        "matchesKnownOptimum": 16,
+        "expanded": 280,
+        "solvedWithin256": 24
+      },
+      {
+        "seed": 53,
+        "mode": "random",
+        "maps": 24,
+        "solved": 24,
+        "matchesKnownOptimum": 10,
+        "expanded": 522,
+        "solvedWithin256": 24
+      },
+      {
+        "seed": 53,
+        "mode": "learned",
+        "maps": 24,
+        "solved": 24,
+        "matchesKnownOptimum": 18,
+        "expanded": 278,
+        "solvedWithin256": 24
+      }
+    ]
+  },
+  "mechanicalData": {
+    "curriculum-train-library": {
+      "maps": 48,
+      "attempts": 303,
+      "outcomes": {
+        "proven_no_nonfatal_solution": 148,
+        "accepted": 48,
+        "outside_training_scope": 106,
+        "no_valid_proposal": 1
+      },
+      "family": [
+        "mechanical-curriculum-generator-v1"
+      ],
+      "rows": 5834,
+      "humanQualitySamplesAdded": 0
+    },
+    "curriculum-test-library": {
+      "maps": 24,
+      "attempts": 160,
+      "outcomes": {
+        "accepted": 24,
+        "proven_no_nonfatal_solution": 76,
+        "outside_training_scope": 60
+      },
+      "family": [
+        "mechanical-curriculum-generator-v1"
+      ],
+      "rows": 2939,
+      "humanQualitySamplesAdded": 0
+    }
+  }
+}

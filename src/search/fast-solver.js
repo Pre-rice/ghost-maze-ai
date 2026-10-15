@@ -2,12 +2,13 @@ import { performance } from 'node:perf_hooks';
 import assert from 'node:assert/strict';
 import { createFastEnvironment, physicalState } from './fast-environment.js';
 import { relaxedDistField } from './relaxed-distance.js';
+import { buildGhostRelaxation,isGhostRelaxationTable } from './ghost-relaxation.js';
 import { compileRestrictions, replayRestricted } from './restrictions.js';
 
 // 堆节点保留自己的 g、父节点和动作，不能用可被覆盖的状态键回溯旧分支。
 class Queue {
     nodes = [];
-    before(a, b) { return a.f < b.f || (a.f === b.f && (a.g > b.g || (a.g === b.g && a.order < b.order))); }
+    before(a, b) { return a.f < b.f || (a.f === b.f && (a.rank < b.rank || (a.rank === b.rank && (a.g > b.g || (a.g === b.g && a.order < b.order))))); }
     push(node) {
         const a = this.nodes; a.push(node);
         for (let i = a.length - 1; i > 0;) {
@@ -36,19 +37,22 @@ const DEFAULT_BUDGET = { nodeBudget: 10000, stateBudget: 2500, budgetMs: 2000 };
 /** A* 快求解：动态资源完整去重，全层乐观下界，预算中断保留已发现证书但不冒称最优。 */
 export function solveFastMap(mapData, options = {}) {
     if (!options || typeof options !== 'object' || Array.isArray(options)) throw new TypeError('预算参数必须为对象');
-    const { withGhosts = true, restrictions = [], ...givenBudget } = options;
+    const { withGhosts = true, restrictions = [], rankCandidate = null, ghostRelaxation = false, canonicalGhosts = false, ...givenBudget } = options;
     if (typeof withGhosts !== 'boolean') throw new TypeError('withGhosts 必须为布尔值');
+    if(rankCandidate!==null&&typeof rankCandidate!=='function')throw new TypeError('rankCandidate 必须为函数或null');
+    if(!isGhostRelaxationTable(ghostRelaxation)&&ghostRelaxation!==false&&ghostRelaxation!==true&&(!ghostRelaxation||typeof ghostRelaxation!=='object'||Array.isArray(ghostRelaxation)||Object.keys(ghostRelaxation).some(k=>!['nodeBudget','stateBudget','budgetMs'].includes(k))))throw new TypeError('ghostRelaxation 必须为布尔值、子问题预算或本模块构建的表');
     for (const key of Object.keys(givenBudget)) if (!Object.hasOwn(DEFAULT_BUDGET, key)) throw new TypeError(`未知预算参数：${key}`);
     const budget = { ...DEFAULT_BUDGET, ...givenBudget };
     for (const [name, value] of Object.entries(budget)) if (!Number.isSafeInteger(value) || value < (name === 'stateBudget' ? 1 : 0)) throw new TypeError(`非法预算：${name}`);
-    const env = createFastEnvironment(mapData, { withGhosts }), reference = env.reference;
+    const env = createFastEnvironment(mapData, { withGhosts,canonicalGhosts }), reference = env.reference;
     if (!reference.mapDefinition.layers.some(layer => layer.initialEntities.endPos)) throw new TypeError('求解地图至少需要一个终点');
     const monitor = compileRestrictions(reference.mapDefinition, restrictions);
+    if(canonicalGhosts&&monitor.specs.length)throw new TypeError('有历史事件监控时须保留鬼的角色顺序，不能启用对称归并');
     const started = performance.now(), initial = env.initialState(), firstProgress = monitor.initial();
     const keyOf = (state, progress) => `${env.stateKey(state)}|monitor:${progress.join(',')}`;
     const firstKey = keyOf(initial, firstProgress);
     const bestG = new Map([[firstKey, 0]]), queue = new Queue();
-    let expanded = 0, transitions = 0, incumbent = null, order = 0;
+    let expanded = 0, transitions = 0, incumbent = null, order = 0, relaxation = null;
     const finish = (status, reason, optimality = null) => {
         const elapsedMs = performance.now() - started;
         let solution = null;
@@ -66,17 +70,20 @@ export function solveFastMap(mapData, options = {}) {
             schemaVersion: 1, status, reason, ruleset: reference.ruleset, mapId: env.sourceMapId,
             scope: { gameMode: reference.mapDefinition.gameMode, objective: 'zero_hit_no_revive', metric: 'successful_actions', actions: reference.actions, withGhosts, restrictions: monitor.specs },
             optimality, solution,
-            search: { algorithm: 'astar', expanded, transitions, discovered: bestG.size, exhausted: reason === 'frontier_exhausted', elapsedMs, budget }
+            search: { algorithm: 'astar', expanded, transitions, discovered: bestG.size, exhausted: reason === 'frontier_exhausted', elapsedMs, budget,
+                ...(canonicalGhosts?{canonicalGhosts:true}:{}),
+                ...(relaxation?{ghostRelaxation:{status:relaxation.status,states:relaxation.states,expanded:relaxation.expanded,elapsedMs:relaxation.elapsedMs,reused:isGhostRelaxationTable(ghostRelaxation)}}:{}) }
         };
     };
     const interrupted = reason => finish(incumbent ? 'solved' : 'unknown', reason, incumbent ? 'not_proven' : null);
     if (budget.nodeBudget === 0) return interrupted('node_budget');
     if (budget.budgetMs === 0) return interrupted('time_budget');
     const fields = relaxedDistField(env.sim);
-    const h = state => fields[state.player.layer][state.player.y][state.player.x];
+    if(ghostRelaxation){if(isGhostRelaxationTable(ghostRelaxation)){if(ghostRelaxation.sourceMapId!==env.sourceMapId)throw new TypeError('去鬼子问题与当前地图不一致');relaxation=ghostRelaxation;}else{const options=ghostRelaxation===true?{}:ghostRelaxation;relaxation=buildGhostRelaxation(mapData,{...options,budgetMs:Math.min(options.budgetMs??50,budget.budgetMs)});}}
+    const h = state => Math.max(fields[state.player.layer][state.player.y][state.player.x],relaxation?.lowerBound(state)??0);
     if (performance.now() - started >= budget.budgetMs) return interrupted('time_budget');
     if (!Number.isFinite(h(initial))) return finish('proven_unsat', 'relaxed_unreachable');
-    queue.push({ key: firstKey, progress: firstProgress, state: initial, g: 0, f: h(initial), parent: null, action: null, order: order++ });
+    queue.push({ key: firstKey, progress: firstProgress, state: initial, g: 0, f: h(initial), rank:0, parent: null, action: null, order: order++ });
     while (queue.nodes.length) {
         if (expanded >= budget.nodeBudget) return interrupted('node_budget');
         if (performance.now() - started >= budget.budgetMs) return interrupted('time_budget');
@@ -92,7 +99,10 @@ export function solveFastMap(mapData, options = {}) {
             if (progress === null) continue;
             const key = keyOf(next, progress), g = node.g + 1, lower = h(next);
             if (g >= (bestG.get(key) ?? Infinity) || !Number.isFinite(lower)) continue;
-            const child = { key, progress, state: next, g, f: g + lower, parent: node, action, order: order++ };
+            // 研究模型只在相同f内排序；不修改g／下界／访问键，不剪枝。
+            const rank=rankCandidate?rankCandidate(node.state,action,next):0;
+            if(!Number.isFinite(rank))throw new TypeError('候选排序值必须有限');
+            const child = { key, progress, state: next, g, f: g + lower, rank, parent: node, action, order: order++ };
             if (next.isWon && (!incumbent || g < incumbent.g)) incumbent = child;
             if (!bestG.has(key) && bestG.size >= budget.stateBudget) return interrupted('state_budget');
             bestG.set(key, g);

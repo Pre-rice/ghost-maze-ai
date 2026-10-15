@@ -1,0 +1,10 @@
+import {readFileSync,writeFileSync,existsSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import assert from 'node:assert/strict';
+import {createReferenceEnvironment} from '../src/reference/environment.js';
+import {hasGhostOverlap} from '../src/training/planning-graph.js';
+const [input,output]=process.argv.slice(2);if(!output)throw new Error('用法：node scripts/verify-planning-route-list.mjs <routes.jsonl> <新报告>');assert(!existsSync(output));const bytes=readFileSync(input),routes=bytes.toString().trim().split('\n').filter(Boolean).map(JSON.parse),maps=new Map(),unique=new Set(),results=[];
+for(const route of routes){const id=route.graphDirectory+'|'+route.mapId;let source=maps.get(id);if(!source){const manifest=JSON.parse(readFileSync(route.graphDirectory+'/manifest.json')),record=manifest.records.find(r=>r.mapId===route.mapId);assert(record);const file='graphs/'+route.mapId+'.json',bytes=readFileSync(route.graphDirectory+'/'+file);assert.equal(createHash('sha256').update(bytes).digest('hex'),manifest.graphFiles[file]);const graph=JSON.parse(bytes),env=createReferenceEnvironment(graph.map);assert.equal(env.mapId,route.mapId);source={env,record};maps.set(id,source);}
+ let state=source.env.initialState();for(const action of route.actions){assert(!state.isWon&&!state.isDead);const next=source.env.step(state,action);assert(next!==state&&!next.isDead&&!hasGhostOverlap(next));state=next;}assert(state.isWon);assert.equal(route.actions.length,route.steps);assert.equal(state.player.steps,route.steps);assert(route.steps>=source.record.shortest);unique.add(id+'|'+route.actions.join(','));results.push({mapId:route.mapId,steps:route.steps,coincidesWithKnownOptimum:route.steps===source.record.shortest,won:true,nonfatalOverlap:false});
+}
+const report={role:'native_route_QA_not_independent_training_samples',inputSha256:createHash('sha256').update(bytes).digest('hex'),routes:routes.length,uniqueRoutes:unique.size,maps:maps.size,allPassed:true,results};writeFileSync(output,JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({routes:report.routes,maps:report.maps,allPassed:true}));

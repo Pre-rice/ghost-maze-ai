@@ -1,0 +1,448 @@
+{
+  "role": "exact_abstraction_reuse_and_ghost_residual_development_not_quality",
+  "newHumanQualityLabels": 0,
+  "galleryChanged": false,
+  "abstractionReuse": {
+    "role": "exact_no_ghost_abstraction_development_not_quality",
+    "proofStates": 11190,
+    "proofEdges": 18982,
+    "allAdmissible": true,
+    "allConsistent": true,
+    "mandatoryGeometric": 8269,
+    "mandatoryNoGhost": 7141,
+    "summaries": [
+      {
+        "method": "geometric",
+        "maps": 13,
+        "allOptimalAndNativeReplayed": true,
+        "summedPerMapMedianMs": 113.52787000000042,
+        "expandedFirstRepeat": 8345,
+        "incompletePreparations": 0
+      },
+      {
+        "method": "no_ghost_50ms",
+        "maps": 13,
+        "allOptimalAndNativeReplayed": true,
+        "summedPerMapMedianMs": 151.00273700000037,
+        "expandedFirstRepeat": 7317,
+        "incompletePreparations": 0
+      },
+      {
+        "method": "no_ghost_reused",
+        "maps": 13,
+        "allOptimalAndNativeReplayed": true,
+        "summedPerMapMedianMs": 121.52417599999985,
+        "expandedFirstRepeat": 7317,
+        "incompletePreparations": 0
+      }
+    ]
+  },
+  "ghostResidual": {
+    "role": "ghost_only_residual_development_diagnostic",
+    "manual": {
+      "same_generator-geometric": {
+        "maps": 24,
+        "solved": 24,
+        "expanded": 439,
+        "coincidesWithOptimum": 23,
+        "rolloutWon": 16,
+        "rolloutOptimal": 7,
+        "solvedWithin256": 24
+      },
+      "same_generator-no_ghost": {
+        "maps": 24,
+        "solved": 24,
+        "expanded": 295,
+        "coincidesWithOptimum": 23,
+        "rolloutWon": 18,
+        "rolloutOptimal": 14,
+        "solvedWithin256": 24
+      },
+      "gallery-geometric": {
+        "maps": 13,
+        "solved": 13,
+        "expanded": 6998,
+        "coincidesWithOptimum": 8,
+        "rolloutWon": 0,
+        "rolloutOptimal": 0,
+        "solvedWithin256": 7
+      },
+      "gallery-no_ghost": {
+        "maps": 13,
+        "solved": 13,
+        "expanded": 5801,
+        "coincidesWithOptimum": 10,
+        "rolloutWon": 0,
+        "rolloutOptimal": 0,
+        "solvedWithin256": 9
+      }
+    },
+    "experiments": [
+      {
+        "scope": "same_generator",
+        "seed": 17,
+        "mode": "greedy",
+        "aggregate": {
+          "maps": 24,
+          "solved": 24,
+          "expanded": 402,
+          "coincidesWithOptimum": 20,
+          "rolloutWon": 21,
+          "rolloutOptimal": 8,
+          "solvedWithin256": 24
+        }
+      },
+      {
+        "scope": "curriculum_only",
+        "seed": 17,
+        "mode": "greedy",
+        "aggregate": {
+          "maps": 13,
+          "solved": 13,
+          "expanded": 9223,
+          "coincidesWithOptimum": 8,
+          "rolloutWon": 0,
+          "rolloutOptimal": 0,
+          "solvedWithin256": 7
+        }
+      },
+      {
+        "scope": "curriculum_only",
+        "seed": 17,
+        "mode": "weighted",
+        "aggregate": {
+          "maps": 13,
+          "solved": 13,
+          "expanded": 8859,
+          "coincidesWithOptimum": 9,
+          "rolloutWon": 0,
+          "rolloutOptimal": 0,
+          "solvedWithin256": 7
+        }
+      },
+      {
+        "scope": "family_holdout",
+        "seed": 17,
+        "mode": "greedy",
+        "aggregate": {
+          "maps": 13,
+          "solved": 13,
+          "expanded": 9264,
+          "coincidesWithOptimum": 7,
+          "rolloutWon": 0,
+          "rolloutOptimal": 0,
+          "solvedWithin256": 5
+        }
+      },
+      {
+        "scope": "family_holdout",
+        "seed": 17,
+        "mode": "weighted",
+        "aggregate": {
+          "maps": 13,
+          "solved": 13,
+          "expanded": 8510,
+          "coincidesWithOptimum": 8,
+          "rolloutWon": 0,
+          "rolloutOptimal": 0,
+          "solvedWithin256": 5
+        }
+      },
+      {
+        "scope": "same_generator",
+        "seed": 29,
+        "mode": "greedy",
+        "aggregate": {
+          "maps": 24,
+          "solved": 24,
+          "expanded": 378,
+          "coincidesWithOptimum": 22,
+          "rolloutWon": 22,
+          "rolloutOptimal": 9,
+          "solvedWithin256": 24
+        }
+      },
+      {
+        "scope": "curriculum_only",
+        "seed": 29,
+        "mode": "greedy",
+        "aggregate": {
+          "maps": 13,
+          "solved": 13,
+          "expanded": 9069,
+          "coincidesWithOptimum": 8,
+          "rolloutWon": 0,
+          "rolloutOptimal": 0,
+          "solvedWithin256": 6
+        }
+      },
+      {
+        "scope": "curriculum_only",
+        "seed": 29,
+        "mode": "weighted",
+        "aggregate": {
+          "maps": 13,
+          "solved": 13,
+          "expanded": 8219,
+          "coincidesWithOptimum": 10,
+          "rolloutWon": 0,
+          "rolloutOptimal": 0,
+          "solvedWithin256": 7
+        }
+      },
+      {
+        "scope": "family_holdout",
+        "seed": 29,
+        "mode": "greedy",
+        "aggregate": {
+          "maps": 13,
+          "solved": 13,
+          "expanded": 9755,
+          "coincidesWithOptimum": 8,
+          "rolloutWon": 1,
+          "rolloutOptimal": 0,
+          "solvedWithin256": 5
+        }
+      },
+      {
+        "scope": "family_holdout",
+        "seed": 29,
+        "mode": "weighted",
+        "aggregate": {
+          "maps": 13,
+          "solved": 13,
+          "expanded": 8807,
+          "coincidesWithOptimum": 10,
+          "rolloutWon": 1,
+          "rolloutOptimal": 0,
+          "solvedWithin256": 5
+        }
+      },
+      {
+        "scope": "same_generator",
+        "seed": 53,
+        "mode": "greedy",
+        "aggregate": {
+          "maps": 24,
+          "solved": 24,
+          "expanded": 417,
+          "coincidesWithOptimum": 20,
+          "rolloutWon": 21,
+          "rolloutOptimal": 11,
+          "solvedWithin256": 24
+        }
+      },
+      {
+        "scope": "curriculum_only",
+        "seed": 53,
+        "mode": "greedy",
+        "aggregate": {
+          "maps": 13,
+          "solved": 13,
+          "expanded": 8419,
+          "coincidesWithOptimum": 8,
+          "rolloutWon": 0,
+          "rolloutOptimal": 0,
+          "solvedWithin256": 7
+        }
+      },
+      {
+        "scope": "curriculum_only",
+        "seed": 53,
+        "mode": "weighted",
+        "aggregate": {
+          "maps": 13,
+          "solved": 13,
+          "expanded": 8655,
+          "coincidesWithOptimum": 9,
+          "rolloutWon": 0,
+          "rolloutOptimal": 0,
+          "solvedWithin256": 7
+        }
+      },
+      {
+        "scope": "family_holdout",
+        "seed": 53,
+        "mode": "greedy",
+        "aggregate": {
+          "maps": 13,
+          "solved": 13,
+          "expanded": 9142,
+          "coincidesWithOptimum": 9,
+          "rolloutWon": 1,
+          "rolloutOptimal": 0,
+          "solvedWithin256": 5
+        }
+      },
+      {
+        "scope": "family_holdout",
+        "seed": 53,
+        "mode": "weighted",
+        "aggregate": {
+          "maps": 13,
+          "solved": 13,
+          "expanded": 8668,
+          "coincidesWithOptimum": 10,
+          "rolloutWon": 1,
+          "rolloutOptimal": 0,
+          "solvedWithin256": 5
+        }
+      }
+    ]
+  },
+  "nativeVerification": {
+    "role": "native_route_QA_not_independent_training_samples",
+    "inputSha256": "11e7b9ec5ad57bac1917c19c9a9dc13089d2c39debbc84d1ce5eb996e2b93e2a",
+    "routes": 404,
+    "uniqueRoutes": 141,
+    "maps": 37,
+    "allPassed": true
+  },
+  "excludedRun": {
+    "directory": "ghost-residual-baseline",
+    "reason": "geometric rollout accidentally used no-ghost comparator; outputs retained, not used for conclusions",
+    "corrected": "ghost-residual-baseline-v2"
+  },
+  "horizonAudit": {
+    "ghost-residual-train": {
+      "maps": 48,
+      "eligibleStates": 2711,
+      "sourceResidualMinMedianMax": [
+        0.0,
+        0.0,
+        18.0
+      ],
+      "sourcesAtLeast18": 1,
+      "sourcesAtLeast38": 0,
+      "initialResidualMinMedianMax": [
+        0.0,
+        3.5,
+        14.0
+      ]
+    },
+    "ghost-residual-test": {
+      "maps": 24,
+      "eligibleStates": 1349,
+      "sourceResidualMinMedianMax": [
+        0.0,
+        0.0,
+        10.0
+      ],
+      "sourcesAtLeast18": 0,
+      "sourcesAtLeast38": 0,
+      "initialResidualMinMedianMax": [
+        0.0,
+        3.0,
+        8.0
+      ]
+    },
+    "ghost-residual-gallery": {
+      "maps": 13,
+      "eligibleStates": 3826,
+      "sourceResidualMinMedianMax": [
+        0.0,
+        10.0,
+        61.0
+      ],
+      "sourcesAtLeast18": 1276,
+      "sourcesAtLeast38": 193,
+      "initialResidualMinMedianMax": [
+        18.0,
+        28.0,
+        58.0
+      ]
+    }
+  },
+  "longTrainingCollection": {
+    "requested": 32,
+    "accepted": 12,
+    "quotaComplete": false,
+    "attempts": 9600,
+    "outcomes": {
+      "proven_unsat_no_ghost_abstraction": 1340,
+      "outside_training_scope": 4740,
+      "proven_no_nonfatal_solution": 3482,
+      "accepted": 12,
+      "unknown_budget": 18,
+      "unknown_relaxed_budget": 7,
+      "no_valid_proposal": 1
+    },
+    "family": [
+      "mechanical-curriculum-generator-v1"
+    ],
+    "maps": [
+      {
+        "seed": 200625,
+        "shortest": 30,
+        "ghostResidual": 25,
+        "mapId": "b8f1694d5074d5f9f2f2cb715ed661d47e5f95733787b1ce0572ac7dfd3c77ec"
+      },
+      {
+        "seed": 200721,
+        "shortest": 24,
+        "ghostResidual": 19,
+        "mapId": "429ff35960558e1c844e01f57192124aba1c1cac114c619dc5fd875fdc436b2e"
+      },
+      {
+        "seed": 201847,
+        "shortest": 32,
+        "ghostResidual": 27,
+        "mapId": "4f435560e67b593901db4d2652f6832c5f2d3603efdf248e167835e83830ece5"
+      },
+      {
+        "seed": 202846,
+        "shortest": 33,
+        "ghostResidual": 28,
+        "mapId": "3ac5dfe0dc5cd588f53156324a96ba79eb6910c35c2265ee39a30a275c3636ef"
+      },
+      {
+        "seed": 203878,
+        "shortest": 25,
+        "ghostResidual": 18,
+        "mapId": "79ecf5d8c9e0ecd00b7d4624fee9551959daac4a8c15a924eaeaf705d277c26e"
+      },
+      {
+        "seed": 204934,
+        "shortest": 28,
+        "ghostResidual": 23,
+        "mapId": "8939aea05d7bf9f096181ced54c0c4f58ad74299192ed158460431b378f1630d"
+      },
+      {
+        "seed": 205192,
+        "shortest": 33,
+        "ghostResidual": 23,
+        "mapId": "27cdd0129a7a33beb1b32de07905c6ed26f34d4d158a4e569e859e8b5586cec8"
+      },
+      {
+        "seed": 205252,
+        "shortest": 34,
+        "ghostResidual": 30,
+        "mapId": "d991ef643487abe5284eb5c4bea77587188b6814da50c8d93aba3be9f78a67a1"
+      },
+      {
+        "seed": 205571,
+        "shortest": 30,
+        "ghostResidual": 21,
+        "mapId": "22e679bf8e8f294d0ed477079ba0ded6aaa35b886ffd9fa0b8f353778fe3d63b"
+      },
+      {
+        "seed": 205649,
+        "shortest": 24,
+        "ghostResidual": 20,
+        "mapId": "537a3f3ebcc39044751e3c85a0e62283dd43d52988d5bede1d55c67d06289d21"
+      },
+      {
+        "seed": 209055,
+        "shortest": 25,
+        "ghostResidual": 20,
+        "mapId": "a6cc95d68c2ad63f0d031d74362fa4386e317e4c853f4f57db796a2f062b90c0"
+      },
+      {
+        "seed": 209165,
+        "shortest": 26,
+        "ghostResidual": 20,
+        "mapId": "570f3c75849f45783007684a3ac4e350f0f8137d285218ab996b69c6248cbdd4"
+      }
+    ]
+  }
+}
