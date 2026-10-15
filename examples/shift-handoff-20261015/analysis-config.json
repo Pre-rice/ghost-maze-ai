@@ -1,0 +1,137 @@
+{
+  "hypotheses": [
+    {
+      "id": "close_with_guard_above",
+      "sequence": [
+        {
+          "type": "all",
+          "events": [
+            {
+              "type": "press",
+              "letter": "A"
+            },
+            {
+              "type": "gate",
+              "layer": 0,
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "state": "closed"
+            },
+            {
+              "type": "ghost_at",
+              "layer": 0,
+              "x": 4,
+              "y": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reposition_while_closed",
+      "sequence": [
+        {
+          "type": "all",
+          "events": [
+            {
+              "type": "gate",
+              "layer": 0,
+              "axis": "h",
+              "x": 4,
+              "y": 5,
+              "state": "closed"
+            },
+            {
+              "type": "ghost_cross",
+              "layer": 0,
+              "index": 1,
+              "from": {
+                "x": 4,
+                "y": 4
+              },
+              "to": {
+                "x": 4,
+                "y": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "release_with_guard_ready",
+      "sequence": [
+        {
+          "type": "all",
+          "events": [
+            {
+              "type": "press",
+              "letter": "B"
+            },
+            {
+              "type": "gate",
+              "layer": 0,
+              "axis": "h",
+              "x": 4,
+              "y": 6,
+              "state": "open"
+            },
+            {
+              "type": "ghost_at",
+              "layer": 0,
+              "x": 4,
+              "y": 4
+            },
+            {
+              "type": "ghost_at",
+              "layer": 0,
+              "x": 4,
+              "y": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "final_handoff",
+      "sequence": [
+        {
+          "type": "all",
+          "events": [
+            {
+              "type": "visit",
+              "layer": 0,
+              "x": 4,
+              "y": 6
+            },
+            {
+              "type": "ghost_cross",
+              "layer": 0,
+              "index": 0,
+              "from": {
+                "x": 4,
+                "y": 4
+              },
+              "to": {
+                "x": 4,
+                "y": 5
+              }
+            },
+            {
+              "type": "ghost_at",
+              "layer": 0,
+              "x": 3,
+              "y": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "budget": {
+    "nodeBudget": 10000,
+    "stateBudget": 10000,
+    "budgetMs": 60000
+  }
+}

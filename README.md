@@ -21,9 +21,12 @@ npm run cloud:serve -- 4206
 npm run solve -- examples/puzzle-units/unit-01.json
 npm run solve:fast -- examples/puzzle-units/unit-02.json
 npm run sharecode -- examples/puzzle-units/unit-01.json --verify
+npm run analyze -- examples/shift-handoff-20261015/map.json examples/shift-handoff-20261015/analysis-config.json
 ```
 
 cloud:check统一检查两仓测试、规则内容锁、原种子与HTTP／代理入口，不写真人反馈。cloud:serve的本地入口为 /game/；真正的云端预览地址由当前环境提供。
+
+单层自由地图的设计编辑、有限提案和条件精简可直接读现行layers格式，也可读历史平铺资料。编辑前统一通过本体装配，输入原件不变；冲突副本拒绝，已证明相同的第零层副本随编辑同步。v3会整理旧虚空残留，旧实验按原提交复现；局部精简不判断美观或趣味，是否允许增加赶路须由调用方明确约束。
 
 check、verify:seeds分别核对引擎与原种子；真实core修改才更新锁，不用改锁掩盖漂移。求解区分已解、穷尽无解、预算未知，必要性与搜索成本不是趣味分。prepare:library只制备规划事实，目标目录必须新建，来源与亲缘组明确。
 
@@ -33,4 +36,4 @@ check、verify:seeds分别核对引擎与原种子；真实core修改才更新�
 
 每次交付或反馈更新本体[总目录](https://github.com/Pre-rice/ghost-maze/blob/main/docs/ai-map-catalog.md)；上架图同步小册，经验只提炼至方法文档，过程进archive。源代码通过Git保存；完整真人资料、未跟踪反馈和runs通过[私人资料包](docs/codex-cloud.md)另存新快照。
 
-用户2026-10-15已批准四栏目预览正式发布，并继续主线。原CPU研究已整合到main；新一轮固定资料的可恢复性／剩余成本对照完成，未获得稳定改善，模型不接入网站。有界后路检查已提高给定目标完成率，模型仍非最优；下一步复用规划图并比较实际成本；付费和GPU不自动启动。入口见[求解训练](docs/planner-training.md)，详细过程保存在[档案](docs/archive/README.md)。
+用户2026-10-15已批准四栏目预览正式发布，并继续主线。CPU对照显示旧求解模型和行动段均无实际替换收益，当前优先通过设计假说、原生反例与精简推进谜题；《悬置》《换手》仍待真实评价，未入集。这些机械资料不作为质量正例，继续本地CPU研究；付费服务和GPU不自动启动。当前结果见[状态](docs/status.md)，研究边界见[求解训练](docs/planner-training.md)，详细过程留在[档案](docs/archive/README.md)。

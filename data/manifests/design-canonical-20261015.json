@@ -1,0 +1,96 @@
+{
+  "role": "design_input_format_support_not_quality",
+  "compatibility": {
+    "role": "design_format_compatibility_not_generation_quality",
+    "oldCommit": "fe4ceb5c5f0fbaaffcee68cb7f0b15a603efad8f",
+    "oldSourceSha256": "0474083ab566a1cdd576406a49e2a68f43b60ada0453dfba4e84ec277bdc6131",
+    "currentSourceSha256": "9772bbd104c0bb90413bbd85a4206cd2f204a316dc1b4e267c0779f90eede398",
+    "seeds": [
+      17,
+      29,
+      53
+    ],
+    "attempts": 300,
+    "valid": 274,
+    "invalid": 26,
+    "normalizedMapIdsChanged": 8,
+    "oldByteIdentityClaimed": false,
+    "inertVoidWallScope": "仅在两侧均无活动格的静态空墙／实墙上允许旧新记录差异；共同引擎移动与视线均由活动格中断。所有有效边与实体参数完全一致。",
+    "allPassed": true
+  },
+  "currentMapIntegration": {
+    "role": "current_map_design_workflow_compatibility_not_quality",
+    "sourceMapId": "d0ce276b18920b387d7122a7fa485d9727a8996af43206bb28def0209a233e8e",
+    "currentMapFileUnchanged": true,
+    "relatedFamilyIds": [
+      "dual-loop-relay-v1",
+      "door-cooperation-20261013-v1"
+    ],
+    "trainingSplitEligibility": "requires_union_of_parent_families;not_training_data",
+    "search": {
+      "seed": 20261015,
+      "iterations": 32,
+      "attemptsIdenticalAcrossFormats": true,
+      "nodeIdsIdentical": true,
+      "archiveIdentical": true,
+      "nodes": 23,
+      "buckets": 4,
+      "necessaryRelationsRetained": [
+        [
+          "close_with_guard_above",
+          "necessary_within_scope"
+        ],
+        [
+          "reposition_while_closed",
+          "necessary_within_scope"
+        ],
+        [
+          "release_with_guard_ready",
+          "necessary_within_scope"
+        ],
+        [
+          "final_handoff",
+          "necessary_within_scope"
+        ]
+      ]
+    },
+    "minimize": {
+      "complexity": [
+        15,
+        4,
+        3,
+        38,
+        1
+      ],
+      "lineage": [],
+      "attempts": 40,
+      "unresolved": 0,
+      "localScope": "remove_one_cell_or_entity_or_replace_one_wall_with_empty_or_solid",
+      "globalMinimumProven": false
+    },
+    "sources": {
+      "src/design/edits.js": "9772bbd104c0bb90413bbd85a4206cd2f204a316dc1b4e267c0779f90eede398",
+      "src/design/minimize.js": "078e403ef787536b3f172607cef1a349f23f96fee6362a61ec3f2695cdd825e0",
+      "src/design/search.js": "ab09ff0c2504d3202fd6a5daa92067984b6eaaaf3196ea9b3b6c67643cee88d3"
+    }
+  },
+  "behaviorChange": "v3先通过本体校验与装配，再编辑副本；原v2部分旧候选的静态虚空墙记录不再带入新编辑，8/274有效候选地图标识变化，仅两侧无活动格的静态空墙／实墙不同。原文件与旧记录不改写，旧实验绑定原提交。",
+  "scope": "仅单层free；保留历史平铺输入和现行layers输入；多层设计编辑不在本次支持内。",
+  "qualityScope": "生成与精简只审机械条件，不把桶数、局部最简或步数作为质量分；未训练、未更新地图集。",
+  "privateEvidence": {
+    "runs/design-canonical-20261015/compatibility-v4.json": "b899f4d150ba3ede97e60d00cdd810f7eebbbaf9afe31a173019e3c4da328a20",
+    "runs/design-canonical-20261015/integration-summary.json": "d49c3d2e30c61ddc7bbc9498ae21627183313865350c43f78b2431158ec923a8",
+    "runs/design-canonical-20261015/search-canonical.json": "1f0b6b48304364bb140d3b3830c83b276d84f31d95e9e081df78629af79db269",
+    "runs/design-canonical-20261015/minimize-canonical.json": "1442ab73c0b26fecd0d2e73bb708e3230aacb0c10e6bedf31e415dc7c4805e2d",
+    "runs/design-canonical-20261015/analysis-current.json": "ddc71bb50ef231d43438f3ff4ce2a448de605f28160695cc9d44ffb5b27efc7b"
+  },
+  "verification": {
+    "gameTestFiles": 26,
+    "referenceTests": 134,
+    "legacyTestFiles": 4,
+    "originalSeeds": 2,
+    "httpEntrypoints": 22,
+    "allPassed": true,
+    "logSha256": "d9879adaa820305f8eb0c855a7404bef813f0de88a26810add06072a4900b93a"
+  }
+}
