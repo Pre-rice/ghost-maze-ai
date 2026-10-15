@@ -6,6 +6,7 @@ import {createReferenceEnvironment} from '../../src/reference/environment.js';
 import {smallMap,keyDetourMap,stairMap} from './fixtures.mjs';
 import {createTreePredictor} from '../../src/training/tree-predictor.js';
 import {solveFastMap} from '../../src/search/fast-solver.js';
+import {solveBacktracking} from '../../src/training/backtracking-solver.js';
 
 test('完整图的标签包含所有并列最优动作；预算未知不提供精确距离',()=>{
  const m=smallMap([[1,1],[2,1],[1,2],[2,2]],[1,1],[2,2]),g=enumeratePlanningGraph(m);assert.equal(g.status,'exhausted');assert.equal(g.distance[0],2);assert.deepEqual(g.nodes[0].edges.filter(e=>g.distance[e.to]===1).map(e=>e.action).sort(),['D','R']);
@@ -41,4 +42,9 @@ test('敌对候选排序也不能改A*最优性，预算仍返回未知',()=>{
 });
 test('真实双鬼的数组顺序与编号不成为训练输入',()=>{
  const map=smallMap(Array.from({length:3},(_,y)=>Array.from({length:4},(_,x)=>[x+1,y+1])).flat(),[1,1],[4,1]);map.initialGhosts=[{x:3,y:3,id:0},{x:4,y:3,id:1}];const env=createReferenceEnvironment(map),s=env.initialState(),copy=structuredClone(s),encoder=createPlanningEncoder(map);copy.layerStates[0].ghosts.reverse().forEach((g,i)=>g.id=100+i);assert.deepEqual(encoder.summarize(s),encoder.summarize(copy));
+});
+test('原生回溯保留所有分支、重放证书，但不冒称最优',()=>{
+ const result=solveBacktracking(keyDetourMap(),{rankCandidate:(s,a,n)=>-n.player.x});assert.equal(result.status,'solved');assert.equal(result.optimality,null);assert(createReferenceEnvironment(keyDetourMap()).replay(result.solution.actions).state.isWon);
+ assert.equal(solveBacktracking(keyDetourMap(),{nodeBudget:0}).status,'unknown');assert.equal(solveBacktracking(keyDetourMap(),{stateBudget:1}).status,'unknown');assert.equal(solveBacktracking(keyDetourMap(),{budgetMs:0}).status,'unknown');
+ const corridor=smallMap([[1,1],[2,1],[3,1]],[1,1],[3,1]);const forced=solveBacktracking(corridor,{rankCandidate:()=>{throw new Error('唯一新分支不应付推理成本');}});assert.equal(forced.status,'solved');assert.equal(forced.search.rankCalls,0);
 });
