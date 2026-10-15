@@ -8,6 +8,9 @@ import {createTreePredictor} from '../../src/training/tree-predictor.js';
 import {solveFastMap} from '../../src/search/fast-solver.js';
 import {solveBacktracking} from '../../src/training/backtracking-solver.js';
 import {buildGhostRelaxation} from '../../src/search/ghost-relaxation.js';
+import {createFastEnvironment} from '../../src/search/fast-environment.js';
+import {censusParkedGoals} from '../../src/training/parked-goals.js';
+import {createParkedEncoder} from '../../src/training/parked-features.js';
 
 test('完整图的标签包含所有并列最优动作；预算未知不提供精确距离',()=>{
  const m=smallMap([[1,1],[2,1],[1,2],[2,2]],[1,1],[2,2]),g=enumeratePlanningGraph(m);assert.equal(g.status,'exhausted');assert.equal(g.distance[0],2);assert.deepEqual(g.nodes[0].edges.filter(e=>g.distance[e.to]===1).map(e=>e.action).sort(),['D','R']);
@@ -58,4 +61,23 @@ test('去鬼子问题保留资源与机关，完整时给下界、预算未知�
 });
 test('只复用对应地图的真实子问题表，拒绝伪造下界',()=>{
  const map=keyDetourMap(),table=buildGhostRelaxation(map,{budgetMs:5000}),result=solveFastMap(map,{ghostRelaxation:table});assert.equal(result.solution.totalActions,6);assert.equal(result.search.ghostRelaxation.reused,true);assert.throws(()=>solveFastMap(stairMap(),{ghostRelaxation:table}),/地图不一致/);assert.throws(()=>solveFastMap(map,{ghostRelaxation:{status:'exhausted',lowerBound:()=>999}}),TypeError);
+});
+test('无历史监控的鬼对称键忽略排列并保留重合数量',()=>{
+ const map=smallMap(Array.from({length:3},(_,y)=>Array.from({length:4},(_,x)=>[x+1,y+1])).flat(),[1,1],[4,1]);map.initialGhosts=[{x:3,y:3,id:7},{x:4,y:3,id:8}];const env=createFastEnvironment(map,{canonicalGhosts:true}),s=env.initialState(),copy=structuredClone(s);copy.layerStates[0].ghosts.reverse();assert.equal(env.stateKey(s),env.stateKey(copy));copy.layerStates[0].ghosts=[{x:3,y:3},{x:3,y:3}];const doubled=env.stateKey(copy);copy.layerStates[0].ghosts.pop();assert.notEqual(doubled,env.stateKey(copy));
+ assert.throws(()=>solveFastMap(keyDetourMap(),{canonicalGhosts:true,restrictions:[{id:'keep-role',sequence:[{type:'pickup_key'}]}]}),/历史事件监控/);
+ for(const m of [map,keyDetourMap(),stairMap()]){const a=solveFastMap(m),b=solveFastMap(m,{canonicalGhosts:true});assert.equal(b.solution.totalActions,a.solution.totalActions);assert.equal(b.optimality,'proven');}
+});
+test('停位标签区分最优必须腾位与全部安全路线必须腾位，拒绝并列重合捷径',()=>{
+ const ghost=(x,y)=>({x,y}),state=ghosts=>({layerStates:[{ghosts}]}),nodes=[
+  {state:state([ghost(1,1),ghost(3,1)]),overlap:false,edges:[{action:'R',to:1},{action:'D',to:3}]},
+  {state:state([ghost(1,2),ghost(3,1)]),overlap:false,edges:[{action:'R',to:2}]},
+  {state:state([ghost(1,1),ghost(3,2)]),overlap:false,edges:[]},
+  {state:state([ghost(1,1),ghost(2,1)]),overlap:false,edges:[{action:'D',to:4}]},
+  {state:state([ghost(1,1),ghost(2,2)]),overlap:false,edges:[{action:'R',to:2}]}
+ ],graph={status:'exhausted',nodes,env:{mapDefinition:{layerCount:1},replay(actions){let i=0;for(const a of actions)i=nodes[i].edges.find(e=>e.action===a).to;return {state:nodes[i].state};}}};
+ const selected=()=>censusParkedGoals(graph,{minSteps:2}).find(c=>c.target.some(t=>t.x===3&&t.y===2));assert.equal(selected().shortest,2);assert.equal(selected().mustVacateForOptimal,true);assert.equal(selected().mustVacateForAnySafeSolution,false);
+ nodes[0].edges=nodes[0].edges.slice(0,1);assert.equal(selected().mustVacateForAnySafeSolution,true);nodes.push({state:state([ghost(2,1),ghost(2,1)]),overlap:true,edges:[{action:'R',to:2}]});nodes[0].edges.push({action:'U',to:5});assert.equal(selected(),undefined);
+});
+test('目标停位输入不含鬼身份，任务达成与游戏通关分别处理',()=>{
+ const map=smallMap([[1,1],[2,1],[3,1],[1,2],[2,2],[3,2]],[1,1],[3,1]);map.initialGhosts=[{x:2,y:2,id:9},{x:3,y:2,id:99}];const env=createReferenceEnvironment(map),s=env.initialState(),encoder=createParkedEncoder(map,[{x:2,y:2,layer:0},{x:3,y:2,layer:0}]),copy=structuredClone(s);copy.layerStates[0].ghosts.reverse();assert(encoder.reached(s));assert(!s.isWon);assert.equal(encoder.lower(s),0);assert.deepEqual(encoder.summarize(s),encoder.summarize(copy));
 });

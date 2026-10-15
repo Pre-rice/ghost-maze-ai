@@ -37,16 +37,17 @@ const DEFAULT_BUDGET = { nodeBudget: 10000, stateBudget: 2500, budgetMs: 2000 };
 /** A* 快求解：动态资源完整去重，全层乐观下界，预算中断保留已发现证书但不冒称最优。 */
 export function solveFastMap(mapData, options = {}) {
     if (!options || typeof options !== 'object' || Array.isArray(options)) throw new TypeError('预算参数必须为对象');
-    const { withGhosts = true, restrictions = [], rankCandidate = null, ghostRelaxation = false, ...givenBudget } = options;
+    const { withGhosts = true, restrictions = [], rankCandidate = null, ghostRelaxation = false, canonicalGhosts = false, ...givenBudget } = options;
     if (typeof withGhosts !== 'boolean') throw new TypeError('withGhosts 必须为布尔值');
     if(rankCandidate!==null&&typeof rankCandidate!=='function')throw new TypeError('rankCandidate 必须为函数或null');
     if(!isGhostRelaxationTable(ghostRelaxation)&&ghostRelaxation!==false&&ghostRelaxation!==true&&(!ghostRelaxation||typeof ghostRelaxation!=='object'||Array.isArray(ghostRelaxation)||Object.keys(ghostRelaxation).some(k=>!['nodeBudget','stateBudget','budgetMs'].includes(k))))throw new TypeError('ghostRelaxation 必须为布尔值、子问题预算或本模块构建的表');
     for (const key of Object.keys(givenBudget)) if (!Object.hasOwn(DEFAULT_BUDGET, key)) throw new TypeError(`未知预算参数：${key}`);
     const budget = { ...DEFAULT_BUDGET, ...givenBudget };
     for (const [name, value] of Object.entries(budget)) if (!Number.isSafeInteger(value) || value < (name === 'stateBudget' ? 1 : 0)) throw new TypeError(`非法预算：${name}`);
-    const env = createFastEnvironment(mapData, { withGhosts }), reference = env.reference;
+    const env = createFastEnvironment(mapData, { withGhosts,canonicalGhosts }), reference = env.reference;
     if (!reference.mapDefinition.layers.some(layer => layer.initialEntities.endPos)) throw new TypeError('求解地图至少需要一个终点');
     const monitor = compileRestrictions(reference.mapDefinition, restrictions);
+    if(canonicalGhosts&&monitor.specs.length)throw new TypeError('有历史事件监控时须保留鬼的角色顺序，不能启用对称归并');
     const started = performance.now(), initial = env.initialState(), firstProgress = monitor.initial();
     const keyOf = (state, progress) => `${env.stateKey(state)}|monitor:${progress.join(',')}`;
     const firstKey = keyOf(initial, firstProgress);
@@ -70,6 +71,7 @@ export function solveFastMap(mapData, options = {}) {
             scope: { gameMode: reference.mapDefinition.gameMode, objective: 'zero_hit_no_revive', metric: 'successful_actions', actions: reference.actions, withGhosts, restrictions: monitor.specs },
             optimality, solution,
             search: { algorithm: 'astar', expanded, transitions, discovered: bestG.size, exhausted: reason === 'frontier_exhausted', elapsedMs, budget,
+                ...(canonicalGhosts?{canonicalGhosts:true}:{}),
                 ...(relaxation?{ghostRelaxation:{status:relaxation.status,states:relaxation.states,expanded:relaxation.expanded,elapsedMs:relaxation.elapsedMs,reused:isGhostRelaxationTable(ghostRelaxation)}}:{}) }
         };
     };

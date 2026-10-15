@@ -2,7 +2,8 @@ import { createReferenceEnvironment, actionFromName } from '../reference/environ
 import { makeSimulator, createInitState, step, stateKey } from '../validate/simulator.js';
 
 /** 快环境仅接受真实玩家动作；规则校验和证书重放均调用共同引擎。 */
-export function createFastEnvironment(mapData, { withGhosts = true } = {}) {
+export function createFastEnvironment(mapData, { withGhosts = true, canonicalGhosts = false } = {}) {
+    if(typeof canonicalGhosts!=='boolean')throw new TypeError('canonicalGhosts 必须为布尔值');
     const source = createReferenceEnvironment(mapData);
     let reference = source;
     if (!withGhosts) {
@@ -16,7 +17,9 @@ export function createFastEnvironment(mapData, { withGhosts = true } = {}) {
         sim, reference, sourceMapId: source.mapId,
         initialState: () => createInitState(sim),
         step: (state, action) => step(state, actionFromName(action), sim),
-        stateKey: state => `${reference.mapId}:${stateKey(state, sim)}`
+        stateKey: canonicalGhosts
+            ? state => `${reference.mapId}:${stateKey(state,sim,{withGhosts:false})}|g:`+state.layerStates.map(layer=>layer.ghosts.map(g=>g.y*sim.width+g.x).sort((a,b)=>a-b).join(',')).join(';')
+            : state => `${reference.mapId}:${stateKey(state, sim)}`
     });
 }
 

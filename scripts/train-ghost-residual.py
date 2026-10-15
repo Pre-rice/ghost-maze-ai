@@ -3,6 +3,7 @@ import heapq
 import importlib.util
 import json
 import sys
+import argparse
 from collections import Counter
 from pathlib import Path
 
@@ -51,11 +52,14 @@ def rollout(nodes, predicted=None, relaxed=True):
     return dict(won=False, steps=len(actions), actions=actions, matchesKnownOptimum=False)
 
 
-def aggregate(results):
-    return dict(maps=len(results), solved=sum(r["search"]["status"] == "solved" for r in results), expanded=sum(r["search"]["expanded"] for r in results),
+def aggregate(results,with_strata=True):
+    summary=dict(maps=len(results), solved=sum(r["search"]["status"] == "solved" for r in results), expanded=sum(r["search"]["expanded"] for r in results),
                 coincidesWithOptimum=sum(r["search"].get("matchesKnownOptimum", False) for r in results),
                 rolloutWon=sum(r["rollout"]["won"] for r in results), rolloutOptimal=sum(r["rollout"]["matchesKnownOptimum"] for r in results),
                 solvedWithin256=sum(r["search"]["status"] == "solved" and r["search"]["expanded"] <= 256 for r in results))
+    if with_strata and len({r.get('difficulty','unknown') for r in results})>1:
+        summary['byDifficulty']={d:aggregate([r for r in results if r.get('difficulty','unknown')==d],False) for d in sorted({r.get('difficulty','unknown') for r in results})}
+    return summary
 
 
 def predict_deterministic(model, values):
@@ -66,7 +70,13 @@ def predict_deterministic(model, values):
 
 
 def main():
-    train_dir, test_dir, gallery_dir, output = map(Path, sys.argv[1:])
+    parser=argparse.ArgumentParser(description=__doc__)
+    for name in ['train','test','gallery','output']:
+        parser.add_argument(name,type=Path)
+    parser.add_argument('--scope',choices=['both','curriculum','families'],default='both')
+    parser.add_argument('--balance',choices=['states','bands'],default='states')
+    args=parser.parse_args()
+    train_dir,test_dir,gallery_dir,output=args.train,args.test,args.gallery,args.output
     if output.exists():
         raise ValueError("拒绝覆盖旧实验")
     module_path = Path(__file__).with_name("train-planning-baseline.py")
@@ -90,7 +100,8 @@ def main():
     config = dict(n_estimators=64, max_depth=22, min_samples_leaf=4, max_features=0.6, n_jobs=4)
     output.mkdir(parents=True)
     (output / "models").mkdir()
-    b.save(output / "protocol.json", dict(role="ghost_only_residual_development_diagnostic", config=config, seeds=[17,29,53],
+    b.save(output / "protocol.json", dict(role="ghost_only_residual_development_diagnostic", config=config, seeds=[17,29,53],balance=args.balance,experimentScope=args.scope,
+                                         difficultyBands=[0,1,8,18,38],weightScope="train labels only, never inference inputs or holdout weights",
                                          sources={str(d["directory"]):b.digest(d["directory"] / "manifest.json") for d in [train,test,gallery]},
                                          scriptSha256=b.digest(Path(__file__)), helperSha256=b.digest(module_path),
                                          scope="curriculum-only and leave-whole-gallery-family-out; latter is repeated development diagnostic",
@@ -104,7 +115,7 @@ def main():
             nodes=data["graphs"][record["mapId"]]["nodes"]
             search=run_search(nodes,prediction,relaxed,weighted)
             roll=rollout(nodes,prediction,relaxed)
-            results.append(dict(title=record["title"],mapId=record["mapId"],search=search,rollout=roll))
+            results.append(dict(title=record["title"],mapId=record["mapId"],difficulty=record.get('difficulty','gallery' if record['sourceRole']=='approved_gallery_solver_reference' else 'basic'),search=search,rollout=roll))
             if search["status"]=="solved":
                 routes.append(dict(graphDirectory=str(data["directory"]),mapId=record["mapId"],actions=search["actions"],steps=search["steps"]))
             if roll["won"]:
@@ -117,7 +128,7 @@ def main():
             b.save(output/f"{name}-manual-{mode}.json",dict(aggregate=aggregate(results),results=results))
             summary["manual"][name+"-"+mode]=aggregate(results)
     for seed in [17,29,53]:
-        for scope in ["curriculum_only","family_holdout"]:
+        for scope in (["curriculum_only","family_holdout"] if args.scope=='both' else ["curriculum_only"] if args.scope=='curriculum' else ["family_holdout"]):
             groups=[None] if scope=="curriculum_only" else gallery["manifest"]["splitGroups"]
             all_results={"greedy":[],"weighted":[]}
             folds=[]
@@ -126,7 +137,15 @@ def main():
                 selected=np.array([r["row"] for r in data["rows"] if r["trainEligible"] and (group is None or r["splitGroup"]!=group)])
                 counts=Counter((data["rows"][i]["mapId"],data["rows"][i]["state"]) for i in selected)
                 states=Counter(mid for mid,_ in counts)
-                weights=np.array([1/counts[(data["rows"][i]["mapId"],data["rows"][i]["state"])]/states[data["rows"][i]["mapId"]] for i in selected])
+                if args.balance=='bands':
+                    bands={}
+                    for i in selected:
+                        row=data['rows'][i];residual=row['remaining']-float(data['x'][i,-5]);bands[(row['mapId'],row['state'])]=0 if residual<1 else 1 if residual<8 else 2 if residual<18 else 3 if residual<38 else 4
+                    state_count=Counter((mid,band) for (mid,state),band in bands.items())
+                    band_count=Counter(mid for mid,band in state_count)
+                    weights=np.array([1/counts[(data['rows'][i]['mapId'],data['rows'][i]['state'])]/state_count[(data['rows'][i]['mapId'],bands[(data['rows'][i]['mapId'],data['rows'][i]['state'])])]/band_count[data['rows'][i]['mapId']] for i in selected])
+                else:
+                    weights=np.array([1/counts[(data["rows"][i]["mapId"],data["rows"][i]["state"])]/states[data["rows"][i]["mapId"]] for i in selected])
                 model=ExtraTreesRegressor(random_state=seed,**config).fit(data["x"][selected],data["y"][selected],sample_weight=weights*len(weights)/weights.sum())
                 name=f"{scope}-{seed}-{group or 'curriculum'}.json"
                 trees=[]
