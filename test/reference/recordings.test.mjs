@@ -73,7 +73,7 @@ test('录制服务注入独立模块，不改游戏文件，并可校验保存�
     const { server, origin } = await startReviewServer({ port: 0, packetFile, feedbackFile: join(temp, 'feedback.jsonl'), recordingsDir: join(temp, 'solutions') });
     t.after(() => { server.closeAllConnections(); server.close(); });
     assert((await (await fetch(origin + '/game/')).text()).includes('/recorder.js'));
-    for (const path of ['/recorder.js', '/trace-core.js', '/game/editor.html']) assert.equal((await fetch(origin + path)).status, 200);
+    for (const path of ['/recorder.js', '/trace-core.js', '/game/src/editorMain.js']) assert.equal((await fetch(origin + path)).status, 200);
     const input = recording();
     const response = await fetch(origin + '/api/recordings', { method: 'POST', headers: { 'Content-Type': 'application/json', Origin: origin }, body: JSON.stringify(input) });
     assert.equal(response.status, 200, await response.clone().text());

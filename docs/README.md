@@ -11,6 +11,8 @@
 | 现行规则与设计硬边界 | [design-boundaries](design-boundaries.md) |
 | 全部地图、参考和评述查证 | 本体[总目录](https://github.com/Pre-rice/ghost-maze/blob/main/docs/ai-map-catalog.md) |
 
+当前四栏目预览的产品结果与兼容验收见本体[交付记录](https://github.com/Pre-rice/ghost-maze/blob/preview/site-optimization-20261014/docs/archive/delivery/four-column-workspace-20261015.md)；旧集中优化记录仅供追溯。
+
 ## 按任务查阅
 
 | 任务 | 文档 |
@@ -19,6 +21,7 @@
 | 完整状态与三态求解 | [reference-contract](reference-contract.md)、[fast-verification](fast-verification.md) |
 | 事件必要性、消融与有限编辑 | [design-search](design-search.md)；输出是机械证据，不是趣味分 |
 | 人类评述与成对记录 | [review-protocol](review-protocol.md)、[review-workflow](review-workflow.md) |
+| AI自主试玩 | 本体[skill说明](https://github.com/Pre-rice/ghost-maze/blob/main/docs/ai-playtest.md)；工程体验与真人反馈分开 |
 | 分享、录制与旧资料导入 | [solution-recording](solution-recording.md) |
 | 示范数据接口 | [demonstration-learning](demonstration-learning.md)；当前清单以status为准 |
 | 地图与旧格式范围 | [map-format](map-format.md)、本体[架构](https://github.com/Pre-rice/ghost-maze/blob/main/docs/architecture.md)与[协议](https://github.com/Pre-rice/ghost-maze/blob/main/docs/share-codes.md) |

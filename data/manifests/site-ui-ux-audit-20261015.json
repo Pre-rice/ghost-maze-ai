@@ -1,0 +1,277 @@
+{
+  "role": "site_UI_UX_synthetic_QA_not_human_feedback",
+  "count": 35,
+  "checks": [
+    "无参数首页为空地图框，精品地图收起且保持13张",
+    "空地图可进入回放，显示明确空状态",
+    "电脑楼层从上至下为加号、高层到低层、减号",
+    "桌面两栏恢复24／14px原间距，楼层轻叠侧框边缘且不挡内容，地图仍居中",
+    "1280×647桌面草稿收起时编辑区无滑条",
+    "两组二选一按钮选中与未选中均为38px，切换前后不跳动",
+    "游玩三排按钮统一42px高，两段垂直间距均14px",
+    "禁用、启用、选中和悬停不改变按钮尺寸",
+    "游玩撤销／重做及撤销重置仍正常",
+    "未编辑时往返栏目保留进度，栏目切换不改链接",
+    "回放步进、空格播放暂停与W／S速度快捷键正常",
+    "共享视野保持，回放加载该步的存档链接与继续游玩正常",
+    "双列临时存档与求解切换不挤动布局，滑条仅在面板内",
+    "求解入口进入独立回放并保留返回结果区，页面标题固定",
+    "地图和进度分别保存本地，临时点可删除，缩略图实际完成绘制",
+    "本地进度可点画面加载，保留存档过往步骤可撤销",
+    "加层全满、删顶层无确认，楼层与楼梯可以完整撤销",
+    "最高层在上，空格仍返回出生点层",
+    "编辑工具可用，橡皮擦只擦元件且保留方格",
+    "元件就地输入保留Tab循环、淡入淡出和单层焦点框",
+    "中键临时平移与恢复原工具、F聚焦仍正常",
+    "编辑本地保存入口正常，实际修改清空旧进度和回放",
+    "320至1920px九档尺寸、四栏目无整页与横向溢出，楼层方框及手机底部排列保持",
+    "深浅主题和四栏目已截图复核，另外记录窗口缩放往返问题",
+    "帮助标题和关闭入口固定，Esc关闭恢复焦点，GitHub打开新标签",
+    "1至4栏目快捷键可用，输入框和弹窗内不误触栏目",
+    "复用后的随机生成保留尺寸和初始生命，仍为探索模式",
+    "手机五圆方向键和框内开关正常，触摸拖动有效",
+    "方向键双指缩放有效，拖动和缩放不产生移动步骤",
+    "手机直接触摸放置编辑元件正常",
+    "全部站点场景无脚本异常",
+    "844×390短屏十层楼层栏可从顶部加号滚到下方减号，不裁掉入口",
+    "预热或生成组件加载失败后主界面仍可用，实际点击会反馈并可重试成功",
+    "冷启动计算较慢时可以立即取消，旧结果不会替换当前地图",
+    "取消后可重新准备，随后三次生成复用同一组件，不再反复加载"
+  ],
+  "errors": [],
+  "desktopGeometry": [
+    {
+      "viewport": [
+        769,
+        700
+      ],
+      "gap": 14,
+      "overlap": 17,
+      "clearanceToContent": 4
+    },
+    {
+      "viewport": [
+        1024,
+        768
+      ],
+      "gap": 14,
+      "overlap": 17,
+      "clearanceToContent": 4
+    },
+    {
+      "viewport": [
+        1280,
+        647
+      ],
+      "gap": 24.0,
+      "overlap": 12.0,
+      "clearanceToContent": 11.0
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "gap": 24,
+      "overlap": 12,
+      "clearanceToContent": 11
+    },
+    {
+      "viewport": [
+        1920,
+        1080
+      ],
+      "gap": 24,
+      "overlap": 12,
+      "clearanceToContent": 11
+    }
+  ],
+  "unimplementedProposals": [
+    {
+      "issue": "楼层切换后键盘焦点丢失",
+      "evidence": "BODY",
+      "proposal": "更新控件后保留原控件焦点，并补充二选一工具的读屏选中状态",
+      "implemented": false
+    },
+    {
+      "issue": "保存时间小字对比偏弱",
+      "evidence": {
+        "opacity": "0.5",
+        "font": "11px"
+      },
+      "proposal": "略提高时间与次要信息的对比度，保持当前信息层级",
+      "implemented": false
+    },
+    {
+      "issue": "本地记录删除后没有撤回入口",
+      "evidence": 3,
+      "proposal": "删除后提供短时撤回，避免误触造成记录丢失",
+      "implemented": false
+    },
+    {
+      "issue": "手机编辑面板需要滚动才能看到本地草稿",
+      "evidence": {
+        "client": 406,
+        "scroll": 484
+      },
+      "proposal": "允许拖动地图与面板的分界，按需要临时调整两区大小",
+      "implemented": false
+    },
+    {
+      "issue": "窗口改变大小后编辑地图比例不能恢复，反复改变会累积缩小",
+      "evidence": {
+        "beforeScale": 88.5,
+        "afterSameViewportScale": 73.02459016393442
+      },
+      "proposal": "按相对于聚焦尺寸的缩放比例保存视野，保证窗口往返后比例与中心恢复",
+      "implemented": false
+    },
+    {
+      "issue": "手机八层地图切换编辑与游玩时，楼层按钮换行导致地图区高度跳变",
+      "evidence": {
+        "viewport": [
+          390,
+          844
+        ],
+        "editorHeight": 262.390625,
+        "playHeight": 302.390625
+      },
+      "proposal": "手机楼层栏统一预留加减按钮所需空间，切换栏目时不改变地图区高度",
+      "implemented": false
+    }
+  ],
+  "realPhoneUsed": false,
+  "formalSiteVisited": false,
+  "measuredAt": "2026-10-15T08:34:10.804371+00:00",
+  "randomGeneration": {
+    "beforeSimulated": [
+      {
+        "generation": 1,
+        "elapsedMs": 838.7,
+        "requests": [
+          "site/randomMap.js",
+          "site/randomMapWorker.js",
+          "vendor/pako.js",
+          "core/mazeGenerator.js",
+          "core/dataSerializer.js",
+          "core/constants.js",
+          "editor/editor.js",
+          "core/pathfinding.js",
+          "core/mapDataUtils.js",
+          "core/binaryCodec.js"
+        ]
+      },
+      {
+        "generation": 2,
+        "elapsedMs": 596.7,
+        "requests": [
+          "site/randomMapWorker.js",
+          "solver/solverWorker.js",
+          "vendor/pako.js",
+          "core/mazeGenerator.js",
+          "core/dataSerializer.js",
+          "vendor/pako.js",
+          "solver/optimalSearch.js",
+          "solver/searchEnvironment.js",
+          "solver/trajectoryGroups.js",
+          "core/replaySerializer.js",
+          "core/constants.js",
+          "editor/editor.js",
+          "core/pathfinding.js",
+          "core/mapDataUtils.js",
+          "core/binaryCodec.js",
+          "solver/breadthFirst.js",
+          "solver/relaxedDistance.js",
+          "core/gameLogic.js",
+          "core/mapDataUtils.js",
+          "core/actions.js",
+          "solver/searchIndex.js",
+          "core/binaryCodec.js",
+          "core/dataSerializer.js",
+          "core/constants.js",
+          "core/pathfinding.js",
+          "core/gameState.js",
+          "core/mapDefinition.js"
+        ]
+      },
+      {
+        "generation": 3,
+        "elapsedMs": 590.4,
+        "requests": [
+          "site/randomMapWorker.js",
+          "solver/solverWorker.js",
+          "vendor/pako.js",
+          "core/mazeGenerator.js",
+          "core/dataSerializer.js",
+          "vendor/pako.js",
+          "solver/optimalSearch.js",
+          "solver/searchEnvironment.js",
+          "solver/trajectoryGroups.js",
+          "core/replaySerializer.js",
+          "core/constants.js",
+          "editor/editor.js",
+          "core/pathfinding.js",
+          "core/mapDataUtils.js",
+          "core/binaryCodec.js",
+          "core/gameLogic.js",
+          "core/mapDataUtils.js",
+          "core/actions.js",
+          "solver/searchIndex.js",
+          "core/binaryCodec.js",
+          "core/dataSerializer.js",
+          "solver/breadthFirst.js",
+          "solver/relaxedDistance.js",
+          "core/constants.js",
+          "core/gameState.js",
+          "core/pathfinding.js",
+          "core/mapDefinition.js"
+        ]
+      }
+    ],
+    "afterSimulated": [
+      {
+        "generation": 1,
+        "elapsedMs": 120.8,
+        "requests": []
+      },
+      {
+        "generation": 2,
+        "elapsedMs": 46.9,
+        "requests": [
+          "solver/solverWorker.js"
+        ]
+      },
+      {
+        "generation": 3,
+        "elapsedMs": 19.9,
+        "requests": [
+          "solver/solverWorker.js"
+        ]
+      }
+    ],
+    "perAssetLatencyMs": 150,
+    "actualPreviewBefore": {
+      "verified": true,
+      "generationMs": [
+        737.3,
+        386.0,
+        460.5
+      ]
+    },
+    "warmupGeneratesNoMaps": true,
+    "rulesUnchanged": true,
+    "actualPreviewAfter": {
+      "verified": true,
+      "generationMs": [
+        77.9,
+        27.3,
+        18.4
+      ]
+    },
+    "afterMeasuredWithWarmComponent": true
+  },
+  "formalMainUnchanged": {
+    "game": "85429d49c17068afb0605908dea20f96db0889ed",
+    "ai": "1308e2126a45479581f72dd3197010f1699cf66a"
+  }
+}

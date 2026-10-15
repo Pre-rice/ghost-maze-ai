@@ -24,6 +24,6 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
         process.exitCode = 1;
     } else {
         const { origin } = await startCloudServer({ port: Number(input), host: process.env.GHOST_MAZE_HOST || '127.0.0.1', publicOrigin: process.env.GHOST_MAZE_ORIGIN });
-        console.log(`鬼迷宫：${origin}/game/\n编辑器：${origin}/game/editor.html\n按 Ctrl+C 停止。`);
+        console.log(`鬼迷宫：${origin}/game/\n四栏目在同一入口：地图 / 游玩 / 回放 / 编辑\n按 Ctrl+C 停止。`);
     }
 }
