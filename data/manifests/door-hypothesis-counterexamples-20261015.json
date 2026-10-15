@@ -1,0 +1,242 @@
+{
+  "role": "designer_counterexample_research_not_human_quality",
+  "engineRevision": "sha256:5861b72bee934007e2679b60f38e3820ad1e2302a6d0a309bb7a59793eefb109",
+  "deliveredNewChallenge": false,
+  "galleryUnchanged": true,
+  "motif": {
+    "cells": 17,
+    "ghosts": 2,
+    "doors": [
+      "0",
+      "ordinary"
+    ],
+    "shortest": 19,
+    "optimalCount": "2",
+    "boundary": "safe",
+    "cold": true,
+    "entry": {
+      "external": [
+        0,
+        5,
+        3
+      ],
+      "actions": [
+        "L",
+        "L"
+      ],
+      "unitArrival": [
+        0,
+        4,
+        3
+      ],
+      "internal": [
+        0,
+        3,
+        3
+      ],
+      "keys": 0,
+      "externalGhosts": 0,
+      "exteriorSealedExceptEntrance": true,
+      "initialInteriorEqual": true,
+      "afterGhosts": [
+        [
+          [
+            3,
+            6
+          ],
+          [
+            1,
+            4
+          ]
+        ]
+      ],
+      "wholeOptimalRoutesInteriorEqual": true
+    },
+    "physical": {
+      "reachable": 88,
+      "transitions": 435,
+      "permutations": 2,
+      "compared": 870,
+      "includesFatalActions": true
+    },
+    "necessity": {
+      "states": 88,
+      "shortest": 19,
+      "safeShortest": 19,
+      "priorities": 5,
+      "proofs": [
+        {
+          "forbiddenPriorityWinner": 0,
+          "status": "proven_unsat",
+          "states": 73
+        },
+        {
+          "forbiddenPriorityWinner": 1,
+          "status": "proven_unsat",
+          "states": 34
+        }
+      ]
+    },
+    "decision": "保留为研究构件，核心仍接近已掌握的重引阻挡，未作为新的挑战图交付。"
+  },
+  "consumedCurtain": {
+    "shortest": 14,
+    "doorAblations": [
+      {
+        "wall": "hWalls",
+        "x": 3,
+        "y": 3,
+        "was": 2,
+        "replace": 0,
+        "states": 289,
+        "shortest": 8,
+        "safeShortest": 8,
+        "priorities": 7,
+        "proofs": [
+          {
+            "forbiddenPriorityWinner": 0,
+            "status": "solved",
+            "states": 39
+          },
+          {
+            "forbiddenPriorityWinner": 1,
+            "status": "solved",
+            "states": 39
+          }
+        ]
+      },
+      {
+        "wall": "hWalls",
+        "x": 3,
+        "y": 3,
+        "was": 2,
+        "replace": 1,
+        "states": 41,
+        "shortest": null,
+        "safeShortest": null,
+        "priorities": 2,
+        "proofs": [
+          {
+            "forbiddenPriorityWinner": 0,
+            "status": "proven_unsat",
+            "states": 39
+          },
+          {
+            "forbiddenPriorityWinner": 1,
+            "status": "proven_unsat",
+            "states": 11
+          }
+        ]
+      },
+      {
+        "wall": "vWalls",
+        "x": 4,
+        "y": 3,
+        "was": 3,
+        "replace": 0,
+        "states": 108,
+        "shortest": 14,
+        "safeShortest": 14,
+        "priorities": 2,
+        "proofs": [
+          {
+            "forbiddenPriorityWinner": 0,
+            "status": "proven_unsat",
+            "states": 57
+          },
+          {
+            "forbiddenPriorityWinner": 1,
+            "status": "proven_unsat",
+            "states": 29
+          }
+        ]
+      },
+      {
+        "wall": "vWalls",
+        "x": 4,
+        "y": 3,
+        "was": 3,
+        "replace": 1,
+        "states": 21,
+        "shortest": null,
+        "safeShortest": null,
+        "priorities": 0,
+        "proofs": [
+          {
+            "forbiddenPriorityWinner": 0,
+            "status": "proven_unsat",
+            "states": 21
+          },
+          {
+            "forbiddenPriorityWinner": 1,
+            "status": "proven_unsat",
+            "states": 21
+          }
+        ]
+      },
+      {
+        "wall": "vWalls",
+        "x": 5,
+        "y": 3,
+        "was": 2,
+        "replace": 0,
+        "states": 93,
+        "shortest": 14,
+        "safeShortest": null,
+        "priorities": 2,
+        "proofs": [
+          {
+            "forbiddenPriorityWinner": 0,
+            "status": "solved",
+            "states": 73
+          },
+          {
+            "forbiddenPriorityWinner": 1,
+            "status": "solved",
+            "states": 55
+          }
+        ]
+      },
+      {
+        "wall": "vWalls",
+        "x": 5,
+        "y": 3,
+        "was": 2,
+        "replace": 1,
+        "states": 46,
+        "shortest": null,
+        "safeShortest": null,
+        "priorities": 2,
+        "proofs": [
+          {
+            "forbiddenPriorityWinner": 0,
+            "status": "proven_unsat",
+            "states": 46
+          },
+          {
+            "forbiddenPriorityWinner": 1,
+            "status": "proven_unsat",
+            "states": 31
+          }
+        ]
+      }
+    ],
+    "decision": "移除预期核心的0门，最优与双向优先必要性均保持；新认识的假说未成立，不交付。"
+  },
+  "privateEvidence": {
+    "runs/bidirectional-priority-20261015/design-card.md": "15f62582ee5dd08be8147442b7e5967478bef616364ec7b4485368693be6a4b8",
+    "runs/bidirectional-priority-20261015/constraint-search.json": "c3cf13919bc7044167f4a2eac60d08e80fccd99f9d708bf7bf13442c2c3d09df",
+    "runs/bidirectional-priority-20261015/audit-h18.json": "d34e3f0212eec6b01ef6ae173a9b6afa07bb9d7c6374e06534e13578c4c76f39",
+    "runs/bidirectional-priority-20261015/core-h18.json": "ab0a39bb36a4f9d764026659ffbc447bd1c161bebcaf3a08180d0e154db8604d",
+    "runs/consumed-curtain-20261015/design-card.md": "80bec635e0aba36d565177c658fe5a138a2315813d2645a509f90324f3ad040d",
+    "runs/consumed-curtain-20261015/audit-v2.json": "95cfc693c7021536ead303c14c5fec767239d65bc9bd0bbc61c7a1d33a836fe3",
+    "runs/consumed-curtain-20261015/economy-v2.json": "3f02b5dfab6af8b19385fafc4d67d21af4551702f784bbfe71923be64f031fc8"
+  },
+  "privateSnapshot": {
+    "file": "artifacts/cloud-data-20261015-planning-37.zip",
+    "files": 4688,
+    "bytes": 140982374,
+    "sha256": "1480fc5ec720942661e8b3a4a2429e17f9b983d6bd72904ef51539ea47e5a1cd",
+    "scope": "完整保存双向优先与消耗帘的原型、失败反例、机械证据；后续共享控制实验不在本包。原包保留，当前仅存于云端。"
+  }
+}
