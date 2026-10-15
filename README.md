@@ -33,4 +33,4 @@ check、verify:seeds分别核对引擎与原种子；真实core修改才更新�
 
 每次交付或反馈更新本体[总目录](https://github.com/Pre-rice/ghost-maze/blob/main/docs/ai-map-catalog.md)；上架图同步小册，经验只提炼至方法文档，过程进archive。源代码通过Git保存；完整真人资料、未跟踪反馈和runs通过[私人资料包](docs/codex-cloud.md)另存新快照。
 
-当前按用户要求自主持续推进谜题设计，候选与提交不是停点，模型训练不自动启动。此前训练计划与旧交接保留为[档案](docs/archive/README.md)，不是必须执行的路线。
+当前按用户2026-10-15指令，在网页预览修正后持续推进本地CPU求解训练与评估，候选与提交不是停点。训练研究与待认可网页隔离，付费和GPU不自动启动；入口见[求解训练](docs/planner-training.md)。此前训练计划与旧交接保留为[档案](docs/archive/README.md)，不是必须执行的路线。
