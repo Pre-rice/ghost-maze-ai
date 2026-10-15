@@ -56,3 +56,6 @@ test('去鬼子问题保留资源与机关，完整时给下界、预算未知�
  const map=keyDetourMap(),env=createReferenceEnvironment(map),table=buildGhostRelaxation(map,{budgetMs:5000});assert.equal(table.status,'exhausted');assert.equal(table.lowerBound(env.initialState()),6);assert.equal(buildGhostRelaxation(map,{nodeBudget:0}).status,'unknown');assert.equal(buildGhostRelaxation(map,{nodeBudget:0}).lowerBound(env.initialState()),null);
  for(const m of [map,stairMap()]){const a=solveFastMap(m),b=solveFastMap(m,{ghostRelaxation:{budgetMs:5000}}),fallback=solveFastMap(m,{ghostRelaxation:{nodeBudget:0}});assert.equal(b.optimality,'proven');assert.equal(b.solution.totalActions,a.solution.totalActions);assert.equal(fallback.solution.totalActions,a.solution.totalActions);}
 });
+test('只复用对应地图的真实子问题表，拒绝伪造下界',()=>{
+ const map=keyDetourMap(),table=buildGhostRelaxation(map,{budgetMs:5000}),result=solveFastMap(map,{ghostRelaxation:table});assert.equal(result.solution.totalActions,6);assert.equal(result.search.ghostRelaxation.reused,true);assert.throws(()=>solveFastMap(stairMap(),{ghostRelaxation:table}),/地图不一致/);assert.throws(()=>solveFastMap(map,{ghostRelaxation:{status:'exhausted',lowerBound:()=>999}}),TypeError);
+});

@@ -2,7 +2,7 @@ import { performance } from 'node:perf_hooks';
 import assert from 'node:assert/strict';
 import { createFastEnvironment, physicalState } from './fast-environment.js';
 import { relaxedDistField } from './relaxed-distance.js';
-import { buildGhostRelaxation } from './ghost-relaxation.js';
+import { buildGhostRelaxation,isGhostRelaxationTable } from './ghost-relaxation.js';
 import { compileRestrictions, replayRestricted } from './restrictions.js';
 
 // 堆节点保留自己的 g、父节点和动作，不能用可被覆盖的状态键回溯旧分支。
@@ -40,7 +40,7 @@ export function solveFastMap(mapData, options = {}) {
     const { withGhosts = true, restrictions = [], rankCandidate = null, ghostRelaxation = false, ...givenBudget } = options;
     if (typeof withGhosts !== 'boolean') throw new TypeError('withGhosts 必须为布尔值');
     if(rankCandidate!==null&&typeof rankCandidate!=='function')throw new TypeError('rankCandidate 必须为函数或null');
-    if(ghostRelaxation!==false&&ghostRelaxation!==true&&(!ghostRelaxation||typeof ghostRelaxation!=='object'||Array.isArray(ghostRelaxation)||Object.keys(ghostRelaxation).some(k=>!['nodeBudget','stateBudget','budgetMs'].includes(k))))throw new TypeError('ghostRelaxation 必须为布尔值或子问题预算');
+    if(!isGhostRelaxationTable(ghostRelaxation)&&ghostRelaxation!==false&&ghostRelaxation!==true&&(!ghostRelaxation||typeof ghostRelaxation!=='object'||Array.isArray(ghostRelaxation)||Object.keys(ghostRelaxation).some(k=>!['nodeBudget','stateBudget','budgetMs'].includes(k))))throw new TypeError('ghostRelaxation 必须为布尔值、子问题预算或本模块构建的表');
     for (const key of Object.keys(givenBudget)) if (!Object.hasOwn(DEFAULT_BUDGET, key)) throw new TypeError(`未知预算参数：${key}`);
     const budget = { ...DEFAULT_BUDGET, ...givenBudget };
     for (const [name, value] of Object.entries(budget)) if (!Number.isSafeInteger(value) || value < (name === 'stateBudget' ? 1 : 0)) throw new TypeError(`非法预算：${name}`);
@@ -70,14 +70,14 @@ export function solveFastMap(mapData, options = {}) {
             scope: { gameMode: reference.mapDefinition.gameMode, objective: 'zero_hit_no_revive', metric: 'successful_actions', actions: reference.actions, withGhosts, restrictions: monitor.specs },
             optimality, solution,
             search: { algorithm: 'astar', expanded, transitions, discovered: bestG.size, exhausted: reason === 'frontier_exhausted', elapsedMs, budget,
-                ...(relaxation?{ghostRelaxation:{status:relaxation.status,states:relaxation.states,expanded:relaxation.expanded,elapsedMs:relaxation.elapsedMs}}:{}) }
+                ...(relaxation?{ghostRelaxation:{status:relaxation.status,states:relaxation.states,expanded:relaxation.expanded,elapsedMs:relaxation.elapsedMs,reused:isGhostRelaxationTable(ghostRelaxation)}}:{}) }
         };
     };
     const interrupted = reason => finish(incumbent ? 'solved' : 'unknown', reason, incumbent ? 'not_proven' : null);
     if (budget.nodeBudget === 0) return interrupted('node_budget');
     if (budget.budgetMs === 0) return interrupted('time_budget');
     const fields = relaxedDistField(env.sim);
-    if(ghostRelaxation){const options=ghostRelaxation===true?{}:ghostRelaxation;relaxation=buildGhostRelaxation(mapData,{...options,budgetMs:Math.min(options.budgetMs??50,budget.budgetMs)});}
+    if(ghostRelaxation){if(isGhostRelaxationTable(ghostRelaxation)){if(ghostRelaxation.sourceMapId!==env.sourceMapId)throw new TypeError('去鬼子问题与当前地图不一致');relaxation=ghostRelaxation;}else{const options=ghostRelaxation===true?{}:ghostRelaxation;relaxation=buildGhostRelaxation(mapData,{...options,budgetMs:Math.min(options.budgetMs??50,budget.budgetMs)});}}
     const h = state => Math.max(fields[state.player.layer][state.player.y][state.player.x],relaxation?.lowerBound(state)??0);
     if (performance.now() - started >= budget.budgetMs) return interrupted('time_budget');
     if (!Number.isFinite(h(initial))) return finish('proven_unsat', 'relaxed_unreachable');
