@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-15",
+  "title": "换手",
+  "mapId": "d0ce276b18920b387d7122a7fa485d9727a8996af43206bb28def0209a233e8e",
+  "familyId": "door-cooperation-20261013-v1",
+  "relatedFamilyIds": [
+    "dual-loop-relay-v1",
+    "door-cooperation-20261013-v1"
+  ],
+  "trainingSplitEligibility": "requires_union_of_parent_families;not_added_to_training",
+  "parentMapIds": [
+    "e3d3a67fcbc7bc13f1a1457d00bd44652d6dce67085c55f77600ae1b582bb161",
+    "b90330352c5e027977bfdf0d3c295a5f4a7af605cc067c0c0d409053c4c62d03"
+  ],
+  "kind": "shared_control_construction_with_native_counterexamples_and_reduction",
+  "humanQuality": null,
+  "humanFeedback": [],
+  "gallerySelection": null,
+  "researchDirectory": "runs/shared-control-20261015",
+  "intendedDiscovery": "不能把关住旧鬼视为完成。必须先从另一侧把它引离门边，才能重开A；此后才开B，调来原本挡住出口的新鬼接替阻挡，让旧鬼跟随绕回左侧后借新鬼脱身。",
+  "development": "从两张现行母图共享控制条开始；串联62步版不交付。开关位置与隔离改动曾全图无解；通过原生反例修正B的放行门，出现跨来源鬼的真实优先阻挡。删六格下部、两条旧门、任务钥匙和门、无用右部及开场独立困鬼段，最终15格双鬼。终点内移使外形收成三列，最优前37步保持，仅最后向右改向左。",
+  "evidenceScope": "四项关键事件分别禁止，原图全部无伤无复活续解均无解，允许非致死重合。两条38步最优的逐步鬼轨迹不同，全部最优无重合；全部最优均A、A、B三次按钮操作。",
+  "entryScope": "指定外部(1,5)向右进入(2,5)，再右到出生(3,5)；零钥匙、无外部鬼，外部其余边封闭；开局及两条完整最优路线单元内部一致。整图另验。",
+  "qualityScope": "未获真人试玩或评价，未入地图集；母图好评不继承。若以后进入训练，必须先将两个母图亲缘组并入同一拆分组，不能把本图当独立家族或独立测试样本。",
+  "visualScope": "环形中央两格留空；终点从右侧突出的单格移到出生下方，保留隔墙与思考，三列六行包络。仅做本地画面检查，无站点改动。"
+}
