@@ -1,0 +1,273 @@
+{
+  "date": "2026-10-16",
+  "ruleset": "sha256:5861b72bee934007e2679b60f38e3820ad1e2302a6d0a309bb7a59793eefb109",
+  "scope": "同家族有限功能提案、原生反例及未评价候选；不是好图率、盲测或训练。",
+  "controlFaceZeroCases": {
+    "cases": 2295,
+    "oldReferenceStillWins": 1760,
+    "solved": 218,
+    "unsat": 317,
+    "unknown": 0,
+    "referencePressesAtMostTwo": 202,
+    "referenceDoesNotUseBoth": 0,
+    "bothControlsStillNecessary": 15,
+    "shortControlPlan": 0,
+    "graphUnknown": 0,
+    "indispensableZeros": 0,
+    "qualifying": []
+  },
+  "livingDoorInitial": {
+    "cases": 26,
+    "solved": 8,
+    "unsat": 18,
+    "unknown": 0,
+    "graphUnknown": 0,
+    "oldReferenceStillWins": 2,
+    "referenceBlockedCrossings": 0,
+    "anyWinningBlockedCrossings": 0,
+    "allWinningNecessary": 0,
+    "optimalOnly": 0,
+    "qualifying": []
+  },
+  "livingDoorRelocation": {
+    "cases": 180,
+    "solved": 35,
+    "unsat": 95,
+    "unknown": 0,
+    "graphUnknown": 0,
+    "oldReferenceStillWins": 0,
+    "referenceBlockedCrossings": 1,
+    "anyWinningBlockedCrossings": 0,
+    "allWinningNecessary": 1,
+    "optimalOnly": 0,
+    "qualifying": [
+      {
+        "i": 178,
+        "title": "换席原版",
+        "mapId": "a284b04510489c77a6a84db9a0de38c0e90d5e85df18c5f55684301675cc8084",
+        "N": 9,
+        "events": [
+          {
+            "step": 7,
+            "action": "D",
+            "hits": [
+              {
+                "gate": {
+                  "axis": "v",
+                  "x": 3,
+                  "y": 4
+                },
+                "start": [
+                  2,
+                  4
+                ],
+                "target": [
+                  3,
+                  4
+                ],
+                "seesAfter": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "nonCold": 50,
+    "duplicates": 0,
+    "staticJunctions": 24
+  },
+  "livingDoorReturnVariants": {
+    "cases": 144,
+    "solved": 108,
+    "unsat": 36,
+    "unknown": 0,
+    "referenceBlockedCrossings": 3,
+    "allWinningNecessary": 2,
+    "qualifying": [
+      {
+        "i": 26,
+        "mapId": "6b6712f86267cbd4a9f17d0c802e9ddb2c3ecaa2b479db50b2d6141ce89de475",
+        "N": 20,
+        "parameters": {
+          "buttons": "lower",
+          "lowOrdinary": true,
+          "upperOrdinary": false,
+          "upperA": "none",
+          "middle": "solid"
+        }
+      },
+      {
+        "i": 122,
+        "mapId": "dbc2055789359417edcf5d7ed2d70a6150349face6da9186700b04480da8617b",
+        "N": 20,
+        "parameters": {
+          "buttons": "both",
+          "lowOrdinary": true,
+          "upperOrdinary": false,
+          "upperA": "none",
+          "middle": "solid"
+        }
+      }
+    ]
+  },
+  "alternateControlFaces": {
+    "cases": 435,
+    "solved": 48,
+    "unsat": 387,
+    "unknown": 0,
+    "bothNecessary": 48,
+    "atMostTwoRuns": 48,
+    "moreThanTwoRuns": 0,
+    "graphUnknown": 0,
+    "qualifying": []
+  },
+  "keyReturn": [
+    {
+      "title": "换手",
+      "status": "proven_unsat",
+      "oldPlanContinuation": "proven_unsat"
+    },
+    {
+      "title": "回望",
+      "status": "proven_unsat",
+      "oldPlanContinuation": "proven_unsat"
+    },
+    {
+      "title": "双0初稿",
+      "status": "proven_unsat",
+      "oldPlanContinuation": "proven_unsat"
+    },
+    {
+      "title": "双0反相B稿",
+      "status": "proven_unsat",
+      "oldPlanContinuation": "proven_unsat"
+    }
+  ],
+  "selectedCandidate": {
+    "title": "送客",
+    "mapId": "f0919c11b6bf211a6c2fa48c04cb2e551b56c4e4fb2fd0194ee6bd9fb0879f67",
+    "cells": 19,
+    "ghosts": 2,
+    "buttons": 2,
+    "letterDoors": 3,
+    "keys": 0,
+    "numericDoors": 0,
+    "ordinaryDoors": 0,
+    "oneWayDoors": 0,
+    "N": 38,
+    "timingDistinctOptimalRoutes": "1",
+    "allOptimalNoOverlapAndNoEndSafe": true,
+    "cold": true,
+    "entry": {
+      "external": [
+        0,
+        3,
+        4
+      ],
+      "actions": [
+        "D"
+      ],
+      "internal": [
+        0,
+        3,
+        5
+      ],
+      "keys": 0,
+      "externalGhosts": 0,
+      "remainingExteriorSealed": true,
+      "wholeOptimalRoutesInteriorEqual": true
+    },
+    "physicalStates": 416,
+    "permutationSuccessorComparisons": 4150,
+    "fiveAllWinningRelationsVerified": true,
+    "twoActualSafeLosingPlansVerified": true,
+    "optimalConflictEvents": 0,
+    "minimizationValidCases": 18,
+    "initialFormatRejectedCases": 2,
+    "aestheticFill": {
+      "prototypeCells": 17,
+      "filledCells": [
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      "allOptimalActionsAndGhostFramesUnchanged": true
+    },
+    "status": "unreviewed_not_gallery",
+    "familyId": "door-cooperation-20261013-v1",
+    "relatedFamilyIds": [
+      "dual-loop-relay-v1",
+      "door-cooperation-20261013-v1"
+    ]
+  },
+  "twentyStepCounterexample": {
+    "removeZero": {
+      "N": 20,
+      "optimalRoutes": "1",
+      "originalActionsPlayerGhostAndConflictTracesUnchanged": true,
+      "sameBlockedCrossingRelationStillNecessary": true
+    },
+    "removeUpperA": {
+      "N": 20,
+      "optimalRoutes": "2",
+      "originalRouteDies": true
+    },
+    "scope": "同N不代表同方案；0可删的证据不写成删后所有门态均相同。"
+  },
+  "interpretation": "按钮次数与必要角色不能证明交替规划；比较实际安全错误计划、性质删去后是否保留同一核心，以及改图是否只是目标旁路。",
+  "humanQualityLabelsFromResearch": 0,
+  "trainingStarted": false,
+  "trainingLibraryChanged": false,
+  "engineChanged": false,
+  "siteInteractionChanged": false,
+  "galleryChangedByResearch": false,
+  "verification": {
+    "cloudCheck": "passed",
+    "gameTestFiles": 26,
+    "referenceTests": 138,
+    "legacyTestFiles": 4,
+    "originalSeeds": 2,
+    "httpEntrypoints": 22,
+    "candidateReadonlyVerification": "passed",
+    "localBrowserVisual": "passed",
+    "productionOrDeploymentChecked": false
+  },
+  "sha256": {
+    "runs/gate-protection-followup-20261016/provenance.json": "674604ed77c32f32c01c9f0c80862c906951b8d4d2d08f470b978c92542a9668",
+    "runs/gate-protection-followup-20261016/operation-faces-seals/summary.json": "f15045c83e086cb2329b82b6ca19120069d801cea166e4a26756c2211b3de873",
+    "runs/gate-protection-followup-20261016/alternate-faces/summary.json": "058ca80cbd545c6264f2b460c3b07f570c0e17dc81abedcdc5da391fbae7a370",
+    "runs/gate-protection-followup-20261016/counterexamples/evidence.json": "06cdbbe2edf0253aaa9f79f81186af24a90fa9a02d799d6ee3a3fb69077f9490",
+    "runs/gate-protection-followup-20261016/living-door-verification/summary.json": "0a5f2328f292c1e220b231db8b0f6055430e3d17004678f6e8550c63bcf1607d",
+    "runs/gate-protection-followup-20261016/side-entry-refinement/summary.json": "7a3089932e97404360de7b80b080d7d8df7509feeab0c63f6b8e3d376d68188d",
+    "runs/gate-protection-followup-20261016/side-entry-screens/summary.json": "b7e0e9367ece3c2e7c79b4d467eb5d66e928368359a9edf2da5ed474e18fa686",
+    "runs/gate-protection-followup-20261016/see-off-minimization/results.json": "f053401a342968740800c3e4f4223206dbeecf3bf4bb728595fbdff6c0a2435b",
+    "runs/gate-protection-followup-20261016/see-off-minimization/row-compaction-results.json": "38f1cd049f0e2a4a91a5c667cef1cee435c6e0becf0bb0c5d59e17120540507a",
+    "runs/gate-protection-followup-20261016/logs/see-off-cloud-check.log": "4234d87e1cdb8377199ddb143e60f714f4e78eea5a13b3cedcf7b207c7dd8ec7",
+    "examples/see-off-20261016/map.json": "34672974395355c9fae53c93ded203d6e3a640ed4bc11025ba7ec425cd0b59b8",
+    "examples/see-off-20261016/verify.mjs": "f773c0b2e75a48c1b3f0c15deb758aa0cb8b12a7d21fcdf6286100d410140038",
+    "examples/see-off-20261016/evidence.json": "ecdc8b56eca58dc1b77fad3ee861c8281e30b1dd739051d286049f8097050250",
+    "examples/see-off-20261016/current-verification.json": "1891c26d06e8b464260bc146c1225877cc0306abb3bb119adb3bbd1857ba16e8",
+    "data/manifests/death-display-compatibility-20261016.json": "7f835185dbca25c10a07ab5c52e445171e2bc2ecd28c56ac34c825a266df98f8"
+  },
+  "privateSnapshot": {
+    "file": "artifacts/cloud-data-20261016-planning-45.zip",
+    "files": 5641,
+    "bytes": 145980840,
+    "sha256": "4abbe72e757cb04463d7be57407ef275bcd1f0789f1df311eefd37130f92f04f",
+    "scope": "含本轮功能提案、失败原件、送客原验证与源程序；原证据使用5861b72b规则锁。保留旧包；仅云端保存，不称用户已下载。"
+  },
+  "currentVerification": {
+    "ruleset": "sha256:f41c4bf6ab816404ace5b640a7ed04745c99daed64a36e07b8e6c14365963044",
+    "manifest": "data/manifests/death-display-compatibility-20261016.json",
+    "candidateEvidence": "examples/see-off-20261016/current-verification.json",
+    "cloudCheck": "passed",
+    "gameTestFiles": 27,
+    "referenceTests": 138,
+    "scope": "接入用户本地显示调整后补验；本清单及资料包原始研究规则锁保持。"
+  }
+}

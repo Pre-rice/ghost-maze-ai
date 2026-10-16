@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-16",
+  "title": "送客",
+  "mapId": "f0919c11b6bf211a6c2fa48c04cb2e551b56c4e4fb2fd0194ee6bd9fb0879f67",
+  "familyId": "door-cooperation-20261013-v1",
+  "relatedFamilyIds": [
+    "dual-loop-relay-v1",
+    "door-cooperation-20261013-v1"
+  ],
+  "parentMapIds": [
+    "d30be77b0ad615824805de19953a294ae4456c9656bf64235960a6c2399f5538",
+    "86132ea54166ed915d2dc68273ea86c43c3c48555a213fa118a1108dcb9de036"
+  ],
+  "kind": "manual_side_entry_construction_with_finite_counterexamples_and_native_simplification",
+  "humanQuality": null,
+  "humanFeedback": [],
+  "gallerySelection": null,
+  "trainingSplitEligibility": "requires_union_of_parent_families;not_added_to_training",
+  "intendedDiscovery": "先安排两鬼的追逐距离，开B引它们离开终点入口，再在安全处关闭B，让反相的终点门重开；不能只把守卫困住。",
+  "evidenceScope": "19格双鬼，唯一38步最优无重合、去终点安全；五项原图关系分别禁止均全续解无解；两个实际安全错误前缀无续解。416状态、4150排列与变编号后继。",
+  "development": "从单入口取物回程的无解反例，改为侧面入口；5步旁路后移除必经钥匙，加入反相终点B。两0改实墙/空路，多余B门、重复B按钮与单向门均删去。17格稿补齐两下角，全部最优轨迹保持。原回望不改。",
+  "qualityScope": "未获真人评价、未入地图集；不转移回望或母图评价，必要性、事件数与长解不作趣味分。",
+  "minimizationScope": "18项合法单格删改、按钮邻移、保留编码容器的实际整行收缩；另两次7格容器被格式拒绝，原件保留，不计物理阴性。保留内侧通路的实际可选引鬼方式与横排控制对称；不是全局最小。",
+  "entryScope": "指定外部(3,4)向下一步至出生(3,5)，零钥匙无外部鬼，其他外边封闭；内部与唯一最优保持，整图另验。",
+  "researchManifest": "data/manifests/gate-protection-followup-20261016.json"
+}

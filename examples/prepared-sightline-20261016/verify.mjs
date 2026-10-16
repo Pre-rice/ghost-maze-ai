@@ -70,7 +70,11 @@ export function verify(){
 }
 if(process.argv[1]===fileURLToPath(import.meta.url)){
     const fresh=verify(),stored=JSON.parse(fs.readFileSync(new URL('evidence.json',import.meta.url)));
-    assert.equal(fresh.qa.mapId,stored.qa.mapId);assert.equal(fresh.qa.ruleset,stored.qa.ruleset);
+    assert.equal(fresh.qa.mapId,stored.qa.mapId);if(fresh.qa.ruleset!==stored.qa.ruleset){
+        const compatibility=JSON.parse(fs.readFileSync(new URL('../../data/manifests/death-display-compatibility-20261016.json',import.meta.url)));
+        assert.equal(compatibility.previousRuleset,stored.qa.ruleset);assert.equal(compatibility.ruleset,fresh.qa.ruleset);
+        assert(compatibility.checkedMaps.some(m=>m.mapId===fresh.qa.mapId&&m.allOptimalActionsUnchanged));
+    }
     assert.deepEqual(fresh.qa.routes,stored.qa.routes);assert.deepEqual(fresh.necessity,stored.necessity);
     assert.deepEqual(fresh.zeroBeforeFirstClose,stored.zeroBeforeFirstClose);
     assert.equal(JSON.parse(fs.readFileSync(new URL('source.json',import.meta.url))).humanQuality,null);

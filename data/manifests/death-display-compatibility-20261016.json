@@ -1,0 +1,193 @@
+{
+  "date": "2026-10-16",
+  "ruleset": "sha256:f41c4bf6ab816404ace5b640a7ed04745c99daed64a36e07b8e6c14365963044",
+  "previousRuleset": "sha256:5861b72bee934007e2679b60f38e3820ad1e2302a6d0a309bb7a59793eefb109",
+  "gameUserCommit": "d74609bc12d4fa3c26ed19bc429dc8b578dbb446",
+  "change": "用户本地更改死亡当步画面；权威复活态及物理计算模块保持。",
+  "changedFiles": [
+    "src/core/stepOutcome.js"
+  ],
+  "unchangedCoreFiles": {
+    "src/core/actionHistory.js": "9ab0331aca2cc85cb503e44ed4ae8765c12e0f3f61c26f57dac4ab310db17943",
+    "src/core/actions.js": "4f430e2d7485706ed8aa95517fad07a2d2925a9f64cdd76011ae8506e74b789e",
+    "src/core/binaryCodec.js": "3dfba2c82b4d2a776c023d2aa44cda36dc8975e1fa195b7030df4d28fa8a335c",
+    "src/core/constants.js": "d255fe6a37b04bba52d9fc54a267b764079b3de38b114112a844e6b654bfea56",
+    "src/core/dataSerializer.js": "5a0c990494bd64e60d9e98670967553d29b0152e861f86e66fca0b2353def9b3",
+    "src/core/gameController.js": "50f1b4a37a8269e90f56af659b1dcfcff63666eac6a5f91b847a7f4bf00f9eee",
+    "src/core/gameLogic.js": "ac0eac99c4a18cabbd7cd427744d67f443d97a50a8ce4a02349f772cbb52327f",
+    "src/core/gameState.js": "0b3df61441df78017a1ed2d75cce5997249afee341d9fe124053a62c66f515f6",
+    "src/core/mapDataUtils.js": "64dfca10735ce26ae5f075b939676e9c04e485f82efe848c13103bc575e30a04",
+    "src/core/mapDefinition.js": "a842b9e8a68a21b3a93d6429cf3ab06c31b18808201ef45f16ba3e6bd5bc3bf6",
+    "src/core/mazeGenerator.js": "e865e2019da9c88639098550e7d30023440e7ebd90e82d6a74e7bdf0241d9542",
+    "src/core/pathfinding.js": "333c35b051237b97373903c1b2a8d6b5bfca3cbb71c4089542dc0202855404bd",
+    "src/core/replaySerializer.js": "a77af6c9ceae70cdc9e087b70e7ae80017099ba40d85119d0aaf266bb28f9ff2",
+    "src/core/sessionHistory.js": "d6f6533a21f9f77bc17b47b55d7b46f933d4f839f4cdbea3e0d468f5c9aadf0f"
+  },
+  "verificationMethod": "逐文件SHA核对：仅stepOutcome变化；十五图重新穷尽全部最优动作，与既有证据逐路相等。送客重新完成4150后继、最优边界、指定入场、去终点与必要性。",
+  "checkedMaps": [
+    {
+      "title": "错位",
+      "mapId": "e3d3a67fcbc7bc13f1a1457d00bd44652d6dce67085c55f77600ae1b582bb161",
+      "T": 32,
+      "count": "1",
+      "optimalRoutesSha256": "5b72bb7e978c5cafe866635116c541cffc74275f4ae0f9c5fb85023151af70f5",
+      "allOptimalActionsUnchanged": true,
+      "referenceReplayStillWins": true,
+      "previousEvidence": "data/manifests/four-column-compatibility-20261015.json"
+    },
+    {
+      "title": "接力",
+      "mapId": "e2e2d43f2fdf4182f1952731b746260cdde29266422b7d760f2cf253e2b2b771",
+      "T": 31,
+      "count": "20",
+      "optimalRoutesSha256": "cfb7a6ac3a1824011597469caffb0cd7d16fe6f4b1dfd8d33f9c80d25b9040ad",
+      "allOptimalActionsUnchanged": true,
+      "referenceReplayStillWins": true,
+      "previousEvidence": "data/manifests/four-column-compatibility-20261015.json"
+    },
+    {
+      "title": "归途",
+      "mapId": "e9bdf78911aaa8f6405acacf5922ec1f7252792180626eff10b72bfc3c8e145f",
+      "T": 39,
+      "count": "3",
+      "optimalRoutesSha256": "9ba957dd8c10399106b3dda201a3e2721bbc46dca46f8fbdc18cce7027ce7a2f",
+      "allOptimalActionsUnchanged": true,
+      "referenceReplayStillWins": true,
+      "previousEvidence": "data/manifests/four-column-compatibility-20261015.json"
+    },
+    {
+      "title": "借影",
+      "mapId": "f1b00c65b1dbb814bace7e71bbaee38f4687e96920c24421912e486021c24186",
+      "T": 53,
+      "count": "12",
+      "optimalRoutesSha256": "f527c0313d44b95b8ee13a085654d56397f9e43716a3fa0474b49ce8f79b94bf",
+      "allOptimalActionsUnchanged": true,
+      "referenceReplayStillWins": true,
+      "previousEvidence": "data/manifests/four-column-compatibility-20261015.json"
+    },
+    {
+      "title": "回环",
+      "mapId": "b76d1e9209f5ea4c42fec71b6e69745119d382ef35497575383145c693126b3b",
+      "T": 70,
+      "count": "2",
+      "optimalRoutesSha256": "0c39e34bbbf0e320b960395a2dcb5d594c1ac54825767dcd5b8e72c6198439a6",
+      "allOptimalActionsUnchanged": true,
+      "referenceReplayStillWins": true,
+      "previousEvidence": "data/manifests/four-column-compatibility-20261015.json"
+    },
+    {
+      "title": "回位",
+      "mapId": "8e364828efdeb4858ae856a1e9c9f4b627555f8e0658a88d9a0053c8febe7102",
+      "T": 35,
+      "count": "2",
+      "optimalRoutesSha256": "ce18a71cf05c9fc33049f3a25969b2d1e92fa0aa329c9985983934307a6e0a67",
+      "allOptimalActionsUnchanged": true,
+      "referenceReplayStillWins": true,
+      "previousEvidence": "data/manifests/four-column-compatibility-20261015.json"
+    },
+    {
+      "title": "换边",
+      "mapId": "ec6dbc7738c836baf3af954c11de993c6a2decf9e3f6378408d4682efad406e9",
+      "T": 28,
+      "count": "1",
+      "optimalRoutesSha256": "a5341a9c791782a809177c279f57e44491f5bc8a96d7c6058c5ea13b9d96ead2",
+      "allOptimalActionsUnchanged": true,
+      "referenceReplayStillWins": true,
+      "previousEvidence": "data/manifests/four-column-compatibility-20261015.json"
+    },
+    {
+      "title": "换岗",
+      "mapId": "4de4193aba5f2f72469f0c421a530e04c436d4e91777d8a6a60901974cd4a995",
+      "T": 76,
+      "count": "4",
+      "optimalRoutesSha256": "0bfada10acfb19667eca94259b2a1138b9b1421bac518ac1d8656bc6e2961e53",
+      "allOptimalActionsUnchanged": true,
+      "referenceReplayStillWins": true,
+      "previousEvidence": "data/manifests/four-column-compatibility-20261015.json"
+    },
+    {
+      "title": "后路",
+      "mapId": "5176ec3d2668cf7a3c1f15af0a13752781e78ccdb9b9d37d9642beb4ffa26281",
+      "T": 59,
+      "count": "4",
+      "optimalRoutesSha256": "c94292ab8ce0d3f50c5bc2400400f9b83c2bbf8452a158736f39377addc0c20e",
+      "allOptimalActionsUnchanged": true,
+      "referenceReplayStillWins": true,
+      "previousEvidence": "data/manifests/four-column-compatibility-20261015.json"
+    },
+    {
+      "title": "暂驻",
+      "mapId": "df5820de550cab3dabf35533463f7203937c6b24523bd2ad2df77e078e00977c",
+      "T": 37,
+      "count": "4",
+      "optimalRoutesSha256": "3ffcff4adc549698348157fe7ba1f8f7a812e40ee355b326aaecdfc4a8621726",
+      "allOptimalActionsUnchanged": true,
+      "referenceReplayStillWins": true,
+      "previousEvidence": "data/manifests/four-column-compatibility-20261015.json"
+    },
+    {
+      "title": "再借",
+      "mapId": "b90330352c5e027977bfdf0d3c295a5f4a7af605cc067c0c0d409053c4c62d03",
+      "T": 27,
+      "count": "2",
+      "optimalRoutesSha256": "c5942d6de3e9a9f91a0760670a99ff0c4a967511e34ee044f59a8c3d7be80dfd",
+      "allOptimalActionsUnchanged": true,
+      "referenceReplayStillWins": true,
+      "previousEvidence": "data/manifests/four-column-compatibility-20261015.json"
+    },
+    {
+      "title": "周转",
+      "mapId": "d5b5556b7b76c88ca20fa3030e97f0a91cc1aaeded50e218e0c3de54b749df75",
+      "T": 36,
+      "count": "6",
+      "optimalRoutesSha256": "4ba5f9c83ea9de725dcce678133f5a5bf502e9dcb3490986c530e4477f8e99fd",
+      "allOptimalActionsUnchanged": true,
+      "referenceReplayStillWins": true,
+      "previousEvidence": "data/manifests/four-column-compatibility-20261015.json"
+    },
+    {
+      "title": "同行",
+      "mapId": "aab359502f4254db6cc01006be752b2b9e0b23522a866ab4c301784ca15673b5",
+      "T": 51,
+      "count": "12",
+      "optimalRoutesSha256": "879bdc82aa291532ba45c02f193f557f504c0b31d76fcc2fb8e4f06c0ecbeeaa",
+      "allOptimalActionsUnchanged": true,
+      "referenceReplayStillWins": true,
+      "previousEvidence": "data/manifests/four-column-compatibility-20261015.json"
+    },
+    {
+      "title": "换席",
+      "mapId": "fe2e38868c4291afcb96eac732b09aa68f1fda0c4e4bb658e34a6b294b2053de",
+      "T": 44,
+      "count": "3",
+      "optimalRoutesSha256": "6055a826a4df61775e63237a0026c4eb7035ad017d5284391df73aca22102825",
+      "allOptimalActionsUnchanged": true,
+      "referenceReplayStillWins": true,
+      "previousEvidence": "examples/seat-exchange-enhanced-20261016/evidence.json"
+    },
+    {
+      "title": "回望",
+      "mapId": "d30be77b0ad615824805de19953a294ae4456c9656bf64235960a6c2399f5538",
+      "T": 50,
+      "count": "4",
+      "optimalRoutesSha256": "65f900e29ccebf2cf8961c3b094db4235fdbc37772596841034a6d567483245a",
+      "allOptimalActionsUnchanged": true,
+      "referenceReplayStillWins": true,
+      "previousEvidence": "examples/prepared-sightline-20261016/evidence.json"
+    },
+    {
+      "title": "送客",
+      "mapId": "f0919c11b6bf211a6c2fa48c04cb2e551b56c4e4fb2fd0194ee6bd9fb0879f67",
+      "T": 38,
+      "count": "1",
+      "allOptimalActionsUnchanged": true,
+      "referenceReplayStillWins": true,
+      "previousEvidence": "examples/see-off-20261016/evidence.json",
+      "currentEvidence": "examples/see-off-20261016/current-verification.json",
+      "fullQARefreshed": true
+    }
+  ],
+  "historicalPhysicsEvidenceRetained": "data/manifests/four-column-compatibility-20261015.json",
+  "scope": "兼容核验，不改地图、质量标签或旧证据；未重扫旧十五图的全部物理后继。",
+  "productionOrDeploymentChecked": false
+}
