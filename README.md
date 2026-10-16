@@ -36,4 +36,4 @@ check、verify:seeds分别核对引擎与原种子；真实core修改才更新�
 
 每次交付或反馈更新本体[总目录](https://github.com/Pre-rice/ghost-maze/blob/main/docs/ai-map-catalog.md)；上架图同步小册，经验只提炼至方法文档，过程进archive。源代码通过Git保存；完整真人资料、未跟踪反馈和runs通过[私人资料包](docs/codex-cloud.md)另存新快照。
 
-用户2026-10-15已批准四栏目预览正式发布，并继续主线。CPU对照显示旧求解模型和行动段均无实际替换收益，当前优先通过设计假说、原生反例与精简推进谜题；《悬置》《换手》仍待真实评价，未入集。这些机械资料不作为质量正例，继续本地CPU研究；付费服务和GPU不自动启动。当前结果见[状态](docs/status.md)，研究边界见[求解训练](docs/planner-training.md)，详细过程留在[档案](docs/archive/README.md)。
+用户2026-10-15已批准四栏目预览正式发布，并继续主线。当前优先通过设计假说、原生反例与精简推进谜题；候选及反馈集中在[状态](docs/status.md)和地图总目录，未评价稿不自动上架或作为质量正例。CPU对照尚无替换现有求解器的收益；继续本地研究，付费服务和GPU不自动启动。研究边界见[求解训练](docs/planner-training.md)，详细过程留在[档案](docs/archive/README.md)。

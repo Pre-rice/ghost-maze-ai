@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-16",
+  "ruleset": "sha256:5861b72bee934007e2679b60f38e3820ad1e2302a6d0a309bb7a59793eefb109",
+  "sourceGameCommit": "04ea905",
+  "sourceAICommitBeforeResearch": "dabf43a",
+  "scope": "同源地图条件编辑、原生反例与人工复盘；不是好图率、训练、独立留出或质量评分",
+  "galleryInputs": [
+    {
+      "title": "换席·已知开发复现",
+      "parentMapId": "2bd5265c7aa93852034c4ee375d15e71152971c9b8a3103ea26cbcfaba909cca",
+      "cases": 36,
+      "counts": {
+        "prefix_changed_or_invalid": 30,
+        "new_unsat_or_unproven": 2,
+        "old_plan_still_wins": 3,
+        "candidate": 1
+      },
+      "rawCandidates": 1,
+      "uniqueMaps": 1
+    },
+    {
+      "title": "回位",
+      "parentMapId": "8e364828efdeb4858ae856a1e9c9f4b627555f8e0658a88d9a0053c8febe7102",
+      "cases": 616,
+      "counts": {
+        "old_plan_still_wins": 285,
+        "prefix_changed_or_invalid": 312,
+        "new_unsat_or_unproven": 9,
+        "candidate": 10
+      },
+      "rawCandidates": 10,
+      "uniqueMaps": 4
+    },
+    {
+      "title": "暂驻",
+      "parentMapId": "df5820de550cab3dabf35533463f7203937c6b24523bd2ad2df77e078e00977c",
+      "cases": 464,
+      "counts": {
+        "prefix_changed_or_invalid": 279,
+        "old_plan_still_wins": 93,
+        "candidate": 35,
+        "new_unsat_or_unproven": 57
+      },
+      "rawCandidates": 35,
+      "uniqueMaps": 35
+    }
+  ],
+  "unratedInputs": [
+    {
+      "title": "换手",
+      "parentMapId": "d0ce276b18920b387d7122a7fa485d9727a8996af43206bb28def0209a233e8e",
+      "cases": 224,
+      "counts": {
+        "candidate": 34,
+        "old_plan_still_wins": 70,
+        "new_unsat_or_unproven": 34,
+        "prefix_changed_or_invalid": 86
+      },
+      "rawCandidates": 34,
+      "uniqueMaps": 34
+    },
+    {
+      "title": "悬置",
+      "parentMapId": "a8c01685b3352ef264c1e81f00197ed2a89df5eac99c2a416be85326fd7f06f5",
+      "cases": 224,
+      "counts": {
+        "candidate": 37,
+        "prefix_changed_or_invalid": 115,
+        "old_plan_still_wins": 48,
+        "new_unsat_or_unproven": 24
+      },
+      "rawCandidates": 37,
+      "uniqueMaps": 25
+    }
+  ],
+  "knownUserCase": {
+    "sourceMapId": "2bd5265c7aa93852034c4ee375d15e71152971c9b8a3103ea26cbcfaba909cca",
+    "reproducedMapId": "fe2e38868c4291afcb96eac732b09aa68f1fda0c4e4bb658e34a6b294b2053de",
+    "scope": "已知用户增强用于开发复现，不是AI独立设计或盲测"
+  },
+  "routineDetourResults": {
+    "galleryNewUniqueMaps": 39,
+    "galleryNewMapsWithExactRoutineWitness": 39,
+    "knownUserMapHasRoutineWitness": false,
+    "unratedUniqueMaps": 59,
+    "unratedWithRoutineWitness": 30,
+    "unratedWithoutSpecifiedRoutineWitness": 29,
+    "scope": "进度进入完整状态键，允许不移动鬼的插入动作；只测指定旧参考，不修改网站含停顿的解法分组，不判趣味"
+  },
+  "selectedCandidate": {
+    "title": "回望",
+    "mapId": "d30be77b0ad615824805de19953a294ae4456c9656bf64235960a6c2399f5538",
+    "N": 50,
+    "optimalRoutes": "4",
+    "cells": 16,
+    "ghosts": 2,
+    "keys": 0,
+    "status": "unreviewed_not_gallery",
+    "parentMapId": "d0ce276b18920b387d7122a7fa485d9727a8996af43206bb28def0209a233e8e",
+    "familyId": "door-cooperation-20261013-v1",
+    "relatedFamilyIds": [
+      "dual-loop-relay-v1",
+      "door-cooperation-20261013-v1"
+    ],
+    "allOptimalNoOverlapAndNoEndSafe": true,
+    "physicalSuccessorComparisons": 2780,
+    "zeroBeforeFirstAAllWinningNecessary": true,
+    "nativeOrderStates": 347,
+    "oldFourRelationsAllWinningNecessary": true,
+    "keyVersionN": 60,
+    "zeroVersionN": 50,
+    "shorterZeroPosition": {
+      "N": 48,
+      "allOptimalBoundary": "safe",
+      "safeLateOpeningExists": false,
+      "notSelectedReason": "晚开直接死亡，减少安全却失去后路的判断"
+    },
+    "aestheticFill": {
+      "cell": [
+        2,
+        6
+      ],
+      "prototypeMapId": "87ba318ea20acb1381203f5c82a9c922a4187c7a3185c0273b252b22b1c06222",
+      "allOptimalActionsAndGhostFramesUnchanged": true,
+      "reason": "补齐环形外轮廓；单入口死路没有新增任务"
+    },
+    "localEditCases": 59,
+    "globalMinimalityClaim": false
+  },
+  "humanQualityLabelsAdded": 0,
+  "trainingStarted": false,
+  "trainingLibraryChanged": false,
+  "siteInteractionChanged": false,
+  "engineChanged": false,
+  "galleryChangedByThisResearch": false,
+  "sha256": {
+    "runs/objective-preparation-20261016/provenance.json": "fa31a7585834372d0626f23c9c31500aec9e77674e9d5079a56d60debe1342cc",
+    "runs/objective-preparation-20261016/gallery-inputs/protocol.json": "bb22d32fdcee5ccdb9902297d88f569da0e6d2f404e6947d8ec36a8ecf4f5246",
+    "runs/objective-preparation-20261016/gallery-inputs/summary.json": "d18447945397c047f2b235820e96115f93edc84728a886a35d097e8debb0af1a",
+    "runs/objective-preparation-20261016/gallery-inputs/independent-errands.json": "62075d6997df6f999f3c3ab8832a07acabf47c194eca5763d09b2b1d96f8c2b4",
+    "runs/objective-preparation-20261016/gallery-inputs/independent-errands-v2.json": "85f935a9b68e03cfdb33e61ceb13f0ff4689597877e8f36eda6e4cce25130360",
+    "runs/objective-preparation-20261016/gallery-inputs/routine-detours.json": "56c8ac085d89d77a6d3635cb15d36a7e9141d985f9ce9a94bc4aab325f427047",
+    "runs/objective-preparation-20261016/unrated-inputs/protocol.json": "be8feb7fa96d6d982b54a693cc49c88b4fc0bed911719c4c15045cd2fcf32c93",
+    "runs/objective-preparation-20261016/unrated-inputs/summary.json": "e408d7c54c76ea2285fe7ab06075f089f3d0e7f7bd12f30f6e035edad000e338",
+    "runs/objective-preparation-20261016/unrated-inputs/routine-detours.json": "4e10d3cd0600eee1e38396fc14a6880f8d45f91612768e33e61bd6d3e1613ab5",
+    "runs/objective-preparation-20261016/unrated-inputs/换手-phase-review-114.json": "2fe375a798c1c5b271e4717f017898c6c072d791c3d451713577cd22f547c273",
+    "runs/objective-preparation-20261016/unrated-inputs/换手-phase-review-116.json": "9d4e3b49999a6639b97865f1fd6c6ed8ba3a9e67fa377ead2b21e95ff4dbf06a",
+    "runs/objective-preparation-20261016/unrated-inputs/换手-zero-48-audit.json": "ecf72f6acb2db8dcc9900c4192d340adb796d5d6ab0a67af66e7fb2bf1fe7522",
+    "runs/objective-preparation-20261016/zero-prototype/evidence.json": "0c9ce360b1fa3b7c33eca7a22050aff26cac671f3eab08b181943245c9266bbb",
+    "runs/objective-preparation-20261016/zero-minimization/results.json": "04d56142c03f0395562c7381883c436a6912a811eb9c1e3efbc2551e7f7c49e4",
+    "runs/objective-preparation-20261016/zero-minimization/compressed-qa.json": "f6c51c51d5d9c130d76c9f33d8eaa282355d3076cb1f4443c505ccc20a2a509f",
+    "runs/objective-preparation-20261016/outer-fill/evidence.json": "261f6de8a3adfc1f186355ca6cbb8011a8ffced74ec479d3dbb03a67b466cf30",
+    "runs/objective-preparation-20261016/outer-fill-minimization/results.json": "7b3a9c8508e9a6bd6dd248053e45a8abdc60e68d3da8fe14db147d8c8c2df3a6",
+    "runs/objective-preparation-20261016/user-seat-causal/causal-check.json": "401ca8e02d7c5bdb9dde506b813fc27a41661ba1425ed224462875720d541059",
+    "runs/objective-preparation-20261016/prepared-sightline-final.png": "4ccaf22708c5662d5eefae60581c16c9dfc07106e53ce7feb1ce4a21afc111a4"
+  },
+  "privateSnapshot": {
+    "file": "artifacts/cloud-data-20261016-planning-43.zip",
+    "files": 5436,
+    "bytes": 145391866,
+    "sha256": "f4390234a09449813eab9e46dd707a829ab595d8aabf51f50300aa98587814f8",
+    "scope": "含后续操作面全部提案、追加目标两批原件与普通计划对照、换席因果补查、回望15/16格证据及59项精简、实际本地图像；旧包保留，仅云端保存，未声称用户已下载。"
+  }
+}
