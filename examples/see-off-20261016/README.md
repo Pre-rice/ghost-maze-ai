@@ -4,7 +4,7 @@
 
 [试玩](https://ghostmaze.novic.cc/?map=AADAAHBwUFBwcHGK4C86AswKggBUAAQCAXALgHAKgACIFIFUCqBECIFUAQgw)
 
-未获真人评价，未入地图集。这是《回望》同家族的独立改稿，不替换已确认地图，也不继承原图好评。
+用户后续指出核心与上一张相同、反而更简单；撤销其挑战主线交付资格，原件留研究，未入地图集。[实际反馈](../../data/manifests/see-off-review-20261017.json)。这是《回望》同家族的独立改稿，不替换已确认地图，也不继承原图好评。
 
 <details><summary>设计预期与38步参考（含答案）</summary>
 
