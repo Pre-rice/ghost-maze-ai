@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-16",
+  "title": "换席",
+  "mapId": "2bd5265c7aa93852034c4ee375d15e71152971c9b8a3103ea26cbcfaba909cca",
+  "familyId": "door-cooperation-20261013-v1",
+  "relatedFamilyIds": [
+    "dual-loop-relay-v1",
+    "door-cooperation-20261013-v1"
+  ],
+  "trainingSplitEligibility": "requires_union_of_parent_families;not_added_to_training",
+  "parentMapIds": [
+    "d0ce276b18920b387d7122a7fa485d9727a8996af43206bb28def0209a233e8e"
+  ],
+  "kind": "hand_constructed_control_exchange_with_native_counterexamples_and_relocation",
+  "humanQuality": null,
+  "humanFeedback": [],
+  "gallerySelection": null,
+  "researchDirectory": "runs/control-exchange-20261016",
+  "intendedDiscovery": "普通门两侧的临时保护要轮换使用；第一次按A前旧鬼在左，之后要转到右，随后又要带两鬼共同离开，用门态与优先争位重新分开。最优收尾不再切A，旧鬼反过来阻挡新鬼。",
+  "development": "原两控制点方案存在串联或直接捷径，未交付；无条件删改发现左按钮可省，保留单钮重新安排普通门两侧。并置按钮室与原A门，收短目标支路，删目标资格A门，把单钮19格36步变为16格30步。初版与失败路线保持，不回写原换手。",
+  "evidenceScope": "前四项必要性为原图所有无伤无复活路线，允许非致死重合，历史标记进完整键；旧鬼优先仅全部最优必要，禁用仍有31步解。三条30步最优无重合、去终点安全，239物理状态与2300次排列／变编号后继通过。",
+  "entryScope": "指定外部(1,3)向右进出生(2,3)，零钥匙、无外部鬼、其他外边封闭；初态及三条最优内部保持，整图另验。",
+  "qualityScope": "未获真人试玩或质量评价，未入地图集；亲缘图不继承评价。若以后用于训练，须沿用并合并全部母图亲缘拆分，不能计作独立新家族。",
+  "visualScope": "本地实际页面核对；三列五行主体与下方中央一格出口，没有内部虚空，无网站改动。",
+  "privateEvidenceSha256": {
+    "runs/control-exchange-20261016/minimize-v15.json": "786e3a134061ee498422773fb936db34b858a3a41af1a5bf9da0442e6d20e2c4",
+    "runs/control-exchange-20261016/design-card.md": "51ef420d90b3be71ae81cd16c05d1118c86028ad90e37c9bfa03fb9dfa26b759"
+  }
+}
