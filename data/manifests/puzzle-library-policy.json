@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-15",
+  "date": "2026-10-16",
   "ruleset": "sha256:5861b72bee934007e2679b60f38e3820ad1e2302a6d0a309bb7a59793eefb109",
   "defaultStatus": "historical_not_reviewed_do_not_present_or_reuse",
   "presentableMapIds": [
@@ -31,7 +31,8 @@
     "e9bdf78911aaa8f6405acacf5922ec1f7252792180626eff10b72bfc3c8e145f",
     "df5820de550cab3dabf35533463f7203937c6b24523bd2ad2df77e078e00977c",
     "b90330352c5e027977bfdf0d3c295a5f4a7af605cc067c0c0d409053c4c62d03",
-    "5176ec3d2668cf7a3c1f15af0a13752781e78ccdb9b9d37d9642beb4ffa26281"
+    "5176ec3d2668cf7a3c1f15af0a13752781e78ccdb9b9d37d9642beb4ffa26281",
+    "fe2e38868c4291afcb96eac732b09aa68f1fda0c4e4bb658e34a6b294b2053de"
   ],
   "galleryPendingDecision": [],
   "retiredMapIds": [
@@ -298,6 +299,19 @@
       "planningManifestIncluded": false,
       "gallerySelected": true,
       "comparisonScope": "core_discovery_preserved_with_changed_stages"
+    },
+    {
+      "mapId": "fe2e38868c4291afcb96eac732b09aa68f1fda0c4e4bb658e34a6b294b2053de",
+      "path": "examples/seat-exchange-enhanced-20261016/evidence.json",
+      "role": "user_authored_enhancement_selected_for_gallery",
+      "familyId": "door-cooperation-20261013-v1",
+      "relatedFamilyIds": [
+        "dual-loop-relay-v1",
+        "door-cooperation-20261013-v1"
+      ],
+      "planningManifestIncluded": false,
+      "gallerySelected": true,
+      "feedback": "docs/archive/reviews/seat-exchange-enhancement-20261016.md"
     }
   ],
   "planningFamilyIds": {
@@ -335,7 +349,8 @@
     "df5820de550cab3dabf35533463f7203937c6b24523bd2ad2df77e078e00977c": "door-cooperation-20261013-v1",
     "759914374ccd5199575a50561d86cc16869dae8f9b246751332773e0ba3c7ba3": "dual-loop-relay-v1",
     "b90330352c5e027977bfdf0d3c295a5f4a7af605cc067c0c0d409053c4c62d03": "door-cooperation-20261013-v1",
-    "5176ec3d2668cf7a3c1f15af0a13752781e78ccdb9b9d37d9642beb4ffa26281": "dual-loop-relay-v1"
+    "5176ec3d2668cf7a3c1f15af0a13752781e78ccdb9b9d37d9642beb4ffa26281": "dual-loop-relay-v1",
+    "fe2e38868c4291afcb96eac732b09aa68f1fda0c4e4bb658e34a6b294b2053de": "door-cooperation-20261013-v1"
   },
   "galleryDecisions": [
     {
@@ -451,6 +466,14 @@
       "decision": "approve_revision",
       "reason": "保留重新引动已安置鬼阻挡另一鬼的核心，认可大胆简化。",
       "feedback": "docs/archive/reviews/map-maintenance-review-20261014.md"
+    },
+    {
+      "date": "2026-10-16",
+      "mapId": "fe2e38868c4291afcb96eac732b09aa68f1fda0c4e4bb658e34a6b294b2053de",
+      "title": "换席",
+      "decision": "add_user_enhanced_version",
+      "reason": "用户增加钥匙与数字门，认为固有困鬼经验被打破，瞬间变得很妙；明确要求入集。",
+      "feedback": "docs/archive/reviews/seat-exchange-enhancement-20261016.md"
     }
   ],
   "qualityReviews": [
@@ -553,6 +576,27 @@
       "actualActions": null,
       "feedback": "docs/archive/reviews/map-maintenance-review-20261014.md",
       "scope": "本轮调整稿，不否定原图或继承原图好评"
+    },
+    {
+      "date": "2026-10-16",
+      "mapId": "2bd5265c7aa93852034c4ee375d15e71152971c9b8a3103ea26cbcfaba909cca",
+      "title": "换席·AI原版",
+      "summary": "不错的地图，利用双鬼卡位，但是新意不大",
+      "numericScore": null,
+      "actualActions": null,
+      "currentGallerySelected": false,
+      "feedback": "docs/archive/reviews/seat-exchange-enhancement-20261016.md"
+    },
+    {
+      "date": "2026-10-16",
+      "mapId": "fe2e38868c4291afcb96eac732b09aa68f1fda0c4e4bb658e34a6b294b2053de",
+      "title": "换席·用户增强版",
+      "summary": "增加钥匙与数字门后瞬间变得很妙；打破门旁开关困鬼的固有经验",
+      "numericScore": null,
+      "actualActions": null,
+      "currentGallerySelected": true,
+      "feedback": "docs/archive/reviews/seat-exchange-enhancement-20261016.md",
+      "authoredBy": "user"
     }
   ],
   "quarantinedMaps": [
@@ -593,11 +637,19 @@
     "df5820de550cab3dabf35533463f7203937c6b24523bd2ad2df77e078e00977c",
     "b90330352c5e027977bfdf0d3c295a5f4a7af605cc067c0c0d409053c4c62d03",
     "d5b5556b7b76c88ca20fa3030e97f0a91cc1aaeded50e218e0c3de54b749df75",
-    "aab359502f4254db6cc01006be752b2b9e0b23522a866ab4c301784ca15673b5"
+    "aab359502f4254db6cc01006be752b2b9e0b23522a866ab4c301784ca15673b5",
+    "fe2e38868c4291afcb96eac732b09aa68f1fda0c4e4bb658e34a6b294b2053de"
   ],
   "galleryRevisionDecision": "docs/archive/reviews/map-maintenance-review-20261014.md",
-  "currentGalleryCount": 13,
+  "currentGalleryCount": 14,
   "planningManifestScope": "planning-library-20261014-v12保留旧15图653行历史机械事实，边界修正下物理兼容通过；现行四份维护不写入旧清单，不继承质量标签。",
   "displaySolutionGrouping": "逐有效操作比较所有层鬼位，保留停顿；不以内部编号区分；仅网站展示，不缩减全部最优安全审查",
-  "siteOptimizationEvidence": "data/manifests/four-column-refinements-browser-20261015.json"
+  "siteOptimizationEvidence": "data/manifests/four-column-refinements-browser-20261015.json",
+  "currentGalleryAdditions": [
+    {
+      "mapId": "fe2e38868c4291afcb96eac732b09aa68f1fda0c4e4bb658e34a6b294b2053de",
+      "evidence": "examples/seat-exchange-enhanced-20261016/evidence.json",
+      "decision": "docs/archive/reviews/seat-exchange-enhancement-20261016.md"
+    }
+  ]
 }
