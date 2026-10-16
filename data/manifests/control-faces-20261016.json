@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-16",
+  "ruleset": "sha256:5861b72bee934007e2679b60f38e3820ad1e2302a6d0a309bb7a59793eefb109",
+  "familyId": "door-cooperation-20261013-v1",
+  "scope": "固定4x4主体加目标的双A操作面有限原型，不是作品数量、质量评分或独立家族",
+  "first": {
+    "total": 1200,
+    "cold": 707,
+    "nonCold": 493,
+    "solved": 312,
+    "unsat": 395,
+    "unknown": 0,
+    "bothButtonsNecessary": 1
+  },
+  "second": {
+    "total": 6000,
+    "cold": 3334,
+    "nonCold": 2666,
+    "solved": 1613,
+    "unsat": 1721,
+    "unknown": 0
+  },
+  "posthocAllSolved": {
+    "solvedChecked": 1613,
+    "referenceUsesBoth": 31,
+    "bothButtonsNativeNecessary": 15,
+    "unknownRemoval": 0,
+    "limitedAlternativeWalk": 20,
+    "completeGraphs": 15,
+    "faceForkMaps": 1,
+    "optimalFaceForkMaps": 1
+  },
+  "keyContrasts": {
+    "baseSolutions": [
+      24,
+      23
+    ],
+    "oppositePhaseWithoutExtraEscape": [
+      "proven_unsat",
+      "proven_unsat"
+    ],
+    "oppositePhaseWithExtraEscape": [
+      23,
+      23
+    ],
+    "doorRelocation": {
+      "proposals": 60,
+      "solved": 4,
+      "unsat": 56,
+      "unknown": 0,
+      "bothButtonsNecessary": 0
+    }
+  },
+  "decision": "无新挑战交付；18步操作面分支留作原型，后续先检验跨阶段准备，不为按钮数量保留稿件",
+  "counterexample": "删鬼最优不变，却使原本无后路的近处按A计划可恢复；不能按N相同自动删鬼。",
+  "unmeasuredFieldWarning": "不引用posthoc-controls.pressesMovingAtBoth；该历史字段未计算，见原件provenance。",
+  "siteChanged": false,
+  "engineChanged": false,
+  "trainingStarted": false,
+  "qualityLabelsAdded": 0,
+  "sha256": {
+    "runs/control-faces-20261016/provenance.json": "cb21bebe4d47b5a2b790563c5a4337afbe5d145bdf47ffbaf38df5bd03761ea9",
+    "runs/control-faces-20261016/fixed-corners-v1/summary.json": "1891b8e72fccd200590a4b6064eaea01f5880b909abbebba59ec7ae7c978acef",
+    "runs/control-faces-20261016/fixed-corners-v1/candidate-905-review.json": "a2a2bf9db9864bf14689b2f79148069050695b8dca7140b2b1c7d9c69d36baf1",
+    "runs/control-faces-20261016/positions-v3/summary.json": "d187fba0a6267816846ddbdac0f4e44416d96e9b3b7d0b05472bf62086329028",
+    "runs/control-faces-20261016/positions-v3/posthoc-controls.json": "ee5a771d7b098c47c27ff820d26a51f43a971418c4a8069def904b43d9c7d1bd",
+    "runs/control-faces-20261016/positions-v3/fork-summary.json": "95117b333b9069a156fafec34d9307a36d4964786db3bcaedd5a183db02d4b9a",
+    "runs/control-faces-20261016/positions-v3/wrong-plan-native-comparison.json": "aae54c26bad6fcd637d6dc56abfe8ba210a12db9db804a11733e21c19ef7336c",
+    "runs/control-faces-20261016/positions-v3/candidate-2729-audit.json": "777fd68759a2dd7d14f4fc57a5340c750b1ec383626b90563692be0b659eedf0",
+    "runs/control-faces-20261016/door-relocation/summary.json": "30b90f22b1a505d39e21e7e2bea48d834f59e0a59135f563dc51b0c7faad6a41"
+  }
+}
