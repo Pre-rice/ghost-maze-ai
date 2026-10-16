@@ -4,7 +4,7 @@
 
 [试玩](https://ghostmaze.novic.cc/?map=AADAAHBwUFBwcAHrgPugOYLAgBUAyBAIBcAuAkAAAEQLiBVAqgRApAAAAIQI)
 
-这是从未评价《换手》出发的独立改稿。没有真人质量评价，未入地图集，不继承母图或用户增强《换席》的好评，不算新独立家族，也没有新增训练数据。
+这是从未评价《换手》出发的独立改稿。2026-10-16用户评价“不错的地图，加入地图集”，按交付原码加入第十五位。[真实反馈与上架记录](../../data/manifests/prepared-sightline-review-20261016.json)另存，生成时来源与证据不改写；不继承母图或用户增强《换席》的好评，不算新独立家族，也没有新增训练数据。后续双0门改稿不替换本图、不继承此评价。
 
 <details><summary>设计预期与参考（含答案）</summary>
 
