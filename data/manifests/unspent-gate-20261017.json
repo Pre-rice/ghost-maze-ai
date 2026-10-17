@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "recordedOn": "2026-10-17",
+  "kind": "mechanism_counterexample_not_challenge",
+  "ruleset": "sha256:f41c4bf6ab816404ace5b640a7ed04745c99daed64a36e07b8e6c14365963044",
+  "aiBaseMain": "d79ca2c8ea0cffc1df33772c8b3e4f824be6264b",
+  "gameBaseMain": "3022f0a8e565b2d2e9a5aea6d919e2762a69cb4b",
+  "verifier": "examples/mechanism-lab/unspent-gate-20261017.mjs",
+  "report": "docs/archive/research/unspent-gate-20261017.md",
+  "mapId": "dde67ad079d301882e21ea848139f0a68216bc5a5758707ba9e8ddf0e0aa7612",
+  "cells": 11,
+  "ghosts": 1,
+  "N": 8,
+  "allOptimalRoutes": 1,
+  "zeroConsumedOnAnyOptimal": false,
+  "ordinaryDoorN": 6,
+  "safeConsumedPrefix": [
+    "D",
+    "R"
+  ],
+  "safeConsumedPrefixContinuation": "proven_unsat",
+  "cold": true,
+  "entry": {
+    "external": [
+      0,
+      1,
+      2
+    ],
+    "actions": [
+      "R"
+    ],
+    "unitArrival": [
+      0,
+      2,
+      2
+    ],
+    "internal": [
+      0,
+      2,
+      2
+    ],
+    "keys": 0,
+    "externalGhosts": 0,
+    "exteriorSealedExceptEntrance": true,
+    "initialInteriorEqual": true,
+    "afterGhosts": [
+      [
+        [
+          0,
+          3
+        ]
+      ]
+    ],
+    "wholeOptimalRoutesInteriorEqual": true
+  },
+  "physicalAudit": {
+    "reachable": 49,
+    "transitions": 225,
+    "permutations": 1,
+    "compared": 225,
+    "includesFatalActions": true
+  },
+  "boundary": "safe",
+  "noEndSafeRoutes": 1,
+  "scope": "仅说明未消耗的元件仍可约束替代计划；不是新关卡、盲测或质量标签",
+  "withheldConstructs": {
+    "retentionFixture": "仅指定动作对照，未证明完整任务必要",
+    "return18Cells": {
+      "N": 36,
+      "boundary": "safe",
+      "withoutSpecificPriorityN": 36,
+      "eitherKeyFirstN": 36,
+      "fullDeliveryAuditComplete": false,
+      "decision": "research_only_not_delivered"
+    }
+  },
+  "humanQuality": null,
+  "feedback": [],
+  "qualityLabelsAdded": 0,
+  "galleryCountUnchanged": 15,
+  "trainingChanged": false,
+  "runtimeChanged": false,
+  "websiteChanged": false,
+  "validation": {
+    "cloudCheck": "passed",
+    "gameTestFiles": 27,
+    "aiReferenceTests": 138,
+    "legacyTestFiles": 4,
+    "originalSeeds": 2,
+    "httpEntries": 22,
+    "upstreamIntegration": "接入远端四项撤销，不恢复被撤销的报告或条目；本反例独立可复验"
+  },
+  "privateSnapshots": [
+    {
+      "file": "artifacts/cloud-data-20261017-planning-55.zip",
+      "files": 6815,
+      "bytes": 147803622,
+      "sha256": "370d3eded278af0b93155a2cf5c4210ce4254dfa0069dd883b85f052555ba789",
+      "snapshot": 55,
+      "privateIndex": "runs/retention-and-route-return-20261017/provenance.json",
+      "sourceFiles": 33,
+      "indexSha256": "a1da49be3587142524e5797375799455175820c4527cd6d3692941ea875ef19e",
+      "availability": "saved_in_cloud_not_confirmed_download"
+    },
+    {
+      "file": "artifacts/cloud-data-20261017-planning-56.zip",
+      "files": 6823,
+      "bytes": 147822463,
+      "sha256": "0b48c923d123e6dcf0e03b81c18ee01bfae43ca111da6b38c6319b71c5dab581",
+      "snapshot": 56,
+      "privateIndex": "runs/unspent-gate-20261017/provenance.json",
+      "sourceFiles": 7,
+      "indexSha256": "02b72c28d96f6b744c5478040cc5b1f321775b1aba2f8e77445989785a972e26",
+      "availability": "saved_in_cloud_not_confirmed_download"
+    }
+  ]
+}
