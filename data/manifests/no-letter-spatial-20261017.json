@@ -1,0 +1,82 @@
+{
+  "recordedOn": "2026-10-17",
+  "kind": "designer_research_not_human_feedback",
+  "report": "docs/archive/research/no-letter-spatial-20261017.md",
+  "privateArchive": {
+    "path": "runs/no-letter-spatial-20261017/provenance.json",
+    "files": 544,
+    "sha256": "80b8c3b1f67e58f3c893b7b63468df8c1a65413680dbfab48c8546177e2d53a2"
+  },
+  "replication": "runs/no-letter-spatial-20261017/replication.json",
+  "ruleLock": "sha256:f41c4bf6ab816404ace5b640a7ed04745c99daed64a36e07b8e6c14365963044",
+  "humanQuality": null,
+  "newMapsDelivered": 0,
+  "galleryCountUnchanged": 15,
+  "trainingLibraryChanged": false,
+  "websiteChanged": false,
+  "findings": {
+    "smallRoomsInitial": {
+      "cases": 81,
+      "provenUnsat": 81,
+      "cause": "0门紧邻初始鬼，全部死图"
+    },
+    "smallRoomsCorrected": {
+      "cases": 81,
+      "solved": 71,
+      "provenUnsat": 10,
+      "unknown": 0,
+      "scope": "先后搬运粗监控也排除了同时移动，不能当依赖证明"
+    },
+    "largerRooms": {
+      "cases": 324,
+      "solved": 194,
+      "provenUnsat": 0,
+      "unknown": 130,
+      "solvedWithStrictSequentialCertificate": 183,
+      "sequentialQueryUnknown": 11
+    },
+    "returnPocket": {
+      "cases": 4,
+      "optimalActionsEach": 22,
+      "concreteSafeTwoKeyPrefixContinuation": "proven_unsat",
+      "sameGhostsAndKeysWithoutPlayerRegion": "solved_32",
+      "playerStillInRightLowerRegion": "proven_unsat"
+    },
+    "openRoom": {
+      "optimalActions": 16,
+      "withoutVisiblePriority": "proven_unsat",
+      "decision": "沿外围绕行自然发生，必要性不足以证明主动发现"
+    },
+    "partitions": {
+      "cases": 4,
+      "rejectedOptimalOverlap": 3,
+      "remainingOptimalActions": 14,
+      "remainingVisiblePriorityNecessary": false
+    },
+    "thirdGhost": {
+      "withGoalBypassOptimalActions": 20,
+      "withoutBypassOptimalActions": 32,
+      "withoutBypassChosenRouteThirdGhostStationary": true,
+      "decision": "没有交付"
+    }
+  },
+  "privateSnapshot": {
+    "file": "artifacts/cloud-data-20261017-planning-49.zip",
+    "files": 6515,
+    "bytes": 147290847,
+    "sha256": "535c79a43b9ca8d637264d1c4494873f21b0f0f17e8154dd8031a825f72730d4",
+    "scope": "新原型、原监控反例、修正与所有旧资料已云端保存，旧包保留；不称用户已下载"
+  },
+  "reading": [
+    {
+      "url": "https://www.gamedeveloper.com/game-platforms/the-relaxing-open-world-puzzle-design-of-i-a-monster-s-expedition-i-",
+      "author": "Joel Couture",
+      "scope": "Alan Hazelden等团队访谈，已读具体构造段落，不保存全文"
+    },
+    {
+      "url": "https://www.gamedeveloper.com/design/patrick-s-parabox-",
+      "author": "John Harris",
+      "scope": "Patrick Traynor访谈，已读规则与迭代段落；不把其简单顺畅偏好转移为本项目目标"
+    }
+  ]
+}
