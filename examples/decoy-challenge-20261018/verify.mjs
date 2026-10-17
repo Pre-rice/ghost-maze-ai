@@ -16,7 +16,7 @@ export function derive() {
     activeCells: Array.from({ length: 8 }, () => Array(8).fill(false)),
     hWalls: Array.from({ length: 9 }, () => Array.from({ length: 8 }, () => wall(W.SOLID))),
     vWalls: Array.from({ length: 8 }, () => Array.from({ length: 9 }, () => wall(W.SOLID))),
-    ghosts: [{ x: 1, y: 0, id: 0 }],
+    ghosts: [{ x: 2, y: 2, id: 0 }],
     items: [],
     buttons: [{ x: 2, y: 0, letter: 'A', direction: { dx: 0, dy: -1 } }],
     endPos: { x: 6, y: 0 },
@@ -54,21 +54,27 @@ export function verifyMap(map) {
   const search = createBreadthFirstSearch(env, { allOptimal: true });
   const result = search.run(budget);
   assert.equal(result.status, 'solved');
-  assert.equal(result.totalActions, 19);
+  assert.equal(result.totalActions, 18);
   const routes = [...search.routes()];
-  assert.equal(routes.length, 1);
-  assert.equal(routes[0].join(''), 'DDRRRRRDROPUUULLLURRRR');
-  assert.equal(routes[0].filter(a => a === 'DROP').length, 1);
+  assert.equal(routes.length, 2);
+  assert.deepEqual(routes.map(r => r.join('')).sort(), [
+    'DROPDDRRRRDROPUUULLURRRR',
+    'UDROPDROPDDRDROPDROPRRUULURRRR'
+  ]);
+  const dropCounts = routes.map(r => r.filter(a => a === 'DROP').length).sort();
+  assert.deepEqual(dropCounts, [2, 4]);
 
   const noEnd = structuredClone(map);
   noEnd.layers[0].endPos = null;
   const envNoEnd = createDecoyEnvironment(noEnd);
-  let s = envNoEnd.initialState();
-  for (const a of routes[0]) {
-    const n = envNoEnd.step(s, a);
-    assert.notEqual(n, s);
-    assert.equal(n.isDead, false);
-    s = n;
+  for (const acts of routes) {
+    let s = envNoEnd.initialState();
+    for (const a of acts) {
+      const n = envNoEnd.step(s, a);
+      assert.notEqual(n, s);
+      assert.equal(n.isDead, false);
+      s = n;
+    }
   }
 
   const encoded = DataSerializer.generateShareCode(map);
@@ -81,8 +87,7 @@ export function verifyMap(map) {
     status: result.status,
     totalActions: result.totalActions,
     routes: routes.length,
-    uniqueRoute: routes[0].join(''),
-    drops: 1,
+    dropCounts: dropCounts,
     cold,
     nativeStatus: nativeResult.status,
     shareCode: encoded.code,
