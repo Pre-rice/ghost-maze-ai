@@ -57,7 +57,10 @@ export function createDecoyEnvironment(mapData) {
     const before = { x: state.player.x, y: state.player.y, layer: state.player.layer };
     let moved = false;
     if (actionName === 'DROP') {
-      next.layerStates[next.player.layer].lures.push({ x: next.player.x, y: next.player.y });
+      const layer = next.layerStates[next.player.layer];
+      // 同一格不能重复放标记：避免“连按两次刷时间”的机械动作。
+      if ((layer.lures ?? []).some(l => l.x === next.player.x && l.y === next.player.y)) return state;
+      layer.lures.push({ x: next.player.x, y: next.player.y });
       moved = true;
     } else {
       const action = actionFromName(actionName);

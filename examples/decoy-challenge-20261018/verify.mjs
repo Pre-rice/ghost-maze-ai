@@ -56,13 +56,10 @@ export function verifyMap(map) {
   assert.equal(result.status, 'solved');
   assert.equal(result.totalActions, 18);
   const routes = [...search.routes()];
-  assert.equal(routes.length, 2);
-  assert.deepEqual(routes.map(r => r.join('')).sort(), [
-    'DROPDDRRRRDROPUUULLURRRR',
-    'UDROPDROPDDRDROPDROPRRUULURRRR'
-  ]);
-  const dropCounts = routes.map(r => r.filter(a => a === 'DROP').length).sort();
-  assert.deepEqual(dropCounts, [2, 4]);
+  assert.equal(routes.length, 1);
+  assert.equal(routes[0].join(''), 'DROPDDRRRRDROPUUULLURRRR');
+  assert.equal(routes[0].filter(a => a === 'DROP').length, 2);
+  const dropCounts = [2];
 
   const noEnd = structuredClone(map);
   noEnd.layers[0].endPos = null;
