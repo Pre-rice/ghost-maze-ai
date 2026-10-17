@@ -22,8 +22,7 @@ export function derive() {
     endPos: { x: 7, y: 0 },
     customStartPos: { x: 0, y: 4 }
   };
-  const cells = [];
-  for (let x = 0; x <= 7; x++) for (let y = 0; y <= 4; y++) cells.push([x, y]);
+  const cells = [[0, 0], [0, 1], [0, 2], [0, 3], [0, 4], [1, 0], [1, 2], [1, 4], [2, 0], [2, 2], [2, 3], [2, 4], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0]];
   for (const [x, y] of cells) l.activeCells[y][x] = true;
   for (const [x, y] of cells) {
     if (l.activeCells[y]?.[x + 1]) l.vWalls[y][x + 1] = wall(W.EMPTY);
@@ -57,7 +56,7 @@ export function verifyMap(map) {
   assert.equal(result.totalActions, 13);
   const routes = [...search.routes()];
   assert.equal(routes.length, 1);
-  assert.equal(routes[0].join(''), 'UDROPUUURRURRRRR');
+  assert.equal(routes[0].join(''), 'DROPUUUURRURRRRR');
   assert.equal(routes[0].filter(a => a === 'DROP').length, 1);
 
   const noEnd = structuredClone(map);
