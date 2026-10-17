@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "recordedOn": "2026-10-17",
+  "kind": "designer_plan_diagnostics_not_human_playtest",
+  "ruleset": "sha256:f41c4bf6ab816404ace5b640a7ed04745c99daed64a36e07b8e6c14365963044",
+  "gameBaseMain": "b7ede4d7e08a8c68b467281e59f56841e26df555",
+  "aiBaseMain": "4cff3637756988f25e7e44d5b84e78e9bdf279ec",
+  "scope": "完整原图无伤无复活；展示前缀不重合，后续搜索允许非最优重合；仅提出计划反例，不判人类合理性或新意",
+  "maps": [
+    {
+      "name": "互锁",
+      "source": "examples/control-room-interlock-20261017/map.json",
+      "mapId": "4054594f0853aded4cfa68bf168dbc6f7a58ce5e5ada9163a4397b6cad954782",
+      "status": "exhausted",
+      "physicalStates": 252,
+      "N": 34,
+      "selectedWitnesses": 4,
+      "independentContinuationChecks": 18,
+      "humanQuality": null
+    },
+    {
+      "name": "回望",
+      "source": "examples/prepared-sightline-20261016/map.json",
+      "mapId": "d30be77b0ad615824805de19953a294ae4456c9656bf64235960a6c2399f5538",
+      "status": "exhausted",
+      "physicalStates": 279,
+      "N": 50,
+      "selectedWitnesses": 2,
+      "independentContinuationChecks": 10,
+      "humanQuality": null
+    },
+    {
+      "name": "相让",
+      "source": "examples/reciprocal-braking-20261014/map.json",
+      "mapId": "8f3d1d3d87c58f50efe56273228cf24efcd2c0390dd41573a9a9e9643301bd4a",
+      "status": "exhausted",
+      "physicalStates": 69,
+      "N": 17,
+      "selectedWitnesses": 1,
+      "independentContinuationChecks": 5,
+      "humanQuality": null
+    },
+    {
+      "name": "再借原交付",
+      "source": "examples/recruited-return-20261013/map.json",
+      "mapId": "24c627386996698e350f1a317fa6b20c2e390c800664aa38de8c9e64be92b549",
+      "status": "exhausted",
+      "physicalStates": 340,
+      "N": 44,
+      "selectedWitnesses": 1,
+      "independentContinuationChecks": 5,
+      "humanQuality": null
+    },
+    {
+      "name": "换席增强",
+      "source": "examples/seat-exchange-enhanced-20261016/map.json",
+      "mapId": "fe2e38868c4291afcb96eac732b09aa68f1fda0c4e4bb658e34a6b294b2053de",
+      "status": "exhausted",
+      "physicalStates": 297,
+      "N": 44,
+      "selectedWitnesses": 2,
+      "independentContinuationChecks": 9,
+      "humanQuality": null
+    },
+    {
+      "name": "转圜未评",
+      "source": "examples/split-lock-reopening-20261017/map.json",
+      "mapId": "a2f047f87461d7c738a3da96dc8ec51ddbe4dd709cb2c2ac3881b48537d1298b",
+      "status": "exhausted",
+      "physicalStates": 1454,
+      "N": 37,
+      "selectedWitnesses": 3,
+      "independentContinuationChecks": 14,
+      "humanQuality": null
+    }
+  ],
+  "totalPhysicalStates": 2691,
+  "selectedWitnesses": 13,
+  "independentContinuationChecks": 61,
+  "status": "all_selected_witnesses_independently_verified",
+  "queueRoutingControl": {
+    "attempted": 28,
+    "optimalOverlapRejected": 27,
+    "boundarySafe": 1,
+    "safeNativeN": 39,
+    "withoutLaterIndirectChainN": 39,
+    "decision": "not_delivered_hypothesis_refuted"
+  },
+  "corrections": [
+    "v1只找进展当步首次失败，遗漏较早已失后路的计划；原件保持，v2另存",
+    "v2两格往返同时核对中间鬼/门/资源不变",
+    "v2同进展配对包含实际开启的门集合，反相开关不混同"
+  ],
+  "humanQuality": null,
+  "feedback": [],
+  "newIndependentFamilies": 0,
+  "trainingChanges": false,
+  "engineChanges": false,
+  "websiteChanges": false,
+  "galleryChanges": false,
+  "privateSnapshots": [
+    {
+      "snapshot": 52,
+      "file": "artifacts/cloud-data-20261017-planning-52.zip",
+      "files": 6710,
+      "bytes": 147627330,
+      "sha256": "d867718757c085206d63a23a7fca367af5163092622d1898990bff8f57a00dbe",
+      "availability": "saved_in_cloud_not_confirmed_download",
+      "privateIndex": "runs/queue-and-restoration-20261017/provenance.json",
+      "sourceFiles": 48,
+      "indexSha256": "eb600873e0e129d8c94bd134faab12fdbf122b79555e6b0fced7b27720de845b"
+    },
+    {
+      "snapshot": 53,
+      "file": "artifacts/cloud-data-20261017-planning-53.zip",
+      "files": 6762,
+      "bytes": 147733192,
+      "sha256": "6f69ea947e365b98292bad1554ffcde0b8a15b2321d481e2dda4caca5a61717e",
+      "availability": "saved_in_cloud_not_confirmed_download",
+      "privateIndex": "runs/progress-commitments-20261017/provenance.json",
+      "sourceFiles": 51,
+      "indexSha256": "52040cccf26760d10e52eb1657083844b4389f8b281c48f01f831ec6c479965b"
+    }
+  ]
+}
