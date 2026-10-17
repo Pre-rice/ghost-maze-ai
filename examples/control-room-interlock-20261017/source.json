@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-17",
+  "title": "互锁",
+  "mapId": "4054594f0853aded4cfa68bf168dbc6f7a58ce5e5ada9163a4397b6cad954782",
+  "familyId": "door-cooperation-20261013-v1",
+  "relatedFamilyIds": [
+    "dual-loop-relay-v1",
+    "door-cooperation-20261013-v1"
+  ],
+  "subfamilyId": "control-room-interlock-20261017-v1",
+  "parentMapIds": [
+    "0b205569298a72409dfcd731f37904999432e8e8db96e2823838fae198235443",
+    "c5d8d99d1e8f079c7a93e5184b51a15787392b36f46882a3ccce04d0c8975beb",
+    "7639a887146c432df143452eaa47d89218e79045d29c13185e26fd010d2426b2"
+  ],
+  "kind": "manual_geometry_and_control_access_hypothesis_with_native_counterexamples_and_simplification",
+  "humanQuality": null,
+  "humanFeedback": [],
+  "gallerySelection": null,
+  "intendedDiscovery": "两个相同字母的开关控制彼此的返回通路；取物后须先关回已打开的终点通路，才能重新接近上方控制位，再恢复终点。开关的可用性随门和鬼位共同变化。",
+  "evidenceScope": "20格双鬼，四条34步最优行动归并为两种逐步鬼轨迹；全部最优无重合、去终点安全，中性初态、指定实际入场及2490次编号／排列后继核对通过。全部无伤无复活通关至少有上→右→上三个操作位置段；不等同于所有通关恰按三次。",
+  "development": "单向离开控制位的原假说未实现预想的优先阻挡，转而发现返回控制位的约束。32步两段稿加入上侧出口与反相目标；整体无解、单侧一次按钮捷径均作为反例保存，修正单向关系后36步至少三段。上方字母门改普通门并省两步；右下角两处隐式边界改为显式实墙，全部最优动作与鬼轨迹保持。原件均保留，成当前34步稿。",
+  "qualityScope": "未获真人评价、未入地图集；不继承任何母图好评。控制段必要、门数和解长仅是机器证据，不代表难度或尤里卡体验。",
+  "minimizationScope": "核对合法单格删除、按钮邻移、四A门及两个单向门的普通替代。顶右角与终点右侧三格可删除而不改最优，但形成凹口与外伸，保留完整4×5轮廓；不增加任务，不宣称全局最小。两个控制按钮不能删去，邻移上方按钮会产生22步两段捷径。右按钮邻移不省步，保留与钥匙同一兴趣点。",
+  "entryScope": "外部第0层(1,3)向右一步进入出生(2,3)，零钥匙无外部鬼，其余外边封闭；内部初态及四条最优逐步一致，整图接入仍另验。",
+  "trainingSplitEligibility": "requires_union_of_parent_families;not_added_to_training",
+  "researchManifest": "data/manifests/control-room-interlock-20261017.json"
+}
