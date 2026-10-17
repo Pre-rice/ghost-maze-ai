@@ -10,7 +10,7 @@ import { solveReferenceMap } from '../../src/search/reference-solver.js';
 const read = file => JSON.parse(readFileSync(new URL('../../examples/solid-units-20261008/' + file, import.meta.url), 'utf8'));
 const budget = { nodeBudget: 100000, stateBudget: 100000, budgetMs: 60000 };
 
-test('新两题的玻璃替换是完整地图恒等；分享码与快实现逐动作一致，移除终点仍安全', () => {
+test('历史两题按当前规则判定：玻璃替换恒等，旧关门停鬼题已无解，另一题仍可往返重放', () => {
     for (const id of ['01', '02']) {
         const map = read('unit-' + id + '.json'), evidence = read('unit-' + id + '-evidence.json');
         const replacement = structuredClone(map);
@@ -18,6 +18,13 @@ test('新两题的玻璃替换是完整地图恒等；分享码与快实现逐�
         assert.deepEqual(replacement, map);
         const env = createReferenceEnvironment(map), identical = createReferenceEnvironment(replacement), fast = createFastEnvironment(map);
         assert.equal(identical.mapId, env.mapId); assert.notEqual(env.mapId, evidence.mapId, '新规则标识不得冒充历史规则标识');
+        if (id === '02') {
+            // 原件和旧证书保留；修正操作前视线后，旧关门停鬼构造已穷尽无解。
+            assert.equal(solveReferenceMap(map, budget).status, 'proven_unsat');
+            assert.throws(() => env.replay(evidence.solution.solution.actions), /死亡/);
+            assert.equal(evidence.humanQuality, null);
+            continue;
+        }
         const decoded = freshDecode(map); assert(decoded.success);
         const { mapData, gameMode, initialHealth, initialStamina } = decoded.data;
         const restored = createReferenceEnvironment({ ...mapData, gameMode, initialHealth, initialStamina });
