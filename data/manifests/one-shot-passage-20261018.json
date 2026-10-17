@@ -47,23 +47,6 @@
     ],
     "conclusion": "冷初态达成，但0门、单向门与鬼同时不再承担作用，不可交付"
   },
-  "separationVariant": {
-    "label": "三分离版：出生(1,2)、门格(2,5)、鬼(0,5)",
-    "cells": 27,
-    "ghosts": 1,
-    "optimum": 21,
-    "cold": true,
-    "entryScope": "外部 (1,1) 向下一步进入出生点；入场当步鬼与出生点不同行列，不会被看见",
-    "counterfactuals": [
-      {"edit": "0门换普通门", "status": "solved", "optimum": 21, "sameActions": true},
-      {"edit": "单向出口换普通门", "status": "solved", "optimum": 21},
-      {"edit": "删鬼", "status": "solved", "optimum": 21},
-      {"edit": "删 d1", "status": "proven_unsat"},
-      {"edit": "删 d2", "status": "proven_unsat"},
-      {"edit": "删按钮", "status": "proven_unsat"}
-    ],
-    "conclusion": "冷初态与入场都满足，追兵也确实跟进右房，但玩家全程只在小室里停一次，追兵同速且很快跟丢，0门与鬼都不承担作用"
-  },
   "mechanismFacts": [
     "数字门通过后永久变空墙，之后鬼才能通过",
     "普通门对玩家恒开、对鬼恒闭、挡双方视线",
