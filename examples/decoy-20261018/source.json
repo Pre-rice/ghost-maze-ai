@@ -1,7 +1,7 @@
 {
   "date": "2026-10-18",
   "title": "诱饵",
-  "mapId": "7bba1a07c6833de1bab24a22636d66efdc68e09b5608b432a2b74dc5e55716be",
+  "mapId": "3490c812aa14ceb679ec0166e72279d8149fcaa4f2746f37c5e3f9c4c33d161f",
   "ruleset": "sha256:f41c4bf6ab816404ace5b640a7ed04745c99daed64a36e07b8e6c14365963044",
   "kind": "experimental_rule_prototype_decoy_drop",
   "status": "branch_only_not_gallery_needs_user_decision_on_rule_change",
@@ -15,17 +15,18 @@
     "affectsReplayProtocol": true,
     "affectsStateKey": true
   },
-  "intendedDiscovery": "标记不是一次性引开，而是一段可以被鬼消耗的时间；玩家必须规划放几次、放在哪，才能持续制造自己与鬼之间的时间差",
-  "evidenceScope": "本分支实验环境复算：本体穷尽无解；诱饵规则 11 步 16 条最优；16 条全部含两次 DROP；冷初态通过；去终点安全通过；分享码往返通过",
+  "intendedDiscovery": "标记不是一次性引开，而是一段可以被鬼消耗的时间；两条最优解都必须放两次标记，玩家要规划放几次、放在哪",
+  "evidenceScope": "本分支实验环境复算：本体穷尽无解；诱饵规则 10 步 2 条最优；两条全部含两次 DROP；冷初态通过；去终点安全通过；分享码往返通过",
   "verified": {
     "nativeStatus": "proven_unsat",
     "decoyStatus": "solved",
-    "totalActions": 11,
-    "optimalRoutes": 16,
+    "totalActions": 10,
+    "optimalRoutes": 2,
+    "routes": ["DROPURUDROPDRRRR", "RDROPUUDROPDRRRR"],
     "allRoutesTwoDrops": true,
     "cold": true,
     "noEndSafe": true,
-    "shareCode": "AWM4-PPnDwYgYIxWYHFgYVrV4KC0qoEBCDgE2ZVYGCAAAA"
+    "shareCode": "AWM4-PPnDwYgYIxcwOzAxLSqwUFpVQMDEHAIsiuxMEAAAA"
   },
   "qualityScope": "无真人评价；不继承任何旧图好评；规则改动需用户决定",
   "files": {

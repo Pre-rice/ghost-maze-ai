@@ -16,11 +16,11 @@ export function derive() {
     activeCells: Array.from({ length: 8 }, () => Array(8).fill(false)),
     hWalls: Array.from({ length: 9 }, () => Array.from({ length: 8 }, () => wall(W.SOLID))),
     vWalls: Array.from({ length: 8 }, () => Array.from({ length: 9 }, () => wall(W.SOLID))),
-    ghosts: [{ x: 4, y: 0, id: 0 }],
+    ghosts: [{ x: 3, y: 0, id: 0 }],
     items: [],
-    buttons: [{ x: 2, y: 0, letter: 'A', direction: { dx: 0, dy: -1 } }],
+    buttons: [{ x: 1, y: 0, letter: 'A', direction: { dx: 0, dy: -1 } }],
     endPos: { x: 5, y: 1 },
-    customStartPos: { x: 0, y: 2 }
+    customStartPos: { x: 0, y: 1 }
   };
   const cells = [];
   for (let x = 0; x <= 5; x++) for (let y = 0; y <= 2; y++) cells.push([x, y]);
@@ -45,27 +45,22 @@ export function verifyMap(map) {
   const env = createDecoyEnvironment(map);
   const native = createReferenceEnvironment(map);
 
-  // 冷初态
   const s0 = env.initialState(), l = env.mapDefinition.layers[0];
   const cold = l.initialEntities.ghosts.every(g => !GameLogic._canGhostSeePlayer(g, s0.player, l, s0.layerStates[0]));
   assert.equal(cold, true);
 
-  // 本体规则下穷尽无解
   const nativeResult = createBreadthFirstSearch(native, {}).run(budget);
   assert.equal(nativeResult.status, 'proven_unsat');
 
-  // 诱饵规则：11 步、16 条最优、全部两次 DROP
   const search = createBreadthFirstSearch(env, { allOptimal: true });
   const result = search.run(budget);
   assert.equal(result.status, 'solved');
-  assert.equal(result.totalActions, 11);
+  assert.equal(result.totalActions, 10);
   const routes = [...search.routes()];
-  assert.equal(routes.length, 16);
-  for (const acts of routes) {
-    assert.equal(acts.filter(a => a === 'DROP').length, 2);
-  }
+  assert.equal(routes.length, 2);
+  for (const acts of routes) assert.equal(acts.filter(a => a === 'DROP').length, 2);
+  assert.deepEqual(routes.map(r => r.join('')).sort(), ['DROPURUDROPDRRRR', 'RDROPUUDROPDRRRR']);
 
-  // 去终点安全：删 endPos 后重放全部最优
   const noEnd = structuredClone(map);
   noEnd.layers[0].endPos = null;
   const envNoEnd = createDecoyEnvironment(noEnd);
@@ -79,7 +74,6 @@ export function verifyMap(map) {
     }
   }
 
-  // 分享码往返
   const encoded = DataSerializer.generateShareCode(map);
   assert.equal(encoded.success, true);
   const decoded = DataSerializer.loadFromShareCode(encoded.code);
@@ -90,7 +84,7 @@ export function verifyMap(map) {
     status: result.status,
     totalActions: result.totalActions,
     routes: routes.length,
-    allTwoDrops: true,
+    routesTwoDrops: true,
     cold,
     nativeStatus: nativeResult.status,
     shareCode: encoded.code,
@@ -103,6 +97,5 @@ export function verifyMap(map) {
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const map = read('map.json');
-  const result = verifyMap(map);
-  console.log(JSON.stringify(result));
+  console.log(JSON.stringify(verifyMap(map)));
 }
