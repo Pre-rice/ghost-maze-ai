@@ -22,8 +22,7 @@ export function derive() {
     endPos: { x: 6, y: 0 },
     customStartPos: { x: 0, y: 1 }
   };
-  const cells = [];
-  for (let x = 0; x <= 6; x++) for (let y = 0; y <= 3; y++) cells.push([x, y]);
+  const cells = [[0, 1], [0, 2], [0, 3], [1, 1], [1, 2], [1, 3], [2, 0], [2, 1], [2, 2], [2, 3], [3, 0], [3, 1], [3, 2], [3, 3], [4, 0], [4, 1], [4, 2], [4, 3], [5, 0], [6, 0]];
   for (const [x, y] of cells) l.activeCells[y][x] = true;
   for (const [x, y] of cells) {
     if (l.activeCells[y]?.[x + 1]) l.vWalls[y][x + 1] = wall(W.EMPTY);
