@@ -53,11 +53,11 @@ export function verifyMap(map) {
   const search = createBreadthFirstSearch(env, { allOptimal: true });
   const result = search.run(budget);
   assert.equal(result.status, 'solved');
-  assert.equal(result.totalActions, 10);
+  assert.equal(result.totalActions, 9);
   const routes = [...search.routes()];
   assert.equal(routes.length, 2);
-  for (const acts of routes) assert.equal(acts.filter(a => a === 'DROP').length, 2);
-  assert.deepEqual(routes.map(r => r.join('')).sort(), ['DROPURUDROPDRRRR', 'RDROPUUDROPDRRRR']);
+  for (const acts of routes) assert.equal(acts.filter(a => a === 'DROP').length, 1);
+  assert.deepEqual(routes.map(r => r.join('')).sort(), ['RDROPUURDRRR', 'RDROPUURRDRR']);
 
   const noEnd = structuredClone(map);
   noEnd.layers[0].endPos = null;
@@ -83,7 +83,7 @@ export function verifyMap(map) {
     status: result.status,
     totalActions: result.totalActions,
     routes: routes.length,
-    dropsPerRoute: 2,
+    dropsPerRoute: 1,
     cold,
     nativeStatus: nativeResult.status,
     shareCode: encoded.code,

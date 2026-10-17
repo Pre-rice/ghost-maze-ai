@@ -50,7 +50,10 @@ export function createDecoyEnvironment(mapData) {
   const step = (state, actionName) => {
     if (state.isDead || state.isWon) return state;
     const next = state.clone();
-    for (const layer of next.layerStates) layer.lures = (layer.lures ?? []).map(l => ({ ...l }));
+    // clone() 不复制自定义的 lures 字段，必须从原状态深拷贝。
+    for (let i = 0; i < next.layerStates.length; i++) {
+      next.layerStates[i].lures = (state.layerStates[i].lures ?? []).map(l => ({ ...l }));
+    }
     const before = { x: state.player.x, y: state.player.y, layer: state.player.layer };
     let moved = false;
     if (actionName === 'DROP') {
