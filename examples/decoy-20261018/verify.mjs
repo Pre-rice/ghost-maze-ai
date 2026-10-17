@@ -22,8 +22,7 @@ export function derive() {
     endPos: { x: 5, y: 1 },
     customStartPos: { x: 0, y: 1 }
   };
-  const cells = [];
-  for (let x = 0; x <= 5; x++) for (let y = 0; y <= 2; y++) cells.push([x, y]);
+  const cells = [[0, 0], [0, 1], [1, 0], [1, 1], [2, 0], [2, 1], [3, 0], [3, 1], [4, 1], [5, 1]];
   for (const [x, y] of cells) l.activeCells[y][x] = true;
   for (const [x, y] of cells) {
     if (l.activeCells[y]?.[x + 1]) l.vWalls[y][x + 1] = wall(W.EMPTY);
@@ -31,7 +30,6 @@ export function derive() {
   }
   l.vWalls[1][5] = wall(W.LETTER_DOOR, { letter: 'A', initialState: 'closed' });
   l.hWalls[1][5] = wall(W.SOLID);
-  l.hWalls[2][5] = wall(W.SOLID);
   return normalizeVoidWalls(normalizeMapData({
     width: 8, height: 8, editorMode: 'free', gameMode: 'death-loop', initialHealth: 5,
     multiLayerMode: false, layerCount: 1, layers: [l], stairs: []
@@ -81,10 +79,11 @@ export function verifyMap(map) {
   assert.deepEqual(decoded.data.mapData, map);
 
   return {
+    cells: derive().layers[0].activeCells.flat().filter(Boolean).length,
     status: result.status,
     totalActions: result.totalActions,
     routes: routes.length,
-    routesTwoDrops: true,
+    dropsPerRoute: 2,
     cold,
     nativeStatus: nativeResult.status,
     shareCode: encoded.code,
