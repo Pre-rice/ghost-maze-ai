@@ -29,8 +29,8 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const map = JSON.parse(readFileSync(new URL('map.json', import.meta.url), 'utf8'));
   const parse = code => code.match(/DROP|[URDL]/g);
   const solutions = {
-    'RDROPUUDROPDRRRR': '入门版参考解 1',
-    'DROPURUDROPDRRRR': '入门版参考解 2'
+    'RDROPUURRDRR': '参考解 1',
+    'RDROPUURDRRR': '参考解 2'
   };
   for (const [code, label] of Object.entries(solutions)) {
     console.log(`=== ${label} ===`);
