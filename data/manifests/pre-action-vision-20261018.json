@@ -5,7 +5,7 @@
   "previousRuleset": "sha256:f41c4bf6ab816404ace5b640a7ed04745c99daed64a36e07b8e6c14365963044",
   "ruleset": "sha256:762b163064dac2464603c002d5a46782675f0a78274e93f68aa36555683cd91a",
   "status": "user_authorized_main_release",
-  "branch": "fix/pre-action-ghost-vision-20261018",
+  "branch": "main",
   "semantics": [
     "操作前视线读取操作前墙态，操作后视线读取操作后墙态",
     "仍看见新位置者优先；否则对旧位置保留本步一格追击",
@@ -11505,7 +11505,8 @@
     "cloudCheckPassed": true,
     "targetedVisionCases": 6,
     "sourceLog": "runs/pre-action-vision-20261018/raw/pre-action-vision-20261018/cloud-check-final.log",
-    "productionInspected": false
+    "productionInspected": false,
+    "releaseLog": "runs/pre-action-vision-20261018/raw/pre-action-vision-20261018/cloud-check-release.log"
   },
   "knownRuleImpact": {
     "galleryAffected": [
@@ -11532,5 +11533,18 @@
     "keepOriginalMaps": true,
     "keepShuntingOriginal": true,
     "galleryAfterCount": 14
+  },
+  "developmentBranch": "fix/pre-action-ghost-vision-20261018",
+  "gameCommit": "56f9546acff4c6b140291b1cfa7f0d67e537c86f",
+  "privateArchive": {
+    "file": "artifacts/cloud-data-20261018-planning-59.zip",
+    "files": 7915,
+    "bytes": 149724962,
+    "sha256": "67872bf29149264d40356944fc8b0af996870e7243634a51920f53ad99cc4061",
+    "provenance": "runs/pre-action-vision-20261018/provenance.json",
+    "provenanceSha256": "50680df82d96a2fe297346472e91c147dbbc692afe85a9f738fcb5c3beaaa7c1",
+    "newResearchFiles": 57,
+    "zipIntegrityCheckPassed": true,
+    "downloadedByUser": false
   }
 }
