@@ -10,7 +10,7 @@
 | --- | ---: | ---: | ---: | ---: | --- | --- |
 | 入门版 | 10 | 9 | 2 | 1 | 穷尽无解 | `AWM4-PAHAwgwTmmQYlDQatBYtQDMZxJwPMEABQA` |
 | 唯一解版 | 17 | 13 | **1** | 1 | 穷尽无解 | `AADB_wHBQcAAAAE7oAtABAKqqVVSgIBAVAAAAAgOVAIgVQIgAAAAAAA` |
-| 挑战版 | 28 | 18 | **1** | 2 | 穷尽无解 | `AADB_f39_AAAAAEx4BBABAKqoBAAAqqgAAAABA5ICQEgIAAAAAAA` |
+| 挑战版 | 20 | 18 | **1** | 2 | 穷尽无解 | `AWM4UPvx4wcGBgZGxQQeBwaGVVM0GBhDGYCASWaCE4cjAxgAAA` |
 
 三版都通过：冷初态、去终点安全、分享码往返。每个目录的 `verify.mjs` 断言的就是上表数值。
 
@@ -236,7 +236,7 @@ y=1:  P  .  .  .  A  E      (A 门在 (4,1)-(5,1) 之间)
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
 | 入门版 | 10 | 9 | 2 | 1 | 0 | `examples/decoy-20261018/` |
 | 唯一解版 | 17 | 13 | **1** | 1 | 0 | `examples/decoy-unique-20261018/` |
-| 挑战版 | 28 | 18 | **1** | 2 | 1 | `examples/decoy-challenge-20261018/` |
+| 挑战版 | 20 | 18 | **1** | 2 | 1 | `examples/decoy-challenge-20261018/` |
 
 三个版本覆盖了规则的三种深度：
 
