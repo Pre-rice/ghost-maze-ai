@@ -27,8 +27,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const map = JSON.parse(readFileSync(new URL('map.json', import.meta.url), 'utf8'));
   const parse = code => code.match(/DROP|[URDL]/g);
   const solutions = {
-    'UDROPDROPDDRDROPDROPRRUULURRRR': '四次标记解',
-    'DROPDDRRRRDROPUUULLURRRR': '两次标记解'
+    'DROPDDRRRRDROPUUULLURRRR': '唯一解（2 次标记）'
   };
   for (const [code, label] of Object.entries(solutions)) {
     console.log(`=== ${label} ===`);
