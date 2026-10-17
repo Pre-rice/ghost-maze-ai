@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "recordedOn": "2026-10-17",
+  "kind": "withheld_designer_constructs_not_quality_progress",
+  "ruleset": "sha256:f41c4bf6ab816404ace5b640a7ed04745c99daed64a36e07b8e6c14365963044",
+  "status": "no_candidate_delivered",
+  "parkingFourAreas": {
+    "variants": 27,
+    "solvedBoundarySafe": 9,
+    "N": 48,
+    "decision": "ordinary_serial_plan_remains"
+  },
+  "returnSlot": {
+    "variants": 12,
+    "solved": 10,
+    "provenUnsat": 2,
+    "decision": "protection_still_shields_final_approach_or_unsat"
+  },
+  "singleParking": {
+    "variants": 4,
+    "provenUnsat": 4
+  },
+  "delayedParking": {
+    "N": 62,
+    "boundary": "safe",
+    "decision": "serial_temporary_parking_then_retrieval_not_new_challenge",
+    "fullDeliveryAuditComplete": false
+  },
+  "queuePrototype": {
+    "N": 23,
+    "boundary": "conflict",
+    "decision": "optimal_equal_priority_overlap_rejected"
+  },
+  "queueOneWay": {
+    "status": "proven_unsat"
+  },
+  "queueReturnVariants": {
+    "variants": 48,
+    "provenUnsat": 8,
+    "optimalOverlapRejected": 24,
+    "boundarySafe": 16,
+    "counterexamples": [
+      {
+        "case": 2,
+        "N": 21,
+        "fact": "东端整段未被参考路线使用，中部即可脱身"
+      },
+      {
+        "case": 36,
+        "N": 39,
+        "fact": "第三鬼停在出生区，不是原预期的东端助力"
+      },
+      {
+        "case": 42,
+        "N": 37,
+        "fact": "补普通门只让既有搬运分段成立，没有支持预期新认识"
+      }
+    ],
+    "decision": "withheld_no_supported_new_relationship",
+    "fullDeliveryAuditComplete": false
+  },
+  "scope": "有限构造反例；安全只指已跑的全最优不重合检查，不冒充全部交付验收或玩家体验。只有实际队列返回变体数量48，不把它们作为独立设计家族。",
+  "humanQuality": null,
+  "feedback": [],
+  "qualityLabelsAdded": 0,
+  "newIndependentFamilies": 0,
+  "galleryCountUnchanged": 15,
+  "trainingChanged": false,
+  "engineChanged": false,
+  "websiteChanged": false,
+  "privateSnapshot": {
+    "file": "artifacts/cloud-data-20261017-planning-57.zip",
+    "files": 6926,
+    "bytes": 147999473,
+    "sha256": "8984805287f5c69ef0d83075da1d8fb61e7efc2cdb6ddd907bab5f46f72a26d3",
+    "privateIndex": "runs/capacity-and-queue-20261017/provenance.json",
+    "sourceFiles": 102,
+    "indexSha256": "d585af10a8f6761e71034acd3666140fc9e992f2762d10e8868cb5d535ceb5ed",
+    "availability": "saved_in_cloud_not_confirmed_download"
+  }
+}
