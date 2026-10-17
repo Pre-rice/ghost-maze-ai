@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-18",
+  "title": "一次性通路与普通门的机制反例",
+  "ruleset": "sha256:f41c4bf6ab816404ace5b640a7ed04745c99daed64a36e07b8e6c14365963044",
+  "status": "research_only_no_candidate",
+  "humanQuality": null,
+  "humanFeedback": [],
+  "galleryCountUnchanged": 15,
+  "trainingChanged": false,
+  "runtimeOrWebsiteChanged": false,
+  "research": "docs/archive/research/one-shot-passage-20261018.md",
+  "constructionA": {
+    "label": "8×4 双鬼，一扇0门、一扇终点1门、一根柱子",
+    "cells": 32,
+    "ghosts": 2,
+    "optimum": 24,
+    "allOptimalRoutes": 4,
+    "boundary": "safe",
+    "mapId": "6676e5098ed9ec92cf024b35b199267eb7cdae9d540a11422418d99c6541e5f2",
+    "conclusion": "0门换普通门后解与步数完全相同，机制未被参考解使用，不可作候选"
+  },
+  "constructionB": {
+    "label": "隔间—0门—右房—普通门小室R—外圈回廊，21格单鬼",
+    "cells": 21,
+    "ghosts": 1,
+    "optimum": 17,
+    "counterfactuals": [
+      {"edit": "0门换普通门", "status": "proven_unsat", "note": "鬼留在左侧走廊堵住回程必经点"},
+      {"edit": "删 d1", "status": "proven_unsat"},
+      {"edit": "删 d2", "status": "proven_unsat"},
+      {"edit": "删按钮", "status": "proven_unsat"},
+      {"edit": "删鬼", "status": "solved", "optimum": 15},
+      {"edit": "终点门初始打开", "status": "solved", "optimum": 8}
+    ],
+    "conclusion": "机制被真正使用：一次性门消失后追兵跟进，再被普通门小室隔离；但鬼初始与出生点同行列，实际入场当步即被咬，不能交付"
+  },
+  "coldVariant": {
+    "label": "补冷初态的 26格版本",
+    "cells": 26,
+    "ghosts": 1,
+    "optimum": 17,
+    "cold": true,
+    "counterfactuals": [
+      {"edit": "0门换普通门", "status": "solved", "optimum": 17},
+      {"edit": "单向出口换普通门", "status": "solved", "optimum": 17},
+      {"edit": "删鬼", "status": "solved", "optimum": 17}
+    ],
+    "conclusion": "冷初态达成，但0门、单向门与鬼同时不再承担作用，不可交付"
+  },
+  "separationVariant": {
+    "label": "三分离版：出生(1,2)、门格(2,5)、鬼(0,5)",
+    "cells": 27,
+    "ghosts": 1,
+    "optimum": 21,
+    "cold": true,
+    "entryScope": "外部 (1,1) 向下一步进入出生点；入场当步鬼与出生点不同行列，不会被看见",
+    "counterfactuals": [
+      {"edit": "0门换普通门", "status": "solved", "optimum": 21, "sameActions": true},
+      {"edit": "单向出口换普通门", "status": "solved", "optimum": 21},
+      {"edit": "删鬼", "status": "solved", "optimum": 21},
+      {"edit": "删 d1", "status": "proven_unsat"},
+      {"edit": "删 d2", "status": "proven_unsat"},
+      {"edit": "删按钮", "status": "proven_unsat"}
+    ],
+    "conclusion": "冷初态与入场都满足，追兵也确实跟进右房，但玩家全程只在小室里停一次，追兵同速且很快跟丢，0门与鬼都不承担作用"
+  },
+  "stayPressureCounterexample": {
+    "label": "三分离版把按钮移到右房开放格 (5,4)，其余不变",
+    "status": "proven_unsat",
+    "detail": "玩家按按钮要求原地停一步，追兵始终差一格，停下当步被追上；同时小室只有单向出口，离开后回不到开放区。确认停留压力有效，但需要额外回路"
+  },
+  "mechanismFacts": [
+    "数字门通过后永久变空墙，之后鬼才能通过",
+    "普通门对玩家恒开、对鬼恒闭、挡双方视线",
+    "鬼失去全部视线时完全不动，最多朝操作前位置走一步",
+    "按字母按钮当步的视线按翻转后的墙态判断"
+  ],
+  "scope": "设计者构造与穷尽反例；不转移任何真人评价，不把机器必要性当趣味或新意。删除对照只说明元件参与当前解。",
+  "nextCheck": "只画出生点—门格—鬼位三分离的最小局面，确认存在既冷初态、又能让鬼在穿门当步看见玩家的安排；无解则这条关系只作研究构件保留"
+}
