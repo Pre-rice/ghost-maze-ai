@@ -28,10 +28,14 @@ export function createDecoyEnvironment(mapData) {
       if (seesAfter) target = state.player;
       else if (seesBefore) target = beforePlayer;
       else if (layerState.lures.length) {
+        // 平手按 (x,y) 排序取最小，避免依赖标记的放置顺序。
         let best = null, bestDist = Infinity;
         for (const lure of layerState.lures) {
           const d = Math.abs(lure.x - ghost.x) + Math.abs(lure.y - ghost.y);
-          if (d < bestDist) { bestDist = d; best = lure; }
+          if (d < bestDist || (d === bestDist && best && (lure.x < best.x || (lure.x === best.x && lure.y < best.y)))) {
+            bestDist = d;
+            best = lure;
+          }
         }
         target = best;
       }
