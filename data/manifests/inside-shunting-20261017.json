@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "recordedOn": "2026-10-17",
+  "title": "调度",
+  "kind": "unreviewed_inside_direction_shunting_candidate",
+  "ruleset": "sha256:f41c4bf6ab816404ace5b640a7ed04745c99daed64a36e07b8e6c14365963044",
+  "mapId": "892256de6d5443cf49d06b3cff1af20f59491ead4a5df89fa291d97bbe40c3d6",
+  "example": "examples/inside-shunting-20261017",
+  "cells": 25,
+  "ghosts": 3,
+  "buttons": 4,
+  "letterDoors": 6,
+  "letters": [
+    "A",
+    "B"
+  ],
+  "N": 50,
+  "allOptimalRoutes": 1,
+  "allOptimalGhostsRemainInCentralArea": true,
+  "allOptimalPriorityConflictEvents": 0,
+  "boundary": "safe",
+  "cold": true,
+  "entry": {
+    "external": [
+      0,
+      6,
+      3
+    ],
+    "actions": [
+      "L",
+      "U"
+    ],
+    "unitArrival": [
+      0,
+      5,
+      3
+    ],
+    "internal": [
+      0,
+      5,
+      2
+    ],
+    "keys": 0,
+    "externalGhosts": 0,
+    "exteriorSealedExceptEntrance": true,
+    "initialInteriorEqual": true,
+    "afterGhosts": [
+      [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ]
+    ],
+    "wholeOptimalRoutesInteriorEqual": true
+  },
+  "physicalAudit": {
+    "reachable": 9123,
+    "transitions": 45555,
+    "permutations": 6,
+    "compared": 273330,
+    "includesFatalActions": true
+  },
+  "noEndSafeRoutes": 1,
+  "nativeAllWinningChecks": [
+    "at_most_one_exit_proven_unsat",
+    "right_initial_ghost_never_moves_up_while_player_inside_proven_unsat",
+    "left_initial_ghost_never_moves_right_while_player_inside_proven_unsat"
+  ],
+  "scopeCorrection": "特定退出口不是所有通关的必要条件；减少外围门后已有反例，原过强断言保留为失败研究，不用于验收。",
+  "safeFailedPrefixes": [
+    [
+      "R",
+      "L",
+      "L"
+    ],
+    [
+      "U",
+      "L",
+      "L",
+      "U",
+      "U",
+      "U",
+      "U"
+    ]
+  ],
+  "finiteDoorReduction": {
+    "attempted": 512,
+    "statusCounts": {
+      "solved": 512
+    },
+    "preservingCases": 50,
+    "minimumWithinGivenFamily": 6,
+    "selectedMask": 237,
+    "scope": "只比较八条退路门与北入口的删改，不声称全局最小；以最优留中央、无重合及两种内部方向仍全解必要为筛选，非趣味分"
+  },
+  "reductionChoices": {
+    "initialWalkingRemoved": 5,
+    "outerLetterDoorsRemoved": 6,
+    "goalOrdinaryDoorRemoved": true,
+    "bottomBButtonRemovalN": 60,
+    "reasonToKeepBottomB": "省去十步控制往返",
+    "otherThreeButtonsRemoval": "proven_unsat",
+    "allRetreatGatesRemovedVariant": {
+      "N": 45,
+      "allOptimalRoutes": 7,
+      "physicalQA": "passed",
+      "decision": "withheld_research_outer_pursuit_and_priority_alternative"
+    }
+  },
+  "ordinaryProtocol": {
+    "realActionHorizon": [
+      1,
+      3
+    ],
+    "directionOrders": 8,
+    "maps": 7,
+    "result": "未识别三个被用户评为简单的图，不作为人类难度分类器",
+    "humanPlaytest": false,
+    "qualityLabelsAdded": 0
+  },
+  "humanQuality": null,
+  "humanFeedback": [],
+  "gallerySelection": null,
+  "galleryCountUnchanged": 15,
+  "trainingChanged": false,
+  "engineChanged": false,
+  "websiteChanged": false,
+  "newIndependentFamilies": 0,
+  "validation": {
+    "publicVerifier": "passed",
+    "cloudCheck": "passed",
+    "gameTestFiles": 27,
+    "aiReferenceTests": 138,
+    "legacyTestFiles": 4,
+    "originalSeeds": 2,
+    "httpEntries": 22
+  },
+  "privateIndex": "runs/inside-shunting-20261017/provenance.json",
+  "privateIndexSha256": "d12d1ce832bfe7ea2caee0f506ee5a5df77b47270eeab054c39543ef6eef4641",
+  "privateSourceFiles": 929,
+  "privateSnapshot": {
+    "file": "artifacts/cloud-data-20261017-planning-58.zip",
+    "files": 7856,
+    "bytes": 149608950,
+    "sha256": "27b0866be37d9d952a819981c4ddd9023f5e05829c7fbccbddf0adf0f67e6a1e",
+    "availability": "saved_in_cloud_not_confirmed_download",
+    "privateIndex": "runs/inside-shunting-20261017/provenance.json",
+    "sourceFiles": 929,
+    "indexSha256": "d12d1ce832bfe7ea2caee0f506ee5a5df77b47270eeab054c39543ef6eef4641"
+  }
+}

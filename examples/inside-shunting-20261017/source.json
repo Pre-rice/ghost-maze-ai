@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-17",
+  "title": "调度",
+  "mapId": "892256de6d5443cf49d06b3cff1af20f59491ead4a5df89fa291d97bbe40c3d6",
+  "ruleset": "sha256:f41c4bf6ab816404ace5b640a7ed04745c99daed64a36e07b8e6c14365963044",
+  "kind": "inside_direction_shunting_with_native_counterexamples_and_reduction",
+  "familyId": "inside-shunting-20261017-v1",
+  "relatedFamilyIds": [
+    "door-cooperation-20261013-v1",
+    "dual-loop-relay-v1"
+  ],
+  "trainingSplitEligibility": "not_added_to_training;conservatively_union_related_families_before_any_future_split",
+  "parentMapIds": [
+    "e555e1573e373b4dbd904d880e6c96ae858a10767c46852e49c136ee2d50ea95",
+    "e883743be28d7fc18bce593f36b704d074d9ec938c85163a80dbf4dea196fbc5"
+  ],
+  "humanQuality": null,
+  "humanFeedback": [],
+  "gallerySelection": null,
+  "intendedDiscovery": "暂时进入中央区不只为了立刻通关，还能提供外部按钮没有的引动方向；先后两次进去再出来，分别把原右下鬼向上引、原左下鬼向右引，再完成中间安排。",
+  "development": "从受门控制的行列调动构件开始；首稿终点提前判胜掩盖追击，拒绝留档。普通门保护的目标及有限占位研究后，选三鬼底排、目标从下侧进入的构造。出生点移入已有右控制格省五步；再删目标普通门和六扇外围门，四控制位与两种内部引动保留。完全开放退路的45步版引入外圈追逐与优先卡位最优替代，另存研究。",
+  "evidenceScope": "全部最优无非死亡鬼重合、去终点安全；全部无伤无复活通关需至少两次进入中央区后离开，并需在玩家位于中央区时让原右下鬼向上、原左下鬼向右移动。查询允许非最优非致死重合；历史计数进入完整状态键。",
+  "scopeCorrection": "减门后可换退出口；分别禁止右侧或下侧退出均有通关反例，不把参考中的两个退出位置声明为所有解必要。",
+  "entryScope": {
+    "external": [
+      0,
+      6,
+      3
+    ],
+    "actions": [
+      "L",
+      "U"
+    ],
+    "unitArrival": [
+      0,
+      5,
+      3
+    ],
+    "internal": [
+      0,
+      5,
+      2
+    ],
+    "keys": 0,
+    "externalGhosts": 0,
+    "exteriorSealedExceptEntrance": true,
+    "initialInteriorEqual": true,
+    "afterGhosts": [
+      [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ]
+    ],
+    "wholeOptimalRoutesInteriorEqual": true
+  },
+  "qualityScope": "未获用户试玩或评价、未入地图集，不继承任何旧图好评；机器关系不作为人的挑战或顿悟标签。",
+  "reductionScope": "有限512项退路门／上入口删改后选择六门版；再删任一现存门都会出现鬼离开中央区的最优替代，不声明全局最少门。底部B按钮删除仍可60步通关，保留以省去十步控制往返；其他三按钮删去均无解。",
+  "researchDirectory": "runs/inside-shunting-20261017",
+  "researchManifest": "data/manifests/inside-shunting-20261017.json",
+  "privateSnapshot": {
+    "file": "artifacts/cloud-data-20261017-planning-58.zip",
+    "files": 7856,
+    "bytes": 149608950,
+    "sha256": "27b0866be37d9d952a819981c4ddd9023f5e05829c7fbccbddf0adf0f67e6a1e",
+    "availability": "saved_in_cloud_not_confirmed_download",
+    "privateIndex": "runs/inside-shunting-20261017/provenance.json",
+    "sourceFiles": 929,
+    "indexSha256": "d12d1ce832bfe7ea2caee0f506ee5a5df77b47270eeab054c39543ef6eef4641"
+  }
+}
