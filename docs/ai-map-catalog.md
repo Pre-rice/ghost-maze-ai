@@ -2,6 +2,8 @@
 
 ## 2026-10-18 新候选：《寄存》
 
+**实际反馈：** “新地图没什么难度啊，就是普通的引鬼困鬼，随随便便就解出来了。”没有达到挑战目标，不入集；[原话及范围](../data/manifests/goal-buffer-review-20261018.json)。以下生成时预期与原件保持，不再以此题的停位／顺序变体作为新意进展。
+
 单层21格、双鬼，无钥匙，完整7×3轮廓；两处A按钮、一处B按钮。最优33步，九种含停顿鬼轨迹；全部最优无伤、无重合、去终点安全，中性初态和指定实际入场通过。**尚无真人评价，未入地图集；原十六图与顺序保持。**
 
 [试玩](https://ghostmaze.novic.cc/?map=AWM4wPDv3z8GBgZG5QdaUiwV7E4BDFyrZqx6yBIawgACfoVHmudMEAAxmQQYmjgA) · [设计、来源与验收](../examples/goal-buffer-20261018/README.md)
