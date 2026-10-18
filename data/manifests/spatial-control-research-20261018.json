@@ -256,20 +256,15 @@
   "interpretation": "必要停车、迁移和交错可以由显然的引鬼过程自动产生；有限构件的可解数和QA通过数不是好图数。原型不作为用户负反馈或训练标签。",
   "scope": "只对各研究实际进入边界检查的子集有最优重合证据，不把全族称为全部交付QA通过。固定内外范围、身份或移动次数不是一般质量条件。同源保守整体合并。",
   "privateArchive": {
-    "file": "artifacts/cloud-data-20261018-planning-61.zip",
-    "files": 9266,
-    "bytes": 152534300,
-    "sha256": "5f3367a91bb770b0dbf1b56bb7121bb9a71d0ae1a01a68d3dd66eac1ce561be0",
-    "newProvenance": "runs/spatial-control-20261018-phase2/provenance.json",
-    "newProvenanceSha256": "95e46a01807609c2af5d7c950f2433546a520fe8a65e1b01d25f3177584b08bb",
-    "newFiles": 703,
+    "file": "artifacts/cloud-data-20261018-planning-62.zip",
+    "files": 9896,
+    "bytes": 153593915,
+    "sha256": "eb92072242efed4c3456eeea7e1945f7e6e189095aab41ac25f2a3ae2db52260",
+    "newProvenance": "runs/spatial-control-20261018-phase3/provenance.json",
+    "newProvenanceSha256": "5039c7634adcb6c0acf5c418bd46d7809350a909ef9d9ba4dff7cb5d62e78f5d",
+    "newFiles": 629,
     "zipIntegrityCheckPassed": true,
     "downloadedByUser": false
-  },
-  "earlierArchive": {
-    "file": "artifacts/cloud-data-20261018-planning-60.zip",
-    "sha256": "5d2355e1fb01d38c1b572f3258e8030967cc5d07186c272a8e68a7bd692575ff",
-    "provenance": "runs/spatial-control-20261018-phase1/provenance.json"
   },
   "additionalChecks": [
     {
@@ -287,5 +282,212 @@
       "rawSummary": "runs/spatial-control-20261018-phase2/room-link-bottleneck-20261018/removal-diagnosis.json",
       "scope": "删鬼后原路线仍可用，不等于该鬼无约束作用；删中间鬼最优28降18。交错必要仍不是新意证明。"
     }
-  ]
+  ],
+  "phase3Studies": [
+    {
+      "name": "opposed-access-20261018",
+      "stats": {
+        "attempts": 5400,
+        "solved": 0,
+        "proven_unsat": 5400,
+        "unknown": 0,
+        "bothStageWitness": 0,
+        "needsBeforeKey": 0,
+        "needsBothStages": 0,
+        "queryUnknown": 0,
+        "boundarySafe": 0,
+        "boundaryConflict": 0,
+        "boundaryUnknown": 0
+      },
+      "rawSummary": "runs/spatial-control-20261018-phase3/opposed-access-20261018/summary.json"
+    },
+    {
+      "name": "unlocked-workspace-20261018",
+      "stats": {
+        "attempts": 540,
+        "solved": 110,
+        "proven_unsat": 430,
+        "unknown": 0,
+        "keyAndDoorWitness": 0,
+        "needsKey": 0,
+        "needsNewWorkspace": 0,
+        "queryUnknown": 0,
+        "boundarySafe": 0,
+        "boundaryConflict": 0,
+        "boundaryUnknown": 0
+      },
+      "rawSummary": "runs/spatial-control-20261018-phase3/unlocked-workspace-20261018/summary.json"
+    },
+    {
+      "name": "unlocked-workspace-extra-port-20261018",
+      "stats": {
+        "attempts": 1080,
+        "solved": 382,
+        "proven_unsat": 698,
+        "unknown": 0,
+        "keyAndDoorWitness": 0,
+        "needsKey": 0,
+        "needsNewWorkspace": 0,
+        "queryUnknown": 0,
+        "boundarySafe": 0,
+        "boundaryConflict": 0,
+        "boundaryUnknown": 0
+      },
+      "rawSummary": "runs/spatial-control-20261018-phase3/unlocked-workspace-extra-port-20261018/summary.json"
+    },
+    {
+      "name": "independent-convoy-control-20261018",
+      "stats": {
+        "attempts": 90,
+        "solved": 78,
+        "proven_unsat": 12,
+        "unknown": 0,
+        "bothControlsNecessary": 7,
+        "queryUnknown": 0,
+        "boundarySafe": 5,
+        "boundaryConflict": 2,
+        "boundaryUnknown": 0
+      },
+      "rawSummary": "runs/spatial-control-20261018-phase3/independent-convoy-control-20261018/summary.json"
+    },
+    {
+      "name": "two-loop-transfer-20261018",
+      "stats": {
+        "attempts": 1440,
+        "solved": 0,
+        "proven_unsat": 1440,
+        "unknown": 0,
+        "bothTransferWitness": 0,
+        "leftTransferNecessary": 0,
+        "bothTransfersNecessary": 0,
+        "queryUnknown": 0,
+        "boundarySafe": 0,
+        "boundaryConflict": 0,
+        "boundaryUnknown": 0
+      },
+      "rawSummary": "runs/spatial-control-20261018-phase3/two-loop-transfer-20261018/summary.json"
+    },
+    {
+      "name": "two-loop-return-lane-20261018",
+      "stats": {
+        "attempts": 2880,
+        "solved": 2544,
+        "proven_unsat": 336,
+        "unknown": 0,
+        "bothTransferWitness": 0,
+        "leftTransferNecessary": 0,
+        "bothTransfersNecessary": 0,
+        "queryUnknown": 0,
+        "boundarySafe": 0,
+        "boundaryConflict": 0,
+        "boundaryUnknown": 0
+      },
+      "rawSummary": "runs/spatial-control-20261018-phase3/two-loop-return-lane-20261018/summary.json"
+    },
+    {
+      "name": "three-route-staging-20261018",
+      "stats": {
+        "attempts": 2016,
+        "solved": 0,
+        "proven_unsat": 2016,
+        "unknown": 0,
+        "bothControlWitness": 0,
+        "bothPositionsNecessary": 0,
+        "queryUnknown": 0,
+        "boundarySafe": 0,
+        "boundaryConflict": 0,
+        "boundaryUnknown": 0
+      },
+      "rawSummary": "runs/spatial-control-20261018-phase3/three-route-staging-20261018/summary.json"
+    },
+    {
+      "name": "three-route-corner-control-20261018",
+      "stats": {
+        "attempts": 2016,
+        "solved": 0,
+        "proven_unsat": 2016,
+        "unknown": 0,
+        "bothControlWitness": 0,
+        "bothPositionsNecessary": 0,
+        "queryUnknown": 0,
+        "boundarySafe": 0,
+        "boundaryConflict": 0,
+        "boundaryUnknown": 0
+      },
+      "rawSummary": "runs/spatial-control-20261018-phase3/three-route-corner-control-20261018/summary.json"
+    },
+    {
+      "name": "three-route-protected-control-20261018",
+      "stats": {
+        "attempts": 2688,
+        "solved": 252,
+        "proven_unsat": 2436,
+        "unknown": 0,
+        "bothControlWitness": 252,
+        "bothPositionsNecessary": 168,
+        "queryUnknown": 0,
+        "boundarySafe": 0,
+        "boundaryConflict": 168,
+        "boundaryUnknown": 0
+      },
+      "rawSummary": "runs/spatial-control-20261018-phase3/three-route-protected-control-20261018/summary.json"
+    },
+    {
+      "name": "three-route-offset-20261018",
+      "stats": {
+        "attempts": 336,
+        "solved": 56,
+        "proven_unsat": 280,
+        "unknown": 0,
+        "noEndOptimalConflict": 0,
+        "boundarySafe": 0,
+        "boundaryConflict": 56,
+        "boundaryUnknown": 0,
+        "queryUnknown": 0,
+        "bothControlsNecessary": 0
+      },
+      "rawSummary": "runs/spatial-control-20261018-phase3/three-route-offset-20261018/summary.json"
+    }
+  ],
+  "phase3AdditionalChecks": [
+    {
+      "name": "手工双次追击接替",
+      "rawDirectory": "runs/spatial-control-20261018-phase3/convoy-handoffs-one-control-20261018",
+      "scope": "21格三鬼、唯一30步，完整规则QA通过。实际读图仍主要两个局部选择，其余执行，未作为挑战交付。原始错误终点的2步捷径另存，去终点会死亡，不抹去反例。"
+    },
+    {
+      "name": "消耗通路与归还目标",
+      "rawSummary": "runs/spatial-control-20261018-phase3/consumed-handoff-20261018/summary.json",
+      "scope": "南0门36步稿完整QA通过，但最优没有开启该门；不能宣称消耗或恢复关系实现。目标增强有独立准备后照搬旧解的反例。"
+    },
+    {
+      "name": "双环解的重复提取",
+      "rawSummary": "runs/spatial-control-20261018-phase3/two-loop-return-diagnosis-20261018/summary.json",
+      "scope": "对同一2880稿重复提取2544条解，不计新增原型或独立样本；没有参考需要双向迁移。"
+    }
+  ],
+  "earlierArchives": [
+    {
+      "file": "artifacts/cloud-data-20261018-planning-60.zip",
+      "sha256": "5d2355e1fb01d38c1b572f3258e8030967cc5d07186c272a8e68a7bd692575ff",
+      "provenance": "runs/spatial-control-20261018-phase1/provenance.json"
+    },
+    {
+      "file": "artifacts/cloud-data-20261018-planning-61.zip",
+      "files": 9266,
+      "bytes": 152534300,
+      "sha256": "5f3367a91bb770b0dbf1b56bb7121bb9a71d0ae1a01a68d3dd66eac1ce561be0",
+      "newProvenance": "runs/spatial-control-20261018-phase2/provenance.json",
+      "newProvenanceSha256": "95e46a01807609c2af5d7c950f2433546a520fe8a65e1b01d25f3177584b08bb",
+      "newFiles": 703,
+      "zipIntegrityCheckPassed": true,
+      "downloadedByUser": false
+    }
+  ],
+  "localUpdateCompatibility": {
+    "gameRevision": "7adf94a",
+    "currentRulesLockUnchanged": true,
+    "cloudCheckPassed": true,
+    "scope": "接入本地网页回放修复及分工约定后的统一验收；未检查部署。"
+  }
 }
