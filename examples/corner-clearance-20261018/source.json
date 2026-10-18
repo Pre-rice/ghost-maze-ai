@@ -1,0 +1,40 @@
+{
+  "createdOn": "2026-10-18",
+  "title": "腾挪",
+  "method": "六句设计卡提出关系，原生引擎反例与无条件组合精简；无随机质量评分",
+  "humanQuality": null,
+  "humanFeedback": null,
+  "gallerySelected": false,
+  "trainingAdded": false,
+  "mapId": "f2065a19bcac81fde05ea2933bb9efbd7bd3393c5d0e1ce710907091ef3032e0",
+  "ruleset": "sha256:762b163064dac2464603c002d5a46782675f0a78274e93f68aa36555683cd91a",
+  "familyId": "door-cooperation-20261013-v1",
+  "conservativeRelatedFamilyIds": [
+    "dual-loop-relay-v1"
+  ],
+  "designCard": [
+    "取左上钥匙后开A到右上；自然计划是把左鬼困在邻近的门角，再处理另一鬼。",
+    "这项普通困鬼本身安全，却把另一鬼带到唯一通路上，已经没有无伤后路；即使形成两处暂留，A旁的鬼仍阻止开门。",
+    "先在跨房追逐中分离两鬼，为钥匙保留出路；取钥匙后再把门角鬼转到普通门另一侧，让A可操作，同时封掉已完成的上方活动区。",
+    "《再借》已有重新招回鬼作挡板，《换边》已有门两侧换位。本稿检验的是两只鬼先交换活动区、取物与不可逆停位共同限制，不能仅以再次困鬼或41步声明新意。",
+    "十九格边缘缺角、两鬼均不追出生点；按钮、普通门与钥匙入口的矛盾可见。全部必要关系仍只作设计事实，挑战与顿悟待真实反馈。",
+    "只用一把钥匙、一个A按钮、两扇A门、一扇普通门和终点1门；删去三扇0门、右钥匙资格任务、左上多余格与一面可删内墙，出生内移。"
+  ],
+  "simplification": {
+    "originalTwoKeyThreeZeroActions": 42,
+    "removeZerosAndRightKeyQualificationTogetherActions": 42,
+    "moveStartInwardActions": 41,
+    "removeTopLeftAndMoveKeyActions": 41,
+    "removeTopInnerWallActions": 41,
+    "allFinalOptimalPhysicalRoutes": 3,
+    "unconditionalAblationsStoredIn": "evidence.json"
+  },
+  "qualityScope": "未继承母题好评，不因必要事件、步数或搜索成本补写真人顿悟。",
+  "researchRawRoot": "runs/door-relation-20261018",
+  "subfamilyId": "corner-clearance-20261018-v1",
+  "preDeliveryBoundaryRepair": {
+    "previousStagingMapId": "b2dcb047e8aedd05d45c81d20648ae6e56e44fce941b8c9f6fc8dde7d19ec2f2",
+    "repair": "删左上角格后遗留的 h[2][1] 空边补为实墙；未曾交付，原暂存图保留。",
+    "allOptimalActionsAndGhostFramesUnchanged": true
+  }
+}

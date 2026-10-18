@@ -1,0 +1,6626 @@
+{
+  "qa": {
+    "mapId": "f2065a19bcac81fde05ea2933bb9efbd7bd3393c5d0e1ce710907091ef3032e0",
+    "ruleset": "sha256:762b163064dac2464603c002d5a46782675f0a78274e93f68aa36555683cd91a",
+    "reference": {
+      "schemaVersion": 1,
+      "status": "solved",
+      "reason": "goal_reached",
+      "ruleset": "sha256:762b163064dac2464603c002d5a46782675f0a78274e93f68aa36555683cd91a",
+      "mapId": "f2065a19bcac81fde05ea2933bb9efbd7bd3393c5d0e1ce710907091ef3032e0",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "restrictions": []
+      },
+      "optimality": "proven",
+      "solution": {
+        "actions": [
+          "R",
+          "R",
+          "D",
+          "R",
+          "U",
+          "U",
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "L",
+          "U",
+          "U",
+          "R",
+          "U",
+          "D",
+          "D",
+          "D",
+          "D",
+          "L",
+          "R",
+          "U",
+          "U",
+          "U",
+          "L",
+          "D",
+          "D",
+          "R",
+          "U",
+          "R",
+          "D",
+          "D",
+          "R",
+          "R",
+          "U",
+          "U",
+          "L",
+          "U",
+          "U",
+          "R"
+        ],
+        "totalActions": 41,
+        "movementCost": 40
+      },
+      "search": {
+        "expanded": 432,
+        "transitions": 2157,
+        "discovered": 439,
+        "exhausted": false,
+        "elapsedMs": 75.10458,
+        "budget": {
+          "nodeBudget": 1000000,
+          "stateBudget": 1000000,
+          "budgetMs": 30000
+        }
+      }
+    },
+    "fast": {
+      "schemaVersion": 1,
+      "status": "solved",
+      "reason": "goal_reached",
+      "ruleset": "sha256:762b163064dac2464603c002d5a46782675f0a78274e93f68aa36555683cd91a",
+      "mapId": "f2065a19bcac81fde05ea2933bb9efbd7bd3393c5d0e1ce710907091ef3032e0",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "withGhosts": true,
+        "restrictions": []
+      },
+      "optimality": "proven",
+      "solution": {
+        "actions": [
+          "R",
+          "R",
+          "D",
+          "R",
+          "U",
+          "U",
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "L",
+          "U",
+          "U",
+          "R",
+          "U",
+          "D",
+          "D",
+          "D",
+          "D",
+          "L",
+          "R",
+          "U",
+          "U",
+          "U",
+          "L",
+          "D",
+          "D",
+          "R",
+          "U",
+          "R",
+          "D",
+          "D",
+          "R",
+          "R",
+          "U",
+          "U",
+          "L",
+          "U",
+          "U",
+          "R"
+        ],
+        "totalActions": 41,
+        "movementCost": 40
+      },
+      "search": {
+        "algorithm": "astar",
+        "expanded": 399,
+        "transitions": 1995,
+        "discovered": 410,
+        "exhausted": false,
+        "elapsedMs": 12.849747000000008,
+        "budget": {
+          "nodeBudget": 1000000,
+          "stateBudget": 1000000,
+          "budgetMs": 30000
+        }
+      }
+    },
+    "allResult": {
+      "status": "solved",
+      "reason": "goal_reached",
+      "expanded": 438,
+      "transitions": 2190,
+      "discovered": 441,
+      "totalActions": 41
+    },
+    "count": "3",
+    "boundary": {
+      "status": "safe",
+      "reason": "all_optimal_routes_avoid_overlap",
+      "mapId": "f2065a19bcac81fde05ea2933bb9efbd7bd3393c5d0e1ce710907091ef3032e0",
+      "ruleset": "sha256:762b163064dac2464603c002d5a46782675f0a78274e93f68aa36555683cd91a",
+      "policy": "all_optimal_routes_avoid_overlap_v2",
+      "glassCount": 0,
+      "expanded": 361,
+      "transitions": 1805,
+      "discovered": 363,
+      "optimum": 41,
+      "ignoredFatalOverlap": 7,
+      "observedNonFatalOverlap": null,
+      "safeOptimalWitness": [
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "L",
+        "U",
+        "U",
+        "R",
+        "U",
+        "D",
+        "D",
+        "D",
+        "D",
+        "L",
+        "R",
+        "U",
+        "U",
+        "U",
+        "L",
+        "D",
+        "D",
+        "R",
+        "U",
+        "R",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "U",
+        "U",
+        "R"
+      ],
+      "elapsedMs": 33,
+      "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+    },
+    "cold": true,
+    "entry": {
+      "external": [
+        0,
+        0,
+        4
+      ],
+      "actions": [
+        "R"
+      ],
+      "unitArrival": [
+        0,
+        1,
+        4
+      ],
+      "internal": [
+        0,
+        1,
+        4
+      ],
+      "keys": 0,
+      "externalGhosts": 0,
+      "exteriorSealedExceptEntrance": true,
+      "initialInteriorEqual": true,
+      "afterGhosts": [
+        [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "wholeOptimalRoutesInteriorEqual": true
+    },
+    "physicalAudit": {
+      "reachable": 491,
+      "transitions": 2450,
+      "permutations": 2,
+      "compared": 4900,
+      "includesFatalActions": true
+    },
+    "noEndSafeRoutes": 3,
+    "mapCode": "AADAAHDw8PDwAAES4CQsABAEYAAqCZgwAAACqAAAAAnIIQXJBCCEAAAAEAA",
+    "replayCode": "GNU9vr73ApYMVbAlzXwgwA",
+    "actions": [
+      "R",
+      "R",
+      "D",
+      "R",
+      "U",
+      "U",
+      "U",
+      "L",
+      "L",
+      "D",
+      "D",
+      "L",
+      "U",
+      "U",
+      "R",
+      "U",
+      "D",
+      "D",
+      "D",
+      "D",
+      "L",
+      "R",
+      "U",
+      "U",
+      "U",
+      "L",
+      "D",
+      "D",
+      "R",
+      "U",
+      "R",
+      "D",
+      "D",
+      "R",
+      "R",
+      "U",
+      "U",
+      "L",
+      "U",
+      "U",
+      "R"
+    ],
+    "routes": [
+      {
+        "actions": [
+          "R",
+          "R",
+          "D",
+          "R",
+          "U",
+          "U",
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "L",
+          "U",
+          "U",
+          "R",
+          "U",
+          "D",
+          "D",
+          "D",
+          "D",
+          "L",
+          "R",
+          "U",
+          "U",
+          "U",
+          "L",
+          "D",
+          "D",
+          "R",
+          "U",
+          "R",
+          "D",
+          "D",
+          "R",
+          "R",
+          "U",
+          "U",
+          "L",
+          "U",
+          "U",
+          "R"
+        ],
+        "replayCode": "GNU9vr73ApYMVbAlzXwgwA",
+        "controls": [
+          {
+            "step": 31,
+            "letter": "A",
+            "at": [
+              2,
+              3
+            ]
+          }
+        ],
+        "trace": [
+          {
+            "step": 1,
+            "action": "R",
+            "p": [
+              0,
+              2,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  2,
+                  3
+                ],
+                [
+                  3,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 2,
+            "action": "R",
+            "p": [
+              0,
+              3,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 3,
+            "action": "D",
+            "p": [
+              0,
+              3,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": [
+              {
+                "target": {
+                  "x": 3,
+                  "y": 4
+                },
+                "contenders": [
+                  {
+                    "from": {
+                      "x": 2,
+                      "y": 4
+                    },
+                    "seesAfter": false
+                  },
+                  {
+                    "from": {
+                      "x": 3,
+                      "y": 3
+                    },
+                    "seesAfter": true
+                  }
+                ],
+                "decision": "visible_target_priority",
+                "capturesPlayer": false,
+                "layer": 0
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "action": "R",
+            "p": [
+              0,
+              4,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  5
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 5,
+            "action": "U",
+            "p": [
+              0,
+              4,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  5
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 6,
+            "action": "U",
+            "p": [
+              0,
+              4,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": [
+              {
+                "target": {
+                  "x": 4,
+                  "y": 4
+                },
+                "contenders": [
+                  {
+                    "from": {
+                      "x": 3,
+                      "y": 4
+                    },
+                    "seesAfter": false
+                  },
+                  {
+                    "from": {
+                      "x": 4,
+                      "y": 5
+                    },
+                    "seesAfter": true
+                  }
+                ],
+                "decision": "visible_target_priority",
+                "capturesPlayer": false,
+                "layer": 0
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "action": "U",
+            "p": [
+              0,
+              4,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 8,
+            "action": "L",
+            "p": [
+              0,
+              3,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  4,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 9,
+            "action": "L",
+            "p": [
+              0,
+              2,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  3,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": [
+              {
+                "target": {
+                  "x": 3,
+                  "y": 2
+                },
+                "contenders": [
+                  {
+                    "from": {
+                      "x": 3,
+                      "y": 3
+                    },
+                    "seesAfter": false
+                  },
+                  {
+                    "from": {
+                      "x": 4,
+                      "y": 2
+                    },
+                    "seesAfter": true
+                  }
+                ],
+                "decision": "visible_target_priority",
+                "capturesPlayer": false,
+                "layer": 0
+              }
+            ]
+          },
+          {
+            "step": 10,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 11,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 12,
+            "action": "L",
+            "p": [
+              0,
+              1,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 13,
+            "action": "U",
+            "p": [
+              0,
+              1,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 14,
+            "action": "U",
+            "p": [
+              0,
+              1,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 15,
+            "action": "R",
+            "p": [
+              0,
+              2,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 16,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              1
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 17,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 18,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 19,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 20,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 21,
+            "action": "L",
+            "p": [
+              0,
+              1,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 22,
+            "action": "R",
+            "p": [
+              0,
+              2,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  5
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 23,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  5
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 24,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 25,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 26,
+            "action": "L",
+            "p": [
+              0,
+              1,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 27,
+            "action": "D",
+            "p": [
+              0,
+              1,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 28,
+            "action": "D",
+            "p": [
+              0,
+              1,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 29,
+            "action": "R",
+            "p": [
+              0,
+              2,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 30,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 31,
+            "action": "R",
+            "p": [
+              0,
+              2,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 32,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 33,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 34,
+            "action": "R",
+            "p": [
+              0,
+              3,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  4
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 35,
+            "action": "R",
+            "p": [
+              0,
+              4,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  5
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 36,
+            "action": "U",
+            "p": [
+              0,
+              4,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  4,
+                  5
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 37,
+            "action": "U",
+            "p": [
+              0,
+              4,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  4,
+                  4
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 38,
+            "action": "L",
+            "p": [
+              0,
+              3,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  4,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 39,
+            "action": "U",
+            "p": [
+              0,
+              3,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 40,
+            "action": "U",
+            "p": [
+              0,
+              3,
+              1
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  2
+                ],
+                [
+                  2,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": [
+              {
+                "target": {
+                  "x": 3,
+                  "y": 2
+                },
+                "contenders": [
+                  {
+                    "from": {
+                      "x": 3,
+                      "y": 3
+                    },
+                    "seesAfter": true
+                  },
+                  {
+                    "from": {
+                      "x": 2,
+                      "y": 2
+                    },
+                    "seesAfter": false
+                  }
+                ],
+                "decision": "visible_target_priority",
+                "capturesPlayer": false,
+                "layer": 0
+              }
+            ]
+          },
+          {
+            "step": 41,
+            "action": "R",
+            "p": [
+              0,
+              4,
+              1
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  2
+                ],
+                [
+                  2,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          }
+        ]
+      },
+      {
+        "actions": [
+          "R",
+          "R",
+          "D",
+          "R",
+          "U",
+          "U",
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "L",
+          "U",
+          "U",
+          "R",
+          "U",
+          "D",
+          "D",
+          "D",
+          "D",
+          "L",
+          "R",
+          "U",
+          "U",
+          "U",
+          "L",
+          "D",
+          "D",
+          "R",
+          "U",
+          "R",
+          "D",
+          "D",
+          "R",
+          "R",
+          "U",
+          "L",
+          "U",
+          "U",
+          "U",
+          "R"
+        ],
+        "replayCode": "GNU9vr73ApYMVbAlzXyAwA",
+        "controls": [
+          {
+            "step": 31,
+            "letter": "A",
+            "at": [
+              2,
+              3
+            ]
+          }
+        ],
+        "trace": [
+          {
+            "step": 1,
+            "action": "R",
+            "p": [
+              0,
+              2,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  2,
+                  3
+                ],
+                [
+                  3,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 2,
+            "action": "R",
+            "p": [
+              0,
+              3,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 3,
+            "action": "D",
+            "p": [
+              0,
+              3,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": [
+              {
+                "target": {
+                  "x": 3,
+                  "y": 4
+                },
+                "contenders": [
+                  {
+                    "from": {
+                      "x": 2,
+                      "y": 4
+                    },
+                    "seesAfter": false
+                  },
+                  {
+                    "from": {
+                      "x": 3,
+                      "y": 3
+                    },
+                    "seesAfter": true
+                  }
+                ],
+                "decision": "visible_target_priority",
+                "capturesPlayer": false,
+                "layer": 0
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "action": "R",
+            "p": [
+              0,
+              4,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  5
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 5,
+            "action": "U",
+            "p": [
+              0,
+              4,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  5
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 6,
+            "action": "U",
+            "p": [
+              0,
+              4,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": [
+              {
+                "target": {
+                  "x": 4,
+                  "y": 4
+                },
+                "contenders": [
+                  {
+                    "from": {
+                      "x": 3,
+                      "y": 4
+                    },
+                    "seesAfter": false
+                  },
+                  {
+                    "from": {
+                      "x": 4,
+                      "y": 5
+                    },
+                    "seesAfter": true
+                  }
+                ],
+                "decision": "visible_target_priority",
+                "capturesPlayer": false,
+                "layer": 0
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "action": "U",
+            "p": [
+              0,
+              4,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 8,
+            "action": "L",
+            "p": [
+              0,
+              3,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  4,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 9,
+            "action": "L",
+            "p": [
+              0,
+              2,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  3,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": [
+              {
+                "target": {
+                  "x": 3,
+                  "y": 2
+                },
+                "contenders": [
+                  {
+                    "from": {
+                      "x": 3,
+                      "y": 3
+                    },
+                    "seesAfter": false
+                  },
+                  {
+                    "from": {
+                      "x": 4,
+                      "y": 2
+                    },
+                    "seesAfter": true
+                  }
+                ],
+                "decision": "visible_target_priority",
+                "capturesPlayer": false,
+                "layer": 0
+              }
+            ]
+          },
+          {
+            "step": 10,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 11,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 12,
+            "action": "L",
+            "p": [
+              0,
+              1,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 13,
+            "action": "U",
+            "p": [
+              0,
+              1,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 14,
+            "action": "U",
+            "p": [
+              0,
+              1,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 15,
+            "action": "R",
+            "p": [
+              0,
+              2,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 16,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              1
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 17,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 18,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 19,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 20,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 21,
+            "action": "L",
+            "p": [
+              0,
+              1,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 22,
+            "action": "R",
+            "p": [
+              0,
+              2,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  5
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 23,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  5
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 24,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 25,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 26,
+            "action": "L",
+            "p": [
+              0,
+              1,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 27,
+            "action": "D",
+            "p": [
+              0,
+              1,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 28,
+            "action": "D",
+            "p": [
+              0,
+              1,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 29,
+            "action": "R",
+            "p": [
+              0,
+              2,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 30,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 31,
+            "action": "R",
+            "p": [
+              0,
+              2,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 32,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 33,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 34,
+            "action": "R",
+            "p": [
+              0,
+              3,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  4
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 35,
+            "action": "R",
+            "p": [
+              0,
+              4,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  5
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 36,
+            "action": "U",
+            "p": [
+              0,
+              4,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  4,
+                  5
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 37,
+            "action": "L",
+            "p": [
+              0,
+              3,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  4,
+                  4
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 38,
+            "action": "U",
+            "p": [
+              0,
+              3,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  4
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 39,
+            "action": "U",
+            "p": [
+              0,
+              3,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 40,
+            "action": "U",
+            "p": [
+              0,
+              3,
+              1
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  2
+                ],
+                [
+                  2,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": [
+              {
+                "target": {
+                  "x": 3,
+                  "y": 2
+                },
+                "contenders": [
+                  {
+                    "from": {
+                      "x": 3,
+                      "y": 3
+                    },
+                    "seesAfter": true
+                  },
+                  {
+                    "from": {
+                      "x": 2,
+                      "y": 2
+                    },
+                    "seesAfter": false
+                  }
+                ],
+                "decision": "visible_target_priority",
+                "capturesPlayer": false,
+                "layer": 0
+              }
+            ]
+          },
+          {
+            "step": 41,
+            "action": "R",
+            "p": [
+              0,
+              4,
+              1
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  2
+                ],
+                [
+                  2,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          }
+        ]
+      },
+      {
+        "actions": [
+          "R",
+          "R",
+          "D",
+          "R",
+          "U",
+          "U",
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "L",
+          "U",
+          "U",
+          "R",
+          "U",
+          "D",
+          "D",
+          "D",
+          "D",
+          "L",
+          "R",
+          "U",
+          "U",
+          "U",
+          "L",
+          "D",
+          "D",
+          "R",
+          "U",
+          "R",
+          "D",
+          "D",
+          "R",
+          "L",
+          "U",
+          "R",
+          "U",
+          "U",
+          "U",
+          "R"
+        ],
+        "replayCode": "GNU9vr73ApYMVbAlzXjAwA",
+        "controls": [
+          {
+            "step": 31,
+            "letter": "A",
+            "at": [
+              2,
+              3
+            ]
+          }
+        ],
+        "trace": [
+          {
+            "step": 1,
+            "action": "R",
+            "p": [
+              0,
+              2,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  2,
+                  3
+                ],
+                [
+                  3,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 2,
+            "action": "R",
+            "p": [
+              0,
+              3,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 3,
+            "action": "D",
+            "p": [
+              0,
+              3,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": [
+              {
+                "target": {
+                  "x": 3,
+                  "y": 4
+                },
+                "contenders": [
+                  {
+                    "from": {
+                      "x": 2,
+                      "y": 4
+                    },
+                    "seesAfter": false
+                  },
+                  {
+                    "from": {
+                      "x": 3,
+                      "y": 3
+                    },
+                    "seesAfter": true
+                  }
+                ],
+                "decision": "visible_target_priority",
+                "capturesPlayer": false,
+                "layer": 0
+              }
+            ]
+          },
+          {
+            "step": 4,
+            "action": "R",
+            "p": [
+              0,
+              4,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  2,
+                  4
+                ],
+                [
+                  3,
+                  5
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 5,
+            "action": "U",
+            "p": [
+              0,
+              4,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  5
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 6,
+            "action": "U",
+            "p": [
+              0,
+              4,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": [
+              {
+                "target": {
+                  "x": 4,
+                  "y": 4
+                },
+                "contenders": [
+                  {
+                    "from": {
+                      "x": 3,
+                      "y": 4
+                    },
+                    "seesAfter": false
+                  },
+                  {
+                    "from": {
+                      "x": 4,
+                      "y": 5
+                    },
+                    "seesAfter": true
+                  }
+                ],
+                "decision": "visible_target_priority",
+                "capturesPlayer": false,
+                "layer": 0
+              }
+            ]
+          },
+          {
+            "step": 7,
+            "action": "U",
+            "p": [
+              0,
+              4,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  4
+                ],
+                [
+                  4,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 8,
+            "action": "L",
+            "p": [
+              0,
+              3,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  4,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 9,
+            "action": "L",
+            "p": [
+              0,
+              2,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  3,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": [
+              {
+                "target": {
+                  "x": 3,
+                  "y": 2
+                },
+                "contenders": [
+                  {
+                    "from": {
+                      "x": 3,
+                      "y": 3
+                    },
+                    "seesAfter": false
+                  },
+                  {
+                    "from": {
+                      "x": 4,
+                      "y": 2
+                    },
+                    "seesAfter": true
+                  }
+                ],
+                "decision": "visible_target_priority",
+                "capturesPlayer": false,
+                "layer": 0
+              }
+            ]
+          },
+          {
+            "step": 10,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 11,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 12,
+            "action": "L",
+            "p": [
+              0,
+              1,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 13,
+            "action": "U",
+            "p": [
+              0,
+              1,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 14,
+            "action": "U",
+            "p": [
+              0,
+              1,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 15,
+            "action": "R",
+            "p": [
+              0,
+              2,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 16,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              1
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 17,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 18,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 19,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 20,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 21,
+            "action": "L",
+            "p": [
+              0,
+              1,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 22,
+            "action": "R",
+            "p": [
+              0,
+              2,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  5
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 23,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  5
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 24,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 25,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 26,
+            "action": "L",
+            "p": [
+              0,
+              1,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 27,
+            "action": "D",
+            "p": [
+              0,
+              1,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 28,
+            "action": "D",
+            "p": [
+              0,
+              1,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 29,
+            "action": "R",
+            "p": [
+              0,
+              2,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 30,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 31,
+            "action": "R",
+            "p": [
+              0,
+              2,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 32,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 33,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 34,
+            "action": "R",
+            "p": [
+              0,
+              3,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  4
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 35,
+            "action": "L",
+            "p": [
+              0,
+              2,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  5
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 36,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  2,
+                  5
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 37,
+            "action": "R",
+            "p": [
+              0,
+              3,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  2,
+                  4
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 38,
+            "action": "U",
+            "p": [
+              0,
+              3,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  4
+                ],
+                [
+                  1,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 39,
+            "action": "U",
+            "p": [
+              0,
+              3,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 40,
+            "action": "U",
+            "p": [
+              0,
+              3,
+              1
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  2
+                ],
+                [
+                  2,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": [
+              {
+                "target": {
+                  "x": 3,
+                  "y": 2
+                },
+                "contenders": [
+                  {
+                    "from": {
+                      "x": 3,
+                      "y": 3
+                    },
+                    "seesAfter": true
+                  },
+                  {
+                    "from": {
+                      "x": 2,
+                      "y": 2
+                    },
+                    "seesAfter": false
+                  }
+                ],
+                "decision": "visible_target_priority",
+                "capturesPlayer": false,
+                "layer": 0
+              }
+            ]
+          },
+          {
+            "step": 41,
+            "action": "R",
+            "p": [
+              0,
+              4,
+              1
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  2
+                ],
+                [
+                  2,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          }
+        ]
+      }
+    ],
+    "role": "physical_QA_not_human_quality"
+  },
+  "grouping": {
+    "allResult": {
+      "status": "solved",
+      "reason": "goal_reached",
+      "expanded": 438,
+      "transitions": 2190,
+      "discovered": 441,
+      "totalActions": 41
+    },
+    "result": {
+      "status": "solved",
+      "count": "3",
+      "prefixes": 52,
+      "assigned": 54
+    },
+    "routes": [
+      [
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "L",
+        "U",
+        "U",
+        "R",
+        "U",
+        "D",
+        "D",
+        "D",
+        "D",
+        "L",
+        "R",
+        "U",
+        "U",
+        "U",
+        "L",
+        "D",
+        "D",
+        "R",
+        "U",
+        "R",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "U",
+        "U",
+        "R"
+      ],
+      [
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "L",
+        "U",
+        "U",
+        "R",
+        "U",
+        "D",
+        "D",
+        "D",
+        "D",
+        "L",
+        "R",
+        "U",
+        "U",
+        "U",
+        "L",
+        "D",
+        "D",
+        "R",
+        "U",
+        "R",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      [
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "L",
+        "U",
+        "U",
+        "R",
+        "U",
+        "D",
+        "D",
+        "D",
+        "D",
+        "L",
+        "R",
+        "U",
+        "U",
+        "U",
+        "L",
+        "D",
+        "D",
+        "R",
+        "U",
+        "R",
+        "D",
+        "D",
+        "R",
+        "L",
+        "U",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ]
+    ]
+  },
+  "analysis": {
+    "mapId": "f2065a19bcac81fde05ea2933bb9efbd7bd3393c5d0e1ce710907091ef3032e0",
+    "ruleset": "sha256:762b163064dac2464603c002d5a46782675f0a78274e93f68aa36555683cd91a",
+    "queries": [
+      {
+        "name": "A-before-key",
+        "initial": [
+          0
+        ],
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 334,
+          "transitions": 1670,
+          "discovered": 334,
+          "totalActions": null
+        },
+        "actions": null
+      },
+      {
+        "name": "never-left-in-right-room",
+        "initial": [],
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 23,
+          "transitions": 115,
+          "discovered": 23,
+          "totalActions": null
+        },
+        "actions": null
+      },
+      {
+        "name": "never-right-in-corner",
+        "initial": [],
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 226,
+          "transitions": 1130,
+          "discovered": 226,
+          "totalActions": null
+        },
+        "actions": null
+      },
+      {
+        "name": "never-right-above-ordinary",
+        "initial": [],
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 262,
+          "transitions": 1310,
+          "discovered": 262,
+          "totalActions": null
+        },
+        "actions": null
+      },
+      {
+        "name": "upper-parking-before-key",
+        "initial": [
+          0
+        ],
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 297,
+          "transitions": 1485,
+          "discovered": 297,
+          "totalActions": null
+        },
+        "actions": null
+      },
+      {
+        "name": "no-priority-conflict",
+        "initial": [],
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 22,
+          "transitions": 110,
+          "discovered": 22,
+          "totalActions": null
+        },
+        "actions": null
+      }
+    ],
+    "counterexamples": [
+      {
+        "name": "trap-nearest-first",
+        "prefix": [
+          "R",
+          "L",
+          "U",
+          "U"
+        ],
+        "state": {
+          "loopCount": 0,
+          "isDead": false,
+          "isWon": false,
+          "deathReason": "",
+          "isRevivalPoint": false,
+          "player": {
+            "x": 1,
+            "y": 2,
+            "layer": 0,
+            "hp": 5,
+            "keys": 0,
+            "steps": 4,
+            "trail": []
+          },
+          "layerStates": [
+            {
+              "ghosts": [
+                {
+                  "x": 1,
+                  "y": 3,
+                  "id": 0,
+                  "trail": []
+                },
+                {
+                  "x": 2,
+                  "y": 2,
+                  "id": 1,
+                  "trail": []
+                }
+              ],
+              "items": [
+                {
+                  "x": 2,
+                  "y": 1,
+                  "type": "key"
+                }
+              ],
+              "wallStates": {
+                "h": [
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 3,
+                      "keys": 1,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 2,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ]
+                ],
+                "v": [
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 6,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": "A",
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 6,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": "A",
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ]
+                ]
+              }
+            }
+          ],
+          "seenCells": [
+            [
+              [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              [
+                false,
+                true,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              [
+                false,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false,
+                false
+              ],
+              [
+                false,
+                true,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ]
+            ]
+          ]
+        },
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "prefix": [
+            "R",
+            "L",
+            "U",
+            "U"
+          ],
+          "actions": null,
+          "optimality": null,
+          "search": {
+            "algorithm": "reference_bfs",
+            "expanded": 1,
+            "discovered": 1,
+            "exhausted": true,
+            "elapsedMs": 0.09901100000001861,
+            "nodeBudget": 1000000,
+            "budgetMs": 30000
+          }
+        }
+      },
+      {
+        "name": "turn-into-east-room-first",
+        "prefix": [
+          "R",
+          "R",
+          "R"
+        ],
+        "state": {
+          "loopCount": 0,
+          "isDead": false,
+          "isWon": false,
+          "deathReason": "",
+          "isRevivalPoint": false,
+          "player": {
+            "x": 4,
+            "y": 4,
+            "layer": 0,
+            "hp": 5,
+            "keys": 0,
+            "steps": 3,
+            "trail": []
+          },
+          "layerStates": [
+            {
+              "ghosts": [
+                {
+                  "x": 3,
+                  "y": 4,
+                  "id": 0,
+                  "trail": []
+                },
+                {
+                  "x": 3,
+                  "y": 3,
+                  "id": 1,
+                  "trail": []
+                }
+              ],
+              "items": [
+                {
+                  "x": 2,
+                  "y": 1,
+                  "type": "key"
+                }
+              ],
+              "wallStates": {
+                "h": [
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 3,
+                      "keys": 1,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 2,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ]
+                ],
+                "v": [
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 6,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": "A",
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 6,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": "A",
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 1,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ],
+                  [
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    },
+                    {
+                      "type": 0,
+                      "keys": 0,
+                      "direction": null,
+                      "letter": null,
+                      "initialState": "closed",
+                      "currentState": "closed"
+                    }
+                  ]
+                ]
+              }
+            }
+          ],
+          "seenCells": [
+            [
+              [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              [
+                false,
+                true,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              [
+                false,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false,
+                false
+              ],
+              [
+                false,
+                true,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ],
+              [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+              ]
+            ]
+          ]
+        },
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "prefix": [
+            "R",
+            "R",
+            "R"
+          ],
+          "actions": null,
+          "optimality": null,
+          "search": {
+            "algorithm": "reference_bfs",
+            "expanded": 84,
+            "discovered": 84,
+            "exhausted": true,
+            "elapsedMs": 8.894292000000007,
+            "nodeBudget": 1000000,
+            "budgetMs": 30000
+          }
+        }
+      }
+    ],
+    "reductions": [
+      {
+        "name": "remove-key-and-threshold",
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 266,
+          "transitions": 1327,
+          "discovered": 276,
+          "totalActions": 25
+        },
+        "actions": [
+          "R",
+          "R",
+          "D",
+          "R",
+          "U",
+          "U",
+          "U",
+          "L",
+          "L",
+          "L",
+          "D",
+          "D",
+          "R",
+          "U",
+          "R",
+          "D",
+          "D",
+          "R",
+          "R",
+          "U",
+          "U",
+          "L",
+          "U",
+          "U",
+          "R"
+        ]
+      },
+      {
+        "name": "ordinary-to-empty",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 345,
+          "transitions": 1725,
+          "discovered": 345,
+          "totalActions": null
+        },
+        "actions": null
+      },
+      {
+        "name": "ordinary-to-solid",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 53,
+          "transitions": 265,
+          "discovered": 53,
+          "totalActions": null
+        },
+        "actions": null
+      },
+      {
+        "name": "open-left-A",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 217,
+          "transitions": 1085,
+          "discovered": 217,
+          "totalActions": null
+        },
+        "actions": null
+      },
+      {
+        "name": "open-goal-A",
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 42,
+          "transitions": 207,
+          "discovered": 47,
+          "totalActions": 12
+        },
+        "actions": [
+          "R",
+          "R",
+          "D",
+          "R",
+          "U",
+          "U",
+          "U",
+          "L",
+          "L",
+          "U",
+          "R",
+          "R"
+        ]
+      },
+      {
+        "name": "remove-left-ghost",
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 141,
+          "transitions": 702,
+          "discovered": 163,
+          "totalActions": 11
+        },
+        "actions": [
+          "R",
+          "U",
+          "R",
+          "D",
+          "R",
+          "L",
+          "U",
+          "U",
+          "U",
+          "R",
+          "R"
+        ]
+      },
+      {
+        "name": "remove-right-ghost",
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 269,
+          "transitions": 1342,
+          "discovered": 289,
+          "totalActions": 21
+        },
+        "actions": [
+          "R",
+          "R",
+          "U",
+          "U",
+          "L",
+          "U",
+          "R",
+          "D",
+          "L",
+          "L",
+          "D",
+          "D",
+          "R",
+          "U",
+          "R",
+          "D",
+          "R",
+          "U",
+          "U",
+          "U",
+          "R"
+        ]
+      },
+      {
+        "name": "middle-spine-to-empty",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 158,
+          "transitions": 790,
+          "discovered": 158,
+          "totalActions": null
+        },
+        "actions": null
+      }
+    ],
+    "humanQuality": null,
+    "scope": "原图无伤无复活全部通关，包含非最优和规则允许的重合；改图结果独立解释，不作趣味分",
+    "excludedDiagnostic": "最终上方连接已开放，原暂存分析中的 left-spine-to-empty 是恒等操作，不作为删减证据；原报告留档。"
+  },
+  "role": "native_physics_and_design_counterexamples_not_human_quality"
+}

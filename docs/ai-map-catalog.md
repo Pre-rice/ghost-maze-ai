@@ -1,5 +1,19 @@
 # AI 地图总目录
 
+## 2026-10-18 新候选：《腾挪》
+
+单层19格、双鬼、一把钥匙；一个A按钮、两扇A门、一扇普通门和终点1门。最优41步，三种含移动时机和停顿的鬼轨迹；全部最优无重合、去终点安全，中性初态及指定实际入场通过。**尚无真人评价，未入地图集；原十六图保持。**
+
+[试玩](https://ghostmaze.novic.cc/?map=AADAAHDw8PDwAAES4CQsABAEYAAqCZgwAAACqAAAAAnIIQXJBCCEAAAAEAA) · [设计、来源与验收](https://github.com/Pre-rice/ghost-maze-ai/tree/main/examples/corner-clearance-20261018)
+
+<details><summary>设计预期与参考（含答案）</summary>
+
+先困最近的鬼会丢失钥匙通路；借右侧追逐与争位分离两鬼，再让其中一只占左角。取钥匙后还需把角里的鬼引到普通门另一侧：新停位开放了A操作，却封住上方活动区。这是对活动区和开关条件的整体安排预期，不因必要性或解长补写顿悟；招回挡鬼和门两侧换位本身已有旧题。
+
+[41步参考](https://ghostmaze.novic.cc/?map=AADAAHDw8PDwAAES4CQsABAEYAAqCZgwAAACqAAAAAnIIQXJBCCEAAAAEAA&replay=GNU9vr73ApYMVbAlzXwgwA)。三扇0门与右钥匙资格任务联合删去，出生内移、删左上冗余格并移动钥匙，开放可删内墙。两条实际安全的普通计划无续解；详细范围和三种参考见来源，不作人类质量标签。
+
+</details>
+
 ## 2026-10-18 《布阵》确认入集
 
 完整6×6、单层36格、四鬼、一把钥匙；A两门、B一门、一扇普通门及终点1门。最优58步，两种含停顿鬼轨迹；全部最优无重合、去终点安全，中性初态与指定实际入场保持，四鬼24排列18164520次后继一致。**用户确认加入第十六位，其余十五图原码保持。**
