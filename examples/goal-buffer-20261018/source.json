@@ -1,0 +1,36 @@
+{
+  "createdOn": "2026-10-18",
+  "title": "寄存",
+  "method": "六句设计卡、原生引擎普通替代与无条件删减；未调用自主试玩skill或质量评分",
+  "humanQuality": null,
+  "humanFeedback": null,
+  "gallerySelected": false,
+  "trainingAdded": false,
+  "mapId": "289323eca6cb7f3cce86bac9f3afb2a395708867bd3d2e551b54a5a7e5c4b703",
+  "ruleset": "sha256:762b163064dac2464603c002d5a46782675f0a78274e93f68aa36555683cd91a",
+  "familyId": "goal-buffer-interleaving-20261018-v1",
+  "conservativeRelatedFamilyIds": [
+    "door-cooperation-20261013-v1",
+    "dual-loop-relay-v1"
+  ],
+  "designCard": [
+    "终点起初为空，玩家自然先想清走通道内的鬼并维持目标空着，或先到更近的左侧操作站。",
+    "近站先行会被中部鬼封掉退路；右站操作可暂留两鬼，但也关闭了目标入口，左A又会放出下方追鬼。",
+    "先让目标成为上鬼的缓冲停位，再从左侧调走；B既安排上方通路，也必须与释放下鬼的A交错，留下离站追距。",
+    "既有图已有困鬼、控距和重引；本稿不使用双鬼优先卡位，检验目标暂让与离站安排，不以停在终点的命名或必要事件数宣称新意。",
+    "21格全部可见、中性开局；近站和提前释放都可在实际安全前缀后诊断无后路。B多按一次可补救，不捏造不可逆错误。",
+    "只保留7×3矩形、双鬼、三个按钮及必要门态；删整排返程冗余及右上B门，保留普通门和上A以分别约束绕行及排除终点免死。"
+  ],
+  "simplification": {
+    "prototypeCells": 28,
+    "finalCells": 21,
+    "removedLetterGate": "右上B门",
+    "aestheticCells": [
+      "1,3",
+      "4,3"
+    ],
+    "scope": "逐项及组合删减不等于全局最小；可删地形的完整矩形外形取舍明示"
+  },
+  "researchRawRoot": "runs/goal-buffer-20261018",
+  "qualityScope": "尚无实际玩家评价，设计预期与QA均不作尤里卡或难度标签"
+}

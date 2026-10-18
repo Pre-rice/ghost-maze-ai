@@ -1,5 +1,19 @@
 # AI 地图总目录
 
+## 2026-10-18 新候选：《寄存》
+
+单层21格、双鬼，无钥匙，完整7×3轮廓；两处A按钮、一处B按钮。最优33步，九种含停顿鬼轨迹；全部最优无伤、无重合、去终点安全，中性初态和指定实际入场通过。**尚无真人评价，未入地图集；原十六图与顺序保持。**
+
+[试玩](https://ghostmaze.novic.cc/?map=AWM4wPDv3z8GBgZG5QdaUiwV7E4BDFyrZqx6yBIawgACfoVHmudMEAAxmQQYmjgA) · [设计、来源与验收](../examples/goal-buffer-20261018/README.md)
+
+<details><summary>设计预期与参考（含答案）</summary>
+
+先让起初空着的目标暂存上鬼，再从左侧调走；左A放出下鬼后，B操作必须与离站追距交错。原图禁止目标停位或禁止左A后再操作B，均穷尽无伤无复活无解。B提前多按并非不可补救；不把某条参考写成所有通关的唯一次数。
+
+[33步参考](https://ghostmaze.novic.cc/?map=AWM4wPDv3z8GBgZG5QdaUiwV7E4BDFyrZqx6yBIawgACfoVHmudMEAAxmQQYmjgA&replay=GKi6XSgc_DWiqRnc_IA)。删整排、右上B门，保留完整矩形；普通门与上A门的删减反例分别开放绕行及终点免死。机器事实不证明精妙或挑战性，不继承旧图好评。
+
+</details>
+
 ## 2026-10-18 新候选：《腾挪》
 
 **后续实际反馈：** “新地图没什么新意啊。还是老的思路。”不计新意主线进展，仍未入集；[实际反馈](../data/manifests/corner-clearance-review-20261018.json)。用户要求完成阶段性收尾后暂停设计，先提出十六图的学习与经验演变排序供审核。以下生成时预期及原证据保持。
