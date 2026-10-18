@@ -2,7 +2,7 @@
 
 11 格、单层、一只鬼、一个 A 按钮、一把钥匙，普通门与数字门各一扇，两扇 A 门反向联动；无玻璃和单向门。不改本体规则，没有训练模型。
 
-[试玩](https://ghostmaze.novic.cc/?map=AWM4wZDw4UECAwNjWIMLkwIvA8MCF-4vAqwMILCFs0T4C0sDiMnEAQA)。完整地图、解法与后续评价加入[统一目录](https://github.com/Pre-rice/ghost-maze/blob/main/docs/ai-map-catalog.md)。2026-10-12 用户评价“不错”、比前面几题更巧且简洁，但解法仍简单、容易想到；认可其甜点单元／靠前简单关价值，尚未达到主线挑战目标。详见[反馈与后续方向](../../docs/archive/reviews/room-transfer-review-20261012.md)。
+[试玩](https://ghostmaze.novic.cc/?map=AWM4wZDw4UECAwNjWIMLkwIvA8MCF-4vAqwMILCFs0T4C0sDiMnEAQA)。完整地图、解法与后续评价加入[统一目录](https://github.com/Pre-rice/ghost-maze-ai/blob/main/docs/ai-map-catalog.md)。2026-10-12 用户评价“不错”、比前面几题更巧且简洁，但解法仍简单、容易想到；认可其甜点单元／靠前简单关价值，尚未达到主线挑战目标。详见[反馈与后续方向](../../docs/archive/reviews/room-transfer-review-20261012.md)。
 
 实际来源是手工逆向构造“保护鬼的位置同时影响钥匙与目标入口”的冲突，再用完整状态搜索找捷径。初稿 12 格有连按 A、绕上方小圈的 20 动作捷径；增加下方数字门也未消除捷径。删去上方一格后形成 28 动作的换位关系，再把下方冗余数字门改为空；四项原图关系都保留，最终只剩一个数字门。之后执行条件内精简：32 项尝试与最末审计，接受编辑零，预算未决零；不宣称全局最小。
 

@@ -110,7 +110,7 @@
 
 ## 每次反馈后的固定维护
 
-原话、日期、提示／回放条件与真人路线是否存在分别保存，不补数值分、用时或实际动作。随后更新[地图总目录](https://github.com/Pre-rice/ghost-maze/blob/main/docs/ai-map-catalog.md)；只有用户明确选入的图才上架，并同步[设计小册](https://github.com/Pre-rice/ghost-maze/blob/main/docs/map-design-guide.md)的该题条目。亲缘改图不继承反馈。
+原话、日期、提示／回放条件与真人路线是否存在分别保存，不补数值分、用时或实际动作。随后更新[地图总目录](https://github.com/Pre-rice/ghost-maze-ai/blob/main/docs/ai-map-catalog.md)；只有用户明确选入的图才上架，并同步[设计小册](https://github.com/Pre-rice/ghost-maze/blob/main/docs/map-design-guide.md)的该题条目。亲缘改图不继承反馈。
 
 在本文件只提炼会改变下次选择的经验：**依据 → 当前解释 → 下一次检验 → 适用范围／反例**。详细实验与旧判断放[历史档案](archive/README.md)，不再向 AGENTS、README、状态页反复追加同一过程。当前状态只写有效结果与待做事项，下一轮开工必读本文件；查证时按链接回到来源。
 

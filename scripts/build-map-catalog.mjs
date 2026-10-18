@@ -11,7 +11,7 @@ import { updateCatalogReviewOverlay } from './catalog-review-overlay.mjs';
 
 // 汇总明确落盘的地图，不展开大型搜索日志中的批量失败编辑；原图与证据只读。
 const root = fileURLToPath(new URL('../', import.meta.url));
-const destination = resolve(root, '../ghost-maze/docs/ai-map-catalog.md');
+const destination = resolve(root, 'docs/ai-map-catalog.md');
 if (existsSync(resolve(root, 'data/manifests/rule-boundaries-20261012.json'))) {
     updateCatalogReviewOverlay(root, destination);
     console.log('已更新现行规则审查；保留历史评述，不重新求解旧实验地图。');
@@ -159,7 +159,7 @@ for (const entry of entries.values()) {
 const url = (entry, replay = false) => origin + '?map=' + entry.code + (replay ? '&replay=' + entry.replay : '');
 const sourceLinks = entry => entry.sources.map(source => {
     const file = source.replace(/\.json\..*$/, '.json');
-    return '[' + source + '](../../ghost-maze-ai/' + file + ')';
+    return '[' + source + '](../' + file + ')';
 }).join('、');
 const valid = [...entries.values()].filter(entry => entry.code);
 let document = '# AI 地图总目录\n\n更新：2026-10-12。游玩、AI 和回放已使用同一规则；下列码全部为当前格式。旧码弃用，原地图、原证据和真人录制保持原样。\n\n';
@@ -170,14 +170,14 @@ document += '## 用户评价为“不错”及以上的地图\n\n以下按真实
 document += '| 评价日期 | 地图 | 参考步数 | 用户简评与限制 | 评述依据 |\n| --- | --- | --- | --- | --- |\n';
 for (const entry of valid.filter(entry => entry.review?.positive).sort((a, b) => a.review.date.localeCompare(b.review.date) || a.title.localeCompare(b.title, 'zh-CN'))) {
     assert(existsSync(resolve(root, entry.review.evidence)), '评述依据必须存在');
-    document += '| ' + entry.review.date + ' | [' + entry.title + '](' + url(entry) + ') | ' + (entry.route?.actions.length ?? '缺路线') + ' | ' + entry.feedback + ' | [记录](../../ghost-maze-ai/' + entry.review.evidence + ') |\n';
+    document += '| ' + entry.review.date + ' | [' + entry.title + '](' + url(entry) + ') | ' + (entry.route?.actions.length ?? '缺路线') + ' | ' + entry.feedback + ' | [记录](../' + entry.review.evidence + ') |\n';
 }
 const refinement = valid.find(entry => entry.primary === 'examples/user-refinements/user-01.json');
-if (refinement) document += '\n另附[用户优化图](' + url(refinement) + ')：用户亲自修改并认为关键思路更精妙；参考与真人路线均为 40 步。它是单层组合题的亲缘改图，不计为新的 AI 独立作品，详见[当时说明](../../ghost-maze-ai/examples/user-refinements/README.md)。\n';
+if (refinement) document += '\n另附[用户优化图](' + url(refinement) + ')：用户亲自修改并认为关键思路更精妙；参考与真人路线均为 40 步。它是单层组合题的亲缘改图，不计为新的 AI 独立作品，详见[当时说明](../examples/user-refinements/README.md)。\n';
 document += '\n## 已交付地图与主要对照\n\n';
 for (const entry of valid.filter(entry => entry.main).sort((a, b) => a.title.localeCompare(b.title, 'zh-CN'))) {
     document += '### ' + entry.title + '\n\n[试玩](' + url(entry) + ') · ' + entry.feedback + '\n\n地图码：`' + entry.code + '`\n\n来源：' + sourceLinks(entry) + '\n\n';
-    if (entry.review) document += '评述依据：[' + entry.review.date + ' 的记录](../../ghost-maze-ai/' + entry.review.evidence + ')。\n\n';
+    if (entry.review) document += '评述依据：[' + entry.review.date + ' 的记录](../' + entry.review.evidence + ')。\n\n';
     if (entry.replay) document += '<details>\n<summary>参考回放（' + entry.route.actions.length + ' 步，含答案）</summary>\n\n[打开同页回放](' + url(entry, true) + ')\n\n操作码：`' + entry.replay + '`\n\n路线来源：' + entry.route.source + '\n\n</details>\n\n';
     else document += '尚无完整可验证的通关路线；不声称可解。\n\n';
 }
@@ -189,7 +189,7 @@ if (human?.maps.length) {
         assert(migrated && verifyRecording(migrated.input).won);
         const entry = valid.find(entry => entry.code === row.mapCode);
         assert(entry, '真人录制必须关联总目录中的合法原图');
-        document += '- **' + entry.title + '**：' + row.actions + ' 步，[同页回放](' + origin + '?map=' + row.mapCode + '&replay=' + row.replayCode + ')；[原始记录](../../ghost-maze-ai/' + row.sourceFile + ')；[迁移记录](../../ghost-maze-ai/' + row.migratedFile + ')；原保留分支 ' + row.originalActions + ' 项，保留动作歧义 ' + row.ambiguities + ' 项。\n';
+        document += '- **' + entry.title + '**：' + row.actions + ' 步，[同页回放](' + origin + '?map=' + row.mapCode + '&replay=' + row.replayCode + ')；[原始记录](../' + row.sourceFile + ')；[迁移记录](../' + row.migratedFile + ')；原保留分支 ' + row.originalActions + ' 项，保留动作歧义 ' + row.ambiguities + ' 项。\n';
     }
     document += '\n</details>\n\n';
     report.humanRecordings = human.maps.length;

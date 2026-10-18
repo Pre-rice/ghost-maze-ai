@@ -1,6 +1,6 @@
 # 第一批成对试玩
 
-> 历史批次说明（2026-10-11）：下文六图包保留当时内容和反馈。两张跨层原图的楼梯表冲突，当前严格规则下不能直接重建；不要重跑 builder 覆盖原图。最新合法地图与同页回放见[总目录](https://github.com/Pre-rice/ghost-maze/blob/main/docs/ai-map-catalog.md)。旧分享码和旧回放地址已弃用。
+> 历史批次说明（2026-10-11）：下文六图包保留当时内容和反馈。两张跨层原图的楼梯表冲突，当前严格规则下不能直接重建；不要重跑 builder 覆盖原图。最新合法地图与同页回放见[总目录](https://github.com/Pre-rice/ghost-maze-ai/blob/main/docs/ai-map-catalog.md)。旧分享码和旧回放地址已弃用。
 
 共 3 组、6 张小地图。试玩前无需查看地图文件或解答。
 

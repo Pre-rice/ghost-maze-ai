@@ -8,7 +8,7 @@
 - 求解按每个有效操作后所有层鬼位归并，保留移动／停顿时序，不合并物理搜索局面。十三图原码、名称和发现顺序不变，本轮重新求得完整最优分类并预置缓存；《接力》20条→1种、《归途》3种、《同行》12条→1种，原最短步数保持。
 - 内容锁随历史和致死步完成态实际变化更新，物理模块与上一预览逐字节相同；继承十三现行／十五历史图完整物理兼容证据，而非本轮重扫107615次后继。[当前证据](../../../data/manifests/four-column-compatibility-20261015.json)、[浏览器QA](../../../data/manifests/four-column-browser-20261015.json)。原证书、原种子、十五图653行规划资料保持；未生成新图、训练或写真人反馈。
 
-- 本轮评审已执行：《回位》《同行》取消改稿，原码保持；《归途》《后路》《暂驻·轮廓版》《再借·窄环版》按授权替换原槽位。当前十三图、名称与顺序不变。[交付报告](https://github.com/Pre-rice/ghost-maze/blob/main/docs/map-adjustments-20261014.md)与[反馈反思](../../archive/reviews/map-maintenance-review-20261014.md)。
+- 本轮评审已执行：《回位》《同行》取消改稿，原码保持；《归途》《后路》《暂驻·轮廓版》《再借·窄环版》按授权替换原槽位。当前十三图、名称与顺序不变。[交付报告](https://github.com/Pre-rice/ghost-maze-ai/blob/main/docs/archive/reviews/map-adjustments-report-20261014.md)与[反馈反思](../../archive/reviews/map-maintenance-review-20261014.md)。
 - 边界只能是墙，门／玻璃须连接两个活动格；本体导入导出、静态装配、编辑和显示约束统一。《后路》漏清理的旧边界门已修，原稿封存。修正前十三上架图与旧十五图的全部最优动作、可达物理后继和原参考保持，旧规划653行未改。[兼容证据](../../../data/manifests/boundary-integrity-20261014.json)。
 - 四份维护的全部最优无重合、冷开局、实际入场、编号无关与分享码／回放核验通过；《再借》缩为19格27步仍必须真实招回旧鬼阻挡守卫。[现行证据](../../../examples/gallery-maintenance-20261014/README.md)。旧来源humanQuality:null、图码、证书和评述不覆盖；《换岗》仍仅声明独立试玩可用，不能宣称中性入场。
 - 《相让》获真实负反馈：复杂性太低、容易解出，主要只有第2步后左或下。保持未入集，原图与证据保留；不再把单一局部选择的机制展示图作为当前主线候选交付。[复盘](../../archive/reviews/reciprocal-braking-review-20261014.md)。

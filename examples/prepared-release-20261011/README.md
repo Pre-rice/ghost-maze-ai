@@ -2,7 +2,7 @@
 
 用户否定《两面》《开路》后，本轮先构造“先取钥匙，随后回头布置却受阻”的困局，再检查突破是否改变取钥匙之前的安排。最终题为单层 19 格、两只鬼、一把钥匙、两个同组 A 按钮，含普通门、一次性数字门、单向门各一扇，三扇联动 A 门，无玻璃。没有改游戏规则或启动模型训练。
 
-[试玩](https://ghostmaze.novic.cc/?map=AADAADw8_PgAAAEwIDF0AdAQABAAAVQMWinOAEVUAAAAAAQgqoiIuMoAAAAACCAAgA)。地图、参考解法和后续用户评述统一维护在[本体总目录](https://github.com/Pre-rice/ghost-maze/blob/main/docs/ai-map-catalog.md)。2026-10-12 用户评价很容易解出、没有新意；本题未达到目标质量。删右侧 A 后最短仍为 31，两个按钮确实可以只留一个。见[实际反馈与删按钮核验](../../docs/archive/reviews/prepared-release-review-20261012.md)。原地图与生成时证据保留。
+[试玩](https://ghostmaze.novic.cc/?map=AADAADw8_PgAAAEwIDF0AdAQABAAAVQMWinOAEVUAAAAAAQgqoiIuMoAAAAACCAAgA)。地图、参考解法和后续用户评述统一维护在[本体总目录](https://github.com/Pre-rice/ghost-maze-ai/blob/main/docs/ai-map-catalog.md)。2026-10-12 用户评价很容易解出、没有新意；本题未达到目标质量。删右侧 A 后最短仍为 31，两个按钮确实可以只留一个。见[实际反馈与删按钮核验](../../docs/archive/reviews/prepared-release-review-20261012.md)。原地图与生成时证据保留。
 
 实际过程是手工逆向构造机制，再用共享规则搜索检查捷径。早期版本允许取钥匙后补救，另一个版本无解；增加承诺路线后虽成立，但随后精简发现，取钥匙引出的鬼本身就能形成回程阻碍，于是删去用来强制顺序的门。原图 23 格，起点改到上方左按钮；184 次精简尝试保留 7 项修改，最终 19 格。范围内最后审计没有预算未决，只声明单项删格、删实体、墙换空或实心的条件内局部精简，不证明全局最小，也不把精简当作质量评分。该轮精简明确保留两按钮，未检查按钮数量可否减少；后续删按钮对照确认冗余，不能沿用这一条件精简证明两个按钮必需。
 

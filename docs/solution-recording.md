@@ -24,7 +24,7 @@ AI 本地服务仅在通关时后台留档，不再增加录制面板、保存�
 
 正式真人资料在 data/solutions/；QA 仅写独立 runs/ 目录。服务端逐步核验操作和完整物理终局，同 ID 重试幂等，内容不同拒绝覆盖；研究 JSON 单条最多 2000 步，独立于本体操作码的更大上限。录制标识和研究 JSON 的 schemaVersion 不进入分享协议。
 
-每张新题同时提供无剧透试玩和折叠的参考回放。优先使用已有动作证书生成新码并更新[总目录](https://github.com/Pre-rice/ghost-maze/blob/main/docs/ai-map-catalog.md)，不为生成回放重复浏览器通关；QA 路线不能复制进真人目录。
+每张新题同时提供无剧透试玩和折叠的参考回放。优先使用已有动作证书生成新码并更新[总目录](https://github.com/Pre-rice/ghost-maze-ai/blob/main/docs/ai-map-catalog.md)，不为生成回放重复浏览器通关；QA 路线不能复制进真人目录。
 
 ## 历史迁移
 

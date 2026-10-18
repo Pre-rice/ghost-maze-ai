@@ -17,7 +17,7 @@
 
 - [新候选《后路》](../../../examples/deferred-key-cold-entry-20261012/README.md)：23 格、两鬼、三钥匙，A/B 各一按钮；开局无追逐，指定实际入场核对通过，59 动作无伤解与取物准备关系已核验；正式站初态已查看，用户评价不错、比上一张进步，认可取物顺序与规划，但仍线性、缺乏新意与惊喜。
 - [本轮产品结果与验收](https://github.com/Pre-rice/ghost-maze/blob/main/docs/archive/delivery/architecture-delivery-20261011.md)：功能、性能、地图及迁移边界。
-- [AI 地图总目录](https://github.com/Pre-rice/ghost-maze/blob/main/docs/ai-map-catalog.md)：556 份来源去重为 484 张，467 张合法新地图码，395 条当前规则无伤参考路线；含历史候选与对照，不等于正式作品数。
+- [AI 地图总目录](https://github.com/Pre-rice/ghost-maze-ai/blob/main/docs/ai-map-catalog.md)：556 份来源去重为 484 张，467 张合法新地图码，395 条当前规则无伤参考路线；含历史候选与对照，不等于正式作品数。
 - [新组合候选《换岗》](../../../examples/shelter-role-exchange-20261012/README.md)：21 格、两鬼、两钥匙，A/B 各一个按钮；保护位置相互接续，68 动作核验与正式入口初态检查通过；用户评价不错、复杂性适宜且简洁，但没有顿悟感。入口意见落实于《后路》，原反馈和题目保留。
 - [新候选《再借》](../../../examples/recruited-return-20261013/README.md)：21格、两鬼、一按钮，无钥匙与数字门，已经隔开的鬼要重新启用；最短44、精确复合关系全解及最优边界通过，待评价、未上架。
 - [新候选《借舍》](../../../examples/borrowed-room-20261013/README.md)：23格、两鬼、一按钮，无钥匙，普通门两面与停位的复用；43步、全部最优一按无重合，安全观察窗玻璃换墙物理策略恒等；正式入口，用户评价一般、缺乏新意，冗余对照已记录，未上架。

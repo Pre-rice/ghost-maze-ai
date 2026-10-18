@@ -1,6 +1,6 @@
 # 成对试玩与本地反馈
 
-> 2026-10-11 当前边界：反馈工具使用共同本体规则；原六图包与原反馈保留为历史证据，其中两张跨层图的全局楼梯和层内空楼梯表冲突，严格校验下不能直接重建。不要重跑下文旧 builder 覆盖原图。当前合法题目和回放统一见[地图总目录](https://github.com/Pre-rice/ghost-maze/blob/main/docs/ai-map-catalog.md)；回放不再使用独立录制页。以下批次说明和验收数字属于原实验。
+> 2026-10-11 当前边界：反馈工具使用共同本体规则；原六图包与原反馈保留为历史证据，其中两张跨层图的全局楼梯和层内空楼梯表冲突，严格校验下不能直接重建。不要重跑下文旧 builder 覆盖原图。当前合法题目和回放统一见[地图总目录](https://github.com/Pre-rice/ghost-maze-ai/blob/main/docs/ai-map-catalog.md)；回放不再使用独立录制页。以下批次说明和验收数字属于原实验。
 
 当前构建接口 `buildPacket(seed, groups)` 可显式传入合法地图组，每组为 `[familyId, A地图文件, B地图文件]`，文件为仓库相对路径或 file URL。它先校验原始资料，再求解和生成新码；默认旧六图组会明确报出楼梯冲突。新包另存后，通过 `startReviewServer({ packetFile, feedbackFile, recordingsDir })` 提供；不能覆盖原包或混写原反馈。测试仅在系统临时目录制作合法样例和试玩包。
 
