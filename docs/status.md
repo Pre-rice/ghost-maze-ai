@@ -8,6 +8,8 @@
 
 《同调》原图获实际负反馈：经典引鬼、普通门困鬼、逐个击破；控制位置和0的必要性没有建立用户期待的纠缠。用户优化版压为完整5×5，撤掉一处独立普通门保护、补中廊A，综合两种安置并改善轮廓，按原码入集。《留隙》获“太有意思了”，明确肯定匀称构型、绕圈调动与细节走位服务最终通路；按原图入集。后续先比较总体解法能否由已有困鬼套路直接复述，再查终点换侧、通道缩短与控制位置补偿；不把必要性、解长或局部策略失败当难度证据。没有新增训练或自动试玩。
 
+之后的不可逆通道构件与目标位置研究已阶段保存，没有递补新候选：安全错误开门存在，但单向优先挡鬼加外圈绕行仍可复述旧办法；整段压缩有保持与改变关键关系的不同结果。接着检验能否由持续互换角色形成更完整的空间安排，不以本次研究收尾停下。[研究范围与反例](archive/research/irreversible-windows-20261019.md)。
+
 ## 作品状态
 
 - [用户优化《同调》《换边》](../examples/user-gallery-20261019/README.md)：同调25格、85步、两种轨迹；换边12格、29步、唯一轨迹。全部最优无重合、去终点、中性初态、实际入场与编号无关通过；两份用户原码保持。与生成原件、原反馈分开保存。
@@ -25,6 +27,8 @@
 - 作品、历史候选和真实评述统一在本仓[地图总目录](ai-map-catalog.md)；精选设计摘要见[人读小册](https://github.com/Pre-rice/ghost-maze/blob/main/docs/map-design-guide.md)。
 
 ## 研究判断与资料
+
+- [机制影响与不可逆通道](archive/research/irreversible-windows-20261019.md)：原《同调》的普通替代、缩短补偿、独立取物环、有效／失去核心的压缩及双方接力失败分别留证；不是质量代理，未交付、训练或自动试玩。
 
 - [双门及共享中廊](archive/research/shared-courtyard-20261019.md)：固定门序未形成两种安全先开的选择；双庭初稿最优重合，错位稿意外绕过钥匙任务，纠正后均无解。本批停止、原件分开保存，不递补候选。
 
@@ -44,6 +48,6 @@
 - 近期《送客》《互锁》《转圜》均未形成用户认可的新意；必要性、跨阶段安排或多个鬼不能替代实际挑战评价。反馈已提炼至[方法](methodology.md)，不继续交付相似构件。
 - [空间安排研究](archive/research/spatial-control-20261018.md)及自动安排诊断保留原型、失败与反例；工具只提供机械证据，不作为趣味分或求解前自主规划能力。
 - 旧规划模型与行动段对照没有原生搜索替代收益，未据此替换现有方法；本轮未新增模型训练。历史15张规划图653行及亲缘拆分保持。[历史清单](../data/manifests/planning-library-20261014-v12.json)。
-- 原图、生成来源、真人反馈与 QA 分别保存；中央开关研究另存 cloud-data-20261018-planning-67.zip，校验见[冻结记录](../data/manifests/central-control-20261018.json)；实际反馈保留在快照68；恢复后24份研究原件保存在快照70；目标缓冲62份原件保存在快照71；反向开门及《寄存》实际反馈保存在快照72；70份共享空间原件保存在快照73；快照74为 cloud-data-20261018-planning-74.zip，[清单](../data/manifests/open-cross-lanes-20261018.json)另核对58份开放中央及三通道原件。快照75为 cloud-data-20261019-planning-75.zip，[清单](../data/manifests/control-and-crossing-20261019.json)另核对113份本阶段原件。快照76为 cloud-data-20261019-planning-76.zip，[清单](../data/manifests/paired-controls-20261019.json)另核对107份控制位置与取物原件，含《同调》公开证据；新增无字母转向单稿仍在研究，不覆写76原件。快照77为 cloud-data-20261019-planning-77.zip，[清单](../data/manifests/spatial-flow-20261019.json)另核对69份空间流研究原件。后续无条件对照另存新目录，不覆盖77原件。快照78为 cloud-data-20261019-planning-78.zip，[清单](../data/manifests/spatial-clearance-20261019.json)另核对41份精简、位置对照、输入纠错及《留隙》交付原件；错误去鬼的首轮局部策略结果明确排除原图判断和训练。最新有效包为 cloud-data-20261019-planning-79.zip，[本轮清单](../data/manifests/gallery-user-review-20261019.json)独立核对50份交付／研究原件及实际反馈，含用户两份原码和完整QA；之后的影响诊断及新构造另存，不回写79。69因连接中断未完成，原残包保留且不作有效资料；未称用户已下载。付费与 GPU 不自动启动。
+- 原图、生成来源、真人反馈与 QA 分别保存；中央开关研究另存 cloud-data-20261018-planning-67.zip，校验见[冻结记录](../data/manifests/central-control-20261018.json)；实际反馈保留在快照68；恢复后24份研究原件保存在快照70；目标缓冲62份原件保存在快照71；反向开门及《寄存》实际反馈保存在快照72；70份共享空间原件保存在快照73；快照74为 cloud-data-20261018-planning-74.zip，[清单](../data/manifests/open-cross-lanes-20261018.json)另核对58份开放中央及三通道原件。快照75为 cloud-data-20261019-planning-75.zip，[清单](../data/manifests/control-and-crossing-20261019.json)另核对113份本阶段原件。快照76为 cloud-data-20261019-planning-76.zip，[清单](../data/manifests/paired-controls-20261019.json)另核对107份控制位置与取物原件，含《同调》公开证据；新增无字母转向单稿仍在研究，不覆写76原件。快照77为 cloud-data-20261019-planning-77.zip，[清单](../data/manifests/spatial-flow-20261019.json)另核对69份空间流研究原件。后续无条件对照另存新目录，不覆盖77原件。快照78为 cloud-data-20261019-planning-78.zip，[清单](../data/manifests/spatial-clearance-20261019.json)另核对41份精简、位置对照、输入纠错及《留隙》交付原件；错误去鬼的首轮局部策略结果明确排除原图判断和训练。快照79为 cloud-data-20261019-planning-79.zip，[本轮清单](../data/manifests/gallery-user-review-20261019.json)独立核对50份交付／研究原件及实际反馈，含用户两份原码和完整QA；之后的影响诊断及新构造另存，不回写79。最新有效包为 cloud-data-20261019-planning-80.zip，[研究清单](../data/manifests/irreversible-windows-20261019.json)独立核对74份影响对照、开放方室、共角、通道和返程原件，无新候选交付；后续角色总影响分析另存，不回写80。69因连接中断未完成，原残包保留且不作有效资料；未称用户已下载。付费与 GPU 不自动启动。
 
 整理前的完整状态及研究入口保留在[历史快照](archive/worklogs/status-before-repository-separation-20261018.md)，无需为接手重跑已完成研究。
