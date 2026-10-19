@@ -1,5 +1,19 @@
 # AI 地图总目录
 
+## 2026-10-19 新候选：《同调》
+
+6×6包络、单层27格、双鬼，无钥匙。一个A与两处B按钮，一0门；最优58步，六条原始最优按鬼移动与停顿归为一种。全部最优去终点、编号无关、中性初态与指定实际入场通过。**尚无真人评价，未入地图集；原十六图与顺序保持。**
+
+[试玩](https://ghostmaze.novic.cc/?map=AADB-SkpOen4AAF14DEaBQgTw3Q1VCkFIK5BXILHIVVAAARjCKqoqqiq5RZ5yogQAAAAGEEAABg) · [设计、来源与验收](../examples/paired-controls-20261019/README.md)
+
+<details><summary>设计预期与参考（含答案）</summary>
+
+同样切回B门态，从内侧操作会留下不同鬼位；0先保护操作A，随后经关A准备消费，改作引鬼通道。外B可以省，需多绕十步；不把两B均必需、牺牲外B或某条参考的按键次序当全解事实。设计预期是门态、观察位置和退出方向的共同准备，是否带来新的认识仍待真人体验。
+
+[58步参考](https://ghostmaze.novic.cc/?map=AADB-SkpOen4AAF14DEaBQgTw3Q1VCkFIK5BXILHIVVAAARjCKqoqqiq5RZ5yogQAAAAGEEAABg&replay=EI2J1R5on89qLoA_9VaMZfwApXA)。从37格删任务、压缩为方形27格；原生查询与81项无条件对照分开留证，不赋质量分或继承旧图好评。
+
+</details>
+
 ## 2026-10-18 新候选：《寄存》
 
 **实际反馈：** “新地图没什么难度啊，就是普通的引鬼困鬼，随随便便就解出来了。”没有达到挑战目标，不入集；[原话及范围](../data/manifests/goal-buffer-review-20261018.json)。以下生成时预期与原件保持，不再以此题的停位／顺序变体作为新意进展。
