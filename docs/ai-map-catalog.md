@@ -1,8 +1,20 @@
 # AI 地图总目录
 
+## 2026-10-19 用户优化与两图入集
+
+当前18张，发现顺序保持。八张由站主亲自优化的图以`*`标记：错位、接力、借影、换岗、周转、换席、换边、同调。AI提出并获认可的维护不加标记。[真实评述与归属](../data/manifests/gallery-user-review-20261019.json)。
+
+| 图 | 当前决定与实际反馈 | 验收 |
+| --- | --- | --- |
+| [同调 *](https://ghostmaze.novic.cc/?map=AADB8fHx8fAAAAE14DAaBvgSwtwUggCgHOArgK4FVAAAAAYwCUFSCzzkEAAAAAAIAMIAADA) | 用户认为原版仍是普通门困鬼、逐个击破；亲自压成5×5，去左下门、补中廊A，综合两种困鬼并改善轮廓。优化版入集，不转移给原图 | 25格双鬼，85步、两种含停顿鬼轨迹；全部最优、去终点、中性入场和编号无关通过 |
+| [换边 *](https://ghostmaze.novic.cc/?map=AWM4wZDw4UMCAwNjUIMPkwIvA8MCF-4vAqwMILCFs0T4AyeYySIAAA) | 用户原码替换；外形更匀称，开局不被追逐 | 12格单鬼，29步、唯一轨迹；全部最优、去终点、中性入场和编号无关通过 |
+| [留隙](https://ghostmaze.novic.cc/?map=AWM4-BEIPjAwMCYnuLkosIc6Oug0MjiGMjAwcChyCZ0SUWRhAAEOAA) | “太有意思了”，构型匀称简洁，绕圈调动和细节走位为最后通路创造条件；原版入集 | 25格三鬼，39步、三种轨迹，完整QA保持 |
+
+[用户改图与验收](../examples/user-gallery-20261019/README.md)。原地图及生成时来源不覆盖，反馈不补数值分、用时或实际路线，未训练或自动试玩。以下两候选的原生成记录保留，当前采用本条决定。
+
 ## 2026-10-19 新候选：《留隙》
 
-完整5×5、25格、三鬼、一钥匙，0与1两道门，无按钮。最优39步、三种含停顿鬼轨迹；全部最优去终点、地图与动作码往返、中性初态、指定实际入场及全可达排列／变编号核对通过。**尚无真人评价，未入地图集；原十六图保持。**
+完整5×5、25格、三鬼、一钥匙，0与1两道门，无按钮。最优39步、三种含停顿鬼轨迹；全部最优去终点、地图与动作码往返、中性初态、指定实际入场及全可达排列／变编号核对通过。**生成时尚无真人评价；现已获本轮明确好评并按原版入集，见上。**
 
 [试玩](https://ghostmaze.novic.cc/?map=AWM4-BEIPjAwMCYnuLkosIc6Oug0MjiGMjAwcChyCZ0SUWRhAAEOAA) · [设计、来源与验收](../examples/spatial-clearance-20261019/README.md)
 
@@ -16,7 +28,7 @@
 
 ## 2026-10-19 新候选：《同调》
 
-6×6包络、单层27格、双鬼，无钥匙。一个A与两处B按钮，一0门；最优58步，六条原始最优按鬼移动与停顿归为一种。全部最优去终点、编号无关、中性初态与指定实际入场通过。**尚无真人评价，未入地图集；原十六图与顺序保持。**
+6×6包络、单层27格、双鬼，无钥匙。一个A与两处B按钮，一0门；最优58步，六条原始最优按鬼移动与停顿归为一种。全部最优去终点、编号无关、中性初态与指定实际入场通过。**生成时尚无真人评价；用户随后认为原图容易、缺乏纠缠，另给优化版入集，见上。**
 
 [试玩](https://ghostmaze.novic.cc/?map=AADB-SkpOen4AAF14DEaBQgTw3Q1VCkFIK5BXILHIVVAAARjCKqoqqiq5RZ5yogQAAAAGEEAABg) · [设计、来源与验收](../examples/paired-controls-20261019/README.md)
 
@@ -32,7 +44,7 @@
 
 **实际反馈：** “新地图没什么难度啊，就是普通的引鬼困鬼，随随便便就解出来了。”没有达到挑战目标，不入集；[原话及范围](../data/manifests/goal-buffer-review-20261018.json)。以下生成时预期与原件保持，不再以此题的停位／顺序变体作为新意进展。
 
-单层21格、双鬼，无钥匙，完整7×3轮廓；两处A按钮、一处B按钮。最优33步，九种含停顿鬼轨迹；全部最优无伤、无重合、去终点安全，中性初态和指定实际入场通过。**尚无真人评价，未入地图集；原十六图与顺序保持。**
+单层21格、双鬼，无钥匙，完整7×3轮廓；两处A按钮、一处B按钮。最优33步，九种含停顿鬼轨迹；全部最优无伤、无重合、去终点安全，中性初态和指定实际入场通过。**生成时尚无真人评价；后续认为普通、容易，不入集，见上。**
 
 [试玩](https://ghostmaze.novic.cc/?map=AWM4wPDv3z8GBgZG5QdaUiwV7E4BDFyrZqx6yBIawgACfoVHmudMEAAxmQQYmjgA) · [设计、来源与验收](../examples/goal-buffer-20261018/README.md)
 

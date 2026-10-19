@@ -1,0 +1,349 @@
+{
+  "recordedOn": "2026-10-19",
+  "source": "actual_user_message_not_solver_inference",
+  "rawFeedbackPath": "data/feedback/gallery-user-review-20261019.json",
+  "qualityScore": null,
+  "reportedFullActions": null,
+  "reportedTime": null,
+  "reportedHintUse": null,
+  "trainingAdded": false,
+  "originalGenerationSourcesUnmodified": true,
+  "galleryCount": 18,
+  "galleryOrder": "first_discovery_unchanged",
+  "userOptimizedTitles": [
+    "错位",
+    "接力",
+    "借影",
+    "换岗",
+    "周转",
+    "换席",
+    "换边",
+    "同调"
+  ],
+  "mark": "* 经站主优化",
+  "assessments": [
+    {
+      "title": "同调",
+      "originalExample": "examples/paired-controls-20261019",
+      "originalAssessment": "经典的引鬼思想，两个困鬼处就是普通的门；两鬼逐个击破，没什么纠缠，有经验容易通关。",
+      "currentExample": "examples/user-gallery-20261019/paired-controls",
+      "userProvidedRevision": true,
+      "decision": "add_user_revision",
+      "userRevisionExplanation": [
+        "去左下普通门，综合普通门与门旁按钮两种困鬼方式",
+        "终点从中廊右边移至左边，删右列和两片虚空",
+        "纵向缩短一格，在中廊增加A补偿引鬼能力",
+        "A/B排列、扩目标房填左上虚空，完整5×5"
+      ],
+      "mapCode": "AADB8fHx8fAAAAE14DAaBvgSwtwUggCgHOArgK4FVAAAAAYwCUFSCzzkEAAAAAAIAMIAADA",
+      "mapId": "69c0c229e124e2ded40888aaf6f34bbf30e764fb73232d902df32768af4f7d88",
+      "optimalSteps": 85,
+      "rawOptimal": "6",
+      "ghostTrajectories": "2",
+      "allOptimalQaPassed": true,
+      "coldAndActualEntryPassed": true
+    },
+    {
+      "title": "换边",
+      "originalExample": "examples/room-transfer-20261012",
+      "currentExample": "examples/user-gallery-20261019/side-change",
+      "userProvidedRevision": true,
+      "decision": "replace_with_exact_user_code",
+      "userAssessment": "外形更加匀称，且开局不会直接被鬼追逐。",
+      "mapCode": "AWM4wZDw4UMCAwNjUIMPkwIvA8MCF-4vAqwMILCFs0T4AyeYySIAAA",
+      "mapId": "2b3ab41ceafbf8c15c7760f3fb458d8fcd69db3697d66f810edab43495225cc4",
+      "optimalSteps": 29,
+      "rawOptimal": "1",
+      "ghostTrajectories": "1",
+      "allOptimalQaPassed": true,
+      "coldAndActualEntryPassed": true
+    },
+    {
+      "title": "留隙",
+      "currentExample": "examples/spatial-clearance-20261019",
+      "userProvidedRevision": false,
+      "decision": "add_original_candidate",
+      "rawAssessment": "《留隙》太有意思了！不仅地图构型匀称简洁，而且思路也很有趣。通过巧妙地绕圈调动，细节走位，来为最后的通路创造条件。加入地图集。",
+      "mapCode": "AWM4-BEIPjAwMCYnuLkosIc6Oug0MjiGMjAwcChyCZ0SUWRhAAEOAA",
+      "optimalSteps": 39,
+      "ghostTrajectories": "3",
+      "allOptimalQaPreviouslyPassed": true,
+      "mapUnmodified": true
+    }
+  ],
+  "privateArchive": {
+    "file": "artifacts/cloud-data-20261019-planning-79.zip",
+    "files": 12516,
+    "bytes": 159320383,
+    "sha256": "58c12fb90573655c9b07802961f8a1f9c12e3aa4375849872313db4c16a359fe",
+    "zipIntegrityCheckPassed": true,
+    "rawFileHashesIndependentlyChecked": 50,
+    "actualFeedbackHashIndependentlyChecked": true,
+    "downloadedByUser": false
+  },
+  "validation": {
+    "date": "2026-10-19",
+    "publicVerifierPassed": true,
+    "cloudCheckPassed": true,
+    "desktopAndMobileLightAndDarkPassed": true,
+    "all18ThumbnailsPreloadedBeforeOpening": true,
+    "optimizedMarks": 8,
+    "galleryCount": 18,
+    "gameCoreUnmodified": true,
+    "skillNotAutoInvoked": true,
+    "humanQuality": null,
+    "role": "implementation_and_physics_QA_not_human_feedback"
+  },
+  "files": [
+    {
+      "path": "runs/paired-unlock-20261019/design-card.md",
+      "bytes": 1400,
+      "sha256": "f89843021ddafcc13ee716d859517ed69069ef761064f0721b669cdda14b396e"
+    },
+    {
+      "path": "runs/paired-unlock-20261019/disposition.md",
+      "bytes": 614,
+      "sha256": "9a6b3bc4b04f3077232b56239fdadc703ff7049534efc90a724117e7556538a1"
+    },
+    {
+      "path": "runs/paired-unlock-20261019/search-v2.log",
+      "bytes": 1283,
+      "sha256": "36fdcc6f0904803ccbea8ebbe4499fa25bfa1b35aaed7f735160497f96753d6f"
+    },
+    {
+      "path": "runs/paired-unlock-20261019/search-v2.mjs",
+      "bytes": 4635,
+      "sha256": "845ed0ce9b32fbff146f76d22210ea00ecc92feb0398fcaa82b646aaafc83730"
+    },
+    {
+      "path": "runs/paired-unlock-20261019/search-v2.ndjson",
+      "bytes": 466125,
+      "sha256": "f751e3c539cab4794041e962f2ed9a7c0ca0e6d3ddeb080ef95bc4e1fa813f7e"
+    },
+    {
+      "path": "runs/paired-unlock-20261019/search.log",
+      "bytes": 997,
+      "sha256": "5afd61530eff42a37de9ca28ad34eb5bf75c164e1abdc02188ef774fa687a206"
+    },
+    {
+      "path": "runs/paired-unlock-20261019/search.mjs",
+      "bytes": 4630,
+      "sha256": "cb7649cc8d3031c349284b37c87926222548ac29e59ab5e5fa9b24fbee6aca18"
+    },
+    {
+      "path": "runs/paired-unlock-20261019/summary-v2.json",
+      "bytes": 410,
+      "sha256": "f40a15c98317387d40ae45af01bbf58b6cabe7a62fbc3f58318ba881e66bfad0"
+    },
+    {
+      "path": "runs/paired-courtyards-20261019/build.mjs",
+      "bytes": 1985,
+      "sha256": "aaea422e45a7b4001d39ff2725092ef00c181acc70ac1fea0fe768ef639bec76"
+    },
+    {
+      "path": "runs/paired-courtyards-20261019/design-card.md",
+      "bytes": 1159,
+      "sha256": "46ab7d8d05d33408b7b87a8425563a22771a0b2c5859d2ffcd04fc0260936bec"
+    },
+    {
+      "path": "runs/paired-courtyards-20261019/disposition.md",
+      "bytes": 520,
+      "sha256": "6163cd2eb2a32bd02b9c7464b0d87b69914c723140ba7db3aea91cd9871ecff7"
+    },
+    {
+      "path": "runs/paired-courtyards-20261019/goal-fixed-probe.log",
+      "bytes": 3554,
+      "sha256": "199ff9642a6e5abc41b61bf0986402b2a3d2f62443e660f6064fc4a4b720a4dd"
+    },
+    {
+      "path": "runs/paired-courtyards-20261019/goal-fixed-probe.mjs",
+      "bytes": 3264,
+      "sha256": "0754c3bf95011d9c11df875575e97fc139915f2b8aa463f45a95ed43eaba4ed1"
+    },
+    {
+      "path": "runs/paired-courtyards-20261019/goal-fixed-probe.ndjson",
+      "bytes": 207362,
+      "sha256": "59cbe35d21b81e4552f0430cc167e0c5d07173f5cbacd6fef4c28f16f33224b5"
+    },
+    {
+      "path": "runs/paired-courtyards-20261019/goal-fixed-summary.json",
+      "bytes": 87,
+      "sha256": "b1c1e3e50127cbfe58cd5c2bc22ec2300583547a7bd1fc82e5f3ff4f9e54bb69"
+    },
+    {
+      "path": "runs/paired-courtyards-20261019/offset-card.md",
+      "bytes": 663,
+      "sha256": "bd3627f1f8fb37d2e3f539470c285d5d87dbe8205d4ad022e19c1e78830a65a4"
+    },
+    {
+      "path": "runs/paired-courtyards-20261019/offset-probe.log",
+      "bytes": 3907,
+      "sha256": "e5467ff2175497c17830a148494ffb3507cf6ba5cd69500ce0afea4b030f0ffa"
+    },
+    {
+      "path": "runs/paired-courtyards-20261019/offset-probe.mjs",
+      "bytes": 2600,
+      "sha256": "c5a35184fdbc4c283789912e0d48abb206f002ce278e7397469954ab4280a94f"
+    },
+    {
+      "path": "runs/paired-courtyards-20261019/offset-probe.ndjson",
+      "bytes": 182267,
+      "sha256": "7199198cb43abc5efb4c1f18758b10bbd24682ab357c0683e41275bf2484eae9"
+    },
+    {
+      "path": "runs/paired-courtyards-20261019/offset-summary.json",
+      "bytes": 39576,
+      "sha256": "570e33e4ac8216d55001c750581c1fe1dca81c4bd0d56109ec3533cee83ddf6e"
+    },
+    {
+      "path": "runs/paired-courtyards-20261019/offset-task-correction.md",
+      "bytes": 742,
+      "sha256": "71ffec051f707498b3f5fb22c9eba4b681400ddf264d00d0f2b785f42d4e686d"
+    },
+    {
+      "path": "runs/paired-courtyards-20261019/probe.log",
+      "bytes": 4536,
+      "sha256": "c12df35f015db738e72f5e3a2cb229a1a249bc3c2153a0dcf4ff88b7ad45fc6a"
+    },
+    {
+      "path": "runs/paired-courtyards-20261019/probe.mjs",
+      "bytes": 3989,
+      "sha256": "2c3461e472f653c4c4332f24c4486dc707b3cb064f5b1fe6ee35cbfdcaadee8a"
+    },
+    {
+      "path": "runs/paired-courtyards-20261019/probe.ndjson",
+      "bytes": 300544,
+      "sha256": "e971e6c60587667b5aabfee8aa16e3f460f60378dc486e0e6707940b59b8e9e7"
+    },
+    {
+      "path": "runs/paired-courtyards-20261019/summary.json",
+      "bytes": 88,
+      "sha256": "23d865388bd93dcdd3e74ac92d860ed29c273c05825449d167aad1e560cd34bb"
+    },
+    {
+      "path": "runs/user-gallery-20261019/browser-check.json",
+      "bytes": 1139,
+      "sha256": "5cd1229eb20299029661212bd1b5e8b5a97749d344b34c4500b477c134ea055f"
+    },
+    {
+      "path": "runs/user-gallery-20261019/browser-check.log",
+      "bytes": 889,
+      "sha256": "f68bf80e8389b6af3f61c3734eef1bdd7956aa1b0c3bde268e34902a8ca69307"
+    },
+    {
+      "path": "runs/user-gallery-20261019/browser-check.py",
+      "bytes": 3902,
+      "sha256": "6956eed69a3ab86dcae56c5ff06f7331d1fccc1208a9491a9f868ecac00434f0"
+    },
+    {
+      "path": "runs/user-gallery-20261019/cloud-check.log",
+      "bytes": 17490,
+      "sha256": "f6a11e42edcc6b60ec06c48b974ccdc5ea772ff0ee9682e6903f32c95d52f275"
+    },
+    {
+      "path": "runs/user-gallery-20261019/gallery-1360-dark.png",
+      "bytes": 65738,
+      "sha256": "0a3209dbd1d595d2f4b272980c5f9f7171d3f65084714814dd450013f215c14c"
+    },
+    {
+      "path": "runs/user-gallery-20261019/gallery-1360-light.png",
+      "bytes": 69871,
+      "sha256": "1220c5ca918f613c9354a582b5df376a2aa7a72db9b557f669150ce07102fa8f"
+    },
+    {
+      "path": "runs/user-gallery-20261019/gallery-390-dark.png",
+      "bytes": 31345,
+      "sha256": "9202cb272cc69c2626dd25d7f9c6b666b68832d95e0652239aa4d6c21f1373ae"
+    },
+    {
+      "path": "runs/user-gallery-20261019/gallery-390-light.png",
+      "bytes": 33434,
+      "sha256": "3cee89f3b38f9eb5ebc60aa2f318b2cb7a6c93e9dd940dd50b88584a938c4eb3"
+    },
+    {
+      "path": "runs/user-gallery-20261019/gallery-new-1360-dark.png",
+      "bytes": 60529,
+      "sha256": "2d6d06fcd21c928376680a202ecdb896a058e943ebce288db21e8a64379a4f54"
+    },
+    {
+      "path": "runs/user-gallery-20261019/gallery-new-1360-light.png",
+      "bytes": 63709,
+      "sha256": "d216185ff46e441511b51b6b0ab8a73768351049809da9cd5f976ef0ab85deca"
+    },
+    {
+      "path": "runs/user-gallery-20261019/gallery-new-390-dark.png",
+      "bytes": 30848,
+      "sha256": "2df04128ea2bce512c23fd6dbf44e4ddadf8eaed3c5f0f8efae04a296e7b7575"
+    },
+    {
+      "path": "runs/user-gallery-20261019/gallery-new-390-light.png",
+      "bytes": 32317,
+      "sha256": "79af4683c1a7b87ac59cd661803f6913b3b95ab75e5abbaca068b6e158201ed1"
+    },
+    {
+      "path": "runs/user-gallery-20261019/inspect-v2.log",
+      "bytes": 1088,
+      "sha256": "efbc835eb4a67c2e2431b2ee650e1a45c914d0c0c4d721722c75f7c18e9863ee"
+    },
+    {
+      "path": "runs/user-gallery-20261019/inspect.log",
+      "bytes": 779,
+      "sha256": "0c7ae237ea8ea488db759e98d356a6567f6e1aa1c47ddccdde4eae5f0d8b3e74"
+    },
+    {
+      "path": "runs/user-gallery-20261019/inspect.mjs",
+      "bytes": 773,
+      "sha256": "1d1fa08eb681588b87312b435fa2269c6aeb5b5b76a8542a811f452895d37b01"
+    },
+    {
+      "path": "runs/user-gallery-20261019/public-delivery/README.md",
+      "bytes": 2700,
+      "sha256": "ad00da22b7cfcef41b793603f6f7d2104fbf9dcdbcb7d73c1d30cd0c50cb30ed"
+    },
+    {
+      "path": "runs/user-gallery-20261019/public-delivery/paired-controls/evidence.json",
+      "bytes": 256816,
+      "sha256": "730f647fbadcce018bac308fde27eb3fdce16f17354b1e5566296401db27d403"
+    },
+    {
+      "path": "runs/user-gallery-20261019/public-delivery/paired-controls/map.json",
+      "bytes": 13298,
+      "sha256": "4eeff2db0b317e77d31b1525073cc7fe074e6ff4a19879642d971676765c2707"
+    },
+    {
+      "path": "runs/user-gallery-20261019/public-delivery/paired-controls/source.json",
+      "bytes": 607,
+      "sha256": "5b846628fac7dadaebd767e54ce4e145ea2f6fb68d0a7b158525fc5fe03a70d5"
+    },
+    {
+      "path": "runs/user-gallery-20261019/public-delivery/side-change/evidence.json",
+      "bytes": 31945,
+      "sha256": "ab2f219542c036e7f089376e7193192f8e9a772ad232472005230efcdf9ecef9"
+    },
+    {
+      "path": "runs/user-gallery-20261019/public-delivery/side-change/map.json",
+      "bytes": 12584,
+      "sha256": "48786cd49cc53bc13c2753d2fe68ca90c50f412f8b75e3c8ab1fb4c1233af841"
+    },
+    {
+      "path": "runs/user-gallery-20261019/public-delivery/side-change/source.json",
+      "bytes": 588,
+      "sha256": "b846c6338a6006d6d19e74052d7f741c39094177d183497ff1786473226cd952"
+    },
+    {
+      "path": "runs/user-gallery-20261019/public-delivery/verify.mjs",
+      "bytes": 5532,
+      "sha256": "c4a47fad7589016c224592f813ad4a31bd88d469c939ed64ef069f4a77158a9b"
+    },
+    {
+      "path": "runs/user-gallery-20261019/public-verifier.log",
+      "bytes": 646,
+      "sha256": "29781338832cd71a7dc9506da97fbdee17fe17eceb28f2e7f77addc8da5dff86"
+    },
+    {
+      "path": "runs/user-gallery-20261019/validation.json",
+      "bytes": 374,
+      "sha256": "9c08247ec9b1a265f069572e94fd58e2793360bf96dffa9377b89fe3d01552f3"
+    }
+  ]
+}
