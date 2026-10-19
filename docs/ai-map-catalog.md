@@ -1,5 +1,17 @@
 # AI 地图总目录
 
+## 2026-10-19 新候选：《易手》
+
+完整5×5、25格、三鬼；零门、零按钮、零钥匙，只有墙和通路。最优24步、唯一含停顿鬼轨迹；全部最优去终点、编号无关、中性出生、指定实际入场与分享往返通过。尚无真人评价，未入地图集；现行18张保持。
+
+[试玩](https://ghostmaze.novic.cc/?map=AADAAPj4-Pj4AAFAIEtlgAVUIgABAIKqAAAACCEVCCEEIIAAAA) · [设计、来源与验收](../examples/turnover-passage-20261019/README.md)
+
+<details><summary>设计预期与参考（含答案）</summary>
+
+目标前的鬼被引走后，另一追者可能补上。中排退出方向与左上小院的换向共同安排最后返回，不把已知挡鬼动作、新形状或24步当成质量证明。[参考回放](https://ghostmaze.novic.cc/?map=AADAAPj4-Pj4AAFAIEtlgAVUIgABAIKqAAAACCEVCCEEIIAAAA&replay=APyVfYn_VpgjP1g)。从42格四鬼稿压为25格三鬼，删去无实质影响的取物任务和三段内墙；母稿、失败与判断分开保留，不继承其它图的好评。
+
+</details>
+
 ## 2026-10-19 用户优化与两图入集
 
 当前18张，发现顺序保持。八张由站主亲自优化的图以`*`标记：错位、接力、借影、换岗、周转、换席、换边、同调。AI提出并获认可的维护不加标记。[真实评述与归属](../data/manifests/gallery-user-review-20261019.json)。
