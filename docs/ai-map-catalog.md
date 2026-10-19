@@ -1,5 +1,17 @@
 # AI 地图总目录
 
+## 2026-10-19 新候选：《逆渡》
+
+完整5×5、25格双鬼，一把钥匙、0与目标1，无其它机关。最优22步、24种含停顿鬼轨迹；全部最优去终点、编号无关、一步实际中性入场、分享往返及桌面／手机求解回放通过。尚无真人评价，未入地图集；现行18张保持。
+
+[试玩](https://ghostmaze.novic.cc/?map=AADAAPj4-Pj4AAEVICSMAGAFVAyAAAAyKqAAAACUhBCFCCEEAAAAIAA) · [设计、来源与验收](../examples/reverse-gate-20261019/README.md)
+
+<details><summary>设计预期与参考（含答案）</summary>
+
+自然想从出生附近的下方开0再去钥匙房，实际必须先绕到上方首次开门，准备两鬼的跟随次序与钥匙房退路。具体交接次数不是全部最优共同条件；这里只是待体验的认识，不宣称已有顿悟。[参考回放](https://ghostmaze.novic.cc/?map=AADAAPj4-Pj4AAEVICSMAGAFVAyAAAAyKqAAAACUhBCFCCEEAAAAIAA&replay=EDS5yTIP3aIzNoA)。从36格三鬼稿去独立尾段、冗余门，再折回5×5并移中终点；未继承《留隙》或其它图的好评。
+
+</details>
+
 ## 2026-10-19 新候选：《对门》
 
 完整5×5、25格、双鬼，两扇反相A门、一扇普通门，内外各一个A按钮，无其它机关。最优26步、唯一含停顿鬼轨迹；全部最优去终点、编号无关、中性初态、明确的六步实际接入、分享往返和桌面／手机求解回放通过。尚无真人评价，未入地图集；现行18张保持。
