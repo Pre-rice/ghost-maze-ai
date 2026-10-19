@@ -1,5 +1,17 @@
 # AI 地图总目录
 
+## 2026-10-19 新候选：《对门》
+
+完整5×5、25格、双鬼，两扇反相A门、一扇普通门，内外各一个A按钮，无其它机关。最优26步、唯一含停顿鬼轨迹；全部最优去终点、编号无关、中性初态、明确的六步实际接入、分享往返和桌面／手机求解回放通过。尚无真人评价，未入地图集；现行18张保持。
+
+[试玩](https://ghostmaze.novic.cc/?map=AADAAPj4-Pj4AAG8YCnCAxgTQACqgAABwFcoVUAAAAEEIIQQlhCCAAAAAQ) · [设计、来源与验收](../examples/shared-trap-20261019/README.md)
+
+<details><summary>设计预期与参考（含答案）</summary>
+
+互补门不能分别封住两鬼，预期是先准备上室的接纳条件，再把下鬼带进去共同留下；不能只把旧鬼安置完就不再引动它。内A移动一格后，原本可先引下鬼的20步方案不再成立，形成26步的新准备要求；仍不把必要性或步数当成顿悟证据。[参考回放](https://ghostmaze.novic.cc/?map=AADAAPj4-Pj4AAG8YCnCAxgTQACqgAABwFcoVUAAAAEEIIQQlhCCAAAAAQ&replay=EFnIuFGBZPQomfZw)。尚无真人体验，不转移《调度》《再借》好评。
+
+</details>
+
 ## 2026-10-19 新候选：《易手》
 
 完整5×5、25格、三鬼；零门、零按钮、零钥匙，只有墙和通路。最优24步、唯一含停顿鬼轨迹；全部最优去终点、编号无关、中性出生、指定实际入场与分享往返通过。尚无真人评价，未入地图集；现行18张保持。
