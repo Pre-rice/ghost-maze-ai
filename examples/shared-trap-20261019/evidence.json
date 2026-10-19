@@ -1,0 +1,4360 @@
+{
+  "qa": {
+    "mapId": "c70bb0eb599f74b980f8837693ce4700777e8e226d5bfd06f843cb2d66df134f",
+    "ruleset": "sha256:762b163064dac2464603c002d5a46782675f0a78274e93f68aa36555683cd91a",
+    "reference": {
+      "schemaVersion": 1,
+      "status": "solved",
+      "reason": "goal_reached",
+      "ruleset": "sha256:762b163064dac2464603c002d5a46782675f0a78274e93f68aa36555683cd91a",
+      "mapId": "c70bb0eb599f74b980f8837693ce4700777e8e226d5bfd06f843cb2d66df134f",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "restrictions": []
+      },
+      "optimality": "proven",
+      "solution": {
+        "actions": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "R",
+          "D",
+          "U",
+          "U",
+          "L",
+          "L",
+          "U",
+          "L",
+          "D",
+          "L",
+          "D",
+          "R",
+          "R",
+          "D",
+          "L",
+          "D",
+          "R"
+        ],
+        "totalActions": 26,
+        "movementCost": 22
+      },
+      "search": {
+        "expanded": 510,
+        "transitions": 2547,
+        "discovered": 522,
+        "exhausted": false,
+        "elapsedMs": 102.50247399999999,
+        "budget": {
+          "nodeBudget": 1000000,
+          "stateBudget": 1000000,
+          "budgetMs": 30000
+        }
+      }
+    },
+    "fast": {
+      "schemaVersion": 1,
+      "status": "solved",
+      "reason": "goal_reached",
+      "ruleset": "sha256:762b163064dac2464603c002d5a46782675f0a78274e93f68aa36555683cd91a",
+      "mapId": "c70bb0eb599f74b980f8837693ce4700777e8e226d5bfd06f843cb2d66df134f",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "withGhosts": true,
+        "restrictions": []
+      },
+      "optimality": "proven",
+      "solution": {
+        "actions": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "R",
+          "D",
+          "U",
+          "U",
+          "L",
+          "L",
+          "U",
+          "L",
+          "D",
+          "L",
+          "D",
+          "R",
+          "R",
+          "D",
+          "L",
+          "D",
+          "R"
+        ],
+        "totalActions": 26,
+        "movementCost": 22
+      },
+      "search": {
+        "algorithm": "astar",
+        "expanded": 476,
+        "transitions": 2380,
+        "discovered": 489,
+        "exhausted": false,
+        "elapsedMs": 24.776181999999977,
+        "budget": {
+          "nodeBudget": 1000000,
+          "stateBudget": 1000000,
+          "budgetMs": 30000
+        }
+      }
+    },
+    "allResult": {
+      "status": "solved",
+      "reason": "goal_reached",
+      "expanded": 511,
+      "transitions": 2555,
+      "discovered": 525,
+      "totalActions": 26
+    },
+    "count": "1",
+    "boundary": {
+      "status": "safe",
+      "reason": "all_optimal_routes_avoid_overlap",
+      "mapId": "c70bb0eb599f74b980f8837693ce4700777e8e226d5bfd06f843cb2d66df134f",
+      "ruleset": "sha256:762b163064dac2464603c002d5a46782675f0a78274e93f68aa36555683cd91a",
+      "policy": "all_optimal_routes_avoid_overlap_v2",
+      "glassCount": 0,
+      "expanded": 508,
+      "transitions": 2540,
+      "discovered": 521,
+      "optimum": 26,
+      "ignoredFatalOverlap": 1,
+      "observedNonFatalOverlap": {
+        "witness": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "R",
+          "D",
+          "U",
+          "U",
+          "L",
+          "L",
+          "L",
+          "U",
+          "R",
+          "R",
+          "R",
+          "D",
+          "D",
+          "D",
+          "L",
+          "L"
+        ],
+        "conflict": {
+          "target": {
+            "x": 4,
+            "y": 4
+          },
+          "contenders": [
+            {
+              "from": {
+                "x": 5,
+                "y": 4
+              },
+              "seesAfter": false
+            },
+            {
+              "from": {
+                "x": 4,
+                "y": 3
+              },
+              "seesAfter": false
+            }
+          ],
+          "decision": "equal_priority_overlap",
+          "capturesPlayer": false,
+          "layer": 0
+        }
+      },
+      "safeOptimalWitness": [
+        "L",
+        "U",
+        "U",
+        "D",
+        "D",
+        "L",
+        "D",
+        "U",
+        "R",
+        "R",
+        "D",
+        "U",
+        "U",
+        "L",
+        "L",
+        "U",
+        "L",
+        "D",
+        "L",
+        "D",
+        "R",
+        "R",
+        "D",
+        "L",
+        "D",
+        "R"
+      ],
+      "elapsedMs": 50,
+      "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+    },
+    "cold": true,
+    "physicalAudit": {
+      "reachable": 997,
+      "transitions": 4955,
+      "permutations": 2,
+      "compared": 9910,
+      "includesFatalActions": true
+    },
+    "noEndSafeRoutes": 1,
+    "mapCode": "AADAAPj4-Pj4AAG8YCnCAxgTQACqgAABwFcoVUAAAAEEIIQQlhCCAAAAAQ",
+    "replayCode": "EFnIuFGBZPQomfZw",
+    "actions": [
+      "L",
+      "U",
+      "U",
+      "D",
+      "D",
+      "L",
+      "D",
+      "U",
+      "R",
+      "R",
+      "D",
+      "U",
+      "U",
+      "L",
+      "L",
+      "U",
+      "L",
+      "D",
+      "L",
+      "D",
+      "R",
+      "R",
+      "D",
+      "L",
+      "D",
+      "R"
+    ],
+    "routes": [
+      {
+        "actions": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "R",
+          "D",
+          "U",
+          "U",
+          "L",
+          "L",
+          "U",
+          "L",
+          "D",
+          "L",
+          "D",
+          "R",
+          "R",
+          "D",
+          "L",
+          "D",
+          "R"
+        ],
+        "replayCode": "EFnIuFGBZPQomfZw",
+        "controls": [
+          {
+            "step": 1,
+            "letter": "A",
+            "at": [
+              3,
+              4
+            ]
+          },
+          {
+            "step": 6,
+            "letter": "A",
+            "at": [
+              3,
+              4
+            ]
+          },
+          {
+            "step": 11,
+            "letter": "A",
+            "at": [
+              5,
+              4
+            ]
+          },
+          {
+            "step": 24,
+            "letter": "A",
+            "at": [
+              3,
+              4
+            ]
+          }
+        ],
+        "trace": [
+          {
+            "step": 1,
+            "action": "L",
+            "p": [
+              0,
+              3,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  5,
+                  2
+                ],
+                [
+                  5,
+                  5
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 2,
+            "action": "U",
+            "p": [
+              0,
+              3,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  5,
+                  2
+                ],
+                [
+                  5,
+                  5
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 3,
+            "action": "U",
+            "p": [
+              0,
+              3,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  4,
+                  2
+                ],
+                [
+                  5,
+                  5
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 4,
+            "action": "D",
+            "p": [
+              0,
+              3,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  2
+                ],
+                [
+                  5,
+                  5
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 5,
+            "action": "D",
+            "p": [
+              0,
+              3,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  5,
+                  5
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 6,
+            "action": "L",
+            "p": [
+              0,
+              3,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  5,
+                  5
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 7,
+            "action": "D",
+            "p": [
+              0,
+              3,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  4,
+                  5
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 8,
+            "action": "U",
+            "p": [
+              0,
+              3,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  3,
+                  5
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 9,
+            "action": "R",
+            "p": [
+              0,
+              4,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  3,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 10,
+            "action": "R",
+            "p": [
+              0,
+              5,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  3,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 11,
+            "action": "D",
+            "p": [
+              0,
+              5,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  3,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 12,
+            "action": "U",
+            "p": [
+              0,
+              5,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  4,
+                  3
+                ],
+                [
+                  3,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 13,
+            "action": "U",
+            "p": [
+              0,
+              5,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  5,
+                  3
+                ],
+                [
+                  3,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 14,
+            "action": "L",
+            "p": [
+              0,
+              4,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  5,
+                  2
+                ],
+                [
+                  3,
+                  4
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 15,
+            "action": "L",
+            "p": [
+              0,
+              3,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  4,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 16,
+            "action": "U",
+            "p": [
+              0,
+              3,
+              1
+            ],
+            "ghosts": [
+              [
+                [
+                  4,
+                  2
+                ],
+                [
+                  3,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": [
+              {
+                "target": {
+                  "x": 3,
+                  "y": 2
+                },
+                "contenders": [
+                  {
+                    "from": {
+                      "x": 4,
+                      "y": 2
+                    },
+                    "seesAfter": false
+                  },
+                  {
+                    "from": {
+                      "x": 3,
+                      "y": 3
+                    },
+                    "seesAfter": true
+                  }
+                ],
+                "decision": "visible_target_priority",
+                "capturesPlayer": false,
+                "layer": 0
+              }
+            ]
+          },
+          {
+            "step": 17,
+            "action": "L",
+            "p": [
+              0,
+              2,
+              1
+            ],
+            "ghosts": [
+              [
+                [
+                  4,
+                  2
+                ],
+                [
+                  3,
+                  1
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 18,
+            "action": "D",
+            "p": [
+              0,
+              2,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  2
+                ],
+                [
+                  2,
+                  1
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 19,
+            "action": "L",
+            "p": [
+              0,
+              1,
+              2
+            ],
+            "ghosts": [
+              [
+                [
+                  2,
+                  2
+                ],
+                [
+                  2,
+                  1
+                ]
+              ]
+            ],
+            "diagnostics": [
+              {
+                "target": {
+                  "x": 2,
+                  "y": 2
+                },
+                "contenders": [
+                  {
+                    "from": {
+                      "x": 3,
+                      "y": 2
+                    },
+                    "seesAfter": true
+                  },
+                  {
+                    "from": {
+                      "x": 2,
+                      "y": 1
+                    },
+                    "seesAfter": false
+                  }
+                ],
+                "decision": "visible_target_priority",
+                "capturesPlayer": false,
+                "layer": 0
+              }
+            ]
+          },
+          {
+            "step": 20,
+            "action": "D",
+            "p": [
+              0,
+              1,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  1,
+                  2
+                ],
+                [
+                  2,
+                  1
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 21,
+            "action": "R",
+            "p": [
+              0,
+              2,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  1,
+                  3
+                ],
+                [
+                  2,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 22,
+            "action": "R",
+            "p": [
+              0,
+              3,
+              3
+            ],
+            "ghosts": [
+              [
+                [
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": [
+              {
+                "target": {
+                  "x": 2,
+                  "y": 3
+                },
+                "contenders": [
+                  {
+                    "from": {
+                      "x": 1,
+                      "y": 3
+                    },
+                    "seesAfter": true
+                  },
+                  {
+                    "from": {
+                      "x": 2,
+                      "y": 2
+                    },
+                    "seesAfter": false
+                  }
+                ],
+                "decision": "visible_target_priority",
+                "capturesPlayer": false,
+                "layer": 0
+              }
+            ]
+          },
+          {
+            "step": 23,
+            "action": "D",
+            "p": [
+              0,
+              3,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 24,
+            "action": "L",
+            "p": [
+              0,
+              3,
+              4
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 25,
+            "action": "D",
+            "p": [
+              0,
+              3,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 26,
+            "action": "R",
+            "p": [
+              0,
+              4,
+              5
+            ],
+            "ghosts": [
+              [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  2
+                ]
+              ]
+            ],
+            "diagnostics": []
+          }
+        ]
+      }
+    ],
+    "role": "physical_QA_not_human_quality",
+    "entry": {
+      "external": [
+        0,
+        0,
+        3
+      ],
+      "actions": [
+        "R",
+        "R",
+        "R",
+        "R",
+        "D",
+        "L"
+      ],
+      "internal": [
+        0,
+        3,
+        4
+      ],
+      "keys": 0,
+      "externalGhosts": 0,
+      "exteriorSealedExceptEntrance": true,
+      "prefixLeavesAllGhostsUnchanged": true,
+      "initialInteriorEqual": true,
+      "wholeOptimalRoutesInteriorEqual": true,
+      "scope": "从西侧进入上室并经普通门到出生，六步均不引动鬼；不证明任意外部入场或任意单步抵达"
+    }
+  },
+  "grouping": {
+    "status": "solved",
+    "count": "1",
+    "prefixes": 27,
+    "assigned": 27,
+    "routes": [
+      [
+        "L",
+        "U",
+        "U",
+        "D",
+        "D",
+        "L",
+        "D",
+        "U",
+        "R",
+        "R",
+        "D",
+        "U",
+        "U",
+        "L",
+        "L",
+        "U",
+        "L",
+        "D",
+        "L",
+        "D",
+        "R",
+        "R",
+        "D",
+        "L",
+        "D",
+        "R"
+      ]
+    ]
+  },
+  "analysis": {
+    "queries": [
+      {
+        "name": "visitor-first-or-simultaneous",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 219,
+          "transitions": 1095,
+          "discovered": 219,
+          "totalActions": null
+        },
+        "actions": null,
+        "scope": "原图全部无伤无复活通关，允许非最优重合，去终点安全；历史位／计数进完整键"
+      },
+      {
+        "name": "no-host-move-after-visitor",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 249,
+          "transitions": 1245,
+          "discovered": 249,
+          "totalActions": null
+        },
+        "actions": null,
+        "scope": "原图全部无伤无复活通关，允许非最优重合，去终点安全；历史位／计数进完整键"
+      },
+      {
+        "name": "never-import-visitor",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 441,
+          "transitions": 2205,
+          "discovered": 441,
+          "totalActions": null
+        },
+        "actions": null,
+        "scope": "原图全部无伤无复活通关，允许非最优重合，去终点安全；历史位／计数进完整键"
+      },
+      {
+        "name": "win-with-ghost-outside-upper-room",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 991,
+          "transitions": 4955,
+          "discovered": 991,
+          "totalActions": null
+        },
+        "actions": null,
+        "scope": "原图全部无伤无复活通关，允许非最优重合，去终点安全；历史位／计数进完整键"
+      },
+      {
+        "name": "no-common-close",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 803,
+          "transitions": 4015,
+          "discovered": 803,
+          "totalActions": null
+        },
+        "actions": null,
+        "scope": "原图全部无伤无复活通关，允许非最优重合，去终点安全；历史位／计数进完整键"
+      },
+      {
+        "name": "no-main-preparation-before-visitor",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 405,
+          "transitions": 2025,
+          "discovered": 405,
+          "totalActions": null
+        },
+        "actions": null,
+        "scope": "原图全部无伤无复活通关，允许非最优重合，去终点安全；历史位／计数进完整键"
+      },
+      {
+        "name": "outside-only",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 379,
+          "transitions": 1895,
+          "discovered": 379,
+          "totalActions": null
+        },
+        "actions": null,
+        "scope": "原图全部无伤无复活通关，允许非最优重合，去终点安全；历史位／计数进完整键"
+      },
+      {
+        "name": "inside-only",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 160,
+          "transitions": 800,
+          "discovered": 160,
+          "totalActions": null
+        },
+        "actions": null,
+        "scope": "原图全部无伤无复活通关，允许非最优重合，去终点安全；历史位／计数进完整键"
+      },
+      {
+        "name": "at-most-two-A-presses",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 577,
+          "transitions": 2885,
+          "discovered": 577,
+          "totalActions": null
+        },
+        "actions": null,
+        "scope": "原图全部无伤无复活通关，允许非最优重合，去终点安全；历史位／计数进完整键"
+      },
+      {
+        "name": "no-priority",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 446,
+          "transitions": 2230,
+          "discovered": 446,
+          "totalActions": null
+        },
+        "actions": null,
+        "scope": "原图全部无伤无复活通关，允许非最优重合，去终点安全；历史位／计数进完整键"
+      },
+      {
+        "name": "host-never-loses-to-visitor",
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 473,
+          "transitions": 2362,
+          "discovered": 479,
+          "totalActions": 28
+        },
+        "actions": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "R",
+          "D",
+          "U",
+          "U",
+          "L",
+          "L",
+          "L",
+          "U",
+          "R",
+          "R",
+          "R",
+          "D",
+          "D",
+          "D",
+          "L",
+          "L",
+          "L",
+          "D",
+          "R"
+        ],
+        "scope": "原图全部无伤无复活通关，允许非最优重合，去终点安全；历史位／计数进完整键"
+      }
+    ],
+    "choices": [
+      {
+        "step": 1,
+        "p": [
+          3,
+          4
+        ],
+        "prefix": [],
+        "options": [
+          {
+            "a": "R",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 510,
+              "transitions": 2547,
+              "discovered": 522,
+              "totalActions": 27
+            },
+            "suffix": [
+              "L",
+              "L",
+              "U",
+              "U",
+              "D",
+              "D",
+              "L",
+              "D",
+              "U",
+              "R",
+              "R",
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "D",
+            "selected": false,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 203,
+              "transitions": 1015,
+              "discovered": 203,
+              "totalActions": null
+            },
+            "suffix": null
+          },
+          {
+            "a": "L",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 510,
+              "transitions": 2547,
+              "discovered": 522,
+              "totalActions": 25
+            },
+            "suffix": [
+              "U",
+              "U",
+              "D",
+              "D",
+              "L",
+              "D",
+              "U",
+              "R",
+              "R",
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "p": [
+          3,
+          4
+        ],
+        "prefix": [
+          "L"
+        ],
+        "options": [
+          {
+            "a": "U",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 510,
+              "transitions": 2547,
+              "discovered": 522,
+              "totalActions": 24
+            },
+            "suffix": [
+              "U",
+              "D",
+              "D",
+              "L",
+              "D",
+              "U",
+              "R",
+              "R",
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "R",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 510,
+              "transitions": 2547,
+              "discovered": 522,
+              "totalActions": 26
+            },
+            "suffix": [
+              "U",
+              "L",
+              "U",
+              "D",
+              "D",
+              "L",
+              "D",
+              "U",
+              "R",
+              "R",
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "L",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 510,
+              "transitions": 2547,
+              "discovered": 522,
+              "totalActions": 26
+            },
+            "suffix": [
+              "L",
+              "U",
+              "U",
+              "D",
+              "D",
+              "L",
+              "D",
+              "U",
+              "R",
+              "R",
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "p": [
+          3,
+          3
+        ],
+        "prefix": [
+          "L",
+          "U"
+        ],
+        "options": [
+          {
+            "a": "U",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 435,
+              "transitions": 2172,
+              "discovered": 450,
+              "totalActions": 23
+            },
+            "suffix": [
+              "D",
+              "D",
+              "L",
+              "D",
+              "U",
+              "R",
+              "R",
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "R",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 510,
+              "transitions": 2547,
+              "discovered": 522,
+              "totalActions": 25
+            },
+            "suffix": [
+              "L",
+              "U",
+              "D",
+              "D",
+              "L",
+              "D",
+              "U",
+              "R",
+              "R",
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "D",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 510,
+              "transitions": 2547,
+              "discovered": 522,
+              "totalActions": 25
+            },
+            "suffix": [
+              "U",
+              "U",
+              "D",
+              "D",
+              "L",
+              "D",
+              "U",
+              "R",
+              "R",
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "L",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 510,
+              "transitions": 2547,
+              "discovered": 522,
+              "totalActions": 25
+            },
+            "suffix": [
+              "R",
+              "U",
+              "D",
+              "D",
+              "L",
+              "D",
+              "U",
+              "R",
+              "R",
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "p": [
+          3,
+          2
+        ],
+        "prefix": [
+          "L",
+          "U",
+          "U"
+        ],
+        "options": [
+          {
+            "a": "U",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 439,
+              "transitions": 2192,
+              "discovered": 451,
+              "totalActions": 26
+            },
+            "suffix": [
+              "R",
+              "D",
+              "D",
+              "L",
+              "D",
+              "L",
+              "D",
+              "U",
+              "R",
+              "R",
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "D",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 435,
+              "transitions": 2172,
+              "discovered": 450,
+              "totalActions": 22
+            },
+            "suffix": [
+              "D",
+              "L",
+              "D",
+              "U",
+              "R",
+              "R",
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "L",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 435,
+              "transitions": 2172,
+              "discovered": 450,
+              "totalActions": 24
+            },
+            "suffix": [
+              "D",
+              "R",
+              "D",
+              "L",
+              "D",
+              "U",
+              "R",
+              "R",
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          }
+        ]
+      },
+      {
+        "step": 5,
+        "p": [
+          3,
+          3
+        ],
+        "prefix": [
+          "L",
+          "U",
+          "U",
+          "D"
+        ],
+        "options": [
+          {
+            "a": "R",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 439,
+              "transitions": 2192,
+              "discovered": 451,
+              "totalActions": 25
+            },
+            "suffix": [
+              "U",
+              "L",
+              "D",
+              "D",
+              "L",
+              "D",
+              "U",
+              "R",
+              "R",
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "D",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 417,
+              "transitions": 2082,
+              "discovered": 433,
+              "totalActions": 21
+            },
+            "suffix": [
+              "L",
+              "D",
+              "U",
+              "R",
+              "R",
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "L",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 435,
+              "transitions": 2172,
+              "discovered": 450,
+              "totalActions": 25
+            },
+            "suffix": [
+              "U",
+              "R",
+              "D",
+              "D",
+              "L",
+              "D",
+              "U",
+              "R",
+              "R",
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          }
+        ]
+      },
+      {
+        "step": 6,
+        "p": [
+          3,
+          4
+        ],
+        "prefix": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D"
+        ],
+        "options": [
+          {
+            "a": "R",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 439,
+              "transitions": 2192,
+              "discovered": 451,
+              "totalActions": 28
+            },
+            "suffix": [
+              "U",
+              "U",
+              "L",
+              "R",
+              "D",
+              "L",
+              "D",
+              "L",
+              "D",
+              "U",
+              "R",
+              "R",
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "L",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 417,
+              "transitions": 2082,
+              "discovered": 433,
+              "totalActions": 20
+            },
+            "suffix": [
+              "D",
+              "U",
+              "R",
+              "R",
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          }
+        ]
+      },
+      {
+        "step": 7,
+        "p": [
+          3,
+          4
+        ],
+        "prefix": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L"
+        ],
+        "options": [
+          {
+            "a": "R",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 426,
+              "transitions": 2127,
+              "discovered": 443,
+              "totalActions": 21
+            },
+            "suffix": [
+              "L",
+              "D",
+              "U",
+              "R",
+              "R",
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "D",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 153,
+              "transitions": 762,
+              "discovered": 165,
+              "totalActions": 19
+            },
+            "suffix": [
+              "U",
+              "R",
+              "R",
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          }
+        ]
+      },
+      {
+        "step": 8,
+        "p": [
+          3,
+          5
+        ],
+        "prefix": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D"
+        ],
+        "options": [
+          {
+            "a": "U",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 150,
+              "transitions": 747,
+              "discovered": 162,
+              "totalActions": 18
+            },
+            "suffix": [
+              "R",
+              "R",
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "L",
+            "selected": false,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 2,
+              "transitions": 10,
+              "discovered": 2,
+              "totalActions": null
+            },
+            "suffix": null
+          }
+        ]
+      },
+      {
+        "step": 9,
+        "p": [
+          3,
+          4
+        ],
+        "prefix": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D",
+          "U"
+        ],
+        "options": [
+          {
+            "a": "R",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 149,
+              "transitions": 742,
+              "discovered": 161,
+              "totalActions": 17
+            },
+            "suffix": [
+              "R",
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          }
+        ]
+      },
+      {
+        "step": 10,
+        "p": [
+          4,
+          4
+        ],
+        "prefix": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R"
+        ],
+        "options": [
+          {
+            "a": "R",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 149,
+              "transitions": 742,
+              "discovered": 161,
+              "totalActions": 16
+            },
+            "suffix": [
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          }
+        ]
+      },
+      {
+        "step": 11,
+        "p": [
+          5,
+          4
+        ],
+        "prefix": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "R"
+        ],
+        "options": [
+          {
+            "a": "U",
+            "selected": false,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 56,
+              "transitions": 280,
+              "discovered": 56,
+              "totalActions": null
+            },
+            "suffix": null
+          },
+          {
+            "a": "D",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 149,
+              "transitions": 742,
+              "discovered": 161,
+              "totalActions": 15
+            },
+            "suffix": [
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "L",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 149,
+              "transitions": 742,
+              "discovered": 161,
+              "totalActions": 17
+            },
+            "suffix": [
+              "R",
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          }
+        ]
+      },
+      {
+        "step": 12,
+        "p": [
+          5,
+          4
+        ],
+        "prefix": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "R",
+          "D"
+        ],
+        "options": [
+          {
+            "a": "U",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 89,
+              "transitions": 442,
+              "discovered": 101,
+              "totalActions": 14
+            },
+            "suffix": [
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "D",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 149,
+              "transitions": 742,
+              "discovered": 161,
+              "totalActions": 16
+            },
+            "suffix": [
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "L",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 149,
+              "transitions": 742,
+              "discovered": 161,
+              "totalActions": 16
+            },
+            "suffix": [
+              "R",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          }
+        ]
+      },
+      {
+        "step": 13,
+        "p": [
+          5,
+          3
+        ],
+        "prefix": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "R",
+          "D",
+          "U"
+        ],
+        "options": [
+          {
+            "a": "U",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 89,
+              "transitions": 442,
+              "discovered": 101,
+              "totalActions": 13
+            },
+            "suffix": [
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "D",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 89,
+              "transitions": 442,
+              "discovered": 101,
+              "totalActions": 15
+            },
+            "suffix": [
+              "L",
+              "U",
+              "U",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          }
+        ]
+      },
+      {
+        "step": 14,
+        "p": [
+          5,
+          2
+        ],
+        "prefix": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "R",
+          "D",
+          "U",
+          "U"
+        ],
+        "options": [
+          {
+            "a": "U",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 89,
+              "transitions": 442,
+              "discovered": 101,
+              "totalActions": 14
+            },
+            "suffix": [
+              "L",
+              "D",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "L",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 89,
+              "transitions": 442,
+              "discovered": 101,
+              "totalActions": 12
+            },
+            "suffix": [
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          }
+        ]
+      },
+      {
+        "step": 15,
+        "p": [
+          4,
+          2
+        ],
+        "prefix": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "R",
+          "D",
+          "U",
+          "U",
+          "L"
+        ],
+        "options": [
+          {
+            "a": "U",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 89,
+              "transitions": 442,
+              "discovered": 101,
+              "totalActions": 15
+            },
+            "suffix": [
+              "R",
+              "D",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "D",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 89,
+              "transitions": 442,
+              "discovered": 101,
+              "totalActions": 15
+            },
+            "suffix": [
+              "R",
+              "U",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "L",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 62,
+              "transitions": 307,
+              "discovered": 74,
+              "totalActions": 11
+            },
+            "suffix": [
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          }
+        ]
+      },
+      {
+        "step": 16,
+        "p": [
+          3,
+          2
+        ],
+        "prefix": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "R",
+          "D",
+          "U",
+          "U",
+          "L",
+          "L"
+        ],
+        "options": [
+          {
+            "a": "U",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 43,
+              "transitions": 212,
+              "discovered": 55,
+              "totalActions": 10
+            },
+            "suffix": [
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "L",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 24,
+              "transitions": 117,
+              "discovered": 30,
+              "totalActions": 12
+            },
+            "suffix": [
+              "U",
+              "R",
+              "R",
+              "R",
+              "D",
+              "D",
+              "D",
+              "L",
+              "L",
+              "L",
+              "D",
+              "R"
+            ]
+          }
+        ]
+      },
+      {
+        "step": 17,
+        "p": [
+          3,
+          1
+        ],
+        "prefix": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "R",
+          "D",
+          "U",
+          "U",
+          "L",
+          "L",
+          "U"
+        ],
+        "options": [
+          {
+            "a": "L",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 42,
+              "transitions": 207,
+              "discovered": 54,
+              "totalActions": 9
+            },
+            "suffix": [
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          }
+        ]
+      },
+      {
+        "step": 18,
+        "p": [
+          2,
+          1
+        ],
+        "prefix": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "R",
+          "D",
+          "U",
+          "U",
+          "L",
+          "L",
+          "U",
+          "L"
+        ],
+        "options": [
+          {
+            "a": "D",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 36,
+              "transitions": 177,
+              "discovered": 48,
+              "totalActions": 8
+            },
+            "suffix": [
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "L",
+            "selected": false,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 5,
+              "transitions": 25,
+              "discovered": 5,
+              "totalActions": null
+            },
+            "suffix": null
+          }
+        ]
+      },
+      {
+        "step": 19,
+        "p": [
+          2,
+          2
+        ],
+        "prefix": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "R",
+          "D",
+          "U",
+          "U",
+          "L",
+          "L",
+          "U",
+          "L",
+          "D"
+        ],
+        "options": [
+          {
+            "a": "D",
+            "selected": false,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 11,
+              "transitions": 55,
+              "discovered": 11,
+              "totalActions": null
+            },
+            "suffix": null
+          },
+          {
+            "a": "L",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 24,
+              "transitions": 117,
+              "discovered": 36,
+              "totalActions": 7
+            },
+            "suffix": [
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          }
+        ]
+      },
+      {
+        "step": 20,
+        "p": [
+          1,
+          2
+        ],
+        "prefix": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "R",
+          "D",
+          "U",
+          "U",
+          "L",
+          "L",
+          "U",
+          "L",
+          "D",
+          "L"
+        ],
+        "options": [
+          {
+            "a": "D",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 23,
+              "transitions": 112,
+              "discovered": 35,
+              "totalActions": 6
+            },
+            "suffix": [
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          }
+        ]
+      },
+      {
+        "step": 21,
+        "p": [
+          1,
+          3
+        ],
+        "prefix": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "R",
+          "D",
+          "U",
+          "U",
+          "L",
+          "L",
+          "U",
+          "L",
+          "D",
+          "L",
+          "D"
+        ],
+        "options": [
+          {
+            "a": "R",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 20,
+              "transitions": 97,
+              "discovered": 32,
+              "totalActions": 5
+            },
+            "suffix": [
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "D",
+            "selected": false,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 2,
+              "transitions": 10,
+              "discovered": 2,
+              "totalActions": null
+            },
+            "suffix": null
+          }
+        ]
+      },
+      {
+        "step": 22,
+        "p": [
+          2,
+          3
+        ],
+        "prefix": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "R",
+          "D",
+          "U",
+          "U",
+          "L",
+          "L",
+          "U",
+          "L",
+          "D",
+          "L",
+          "D",
+          "R"
+        ],
+        "options": [
+          {
+            "a": "R",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 18,
+              "transitions": 87,
+              "discovered": 30,
+              "totalActions": 4
+            },
+            "suffix": [
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "D",
+            "selected": false,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 1,
+              "transitions": 5,
+              "discovered": 1,
+              "totalActions": null
+            },
+            "suffix": null
+          }
+        ]
+      },
+      {
+        "step": 23,
+        "p": [
+          3,
+          3
+        ],
+        "prefix": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "R",
+          "D",
+          "U",
+          "U",
+          "L",
+          "L",
+          "U",
+          "L",
+          "D",
+          "L",
+          "D",
+          "R",
+          "R"
+        ],
+        "options": [
+          {
+            "a": "R",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 22,
+              "transitions": 107,
+              "discovered": 26,
+              "totalActions": 5
+            },
+            "suffix": [
+              "D",
+              "L",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "D",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 7,
+              "transitions": 32,
+              "discovered": 12,
+              "totalActions": 3
+            },
+            "suffix": [
+              "L",
+              "D",
+              "R"
+            ]
+          }
+        ]
+      },
+      {
+        "step": 24,
+        "p": [
+          3,
+          4
+        ],
+        "prefix": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "R",
+          "D",
+          "U",
+          "U",
+          "L",
+          "L",
+          "U",
+          "L",
+          "D",
+          "L",
+          "D",
+          "R",
+          "R",
+          "D"
+        ],
+        "options": [
+          {
+            "a": "R",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 163,
+              "transitions": 812,
+              "discovered": 175,
+              "totalActions": 18
+            },
+            "suffix": [
+              "U",
+              "U",
+              "U",
+              "R",
+              "D",
+              "L",
+              "L",
+              "U",
+              "L",
+              "D",
+              "L",
+              "D",
+              "R",
+              "R",
+              "D",
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "L",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 3,
+              "transitions": 12,
+              "discovered": 5,
+              "totalActions": 2
+            },
+            "suffix": [
+              "D",
+              "R"
+            ]
+          }
+        ]
+      },
+      {
+        "step": 25,
+        "p": [
+          3,
+          4
+        ],
+        "prefix": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "R",
+          "D",
+          "U",
+          "U",
+          "L",
+          "L",
+          "U",
+          "L",
+          "D",
+          "L",
+          "D",
+          "R",
+          "R",
+          "D",
+          "L"
+        ],
+        "options": [
+          {
+            "a": "R",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 6,
+              "transitions": 27,
+              "discovered": 11,
+              "totalActions": 3
+            },
+            "suffix": [
+              "L",
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "D",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 1,
+              "transitions": 2,
+              "discovered": 3,
+              "totalActions": 1
+            },
+            "suffix": [
+              "R"
+            ]
+          }
+        ]
+      },
+      {
+        "step": 26,
+        "p": [
+          3,
+          5
+        ],
+        "prefix": [
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "R",
+          "D",
+          "U",
+          "U",
+          "L",
+          "L",
+          "U",
+          "L",
+          "D",
+          "L",
+          "D",
+          "R",
+          "R",
+          "D",
+          "L",
+          "D"
+        ],
+        "options": [
+          {
+            "a": "U",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 3,
+              "transitions": 12,
+              "discovered": 5,
+              "totalActions": 2
+            },
+            "suffix": [
+              "D",
+              "R"
+            ]
+          },
+          {
+            "a": "R",
+            "selected": true,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 0,
+              "transitions": 0,
+              "discovered": 1,
+              "totalActions": 0
+            },
+            "suffix": []
+          },
+          {
+            "a": "L",
+            "selected": false,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 2,
+              "transitions": 7,
+              "discovered": 5,
+              "totalActions": 2
+            },
+            "suffix": [
+              "R",
+              "R"
+            ]
+          }
+        ]
+      }
+    ],
+    "prefixes": [
+      {
+        "name": "visitor-first",
+        "prefix": [
+          "D"
+        ],
+        "player": [
+          3,
+          5
+        ],
+        "ghosts": [
+          [
+            5,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 203,
+          "transitions": 1015,
+          "discovered": 203,
+          "totalActions": null
+        },
+        "suffix": null
+      },
+      {
+        "name": "visitor-in-hall",
+        "prefix": [
+          "D",
+          "U",
+          "R"
+        ],
+        "player": [
+          4,
+          4
+        ],
+        "ghosts": [
+          [
+            5,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 75,
+          "transitions": 375,
+          "discovered": 75,
+          "totalActions": null
+        },
+        "suffix": null
+      },
+      {
+        "name": "wrong-ordinary-parking-then-invite",
+        "prefix": [
+          "L",
+          "U",
+          "U",
+          "L",
+          "D",
+          "R",
+          "R",
+          "D",
+          "L",
+          "L",
+          "D"
+        ],
+        "player": [
+          3,
+          5
+        ],
+        "ghosts": [
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 114,
+          "transitions": 570,
+          "discovered": 114,
+          "totalActions": null
+        },
+        "suffix": null
+      }
+    ],
+    "reductions": [
+      {
+        "name": "upper-A-empty",
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 201,
+          "transitions": 1002,
+          "discovered": 270,
+          "totalActions": 8
+        },
+        "actions": [
+          "D",
+          "U",
+          "U",
+          "R",
+          "D",
+          "L",
+          "D",
+          "R"
+        ],
+        "boundary": {
+          "status": "safe",
+          "reason": "all_optimal_routes_avoid_overlap",
+          "mapId": "4b73972655ff89a2a068ee937b73d8c10da6ae58f6f772c59c768c978c115d6c",
+          "ruleset": "sha256:762b163064dac2464603c002d5a46782675f0a78274e93f68aa36555683cd91a",
+          "policy": "all_optimal_routes_avoid_overlap_v2",
+          "glassCount": 0,
+          "expanded": 243,
+          "transitions": 1215,
+          "discovered": 312,
+          "optimum": 8,
+          "ignoredFatalOverlap": 2,
+          "observedNonFatalOverlap": {
+            "witness": [
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "R",
+              "U"
+            ],
+            "conflict": {
+              "target": {
+                "x": 2,
+                "y": 2
+              },
+              "contenders": [
+                {
+                  "from": {
+                    "x": 3,
+                    "y": 2
+                  },
+                  "seesAfter": false
+                },
+                {
+                  "from": {
+                    "x": 1,
+                    "y": 2
+                  },
+                  "seesAfter": false
+                }
+              ],
+              "decision": "equal_priority_overlap",
+              "capturesPlayer": false,
+              "layer": 0
+            }
+          },
+          "safeOptimalWitness": [
+            "D",
+            "U",
+            "U",
+            "R",
+            "D",
+            "L",
+            "D",
+            "R"
+          ],
+          "elapsedMs": 28,
+          "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+        },
+        "referenceNoEndSafe": true
+      },
+      {
+        "name": "upper-A-solid",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 314,
+          "transitions": 1570,
+          "discovered": 314,
+          "totalActions": null
+        },
+        "actions": null
+      },
+      {
+        "name": "upper-A-door",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 509,
+          "transitions": 2545,
+          "discovered": 509,
+          "totalActions": null
+        },
+        "actions": null
+      },
+      {
+        "name": "lower-A-empty",
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 252,
+          "transitions": 1257,
+          "discovered": 314,
+          "totalActions": 9
+        },
+        "actions": [
+          "L",
+          "D",
+          "U",
+          "U",
+          "R",
+          "D",
+          "L",
+          "D",
+          "R"
+        ],
+        "boundary": {
+          "status": "safe",
+          "reason": "all_optimal_routes_avoid_overlap",
+          "mapId": "c99278c1d7be4772c21bbee09ef050baa0919c5cd83703348f36458995d045fd",
+          "ruleset": "sha256:762b163064dac2464603c002d5a46782675f0a78274e93f68aa36555683cd91a",
+          "policy": "all_optimal_routes_avoid_overlap_v2",
+          "glassCount": 0,
+          "expanded": 262,
+          "transitions": 1310,
+          "discovered": 325,
+          "optimum": 9,
+          "ignoredFatalOverlap": 2,
+          "observedNonFatalOverlap": {
+            "witness": [
+              "L",
+              "D",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "R",
+              "U"
+            ],
+            "conflict": {
+              "target": {
+                "x": 2,
+                "y": 2
+              },
+              "contenders": [
+                {
+                  "from": {
+                    "x": 3,
+                    "y": 2
+                  },
+                  "seesAfter": false
+                },
+                {
+                  "from": {
+                    "x": 1,
+                    "y": 2
+                  },
+                  "seesAfter": false
+                }
+              ],
+              "decision": "equal_priority_overlap",
+              "capturesPlayer": false,
+              "layer": 0
+            }
+          },
+          "safeOptimalWitness": [
+            "L",
+            "D",
+            "U",
+            "U",
+            "R",
+            "D",
+            "L",
+            "D",
+            "R"
+          ],
+          "elapsedMs": 23,
+          "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+        },
+        "referenceNoEndSafe": true
+      },
+      {
+        "name": "lower-A-solid",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 206,
+          "transitions": 1030,
+          "discovered": 206,
+          "totalActions": null
+        },
+        "actions": null
+      },
+      {
+        "name": "lower-A-door",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 430,
+          "transitions": 2150,
+          "discovered": 430,
+          "totalActions": null
+        },
+        "actions": null
+      },
+      {
+        "name": "ordinary-empty",
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 380,
+          "transitions": 1897,
+          "discovered": 399,
+          "totalActions": 16
+        },
+        "actions": [
+          "D",
+          "U",
+          "R",
+          "U",
+          "L",
+          "L",
+          "D",
+          "L",
+          "U",
+          "R",
+          "R",
+          "R",
+          "D",
+          "L",
+          "D",
+          "R"
+        ],
+        "boundary": {
+          "status": "conflict",
+          "reason": "optimal_solution_uses_overlap",
+          "mapId": "0b9e1a0a47bbebc5fb792230a7dc4433a9940af0447b8c8450ea870c6c95454a",
+          "ruleset": "sha256:762b163064dac2464603c002d5a46782675f0a78274e93f68aa36555683cd91a",
+          "policy": "all_optimal_routes_avoid_overlap_v2",
+          "glassCount": 0,
+          "expanded": 390,
+          "transitions": 1947,
+          "discovered": 401,
+          "optimum": 16,
+          "ignoredFatalOverlap": 60,
+          "observedNonFatalOverlap": {
+            "witness": [
+              "D",
+              "U",
+              "R",
+              "U",
+              "L",
+              "L",
+              "L",
+              "U",
+              "R",
+              "U"
+            ],
+            "conflict": {
+              "target": {
+                "x": 2,
+                "y": 2
+              },
+              "contenders": [
+                {
+                  "from": {
+                    "x": 3,
+                    "y": 2
+                  },
+                  "seesAfter": false
+                },
+                {
+                  "from": {
+                    "x": 1,
+                    "y": 2
+                  },
+                  "seesAfter": false
+                }
+              ],
+              "decision": "equal_priority_overlap",
+              "capturesPlayer": false,
+              "layer": 0
+            }
+          },
+          "safeOptimalWitness": [
+            "D",
+            "U",
+            "R",
+            "U",
+            "L",
+            "L",
+            "D",
+            "L",
+            "U",
+            "R",
+            "R",
+            "R",
+            "D",
+            "L",
+            "D",
+            "R"
+          ],
+          "elapsedMs": 24,
+          "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除",
+          "witness": [
+            "D",
+            "U",
+            "R",
+            "U",
+            "L",
+            "L",
+            "L",
+            "U",
+            "R",
+            "D",
+            "R",
+            "R",
+            "D",
+            "L",
+            "D",
+            "R"
+          ]
+        },
+        "referenceNoEndSafe": true
+      },
+      {
+        "name": "ordinary-solid",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 164,
+          "transitions": 820,
+          "discovered": 164,
+          "totalActions": null
+        },
+        "actions": null
+      },
+      {
+        "name": "open-h-1-5",
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 513,
+          "transitions": 2562,
+          "discovered": 590,
+          "totalActions": 12
+        },
+        "actions": [
+          "D",
+          "L",
+          "L",
+          "U",
+          "U",
+          "R",
+          "R",
+          "R",
+          "D",
+          "L",
+          "D",
+          "R"
+        ],
+        "boundary": {
+          "status": "safe",
+          "reason": "all_optimal_routes_avoid_overlap",
+          "mapId": "aa3cda792d09b78834acbe63f4c1c661bba2ff163e89489e816cd96792491278",
+          "ruleset": "sha256:762b163064dac2464603c002d5a46782675f0a78274e93f68aa36555683cd91a",
+          "policy": "all_optimal_routes_avoid_overlap_v2",
+          "glassCount": 0,
+          "expanded": 522,
+          "transitions": 2610,
+          "discovered": 598,
+          "optimum": 12,
+          "ignoredFatalOverlap": 31,
+          "observedNonFatalOverlap": {
+            "witness": [
+              "D",
+              "L",
+              "L",
+              "U",
+              "U",
+              "U",
+              "R",
+              "U"
+            ],
+            "conflict": {
+              "target": {
+                "x": 2,
+                "y": 2
+              },
+              "contenders": [
+                {
+                  "from": {
+                    "x": 3,
+                    "y": 2
+                  },
+                  "seesAfter": false
+                },
+                {
+                  "from": {
+                    "x": 1,
+                    "y": 2
+                  },
+                  "seesAfter": false
+                }
+              ],
+              "decision": "equal_priority_overlap",
+              "capturesPlayer": false,
+              "layer": 0
+            }
+          },
+          "safeOptimalWitness": [
+            "D",
+            "L",
+            "L",
+            "U",
+            "U",
+            "R",
+            "R",
+            "R",
+            "D",
+            "L",
+            "D",
+            "R"
+          ],
+          "elapsedMs": 49,
+          "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+        },
+        "referenceNoEndSafe": true
+      },
+      {
+        "name": "open-h-2-5",
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 381,
+          "transitions": 1902,
+          "discovered": 460,
+          "totalActions": 10
+        },
+        "actions": [
+          "D",
+          "L",
+          "U",
+          "U",
+          "R",
+          "R",
+          "D",
+          "L",
+          "D",
+          "R"
+        ],
+        "boundary": {
+          "status": "safe",
+          "reason": "all_optimal_routes_avoid_overlap",
+          "mapId": "240799b439cba62f1e09c8ee15403ab9741e4854af0d53b971024d5b1f34282e",
+          "ruleset": "sha256:762b163064dac2464603c002d5a46782675f0a78274e93f68aa36555683cd91a",
+          "policy": "all_optimal_routes_avoid_overlap_v2",
+          "glassCount": 0,
+          "expanded": 399,
+          "transitions": 1995,
+          "discovered": 477,
+          "optimum": 10,
+          "ignoredFatalOverlap": 8,
+          "observedNonFatalOverlap": {
+            "witness": [
+              "D",
+              "L",
+              "U",
+              "U",
+              "L",
+              "U",
+              "R",
+              "U"
+            ],
+            "conflict": {
+              "target": {
+                "x": 2,
+                "y": 2
+              },
+              "contenders": [
+                {
+                  "from": {
+                    "x": 3,
+                    "y": 2
+                  },
+                  "seesAfter": false
+                },
+                {
+                  "from": {
+                    "x": 1,
+                    "y": 2
+                  },
+                  "seesAfter": false
+                }
+              ],
+              "decision": "equal_priority_overlap",
+              "capturesPlayer": false,
+              "layer": 0
+            }
+          },
+          "safeOptimalWitness": [
+            "D",
+            "L",
+            "U",
+            "U",
+            "R",
+            "R",
+            "D",
+            "L",
+            "D",
+            "R"
+          ],
+          "elapsedMs": 31,
+          "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+        },
+        "referenceNoEndSafe": true
+      },
+      {
+        "name": "open-h-4-5",
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 2,
+          "transitions": 8,
+          "discovered": 7,
+          "totalActions": 2
+        },
+        "actions": [
+          "R",
+          "D"
+        ],
+        "boundary": {
+          "status": "safe",
+          "reason": "all_optimal_routes_avoid_overlap",
+          "mapId": "76374d903c1c1346a97197482aad62421265ddc9f57c5c2bce2b2d4c2b087581",
+          "ruleset": "sha256:762b163064dac2464603c002d5a46782675f0a78274e93f68aa36555683cd91a",
+          "policy": "all_optimal_routes_avoid_overlap_v2",
+          "glassCount": 0,
+          "expanded": 4,
+          "transitions": 20,
+          "discovered": 10,
+          "optimum": 2,
+          "ignoredFatalOverlap": 0,
+          "observedNonFatalOverlap": null,
+          "safeOptimalWitness": [
+            "R",
+            "D"
+          ],
+          "elapsedMs": 1,
+          "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+        },
+        "referenceNoEndSafe": false
+      },
+      {
+        "name": "open-h-5-5",
+        "status": "invalid_input",
+        "reason": "The expression evaluated to a falsy value:\n\n  assert(checked.valid)\n"
+      },
+      {
+        "name": "open-v-3-4",
+        "status": "invalid_input",
+        "reason": "The expression evaluated to a falsy value:\n\n  assert(checked.valid)\n"
+      },
+      {
+        "name": "remove-ghost-0",
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 178,
+          "transitions": 887,
+          "discovered": 186,
+          "totalActions": 16
+        },
+        "actions": [
+          "D",
+          "U",
+          "R",
+          "R",
+          "D",
+          "U",
+          "U",
+          "L",
+          "L",
+          "R",
+          "D",
+          "D",
+          "L",
+          "L",
+          "D",
+          "R"
+        ],
+        "boundary": {
+          "status": "safe",
+          "reason": "all_optimal_routes_avoid_overlap",
+          "mapId": "1615b7c7ff72793824ae9b8057799c5b16273afd898bf2f8485a7427cceb622d",
+          "ruleset": "sha256:762b163064dac2464603c002d5a46782675f0a78274e93f68aa36555683cd91a",
+          "policy": "all_optimal_routes_avoid_overlap_v2",
+          "glassCount": 0,
+          "expanded": 181,
+          "transitions": 905,
+          "discovered": 188,
+          "optimum": 16,
+          "ignoredFatalOverlap": 0,
+          "observedNonFatalOverlap": null,
+          "safeOptimalWitness": [
+            "D",
+            "U",
+            "R",
+            "R",
+            "D",
+            "U",
+            "U",
+            "L",
+            "L",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "D",
+            "R"
+          ],
+          "elapsedMs": 12,
+          "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+        },
+        "referenceNoEndSafe": true
+      },
+      {
+        "name": "remove-button-0",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 160,
+          "transitions": 800,
+          "discovered": 160,
+          "totalActions": null
+        },
+        "actions": null
+      },
+      {
+        "name": "remove-ghost-1",
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 3,
+          "transitions": 12,
+          "discovered": 7,
+          "totalActions": 2
+        },
+        "actions": [
+          "D",
+          "R"
+        ],
+        "boundary": {
+          "status": "safe",
+          "reason": "all_optimal_routes_avoid_overlap",
+          "mapId": "f3dd5d83877a68806b0ad6fab6fc5cd932ea1d2d9ab7b2726a3152412b5c5de7",
+          "ruleset": "sha256:762b163064dac2464603c002d5a46782675f0a78274e93f68aa36555683cd91a",
+          "policy": "all_optimal_routes_avoid_overlap_v2",
+          "glassCount": 0,
+          "expanded": 4,
+          "transitions": 20,
+          "discovered": 9,
+          "optimum": 2,
+          "ignoredFatalOverlap": 0,
+          "observedNonFatalOverlap": null,
+          "safeOptimalWitness": [
+            "D",
+            "R"
+          ],
+          "elapsedMs": 0,
+          "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+        },
+        "referenceNoEndSafe": true
+      },
+      {
+        "name": "remove-button-1",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 379,
+          "transitions": 1895,
+          "discovered": 379,
+          "totalActions": null
+        },
+        "actions": null
+      },
+      {
+        "name": "inside-button-previous-4-4",
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 588,
+          "transitions": 2937,
+          "discovered": 602,
+          "totalActions": 20
+        },
+        "actions": [
+          "D",
+          "U",
+          "R",
+          "D",
+          "R",
+          "L",
+          "U",
+          "U",
+          "L",
+          "U",
+          "L",
+          "D",
+          "L",
+          "D",
+          "R",
+          "R",
+          "D",
+          "L",
+          "D",
+          "R"
+        ],
+        "boundary": {
+          "status": "safe",
+          "reason": "all_optimal_routes_avoid_overlap",
+          "mapId": "d3e00f0ec8eba29857ba08485a7bb4779a6a07fcb920b4940c416f69a67a4953",
+          "ruleset": "sha256:762b163064dac2464603c002d5a46782675f0a78274e93f68aa36555683cd91a",
+          "policy": "all_optimal_routes_avoid_overlap_v2",
+          "glassCount": 0,
+          "expanded": 586,
+          "transitions": 2930,
+          "discovered": 601,
+          "optimum": 20,
+          "ignoredFatalOverlap": 2,
+          "observedNonFatalOverlap": {
+            "witness": [
+              "D",
+              "U",
+              "R",
+              "D",
+              "R",
+              "L",
+              "U",
+              "U",
+              "L",
+              "L",
+              "U",
+              "R",
+              "R",
+              "R",
+              "D",
+              "D",
+              "D",
+              "L",
+              "L"
+            ],
+            "conflict": {
+              "target": {
+                "x": 4,
+                "y": 4
+              },
+              "contenders": [
+                {
+                  "from": {
+                    "x": 5,
+                    "y": 4
+                  },
+                  "seesAfter": false
+                },
+                {
+                  "from": {
+                    "x": 4,
+                    "y": 3
+                  },
+                  "seesAfter": false
+                }
+              ],
+              "decision": "equal_priority_overlap",
+              "capturesPlayer": false,
+              "layer": 0
+            }
+          },
+          "safeOptimalWitness": [
+            "D",
+            "U",
+            "R",
+            "D",
+            "R",
+            "L",
+            "U",
+            "U",
+            "L",
+            "U",
+            "L",
+            "D",
+            "L",
+            "D",
+            "R",
+            "R",
+            "D",
+            "L",
+            "D",
+            "R"
+          ],
+          "elapsedMs": 56,
+          "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+        },
+        "referenceNoEndSafe": true
+      }
+    ],
+    "humanQuality": null
+  }
+}

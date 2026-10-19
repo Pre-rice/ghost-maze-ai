@@ -1,5 +1,41 @@
 # AI 地图总目录
 
+## 2026-10-19 新候选：《逆渡》
+
+完整5×5、25格双鬼，一把钥匙、0与目标1，无其它机关。最优22步、24种含停顿鬼轨迹；全部最优去终点、编号无关、一步实际中性入场、分享往返及桌面／手机求解回放通过。尚无真人评价，未入地图集；现行18张保持。
+
+[试玩](https://ghostmaze.novic.cc/?map=AADAAPj4-Pj4AAEVICSMAGAFVAyAAAAyKqAAAACUhBCFCCEEAAAAIAA) · [设计、来源与验收](../examples/reverse-gate-20261019/README.md)
+
+<details><summary>设计预期与参考（含答案）</summary>
+
+自然想从出生附近的下方开0再去钥匙房，实际必须先绕到上方首次开门，准备两鬼的跟随次序与钥匙房退路。具体交接次数不是全部最优共同条件；这里只是待体验的认识，不宣称已有顿悟。[参考回放](https://ghostmaze.novic.cc/?map=AADAAPj4-Pj4AAEVICSMAGAFVAyAAAAyKqAAAACUhBCFCCEEAAAAIAA&replay=EDS5yTIP3aIzNoA)。从36格三鬼稿去独立尾段、冗余门，再折回5×5并移中终点；未继承《留隙》或其它图的好评。
+
+</details>
+
+## 2026-10-19 新候选：《对门》
+
+完整5×5、25格、双鬼，两扇反相A门、一扇普通门，内外各一个A按钮，无其它机关。最优26步、唯一含停顿鬼轨迹；全部最优去终点、编号无关、中性初态、明确的六步实际接入、分享往返和桌面／手机求解回放通过。尚无真人评价，未入地图集；现行18张保持。
+
+[试玩](https://ghostmaze.novic.cc/?map=AADAAPj4-Pj4AAG8YCnCAxgTQACqgAABwFcoVUAAAAEEIIQQlhCCAAAAAQ) · [设计、来源与验收](../examples/shared-trap-20261019/README.md)
+
+<details><summary>设计预期与参考（含答案）</summary>
+
+互补门不能分别封住两鬼，预期是先准备上室的接纳条件，再把下鬼带进去共同留下；不能只把旧鬼安置完就不再引动它。内A移动一格后，原本可先引下鬼的20步方案不再成立，形成26步的新准备要求；仍不把必要性或步数当成顿悟证据。[参考回放](https://ghostmaze.novic.cc/?map=AADAAPj4-Pj4AAG8YCnCAxgTQACqgAABwFcoVUAAAAEEIIQQlhCCAAAAAQ&replay=EFnIuFGBZPQomfZw)。尚无真人体验，不转移《调度》《再借》好评。
+
+</details>
+
+## 2026-10-19 新候选：《易手》
+
+完整5×5、25格、三鬼；零门、零按钮、零钥匙，只有墙和通路。最优24步、唯一含停顿鬼轨迹；全部最优去终点、编号无关、中性出生、指定实际入场与分享往返通过。尚无真人评价，未入地图集；现行18张保持。
+
+[试玩](https://ghostmaze.novic.cc/?map=AADAAPj4-Pj4AAFAIEtlgAVUIgABAIKqAAAACCEVCCEEIIAAAA) · [设计、来源与验收](../examples/turnover-passage-20261019/README.md)
+
+<details><summary>设计预期与参考（含答案）</summary>
+
+目标前的鬼被引走后，另一追者可能补上。中排退出方向与左上小院的换向共同安排最后返回，不把已知挡鬼动作、新形状或24步当成质量证明。[参考回放](https://ghostmaze.novic.cc/?map=AADAAPj4-Pj4AAFAIEtlgAVUIgABAIKqAAAACCEVCCEEIIAAAA&replay=APyVfYn_VpgjP1g)。从42格四鬼稿压为25格三鬼，删去无实质影响的取物任务和三段内墙；母稿、失败与判断分开保留，不继承其它图的好评。
+
+</details>
+
 ## 2026-10-19 用户优化与两图入集
 
 当前18张，发现顺序保持。八张由站主亲自优化的图以`*`标记：错位、接力、借影、换岗、周转、换席、换边、同调。AI提出并获认可的维护不加标记。[真实评述与归属](../data/manifests/gallery-user-review-20261019.json)。
