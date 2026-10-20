@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {buildMap} from './build.mjs';
+import {analyzeMap} from './analyze.mjs';
+import {auditMap} from '../gallery-adjustments-20261014/verify.mjs';
+import {groupMap} from '../reverse-gate-20261019/verify.mjs';
+import {assertExterior} from '../spatial-clearance-20261019/verify.mjs';
+const stored=JSON.parse(fs.readFileSync(new URL('evidence.json',import.meta.url))),map=buildMap();
+assert.deepEqual(map,stored.map);assert.deepEqual(map,JSON.parse(fs.readFileSync(new URL('map.json',import.meta.url))));assertExterior(map);
+const qa=auditMap(map,stored.qa.mapCode),groups=groupMap(map),analysis=analyzeMap(map);
+for(const key of ['mapId','ruleset','cold','count','routes','entry','physicalAudit','noEndSafeRoutes'])assert.deepEqual(qa[key],stored.qa[key]);
+assert.deepEqual(groups.routes,stored.grouping.routes);assert.equal(groups.count,stored.grouping.count);assert.deepEqual(analysis,stored.analysis);
+assert(qa.cold&&qa.entry.initialInteriorEqual&&qa.entry.wholeOptimalRoutesInteriorEqual);
+console.log(JSON.stringify({N:qa.allResult.totalActions,raw:qa.count,groups:groups.count,allOptimalNoEnd:qa.noEndSafeRoutes,physicalAudit:qa.physicalAudit,entry:qa.entry,queries:analysis.queries.map(r=>({name:r.name,status:r.result.status,N:r.result.totalActions}))}));
