@@ -1,5 +1,17 @@
 # AI 地图总目录
 
+## 2026-10-20 新候选：《内外》
+
+完整4×4、16格单鬼，两个内侧按钮、四字母门，一钥匙及目标1。最优25步、唯一含停顿鬼轨迹；全部最优去终点、编号无关、中性实际一步入场、码往返及桌面／手机原生求解回放通过。尚无真人反馈，未入图集；18张保持。
+
+[试玩](https://ghostmaze.novic.cc/?map=AWM4wPABCBgYGC80hDA90G1yaNBqLGJheiLqwAAELSILdjwRncIABIptHBwA) · [设计、来源与验收](../examples/inside-outside-20261020/README.md)
+
+<details><summary>设计预期与参考（含答案）</summary>
+
+取物要A开、开目标要B开，同一只鬼先留西门外、再重引到北门外，改变安全操作的一侧。它不涉及鬼争位；不以少元件、25步或两次停车声称新意已获认可。先按A也有37步，不误称死局。[参考回放](https://ghostmaze.novic.cc/?map=AWM4wPABCBgYGC80hDA90G1yaNBqLGJheiLqwAAELSILdjwRncIABIptHBwA&replay=GJBhAFn6XPgr3Y2A)。从5×5去外按钮、外围列行，移内侧钥匙入口及兴趣点成为16格，普通替代与冷出生分别留证。
+
+</details>
+
 ## 2026-10-20 新候选：《巡回》
 
 完整5×5、25格三鬼，一钥匙及目标1门，无字母／普通门或按钮。最优45步、四种含停顿鬼轨迹；全部最优去终点、编号无关、一步实际中性入场、分享往返及桌面／手机原生求解与回放切换通过。尚无真人评价，未入地图集；当前18张保持。
