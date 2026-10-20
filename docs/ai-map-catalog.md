@@ -1,5 +1,17 @@
 # AI 地图总目录
 
+## 2026-10-20 新候选：《留手》
+
+23格、包络6×4、双鬼，A/B各一个按钮、两扇普通门和两扇单向门，无钥匙／玻璃。最优41步、三种含停顿鬼轨迹；六条原始最优全部去终点安全、621态6160次编号后继、中性真实两步入场、码往返与桌面／手机求解回放通过。**尚无真人评价，未入地图集。** 本轮20张、9张站主优化保持；未训练或自动试玩。
+
+[无剧透试玩](https://ghostmaze.novic.cc/?map=AWM4-PPnzw8MDAyM0gkKWkwMrMyh7nwMDxJjulYwAIFrknKQ8iwXAQYQcOTgkAAA) · [设计、来源与验收](../examples/returning-control-20261020/README.md)
+
+<details><summary>设计预期与参考（含答案）</summary>
+
+目标前厅开放后，先借上方回路返回A；第一次保命的贴门停位不能保留到第二次开A，需要提前再安排一格距离。左主入口的冗余B已去掉，限制来自鬼位与内门，而不是仍在关闭的B。禁止任一单向回路、B之后不再动左鬼或先彻底处理左鬼再启动右鬼，完整无伤查询均无解；不使用优先仍可41步。必要性只作物理证据，不代表真人顿悟。已删掉可独立完成的前厅第三鬼和暂存两格，转动右保护边缩小操作室，删B属性并内移出生，减少前置与赶路。[参考回放](https://ghostmaze.novic.cc/?map=AWM4-PPnzw8MDAyM0gkKWkwMrMyh7nwMDxJjulYwAIFrknKQ8iwXAQYQcOTgkAAA&replay=GOXhmpyyD1p_zgxaIo9cAA)。
+
+</details>
+
 ## 2026-10-20 《侧入》好评与入集
 
 用户评价“有点意思。可称好图。”关键在处理堵住终点的鬼：必须从左边的门上去，把鬼引向左侧，再据此设计方案；第一只鬼只是经验基操。按交付原版追加地图集第20位，无站主优化标记；目前20张，9张经站主优化。仍期待更新颖、更优秀的谜题，不记为已刷新最高评价，也不补实际动作、用时或提示条件。[真实反馈](../data/manifests/temporary-entry-review-20261020.json)。
