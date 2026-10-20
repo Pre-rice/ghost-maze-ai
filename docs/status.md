@@ -40,7 +40,7 @@
 
 ## 研究判断与资料
 
-- [三方交接与安全观察](archive/research/cyclic-handoff-20261020.md)：实际三方有向帮助对22步构件全部无伤通关必要，但大部分参考移动仍被追逐强制，未作为挑战递补；第四鬼扩充均重合或去终点不安全。34步保护稿仍可先完成第一鬼，额外A属性可固定为墙，预期撤回。四组53份原件另存新包106并独立核验；控制位置受初态鬼位牵制的45步稿由35格压至29格，全部最优动作与角色帧保持，24份原件107已核验；重排39步仍与既有借鬼重合，三向时序42步仍能顺次处理或用44步普通替代，三组24份原件108已核验，均未交付。继续内部操作点与整体计划的新构思，不以必要性或提交收尾替代目标。
+- [三方交接与安全观察](archive/research/cyclic-handoff-20261020.md)：三方有向帮助虽必要，22步构件仍多强制执行；第四鬼扩充均重合或去终点不安全。34步保护稿可顺次处理，39步控制重排仍用既有借鬼，三向时序42步仍有顺次或普通替代，均未交付。内部B与三庭代表又变成最后操作或开局配置，四组40份原件109已独立核验。继续整体空间排列与异地同组按钮的新构思，不以必要性、归档或提交收尾替代目标；106至108各批依据保留。
 
 - [明显困鬼后的构思复查](archive/research/obvious-traps-research-20261020.md)：双环代表仍可忽略第二鬼或顺次处理，中央43步稿可先固定门态、上鬼始终不动，均停止递补。52份原件与《留手》真实负反馈另存新包105并独立核验；共享回返与三方交接另起批次继续，不将必要性或研究数量当新意。
 
@@ -78,6 +78,6 @@
 - 近期《送客》《互锁》《转圜》均未形成用户认可的新意；必要性、跨阶段安排或多个鬼不能替代实际挑战评价。反馈已提炼至[方法](methodology.md)，不继续交付相似构件。
 - [空间安排研究](archive/research/spatial-control-20261018.md)及自动安排诊断保留原型、失败与反例；工具只提供机械证据，不作为趣味分或求解前自主规划能力。
 - 旧规划模型与行动段对照没有原生搜索替代收益，未据此替换现有方法；本轮未新增模型训练。历史15张规划图653行及亲缘拆分保持。[历史清单](../data/manifests/planning-library-20261014-v12.json)。
-- 原图、生成来源、真人反馈与QA分开，历史资料和旧包保持。最新有效私人快照为 `cloud-data-20261020-planning-108.zip`，独立核对[控制重排及时序反例](../data/manifests/control-routing-research-20261020.json)24份；107，独立核对[初态控制位置研究](../data/manifests/occupied-controls-20261020.json)24份；106，独立核对[三方交接与安全观察研究](../data/manifests/cyclic-handoff-research-20261020.json)53份；105，独立核对[明显困鬼后的构思与留手实评](../data/manifests/obvious-traps-research-20261020.json)52份；104独立核对[交叉控制、返回通路及留手原件](../data/manifests/return-passage-20261020.json)105份；103独立核对[控制位置反例研究](../data/manifests/control-location-research-20261020.json)78份；102独立核对[侧入真实反馈及入集验收](../data/manifests/temporary-entry-review-20261020.json)17份、[终局守卫研究](../data/manifests/following-gap-20261020.json)16份；101含16份纯门与单鬼控制研究，100含18份换路研究，99含31份双路视线反例，98含《侧入》原始完整QA，97含用户《内外》原码与实际反馈。此后另起批次，不回写冻结原件。69曾因连接中断未完成，不作有效包；未称用户已下载。付费与GPU不自动启动。
+- 原图、生成来源、真人反馈与QA分开，历史资料和旧包保持。最新有效私人快照为 `cloud-data-20261020-planning-109.zip`，独立核对[内部控制与空间余地](../data/manifests/internal-controls-research-20261020.json)40份；108，独立核对[控制重排及时序反例](../data/manifests/control-routing-research-20261020.json)24份；107，独立核对[初态控制位置研究](../data/manifests/occupied-controls-20261020.json)24份；106，独立核对[三方交接与安全观察研究](../data/manifests/cyclic-handoff-research-20261020.json)53份；105，独立核对[明显困鬼后的构思与留手实评](../data/manifests/obvious-traps-research-20261020.json)52份；104独立核对[交叉控制、返回通路及留手原件](../data/manifests/return-passage-20261020.json)105份；103独立核对[控制位置反例研究](../data/manifests/control-location-research-20261020.json)78份；102独立核对[侧入真实反馈及入集验收](../data/manifests/temporary-entry-review-20261020.json)17份、[终局守卫研究](../data/manifests/following-gap-20261020.json)16份；101含16份纯门与单鬼控制研究，100含18份换路研究，99含31份双路视线反例，98含《侧入》原始完整QA，97含用户《内外》原码与实际反馈。此后另起批次，不回写冻结原件。69曾因连接中断未完成，不作有效包；未称用户已下载。付费与GPU不自动启动。
 
 整理前的完整状态及研究入口保留在[历史快照](archive/worklogs/status-before-repository-separation-20261018.md)，无需为接手重跑已完成研究。
