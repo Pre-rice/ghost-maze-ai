@@ -1,8 +1,8 @@
 # 《留手》
 
-2026-10-20。单层23格，包络6×4，双鬼；A/B各一个按钮，四扇A、一扇B、两扇普通门、两扇单向门，无钥匙或玻璃。冷开局，可先观察。**尚无真人评价，未选入地图集**；不继承《侧入》或其它作品的好评。
+2026-10-20。单层23格，包络6×4，双鬼；A/B各一个按钮，四扇A、一扇B、两扇普通门、两扇单向门，无钥匙或玻璃。冷开局，可先观察。**用户实评：没什么难度，困鬼处明显、思路线性、没有新意；未选入地图集**；不继承《侧入》或其它作品的好评。
 
-[正式站试玩](https://ghostmaze.novic.cc/?map=AWM4-PPnzw8MDAyM0gkKWkwMrMyh7nwMDxJjulYwAIFrknKQ8iwXAQYQcOTgkAAA)。网站“求解”提供最优入口；物理最短41步，三种含停顿鬼轨迹，六条原始最优。以下含答案。
+[正式站试玩](https://ghostmaze.novic.cc/?map=AWM4-PPnzw8MDAyM0gkKWkwMrMyh7nwMDxJjulYwAIFrknKQ8iwXAQYQcOTgkAAA)。网站“求解”提供最优入口；物理最短41步，三种含停顿鬼轨迹，六条原始最优。[真实反馈](../../data/manifests/returning-control-review-20261020.json)。此前将回取控制权和再开门的条件预期为新发现；实际反馈表明它仍可按熟悉的局部困鬼线性执行，撤回其挑战预期，原图和生成来源不改。以下含答案。
 
 <details><summary>设计预期、完整参考与普通替代</summary>
 
