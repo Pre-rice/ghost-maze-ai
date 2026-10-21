@@ -1,0 +1,684 @@
+{
+  "recordedOn": "2026-10-21",
+  "purpose": "异地控制、取物返回及严格分段条件的反例",
+  "familyGroups": [
+    "compass-courtyard-20261021-v1",
+    "three-way-pass-20261020-v1",
+    "double-belt-circulation-20261021-v1",
+    "diagonal-crossing-field-20261021-v1"
+  ],
+  "relatedResearchDoc": "docs/archive/research/ordinary-plans-and-field-counterexamples-20261021.md",
+  "latestActualFeedback": "data/manifests/controller-clearance-review-20261021.json",
+  "actualFeedbackAppliesOnlyTo": "接管",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "humanQuality": null,
+  "trainingAdded": false,
+  "skillNotAutoInvoked": true,
+  "disposition": "五批构造均未交付：遥控有无开关廉价解，三向取物只是旧前缀加撤离，第四鬼与斜接双庭的可解稿最优重合，双带长解可独立先处理第三鬼。新增公共普通计划核查已在九份原件复验；被否定与获好评的地图均可没有严格完整分段解，不能把该结果当质量门槛。完整查询、所选轨迹、原生验收和事实范围保留，继续新构思，不以代码、归档或提交停下。",
+  "rawRoots": [
+    "runs/compass-courtyard-20261021",
+    "runs/cyclic-objective-retreat-20261021",
+    "runs/occupied-preparation-field-20261021",
+    "runs/double-belt-circulation-20261021",
+    "runs/diagonal-crossing-field-20261021",
+    "runs/ordinary-plan-review-20261021"
+  ],
+  "trialSummary": [
+    {
+      "file": "runs/compass-courtyard-20261021/corner-links.ndjson",
+      "rows": 24,
+      "statuses": {
+        "proven_unsat": 20,
+        "solved": 4
+      },
+      "boundaryStatuses": {
+        "safe": 4
+      }
+    },
+    {
+      "file": "runs/compass-courtyard-20261021/probe.ndjson",
+      "rows": 8,
+      "statuses": {
+        "proven_unsat": 8
+      },
+      "boundaryStatuses": {}
+    },
+    {
+      "file": "runs/compass-courtyard-20261021/protected-controls.ndjson",
+      "rows": 32,
+      "statuses": {
+        "solved": 32
+      },
+      "boundaryStatuses": {
+        "safe": 32
+      }
+    },
+    {
+      "file": "runs/cyclic-objective-retreat-20261021/egress.ndjson",
+      "rows": 12,
+      "statuses": {
+        "proven_unsat": 8,
+        "solved": 4
+      },
+      "boundaryStatuses": {
+        "safe": 4
+      }
+    },
+    {
+      "file": "runs/cyclic-objective-retreat-20261021/original-entry.ndjson",
+      "rows": 8,
+      "statuses": {
+        "proven_unsat": 8
+      },
+      "boundaryStatuses": {}
+    },
+    {
+      "file": "runs/cyclic-objective-retreat-20261021/probe.ndjson",
+      "rows": 8,
+      "statuses": {
+        "proven_unsat": 8
+      },
+      "boundaryStatuses": {}
+    },
+    {
+      "file": "runs/cyclic-objective-retreat-20261021/reopening.ndjson",
+      "rows": 16,
+      "statuses": {
+        "proven_unsat": 16
+      },
+      "boundaryStatuses": {}
+    },
+    {
+      "file": "runs/occupied-preparation-field-20261021/probe.ndjson",
+      "rows": 15,
+      "statuses": {
+        "solved": 4,
+        "proven_unsat": 11
+      },
+      "boundaryStatuses": {
+        "conflict": 4
+      }
+    },
+    {
+      "file": "runs/double-belt-circulation-20261021/lateral-arrival.ndjson",
+      "rows": 48,
+      "statuses": {
+        "proven_unsat": 38,
+        "solved": 10
+      },
+      "boundaryStatuses": {
+        "safe": 10
+      }
+    },
+    {
+      "file": "runs/double-belt-circulation-20261021/outer-screens.ndjson",
+      "rows": 32,
+      "statuses": {
+        "proven_unsat": 32
+      },
+      "boundaryStatuses": {}
+    },
+    {
+      "file": "runs/double-belt-circulation-20261021/probe.ndjson",
+      "rows": 8,
+      "statuses": {
+        "proven_unsat": 8
+      },
+      "boundaryStatuses": {}
+    },
+    {
+      "file": "runs/double-belt-circulation-20261021/staggered-guards.ndjson",
+      "rows": 16,
+      "statuses": {
+        "proven_unsat": 16
+      },
+      "boundaryStatuses": {}
+    },
+    {
+      "file": "runs/double-belt-circulation-20261021/two-guards.ndjson",
+      "rows": 16,
+      "statuses": {
+        "proven_unsat": 8,
+        "solved": 8
+      },
+      "boundaryStatuses": {
+        "safe": 4,
+        "conflict": 4
+      }
+    },
+    {
+      "file": "runs/double-belt-circulation-20261021/widened-inner.ndjson",
+      "rows": 48,
+      "statuses": {
+        "proven_unsat": 48
+      },
+      "boundaryStatuses": {}
+    },
+    {
+      "file": "runs/diagonal-crossing-field-20261021/bridge-guardian.ndjson",
+      "rows": 56,
+      "statuses": {
+        "proven_unsat": 56
+      },
+      "boundaryStatuses": {}
+    },
+    {
+      "file": "runs/diagonal-crossing-field-20261021/bridge-protection.ndjson",
+      "rows": 32,
+      "statuses": {
+        "proven_unsat": 24,
+        "solved": 8
+      },
+      "boundaryStatuses": {
+        "conflict": 8
+      }
+    },
+    {
+      "file": "runs/diagonal-crossing-field-20261021/inner-protection.ndjson",
+      "rows": 16,
+      "statuses": {
+        "solved": 12,
+        "proven_unsat": 4
+      },
+      "boundaryStatuses": {
+        "conflict": 12
+      }
+    },
+    {
+      "file": "runs/diagonal-crossing-field-20261021/probe.ndjson",
+      "rows": 32,
+      "statuses": {
+        "proven_unsat": 30,
+        "solved": 2
+      },
+      "boundaryStatuses": {
+        "conflict": 2
+      }
+    },
+    {
+      "file": "runs/diagonal-crossing-field-20261021/wider-fields.ndjson",
+      "rows": 32,
+      "statuses": {
+        "proven_unsat": 24,
+        "solved": 8
+      },
+      "boundaryStatuses": {
+        "conflict": 8
+      }
+    },
+    {
+      "file": "runs/ordinary-plan-review-20261021/summary.ndjson",
+      "rows": 9,
+      "statuses": {
+        "not_queried": 9
+      },
+      "boundaryStatuses": {}
+    }
+  ],
+  "files": [
+    {
+      "path": "runs/compass-courtyard-20261021/corner-links.log",
+      "bytes": 3386,
+      "sha256": "e361260131bfd1f3251f3569b95c28543ff1563d6bfd28472c9316eddf683760"
+    },
+    {
+      "path": "runs/compass-courtyard-20261021/corner-links.mjs",
+      "bytes": 3958,
+      "sha256": "7e5588f174a966a4ef80ae20f213b7e0509cbe512292bbf2138aeb6b9b6d0e12"
+    },
+    {
+      "path": "runs/compass-courtyard-20261021/corner-links.ndjson",
+      "bytes": 105907,
+      "sha256": "69b34ec08e3a8a9a6f8b4f12633bcf70370ccd0376f2f31b8285f6c21a2a06d1"
+    },
+    {
+      "path": "runs/compass-courtyard-20261021/design-card.md",
+      "bytes": 1087,
+      "sha256": "5864da06fc880cbfe644c693e4ba9e232a1b153acddeb1866bff5415bd1efbf9"
+    },
+    {
+      "path": "runs/compass-courtyard-20261021/disposition.json",
+      "bytes": 511,
+      "sha256": "799c6338ed8501dafaff52a5f09595c2221cced165f9ec05e11ad6ed8230fa34"
+    },
+    {
+      "path": "runs/compass-courtyard-20261021/probe.log",
+      "bytes": 976,
+      "sha256": "aed0a76517135875a4287eda2a1cb9852b54d84aa41a8b73e8c7f187255f5513"
+    },
+    {
+      "path": "runs/compass-courtyard-20261021/probe.mjs",
+      "bytes": 3820,
+      "sha256": "f08ee52b6c8bf80143b5d74cb984a05d94421c923cff826784a7ca51b42b4abf"
+    },
+    {
+      "path": "runs/compass-courtyard-20261021/probe.ndjson",
+      "bytes": 33748,
+      "sha256": "460173fbdb299c38b26461165a6e58327830dea596d428f5759a1bb2716186fc"
+    },
+    {
+      "path": "runs/compass-courtyard-20261021/protected-controls.log",
+      "bytes": 5334,
+      "sha256": "1bc75448f4a06d1dbc452399b71e98e7f20f7356fa7b1234550dc2eb83693425"
+    },
+    {
+      "path": "runs/compass-courtyard-20261021/protected-controls.mjs",
+      "bytes": 4069,
+      "sha256": "6ef0dee86a3b8e355f602b893aea6ae107f7758c52bc77d245a5440e5901c244"
+    },
+    {
+      "path": "runs/compass-courtyard-20261021/protected-controls.ndjson",
+      "bytes": 210952,
+      "sha256": "ad16522af362fb29c819b2b4620662985b341eec81c84d6475a626c2bcadd033"
+    },
+    {
+      "path": "runs/cyclic-objective-retreat-20261021/design-card.md",
+      "bytes": 1122,
+      "sha256": "57bef32bcb5e5ba50b918a6488243a9733e6cf656a3209f8f4bcc0416e1cb98b"
+    },
+    {
+      "path": "runs/cyclic-objective-retreat-20261021/disposition.json",
+      "bytes": 542,
+      "sha256": "e65f6e73d9fd40c761721f68dc187dd8180ea82c152eda384bcec927c8ae10c4"
+    },
+    {
+      "path": "runs/cyclic-objective-retreat-20261021/egress-card.md",
+      "bytes": 551,
+      "sha256": "7ccf4ff45006381a4b7310fd5e7f80700fd59be17870102c40b2d16c1966421b"
+    },
+    {
+      "path": "runs/cyclic-objective-retreat-20261021/egress.log",
+      "bytes": 1800,
+      "sha256": "51a545ce7d60c6e3c39e98bb43235d26425f987b517b4c4f9d203b48f9a6c1d9"
+    },
+    {
+      "path": "runs/cyclic-objective-retreat-20261021/egress.mjs",
+      "bytes": 2977,
+      "sha256": "4cdc4545b624ebde28065f958732bb78d5b0e8fd6fa894764db355d8527745e6"
+    },
+    {
+      "path": "runs/cyclic-objective-retreat-20261021/egress.ndjson",
+      "bytes": 63687,
+      "sha256": "81f271ea1eeda84a6923dbb0f2351881d0d955e17f51a43b45d2f4b0bae71c67"
+    },
+    {
+      "path": "runs/cyclic-objective-retreat-20261021/original-entry.log",
+      "bytes": 1092,
+      "sha256": "10ed11db80696a8cb7e10b3862f240a4dcf908456a34cae0f10af717fb840d26"
+    },
+    {
+      "path": "runs/cyclic-objective-retreat-20261021/original-entry.mjs",
+      "bytes": 2708,
+      "sha256": "14f007ba797f02fdb7578c570422e3c1a69d9737b92a90314d557bb12bdda631"
+    },
+    {
+      "path": "runs/cyclic-objective-retreat-20261021/original-entry.ndjson",
+      "bytes": 31656,
+      "sha256": "8096704b75267beefd0be957390acdf62e32e98ecb7931ffe92ef8f4cd887109"
+    },
+    {
+      "path": "runs/cyclic-objective-retreat-20261021/probe.log",
+      "bytes": 1100,
+      "sha256": "94397a2b105051a216e08b6c58d24840da79d95a530e2ce78d2c7642928998f4"
+    },
+    {
+      "path": "runs/cyclic-objective-retreat-20261021/probe.mjs",
+      "bytes": 2699,
+      "sha256": "0d5a22f017f528199f7db34ce401402eeee3b2ac9abf9e6b8aa4a5b659880a74"
+    },
+    {
+      "path": "runs/cyclic-objective-retreat-20261021/probe.ndjson",
+      "bytes": 31660,
+      "sha256": "ae97e1d926ae7d58e3e48b62432bc4177b9ea03baa34aa2c099db27765fb5ba8"
+    },
+    {
+      "path": "runs/cyclic-objective-retreat-20261021/reopening-card.md",
+      "bytes": 656,
+      "sha256": "6fce42a267ad00d72ce0902ca68586bfad7b41c1871899b984c6cc0f482a676a"
+    },
+    {
+      "path": "runs/cyclic-objective-retreat-20261021/reopening.log",
+      "bytes": 2646,
+      "sha256": "3ccba455700d07502775b472410b3471529dc536856c813a4eab014f3921577c"
+    },
+    {
+      "path": "runs/cyclic-objective-retreat-20261021/reopening.mjs",
+      "bytes": 3008,
+      "sha256": "5648217debf20b7c3add73c11b8ca6d013d9ca3ca9be409430ae642075ef5e00"
+    },
+    {
+      "path": "runs/cyclic-objective-retreat-20261021/reopening.ndjson",
+      "bytes": 65262,
+      "sha256": "a73e0ce1bcee7e342593de79bfb193f75849bda0c6078d3f2c81155c93e90b13"
+    },
+    {
+      "path": "runs/occupied-preparation-field-20261021/design-card.md",
+      "bytes": 1227,
+      "sha256": "62f8505797cc6bdcff62bc28a93d93d981d06e08f2dc05c2b30020c19ca94734"
+    },
+    {
+      "path": "runs/occupied-preparation-field-20261021/disposition.json",
+      "bytes": 425,
+      "sha256": "9f0b158226499f9e162d1a6e04373829edf0279420aeee60bcdb3a15042b36b9"
+    },
+    {
+      "path": "runs/occupied-preparation-field-20261021/probe.log",
+      "bytes": 1880,
+      "sha256": "d3d9b52f8cb76a8e0c1e2d461985b8489db8cafc1543d37fdd21e1ccd4b49086"
+    },
+    {
+      "path": "runs/occupied-preparation-field-20261021/probe.mjs",
+      "bytes": 2621,
+      "sha256": "2deb6f86a79563517241dc72ef2fcd5bb321547f1a1ae4cdbe4345d51455e095"
+    },
+    {
+      "path": "runs/occupied-preparation-field-20261021/probe.ndjson",
+      "bytes": 83400,
+      "sha256": "7509d9fa71d785979d1312d4e2033401ce7ceed53c3ffa53e844036477aeefb3"
+    },
+    {
+      "path": "runs/double-belt-circulation-20261021/design-card.md",
+      "bytes": 1304,
+      "sha256": "f3a866bbf3c20e4e8959ae4af2889979df26797e013fb1a2057e524ba49bc3ae"
+    },
+    {
+      "path": "runs/double-belt-circulation-20261021/disposition.json",
+      "bytes": 603,
+      "sha256": "e3db085081d6cdb11320de887a9d1a66bb35bedf998d3e83299d67e5f28ef6ad"
+    },
+    {
+      "path": "runs/double-belt-circulation-20261021/lateral-arrival-card.md",
+      "bytes": 562,
+      "sha256": "5a8b26c38818c47baa13815b2cf32c88d7932abc9e3d151f3972fa8882b52b59"
+    },
+    {
+      "path": "runs/double-belt-circulation-20261021/lateral-arrival.log",
+      "bytes": 7770,
+      "sha256": "849f1f3c8f16baa4a895dfcb975319f042ccbeb4b13bde21718faef00a6e36e7"
+    },
+    {
+      "path": "runs/double-belt-circulation-20261021/lateral-arrival.mjs",
+      "bytes": 4156,
+      "sha256": "3eef30435ba5551e6a6d4e0f76ef14ddcbaa23a17bdd5ba01e79737570541ce4"
+    },
+    {
+      "path": "runs/double-belt-circulation-20261021/lateral-arrival.ndjson",
+      "bytes": 246779,
+      "sha256": "422e8e6c80c7019038204e0745d858c92d115ef151c5e80b0266a9a3bce95a2e"
+    },
+    {
+      "path": "runs/double-belt-circulation-20261021/outer-screen-card.md",
+      "bytes": 616,
+      "sha256": "ad9cc0e9953259f8964b5bcde9f22c88b37b5451c4ce519f9a3cf46f1d3b7c57"
+    },
+    {
+      "path": "runs/double-belt-circulation-20261021/outer-screens.log",
+      "bytes": 5142,
+      "sha256": "867ff295050854b9c974fc9b29c606e34790b031472de42e7a25c6f879772f3e"
+    },
+    {
+      "path": "runs/double-belt-circulation-20261021/outer-screens.mjs",
+      "bytes": 3942,
+      "sha256": "088dd51390fc6e5733013b44aca634d739b1b45fce9634436f01a53c5e7da691"
+    },
+    {
+      "path": "runs/double-belt-circulation-20261021/outer-screens.ndjson",
+      "bytes": 137206,
+      "sha256": "3c3bd4190d88045840172d025f4e34ed0fd206a6701020868a9cd8704a40b328"
+    },
+    {
+      "path": "runs/double-belt-circulation-20261021/probe.log",
+      "bytes": 996,
+      "sha256": "c75a8093317dd7c193d767ef3aeff471a77a4e272baa32deed2340cab49a376b"
+    },
+    {
+      "path": "runs/double-belt-circulation-20261021/probe.mjs",
+      "bytes": 3685,
+      "sha256": "58eeaf506f537a578900dd11e3ea0b2a01fb0f4bcd3b34d72712c3721af860f2"
+    },
+    {
+      "path": "runs/double-belt-circulation-20261021/probe.ndjson",
+      "bytes": 33420,
+      "sha256": "b08880696be33bad43b161c2449de22e7509d9413045744a6677eef74f68c0bb"
+    },
+    {
+      "path": "runs/double-belt-circulation-20261021/staggered-guards.log",
+      "bytes": 2046,
+      "sha256": "874d1a26f9698d53da115a8d4733c4ed37b997f17d996c01ddc479992cd062dc"
+    },
+    {
+      "path": "runs/double-belt-circulation-20261021/staggered-guards.mjs",
+      "bytes": 3805,
+      "sha256": "0e0f098a89fc68266a5e08fef28812177c32728886dca21abf76c5cf58266249"
+    },
+    {
+      "path": "runs/double-belt-circulation-20261021/staggered-guards.ndjson",
+      "bytes": 66926,
+      "sha256": "47bdb7f2fb23972ef38c4cdb0e210b0183a9ac35dd52f10b77a62848f57d7751"
+    },
+    {
+      "path": "runs/double-belt-circulation-20261021/two-guards.log",
+      "bytes": 2067,
+      "sha256": "3fcee4ec1a81dbcb76d01b88cb162ac35143ab145ea23d8666fe236fefc6eebe"
+    },
+    {
+      "path": "runs/double-belt-circulation-20261021/two-guards.mjs",
+      "bytes": 3739,
+      "sha256": "221985ce34348bf23a1dd45c3e624c71ddf4348de0fda980e2c7eb9f20bd8cc6"
+    },
+    {
+      "path": "runs/double-belt-circulation-20261021/two-guards.ndjson",
+      "bytes": 101741,
+      "sha256": "6b838f811c49f8636755b15e1371758e9fc63e6be416f03a62cdaed2072a0e8a"
+    },
+    {
+      "path": "runs/double-belt-circulation-20261021/widened-inner-card.md",
+      "bytes": 517,
+      "sha256": "3665f3293b8146795e4ee795b225dba619484e109e24a5adf861d7203bb0df83"
+    },
+    {
+      "path": "runs/double-belt-circulation-20261021/widened-inner.log",
+      "bytes": 7670,
+      "sha256": "9270a4401ef9d8c2d982fdba47e38bbde7eb5989bb263ab1f266062b31227792"
+    },
+    {
+      "path": "runs/double-belt-circulation-20261021/widened-inner.mjs",
+      "bytes": 4045,
+      "sha256": "c4668cd3184948400cc49d18d3fdf1bedf81596395a50218245713e8e756b7de"
+    },
+    {
+      "path": "runs/double-belt-circulation-20261021/widened-inner.ndjson",
+      "bytes": 205639,
+      "sha256": "4ac7290462cf344555223e2191ebf5c8864f073e131ea8f9c96e4ef16835ce1d"
+    },
+    {
+      "path": "runs/diagonal-crossing-field-20261021/bridge-guardian-card.md",
+      "bytes": 527,
+      "sha256": "b9654cf64cd5bc453263779b697cf91a41310bb711d144dd1e83f732513f180f"
+    },
+    {
+      "path": "runs/diagonal-crossing-field-20261021/bridge-guardian.log",
+      "bytes": 8502,
+      "sha256": "3ef82610ad1c483845dbdc452bd65894a8ca5fa8462ce95409973cf9644f5593"
+    },
+    {
+      "path": "runs/diagonal-crossing-field-20261021/bridge-guardian.mjs",
+      "bytes": 3412,
+      "sha256": "b72d6ecee1d5d981a3a54b1086f911b5337d8f151212a840416edfe1fea757cd"
+    },
+    {
+      "path": "runs/diagonal-crossing-field-20261021/bridge-guardian.ndjson",
+      "bytes": 223094,
+      "sha256": "aa4e737edfc2c4c650ed6dbb9d784932d99a202c324a29cdb8528e25947e09a9"
+    },
+    {
+      "path": "runs/diagonal-crossing-field-20261021/bridge-protection-card.md",
+      "bytes": 485,
+      "sha256": "307e604acad1d259ec7485b46a3dbb2b92e281e20da5a7d09842b79f3f294c9e"
+    },
+    {
+      "path": "runs/diagonal-crossing-field-20261021/bridge-protection.log",
+      "bytes": 4974,
+      "sha256": "e483dc3f6e0a9e3e4e9fd0fd59e8c0e4b3e36f0494e84f5fcda1b937a13d0720"
+    },
+    {
+      "path": "runs/diagonal-crossing-field-20261021/bridge-protection.mjs",
+      "bytes": 3433,
+      "sha256": "98f70f238d22aa3c099e62d9d28bc1d4124c491884c7ae814a58b8ee19a8ee92"
+    },
+    {
+      "path": "runs/diagonal-crossing-field-20261021/bridge-protection.ndjson",
+      "bytes": 180016,
+      "sha256": "ce009c3674f9c6d235cb0d8c82d47312f3ba12e7d1ad5f7862b9980a72a2ea9b"
+    },
+    {
+      "path": "runs/diagonal-crossing-field-20261021/design-card.md",
+      "bytes": 1341,
+      "sha256": "66e93ecf1695aee7fe06aa0818c2f0e0b49d0c2d37ab93b9a99fb6d57824a867"
+    },
+    {
+      "path": "runs/diagonal-crossing-field-20261021/disposition.json",
+      "bytes": 562,
+      "sha256": "f57a62e5997d288b8bbf99b5076b30120dab50c0c44df5c1b47486f4d0c2ca06"
+    },
+    {
+      "path": "runs/diagonal-crossing-field-20261021/inner-protection-card.md",
+      "bytes": 604,
+      "sha256": "80867095eaff3e906f349152001366644cea95d9e0d4fd8e238da217a60905e6"
+    },
+    {
+      "path": "runs/diagonal-crossing-field-20261021/inner-protection.log",
+      "bytes": 2015,
+      "sha256": "0e531338e02fc973e8ad8d503edff72073c84724cdfa9178c28ee23efa97fddf"
+    },
+    {
+      "path": "runs/diagonal-crossing-field-20261021/inner-protection.mjs",
+      "bytes": 2277,
+      "sha256": "f0db33eff85e1091d4012330325f494deec9b4df2ccaae4c8cf6a4befe8a1cc5"
+    },
+    {
+      "path": "runs/diagonal-crossing-field-20261021/inner-protection.ndjson",
+      "bytes": 130397,
+      "sha256": "cab1e0b5f9a8b5518500d85a7a91d04ff462faed8ed59fff09ddda172545ae0e"
+    },
+    {
+      "path": "runs/diagonal-crossing-field-20261021/probe.log",
+      "bytes": 4882,
+      "sha256": "66c30d0ff78439d080e190f53fc96f3e8f62e51ba243437c8b9da0a637cb75d8"
+    },
+    {
+      "path": "runs/diagonal-crossing-field-20261021/probe.mjs",
+      "bytes": 3396,
+      "sha256": "cc4b48680bd89e017be614f47093086d89ea0542c0c1f726005d5b12ba9014ec"
+    },
+    {
+      "path": "runs/diagonal-crossing-field-20261021/probe.ndjson",
+      "bytes": 134256,
+      "sha256": "dcf59bb62773bc4d5bcb98b216526d91fe3be76aae1e460f13bf1afea1310ca5"
+    },
+    {
+      "path": "runs/diagonal-crossing-field-20261021/wider-fields-card.md",
+      "bytes": 511,
+      "sha256": "30c57040f5bbf8fc2b36555c3c02a81e166f7cf700ea69594f3a78d60d742daf"
+    },
+    {
+      "path": "runs/diagonal-crossing-field-20261021/wider-fields.log",
+      "bytes": 4970,
+      "sha256": "448e8d9c879391a8bda414c2b605f0556ca4230c1b23db216913348026d4845b"
+    },
+    {
+      "path": "runs/diagonal-crossing-field-20261021/wider-fields.mjs",
+      "bytes": 3403,
+      "sha256": "166706702a66feb11177fe48367b25d34e279e4b2ee44b873e6b88633ef8a1d0"
+    },
+    {
+      "path": "runs/diagonal-crossing-field-20261021/wider-fields.ndjson",
+      "bytes": 188424,
+      "sha256": "ec0191bd4fda4efa8082b9a90e1cea24c2afa5fe8ebadf0a30e41ae720938244"
+    },
+    {
+      "path": "runs/ordinary-plan-review-20261021/cloud-check.log",
+      "bytes": 18804,
+      "sha256": "a5a1bce07f0c140287d106e1efd3133195eb9499ab3deeb4894153380a635c57"
+    },
+    {
+      "path": "runs/ordinary-plan-review-20261021/controller.json",
+      "bytes": 4369,
+      "sha256": "d1434b29967cd69c3aaa1f57c896c8e6f132beaa3a2f2171756e7fe2d8baced4"
+    },
+    {
+      "path": "runs/ordinary-plan-review-20261021/disposition.json",
+      "bytes": 647,
+      "sha256": "3f577e9ab98d5b1b3e9179222c4366dbfc03e7c8bb73bafc56ddbae5173257ee"
+    },
+    {
+      "path": "runs/ordinary-plan-review-20261021/double-belt-38.json",
+      "bytes": 7907,
+      "sha256": "6552abed12dff404071956900e83b74549e10ab2bf778fd182f7fc33bc7097db"
+    },
+    {
+      "path": "runs/ordinary-plan-review-20261021/double-belt-58.json",
+      "bytes": 8391,
+      "sha256": "7feecadd4e1ef9a24c514cf3eea74d17dcabfbc821b78702cf7f87de99b93759"
+    },
+    {
+      "path": "runs/ordinary-plan-review-20261021/forced-three-way.json",
+      "bytes": 6921,
+      "sha256": "b646e4c6278e06f9a2d95c03f83154883a6d38895f8b573e71edf82bb0504006"
+    },
+    {
+      "path": "runs/ordinary-plan-review-20261021/goal-buffer.json",
+      "bytes": 4533,
+      "sha256": "5469f695a3391a3557b06372f1e24dc2c569db333270bc0ee83a09a2c59eeda0"
+    },
+    {
+      "path": "runs/ordinary-plan-review-20261021/protocol.json",
+      "bytes": 654,
+      "sha256": "4fa112cc45dacb0d8a86c8bc6f75243bd2b32181db92861875a7bee04139acdd"
+    },
+    {
+      "path": "runs/ordinary-plan-review-20261021/reborrow.json",
+      "bytes": 4468,
+      "sha256": "10e6510a6f2ca81a8e97daf9d74b5816733aae80ab641519c2c7a8da4dca5a52"
+    },
+    {
+      "path": "runs/ordinary-plan-review-20261021/returning.json",
+      "bytes": 4629,
+      "sha256": "4633e7c48867c96a6a4292f06db82ad3a50db532993146c03b26dfda2d99cd51"
+    },
+    {
+      "path": "runs/ordinary-plan-review-20261021/review.log",
+      "bytes": 13208,
+      "sha256": "fae532dd7e585313d39b1bd8325ea93acd1416eddf97d209cfc836661361fae3"
+    },
+    {
+      "path": "runs/ordinary-plan-review-20261021/review.mjs",
+      "bytes": 1940,
+      "sha256": "b241b529e93f1dc09c3798ed3d2749b609dfc062b43fc48e7efbe725e538cd70"
+    },
+    {
+      "path": "runs/ordinary-plan-review-20261021/same-recruited-role.json",
+      "bytes": 4650,
+      "sha256": "1bd752cf2e2e6201d2042bf794e141d4d446387abc6c13dad7af337950a5ce0f"
+    },
+    {
+      "path": "runs/ordinary-plan-review-20261021/shunting.json",
+      "bytes": 7492,
+      "sha256": "06a7ad58aa7a9f7c75397b69a55f34f4d6e815e5999a62dce886152aefc1d955"
+    },
+    {
+      "path": "runs/ordinary-plan-review-20261021/summary.ndjson",
+      "bytes": 13208,
+      "sha256": "fae532dd7e585313d39b1bd8325ea93acd1416eddf97d209cfc836661361fae3"
+    }
+  ],
+  "privateArchive": {
+    "file": "artifacts/cloud-data-20261021-planning-120.zip",
+    "files": 14724,
+    "bytes": 167048329,
+    "sha256": "fefcc35716ff58d6856c5fa7f989ed54865a6d4d2028ff48845f9e8cc578df39",
+    "zipIntegrityCheckPassed": true,
+    "rawFileHashesIndependentlyChecked": 91,
+    "downloadedByUser": false
+  }
+}
