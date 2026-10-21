@@ -1,6 +1,6 @@
 # 当前状态
 
-更新：2026-10-20。目标是有可推断尤里卡时刻的好谜题，训练是可选路线。
+更新：2026-10-21。目标是有可推断尤里卡时刻的好谜题，训练是可选路线。
 
 ## 当前任务与停点
 
@@ -39,6 +39,8 @@
 - 作品、历史候选和真实评述统一在本仓[地图总目录](ai-map-catalog.md)；精选设计摘要见[人读小册](https://github.com/Pre-rice/ghost-maze/blob/main/docs/map-design-guide.md)。
 
 ## 研究判断与资料
+
+- [共享保护、内区切换及独立收尾](archive/research/shared-protection-and-coupled-field-20261020.md)：共享保护代表仍可用旧借鬼计划复述；不能先完成任一鬼也不排除终点鬼独立收尾，方法已补充反向核对。互补门态44步稿及48步普通替代分别保留，不声称全解必须A-B-A。三组51份原件111已独立核验；精简、移控制点后的42步稿另起目录继续审查，未交付或入集，不以三鬼必要性和按钮次数判断新意。
 
 - [整体排列与异地同组控制](archive/research/remote-control-and-formation-20261020.md)：三方空间代表仍多强制追逐；异地同A代表虽须交替控制，实际仍可分段停车。取物后返回旧停位也未普遍产生共同让位，三组41份原件110已独立核验，未交付。继续检查单一共享保护与接近方向，机械关系不作质量分。
 
@@ -80,6 +82,6 @@
 - 近期《送客》《互锁》《转圜》均未形成用户认可的新意；必要性、跨阶段安排或多个鬼不能替代实际挑战评价。反馈已提炼至[方法](methodology.md)，不继续交付相似构件。
 - [空间安排研究](archive/research/spatial-control-20261018.md)及自动安排诊断保留原型、失败与反例；工具只提供机械证据，不作为趣味分或求解前自主规划能力。
 - 旧规划模型与行动段对照没有原生搜索替代收益，未据此替换现有方法；本轮未新增模型训练。历史15张规划图653行及亲缘拆分保持。[历史清单](../data/manifests/planning-library-20261014-v12.json)。
-- 原图、生成来源、真人反馈与QA分开，历史资料和旧包保持。最新有效私人快照为 `cloud-data-20261020-planning-110.zip`，独立核对[整体排列与异地同组控制](../data/manifests/spatial-and-remote-control-20261020.json)41份；109，独立核对[内部控制与空间余地](../data/manifests/internal-controls-research-20261020.json)40份；108，独立核对[控制重排及时序反例](../data/manifests/control-routing-research-20261020.json)24份；107，独立核对[初态控制位置研究](../data/manifests/occupied-controls-20261020.json)24份；106，独立核对[三方交接与安全观察研究](../data/manifests/cyclic-handoff-research-20261020.json)53份；105，独立核对[明显困鬼后的构思与留手实评](../data/manifests/obvious-traps-research-20261020.json)52份；104独立核对[交叉控制、返回通路及留手原件](../data/manifests/return-passage-20261020.json)105份；103独立核对[控制位置反例研究](../data/manifests/control-location-research-20261020.json)78份；102独立核对[侧入真实反馈及入集验收](../data/manifests/temporary-entry-review-20261020.json)17份、[终局守卫研究](../data/manifests/following-gap-20261020.json)16份；101含16份纯门与单鬼控制研究，100含18份换路研究，99含31份双路视线反例，98含《侧入》原始完整QA，97含用户《内外》原码与实际反馈。此后另起批次，不回写冻结原件。69曾因连接中断未完成，不作有效包；未称用户已下载。付费与GPU不自动启动。
+- 原图、生成来源、真人反馈与QA分开，历史资料和旧包保持。最新有效私人快照为 `cloud-data-20261020-planning-111.zip`，独立核对[共享保护与内区切换](../data/manifests/shared-protection-and-coupled-field-20261020.json)51份；110独立核对[整体排列与异地同组控制](../data/manifests/spatial-and-remote-control-20261020.json)41份；109，独立核对[内部控制与空间余地](../data/manifests/internal-controls-research-20261020.json)40份；108，独立核对[控制重排及时序反例](../data/manifests/control-routing-research-20261020.json)24份；107，独立核对[初态控制位置研究](../data/manifests/occupied-controls-20261020.json)24份；106，独立核对[三方交接与安全观察研究](../data/manifests/cyclic-handoff-research-20261020.json)53份；105，独立核对[明显困鬼后的构思与留手实评](../data/manifests/obvious-traps-research-20261020.json)52份；104独立核对[交叉控制、返回通路及留手原件](../data/manifests/return-passage-20261020.json)105份；103独立核对[控制位置反例研究](../data/manifests/control-location-research-20261020.json)78份；102独立核对[侧入真实反馈及入集验收](../data/manifests/temporary-entry-review-20261020.json)17份、[终局守卫研究](../data/manifests/following-gap-20261020.json)16份；101含16份纯门与单鬼控制研究，100含18份换路研究，99含31份双路视线反例，98含《侧入》原始完整QA，97含用户《内外》原码与实际反馈。此后另起批次，不回写冻结原件。69曾因连接中断未完成，不作有效包；未称用户已下载。付费与GPU不自动启动。
 
 整理前的完整状态及研究入口保留在[历史快照](archive/worklogs/status-before-repository-separation-20261018.md)，无需为接手重跑已完成研究。
