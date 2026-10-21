@@ -1,0 +1,346 @@
+{
+  "recordedOn": "2026-10-21",
+  "purpose": "数字门资格误读更正与三方返回的普通方案反例",
+  "familyGroups": [
+    "three-way-pass-20261020-v1",
+    "key-window-courts-20261021-v1"
+  ],
+  "relatedResearchDoc": "docs/archive/research/gate-threshold-and-return-counterexamples-20261021.md",
+  "latestActualFeedback": "data/manifests/controller-clearance-review-20261021.json",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "humanQuality": null,
+  "trainingAdded": false,
+  "skillNotAutoInvoked": true,
+  "disposition": "资格窗口是假机制：数字门是钥匙数量下限，不扣钥匙；取第二把不会阻止开1门，0门也一直可开。两份33/29步稿的0改空后原最优角色帧保持。受保护三方稿仍能分段处理，联动返回16稿所选参考均只切一次A，未形成新计划；四批不交付。交叉双庭另起原件，不以归档收尾。",
+  "rawRoots": [
+    "runs/conditional-cycle-20261021",
+    "runs/key-window-courts-20261021",
+    "runs/protected-three-way-20261021",
+    "runs/cyclic-return-gates-20261021"
+  ],
+  "trialSummary": [
+    {
+      "file": "runs/conditional-cycle-20261021/goal-return-sealed.ndjson",
+      "rows": 32,
+      "statuses": {
+        "solved": 26,
+        "proven_unsat": 6
+      },
+      "boundaryStatuses": {
+        "safe": 13,
+        "conflict": 13
+      }
+    },
+    {
+      "file": "runs/conditional-cycle-20261021/goal-return.ndjson",
+      "rows": 0,
+      "statuses": {},
+      "boundaryStatuses": {}
+    },
+    {
+      "file": "runs/conditional-cycle-20261021/ordinary-plan.ndjson",
+      "rows": 9,
+      "statuses": {
+        "not_queried": 9
+      },
+      "boundaryStatuses": {}
+    },
+    {
+      "file": "runs/conditional-cycle-20261021/probe.ndjson",
+      "rows": 24,
+      "statuses": {
+        "proven_unsat": 24
+      },
+      "boundaryStatuses": {}
+    },
+    {
+      "file": "runs/key-window-courts-20261021/active-left.ndjson",
+      "rows": 27,
+      "statuses": {
+        "proven_unsat": 18,
+        "solved": 9
+      },
+      "boundaryStatuses": {
+        "conflict": 9
+      }
+    },
+    {
+      "file": "runs/key-window-courts-20261021/north-arrival.ndjson",
+      "rows": 27,
+      "statuses": {
+        "solved": 12,
+        "proven_unsat": 15
+      },
+      "boundaryStatuses": {
+        "safe": 9,
+        "conflict": 3
+      }
+    },
+    {
+      "file": "runs/key-window-courts-20261021/probe.ndjson",
+      "rows": 27,
+      "statuses": {
+        "proven_unsat": 18,
+        "solved": 9
+      },
+      "boundaryStatuses": {
+        "safe": 9
+      }
+    },
+    {
+      "file": "runs/protected-three-way-20261021/probe.ndjson",
+      "rows": 18,
+      "statuses": {
+        "solved": 18
+      },
+      "boundaryStatuses": {}
+    },
+    {
+      "file": "runs/protected-three-way-20261021/return-key.ndjson",
+      "rows": 36,
+      "statuses": {
+        "solved": 36
+      },
+      "boundaryStatuses": {
+        "conflict": 35,
+        "safe": 1
+      }
+    },
+    {
+      "file": "runs/cyclic-return-gates-20261021/probe.ndjson",
+      "rows": 16,
+      "statuses": {
+        "solved": 16
+      },
+      "boundaryStatuses": {
+        "safe": 16
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "runs/conditional-cycle-20261021/design-card.md",
+      "bytes": 1027,
+      "sha256": "cadcd06c7583470e922f28418e91b5a1f595c0b30afbb5ce3ef77c413be3cbdc"
+    },
+    {
+      "path": "runs/conditional-cycle-20261021/disposition.json",
+      "bytes": 524,
+      "sha256": "47391adef92dd2bce523fd9f17ae0e2d0b48c7cd7a7f29bd0104d57df51244bd"
+    },
+    {
+      "path": "runs/conditional-cycle-20261021/goal-return-sealed.log",
+      "bytes": 4286,
+      "sha256": "46a07cd5746f3ad698fcb25a582941a54b53016b2701361fe8684e8b4c12c201"
+    },
+    {
+      "path": "runs/conditional-cycle-20261021/goal-return-sealed.mjs",
+      "bytes": 2782,
+      "sha256": "7621b987fae5b2df2830c2ba2d05becd2a705e3dbda7221a65a70fa6a110d0dd"
+    },
+    {
+      "path": "runs/conditional-cycle-20261021/goal-return-sealed.ndjson",
+      "bytes": 234161,
+      "sha256": "8cf2e3251a34a4d28cd852f69212de8ad0ff8fb61960668bb3aac7c835af203c"
+    },
+    {
+      "path": "runs/conditional-cycle-20261021/goal-return.log",
+      "bytes": 689,
+      "sha256": "3e75638b9dbc1bce9a54bcfd695d101eb616a5c5dd6602c3c574ba05289a3db9"
+    },
+    {
+      "path": "runs/conditional-cycle-20261021/goal-return.mjs",
+      "bytes": 2664,
+      "sha256": "19c042a1942cec69da71711a732bdc7fcb60f639cc483f3b3b7a50d6b17be414"
+    },
+    {
+      "path": "runs/conditional-cycle-20261021/goal-return.ndjson",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/conditional-cycle-20261021/ordinary-plan.log",
+      "bytes": 2350,
+      "sha256": "daca72a787c1c21ae233c025c2b22e0165ba9c0341be923d80804791ec8dbe85"
+    },
+    {
+      "path": "runs/conditional-cycle-20261021/ordinary-plan.mjs",
+      "bytes": 1702,
+      "sha256": "7cb57d18a9ce5ff5787a2d76e9d47f38d31981f37ed3fb6e694b74064dfd417e"
+    },
+    {
+      "path": "runs/conditional-cycle-20261021/ordinary-plan.ndjson",
+      "bytes": 14204,
+      "sha256": "8b0969583ef3cbd5147045ab4119cf146481747fb196151c0556c0563a407dd1"
+    },
+    {
+      "path": "runs/conditional-cycle-20261021/probe.log",
+      "bytes": 2998,
+      "sha256": "2c67f2ec074462f0fcca130969d1835b9ce9063b5813cefb1986622e0b39664c"
+    },
+    {
+      "path": "runs/conditional-cycle-20261021/probe.mjs",
+      "bytes": 2627,
+      "sha256": "a4acd6314875eb02fc56743980af9941c2959b0e8964c997c011329a8891b24d"
+    },
+    {
+      "path": "runs/conditional-cycle-20261021/probe.ndjson",
+      "bytes": 95879,
+      "sha256": "26e963fff6d0f4b986fd5ac118aa49d7efaeee0d7f89343a6acb1cd3e386fb8e"
+    },
+    {
+      "path": "runs/conditional-cycle-20261021/rule-hypothesis-correction.json",
+      "bytes": 840,
+      "sha256": "74f68222c88c875d603bc10cdd23727a08d2f5ecfb472e130c460753cfd5e155"
+    },
+    {
+      "path": "runs/conditional-cycle-20261021/zero-property.json",
+      "bytes": 690,
+      "sha256": "5dcb756f5bc90fba0b88e77e3d5386f4e6914ff0cd9abe01b385d41d4e70c752"
+    },
+    {
+      "path": "runs/conditional-cycle-20261021/zero-property.mjs",
+      "bytes": 1517,
+      "sha256": "9e6ab076796e4cddd1d761ad5f6a4232a1f099d1af22ba5aa6ca96d8a1c7b073"
+    },
+    {
+      "path": "runs/key-window-courts-20261021/active-left.log",
+      "bytes": 4220,
+      "sha256": "f8f15b04ea9c3fa35b76c1fbdae043f9158364c24a578a09a1d78205c2cbae11"
+    },
+    {
+      "path": "runs/key-window-courts-20261021/active-left.mjs",
+      "bytes": 3401,
+      "sha256": "204a35eb8ca05f983a8dbdcf76c31fc59d4569a57a23f86c036d922e8967ca80"
+    },
+    {
+      "path": "runs/key-window-courts-20261021/active-left.ndjson",
+      "bytes": 144977,
+      "sha256": "897921fc6dde7483bc7de920db503b7def91f57e2b44c90b9c09a55d4e58322e"
+    },
+    {
+      "path": "runs/key-window-courts-20261021/design-card.md",
+      "bytes": 1146,
+      "sha256": "9a4ea1cbff598784957be65effa8406a03c8bfa045ac68b476769fb9d06f255f"
+    },
+    {
+      "path": "runs/key-window-courts-20261021/disposition.json",
+      "bytes": 410,
+      "sha256": "07f8ba0670c5a4bb747bb089b855eef1aff0c75bfb8fdf2481736aa78a90fa7d"
+    },
+    {
+      "path": "runs/key-window-courts-20261021/north-arrival.log",
+      "bytes": 4228,
+      "sha256": "35f5deebfad07048008f421a3a14f52e3d83889ed728ab18998cc278749b8a3c"
+    },
+    {
+      "path": "runs/key-window-courts-20261021/north-arrival.mjs",
+      "bytes": 3403,
+      "sha256": "31113fe2748d7e839470ddea465fff0fc0f59ba97de8d920306b999db1fc2527"
+    },
+    {
+      "path": "runs/key-window-courts-20261021/north-arrival.ndjson",
+      "bytes": 149252,
+      "sha256": "6935ae6156aab99dd71528a60081a2be37ff07788cf4f4647291acd68a9413ae"
+    },
+    {
+      "path": "runs/key-window-courts-20261021/probe.log",
+      "bytes": 3835,
+      "sha256": "4e0ef0fef7016db88bfea48455b9054c4ac9a381e7d892259f56c0184bd81a53"
+    },
+    {
+      "path": "runs/key-window-courts-20261021/probe.mjs",
+      "bytes": 3348,
+      "sha256": "3fa92c8cbb3ad429566bdbd2af0ff4bc0ba1831ce956fa5b51608ed0a56ac1ff"
+    },
+    {
+      "path": "runs/key-window-courts-20261021/probe.ndjson",
+      "bytes": 127211,
+      "sha256": "7466570f63d5399315d1dbc8046529c12cf54e60feeab8502bd65ed8c90cd1b7"
+    },
+    {
+      "path": "runs/key-window-courts-20261021/rule-hypothesis-correction.json",
+      "bytes": 840,
+      "sha256": "74f68222c88c875d603bc10cdd23727a08d2f5ecfb472e130c460753cfd5e155"
+    },
+    {
+      "path": "runs/protected-three-way-20261021/construction-note.json",
+      "bytes": 299,
+      "sha256": "22f17e57b51c823f7939918959da806742525e4cae4ba9e413455da1c8162a02"
+    },
+    {
+      "path": "runs/protected-three-way-20261021/design-card.md",
+      "bytes": 1057,
+      "sha256": "2318e5f9aa4a05729d1b65342a0d2733f79bb92f19a6b9e77f0ed7ffeda7d4bb"
+    },
+    {
+      "path": "runs/protected-three-way-20261021/disposition.json",
+      "bytes": 611,
+      "sha256": "d0e04e6edabb817e2d7e6cdf8cc72235f8bf1cb1cbbe793c97d84a27b51784ed"
+    },
+    {
+      "path": "runs/protected-three-way-20261021/probe.log",
+      "bytes": 2042,
+      "sha256": "980c1ed1c59183735b061fa80bd99f6fb709f3910caa032d4a4421dc11ce385d"
+    },
+    {
+      "path": "runs/protected-three-way-20261021/probe.mjs",
+      "bytes": 2430,
+      "sha256": "ea11a78d4269724bc6e6b43f34691f90b27d0611507ad526e09326bc120d16ba"
+    },
+    {
+      "path": "runs/protected-three-way-20261021/probe.ndjson",
+      "bytes": 79343,
+      "sha256": "33fbf31a50ddac6facf47b77adc2f44e95c97b27c41fbf38f1cf5ad507c8dcc7"
+    },
+    {
+      "path": "runs/protected-three-way-20261021/return-key.log",
+      "bytes": 5360,
+      "sha256": "7e48a62b15e73c424be79fcfbfc3d697e246c9a8deefef7d6c20456e309f9889"
+    },
+    {
+      "path": "runs/protected-three-way-20261021/return-key.mjs",
+      "bytes": 2692,
+      "sha256": "d1eb67be99eebfd7bc0c0347fbae110b240214e6022618795638eb4499fd7a5a"
+    },
+    {
+      "path": "runs/protected-three-way-20261021/return-key.ndjson",
+      "bytes": 267140,
+      "sha256": "474aa4f2b453590304446b26c817972df6410e7fb8179e35a93445dc8de0be1d"
+    },
+    {
+      "path": "runs/cyclic-return-gates-20261021/design-card.md",
+      "bytes": 1044,
+      "sha256": "0aba3bb904cd4aabe6cc7af8dc2dc8e79892b193d495006bc7d3f53ed8971428"
+    },
+    {
+      "path": "runs/cyclic-return-gates-20261021/disposition.json",
+      "bytes": 537,
+      "sha256": "ac6c98603e016dedeee0bf38c84604bcdf012b23e16313e2bcc6a610afffadc2"
+    },
+    {
+      "path": "runs/cyclic-return-gates-20261021/probe.log",
+      "bytes": 2582,
+      "sha256": "26a8200e6d2b5c7ad74b38c2d79fc1aa15f3d0d74060ead7253dbb12350a644b"
+    },
+    {
+      "path": "runs/cyclic-return-gates-20261021/probe.mjs",
+      "bytes": 2906,
+      "sha256": "0f63d3733da04121f7df07d4142927951e1825bc7aba98570fc0fec0b018f9db"
+    },
+    {
+      "path": "runs/cyclic-return-gates-20261021/probe.ndjson",
+      "bytes": 111650,
+      "sha256": "3fa17504c16d3527dc052ee44296ad7c74d065fa28c91289c5609ab6639334ee"
+    }
+  ],
+  "privateArchive": {
+    "file": "artifacts/cloud-data-20261021-planning-117.zip",
+    "files": 14536,
+    "bytes": 166722693,
+    "sha256": "4a5b163deaf125f73dfed0e46fb69a7df161c4de3252b2dfe64a877bee0650f2",
+    "zipIntegrityCheckPassed": true,
+    "rawFileHashesIndependentlyChecked": 43,
+    "downloadedByUser": false
+  }
+}
