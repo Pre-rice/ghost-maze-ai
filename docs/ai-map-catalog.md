@@ -1,5 +1,17 @@
 # AI 地图总目录
 
+## 2026-10-21 《接管》初次交付
+
+19格、包络7×4、双鬼；单A两处控制、三扇同相A、一钥匙与1门。最优19步、唯一含停顿鬼轨迹；全部最优去终点、90态890次排列／变编号后继、中性实际一步入场及分享往返通过。设计预期是第一次关闭与之后重开的操作面、停位共同准备；先从下方A关闭虽能14步活着取钥匙，全部续解仍无解。**尚无真人评价，未入地图集，不计已确认的新意或挑战突破。** 地图集20张、9张站主优化保持，未训练或自动试玩。
+
+[无剧透试玩](https://ghostmaze.novic.cc/?map=AWM48PePjQEDAwOjiYKiC4OAQIMTa6iGqwMrKwMQsDyYVnmQRWECAwg4OLIAAA) · [设计预期、来源与验收](../examples/controller-clearance-20261021/README.md)
+
+<details><summary>参考回放（含答案）</summary>
+
+[19步参考](https://ghostmaze.novic.cc/?map=AWM48PePjQEDAwOjiYKiC4OAQIMTa6iGqwMrKwMQsDyYVnmQRWECAwg4OLIAAA&replay=CC1kPRIFpgItaA)
+
+</details>
+
 ## 2026-10-20 《留手》负反馈
 
 23格、包络6×4、双鬼，A/B各一个按钮、两扇普通门和两扇单向门，无钥匙／玻璃。最优41步、三种含停顿鬼轨迹；六条原始最优全部去终点安全、621态6160次编号后继、中性真实两步入场、码往返与桌面／手机求解回放通过。**用户实评“没什么难度”“困鬼的地方都很明显”“思路过于线性”“没什么新意”；未入地图集，不计挑战进展。** [真实反馈](../data/manifests/returning-control-review-20261020.json)。 本轮20张、9张站主优化保持；未训练或自动试玩。

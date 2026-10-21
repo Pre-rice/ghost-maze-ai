@@ -1,0 +1,21 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import { buildMap } from './build.mjs';
+import { analyzeMap } from './analyze.mjs';
+import { auditMap } from '../gallery-adjustments-20261014/verify.mjs';
+import { groupMap } from '../reverse-gate-20261019/verify.mjs';
+
+const stored = JSON.parse(fs.readFileSync(new URL('evidence.json', import.meta.url))), map = buildMap();
+assert.deepEqual(map, stored.map);
+assert.deepEqual(map, JSON.parse(fs.readFileSync(new URL('map.json', import.meta.url))));
+const qa = auditMap(map, stored.qa.mapCode), grouping = groupMap(map), analysis = analyzeMap(map);
+for (const key of ['mapId', 'ruleset', 'count', 'routes', 'cold', 'entry', 'physicalAudit', 'noEndSafeRoutes']) assert.deepEqual(qa[key], stored.qa[key]);
+assert.equal(qa.allResult.totalActions, 19);
+assert.equal(qa.boundary.status, 'safe');
+assert(qa.cold && qa.entry.initialInteriorEqual && qa.entry.wholeOptimalRoutesInteriorEqual);
+assert.deepEqual(grouping.routes, stored.grouping.routes);
+assert.deepEqual(analysis, stored.analysis);
+assert.equal(analysis.queries.find(q => q.name === 'first-controller-1').result.status, 'proven_unsat');
+assert.equal(analysis.wrongFirstCanReachKey.result.status, 'solved');
+assert.deepEqual([analysis.wrongFirstCanReachKey.actualState.keys, analysis.wrongFirstCanReachKey.actualState.dead, analysis.wrongFirstCanReachKey.actualState.won], [1, false, false]);
+console.log(JSON.stringify({ N: qa.allResult.totalActions, raw: qa.count, groups: grouping.count, boundary: qa.boundary.status, entry: qa.entry, physicalAudit: qa.physicalAudit, wrongFirstKeyStep: analysis.wrongFirstCanReachKey.result.totalActions }));

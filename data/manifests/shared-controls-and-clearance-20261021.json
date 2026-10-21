@@ -1,0 +1,735 @@
+{
+  "recordedOn": "2026-10-21",
+  "purpose": "晚开放守卫、相位回返、双区共享控制及接管的完整原生构造、删改与反例",
+  "familyGroups": [
+    "hinged-field-20261020-v1",
+    "rotating-neck-20261021-v1"
+  ],
+  "relatedResearchDoc": "docs/archive/research/shared-controls-and-clearance-20261021.md",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "humanQuality": null,
+  "trainingAdded": false,
+  "skillNotAutoInvoked": true,
+  "disposition": "晚守卫及双区代表仍有合并最优、分段停车或无解，未递补。两处公共控制原型压为19格接管，原始同长重合已另加合法实墙排除，全部唯一最优通过；保留下入口A以维持能取钥匙但无后路的具体普通错解。候选尚无真人反馈、未入集。",
+  "publicExample": "examples/controller-clearance-20261021",
+  "rawRoots": [
+    "runs/late-guardian-20261021",
+    "runs/relay-protocol-20261021",
+    "runs/relay-tree-20261021",
+    "runs/rotating-neck-20261021",
+    "runs/shared-keepers-20261021",
+    "runs/switch-clearance-20261021"
+  ],
+  "trialSummary": [
+    {
+      "file": "runs/late-guardian-20261021/probe.ndjson",
+      "rows": 64,
+      "statuses": {
+        "solved": 64
+      }
+    },
+    {
+      "file": "runs/relay-protocol-20261021/goal-phase-v2.ndjson",
+      "rows": 12,
+      "statuses": {
+        "solved": 12
+      }
+    },
+    {
+      "file": "runs/relay-protocol-20261021/goal-phase.ndjson",
+      "rows": 0,
+      "statuses": {}
+    },
+    {
+      "file": "runs/relay-protocol-20261021/probe.ndjson",
+      "rows": 48,
+      "statuses": {
+        "solved": 48
+      }
+    },
+    {
+      "file": "runs/relay-tree-20261021/phase-loop.ndjson",
+      "rows": 264,
+      "statuses": {
+        "proven_unsat": 264
+      }
+    },
+    {
+      "file": "runs/relay-tree-20261021/probe.ndjson",
+      "rows": 192,
+      "statuses": {
+        "proven_unsat": 192
+      }
+    },
+    {
+      "file": "runs/rotating-neck-20261021/bottom-entry.ndjson",
+      "rows": 90,
+      "statuses": {
+        "solved": 32,
+        "proven_unsat": 58
+      }
+    },
+    {
+      "file": "runs/rotating-neck-20261021/probe.ndjson",
+      "rows": 64,
+      "statuses": {
+        "proven_unsat": 64
+      }
+    },
+    {
+      "file": "runs/rotating-neck-20261021/return-objective.ndjson",
+      "rows": 216,
+      "statuses": {
+        "solved": 62,
+        "proven_unsat": 154
+      }
+    },
+    {
+      "file": "runs/rotating-neck-20261021/shared-controls.ndjson",
+      "rows": 240,
+      "statuses": {
+        "proven_unsat": 128,
+        "initial-pursuit": 112
+      }
+    },
+    {
+      "file": "runs/rotating-neck-20261021/two-slot.ndjson",
+      "rows": 64,
+      "statuses": {
+        "proven_unsat": 64
+      }
+    },
+    {
+      "file": "runs/rotating-neck-20261021/wider-courts.ndjson",
+      "rows": 216,
+      "statuses": {
+        "solved": 96,
+        "proven_unsat": 120
+      }
+    },
+    {
+      "file": "runs/shared-keepers-20261021/pose-sweep.ndjson",
+      "rows": 72,
+      "statuses": {
+        "proven_unsat": 52,
+        "initial-pursuit": 20
+      }
+    },
+    {
+      "file": "runs/shared-keepers-20261021/probe.ndjson",
+      "rows": 16,
+      "statuses": {
+        "proven_unsat": 16
+      }
+    },
+    {
+      "file": "runs/switch-clearance-20261021/birth-sweep.ndjson",
+      "rows": 16,
+      "statuses": {
+        "initial-pursuit": 8,
+        "solved": 8
+      }
+    },
+    {
+      "file": "runs/switch-clearance-20261021/boundary-edits.ndjson",
+      "rows": 39,
+      "statuses": {
+        "proven_unsat": 13,
+        "solved": 26
+      }
+    },
+    {
+      "file": "runs/switch-clearance-20261021/combined-economy.ndjson",
+      "rows": 56,
+      "statuses": {
+        "solved": 56
+      }
+    },
+    {
+      "file": "runs/switch-clearance-20261021/economy-selected.ndjson",
+      "rows": 33,
+      "statuses": {
+        "solved": 10,
+        "proven_unsat": 23
+      }
+    },
+    {
+      "file": "runs/switch-clearance-20261021/probe.ndjson",
+      "rows": 12,
+      "statuses": {
+        "solved": 12
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "runs/late-guardian-20261021/design-card.json",
+      "bytes": 1243,
+      "sha256": "f79128738f3c302510ef65702ebf34ef2561a5618958250ad5af3a41995b69c8"
+    },
+    {
+      "path": "runs/late-guardian-20261021/probe.log",
+      "bytes": 64,
+      "sha256": "db7f1eb9844fa72b774ee33aa05d1618bd51c449e3a03452f6ad3fd0e3e17b26"
+    },
+    {
+      "path": "runs/late-guardian-20261021/probe.mjs",
+      "bytes": 4544,
+      "sha256": "1c073ef4d40b72be502f31ea7d97a44b638162f8542e4c055ae99883f30a6af7"
+    },
+    {
+      "path": "runs/late-guardian-20261021/probe.ndjson",
+      "bytes": 700148,
+      "sha256": "ae15aa337d2bcf11e960fe29738e746c5667072f58be9e7202f8a788895e3047"
+    },
+    {
+      "path": "runs/relay-protocol-20261021/design-card.json",
+      "bytes": 1236,
+      "sha256": "c17392f3efc77a8a64c39cae07766af1e75108c6de6e4f992cdfe75ba5c02eae"
+    },
+    {
+      "path": "runs/relay-protocol-20261021/goal-phase-card.json",
+      "bytes": 1105,
+      "sha256": "071907fddf66103f278a90c28ec3263db674550ea2716aead587cb3938304127"
+    },
+    {
+      "path": "runs/relay-protocol-20261021/goal-phase-v2.log",
+      "bytes": 2594,
+      "sha256": "67511e185fe2e813afb758db1b4a2334fcdd5b4fd5a8c717412d834369645c5b"
+    },
+    {
+      "path": "runs/relay-protocol-20261021/goal-phase-v2.mjs",
+      "bytes": 2951,
+      "sha256": "70359db3c670813bcc7cdea00f181353a0560166ec5dc3fabebd861aacea496b"
+    },
+    {
+      "path": "runs/relay-protocol-20261021/goal-phase-v2.ndjson",
+      "bytes": 123270,
+      "sha256": "27921b8bbf5b3b0ba54641b1724e04110a98167793954327f5edce36797d5fe7"
+    },
+    {
+      "path": "runs/relay-protocol-20261021/goal-phase.log",
+      "bytes": 685,
+      "sha256": "8ff3e0a9f999144b9e325e7f2c870509d2740c00d1762b69716c9bd8eae8ab8f"
+    },
+    {
+      "path": "runs/relay-protocol-20261021/goal-phase.mjs",
+      "bytes": 2911,
+      "sha256": "f58e3c1d73377dbeb34af2bce6a94a8abdbe28cba1b03de0c8e4d90cae256a40"
+    },
+    {
+      "path": "runs/relay-protocol-20261021/goal-phase.ndjson",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/relay-protocol-20261021/probe.log",
+      "bytes": 12872,
+      "sha256": "c2e14e1d08c440524a347941e4ab54bf26bc03da33894234dd1b98128ae2cbb3"
+    },
+    {
+      "path": "runs/relay-protocol-20261021/probe.mjs",
+      "bytes": 4935,
+      "sha256": "c2c49f62c20ca4e0e30b1abc4fa7e0c07823c93d19e468310d69e130ab778603"
+    },
+    {
+      "path": "runs/relay-protocol-20261021/probe.ndjson",
+      "bytes": 463573,
+      "sha256": "9f3dd70598cf8330001974a62dfa31d9c3645290c4a71da57daaa0e00bdecce3"
+    },
+    {
+      "path": "runs/relay-tree-20261021/design-card.json",
+      "bytes": 1181,
+      "sha256": "6f53ad98f135aebe98e6b71e7939f6e30248fd68979c24e136a514ab3a20edea"
+    },
+    {
+      "path": "runs/relay-tree-20261021/phase-loop-card.json",
+      "bytes": 963,
+      "sha256": "cd30df6b296dc43172bc57c5e0a84cdd9d38a529b4fc5186a995c522b822b60a"
+    },
+    {
+      "path": "runs/relay-tree-20261021/phase-loop.log",
+      "bytes": 133,
+      "sha256": "94111d7cdd9908b6242f636004bc03fd4dd1e2027b08bc8e75f6ba796dbe833f"
+    },
+    {
+      "path": "runs/relay-tree-20261021/phase-loop.mjs",
+      "bytes": 2711,
+      "sha256": "d846e69c4a999369e660bcbca0eaea9085b513ced45f5ef5d3db517191c7a8bd"
+    },
+    {
+      "path": "runs/relay-tree-20261021/phase-loop.ndjson",
+      "bytes": 1581654,
+      "sha256": "dabc5742b022665b719fa14d2adf95c9b16533d629444ff5ac088cc5d8d7022a"
+    },
+    {
+      "path": "runs/relay-tree-20261021/probe.log",
+      "bytes": 99,
+      "sha256": "451899082f4f9d826195686db93a9c7c873617e4c6423e5180b5d99a8e41a9a4"
+    },
+    {
+      "path": "runs/relay-tree-20261021/probe.mjs",
+      "bytes": 4181,
+      "sha256": "54e422e857acf62b9b2ab72849c5ca291134a76e5c78acd2fe761c5b2db16851"
+    },
+    {
+      "path": "runs/relay-tree-20261021/probe.ndjson",
+      "bytes": 1200236,
+      "sha256": "77628755c1d4a957fe68f205db0ac89a902b5042d9a42c7d1b68af12a3ecf390"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/bottom-entry-card.json",
+      "bytes": 1243,
+      "sha256": "af1e7b8cbeb10f217e258be67599aa02a2df4535a2b498e9d633c122e0d6b92b"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/bottom-entry.log",
+      "bytes": 3499,
+      "sha256": "3dfa1507e508710f0555089255062058bc30e498edca5230a3ab543d76e615ce"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/bottom-entry.mjs",
+      "bytes": 4245,
+      "sha256": "192463edd8e2aface084a3f65dd5257b7cc9546c4de1b30ad576c139b6c02219"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/bottom-entry.ndjson",
+      "bytes": 444082,
+      "sha256": "1afdb991d3874ed181f5ad4c56937a07d3dceda61e8ead76aea93c9883893207"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/design-card.json",
+      "bytes": 1237,
+      "sha256": "06315923c0962c455c4638d3c29bee98f0cf2abb05bb3f4c85b69e37eb45b46f"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/probe.log",
+      "bytes": 64,
+      "sha256": "db7f1eb9844fa72b774ee33aa05d1618bd51c449e3a03452f6ad3fd0e3e17b26"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/probe.mjs",
+      "bytes": 3960,
+      "sha256": "afb28679bf36623fc398e13837afc1b12b36bad2747b15f0c45f253caa57c4a8"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/probe.ndjson",
+      "bytes": 274650,
+      "sha256": "b8c7460f5fd58d314127402fa5aeafe0f80262f8ca734832a9d818d5f39ca102"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/return-objective-card.json",
+      "bytes": 1151,
+      "sha256": "76ab8dc97f859c5be4b9fb67a8e43cd3b23a9ad20dc11e21e49598c71d314106"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/return-objective.log",
+      "bytes": 4907,
+      "sha256": "752ab5a5a68edec991ff9cd6b545c086542cb5951757560224dbd9592c17c9b4"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/return-objective.mjs",
+      "bytes": 4141,
+      "sha256": "88a1f351ecf6f3563bce20a63226a3f0e6aa022a31f830dc184ba7427a6bd702"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/return-objective.ndjson",
+      "bytes": 1040921,
+      "sha256": "17fbcc25a4504b8e43ac59388162f7f605a07bb9bdf029a69777ca31a5e94cc0"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/shared-controls-card.json",
+      "bytes": 1105,
+      "sha256": "ced3203911c833fd5db140a3e5cd35b181713d71a309ee93ea6579ca357bc9d9"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/shared-controls.log",
+      "bytes": 99,
+      "sha256": "10d5fcb6d95d77bcb07d31963479850edce54bf9b0cad9c534a5819eb4afe53b"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/shared-controls.mjs",
+      "bytes": 4263,
+      "sha256": "5b8539e4cab666522a1afe667526863c8331d8103ef6951bab8bb734ccc4eb06"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/shared-controls.ndjson",
+      "bytes": 1027600,
+      "sha256": "0886ef6b25011dc462351cb7a87779c0325154d6fed623e3e86da4dbb71d356c"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/two-slot-card.json",
+      "bytes": 1031,
+      "sha256": "ebba11ee1f35c43d3524d0494d6f7cd0d23d703b549b3fdd61353153418a9cc7"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/two-slot.log",
+      "bytes": 64,
+      "sha256": "db7f1eb9844fa72b774ee33aa05d1618bd51c449e3a03452f6ad3fd0e3e17b26"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/two-slot.mjs",
+      "bytes": 4021,
+      "sha256": "77e1b93d04b4400ac608ea0ca0ddd4fc12a6cf78a1e54b64f78b7a4a28ee394a"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/two-slot.ndjson",
+      "bytes": 274577,
+      "sha256": "8fe9050baa12b7cdf63afc557cdbcfbab7ddc527e82359c051f9bfef2836db19"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/wider-courts-card.json",
+      "bytes": 1156,
+      "sha256": "83680f6de903255be60c41ae69fd133ed5bab0ff30aa1a15d3d1934acc3a6394"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/wider-courts.log",
+      "bytes": 10528,
+      "sha256": "cd1aba046fc1a27b90ea8714f9784e39029d2e793a55e7085c3084fbae5fbcf8"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/wider-courts.mjs",
+      "bytes": 4198,
+      "sha256": "ddf058bf04ba4f904a9e6b0c9c4a6b8be765c13e9d586c51f3e7bb4ab6d843d8"
+    },
+    {
+      "path": "runs/rotating-neck-20261021/wider-courts.ndjson",
+      "bytes": 1090539,
+      "sha256": "4a0110d14a9f7de4f1f358e50f3288a037e5eedeabab482cfafada720e50b0d3"
+    },
+    {
+      "path": "runs/shared-keepers-20261021/design-card.json",
+      "bytes": 1241,
+      "sha256": "a241c5c4c8290713006833c71874686478115b44f17637cb87d19a374e7e41ad"
+    },
+    {
+      "path": "runs/shared-keepers-20261021/partial-controls.json",
+      "bytes": 949,
+      "sha256": "b96665ec8c47458a77cc1522286fa39debcda3f2f6d6194b20b5d33db6c3400f"
+    },
+    {
+      "path": "runs/shared-keepers-20261021/partial-controls.mjs",
+      "bytes": 1166,
+      "sha256": "49b0e651ebe06c639f4c4ba10740d54f348d495b53c44bc61841be642e8173cf"
+    },
+    {
+      "path": "runs/shared-keepers-20261021/pose-sweep.log",
+      "bytes": 8807,
+      "sha256": "0fdeb014a8bf61cbdfb3a21d6d7d0bcd034dcb1f5972b8c98f02fc794b01959c"
+    },
+    {
+      "path": "runs/shared-keepers-20261021/pose-sweep.mjs",
+      "bytes": 4098,
+      "sha256": "1d053094f21077d64079b7a7dd5c47b5b6854a5f0999ec4b97a337fe82c5bc30"
+    },
+    {
+      "path": "runs/shared-keepers-20261021/pose-sweep.ndjson",
+      "bytes": 309274,
+      "sha256": "74b200297b54f51abeb9a1639687f19ba471ef3fd5decf5b96aeb90cb5025ebd"
+    },
+    {
+      "path": "runs/shared-keepers-20261021/probe.log",
+      "bytes": 2262,
+      "sha256": "3b33a379a6ebb5df2359ba30daeb4b8364f56bf95c5d171ab96a909c729dafc8"
+    },
+    {
+      "path": "runs/shared-keepers-20261021/probe.mjs",
+      "bytes": 3825,
+      "sha256": "dde1c500fe93e6b25f9ddb985b8f93dd4e0db64aecc62c9adca1bb081583f697"
+    },
+    {
+      "path": "runs/shared-keepers-20261021/probe.ndjson",
+      "bytes": 69194,
+      "sha256": "44c08548af330ffa0f5fdcc68429179a91bb7a9b2a749bddfb81d1dfa061d4bf"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/birth-sweep.log",
+      "bytes": 775,
+      "sha256": "27a2c9a83c8699059e10d6c9402e5c2f70893478bd7ee725c76166f4219532ee"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/birth-sweep.mjs",
+      "bytes": 1759,
+      "sha256": "629f6c1c35ada074d718ecba26ac26e708a8764564966b03308d5ae73891a3ee"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/birth-sweep.ndjson",
+      "bytes": 72845,
+      "sha256": "a462069c0d8326d612b7c7b105cbc1e205087f16de4bf374494ae412b89874bb"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/boundary-edits-card.json",
+      "bytes": 545,
+      "sha256": "36e2d65d262035e7e78ed6e0e90459d105c2b53024c80718863718f2c49b5f30"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/boundary-edits.log",
+      "bytes": 152,
+      "sha256": "8bbfced3edf67f489fa56f7cf4b023bca7d8dfedbab56e1e8376c4a62a700fb9"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/boundary-edits.mjs",
+      "bytes": 3323,
+      "sha256": "fec3c4663daa675049b09440ec2ea2995af796dca96ca7844d06fd75134958b3"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/boundary-edits.ndjson",
+      "bytes": 190802,
+      "sha256": "78f6ed68a4c81137f29a3176e2a9209b2972e0e50f34e4418e250d7b3201a76d"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/cloud-check.log",
+      "bytes": 18139,
+      "sha256": "5665696fd1b0c8f8239d74feae7590e1646845b68ae7bde75d45e5a06b28b7e8"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/combined-economy.log",
+      "bytes": 5842,
+      "sha256": "5899f6ca9beb150e599e8ca0b49cfbf603686583c3c543924558ed29ccf51454"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/combined-economy.mjs",
+      "bytes": 2367,
+      "sha256": "30c2ed654dc5ea1bdbc52946ef22ef45357d39d71581778e9c794bbcb8215af4"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/combined-economy.ndjson",
+      "bytes": 274532,
+      "sha256": "61f7eef080b89e03fa36a0a018fcde161d3fdd4237d5940f1e368e5793d65346"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/compact-canvas-1360.png",
+      "bytes": 18242,
+      "sha256": "b1982771bde2428557ace2dbedc014ff8a11add9c76543a9d5a10b4ac57a682d"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/compact-canvas-390.png",
+      "bytes": 7931,
+      "sha256": "d51fd53a700a070b4ba121e972b519e03e1e414a7c736e072e1c1e5617b86298"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/compact-final.json",
+      "bytes": 15869,
+      "sha256": "fbef83404bdc4b66ad97805ea806506d5fe8c009e2045ddc9e28bf70678ed739"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/compact-final.mjs",
+      "bytes": 2606,
+      "sha256": "6a6ed23d6862ed4cd8da8fdc65347b1d8440fcdfc33acb0503be542c030576d1"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/compact-page-1360.png",
+      "bytes": 35038,
+      "sha256": "3eec71198d17e5ab86d8c91375ed7c123b67c7839ce70e6a84b6108202536b46"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/compact-page-390.png",
+      "bytes": 24556,
+      "sha256": "c8e550b3cab6c43f05469a2afe3786f93d800333f3e96e2835a08f577c791321"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/design-card.json",
+      "bytes": 1333,
+      "sha256": "841bd898d38ff4583e52d7322065503cfe9b7f1471e442fabf768b33ca8d6900"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/disposition.json",
+      "bytes": 930,
+      "sha256": "10ffd2a6e136f8bc427457f723d9dee33081008b5b64db5897535c8dad034434"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/economy-selected.log",
+      "bytes": 1428,
+      "sha256": "f26239b35bfd1da1394f1ccf93ca8232a487c54b320f7da561ab9049bd804e44"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/economy-selected.mjs",
+      "bytes": 3776,
+      "sha256": "56d9934359efd759aab9965b162cc0e8243c92ba5d542c5b42040f894f2db716"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/economy-selected.ndjson",
+      "bytes": 146117,
+      "sha256": "16d5bc19978257e289fc7722070670af1dcbad690c01f60108267d0d3c190481"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/full-audit-retained.json",
+      "bytes": 35109,
+      "sha256": "216615b70234e59748d632e6f172186347f2960c4b8b8b59536f79d9ea7b368f"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/full-audit-retained.log",
+      "bytes": 507,
+      "sha256": "d2e2b245de80cb8921728a3163e3d4af2ae89129b7a15c9537b310af5c6d1ed2"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/full-audit-retained.mjs",
+      "bytes": 834,
+      "sha256": "41e5c4d4ff175f9eadf143a4b3ada06b72829d5d40688e9b7a274890c29ac678"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/full-audit.json",
+      "bytes": 33177,
+      "sha256": "b76a53ebb729307004ea577db56657786a327ef9065cdc082045eb5b92e72ec6"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/full-audit.log",
+      "bytes": 504,
+      "sha256": "ae8baa3f599afd5f632ee3bfe766fb341ea1f334efb0a6bc5c286bd5e3da34b2"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/full-audit.mjs",
+      "bytes": 823,
+      "sha256": "38d073bb5509095491a9df9a1f3f8130a601bdea52866f54fdbed7382f829105"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/manual-check.json",
+      "bytes": 247,
+      "sha256": "6b945d7b8fdeba2a4527d0c097c091a8d4383a7a3b75842e49fa9274b7a92f3f"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/prepare-public.mjs",
+      "bytes": 3119,
+      "sha256": "dd8f8ed67d32684bb27e2797de6b672c8f3d96e8febdf9edea317ba1b8f946b8"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/probe.log",
+      "bytes": 1930,
+      "sha256": "19db1248c92f6317e7f80f909383003c3a2cd712dc6760073d544e9bc0af19cc"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/probe.mjs",
+      "bytes": 4072,
+      "sha256": "8da0aa7c6831d34c0ebca95dee1eb6dae4aca2e5d5eda6baba55eb71bfbb951c"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/probe.ndjson",
+      "bytes": 85043,
+      "sha256": "ba565c0599d52fda8a7762c1f3b5af375de3701de8092b669fa6dd98baf8a56c"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/retained-canvas-1360.png",
+      "bytes": 19472,
+      "sha256": "f91a9029b2bd5a530691f375f8ae93c736545208e51a36dd650c1ba51e3d8434"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/retained-canvas-390.png",
+      "bytes": 8341,
+      "sha256": "5a3adf13c261f515e4cc05eb36ca7b1884fcfa2f95fc30b2e8bc4ba11e6a88f8"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/retained-choice.json",
+      "bytes": 17619,
+      "sha256": "b440400382fd0f2350477598ec2b970ff05c4dac6b0e583822d27c3ec0ac7c98"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/retained-choice.mjs",
+      "bytes": 2803,
+      "sha256": "b3761301a06d46e88bfb01403b96f573482463a88d5d803fd4cde30b7a9c0501"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/retained-page-1360.png",
+      "bytes": 36152,
+      "sha256": "858d12ee7026c910718b1406d2eb466e67a71efb18a5b8b80ef862111e7309dd"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/retained-page-390.png",
+      "bytes": 24958,
+      "sha256": "a48c31414a4f54bbb04fcbbde575b2ec0c7a55b617c0baff0dd2be6ec4cf3fa3"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/review-compact.json",
+      "bytes": 27067,
+      "sha256": "ac2fcee40b60b3aaf2b9ea0ec6884080e7981c20beeb4fefb0fcf7805e951dea"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/review-compact.log",
+      "bytes": 3556,
+      "sha256": "3d9414f0bfe4c6a6a8f70e6aaa8bed446b1ff99be961083115bacdc2783576d2"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/review-compact.mjs",
+      "bytes": 2976,
+      "sha256": "b65e5cdae76291ce11b20872e9ed2b9456209709a7f13b68c99468ea55db80c0"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/review-retained.json",
+      "bytes": 29006,
+      "sha256": "02e58cf44c71ad29239de5be60f49ee4f9ec364d2116394bb852e9448ea46da8"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/review-retained.log",
+      "bytes": 3559,
+      "sha256": "ba3c8df0e1d60fec60ddb2371d5f3fcdee0b3c7dbb5e30a159f5e57d85c43d4b"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/review-retained.mjs",
+      "bytes": 2979,
+      "sha256": "94a5224283856a95dcf91a75b54b38739d7b6dd3f26f13172e9efcd07564bb56"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/review-selected.json",
+      "bytes": 27869,
+      "sha256": "8f2faddbaa5aafce0750e10962be9453165fd6293ffbf9cdf4ecd8fa47ac0a70"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/review-selected.log",
+      "bytes": 3745,
+      "sha256": "27c7c1f4fce1d97976eb01dbcf7f1ceb225aebe0c171d25b2c9128a2a0c7d99f"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/review-selected.mjs",
+      "bytes": 2974,
+      "sha256": "cb8b7a4b81e8dd51cb9f1a8c4c25287f141f074b828af75ed68c999f5c2dfb01"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/selected-7.json",
+      "bytes": 16003,
+      "sha256": "c26719bf89e9a844abe1cc099c9ff3e273c9e4a5930958b11ed94dc549352b4f"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/visual-check.json",
+      "bytes": 160,
+      "sha256": "4b262f8c698779d8ba243c1709ca59bf799ca7664ca0410d05a14724c0ac6bd2"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/visual-check.py",
+      "bytes": 1498,
+      "sha256": "88801455989d6ed5b1051eebfba4614cb7cdda0a95c124cf547b36ed92b94f74"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/visual-retained.json",
+      "bytes": 160,
+      "sha256": "4b262f8c698779d8ba243c1709ca59bf799ca7664ca0410d05a14724c0ac6bd2"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/visual-retained.py",
+      "bytes": 1505,
+      "sha256": "a33d080fb528d407844f017270d0f8f207ed082936becdc704cf4ed62b968850"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/without-south-comparison.json",
+      "bytes": 17125,
+      "sha256": "ab06460c2b5975aa3069da67629caa6078711ecdde9ade07164aca876d44b56c"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/without-south-comparison.log",
+      "bytes": 1792,
+      "sha256": "0a5a646f185bc2f5c4b7b05d49e5fa58f07a41e0ba3e34c2f5e4b7b77845653a"
+    },
+    {
+      "path": "runs/switch-clearance-20261021/without-south-comparison.mjs",
+      "bytes": 2726,
+      "sha256": "a11806a917c702d6cc8bb1afa6ecf9a77a8e8289ab2b5f8d2a8fbd3078b7c5f0"
+    }
+  ],
+  "privateArchive": {
+    "file": "artifacts/cloud-data-20261021-planning-113.zip",
+    "files": 14391,
+    "bytes": 166273890,
+    "sha256": "38f2c4a113e806b8a8c51527dd400889ab26d59d72acdc89549be907127f4668",
+    "zipIntegrityCheckPassed": true,
+    "rawFileHashesIndependentlyChecked": 112,
+    "downloadedByUser": false
+  }
+}
