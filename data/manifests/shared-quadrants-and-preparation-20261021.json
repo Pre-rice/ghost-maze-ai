@@ -1,0 +1,302 @@
+{
+  "recordedOn": "2026-10-21",
+  "purpose": "接管实评后的四区共享与三方准备空间反例",
+  "familyGroups": [
+    "shared-quadrants-20261021-v1",
+    "three-way-pass-20261020-v1"
+  ],
+  "relatedResearchDoc": "docs/archive/research/shared-quadrants-and-preparation-20261021.md",
+  "latestActualFeedback": "data/manifests/controller-clearance-review-20261021.json",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "humanQuality": null,
+  "trainingAdded": false,
+  "skillNotAutoInvoked": true,
+  "disposition": "四区共享的安全38步稿可删全部B而动作及角色帧不变，后续控制或门位变体均无安全最优代表；三方准备扩区只保留原22步或绕过原循环，未形成新整体计划，均不交付。后续一次性通路另起原始目录，不覆盖本批。",
+  "rawRoots": [
+    "runs/shared-quadrants-20261021",
+    "runs/three-party-preparation-20261021"
+  ],
+  "trialSummary": [
+    {
+      "file": "runs/shared-quadrants-20261021/control-refuge.ndjson",
+      "rows": 16,
+      "statuses": {
+        "proven_unsat": 6,
+        "solved": 10
+      },
+      "boundaryStatuses": {
+        "conflict": 10
+      }
+    },
+    {
+      "file": "runs/shared-quadrants-20261021/four-region-task.ndjson",
+      "rows": 9,
+      "statuses": {
+        "proven_unsat": 9
+      },
+      "boundaryStatuses": {}
+    },
+    {
+      "file": "runs/shared-quadrants-20261021/near-controls.ndjson",
+      "rows": 54,
+      "statuses": {
+        "proven_unsat": 38,
+        "solved": 16
+      },
+      "boundaryStatuses": {
+        "conflict": 16
+      }
+    },
+    {
+      "file": "runs/shared-quadrants-20261021/offset-gates.ndjson",
+      "rows": 54,
+      "statuses": {
+        "proven_unsat": 41,
+        "solved": 13
+      },
+      "boundaryStatuses": {
+        "conflict": 13
+      }
+    },
+    {
+      "file": "runs/shared-quadrants-20261021/probe.ndjson",
+      "rows": 36,
+      "statuses": {
+        "solved": 35,
+        "proven_unsat": 1
+      },
+      "boundaryStatuses": {
+        "conflict": 9
+      }
+    },
+    {
+      "file": "runs/shared-quadrants-20261021/protected-crossing.ndjson",
+      "rows": 36,
+      "statuses": {
+        "proven_unsat": 13,
+        "solved": 23
+      },
+      "boundaryStatuses": {
+        "conflict": 21
+      }
+    },
+    {
+      "file": "runs/shared-quadrants-20261021/staggered-guards.ndjson",
+      "rows": 72,
+      "statuses": {
+        "solved": 55,
+        "proven_unsat": 17
+      },
+      "boundaryStatuses": {
+        "conflict": 54,
+        "safe": 1
+      }
+    },
+    {
+      "file": "runs/three-party-preparation-20261021/east-approach.ndjson",
+      "rows": 96,
+      "statuses": {
+        "solved": 56,
+        "proven_unsat": 40
+      },
+      "boundaryStatuses": {}
+    },
+    {
+      "file": "runs/three-party-preparation-20261021/probe.ndjson",
+      "rows": 36,
+      "statuses": {
+        "solved": 31,
+        "proven_unsat": 5
+      },
+      "boundaryStatuses": {
+        "safe": 2
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "runs/shared-quadrants-20261021/control-refuge.log",
+      "bytes": 1853,
+      "sha256": "7c73cb2369979bf699f070bcdc8ab8dcb11de8914767d3c9520f756a5c5ee7a3"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/control-refuge.mjs",
+      "bytes": 2384,
+      "sha256": "e1732e4a52f311414f6b7024c13d0662c3e182d061646dd821dc5d80c6cdc5db"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/control-refuge.ndjson",
+      "bytes": 117037,
+      "sha256": "5add9856cea0757d846ff01b16a69198179ec66ea3e3b51a6dd928038bc04cd0"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/design-card.md",
+      "bytes": 1142,
+      "sha256": "1759ab01b7ea631ea70298d3318c6e2f6b481bacd78ea40c63cb39e025020b23"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/disposition.json",
+      "bytes": 505,
+      "sha256": "e94221c36d38accedca26412d339a94243fb28ee43a270cd9394590ad42c6407"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/four-region-task.log",
+      "bytes": 1421,
+      "sha256": "20e263c3fb80a79bdfe07cadb1c3fe5d1244084d97fb9825d6c2692ee766c1b0"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/four-region-task.mjs",
+      "bytes": 2250,
+      "sha256": "bf2813fd66d57e50ecddbe8edf14293103ed4940609a15ba7147668a551bce05"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/four-region-task.ndjson",
+      "bytes": 38903,
+      "sha256": "d1b62c9e9731d13655ce9c71510ccf7af1ab761554a68257521f1bb912c580b1"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/near-controls.log",
+      "bytes": 9451,
+      "sha256": "9cb1736a4ebf6d7b02137956ca4c71abf3dbcd88018eb1cc6e1554448a30c061"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/near-controls.mjs",
+      "bytes": 2615,
+      "sha256": "c04b1ddbf83ee106689d420679fcd4c2ec2d0d17d91f1de975e7bb20317092b6"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/near-controls.ndjson",
+      "bytes": 343222,
+      "sha256": "2f054a50cf237c6564b487e3c7094986f98f24a199c7a12028711c2cfec0624b"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/offset-gates.log",
+      "bytes": 9487,
+      "sha256": "c64d96c44f0f8203518fca55429da537fce22dd86e8714d2ce78a53865c045de"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/offset-gates.mjs",
+      "bytes": 2931,
+      "sha256": "f945560ababa93adcac8670b97b15ae54e25664f69c045c83afa6eae58fa51a5"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/offset-gates.ndjson",
+      "bytes": 324145,
+      "sha256": "c2e7522c790e1afea06d127b700c9479f706fd6bbac874a22a3c5e42ed72164a"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/probe.log",
+      "bytes": 5274,
+      "sha256": "ab21433886b9d2bef4e3c25bb110dd5bd82e2104da1fd12a032d3b04e5c711d4"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/probe.mjs",
+      "bytes": 3561,
+      "sha256": "01a6c27913655d78077659663ee6037e170d7dce9ef8eaa92aa9b510af0e4f41"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/probe.ndjson",
+      "bytes": 248409,
+      "sha256": "4444821e41828a151077a9e2149c0e5fb20a9bd8a8b6fe243aa68b78a630a522"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/protected-crossing.log",
+      "bytes": 6170,
+      "sha256": "fcfeee4a30d6519b3e8111f992ba521302278a215b88a094b234c710315023cb"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/protected-crossing.mjs",
+      "bytes": 2243,
+      "sha256": "231c287b2146b8caad7bce65def92b04095a3fba25405d21357d79d6ed49e805"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/protected-crossing.ndjson",
+      "bytes": 272634,
+      "sha256": "7434255cf2f12458713ef10bed017b5553b627c5948c27c18e00be58d5f704a8"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/review-34.json",
+      "bytes": 815,
+      "sha256": "b54bb8d57848792c8df75ba734ff0d5be5a358dcd036e7c45a5fb4cc6b7b683c"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/review-34.mjs",
+      "bytes": 2285,
+      "sha256": "6a630d138026001d378e270414f3f5eea3b960e93e873ffd984f65d5b46006b0"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/staggered-guards.log",
+      "bytes": 8641,
+      "sha256": "29a3ade0ae8a20e8c2d841640056595d21fa3ee4b98118d441e999e1811ea0c1"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/staggered-guards.mjs",
+      "bytes": 2490,
+      "sha256": "de95250226f9b6b3dde578efa848eacd8401a9a7264a2715483a11968cc6e1d4"
+    },
+    {
+      "path": "runs/shared-quadrants-20261021/staggered-guards.ndjson",
+      "bytes": 611208,
+      "sha256": "3d1d9a3baeebbd7f16f79009a8de2b8cb64c16d12e51552295e6e69a1e9e476f"
+    },
+    {
+      "path": "runs/three-party-preparation-20261021/ancestry.json",
+      "bytes": 328,
+      "sha256": "6c8ab5d2046535694ab8c4419e67856896c2a6251de4baddabad12b5a46aa778"
+    },
+    {
+      "path": "runs/three-party-preparation-20261021/design-card.md",
+      "bytes": 1039,
+      "sha256": "cc717c80a86f1c43750932e6fe3a0912f3994e75cd6a2cd93d02737beee93308"
+    },
+    {
+      "path": "runs/three-party-preparation-20261021/disposition.json",
+      "bytes": 505,
+      "sha256": "e94221c36d38accedca26412d339a94243fb28ee43a270cd9394590ad42c6407"
+    },
+    {
+      "path": "runs/three-party-preparation-20261021/east-approach.log",
+      "bytes": 13570,
+      "sha256": "e5c6d1f1a215818dec935e47d4d5951b54da53788c78f692d07d7eb2b5ee5f82"
+    },
+    {
+      "path": "runs/three-party-preparation-20261021/east-approach.mjs",
+      "bytes": 3662,
+      "sha256": "b2ab4bb6fa3ff0bbc13cc6549ea9ba0a3f0588d744a201790ac579a5450fb6b5"
+    },
+    {
+      "path": "runs/three-party-preparation-20261021/east-approach.ndjson",
+      "bytes": 495690,
+      "sha256": "53b6852ff81326e629c811b609052cd0735795018de209b4f41f8de3ef616c94"
+    },
+    {
+      "path": "runs/three-party-preparation-20261021/parent.json",
+      "bytes": 15571,
+      "sha256": "87189ee81882dc3260fc6bb0c5736e059404cba3ad54530df6bd3d7791678ca3"
+    },
+    {
+      "path": "runs/three-party-preparation-20261021/probe.log",
+      "bytes": 5714,
+      "sha256": "1c5b68ac0b77d86f6a543adfdeac009ca83124f66201724daeded3f96b0365cf"
+    },
+    {
+      "path": "runs/three-party-preparation-20261021/probe.mjs",
+      "bytes": 3868,
+      "sha256": "1152d3fb199bc60c5e62e4d25d5b75569ec234a1dbbc907681f009b47bbae48d"
+    },
+    {
+      "path": "runs/three-party-preparation-20261021/probe.ndjson",
+      "bytes": 206770,
+      "sha256": "7e71358430c96b01d1af975084a9f48d965ddfb95e9c1265889a52d937efb902"
+    }
+  ],
+  "privateArchive": {
+    "file": "artifacts/cloud-data-20261021-planning-116.zip",
+    "files": 14493,
+    "bytes": 166646820,
+    "sha256": "768c1b098a46a2390c126371cdebdf24177e6ba20b0341ad3650275d20871c50",
+    "zipIntegrityCheckPassed": true,
+    "rawFileHashesIndependentlyChecked": 35,
+    "downloadedByUser": false
+  }
+}
