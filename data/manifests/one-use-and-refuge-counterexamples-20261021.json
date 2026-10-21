@@ -1,0 +1,210 @@
+{
+  "recordedOn": "2026-10-21",
+  "purpose": "接管实评后的一次性连接、错接三区、中央安全区及线性反例",
+  "familyGroups": [
+    "one-use-connections-20261021-v1",
+    "diagonal-field-20261021-v1",
+    "central-refuge-20261021-v1"
+  ],
+  "relatedResearchDoc": "docs/archive/research/one-use-and-refuge-counterexamples-20261021.md",
+  "latestActualFeedback": "data/manifests/controller-clearance-review-20261021.json",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "humanQuality": null,
+  "trainingAdded": false,
+  "skillNotAutoInvoked": true,
+  "disposition": "一次性连接所查安全代表可忽略右鬼；增大错接三区仍有绕过第三鬼的普通方案，修正第三鬼终局角色的指定稿均无解。中央安全区原型有限稿无解；让出安全区的23步稿虽全部最优安全，却同23步可先完成北鬼后再启动其余鬼，实际仍线性，不作为新作品交付。后续四区共享另起批次，不能以研究量或归档收尾。",
+  "rawRoots": [
+    "runs/one-use-connections-20261021",
+    "runs/diagonal-field-20261021",
+    "runs/central-refuge-20261021",
+    "runs/refuge-inversion-20261021"
+  ],
+  "trialSummary": [
+    {
+      "file": "runs/one-use-connections-20261021/probe.ndjson",
+      "rows": 40,
+      "statuses": {
+        "solved": 23,
+        "proven_unsat": 17
+      },
+      "boundaryStatuses": {
+        "conflict": 13,
+        "safe": 10
+      }
+    },
+    {
+      "file": "runs/diagonal-field-20261021/gated-crossing.ndjson",
+      "rows": 64,
+      "statuses": {
+        "proven_unsat": 48,
+        "solved": 16
+      },
+      "boundaryStatuses": {}
+    },
+    {
+      "file": "runs/diagonal-field-20261021/probe.ndjson",
+      "rows": 32,
+      "statuses": {
+        "proven_unsat": 32
+      },
+      "boundaryStatuses": {}
+    },
+    {
+      "file": "runs/diagonal-field-20261021/terminal-role.ndjson",
+      "rows": 192,
+      "statuses": {
+        "proven_unsat": 192
+      },
+      "boundaryStatuses": {}
+    },
+    {
+      "file": "runs/central-refuge-20261021/probe.ndjson",
+      "rows": 24,
+      "statuses": {
+        "proven_unsat": 24
+      },
+      "boundaryStatuses": {}
+    }
+  ],
+  "files": [
+    {
+      "path": "runs/one-use-connections-20261021/design-card.md",
+      "bytes": 940,
+      "sha256": "7ec61f9bdc41c7c8280f5dca4a43f9cc3237757113e3eae096705ac410f04740"
+    },
+    {
+      "path": "runs/one-use-connections-20261021/probe.log",
+      "bytes": 4593,
+      "sha256": "4a8fd1cd1fe9214dcde6ea82fa92557f2d81eccc5cb566b7fddbe08b9443cf27"
+    },
+    {
+      "path": "runs/one-use-connections-20261021/probe.mjs",
+      "bytes": 2888,
+      "sha256": "98d7db2119c426af4cd339fd5789994417b9f8a4f8b72fdcbee4f7558bce44cb"
+    },
+    {
+      "path": "runs/one-use-connections-20261021/probe.ndjson",
+      "bytes": 205033,
+      "sha256": "8f3fe095434b5356e16fe7e149aac8cb0d9f3737b1f64155f130c8f2a1549702"
+    },
+    {
+      "path": "runs/diagonal-field-20261021/design-card.md",
+      "bytes": 1052,
+      "sha256": "0dc9ec0e70e29ac51462855a6b4a3491c9b794c5ed927122a172246a6a540e74"
+    },
+    {
+      "path": "runs/diagonal-field-20261021/gated-crossing.log",
+      "bytes": 6730,
+      "sha256": "629b5c675014ba792e72459a453ea8beb087a7d3353d9f7749a1f8ad01a974ea"
+    },
+    {
+      "path": "runs/diagonal-field-20261021/gated-crossing.mjs",
+      "bytes": 2582,
+      "sha256": "fc9a16745c8dbfc11a1bb6a1564022bb531cb2e1e2d0c9694e6fd201ad90426e"
+    },
+    {
+      "path": "runs/diagonal-field-20261021/gated-crossing.ndjson",
+      "bytes": 311194,
+      "sha256": "081e0b5e4e83107a119dc6081cb6470fe2ef37857cc3b80563caaa137e3b8b4a"
+    },
+    {
+      "path": "runs/diagonal-field-20261021/probe.log",
+      "bytes": 5318,
+      "sha256": "0ca4042e848f98c5d77829f8504c0ddd34f8f3a9f98a31ae41fcab849b7f1020"
+    },
+    {
+      "path": "runs/diagonal-field-20261021/probe.mjs",
+      "bytes": 3828,
+      "sha256": "f82b6235693b3a810e18e33225970f87af1020220a9c1675e6e09a70d795e403"
+    },
+    {
+      "path": "runs/diagonal-field-20261021/probe.ndjson",
+      "bytes": 141370,
+      "sha256": "3828891a1ef27ccdf26bf8d6a9be1d54b82036fa977384beb2ef30457ab02008"
+    },
+    {
+      "path": "runs/diagonal-field-20261021/terminal-role.log",
+      "bytes": 21876,
+      "sha256": "c70ceeeb82b2909d60f9e828da876cade88f78c15b51526306029ce01e608158"
+    },
+    {
+      "path": "runs/diagonal-field-20261021/terminal-role.mjs",
+      "bytes": 2410,
+      "sha256": "0f0ced46d95e2e6385fefccb10d709ed919c42355402c83d3430394b6e116ae7"
+    },
+    {
+      "path": "runs/diagonal-field-20261021/terminal-role.ndjson",
+      "bytes": 851268,
+      "sha256": "ef0598c86f407440cca359134da7fd512d16d582bc5988989dc6629ad6400152"
+    },
+    {
+      "path": "runs/central-refuge-20261021/design-card.md",
+      "bytes": 1105,
+      "sha256": "f871c895c37d0ab46b781744b3d1209453d0e38b9585c415642747b010697602"
+    },
+    {
+      "path": "runs/central-refuge-20261021/probe.log",
+      "bytes": 2738,
+      "sha256": "8c387f75de25c490b94494c9df52d3999bccc0abdb7586a3e99b12e918ac48b4"
+    },
+    {
+      "path": "runs/central-refuge-20261021/probe.mjs",
+      "bytes": 2975,
+      "sha256": "316ee3dd39bc702cc1c0a23d7dcec963fd170b788e9143e918a7fdb6c0607079"
+    },
+    {
+      "path": "runs/central-refuge-20261021/probe.ndjson",
+      "bytes": 95196,
+      "sha256": "bdd2e441108103013bc53e51efb240dc5a4f333407186d25850544cb5046d3a5"
+    },
+    {
+      "path": "runs/refuge-inversion-20261021/design-card.md",
+      "bytes": 1270,
+      "sha256": "6eef6da62e09413c4021afd0f928ea9e79071a9bceee8c932c40b814ddcffb35"
+    },
+    {
+      "path": "runs/refuge-inversion-20261021/disposition.json",
+      "bytes": 679,
+      "sha256": "a16c06fc4e676aaae629501bcb7d366b171d4461f90e6c2c63fd0ad2a7d5b0c8"
+    },
+    {
+      "path": "runs/refuge-inversion-20261021/map.json",
+      "bytes": 13174,
+      "sha256": "bc75e5ee02e3cd7fac0e2546cb2b3887ab05830c3cfc0d6a4f2f961d8be6b0dd"
+    },
+    {
+      "path": "runs/refuge-inversion-20261021/ordinary-plan.json",
+      "bytes": 612,
+      "sha256": "90800b13a089ad019b39d76c6a23507bda225ba38cbbd5f77c96d5141d0b29b4"
+    },
+    {
+      "path": "runs/refuge-inversion-20261021/ordinary-plan.mjs",
+      "bytes": 1186,
+      "sha256": "443f89388c971355a76d4c9cbd18088dbce3db39ccf8478e9c3119bfd7821862"
+    },
+    {
+      "path": "runs/refuge-inversion-20261021/probe.json",
+      "bytes": 22549,
+      "sha256": "65eef7cc379006cf958e5b3655765551dc37c84e2f41e082ea252092935d8cf7"
+    },
+    {
+      "path": "runs/refuge-inversion-20261021/probe.log",
+      "bytes": 6504,
+      "sha256": "ad303ba0df7107aa147be5d728153e721bf4521683117623c1a54e996a612e88"
+    },
+    {
+      "path": "runs/refuge-inversion-20261021/probe.mjs",
+      "bytes": 3234,
+      "sha256": "707e51677bd495dca8e7ba6a122c5d23206d35afc171194963fa89c1567f6381"
+    }
+  ],
+  "privateArchive": {
+    "file": "artifacts/cloud-data-20261021-planning-115.zip",
+    "files": 14458,
+    "bytes": 166516798,
+    "sha256": "b6536e6602b6264cdda061fd1ce74294d9526d223f04fa2d80c85eb6426a96bb",
+    "zipIntegrityCheckPassed": true,
+    "rawFileHashesIndependentlyChecked": 26,
+    "downloadedByUser": false
+  }
+}
