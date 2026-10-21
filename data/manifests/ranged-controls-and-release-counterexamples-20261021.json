@@ -1,0 +1,538 @@
+{
+  "recordedOn": "2026-10-21",
+  "purpose": "控距站位候选丈量与首次放行的真实反例",
+  "familyGroups": [
+    "double-belt-circulation-20261021-v1",
+    "three-way-pass-20261020-v1",
+    "ranged-bait-station-20261021-v1"
+  ],
+  "relatedResearchDoc": "docs/archive/research/ranged-controls-and-release-counterexamples-20261021.md",
+  "latestActualFeedback": "data/manifests/controller-clearance-review-20261021.json",
+  "actualFeedbackAppliesOnlyTo": "接管",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "humanQuality": null,
+  "trainingAdded": false,
+  "skillNotAutoInvoked": true,
+  "disposition": "三批首次安置及门控仍重复、控制未用或边界失败，不交付。控距45步手推被30步旁路推翻；目标资格与有限经济性对照后形成27格34步唯一最优的丈量。原始反例、撤回的删观察格和开关预期全部保留。丈量只有候选试玩状态，未入集、未获真人评价，不将验收或必要性作质量标签；继续其它关系构思。",
+  "candidate": {
+    "title": "丈量",
+    "mapId": "6ef0c7e749009c1d535a03b6ba9bb135c2e0345338a7ac737366f3678c31e971",
+    "publicExample": "examples/ranged-bait-station-20261021",
+    "humanQuality": null,
+    "gallerySelected": false,
+    "optimalSteps": 34,
+    "rawOptimalRoutes": "1",
+    "cells": 27
+  },
+  "rawRoots": [
+    "runs/first-keeper-return-20261021",
+    "runs/first-release-timing-20261021",
+    "runs/gated-three-way-20261021",
+    "runs/ranged-bait-station-20261021"
+  ],
+  "trialSummary": [
+    {
+      "file": "runs/first-keeper-return-20261021/probe.ndjson",
+      "rows": 9,
+      "statuses": {
+        "proven_unsat": 6,
+        "solved": 3
+      },
+      "boundaryStatuses": {
+        "conflict": 3
+      }
+    },
+    {
+      "file": "runs/first-release-timing-20261021/probe.ndjson",
+      "rows": 16,
+      "statuses": {
+        "solved": 16
+      },
+      "boundaryStatuses": {
+        "safe": 16
+      }
+    },
+    {
+      "file": "runs/gated-three-way-20261021/probe.ndjson",
+      "rows": 16,
+      "statuses": {
+        "solved": 16
+      },
+      "boundaryStatuses": {
+        "safe": 16
+      }
+    },
+    {
+      "file": "runs/gated-three-way-20261021/remote-return.ndjson",
+      "rows": 16,
+      "statuses": {
+        "proven_unsat": 10,
+        "solved": 6
+      },
+      "boundaryStatuses": {
+        "safe": 4,
+        "conflict": 2
+      }
+    },
+    {
+      "file": "runs/ranged-bait-station-20261021/collapsed-audit.ndjson",
+      "rows": 18,
+      "statuses": {
+        "solved": 15,
+        "proven_unsat": 3
+      },
+      "boundaryStatuses": {
+        "safe": 9,
+        "conflict": 6
+      }
+    },
+    {
+      "file": "runs/ranged-bait-station-20261021/column-collapse.ndjson",
+      "rows": 1,
+      "statuses": {
+        "solved": 1
+      },
+      "boundaryStatuses": {
+        "safe": 1
+      }
+    },
+    {
+      "file": "runs/ranged-bait-station-20261021/combined-economy.ndjson",
+      "rows": 4,
+      "statuses": {
+        "solved": 4
+      },
+      "boundaryStatuses": {
+        "safe": 4
+      }
+    },
+    {
+      "file": "runs/ranged-bait-station-20261021/compact.ndjson",
+      "rows": 2,
+      "statuses": {
+        "solved": 2
+      },
+      "boundaryStatuses": {
+        "safe": 2
+      }
+    },
+    {
+      "file": "runs/ranged-bait-station-20261021/economy-audit.ndjson",
+      "rows": 22,
+      "statuses": {
+        "solved": 15,
+        "proven_unsat": 7
+      },
+      "boundaryStatuses": {
+        "safe": 14,
+        "conflict": 1
+      }
+    },
+    {
+      "file": "runs/ranged-bait-station-20261021/enhanced-objective.ndjson",
+      "rows": 1,
+      "statuses": {
+        "solved": 1
+      },
+      "boundaryStatuses": {
+        "conflict": 1
+      }
+    },
+    {
+      "file": "runs/ranged-bait-station-20261021/probe.ndjson",
+      "rows": 1,
+      "statuses": {
+        "solved": 1
+      },
+      "boundaryStatuses": {
+        "safe": 1
+      }
+    },
+    {
+      "file": "runs/ranged-bait-station-20261021/qualified-goal.ndjson",
+      "rows": 2,
+      "statuses": {
+        "solved": 2
+      },
+      "boundaryStatuses": {
+        "safe": 2
+      }
+    },
+    {
+      "file": "runs/ranged-bait-station-20261021/upper-retreat.ndjson",
+      "rows": 1,
+      "statuses": {
+        "solved": 1
+      },
+      "boundaryStatuses": {
+        "conflict": 1
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "runs/first-keeper-return-20261021/design-card.md",
+      "bytes": 1442,
+      "sha256": "930c93afb95e20119c2343d6d411040a839715cabdc562e67221478bb997d6ae"
+    },
+    {
+      "path": "runs/first-keeper-return-20261021/disposition.json",
+      "bytes": 412,
+      "sha256": "22c7474de8d98729f802ea6f969a87e196e977afd2a30f8154f616dc4a796fda"
+    },
+    {
+      "path": "runs/first-keeper-return-20261021/probe.log",
+      "bytes": 1173,
+      "sha256": "2231f3f233ad3b5b57a74d11e2bec01439487d01ed61a0c82a40668588e3e2f8"
+    },
+    {
+      "path": "runs/first-keeper-return-20261021/probe.mjs",
+      "bytes": 2677,
+      "sha256": "19331803187eeccebb718b44a8dcd51b0113f3311d87068c8d4e43d9a44b5e72"
+    },
+    {
+      "path": "runs/first-keeper-return-20261021/probe.ndjson",
+      "bytes": 109836,
+      "sha256": "0e59c956ea07d2e2499f71c2f0d0c3d089c5381eaf1afadbc995148b5888618e"
+    },
+    {
+      "path": "runs/first-release-timing-20261021/design-card.md",
+      "bytes": 1206,
+      "sha256": "5b44ddecd20d1109fa3e9b55496da521a4a3769b5d7907b8616fd8a33a8075a1"
+    },
+    {
+      "path": "runs/first-release-timing-20261021/disposition.json",
+      "bytes": 531,
+      "sha256": "2e4ec69bab2b2602643b7e1fb63ff9c5fb70bf663ff7e7f9ad2de2606e63922e"
+    },
+    {
+      "path": "runs/first-release-timing-20261021/prefix-equivalence.json",
+      "bytes": 791,
+      "sha256": "c5cda480425aa99c22146568f0877cea6c19224a94c9dacac3daba046d2703cf"
+    },
+    {
+      "path": "runs/first-release-timing-20261021/probe.log",
+      "bytes": 2141,
+      "sha256": "11ffcbb4565a82b4d3c4b13d4917fb4de83df077a83ccbd15e3abd2c54167662"
+    },
+    {
+      "path": "runs/first-release-timing-20261021/probe.mjs",
+      "bytes": 2573,
+      "sha256": "1fc06534c6f7e1973868cc086afa56785aef5c4f684d379729cb538b96bfde42"
+    },
+    {
+      "path": "runs/first-release-timing-20261021/probe.ndjson",
+      "bytes": 99943,
+      "sha256": "037cc7871f2240e087ac751b897d2d3eb7b75d34748634b18cbed1a66fe8cdd2"
+    },
+    {
+      "path": "runs/gated-three-way-20261021/design-card.md",
+      "bytes": 1176,
+      "sha256": "f0b6b17fa3db918e79bba4454d651fdace61cabb4a243bcb1e2523771001a70d"
+    },
+    {
+      "path": "runs/gated-three-way-20261021/disposition.json",
+      "bytes": 516,
+      "sha256": "7bb230291c7d4574f78f7e61a7c7f76b50bd13a557ee95da8ee7427ea56f0bb9"
+    },
+    {
+      "path": "runs/gated-three-way-20261021/probe.log",
+      "bytes": 2590,
+      "sha256": "f1d96f816b1539dcae7a9abafd904c3c54405aa8fd1d0154820102710afca940"
+    },
+    {
+      "path": "runs/gated-three-way-20261021/probe.mjs",
+      "bytes": 2914,
+      "sha256": "326ccd2fc4ea20c7f976e4b9043e411f6cdbb106e03667052243b830036a019f"
+    },
+    {
+      "path": "runs/gated-three-way-20261021/probe.ndjson",
+      "bytes": 113209,
+      "sha256": "389453afa92b8ba4159fa912e3b72fb0172c69d4c84fd1a0a53c4a1c15e01b22"
+    },
+    {
+      "path": "runs/gated-three-way-20261021/remote-return-card.md",
+      "bytes": 598,
+      "sha256": "105d4b188dbc4edf09b009581d6829cfa55accec52bfbdd22cc1b5fc3a548b71"
+    },
+    {
+      "path": "runs/gated-three-way-20261021/remote-return.log",
+      "bytes": 2500,
+      "sha256": "42415e0c9b6d29a93a47662e076d6df6b6475e054662798bd58d86aa00d45f8d"
+    },
+    {
+      "path": "runs/gated-three-way-20261021/remote-return.mjs",
+      "bytes": 2967,
+      "sha256": "bc32557379819d2b7239841a57e6ab9519a9a6dd3c58b26471d2a3f2c549d524"
+    },
+    {
+      "path": "runs/gated-three-way-20261021/remote-return.ndjson",
+      "bytes": 88332,
+      "sha256": "9b76affdf4452068238f9a5b4d462f5be2ff1c6c76329bdb7e56dddac1907f76"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/candidate-analysis.json",
+      "bytes": 11810,
+      "sha256": "b3e1f937a8979a02dbe423f7c3e41f566a1b43256cebc8ec6bd97e4f32e2492f"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/candidate-map.json",
+      "bytes": 13292,
+      "sha256": "249f63191d64d2c00aad0423a897a7eecc792f46c1ec8ff2c4df04c5953d2d91"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/candidate-qa.json",
+      "bytes": 40370,
+      "sha256": "9385631aeb6bd672aade440e16681e79e5b08d2e9d612cff39f637db048a43c7"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/candidate-review.log",
+      "bytes": 947,
+      "sha256": "8d241c3b03099e16916c0d3703d21afcf884e78577df52c8e143b80241dddf4b"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/candidate-review.mjs",
+      "bytes": 3897,
+      "sha256": "b4958c6f19cccc6fe71c5e3ed5cd9b839ce6d0129e9c449ad36b8e96504019bf"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/candidate-wrong-plans.json",
+      "bytes": 1887,
+      "sha256": "97e2103db0ee741525aeb990cdc5982d07ed6a20ac64ca4dc3d58c8a19ba16e3"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/cloud-check-exit.json",
+      "bytes": 16,
+      "sha256": "982b9e9bfb10ffe83cad665807abcfd3fa97b37822db5ab7831157a499548a9e"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/cloud-check-retry.log",
+      "bytes": 18805,
+      "sha256": "793e6ed926ea2bfee44bda435542d73b3fa1d9f1984ae52af0203727670ce163"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/cloud-check.log",
+      "bytes": 6848,
+      "sha256": "e0f46c975033583609b4d555b234f73c1ee642d7c0050a301d2d2bfc34443a37"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/collapsed-audit.log",
+      "bytes": 1969,
+      "sha256": "fd07ab2b0ccf594c3fd955621d237191c6a2d4015d1d979f3bfedc03e5c23278"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/collapsed-audit.mjs",
+      "bytes": 2908,
+      "sha256": "2add520874820ec7a1637dd13653e7116a9cb689de73aa3820b26721496a112f"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/collapsed-audit.ndjson",
+      "bytes": 145877,
+      "sha256": "76a4e51f870c34fea725711d86985019fe25749ea139b5837ef9e0484bd9f1f0"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/column-collapse-card.md",
+      "bytes": 724,
+      "sha256": "6f1e6b6b9454d6badbf57f304dcd66e8e500dbdcc46eabbe30c65f6ad12f60cd"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/column-collapse.log",
+      "bytes": 81,
+      "sha256": "3078075bdcd0192925c09eeb44c85a26eec6bf2fe143d71e1890921da834e3e0"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/column-collapse.mjs",
+      "bytes": 3440,
+      "sha256": "751ff752d39a3cb46696abc234118fc45bee9f4f73bc206425f8e330d6b30e24"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/column-collapse.ndjson",
+      "bytes": 8152,
+      "sha256": "11bece2dc6f5fea5f4615192913a0a8d10b1f75624fd51c18a2d24be7347c0cc"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/combined-economy-card.md",
+      "bytes": 572,
+      "sha256": "af610ff0cccb1aaf6176799a8527e11f3822c4a71b02ebd2886512295e31be31"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/combined-economy.log",
+      "bytes": 457,
+      "sha256": "64f612048ad9866c00fcf460a6bf6e45b840f52e648d6cfbe841a6ac056c1f89"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/combined-economy.mjs",
+      "bytes": 2661,
+      "sha256": "8f063f623e8207e582ba26a20500c225a4602868ac3cce193a19eea39e8c57e7"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/combined-economy.ndjson",
+      "bytes": 31026,
+      "sha256": "902a855358977123522e992d45eeacd3c0cae86afb00dc6d1d9c559196f54e45"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/compact-card.md",
+      "bytes": 599,
+      "sha256": "818ada831b033fade570bd7a1d4a6901a5a8da8971dbf953f9ec1f1edc86ab32"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/compact.log",
+      "bytes": 192,
+      "sha256": "b0685582d7f41a479ceb1a94685d09201497fd86091ad483baee2ebfe5291c90"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/compact.mjs",
+      "bytes": 2743,
+      "sha256": "a78f8aff481983a5e2de7f8f36d1a990791e68b510d7f47a99d31e2eaa4e2705"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/compact.ndjson",
+      "bytes": 15654,
+      "sha256": "dfc250c6a3edc2f041d31876e54185853e3e25d06cf10ff7c3369d2b09e81045"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/design-card.md",
+      "bytes": 1444,
+      "sha256": "c4946635c21f53695b405ab88ca1c77fe47e44382b1d557cff875b54982a280a"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/disposition.json",
+      "bytes": 1022,
+      "sha256": "a6abd5fbce29df654ae2f26c5aeb4f75d976d01905e2d107501036eaa50153a8"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/economy-audit.log",
+      "bytes": 2350,
+      "sha256": "a4d428dea90c2bd1046153bb1659690585bc636d5d41646358b8f0eda27cdf30"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/economy-audit.mjs",
+      "bytes": 3220,
+      "sha256": "9fffddd2bc2176d440cedaf642d181d693d8cc100fd1971853e4787c789574b2"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/economy-audit.ndjson",
+      "bytes": 154966,
+      "sha256": "6a95595ba765d18fb6e82b2fc35dc2e54e956be2dc983b5aa2b3ea5fe7649727"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/enhanced-objective-card.md",
+      "bytes": 795,
+      "sha256": "204c8adb23580c1dd3a6347bc3658aa69e7b204932823a1590156224ae3e496a"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/enhanced-objective.log",
+      "bytes": 94,
+      "sha256": "061455e46735eb3ce611d7b9091a1ca078be0f3a0ae6206f07c90d6a1b9c9745"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/enhanced-objective.mjs",
+      "bytes": 2620,
+      "sha256": "200042fb74177a92c66fcfc13954cd0906d2781888d353cb5afc5c916fb8d778"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/enhanced-objective.ndjson",
+      "bytes": 8113,
+      "sha256": "06ae0edf09d720f4f301fd5b475a15fa694073bd1dcf44692b248f23961b151c"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/final-qa.log",
+      "bytes": 555,
+      "sha256": "7dceb8b9ed4380a3ce1c90e1930c37ad8f53184f73b90bf0ce51f15c6c7553f8"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/final-qa.mjs",
+      "bytes": 933,
+      "sha256": "6710c5838d2cc94d2524e8e438369710e66b9bbe98e747e091fb6b57ee43825e"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/manual-plan.json",
+      "bytes": 15038,
+      "sha256": "58e7b262e8d9f075908ed8ebd222c5987ec5a1256fa9f89a24e944f64079cc39"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/map.json",
+      "bytes": 13149,
+      "sha256": "798425c9e158142343e989ca25b6791471bbc71d15882c0e9e06b8e65b930b5c"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/outline-and-gates-card.md",
+      "bytes": 544,
+      "sha256": "d8195898aa3deb9906e93fea41af5096835cc4f827050ccc38aba87f4453a5ce"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/probe.log",
+      "bytes": 81,
+      "sha256": "947ee5e7f29e87e35c62c7ad892ba258cb9223c1940b1986fe850ee4c8fcf537"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/probe.mjs",
+      "bytes": 4346,
+      "sha256": "fe7b33f19f6df3559c62579d2f5973ded7911ecd68fe4a19035d18b135fa79b1"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/probe.ndjson",
+      "bytes": 7713,
+      "sha256": "47682133abba52532e31828f986b0fd18969c589252972e10fd99338ee23eeef"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/public-verification.log",
+      "bytes": 476,
+      "sha256": "b983d8410a2e1d618a244a1648fbb412aa16108ea409cf19ac0d4158156068ef"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/qualified-goal-card.md",
+      "bytes": 643,
+      "sha256": "f0d81d1b470b9dac95285c43af9078aa511557bc8fff10aa949b0a3063e17812"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/qualified-goal.log",
+      "bytes": 225,
+      "sha256": "5a9383fb7ce67c971061ea3a30b476461cccab578b5c8b4bcd6024e7e63a951f"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/qualified-goal.mjs",
+      "bytes": 2790,
+      "sha256": "0ede37f5619506f4659981107c0b669ab339087a19bf184726f6f5a49945bbb8"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/qualified-goal.ndjson",
+      "bytes": 16776,
+      "sha256": "8e560b79166468d067e126255e4c0180adb38343e7d0cc6cad2d6cd0eba698ea"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/run-cloud-check-detached.py",
+      "bytes": 359,
+      "sha256": "63590d5d6d104cf28b66c9885171959526ac6b379d8acef187f127d73d4694e9"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/upper-retreat-card.md",
+      "bytes": 529,
+      "sha256": "302cc81c1f4d7c9eabeb5c3d99b63d0704dd0603a332cbf9f61c3c214381043f"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/upper-retreat.log",
+      "bytes": 94,
+      "sha256": "1f8032dd71bf161a7a4b90561b31d86fab7be41d570169e3b8befc1077974261"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/upper-retreat.mjs",
+      "bytes": 2691,
+      "sha256": "002d12695a2df7449a3c79acf5fac7ad1c276074c8e5d6def82c62aa3734af98"
+    },
+    {
+      "path": "runs/ranged-bait-station-20261021/upper-retreat.ndjson",
+      "bytes": 9068,
+      "sha256": "e9869b0f86ec57b13e559fdc4990a8b6d529dc5c0def8db29d8ac6770337df26"
+    }
+  ],
+  "privateArchive": {
+    "file": "artifacts/cloud-data-20261021-planning-121.zip",
+    "files": 14795,
+    "bytes": 167159721,
+    "sha256": "fe876462d4867072b81239d562119dcc6c827e3cb4233782b66e7e9eab09d493",
+    "zipIntegrityCheckPassed": true,
+    "rawFileHashesIndependentlyChecked": 71,
+    "downloadedByUser": false
+  }
+}

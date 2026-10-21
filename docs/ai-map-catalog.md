@@ -1,5 +1,20 @@
 # AI 地图总目录
 
+## 2026-10-21 新候选：《丈量》
+
+27格、包络6×6、三鬼，A/B两组门、一钥匙与目标1门。最优34步、唯一含停顿鬼轨迹；全部最优去终点、3748态111120次排列／变编号后继、指定一步中性入场及分享往返通过。尚无真人评价，未入地图集，既有20张及9张站主优化保持；未训练或自动试玩。
+
+[无剧透试玩](https://ghostmaze.novic.cc/?map=AADA-fHx8fGAAAEmYEseIAmBAAAg6QKqJKHIDgAA5UKAAABc4zFwoVEIIUISAAAABBBDDAQA) · [设计、来源与验收](../examples/ranged-bait-station-20261021/README.md)
+
+<details>
+<summary>设计预期与34步参考（含答案）</summary>
+
+中央鬼第一次暂留的位置，妨碍之后远距离引动钥匙鬼；须用上方A/B把它送回原位，再建立保护。B同时安置上守卫并给中央鬼推进一回合。唯一参考没有争位，钥匙鬼可独立最后引动；不把必要性或无分段解当作新意证明。先困中央再直接拿钥匙的13步安全前缀无续解；早B仍可38步补救。
+
+[参考回放](https://ghostmaze.novic.cc/?map=AADA-fHx8fGAAAEmYEseIAmBAAAg6QKqJKHIDgAA5UKAAABc4zFwoVEIIUISAAAABBBDDAQA&replay=EK7quyzYAwhl0g_cYPA)
+
+</details>
+
 ## 2026-10-21 《接管》负反馈
 
 用户认为“也太简单了”，绕一绕、卡住鬼即可通关；前期引鬼已用过许多次，终点侧A只需最后打开，没有要求新的鬼位处理。**未入地图集，不计挑战或新意进展。** [真实评述与独立改图对照](../data/manifests/controller-clearance-review-20261021.json)。原图、生成时来源和19步QA保持，不补玩家路线、用时、提示或评分。
