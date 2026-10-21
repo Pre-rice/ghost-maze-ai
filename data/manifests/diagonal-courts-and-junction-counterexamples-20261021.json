@@ -1,0 +1,389 @@
+{
+  "recordedOn": "2026-10-21",
+  "purpose": "斜向两庭、控距交换与共用接合部的未交付反例",
+  "familyGroups": [
+    "diagonal-ranged-exchange-20261021-v1",
+    "offset-courts-20261021-v1",
+    "diagonal-shared-junction-20261021-v1",
+    "expanded-junction-20261021-v1"
+  ],
+  "relatedResearchDoc": "docs/archive/research/diagonal-courts-and-junction-counterexamples-20261021.md",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "humanQuality": null,
+  "trainingAdded": false,
+  "skillNotAutoInvoked": true,
+  "gallerySelected": false,
+  "disposition": "四组均不交付。控距交换的五份机械安全代表仍有同最优完整逐只计划；两庭安全稿未使用控制，真正隔断后无解。单格双环手推误把关门后的鬼算作初次可见，第13步死亡已留证；全部可解接合稿只有边界失败或可绕过控制的普通停车取物。丈量保留未评价候选，不沿其加尾段递补；现有20图9星及本体不动，继续主线。",
+  "rawRoots": [
+    "runs/diagonal-ranged-exchange-20261021",
+    "runs/offset-courts-20261021",
+    "runs/diagonal-shared-junction-20261021",
+    "runs/expanded-junction-20261021"
+  ],
+  "trialSummary": [
+    {
+      "file": "runs/diagonal-ranged-exchange-20261021/asymmetric-spacing.ndjson",
+      "rows": 8,
+      "statuses": {
+        "solved": 8
+      },
+      "boundaryStatuses": {
+        "conflict": 3,
+        "safe": 5
+      }
+    },
+    {
+      "file": "runs/diagonal-ranged-exchange-20261021/ordinary-review.ndjson",
+      "rows": 5,
+      "statuses": {
+        "analysis": 5
+      },
+      "boundaryStatuses": {}
+    },
+    {
+      "file": "runs/diagonal-ranged-exchange-20261021/probe.ndjson",
+      "rows": 4,
+      "statuses": {
+        "solved": 4
+      },
+      "boundaryStatuses": {
+        "conflict": 4
+      }
+    },
+    {
+      "file": "runs/offset-courts-20261021/actual-threshold.ndjson",
+      "rows": 6,
+      "statuses": {
+        "proven_unsat": 4,
+        "solved": 2
+      },
+      "boundaryStatuses": {
+        "safe": 2
+      }
+    },
+    {
+      "file": "runs/offset-courts-20261021/coupled-goal.ndjson",
+      "rows": 4,
+      "statuses": {
+        "solved": 2,
+        "proven_unsat": 2
+      },
+      "boundaryStatuses": {
+        "safe": 2
+      }
+    },
+    {
+      "file": "runs/offset-courts-20261021/exit-direction.ndjson",
+      "rows": 4,
+      "statuses": {
+        "solved": 3,
+        "proven_unsat": 1
+      },
+      "boundaryStatuses": {
+        "safe": 3
+      }
+    },
+    {
+      "file": "runs/offset-courts-20261021/probe.ndjson",
+      "rows": 8,
+      "statuses": {
+        "solved": 6,
+        "proven_unsat": 2
+      },
+      "boundaryStatuses": {
+        "safe": 6
+      }
+    },
+    {
+      "file": "runs/diagonal-shared-junction-20261021/cold-approach.ndjson",
+      "rows": 8,
+      "statuses": {
+        "proven_unsat": 8
+      },
+      "boundaryStatuses": {}
+    },
+    {
+      "file": "runs/diagonal-shared-junction-20261021/connected-first-pass.ndjson",
+      "rows": 8,
+      "statuses": {
+        "solved": 6,
+        "proven_unsat": 2
+      },
+      "boundaryStatuses": {
+        "conflict": 6
+      }
+    },
+    {
+      "file": "runs/diagonal-shared-junction-20261021/probe.ndjson",
+      "rows": 6,
+      "statuses": {
+        "proven_unsat": 6
+      },
+      "boundaryStatuses": {}
+    },
+    {
+      "file": "runs/expanded-junction-20261021/control-key.ndjson",
+      "rows": 6,
+      "statuses": {
+        "proven_unsat": 4,
+        "solved": 2
+      },
+      "boundaryStatuses": {
+        "conflict": 2
+      }
+    },
+    {
+      "file": "runs/expanded-junction-20261021/probe.ndjson",
+      "rows": 12,
+      "statuses": {
+        "proven_unsat": 5,
+        "solved": 7
+      },
+      "boundaryStatuses": {
+        "safe": 3,
+        "conflict": 4
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "runs/diagonal-ranged-exchange-20261021/asymmetric-spacing.log",
+      "bytes": 852,
+      "sha256": "6a22e9df9f1aab7798e6f6821b263b8abe4c48800aeaee5b3c90b523b2ed9760"
+    },
+    {
+      "path": "runs/diagonal-ranged-exchange-20261021/asymmetric-spacing.mjs",
+      "bytes": 2026,
+      "sha256": "fdffeaeb67cdd1a5ca9ba814f2aff7b011e257310523709baaf489df047c7d55"
+    },
+    {
+      "path": "runs/diagonal-ranged-exchange-20261021/asymmetric-spacing.ndjson",
+      "bytes": 51934,
+      "sha256": "938af2655652aa00207396e10296250f2a3267cc36d177cea36378f2d814a184"
+    },
+    {
+      "path": "runs/diagonal-ranged-exchange-20261021/design-card.md",
+      "bytes": 1188,
+      "sha256": "64db47fa659581654808ecaeeca085e469128db72e2db32ac3530fc28c28b6d9"
+    },
+    {
+      "path": "runs/diagonal-ranged-exchange-20261021/disposition.json",
+      "bytes": 509,
+      "sha256": "f42b02e061a4e2af8cca36c542eaef8d2c1273a5fbbf459301b04c98c110b4d2"
+    },
+    {
+      "path": "runs/diagonal-ranged-exchange-20261021/ordinary-review.log",
+      "bytes": 11583,
+      "sha256": "2c52fb1dcef5c37be5180974b6a1a20c770ffc9f12339972cbdd1e10978f0cc5"
+    },
+    {
+      "path": "runs/diagonal-ranged-exchange-20261021/ordinary-review.mjs",
+      "bytes": 690,
+      "sha256": "ceb4380c311115ab58af4f12ca039cdb4032318bd0fb8453bf565e1e65ae7f9b"
+    },
+    {
+      "path": "runs/diagonal-ranged-exchange-20261021/ordinary-review.ndjson",
+      "bytes": 17807,
+      "sha256": "33bc576046fb7253b9eb827796ab23ba0ba1edebb5201cd53ea3cd54fdab9c61"
+    },
+    {
+      "path": "runs/diagonal-ranged-exchange-20261021/probe.log",
+      "bytes": 542,
+      "sha256": "be264f48d57da83322b865ee0ee1fce91a49bd40c6ad0f2130c3d9c797c25a29"
+    },
+    {
+      "path": "runs/diagonal-ranged-exchange-20261021/probe.mjs",
+      "bytes": 3022,
+      "sha256": "04e4ead9ea31e0fccafacb0533dd963249502211c5e981c7abd02606017d72c9"
+    },
+    {
+      "path": "runs/diagonal-ranged-exchange-20261021/probe.ndjson",
+      "bytes": 24508,
+      "sha256": "15b04fa89a8b81563764b998cbf927effc56364b47c7faa195236c95d17ee4b4"
+    },
+    {
+      "path": "runs/offset-courts-20261021/actual-threshold.log",
+      "bytes": 683,
+      "sha256": "1e3cdbf80fe664af460fbeb4e2ce76afd9d939d3c992d4b9c22b8b7027065133"
+    },
+    {
+      "path": "runs/offset-courts-20261021/actual-threshold.mjs",
+      "bytes": 2077,
+      "sha256": "07449130c904726d3960a5bc946e7a903403969667b6db6ceba2e380369e9ab6"
+    },
+    {
+      "path": "runs/offset-courts-20261021/actual-threshold.ndjson",
+      "bytes": 30109,
+      "sha256": "0e3981353e3384c71599ddd8260d7f45a1a9fdfca8d636f5c2f55c67eaa27186"
+    },
+    {
+      "path": "runs/offset-courts-20261021/coupled-goal.log",
+      "bytes": 500,
+      "sha256": "00caa32bbb0421fde3e8fb0f07373cc0a252c234a777076d77c21d1f6d013dec"
+    },
+    {
+      "path": "runs/offset-courts-20261021/coupled-goal.mjs",
+      "bytes": 2451,
+      "sha256": "950f988316c490a59678d67ff4d31a0da9696139d572f04c48d1880acfc4bcdb"
+    },
+    {
+      "path": "runs/offset-courts-20261021/coupled-goal.ndjson",
+      "bytes": 22056,
+      "sha256": "1bfb90ef4f2672ded6f0bf4997229f37940d2b54af0abe89229806c928b6c4ab"
+    },
+    {
+      "path": "runs/offset-courts-20261021/design-card.md",
+      "bytes": 1218,
+      "sha256": "ddba2e8724ac12ea7b29f7ee66636a5c88fdb0fa601ea23610c9967317031634"
+    },
+    {
+      "path": "runs/offset-courts-20261021/disposition.json",
+      "bytes": 627,
+      "sha256": "31b154afd5bf5ccea0c73471b2c29b4b1026c936350c8c3e89f7fbd7dfb9bc88"
+    },
+    {
+      "path": "runs/offset-courts-20261021/exit-direction.log",
+      "bytes": 457,
+      "sha256": "f6efa29d30b55a8f6d562bd5e3df171d9b14b7f3b3396ba9708940930af4e278"
+    },
+    {
+      "path": "runs/offset-courts-20261021/exit-direction.mjs",
+      "bytes": 2023,
+      "sha256": "30946db8d852fa37a5e076e658d61c9d916e664986b112f8b9737e202b6eb298"
+    },
+    {
+      "path": "runs/offset-courts-20261021/exit-direction.ndjson",
+      "bytes": 24831,
+      "sha256": "0a5334e94eaaaba825a01c502b1dcba236798a2e4e3413c556ff21bf35782eeb"
+    },
+    {
+      "path": "runs/offset-courts-20261021/probe.log",
+      "bytes": 1100,
+      "sha256": "e1041742aea7f61e7e4655e816c826a95681e35023d55b79d582a744c6d6a6c9"
+    },
+    {
+      "path": "runs/offset-courts-20261021/probe.mjs",
+      "bytes": 3433,
+      "sha256": "1320ca277f88a171ac8f465626eef64029beac5dcdb48dde022908f605e5c57d"
+    },
+    {
+      "path": "runs/offset-courts-20261021/probe.ndjson",
+      "bytes": 46856,
+      "sha256": "9ea9304a9f3f88898673487fd2365f4268363d2fc842beb42e5d349bcfa77a93"
+    },
+    {
+      "path": "runs/diagonal-shared-junction-20261021/cold-approach.log",
+      "bytes": 1012,
+      "sha256": "f653b1df6da1abbd398d5047fdd4a66467897477e3eb4e6f4d6002fbde3b3faa"
+    },
+    {
+      "path": "runs/diagonal-shared-junction-20261021/cold-approach.mjs",
+      "bytes": 2154,
+      "sha256": "1519c1202ca8df224c290fd499bc71581cd424c754f9203bc2bd23fc7e1207cb"
+    },
+    {
+      "path": "runs/diagonal-shared-junction-20261021/cold-approach.ndjson",
+      "bytes": 34716,
+      "sha256": "293b7bb9c71f9e24398fb6277dbfa91b828c1f6e94457bb29774140fc628fa72"
+    },
+    {
+      "path": "runs/diagonal-shared-junction-20261021/connected-first-pass.log",
+      "bytes": 950,
+      "sha256": "aa4f5793b3337825216934b4f8b4ed372d5bcb27b45df05d962c294f942ebd88"
+    },
+    {
+      "path": "runs/diagonal-shared-junction-20261021/connected-first-pass.mjs",
+      "bytes": 2031,
+      "sha256": "420feb1cbe96429a070bfc580f7c99f988677e405fe827a405cbf6cf3c41fb64"
+    },
+    {
+      "path": "runs/diagonal-shared-junction-20261021/connected-first-pass.ndjson",
+      "bytes": 46922,
+      "sha256": "bec03405443808cff7f2633bd8ed17df22c662920de2a74dd8df82623557a8d0"
+    },
+    {
+      "path": "runs/diagonal-shared-junction-20261021/design-card.md",
+      "bytes": 1204,
+      "sha256": "d44a7f4bf038b8d2f47cd66519ed59743932abb74d1a90cabb7e387b45343f01"
+    },
+    {
+      "path": "runs/diagonal-shared-junction-20261021/disposition.json",
+      "bytes": 554,
+      "sha256": "e3a6946df890840756c8910fcbef63a669a4f1376f01d640aaceeb1a41cd7b69"
+    },
+    {
+      "path": "runs/diagonal-shared-junction-20261021/manual-plan-counterexample.json",
+      "bytes": 3588,
+      "sha256": "9a0ad881ade1057da660779a3463296f5bfbf6c0557ad2724c2c24f415682a23"
+    },
+    {
+      "path": "runs/diagonal-shared-junction-20261021/manual-plan-counterexample.mjs",
+      "bytes": 1135,
+      "sha256": "a34d86ebdd5dcf2cf3074b019983c4045120bc9e49eeca68db168e47d4745ddb"
+    },
+    {
+      "path": "runs/diagonal-shared-junction-20261021/probe.log",
+      "bytes": 730,
+      "sha256": "faf765e4b4dd8c7c603ee666915abedee58d4315b577c428075c8d630ac7ee2e"
+    },
+    {
+      "path": "runs/diagonal-shared-junction-20261021/probe.mjs",
+      "bytes": 3443,
+      "sha256": "b46e7f5ac3b70ad35bbc97254b861e69c0ee1379d664a95ded550c2bef3f20fa"
+    },
+    {
+      "path": "runs/diagonal-shared-junction-20261021/probe.ndjson",
+      "bytes": 25756,
+      "sha256": "fbe0dca9299887b698b1524cd3bfabd3429f2db40630c2ce039d490d743cc776"
+    },
+    {
+      "path": "runs/expanded-junction-20261021/control-key.log",
+      "bytes": 463,
+      "sha256": "e63cbd44963171af043bddaf1e59435651a272c1f7607e24d54732e8068870a5"
+    },
+    {
+      "path": "runs/expanded-junction-20261021/control-key.mjs",
+      "bytes": 1638,
+      "sha256": "6f90c6163b24fefc77184e3013dbae93b6e37502129d0f7a2f7e2962349df5e3"
+    },
+    {
+      "path": "runs/expanded-junction-20261021/control-key.ndjson",
+      "bytes": 30762,
+      "sha256": "ae8562705a924939d9b07c632e0ad578714d70b5071ecd46d11eddc022492a62"
+    },
+    {
+      "path": "runs/expanded-junction-20261021/design-card.md",
+      "bytes": 1044,
+      "sha256": "1517630388d8d0b9716b22cec438fb1060690218a43a0c4a858b119c533672a2"
+    },
+    {
+      "path": "runs/expanded-junction-20261021/disposition.json",
+      "bytes": 510,
+      "sha256": "f0701bb65d1f7fa3ff82af71f18795062be40fb2ef4b502add2ccd83288f2a6d"
+    },
+    {
+      "path": "runs/expanded-junction-20261021/probe.log",
+      "bytes": 1670,
+      "sha256": "d3fca48181e9eb31ad24ebbf70e890faab411b2e18ab29aa3681495bd28057e5"
+    },
+    {
+      "path": "runs/expanded-junction-20261021/probe.mjs",
+      "bytes": 3514,
+      "sha256": "b927bc6d674b20026fe6ed3d1d61afd15c2b76cc1b3715b78ff45b6f4a0fe690"
+    },
+    {
+      "path": "runs/expanded-junction-20261021/probe.ndjson",
+      "bytes": 67637,
+      "sha256": "de7f222448b824d1a8b5b4974a765abaeb69f30b1a54ace4689518be97262062"
+    }
+  ],
+  "privateArchive": {
+    "file": "artifacts/cloud-data-20261021-planning-122.zip",
+    "files": 14841,
+    "bytes": 167217857,
+    "sha256": "598d1599d0d2cbda8ab4332ad12da42278e9279866210b51c742488d9562bf9c",
+    "zipIntegrityCheckPassed": true,
+    "rawFileHashesIndependentlyChecked": 46,
+    "downloadedByUser": false
+  }
+}
