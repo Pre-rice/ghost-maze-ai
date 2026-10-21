@@ -1,0 +1,561 @@
+{
+  "recordedOn": "2026-10-21",
+  "purpose": "精简、入口折返、尽头取物及控制接力的原生反例研究，未形成交付候选",
+  "familyGroups": [
+    "hinged-field-20261020-v1",
+    "three-bays-20261021-v1"
+  ],
+  "relatedResearchDoc": "docs/archive/research/phase-and-route-preparation-20261021.md",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "humanQuality": null,
+  "trainingAdded": false,
+  "skillNotAutoInvoked": true,
+  "disposition": "B属性删空保持全部最优；普通取物与同计划补救未形成新认识；短入口及共享A代表存在无解或最优重合，代表任意长度无重合也无解，均未递补作品。晚开放守卫另起目录继续。",
+  "rawRoots": [
+    "runs/field-refinement-20261020",
+    "runs/coupled-field-review-20261021",
+    "runs/phase-coupling-20261021",
+    "runs/three-bays-20261021",
+    "runs/field-key-task-20261021",
+    "runs/remote-return-20261021"
+  ],
+  "trialSummary": [
+    {
+      "file": "runs/field-refinement-20261020/probe.ndjson",
+      "rows": 144,
+      "statuses": {
+        "solved": 72,
+        "proven_unsat": 72
+      }
+    },
+    {
+      "file": "runs/coupled-field-review-20261021/economy.ndjson",
+      "rows": 37,
+      "statuses": {
+        "solved": 14,
+        "proven_unsat": 23
+      }
+    },
+    {
+      "file": "runs/phase-coupling-20261021/inner-controls.ndjson",
+      "rows": 132,
+      "statuses": {
+        "solved": 66,
+        "proven_unsat": 66
+      }
+    },
+    {
+      "file": "runs/phase-coupling-20261021/probe.ndjson",
+      "rows": 192,
+      "statuses": {
+        "solved": 132,
+        "proven_unsat": 60
+      }
+    },
+    {
+      "file": "runs/three-bays-20261021/controlled-screen.ndjson",
+      "rows": 240,
+      "statuses": {
+        "solved": 152,
+        "proven_unsat": 88
+      }
+    },
+    {
+      "file": "runs/three-bays-20261021/lower-screen.ndjson",
+      "rows": 256,
+      "statuses": {
+        "proven_unsat": 256
+      }
+    },
+    {
+      "file": "runs/three-bays-20261021/open-throat.ndjson",
+      "rows": 256,
+      "statuses": {
+        "proven_unsat": 256
+      }
+    },
+    {
+      "file": "runs/three-bays-20261021/probe.ndjson",
+      "rows": 256,
+      "statuses": {
+        "proven_unsat": 256
+      }
+    },
+    {
+      "file": "runs/three-bays-20261021/side-entry.ndjson",
+      "rows": 256,
+      "statuses": {
+        "solved": 176,
+        "proven_unsat": 80
+      }
+    },
+    {
+      "file": "runs/three-bays-20261021/turnstile.ndjson",
+      "rows": 512,
+      "statuses": {
+        "solved": 133,
+        "proven_unsat": 379
+      }
+    },
+    {
+      "file": "runs/field-key-task-20261021/compressed-target-v2.ndjson",
+      "rows": 0,
+      "statuses": {}
+    },
+    {
+      "file": "runs/field-key-task-20261021/compressed-target-v3.ndjson",
+      "rows": 96,
+      "statuses": {
+        "solved": 76,
+        "proven_unsat": 20
+      }
+    },
+    {
+      "file": "runs/field-key-task-20261021/compressed-target.ndjson",
+      "rows": 0,
+      "statuses": {}
+    },
+    {
+      "file": "runs/field-key-task-20261021/probe.ndjson",
+      "rows": 88,
+      "statuses": {
+        "solved": 88
+      }
+    },
+    {
+      "file": "runs/field-key-task-20261021/retained-control.ndjson",
+      "rows": 176,
+      "statuses": {
+        "solved": 95,
+        "proven_unsat": 81
+      }
+    },
+    {
+      "file": "runs/remote-return-20261021/coupled-shield.ndjson",
+      "rows": 96,
+      "statuses": {
+        "solved": 86,
+        "proven_unsat": 10
+      }
+    },
+    {
+      "file": "runs/remote-return-20261021/probe.ndjson",
+      "rows": 144,
+      "statuses": {
+        "proven_unsat": 96,
+        "solved": 48
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "runs/field-refinement-20261020/design-card.json",
+      "bytes": 675,
+      "sha256": "5ebaf8e3c0a8fb029a8e1f0b63ffdd5922f1f949df05ea7c2bd29f8c6e224bd2"
+    },
+    {
+      "path": "runs/field-refinement-20261020/probe.log",
+      "bytes": 5580,
+      "sha256": "eec320dfdd6a99fb7296b3ba11cf7b38f6941eb3a31b5ee36152cc5fa84a80e1"
+    },
+    {
+      "path": "runs/field-refinement-20261020/probe.mjs",
+      "bytes": 3232,
+      "sha256": "dd2a96de4906691d610f6fcebf37f44f58d3fdbb1467bf12f97baeca6c78c19f"
+    },
+    {
+      "path": "runs/field-refinement-20261020/probe.ndjson",
+      "bytes": 708089,
+      "sha256": "f43446fde50407bc5f34c521b862564c9dc71c749d96e7add347ad76734307b0"
+    },
+    {
+      "path": "runs/field-refinement-20261020/review-111.json",
+      "bytes": 43852,
+      "sha256": "648e0d2aeee4d001600fc8f8b148a0a140550cfe245437551a8ea580a2b758cb"
+    },
+    {
+      "path": "runs/field-refinement-20261020/review-111.log",
+      "bytes": 7088,
+      "sha256": "35359cf0fbb392ea4a7249b8748d5e1771c6b1a2ab84f158cdf9a3b03811f868"
+    },
+    {
+      "path": "runs/field-refinement-20261020/review-111.mjs",
+      "bytes": 2802,
+      "sha256": "3505d572330953130e22202ce67c049d72e8c03f1f9a892faa98622903beb199"
+    },
+    {
+      "path": "runs/field-refinement-20261020/review-138.json",
+      "bytes": 43340,
+      "sha256": "4410056035d569a157d0aa88ea67388d0b68cb7f4d322682b060a94d42517fbb"
+    },
+    {
+      "path": "runs/field-refinement-20261020/review-138.log",
+      "bytes": 7085,
+      "sha256": "a663f42d97b96ae4e1ea15791447c412d121cc379e992e5f3f8aeb163f869664"
+    },
+    {
+      "path": "runs/field-refinement-20261020/review-138.mjs",
+      "bytes": 2802,
+      "sha256": "20862c6d857e3e8cd08cfa66f09908a3ad0cda11219f0864ede8942ca4dee6f3"
+    },
+    {
+      "path": "runs/coupled-field-review-20261021/design-card.json",
+      "bytes": 1125,
+      "sha256": "b1d828a6b0e837b12fc137f9c6bdbffc0920f05d66461e73d427ecfa9c9b4f7b"
+    },
+    {
+      "path": "runs/coupled-field-review-20261021/economy.log",
+      "bytes": 6064,
+      "sha256": "7a5c1b70d8d9738898e6777b6017a7b8965e046dc15d503dcf3e69a926a05df5"
+    },
+    {
+      "path": "runs/coupled-field-review-20261021/economy.mjs",
+      "bytes": 3379,
+      "sha256": "746bb8cdedc6807eb55eeab3eac807102c0d75d93c7cce7b90f1b3080bd87a54"
+    },
+    {
+      "path": "runs/coupled-field-review-20261021/economy.ndjson",
+      "bytes": 170474,
+      "sha256": "2ddaef3095c32f0eae587f0bdbb1d6d1a4c64a21e3650e78c6fcdd906b28812a"
+    },
+    {
+      "path": "runs/coupled-field-review-20261021/source.json",
+      "bytes": 19667,
+      "sha256": "2273913dccf71cbafd3c5b1b2106db92690c429c692b3f96eb307fdd101c031c"
+    },
+    {
+      "path": "runs/phase-coupling-20261021/design-card.json",
+      "bytes": 913,
+      "sha256": "69d4d9ad77f431b3c4ba5aef89f31b0eaa81629f3f43a0ffb72548ab2d841e7a"
+    },
+    {
+      "path": "runs/phase-coupling-20261021/inner-controls-card.json",
+      "bytes": 868,
+      "sha256": "9614158923d5104dc6b866e739a277a50d3302a93937d2ce7a31fb62ffd16b7a"
+    },
+    {
+      "path": "runs/phase-coupling-20261021/inner-controls.log",
+      "bytes": 512,
+      "sha256": "4472fef1284463624c1a4bd0821fe81fd976c0970713f7073eb36fb8a025d43d"
+    },
+    {
+      "path": "runs/phase-coupling-20261021/inner-controls.mjs",
+      "bytes": 2792,
+      "sha256": "359243e3a250ee55bdb8899dc8f644fcd14aae96400318394335b734021de3ff"
+    },
+    {
+      "path": "runs/phase-coupling-20261021/inner-controls.ndjson",
+      "bytes": 560366,
+      "sha256": "e6d2bfde1c9a2a5609ac567c8f33a1061a240cc9a70cc6c9da7dac16cef22ad3"
+    },
+    {
+      "path": "runs/phase-coupling-20261021/probe.log",
+      "bytes": 132,
+      "sha256": "e9d0681a4dd8bdc550e9353dc103db806e0fcddc45e5a218a8d8fff252016ce5"
+    },
+    {
+      "path": "runs/phase-coupling-20261021/probe.mjs",
+      "bytes": 3007,
+      "sha256": "57c3207b322a3f2ce4722238347cfea330ac5ff2095b460352e1add25bedfff8"
+    },
+    {
+      "path": "runs/phase-coupling-20261021/probe.ndjson",
+      "bytes": 829450,
+      "sha256": "ac0127d8ce2400bd7483430bdf8af6296992de6d29159ac6685c49058115523f"
+    },
+    {
+      "path": "runs/three-bays-20261021/controlled-screen-card.json",
+      "bytes": 1071,
+      "sha256": "aab8cd46588f280d2c9f4b38fd63c4d0a3229003cd147d0453854e09c10a7d46"
+    },
+    {
+      "path": "runs/three-bays-20261021/controlled-screen.log",
+      "bytes": 977,
+      "sha256": "1890303c16efdbe8f7fb3091d74146df70a774650afb03622cdd5f432dd5f520"
+    },
+    {
+      "path": "runs/three-bays-20261021/controlled-screen.mjs",
+      "bytes": 4135,
+      "sha256": "3eea0f78a4ae77d31a113e1e7733518c5ccf2ac55a9239fea560bf52ce1c07ae"
+    },
+    {
+      "path": "runs/three-bays-20261021/controlled-screen.ndjson",
+      "bytes": 1292046,
+      "sha256": "6492f68c584478329cdfa9fdf930349433ce7fa7216ab00e282301251075e202"
+    },
+    {
+      "path": "runs/three-bays-20261021/design-card.json",
+      "bytes": 1043,
+      "sha256": "c5de0699b5da031838b8ad73a506516429151bdcd4a66656dcb2afaa7fc06d84"
+    },
+    {
+      "path": "runs/three-bays-20261021/lower-screen-card.json",
+      "bytes": 438,
+      "sha256": "a5b586606ec409863c3e89643db4f3a13acfc5ee6fde399e791ffad4dbb0835a"
+    },
+    {
+      "path": "runs/three-bays-20261021/lower-screen.log",
+      "bytes": 133,
+      "sha256": "94111d7cdd9908b6242f636004bc03fd4dd1e2027b08bc8e75f6ba796dbe833f"
+    },
+    {
+      "path": "runs/three-bays-20261021/lower-screen.mjs",
+      "bytes": 3714,
+      "sha256": "0a83f949c6253d412b3d1678223e59df316252d6e2f6b290c3c09c3cb50e21ce"
+    },
+    {
+      "path": "runs/three-bays-20261021/lower-screen.ndjson",
+      "bytes": 1011621,
+      "sha256": "d3f264ef2e974c4a899aad13fd26cd079294d1b9b8fda316d962b58c835e654c"
+    },
+    {
+      "path": "runs/three-bays-20261021/open-throat-card.json",
+      "bytes": 482,
+      "sha256": "b2d64cec14d89d06d694c34d7b14fd3baf856c78e52234e7e6aa3e04ab5159f5"
+    },
+    {
+      "path": "runs/three-bays-20261021/open-throat.log",
+      "bytes": 133,
+      "sha256": "94111d7cdd9908b6242f636004bc03fd4dd1e2027b08bc8e75f6ba796dbe833f"
+    },
+    {
+      "path": "runs/three-bays-20261021/open-throat.mjs",
+      "bytes": 3713,
+      "sha256": "c70ccfee8a6acf41ff7f499c877972f88fc0c12736132263f106008828a67bba"
+    },
+    {
+      "path": "runs/three-bays-20261021/open-throat.ndjson",
+      "bytes": 1012032,
+      "sha256": "54d80534cc1340523429cfb5bb39d619bd970d593f93ef696a01211fa08698e3"
+    },
+    {
+      "path": "runs/three-bays-20261021/probe.log",
+      "bytes": 133,
+      "sha256": "94111d7cdd9908b6242f636004bc03fd4dd1e2027b08bc8e75f6ba796dbe833f"
+    },
+    {
+      "path": "runs/three-bays-20261021/probe.mjs",
+      "bytes": 3704,
+      "sha256": "1c4bc1dd3b8a56fd4d8112cbf0c097295620e3faca9ce9954cb2880df2a31406"
+    },
+    {
+      "path": "runs/three-bays-20261021/probe.ndjson",
+      "bytes": 1011704,
+      "sha256": "3d00db7165075ecba7f364c24049a541ab0e4a541485a071ff74167f42d07828"
+    },
+    {
+      "path": "runs/three-bays-20261021/review-turnstile-25-28.json",
+      "bytes": 72351,
+      "sha256": "3f8aeaf60eedc5174a71594f2d00909ab17f71b8a8741ca4734c7334478c07ab"
+    },
+    {
+      "path": "runs/three-bays-20261021/review-turnstile-25-28.log",
+      "bytes": 3981,
+      "sha256": "d4632b0069a7463297f7076ee2acf107208f497b9add46faf365106b17fed3e8"
+    },
+    {
+      "path": "runs/three-bays-20261021/review-turnstile.mjs",
+      "bytes": 2222,
+      "sha256": "12b58b009a96fdeede7d752207d9d7f60dc7bebbf5805cb771d8478b96ee3ccf"
+    },
+    {
+      "path": "runs/three-bays-20261021/side-entry-card.json",
+      "bytes": 1000,
+      "sha256": "7527a4f47998a22447764181ca9acef0860fbbf14a8ecd51bc04b30315c7e21d"
+    },
+    {
+      "path": "runs/three-bays-20261021/side-entry.log",
+      "bytes": 882,
+      "sha256": "0f0677c1dcdfa959806e9a0c6e1ab6a6baf1ee3f299fb1d916140e47fa319fce"
+    },
+    {
+      "path": "runs/three-bays-20261021/side-entry.mjs",
+      "bytes": 3705,
+      "sha256": "f30f2a337ec450e1b82e11b7c52fa824bb24be6ec1da5d7db46071296f40b407"
+    },
+    {
+      "path": "runs/three-bays-20261021/side-entry.ndjson",
+      "bytes": 1550005,
+      "sha256": "7ef6e8d22aca015d8bc63f5d010008262b0b72ee0ec96fbba2b6ca3edec4f3cf"
+    },
+    {
+      "path": "runs/three-bays-20261021/turnstile-card.json",
+      "bytes": 1035,
+      "sha256": "168840c65f5052e14abe9062ebe3afda6c2b94506f7170b0f72ee505623c72d7"
+    },
+    {
+      "path": "runs/three-bays-20261021/turnstile.log",
+      "bytes": 1292,
+      "sha256": "aea0ef845ea7c3e2acc1ac593e51a9b6f3a2d224c0b2d403610ced59b0b31cd8"
+    },
+    {
+      "path": "runs/three-bays-20261021/turnstile.mjs",
+      "bytes": 3802,
+      "sha256": "8bc3649cef1f511241d14bcdd8dd3308ca9c22f9aa705808a7f64dcf03aa141e"
+    },
+    {
+      "path": "runs/three-bays-20261021/turnstile.ndjson",
+      "bytes": 2606108,
+      "sha256": "c979c2e63d683e47bf59f87354f33ee1fba5fc064d28e46fae27fca7b9c3ebd9"
+    },
+    {
+      "path": "runs/field-key-task-20261021/compressed-target-card.json",
+      "bytes": 1019,
+      "sha256": "d8d44be0069a056de532a36820ea3e8aeb3a63d653c34a2b53aa6e6c249f7c63"
+    },
+    {
+      "path": "runs/field-key-task-20261021/compressed-target-v2.log",
+      "bytes": 695,
+      "sha256": "44574d1623b2830d6266406eb2d188ed2826cce324031fa4af0cf98fc97372ec"
+    },
+    {
+      "path": "runs/field-key-task-20261021/compressed-target-v2.mjs",
+      "bytes": 3344,
+      "sha256": "02cc7638a1342cebef6b7cd975b2460faab3ed9d6d7aed84bbde0a11ac46cd00"
+    },
+    {
+      "path": "runs/field-key-task-20261021/compressed-target-v2.ndjson",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/field-key-task-20261021/compressed-target-v3.log",
+      "bytes": 8037,
+      "sha256": "35d97294b45e6f7a517e9c11147efc672bf989b0d88659d7885257379638f772"
+    },
+    {
+      "path": "runs/field-key-task-20261021/compressed-target-v3.mjs",
+      "bytes": 3418,
+      "sha256": "0ffc0e19ff5c935b1fac742f50d2cd64ed1f83f8c8e5266e52cab22240624725"
+    },
+    {
+      "path": "runs/field-key-task-20261021/compressed-target-v3.ndjson",
+      "bytes": 754896,
+      "sha256": "b1d18bd7ee3bdb1cb669fb76e89e978dbcb8319df1b68de344bac82c11afde5f"
+    },
+    {
+      "path": "runs/field-key-task-20261021/compressed-target.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/field-key-task-20261021/compressed-target.mjs",
+      "bytes": 3278,
+      "sha256": "e25626de650088d13a61874cc8fa472f50f6525898969f3803d74ebcb888cb3d"
+    },
+    {
+      "path": "runs/field-key-task-20261021/compressed-target.ndjson",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/field-key-task-20261021/design-card.json",
+      "bytes": 1133,
+      "sha256": "a7eea87f2213642df57f7ad7c1933e9a6128ec69b8b435497755719f8bceadf3"
+    },
+    {
+      "path": "runs/field-key-task-20261021/failed-build-notes.json",
+      "bytes": 664,
+      "sha256": "4314b07d524f94e4fc6373a819a6df27b6e0a14f3b79b36688d0e3ba859609b5"
+    },
+    {
+      "path": "runs/field-key-task-20261021/probe.log",
+      "bytes": 6611,
+      "sha256": "e159fc12c5831ed252914e608cf3950382c02780c80ee25849b24669d8a6e63e"
+    },
+    {
+      "path": "runs/field-key-task-20261021/probe.mjs",
+      "bytes": 2993,
+      "sha256": "7bd3b332f07399cb9494e02f8a5c6706231ad14a1b47bf130e4210e7ad1376d6"
+    },
+    {
+      "path": "runs/field-key-task-20261021/probe.ndjson",
+      "bytes": 670673,
+      "sha256": "ff10f994ac7890c4a132525d77330698ae8524394e6b1222d14295dc9476355d"
+    },
+    {
+      "path": "runs/field-key-task-20261021/retained-control-card.json",
+      "bytes": 1073,
+      "sha256": "436c9e20b502824b06cdcd96f496c07cbfe795c606235ccad258eb131fc95b15"
+    },
+    {
+      "path": "runs/field-key-task-20261021/retained-control.log",
+      "bytes": 12818,
+      "sha256": "b1d122706683306d185e1fe8360ffe758f41c00807eed7f734e2292e1f70e254"
+    },
+    {
+      "path": "runs/field-key-task-20261021/retained-control.mjs",
+      "bytes": 3155,
+      "sha256": "115f03bef78d291194476bbf6aa2aaaa593397433312ff50b3c29edb6d4a7d7b"
+    },
+    {
+      "path": "runs/field-key-task-20261021/retained-control.ndjson",
+      "bytes": 1156288,
+      "sha256": "79960ad5d80e752e6940ff15b7c8c2c7f744bfc240ea5bd68264f2b5e12e2b4b"
+    },
+    {
+      "path": "runs/remote-return-20261021/coupled-shield-card.json",
+      "bytes": 1160,
+      "sha256": "888eaf9dbfa0c5ea689059aa68cfeeb120513e199651cecbfcffc8174ae42c06"
+    },
+    {
+      "path": "runs/remote-return-20261021/coupled-shield.log",
+      "bytes": 64,
+      "sha256": "fd85d205736b80cab90093699410ed6667b28fcf501dc39ce574bb7b1161cadd"
+    },
+    {
+      "path": "runs/remote-return-20261021/coupled-shield.mjs",
+      "bytes": 3056,
+      "sha256": "1a86d7132ad46558764fc7f8a0e24168a8103d0f05584bafd15d8e8cc9e0feba"
+    },
+    {
+      "path": "runs/remote-return-20261021/coupled-shield.ndjson",
+      "bytes": 1149688,
+      "sha256": "b270383f89316c94e8d4e0d2eae6329bf5c421526e3efa3cdb42222b25bdc6ed"
+    },
+    {
+      "path": "runs/remote-return-20261021/design-card.json",
+      "bytes": 1202,
+      "sha256": "7bf28787acd7436d2d09eddff41c62aaf8cbbba18a742e893ecac76d59011260"
+    },
+    {
+      "path": "runs/remote-return-20261021/probe.log",
+      "bytes": 98,
+      "sha256": "d9d9501413f83c47b5cf22866e9e747813759f5ae6d66faf476489fcd366b593"
+    },
+    {
+      "path": "runs/remote-return-20261021/probe.mjs",
+      "bytes": 3616,
+      "sha256": "f3c5ded5dd136e5d19cf7ab90025cb6c57f89fec7bb18f48e47d62fdbfe45f71"
+    },
+    {
+      "path": "runs/remote-return-20261021/probe.ndjson",
+      "bytes": 1043843,
+      "sha256": "4282fb9d2994acf93e48ee05548d8f51a0e9e2be4312e2e90adde566bd6bc601"
+    },
+    {
+      "path": "runs/remote-return-20261021/safe-and-role-audit.json",
+      "bytes": 153427,
+      "sha256": "2d7b27a962d32668307ccb66cd5099d4a4e5fafb5dbe1f6bcd4b954f067c686a"
+    },
+    {
+      "path": "runs/remote-return-20261021/safe-and-role-audit.log",
+      "bytes": 1510,
+      "sha256": "95264f054b333fe937247926b9d73e9d17bee43126eb9b7d2b2f6b6b87290ede"
+    },
+    {
+      "path": "runs/remote-return-20261021/safe-and-role-audit.mjs",
+      "bytes": 2122,
+      "sha256": "c15be3066a41ca8e0df7099bc0bf3768ed50174d29e32a1a6672366e6d1d708e"
+    }
+  ],
+  "privateArchive": {
+    "file": "artifacts/cloud-data-20261021-planning-112.zip",
+    "files": 14279,
+    "bytes": 165817352,
+    "sha256": "6f792384c62a98564a54808588e01b62667bd38d02fb866a99edade5702df310",
+    "zipIntegrityCheckPassed": true,
+    "rawFileHashesIndependentlyChecked": 80,
+    "downloadedByUser": false
+  }
+}
