@@ -1,0 +1,354 @@
+{
+  "recordedOn": "2026-10-21",
+  "purpose": "接管实际负反馈、终点侧A删改对照及先前未交付的隔离区／错接支路／双操作面有限研究",
+  "relatedResearchDoc": "docs/archive/research/unpublished-staging-and-controller-review-20261021.md",
+  "latestActualFeedback": "data/manifests/controller-clearance-review-20261021.json",
+  "familyGroups": [
+    "airlock-exchange-20261021-v1",
+    "pinwheel-staging-20261021-v1",
+    "shutter-timing-20261021-v1"
+  ],
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "studyHumanQuality": null,
+  "trainingAdded": false,
+  "skillNotAutoInvoked": true,
+  "disposition": "接管实际被评太简单，旧绕行卡鬼重复，终点侧A只是末尾许可；原件保持，控制换面方向停止递补。先前未交付的隔离区、错接支路及单鬼双操作面稿保存为研究；有限稿中的可解、无解与最优重合不作质量结论。未更改本体或地图集。",
+  "rawRoots": [
+    "runs/airlock-exchange-20261021",
+    "runs/pinwheel-staging-20261021",
+    "runs/shutter-timing-20261021",
+    "runs/controller-clearance-review-20261021"
+  ],
+  "trialSummary": [
+    {
+      "file": "runs/airlock-exchange-20261021/bent-courts.ndjson",
+      "rows": 48,
+      "statuses": {
+        "proven_unsat": 6,
+        "solved": 42
+      },
+      "boundaryStatuses": {
+        "conflict": 30,
+        "safe": 12
+      }
+    },
+    {
+      "file": "runs/airlock-exchange-20261021/coupled-open.ndjson",
+      "rows": 48,
+      "statuses": {
+        "proven_unsat": 18,
+        "solved": 30
+      },
+      "boundaryStatuses": {
+        "conflict": 30
+      }
+    },
+    {
+      "file": "runs/airlock-exchange-20261021/probe.ndjson",
+      "rows": 48,
+      "statuses": {
+        "proven_unsat": 40,
+        "solved": 8
+      },
+      "boundaryStatuses": {
+        "safe": 8
+      }
+    },
+    {
+      "file": "runs/airlock-exchange-20261021/remote-controls.ndjson",
+      "rows": 96,
+      "statuses": {
+        "solved": 76,
+        "proven_unsat": 20
+      },
+      "boundaryStatuses": {
+        "safe": 76
+      }
+    },
+    {
+      "file": "runs/pinwheel-staging-20261021/internal-opposition.ndjson",
+      "rows": 108,
+      "statuses": {
+        "solved": 70,
+        "proven_unsat": 38
+      },
+      "boundaryStatuses": {
+        "conflict": 70
+      }
+    },
+    {
+      "file": "runs/pinwheel-staging-20261021/orthogonal-refuges.ndjson",
+      "rows": 54,
+      "statuses": {
+        "proven_unsat": 30,
+        "solved": 24
+      },
+      "boundaryStatuses": {
+        "conflict": 24
+      }
+    },
+    {
+      "file": "runs/pinwheel-staging-20261021/probe.ndjson",
+      "rows": 54,
+      "statuses": {
+        "proven_unsat": 54
+      },
+      "boundaryStatuses": {}
+    },
+    {
+      "file": "runs/pinwheel-staging-20261021/staggered-poses.ndjson",
+      "rows": 162,
+      "statuses": {
+        "proven_unsat": 90,
+        "solved": 72
+      },
+      "boundaryStatuses": {
+        "conflict": 72
+      }
+    },
+    {
+      "file": "runs/pinwheel-staging-20261021/staggered-walls.ndjson",
+      "rows": 44,
+      "statuses": {
+        "proven_unsat": 18,
+        "solved": 26
+      },
+      "boundaryStatuses": {
+        "conflict": 26
+      }
+    },
+    {
+      "file": "runs/pinwheel-staging-20261021/wide-center.ndjson",
+      "rows": 54,
+      "statuses": {
+        "proven_unsat": 54
+      },
+      "boundaryStatuses": {}
+    },
+    {
+      "file": "runs/shutter-timing-20261021/probe.ndjson",
+      "rows": 48,
+      "statuses": {
+        "solved": 42,
+        "proven_unsat": 6
+      },
+      "boundaryStatuses": {}
+    }
+  ],
+  "files": [
+    {
+      "path": "runs/airlock-exchange-20261021/bent-courts.log",
+      "bytes": 3082,
+      "sha256": "382a2907926d39246b11e07e8996dca341427bcc66fb62c11775474a21500ef3"
+    },
+    {
+      "path": "runs/airlock-exchange-20261021/bent-courts.mjs",
+      "bytes": 3190,
+      "sha256": "cf7ceb574e76c2acd03ebe89b8c63bdc5ec83b29da107795b36fef8298127fac"
+    },
+    {
+      "path": "runs/airlock-exchange-20261021/bent-courts.ndjson",
+      "bytes": 403787,
+      "sha256": "de8bc838e83acb9f23c75abf527f8a29f746235a1e28b8fa3d980aa394678bd2"
+    },
+    {
+      "path": "runs/airlock-exchange-20261021/coupled-open.log",
+      "bytes": 11032,
+      "sha256": "194177f9743df74e2df437d3340dc21000a4359a56f7f75c0ec540fb71aa41f0"
+    },
+    {
+      "path": "runs/airlock-exchange-20261021/coupled-open.mjs",
+      "bytes": 2133,
+      "sha256": "5cc8d9cd51296fbc79632e7100fd395b444c9d5e2496755ae3ffca345a01c4fe"
+    },
+    {
+      "path": "runs/airlock-exchange-20261021/coupled-open.ndjson",
+      "bytes": 333351,
+      "sha256": "39a32c8b1af684cdc6a2d3dcd3202ab21dd4749d55092684874bbb8b3bce56d2"
+    },
+    {
+      "path": "runs/airlock-exchange-20261021/design-card.md",
+      "bytes": 1031,
+      "sha256": "bb4439b30e95b8d54d7a579b4037ff829e80ad5570904dc6527269172f3d37d3"
+    },
+    {
+      "path": "runs/airlock-exchange-20261021/probe.log",
+      "bytes": 6671,
+      "sha256": "647969568e4166ed04a7eae0507c4b256f1d951f5cf2604bf749755905b2d07b"
+    },
+    {
+      "path": "runs/airlock-exchange-20261021/probe.mjs",
+      "bytes": 3622,
+      "sha256": "d46f6f79b14176b639d5c2c3143d7db7534259d85c0440f351ea6b678a241896"
+    },
+    {
+      "path": "runs/airlock-exchange-20261021/probe.ndjson",
+      "bytes": 245198,
+      "sha256": "b84a4de6e616694c439d069d3c87af18784981f7c86b7d13b859a456f5449fa9"
+    },
+    {
+      "path": "runs/airlock-exchange-20261021/remote-controls.log",
+      "bytes": 6966,
+      "sha256": "a2bdbe28a07a31df7906b12c894773f0d53c56f78812532d98cddfbb1f96646b"
+    },
+    {
+      "path": "runs/airlock-exchange-20261021/remote-controls.mjs",
+      "bytes": 2154,
+      "sha256": "2b53046b5c7e1716a1471dbb3a61f0922d610a1577a4098f80834a67d356c77c"
+    },
+    {
+      "path": "runs/airlock-exchange-20261021/remote-controls.ndjson",
+      "bytes": 559622,
+      "sha256": "9f514154321550082793f17fb7e9001bc247421038c12a4f792c7c5a772b11c8"
+    },
+    {
+      "path": "runs/pinwheel-staging-20261021/design-card.md",
+      "bytes": 1041,
+      "sha256": "f5b6d5d35376b56a3e77d0c51444010d9c18b574c28453a85094d5f6b54f3a96"
+    },
+    {
+      "path": "runs/pinwheel-staging-20261021/internal-opposition.log",
+      "bytes": 11504,
+      "sha256": "c469f1412a1176f2d90e8e1af66e9750ca114444ff2a77b7ba614c541a0bf051"
+    },
+    {
+      "path": "runs/pinwheel-staging-20261021/internal-opposition.mjs",
+      "bytes": 1895,
+      "sha256": "c46dd792a0cdc8ec2d43a1dc83817ba83327f4b1a8886a9af4e49b43ee2ecbbf"
+    },
+    {
+      "path": "runs/pinwheel-staging-20261021/internal-opposition.ndjson",
+      "bytes": 963422,
+      "sha256": "8ff976a9612429130f58ab7d3f95404c7ff368ad936667c3c976414f5680d116"
+    },
+    {
+      "path": "runs/pinwheel-staging-20261021/orthogonal-refuges.log",
+      "bytes": 3205,
+      "sha256": "83b8f47af2147696af67c3d50f02b21ef447e101aeee04bedffde6806e12211d"
+    },
+    {
+      "path": "runs/pinwheel-staging-20261021/orthogonal-refuges.mjs",
+      "bytes": 3306,
+      "sha256": "6211e378caad7b420d67f3ad6249f8d8175d662c0dcd981ddef96fe26c886e1a"
+    },
+    {
+      "path": "runs/pinwheel-staging-20261021/orthogonal-refuges.ndjson",
+      "bytes": 415746,
+      "sha256": "ef00256caa7538d4e140dabcd78a9acbcd536aa789344e463b9eda711b07eeef"
+    },
+    {
+      "path": "runs/pinwheel-staging-20261021/probe.log",
+      "bytes": 3392,
+      "sha256": "54b43ef8572e5935ef9753047a9345c36ac74cf359bdcebd9d810492377671f0"
+    },
+    {
+      "path": "runs/pinwheel-staging-20261021/probe.mjs",
+      "bytes": 3329,
+      "sha256": "99c147e72ad6770d16467654ca67b236b16125a903ab9e60f7243c34a2bb0277"
+    },
+    {
+      "path": "runs/pinwheel-staging-20261021/probe.ndjson",
+      "bytes": 223358,
+      "sha256": "5bcaa46974e202a083b11974aab080ade1ceb9a125a436b076d9d8375db2f101"
+    },
+    {
+      "path": "runs/pinwheel-staging-20261021/staggered-poses.log",
+      "bytes": 17234,
+      "sha256": "9d0f58c3ce487d5eb7f9a21c6f1caf587d8927fb63f039fd163f49583ea3ad89"
+    },
+    {
+      "path": "runs/pinwheel-staging-20261021/staggered-poses.ndjson",
+      "bytes": 1254127,
+      "sha256": "5e5ba2b06ac786055d6505b4a693dd1e214913a2193cd7a846de7b7ed7fcd9b2"
+    },
+    {
+      "path": "runs/pinwheel-staging-20261021/staggered-probes.mjs",
+      "bytes": 2371,
+      "sha256": "f2e0d25436685a26e07029001c6f8c3d1e6861ff474195cb2e27008ebf5acdd0"
+    },
+    {
+      "path": "runs/pinwheel-staging-20261021/staggered-walls.log",
+      "bytes": 4645,
+      "sha256": "b2011f698f374a0c8823a19f9355282f767f5981539660d21266c9d114c3d7c4"
+    },
+    {
+      "path": "runs/pinwheel-staging-20261021/staggered-walls.ndjson",
+      "bytes": 387513,
+      "sha256": "0ff7d86934abd912bf21269b5c8863d909f519db87742ba78ed00f913a39a245"
+    },
+    {
+      "path": "runs/pinwheel-staging-20261021/wide-center.log",
+      "bytes": 3392,
+      "sha256": "54b43ef8572e5935ef9753047a9345c36ac74cf359bdcebd9d810492377671f0"
+    },
+    {
+      "path": "runs/pinwheel-staging-20261021/wide-center.mjs",
+      "bytes": 3383,
+      "sha256": "7ef1c0981fea72b93e6c260821a61dffdb24106540711a767eaaa5aa36292244"
+    },
+    {
+      "path": "runs/pinwheel-staging-20261021/wide-center.ndjson",
+      "bytes": 267766,
+      "sha256": "f964c51227d5dd0858b0d62ffde51cec53780b43dd59faa556755fe380cd0351"
+    },
+    {
+      "path": "runs/shutter-timing-20261021/design-card.md",
+      "bytes": 1021,
+      "sha256": "00eda30a8a8b1dc87162d18ab1ae6355c060293ff30bdf9cc4e9dacf9d0de6d4"
+    },
+    {
+      "path": "runs/shutter-timing-20261021/probe.log",
+      "bytes": 5964,
+      "sha256": "b1fb1a0c1cd266c79648749f7e4fb91da5692294c036cb8f6afb0d784905382e"
+    },
+    {
+      "path": "runs/shutter-timing-20261021/probe.mjs",
+      "bytes": 3161,
+      "sha256": "fd1eb41de6944c492489dac7b8db0e4f506eaef3025ca8328f0e874a9195a7a4"
+    },
+    {
+      "path": "runs/shutter-timing-20261021/probe.ndjson",
+      "bytes": 240602,
+      "sha256": "c4045af4d1bbd2ca12ffca81b5426d3587b6eb514968b9140d83837ba7b682dc"
+    },
+    {
+      "path": "runs/controller-clearance-review-20261021/actual-feedback.json",
+      "bytes": 849,
+      "sha256": "abcf020fe81ee9aa43986f979d79c5706ef41fd47b6871eaae420de55f349156"
+    },
+    {
+      "path": "runs/controller-clearance-review-20261021/counterexample.json",
+      "bytes": 2613,
+      "sha256": "433b1b11224e5b5c8b5f1f91c1d69893dc47cf54c855bccc836d1278726789a9"
+    },
+    {
+      "path": "runs/controller-clearance-review-20261021/counterexample.mjs",
+      "bytes": 2611,
+      "sha256": "f4328c0a272b02452fb1d61f23a41222efeec7b5c9c8866cdd2e161c66b0c394"
+    },
+    {
+      "path": "runs/controller-clearance-review-20261021/disposition.json",
+      "bytes": 767,
+      "sha256": "5b8d8bba0c45316d8115a314819d8770607e46e85558b889393260e106f21a0c"
+    },
+    {
+      "path": "runs/controller-clearance-review-20261021/reading-note.json",
+      "bytes": 594,
+      "sha256": "fec4ad14ebd341df0a8f9fdf975f34c7577d6843c5888eddd618210134dc8b74"
+    },
+    {
+      "path": "data/feedback/controller-clearance-review-20261021.json",
+      "bytes": 849,
+      "sha256": "abcf020fe81ee9aa43986f979d79c5706ef41fd47b6871eaae420de55f349156"
+    }
+  ],
+  "privateArchive": {
+    "file": "artifacts/cloud-data-20261021-planning-114.zip",
+    "files": 14432,
+    "bytes": 166466390,
+    "sha256": "3087786b8112c15809ad9f57f5ad0bce6932a324e810a364649c57cb10549121",
+    "zipIntegrityCheckPassed": true,
+    "rawFileHashesIndependentlyChecked": 41,
+    "downloadedByUser": false
+  }
+}

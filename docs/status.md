@@ -4,13 +4,13 @@
 
 ## 当前任务与停点
 
-用户要求持续主线，将循序渐进关卡与[排序提案](archive/reviews/gallery-order-proposal-20261018.md)暂时搁置。**持续谜题设计与原生反例研究，不以提交、研究收尾或候选交付为停点。** 最新《留手》收到容易、困鬼明显、线性且无新意的负反馈，未入集，原图和生成证据保持；停止此类返回控制权变体递补。[实际评述](../data/manifests/returning-control-review-20261020.json)。此前《侧入》获“有点意思，可称好图”，按交付原版入集第20位；用户指出核心是从左门上去把终点鬼引向左侧，第一鬼为经验基操，仍期待更新颖优秀的题。[实际评述](../data/manifests/temporary-entry-review-20261020.json)。此前《巡回》持续追逐绕路及相似结构的负反馈保持；用户版《内外》按原码保留对角线匀称构型和两个封闭格，作为简单引入关。当前20张、9张站主优化，发现顺序保持。[本次真实反馈与证据](../data/manifests/inside-outside-and-circulating-review-20261020.json)。
+用户要求持续主线，将循序渐进关卡与[排序提案](archive/reviews/gallery-order-proposal-20261018.md)暂时搁置。**持续谜题设计与原生反例研究，不以提交、研究收尾或候选交付为停点。** 最新《接管》又被评价过于简单，绕行卡鬼及前期引鬼重复，终点侧A只是末尾打开，并无新的鬼位处理；未入集，原图与19步证据保持。[实际评述与18步删门对照](../data/manifests/controller-clearance-review-20261021.json)。此前《留手》的容易、困鬼明显、线性且无新意负反馈保持；这次是同一筛选原则执行失败，停止此类返回／换操作面的变体递补。此前《侧入》获“有点意思，可称好图”，按交付原版入集第20位；用户指出核心是从左门上去把终点鬼引向左侧，第一鬼为经验基操，仍期待更新颖优秀的题。[实际评述](../data/manifests/temporary-entry-review-20261020.json)。此前《巡回》持续追逐绕路及相似结构的负反馈保持；用户版《内外》按原码保留对角线匀称构型和两个封闭格，作为简单引入关。当前20张、9张站主优化，发现顺序保持。[本次真实反馈与证据](../data/manifests/inside-outside-and-circulating-review-20261020.json)。
 
-下一步停止《巡回》《内外》的变体递补，先比较新的整体认识与空间表达。匀称不能简化成连续方形；轮廓变化也不能包装同一已知计划。入门题价值与主线挑战分开记录。先按六句设计卡审合理计划、新关系及可推断性，再做原生反例和删改验证，不用步数、必要性或多鬼替代人的新意体验。此前《逆渡》《对门》《易手》仍待反馈，未入集，不重复交付。没有新增训练或自动试玩。本轮双翼和重复装卸稿未递补；《侧入》以新进入关系完成验收，继续探索其它整体计划，不沿此图换鬼位或加批次递补，也不以交付或提交为停点。
+下一步停止《接管》及控制换面的变体递补，也不恢复《巡回》《内外》的相似稿；先用熟悉旧题者的完整计划检查新构想。匀称不能简化成连续方形；轮廓变化也不能包装同一已知计划。入门题价值与主线挑战分开记录。先按六句设计卡审合理计划、新关系及可推断性，再做原生反例和删改验证，不用步数、必要性或多鬼替代人的新意体验。此前《逆渡》《对门》《易手》仍待反馈，未入集，不重复交付。没有新增训练或自动试玩。本轮双翼和重复装卸稿未递补；《侧入》以新进入关系完成验收，继续探索其它整体计划，不沿此图换鬼位或加批次递补，也不以交付或提交为停点。
 
 ## 作品状态
 
-- [《接管》](../examples/controller-clearance-20261021/README.md)：19格、7×4包络、双鬼，单A两控制、三同相A门、一钥匙与1门；最优19步、唯一轨迹。全部最优去终点、90态890次编号后继、中性一步入场与分享往返通过，cloud:check通过。预期是关闭与重开应在不同操作面，停位要为下一次操作准备；先下方A关闭能14步取钥匙却没有完整续解。下入口A虽不改变正确最优，保留其合理错解；未把这项设计判断当真人体验。尚无评价、未入集，不计已确认突破；交付后继续其它整体计划，不能以此或提交收尾。
+- [《接管》](../examples/controller-clearance-20261021/README.md)：19格、7×4包络、双鬼，单A两控制、三同相A门、一钥匙与1门；最优19步、唯一轨迹。全部最优去终点、90态890次编号后继、中性一步入场与分享往返通过，cloud:check通过。设计预期是换控制面与后续停位准备，但用户实际认为太简单、绕行卡鬼重复，终点侧A仅最后打开。单独删该A属性后最优18，原19步去掉第17步后其余角色帧完全保持；这是改图证据，原图不改。[实际反馈](../data/manifests/controller-clearance-review-20261021.json)。未入集、不计挑战进展；停止控制换面近亲递补，继续其它关系，不以反馈归档或提交收尾。
 
 - [《留手》](../examples/returning-control-20261020/README.md)：23格、6×4包络双鬼；两按钮、两普通门、两单向门，41步三种含停顿轨迹。六条最优全部去终点、621态6160次排列／变编号后继、真实两步中性入场、分享往返、桌面／手机明暗主题三解回放和cloud:check通过。设计预期是把目标前厅用于重新获得A控制权，第一次安置须为第二次打开保护门预留距离。用户认为容易、困鬼明显、线性且无新意；未入集，不计挑战进展、不转移侧入好评；未训练或自动试玩。独立第三鬼与暂存区删除，B保护改普通、去冗余B主门并内移出生，原件另存104并独立核验。
 
@@ -41,6 +41,8 @@
 - 作品、历史候选和真实评述统一在本仓[地图总目录](ai-map-catalog.md)；精选设计摘要见[人读小册](https://github.com/Pre-rice/ghost-maze/blob/main/docs/map-design-guide.md)。
 
 ## 研究判断与资料
+
+- [接管实评与未交付构思收束](archive/research/unpublished-staging-and-controller-review-20261021.md)：终点侧A的18步删改对照支持末尾许可不等于推理增强；隔离区、错接支路及单鬼操作面均未递补，停止控制换面近亲。41份新增原件与快照114已独立核验；真实反馈与机械研究分开，继续其它关系，不以归档收尾。
 
 - [共享控制与接管](archive/research/shared-controls-and-clearance-20261021.md)：晚守卫、相位回返及双区代表仍有分段停车、最优重合或无解，均未递补。公共A稿经整体压缩、全部并列最优审查与合理错解对照形成《接管》；保留下入口A属于设计者取舍，尚无真人质量结论。六组112份新增原件及快照113已独立核验，旧包保持。交付后继续其它整体关系，不沿此图换位递补或以验收收尾。
 
@@ -88,6 +90,6 @@
 - 近期《送客》《互锁》《转圜》均未形成用户认可的新意；必要性、跨阶段安排或多个鬼不能替代实际挑战评价。反馈已提炼至[方法](methodology.md)，不继续交付相似构件。
 - [空间安排研究](archive/research/spatial-control-20261018.md)及自动安排诊断保留原型、失败与反例；工具只提供机械证据，不作为趣味分或求解前自主规划能力。
 - 旧规划模型与行动段对照没有原生搜索替代收益，未据此替换现有方法；本轮未新增模型训练。历史15张规划图653行及亲缘拆分保持。[历史清单](../data/manifests/planning-library-20261014-v12.json)。
-- 原图、生成来源、真人反馈与QA分开，历史资料和旧包保持。最新有效私人快照为 `cloud-data-20261021-planning-113.zip`，独立核对[共享控制与接管](../data/manifests/shared-controls-and-clearance-20261021.json)112份；112独立核对[门态与取物折返反例](../data/manifests/phase-and-route-preparation-20261021.json)80份；111独立核对[共享保护与内区切换](../data/manifests/shared-protection-and-coupled-field-20261020.json)51份；110独立核对[整体排列与异地同组控制](../data/manifests/spatial-and-remote-control-20261020.json)41份；109，独立核对[内部控制与空间余地](../data/manifests/internal-controls-research-20261020.json)40份；108，独立核对[控制重排及时序反例](../data/manifests/control-routing-research-20261020.json)24份；107，独立核对[初态控制位置研究](../data/manifests/occupied-controls-20261020.json)24份；106，独立核对[三方交接与安全观察研究](../data/manifests/cyclic-handoff-research-20261020.json)53份；105，独立核对[明显困鬼后的构思与留手实评](../data/manifests/obvious-traps-research-20261020.json)52份；104独立核对[交叉控制、返回通路及留手原件](../data/manifests/return-passage-20261020.json)105份；103独立核对[控制位置反例研究](../data/manifests/control-location-research-20261020.json)78份；102独立核对[侧入真实反馈及入集验收](../data/manifests/temporary-entry-review-20261020.json)17份、[终局守卫研究](../data/manifests/following-gap-20261020.json)16份；101含16份纯门与单鬼控制研究，100含18份换路研究，99含31份双路视线反例，98含《侧入》原始完整QA，97含用户《内外》原码与实际反馈。此后另起批次，不回写冻结原件。69曾因连接中断未完成，不作有效包；未称用户已下载。付费与GPU不自动启动。
+- 原图、生成来源、真人反馈与QA分开，历史资料和旧包保持。最新有效私人快照为 `cloud-data-20261021-planning-114.zip`，独立核对[接管实评与未交付构思](../data/manifests/unpublished-staging-and-controller-review-20261021.json)41份；113独立核对[共享控制与接管](../data/manifests/shared-controls-and-clearance-20261021.json)112份；112独立核对[门态与取物折返反例](../data/manifests/phase-and-route-preparation-20261021.json)80份；111独立核对[共享保护与内区切换](../data/manifests/shared-protection-and-coupled-field-20261020.json)51份；110独立核对[整体排列与异地同组控制](../data/manifests/spatial-and-remote-control-20261020.json)41份；109，独立核对[内部控制与空间余地](../data/manifests/internal-controls-research-20261020.json)40份；108，独立核对[控制重排及时序反例](../data/manifests/control-routing-research-20261020.json)24份；107，独立核对[初态控制位置研究](../data/manifests/occupied-controls-20261020.json)24份；106，独立核对[三方交接与安全观察研究](../data/manifests/cyclic-handoff-research-20261020.json)53份；105，独立核对[明显困鬼后的构思与留手实评](../data/manifests/obvious-traps-research-20261020.json)52份；104独立核对[交叉控制、返回通路及留手原件](../data/manifests/return-passage-20261020.json)105份；103独立核对[控制位置反例研究](../data/manifests/control-location-research-20261020.json)78份；102独立核对[侧入真实反馈及入集验收](../data/manifests/temporary-entry-review-20261020.json)17份、[终局守卫研究](../data/manifests/following-gap-20261020.json)16份；101含16份纯门与单鬼控制研究，100含18份换路研究，99含31份双路视线反例，98含《侧入》原始完整QA，97含用户《内外》原码与实际反馈。此后另起批次，不回写冻结原件。69曾因连接中断未完成，不作有效包；未称用户已下载。付费与GPU不自动启动。
 
 整理前的完整状态及研究入口保留在[历史快照](archive/worklogs/status-before-repository-separation-20261018.md)，无需为接手重跑已完成研究。
