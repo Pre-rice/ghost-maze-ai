@@ -1,5 +1,20 @@
 # AI 地图总目录
 
+## 2026-10-22 新候选：《门庭》
+
+33格、7×7包络，两鬼、同一组A门和一把钥匙，中央房间与外侧通路相连，开局没有追逐。最优46步、唯一含停顿鬼轨迹；全部最优无重合、去终点、中性实际一步接入、1628态16080次编号后继及分享往返通过。**尚无真人评价，未入集。** 既有20张及9张站主优化不变，未训练或自动试玩。
+
+[无剧透试玩](https://ghostmaze.novic.cc/?map=AADB4SFx_X0l_AFVyAkGQA2AlQDwFUCgK5BCiGRXKFKKqoAQgqoKiE4cSoqVVUgIAAQEEAA) · [设计预期、来源与验收](../examples/queue-separation-20261022/README.md)
+
+<details>
+<summary>设计预期与参考（含答案）</summary>
+
+先让两鬼同列，再用同一扇门按距离分处内外，而非逐只拉出或招回一鬼争位。先西开关、直接北引、东开后立刻关，三个实际安全前缀均无续解；必要性只作物理证据。与《调度》仍有空间调动关联，不预先认定新意或顿悟。删掉原37格稿取钥匙后的长路及末尾许可操作，再删未用突出格，成为33格。
+
+[46步参考回放](https://ghostmaze.novic.cc/?map=AADB4SFx_X0l_AFVyAkGQA2AlQDwFUCgK5BCiGRXKFKKqoAQgqoKiE4cSoqVVUgIAAQEEAA&replay=EA7fn5D_AjVqqAgP6lb3j9A)
+
+</details>
+
 ## 2026-10-22 《丈量》负反馈
 
 用户原话：“《丈量》也没意思啊。卡鬼装置太刻意了，也没什么让人惊讶的点。” **不入地图集，不计挑战或新意进展。** [实际评述与判断修正](../data/manifests/ranged-bait-station-review-20261022.json)。没有报告实际路线、用时、提示条件或具体难度，不补写这些资料。
