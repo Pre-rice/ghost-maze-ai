@@ -1,6 +1,6 @@
 # 《丈量》· 新候选
 
-27格、包络6×6、三鬼，A/B两组门、一把钥匙。开局没有追逐；取钥匙后到达右上终点。最优34步，唯一含停顿鬼轨迹。尚无真人评价，未入地图集、未训练或自动调用试玩技能。
+27格、包络6×6、三鬼，A/B两组门、一把钥匙。开局没有追逐；取钥匙后到达右上终点。最优34步，唯一含停顿鬼轨迹。生成时尚无真人评价；用户2026-10-22实评“没意思”“卡鬼装置太刻意”“没什么让人惊讶的点”，不入地图集、不计新意进展。[实际评述与判断修正](../../data/manifests/ranged-bait-station-review-20261022.json)。原图及原证据保持，未训练或自动调用试玩技能。
 
 [无剧透试玩](https://ghostmaze.novic.cc/?map=AADA-fHx8fGAAAEmYEseIAmBAAAg6QKqJKHIDgAA5UKAAABc4zFwoVEIIUISAAAABBBDDAQA)
 
