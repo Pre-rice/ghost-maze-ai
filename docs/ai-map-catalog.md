@@ -1,8 +1,16 @@
 # AI 地图总目录
 
+## 2026-10-23 《门庭》用户增强版入集
+
+用户认可原图“不错”，提供更匀称、加一鬼的增强版并明确加入地图集第21位、站主优化第10张。38格、7×7包络、三鬼一钥匙；最优79步，四条原始最优归为一种含停顿鬼轨迹。全部最优无重合、去终点、指定两步实际接入、951态28500次编号后继及码往返通过。**用户原码保持，原生成来源和46步证据另存。** [实际反馈](../data/manifests/queue-separation-review-20261023.json)。
+
+用户总结的关键是把一鬼留在外面才能拿钥匙，以及按按钮一步调整鬼的位置奇偶性；同时明确“本质上还是在外围引鬼，思路没有什么很新颖的地方”。不把入集解释成最高评价；下一方向为单向门承担解谜核心。未补写完整玩家路线、用时、提示条件或数值分，未训练或自动试玩。
+
+[试玩](https://ghostmaze.novic.cc/?map=AADB_SV1_X0l_AFo-BIsGwBKAnwFAFUCgK5BCEMiuUKUVVQAgCqgqIThxKipVVSAgABAQQAA) · [版本、设计与验收](../examples/user-gallery-20261023/README.md) · [参考回放](https://ghostmaze.novic.cc/?map=AADB_SV1_X0l_AFo-BIsGwBKAnwFAFUCgK5BCEMiuUKUVVQAgCqgqIThxKipVVSAgABAQQAA&replay=CGAYUYQD_9VWr8CMCqpWA_qVveNilf_wJA)
+
 ## 2026-10-22 新候选：《门庭》
 
-33格、7×7包络，两鬼、同一组A门和一把钥匙，中央房间与外侧通路相连，开局没有追逐。最优46步、唯一含停顿鬼轨迹；全部最优无重合、去终点、中性实际一步接入、1628态16080次编号后继及分享往返通过。**尚无真人评价，未入集。** 既有20张及9张站主优化不变，未训练或自动试玩。
+33格、7×7包络，两鬼、同一组A门和一把钥匙，中央房间与外侧通路相连，开局没有追逐。最优46步、唯一含停顿鬼轨迹；全部最优无重合、去终点、中性实际一步接入、1628态16080次编号后继及分享往返通过。**生成时尚无真人评价；现获上方“不错但新意有限”的评价，入集使用用户增强版，本原稿保持。** 未训练或自动试玩。
 
 [无剧透试玩](https://ghostmaze.novic.cc/?map=AADB4SFx_X0l_AFVyAkGQA2AlQDwFUCgK5BCiGRXKFKKqoAQgqoKiE4cSoqVVUgIAAQEEAA) · [设计预期、来源与验收](../examples/queue-separation-20261022/README.md)
 

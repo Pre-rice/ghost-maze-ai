@@ -2,6 +2,8 @@
 
 33格、7×7包络，两只鬼、同一组A门和一把钥匙。中央房间与外侧通路相连，开局没有追逐。尚无真人评价，未入地图集，未训练或自动调用试玩技能。
 
+2026-10-23后续：用户认可“不错”，提供更匀称、加一鬼的[增强版](../user-gallery-20261023/README.md)并明确入集；指出按按钮一步改变奇偶性是关键，同时认为本质仍为外围引鬼、新意有限。[实际反馈](../../data/manifests/queue-separation-review-20261023.json)独立保存。上方是生成时状态；本原图与来源、46步证据保持，入集使用用户新码。
+
 [无剧透试玩](https://ghostmaze.novic.cc/?map=AADB4SFx_X0l_AFVyAkGQA2AlQDwFUCgK5BCiGRXKFKKqoAQgqoKiE4cSoqVVUgIAAQEEAA)
 
 <details>
