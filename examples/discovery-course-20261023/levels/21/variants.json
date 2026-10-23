@@ -1,0 +1,150 @@
+[
+  {
+    "mode": "ordinary-entry",
+    "result": {
+      "schemaVersion": 1,
+      "status": "solved",
+      "reason": "goal_reached",
+      "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+      "mapId": "838edc20f32ac446d34ccb52682158d70a823acdd4e3f7ea315134629c84dade",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "restrictions": []
+      },
+      "optimality": "proven",
+      "solution": {
+        "actions": [
+          "U",
+          "R",
+          "R",
+          "L",
+          "L",
+          "D",
+          "D"
+        ],
+        "totalActions": 7,
+        "movementCost": 7
+      },
+      "search": {
+        "expanded": 16,
+        "transitions": 78,
+        "discovered": 24,
+        "exhausted": false,
+        "elapsedMs": 8.690482000000003,
+        "budget": {
+          "nodeBudget": 100000,
+          "stateBudget": 100000,
+          "budgetMs": 10000
+        }
+      }
+    },
+    "boundary": {
+      "status": "safe",
+      "reason": "all_optimal_routes_avoid_overlap",
+      "mapId": "838edc20f32ac446d34ccb52682158d70a823acdd4e3f7ea315134629c84dade",
+      "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+      "policy": "all_optimal_routes_avoid_overlap_v2",
+      "glassCount": 0,
+      "expanded": 21,
+      "transitions": 105,
+      "discovered": 30,
+      "optimum": 7,
+      "ignoredFatalOverlap": 0,
+      "observedNonFatalOverlap": null,
+      "safeOptimalWitness": [
+        "U",
+        "R",
+        "R",
+        "L",
+        "L",
+        "D",
+        "D"
+      ],
+      "elapsedMs": 3,
+      "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+    }
+  },
+  {
+    "mode": "reverse-entry",
+    "result": {
+      "schemaVersion": 1,
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+      "mapId": "b75d8b7269cd4b4b347002150f40e11a5cd191d7cc6a6ff9eaba54639e62991b",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "restrictions": []
+      },
+      "optimality": null,
+      "solution": null,
+      "search": {
+        "expanded": 2,
+        "transitions": 10,
+        "discovered": 2,
+        "exhausted": true,
+        "elapsedMs": 0.799869000000001,
+        "budget": {
+          "nodeBudget": 100000,
+          "stateBudget": 100000,
+          "budgetMs": 10000
+        }
+      }
+    }
+  },
+  {
+    "mode": "reverse-exit",
+    "result": {
+      "schemaVersion": 1,
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+      "mapId": "ca58656a22d5ecc037a2649a92b1dc43d83109d16b5dc92badf8b14fa13298c1",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "restrictions": []
+      },
+      "optimality": null,
+      "solution": null,
+      "search": {
+        "expanded": 45,
+        "transitions": 225,
+        "discovered": 45,
+        "exhausted": true,
+        "elapsedMs": 8.497490999999997,
+        "budget": {
+          "nodeBudget": 100000,
+          "stateBudget": 100000,
+          "budgetMs": 10000
+        }
+      }
+    }
+  }
+]

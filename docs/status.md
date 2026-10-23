@@ -6,7 +6,7 @@
 
 用户现已启动新任务：为几乎没有文字教程、玩家起初不知道规则的鬼迷宫设计循序渐进关卡。**默认只做死亡循环；探索模式暂不处理。** 持续自主设计、验证与更新，无需逐关请求试玩或批准；网站仅作公开试验线路，不改本体代码、不自动加入正式地图集，也不启动训练。
 
-公开试玩：[鬼迷宫 · 初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)，已设置所有人可访问。Site项目`appgprj_6adb4b311474819180db83f0509d84e1`，源码在独立Site仓库，工作目录`/workspace/sites/ghostmaze-discovery-path`。目前公开20关，前11关与第17关为新设计，其余为已确认图的课程副本；用正式站嵌入游玩，保留正式站独立入口。逐关更新同一站点，关卡来源和设计说明见[本轮目录](../examples/discovery-course-20261023/README.md)。不公开解法或教学意图，默认按序体验，允许自由选关。前期小关只承担明确发现，不将机械QA宣称为实际学会。
+公开试玩：[鬼迷宫 · 初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)，已设置所有人可访问。Site项目`appgprj_6adb4b311474819180db83f0509d84e1`，源码在独立Site仓库，工作目录`/workspace/sites/ghostmaze-discovery-path`。目前公开24关，13张新设计、11张已确认图的复用或课程变式；按本轮目录的关序表推进，稳定ID不随插入新关改名。用正式站嵌入游玩，保留正式站独立入口。逐关更新同一站点，关卡来源和设计说明见[本轮目录](../examples/discovery-course-20261023/README.md)。不公开解法或教学意图，默认按序体验，允许自由选关。前期小关只承担明确发现，不将机械QA宣称为实际学会。
 
 此前《回流》《换庭》《进退》的负反馈与停止决定保持在[阶段收尾](archive/research/oneway-review-and-stage-close-20261023.md)；本次恢复授权来自当前新任务，不恢复旧三图修补或单向门近亲递补。现有正式地图集21张、站主优化10张保持，《门庭》用户增强版已按原码收录并推送。
 

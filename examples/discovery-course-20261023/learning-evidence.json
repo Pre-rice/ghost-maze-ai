@@ -57,6 +57,36 @@
       "scope": "两条方向选择均可比较，不声称玩家必然自行重玩另一支"
     },
     {
+      "id": "24",
+      "title": "门庭",
+      "courseVariant": "仅补齐外围墙",
+      "allReachableInteriorPhysicalSuccessorsUnchanged": true,
+      "reachable": 951,
+      "compared": 4750,
+      "includesFatalActions": true,
+      "scope": "只排除外围墙补齐的物理影响；不转移原图好评到学习流程"
+    },
+    {
+      "id": "23",
+      "title": "留隙",
+      "courseVariant": "仅补齐外围墙",
+      "allReachableInteriorPhysicalSuccessorsUnchanged": true,
+      "reachable": 3820,
+      "compared": 18800,
+      "includesFatalActions": true,
+      "scope": "只排除外围墙补齐的物理影响；不转移原图好评到学习流程"
+    },
+    {
+      "id": "22",
+      "title": "归途",
+      "courseVariant": "仅补齐外围墙",
+      "allReachableInteriorPhysicalSuccessorsUnchanged": true,
+      "reachable": 530,
+      "compared": 2640,
+      "includesFatalActions": true,
+      "scope": "只排除外围墙补齐的物理影响；不转移原图好评到学习流程"
+    },
+    {
       "id": "20",
       "title": "调度",
       "courseVariant": "仅补齐外围墙",
@@ -146,5 +176,215 @@
       "allOptimalNoGhostConflict": true,
       "scope": "前置双鬼关不暗中依赖尚未介绍的争位"
     }
-  ]
+  ],
+  "observationalCounterexamples": [
+    {
+      "id": "02",
+      "falseBelief": "鬼总在玩家动作前行动",
+      "witness": {
+        "step": 2,
+        "action": "U",
+        "pBefore": [
+          1,
+          2
+        ],
+        "pAfter": [
+          1,
+          1
+        ],
+        "gBefore": [
+          3,
+          1
+        ],
+        "gAfter": [
+          2,
+          1
+        ],
+        "sawBefore": false,
+        "seesAfter": true,
+        "moved": true,
+        "stationary": false
+      },
+      "allOptimalRoutesContainEvidence": true,
+      "scope": "玩家可见的反例存在；不证明玩家一定注意到或据此总结"
+    },
+    {
+      "id": "03",
+      "falseBelief": "看不到玩家后当步立即停止",
+      "witness": {
+        "step": 4,
+        "action": "D",
+        "pBefore": [
+          0,
+          0
+        ],
+        "pAfter": [
+          0,
+          1
+        ],
+        "gBefore": [
+          2,
+          0
+        ],
+        "gAfter": [
+          1,
+          0
+        ],
+        "sawBefore": true,
+        "seesAfter": false,
+        "moved": true,
+        "stationary": false
+      },
+      "allOptimalRoutesContainEvidence": true,
+      "scope": "玩家可见的反例存在；不证明玩家一定注意到或据此总结"
+    },
+    {
+      "id": "04",
+      "falseBelief": "普通门只挡脚步而不挡视线",
+      "witness": {
+        "step": 3,
+        "action": "R",
+        "pBefore": [
+          4,
+          1
+        ],
+        "pAfter": [
+          5,
+          1
+        ],
+        "gBefore": [
+          2,
+          1
+        ],
+        "gAfter": [
+          2,
+          1
+        ],
+        "sawBefore": false,
+        "seesAfter": false,
+        "moved": false,
+        "stationary": false
+      },
+      "allOptimalRoutesContainEvidence": true,
+      "scope": "玩家可见的反例存在；不证明玩家一定注意到或据此总结"
+    },
+    {
+      "id": "07",
+      "falseBelief": "所有门都永久阻止鬼通过",
+      "witness": {
+        "step": 4,
+        "action": "U",
+        "pBefore": [
+          5,
+          1
+        ],
+        "pAfter": [
+          5,
+          0
+        ],
+        "gBefore": [
+          3,
+          1
+        ],
+        "gAfter": [
+          4,
+          1
+        ],
+        "sawBefore": true,
+        "seesAfter": false,
+        "moved": true,
+        "stationary": false
+      },
+      "allOptimalRoutesContainEvidence": true,
+      "scope": "玩家可见的反例存在；不证明玩家一定注意到或据此总结"
+    },
+    {
+      "id": "10",
+      "falseBelief": "原地操作按钮不会推进鬼",
+      "witness": {
+        "step": 2,
+        "action": "U",
+        "pBefore": [
+          0,
+          0
+        ],
+        "pAfter": [
+          0,
+          0
+        ],
+        "gBefore": [
+          2,
+          0
+        ],
+        "gAfter": [
+          1,
+          0
+        ],
+        "sawBefore": true,
+        "seesAfter": true,
+        "moved": true,
+        "stationary": true
+      },
+      "allOptimalRoutesContainEvidence": true,
+      "scope": "玩家可见的反例存在；不证明玩家一定注意到或据此总结"
+    },
+    {
+      "id": "11",
+      "falseBelief": "看见过玩家就能穿过刚关的门",
+      "witness": {
+        "step": 8,
+        "action": "R",
+        "pBefore": [
+          2,
+          1
+        ],
+        "pAfter": [
+          2,
+          1
+        ],
+        "gBefore": [
+          2,
+          0
+        ],
+        "gAfter": [
+          2,
+          0
+        ],
+        "sawBefore": true,
+        "seesAfter": false,
+        "moved": false,
+        "stationary": true
+      },
+      "allOptimalRoutesContainEvidence": true,
+      "scope": "玩家可见的反例存在；不证明玩家一定注意到或据此总结"
+    }
+  ],
+  "courseOrder": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08",
+    "09",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "21",
+    "15",
+    "22",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "23",
+    "24"
+  ],
+  "allGoalsVisible": true,
+  "deathLoopOnly": true
 }

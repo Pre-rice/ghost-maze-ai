@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {buildLevel,definitions} from './build.mjs';
 import {createReferenceEnvironment} from '../../src/reference/environment.js';
 import {createBreadthFirstSearch} from '../../../ghost-maze/src/solver/breadthFirst.js';
-import {DataSerializer,WALL_TYPES as W} from '../../src/reference/engine.js';
+import {DataSerializer,GameLogic,WALL_TYPES as W} from '../../src/reference/engine.js';
 const read=p=>JSON.parse(fs.readFileSync(new URL(p,import.meta.url)));
 const budget={nodeBudget:250000,stateBudget:250000,budgetMs:10000};
 const moved=(s,n)=>s.layerStates.some((l,i)=>l.ghosts.some((g,j)=>g.x!==n.layerStates[i].ghosts[j].x||g.y!==n.layerStates[i].ghosts[j].y));
@@ -37,4 +37,14 @@ for(const d of definitions.filter(d=>d.galleryTitle&&!d.goalExtension&&fs.exists
 const old16=read('levels/16/revisions/v01/evidence.json'),new16=read('levels/16/evidence.json');assert.equal(new16.allResult.totalActions,old16.allResult.totalActions+1);assert.deepEqual(new16.routes.map(r=>JSON.stringify(r.actions)).sort(),old16.routes.map(r=>JSON.stringify([...r.actions,'L'])).sort());
 const source16=DataSerializer.loadFromShareCode(gallery.maps['接力'].mapCode).data.mapData,course16=buildLevel('16');source16.layers[0].endPos=null;course16.layers[0].endPos=null;const eOld=createReferenceEnvironment(source16),eNew=createReferenceEnvironment(course16);for(const route of old16.routes){let s=eOld.initialState(),t=eNew.initialState();for(const a of route.actions){s=eOld.step(s,a);t=eNew.step(t,a);assert.equal(signature(s,source16),signature(t,source16));}}results.push({id:'16',goalSeparatedFromGhost:true,allOriginalOptimalPrefixesPreserved:true,oldT:31,newT:32,routes:old16.routes.length,comparison:'原图去终点与课程副本去终点逐动作内部物理一致，最后新增L进入独立终点',scope:'保证目标可见，不把多一步当难度提升'});
 for(const id of ['15','16'].filter(id=>fs.existsSync(new URL(`levels/${id}/evidence.json`,import.meta.url)))){const q=read(`levels/${id}/evidence.json`);assert(q.routes.every(r=>r.trace.every(t=>t.diagnostics.length===0)));results.push({id,allOptimalNoGhostConflict:true,scope:'前置双鬼关不暗中依赖尚未介绍的争位'});}
-const report={createdOn:'2026-10-23',humanLearningValidated:false,role:'可观察事件与物理对照，不是未知规则真人试玩结果',checks:results};fs.writeFileSync(new URL('learning-evidence.json',import.meta.url),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({checks:results.length,humanLearningValidated:false}));
+function observedRoute(id,actions){const env=createReferenceEnvironment(buildLevel(id));let s=env.initialState();const events=[];for(const [index,a]of actions.entries()){const n=env.step(s,a),g=s.layerStates[0].ghosts[0],ng=n.layerStates[0].ghosts[0];if(g)events.push({step:index+1,action:a,pBefore:[s.player.x,s.player.y],pAfter:[n.player.x,n.player.y],gBefore:[g.x,g.y],gAfter:[ng.x,ng.y],sawBefore:GameLogic._canGhostSeePlayer(g,s.player,env.mapDefinition.layers[0],s.layerStates[0]),seesAfter:GameLogic._canGhostSeePlayer(g,n.player,env.mapDefinition.layers[0],n.layerStates[0]),moved:g.x!==ng.x||g.y!==ng.y,stationary:stationary(s,n)});s=n;}return events;}
+const observations=[];for(const[id,belief,match]of[
+ ['02','鬼总在玩家动作前行动',(e)=>!e.sawBefore&&e.seesAfter&&e.moved],
+ ['03','看不到玩家后当步立即停止',(e)=>e.sawBefore&&!e.seesAfter&&e.moved],
+ ['04','普通门只挡脚步而不挡视线',(e)=>e.pAfter[0]>=4&&e.gAfter[0]===2&&!e.sawBefore&&!e.seesAfter&&!e.moved],
+ ['07','所有门都永久阻止鬼通过',(e)=>e.gBefore[0]<4&&e.gAfter[0]>=4],
+ ['10','原地操作按钮不会推进鬼',(e)=>e.stationary&&e.sawBefore&&e.seesAfter&&e.moved],
+ ['11','看见过玩家就能穿过刚关的门',(e)=>e.stationary&&e.sawBefore&&!e.seesAfter&&!e.moved]
+]){const q=read(`levels/${id}/evidence.json`),witnesses=q.routes.map(r=>observedRoute(id,r.actions).find(match));assert(witnesses.every(Boolean));observations.push({id,falseBelief:belief,witness:witnesses[0],allOptimalRoutesContainEvidence:true,scope:'玩家可见的反例存在；不证明玩家一定注意到或据此总结'});}
+const order=read('course-order.json');assert.equal(new Set(order).size,order.length);for(const id of order){const m=buildLevel(id),l=m.layers[0];assert.equal(m.gameMode,'death-loop');assert(!l.ghosts.some(g=>g.x===l.endPos.x&&g.y===l.endPos.y));}
+const report={createdOn:'2026-10-23',humanLearningValidated:false,role:'可观察事件与物理对照，不是未知规则真人试玩结果',checks:results,observationalCounterexamples:observations,courseOrder:order,allGoalsVisible:true,deathLoopOnly:true};fs.writeFileSync(new URL('learning-evidence.json',import.meta.url),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({checks:results.length,humanLearningValidated:false}));
