@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {definitions,buildLevel,sourceMapCode} from './build.mjs';
 import {auditMap} from '../gallery-adjustments-20261014/verify.mjs';
+import {auditMap as auditMoreGhosts} from '../staged-workroom-20261018/audit.mjs';
 import {assertExterior} from '../spatial-clearance-20261019/verify.mjs';
 import {createReferenceEnvironment} from '../../src/reference/environment.js';
 import {createBreadthFirstSearch} from '../../../ghost-maze/src/solver/breadthFirst.js';
@@ -10,7 +11,7 @@ const id=process.argv[2];const d=definitions.find(x=>x.id===id);assert(d);
 const map=buildLevel(id);assertExterior(map);const encoded=DataSerializer.generateShareCode(map);assert(encoded.success);
 const mapCode=sourceMapCode(id)??encoded.code;
 let qa;
-if(map.layers[0].ghosts.length)qa=auditMap(map,mapCode);
+if(map.layers[0].ghosts.length)qa=(map.layers[0].ghosts.length>3?auditMoreGhosts:auditMap)(map,mapCode);
 else{
  const env=createReferenceEnvironment(map),search=createBreadthFirstSearch(env,{allOptimal:true}),result=search.run({nodeBudget:100000,stateBudget:100000,budgetMs:10000});assert.equal(result.status,'solved');
  const decoded=DataSerializer.loadFromShareCode(mapCode);assert(decoded.success);assert.deepEqual(decoded.data.mapData,map);

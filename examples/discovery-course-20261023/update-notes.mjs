@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import {definitions} from './build.mjs';
 const root=new URL('./',import.meta.url),read=p=>JSON.parse(fs.readFileSync(new URL(p,root))),order=read('course-order.json');
 let text=fs.readFileSync(new URL('README.md',root),'utf8'),a=text.indexOf('| 关 |'),b=text.indexOf('\n## 每关',a),table='| 关 | 设计关键 | 来源 | 格 / 最优步 |\n| --- | --- | --- | --- |\n',newCount=0,reused=0,variants=0;
+if(a<0||b<0)throw Error('目录缺少关序表或说明分界，保留原文并停止更新');
 for(const[id,i]of order.map((id,i)=>[id,i])){
  const d=definitions.find(d=>d.id===id),m=read(`levels/${id}/map.json`),q=read(`levels/${id}/evidence.json`);if(d.galleryTitle)reused++;else if(d.variantOf)variants++;else newCount++;
  table+=`| [${i+1}](levels/${id}/source.json) | ${d.newDiscovery.split('；')[0]} | ${d.galleryTitle?'《'+d.galleryTitle+'》课程变式':d.variantOf?'课程迁移变式':'课程专用图'} | ${m.layers[0].activeCells.flat().filter(Boolean).length} / ${q.allResult.totalActions} |\n`;
