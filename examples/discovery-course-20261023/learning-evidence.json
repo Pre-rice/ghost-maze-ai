@@ -57,6 +57,46 @@
       "scope": "两条方向选择均可比较，不声称玩家必然自行重玩另一支"
     },
     {
+      "id": "18",
+      "mapId": "ca43f7f5e43c197addbd53bfab9030da262ab7b0d42b0eab9a3f26916d960dd6",
+      "forbiddenPriorityWinner": "任何鬼",
+      "result": "proven_unsat",
+      "expanded": 212,
+      "scope": "全部无伤无复活通关，允许合法非最优重合；不证明玩家主观理解"
+    },
+    {
+      "id": "19",
+      "mapId": "fe2e38868c4291afcb96eac732b09aa68f1fda0c4e4bb658e34a6b294b2053de",
+      "forbiddenPriorityWinner": "任何鬼",
+      "result": "proven_unsat",
+      "expanded": 105,
+      "scope": "全部无伤无复活通关，允许合法非最优重合；不证明玩家主观理解"
+    },
+    {
+      "id": "25",
+      "mapId": "4e3f0e90dc482489958048b6abc145c665e3a5b632dbca23d2cb433f5a46e033",
+      "forbiddenPriorityWinner": "任何鬼",
+      "result": "proven_unsat",
+      "expanded": 14,
+      "scope": "全部无伤无复活通关，允许合法非最优重合；不证明玩家主观理解"
+    },
+    {
+      "id": "25",
+      "mapId": "4e3f0e90dc482489958048b6abc145c665e3a5b632dbca23d2cb433f5a46e033",
+      "forbiddenPriorityWinner": 0,
+      "result": "proven_unsat",
+      "expanded": 21,
+      "scope": "全部无伤无复活通关，允许合法非最优重合；不证明玩家主观理解"
+    },
+    {
+      "id": "25",
+      "mapId": "4e3f0e90dc482489958048b6abc145c665e3a5b632dbca23d2cb433f5a46e033",
+      "forbiddenPriorityWinner": 1,
+      "result": "proven_unsat",
+      "expanded": 26,
+      "scope": "全部无伤无复活通关，允许合法非最优重合；不证明玩家主观理解"
+    },
+    {
       "id": "24",
       "title": "门庭",
       "courseVariant": "仅补齐外围墙",
@@ -357,6 +397,25 @@
       },
       "allOptimalRoutesContainEvidence": true,
       "scope": "玩家可见的反例存在；不证明玩家一定注意到或据此总结"
+    },
+    {
+      "id": "03",
+      "falseBelief": "失去视线后仍会一直追到最后看见的位置",
+      "witness": {
+        "lostSightStep": 4,
+        "stoppedStep": 5,
+        "lastSeenPlayer": [
+          0,
+          0
+        ],
+        "stoppedGhost": [
+          1,
+          0
+        ],
+        "remainingPathToLastSeen": 1
+      },
+      "allOptimalRoutesContainEvidence": true,
+      "scope": "鬼尚有通向旧目标的可走路径却不继续；这是可见反例，不是玩家实际总结"
     }
   ],
   "courseOrder": [
@@ -380,6 +439,7 @@
     "16",
     "17",
     "18",
+    "25",
     "19",
     "20",
     "23",

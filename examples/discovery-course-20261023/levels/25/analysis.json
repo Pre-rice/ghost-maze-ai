@@ -1,0 +1,119 @@
+{
+  "scope": "全部无伤无复活通关，允许合法非最优重合；不证明玩家主观顿悟",
+  "relationships": [
+    {
+      "excluded": "any",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 14,
+        "transitions": 70,
+        "discovered": 14,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "excluded": "left-role",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 21,
+        "transitions": 105,
+        "discovered": 21,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "excluded": "bottom-role",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 26,
+        "transitions": 130,
+        "discovered": 26,
+        "totalActions": null
+      },
+      "actions": null
+    }
+  ],
+  "variants": [
+    {
+      "variant": "ordinary",
+      "withoutBottomPriority": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 107,
+        "transitions": 531,
+        "discovered": 122,
+        "totalActions": 23
+      },
+      "actions": [
+        "D",
+        "R",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "L",
+        "U",
+        "L",
+        "R",
+        "D",
+        "D",
+        "L",
+        "D",
+        "D",
+        "U",
+        "U",
+        "U",
+        "L",
+        "R",
+        "U",
+        "U"
+      ],
+      "noEndSafe": true
+    },
+    {
+      "variant": "reverse",
+      "withoutBottomPriority": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 96,
+        "transitions": 476,
+        "discovered": 111,
+        "totalActions": 23
+      },
+      "actions": [
+        "D",
+        "R",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "L",
+        "U",
+        "L",
+        "R",
+        "D",
+        "D",
+        "L",
+        "D",
+        "D",
+        "U",
+        "U",
+        "U",
+        "L",
+        "R",
+        "U",
+        "U"
+      ],
+      "noEndSafe": true
+    }
+  ],
+  "originals": "../../drafts/role-exchange-20261023/history.json",
+  "humanQuality": null
+}

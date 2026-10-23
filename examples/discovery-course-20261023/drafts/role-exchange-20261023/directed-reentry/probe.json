@@ -1,0 +1,554 @@
+{
+  "result": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+    "mapId": "2e115a17dda745a62317f92b4f03d16af947b607210f9b0f1dc47c28a42c3237",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "L",
+        "U",
+        "R",
+        "D",
+        "R",
+        "R",
+        "D",
+        "L",
+        "L",
+        "L",
+        "D",
+        "D",
+        "U",
+        "U",
+        "L",
+        "U",
+        "L",
+        "R",
+        "U",
+        "U"
+      ],
+      "totalActions": 20,
+      "movementCost": 19
+    },
+    "search": {
+      "expanded": 105,
+      "transitions": 521,
+      "discovered": 117,
+      "exhausted": false,
+      "elapsedMs": 24.59015,
+      "budget": {
+        "nodeBudget": 250000,
+        "stateBudget": 250000,
+        "budgetMs": 15000
+      }
+    }
+  },
+  "trace": [
+    {
+      "step": 1,
+      "a": "L",
+      "p": [
+        2,
+        2
+      ],
+      "g": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "keys": 0,
+      "diagnostics": []
+    },
+    {
+      "step": 2,
+      "a": "U",
+      "p": [
+        2,
+        1
+      ],
+      "g": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "keys": 0,
+      "diagnostics": [
+        {
+          "target": {
+            "x": 2,
+            "y": 2
+          },
+          "contenders": [
+            {
+              "from": {
+                "x": 1,
+                "y": 2
+              },
+              "seesAfter": false
+            },
+            {
+              "from": {
+                "x": 2,
+                "y": 3
+              },
+              "seesAfter": true
+            }
+          ],
+          "decision": "visible_target_priority",
+          "capturesPlayer": false,
+          "layer": 0
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "a": "R",
+      "p": [
+        3,
+        1
+      ],
+      "g": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "keys": 0,
+      "diagnostics": []
+    },
+    {
+      "step": 4,
+      "a": "D",
+      "p": [
+        3,
+        2
+      ],
+      "g": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "keys": 0,
+      "diagnostics": []
+    },
+    {
+      "step": 5,
+      "a": "R",
+      "p": [
+        4,
+        2
+      ],
+      "g": [
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "keys": 0,
+      "diagnostics": [
+        {
+          "target": {
+            "x": 3,
+            "y": 2
+          },
+          "contenders": [
+            {
+              "from": {
+                "x": 2,
+                "y": 2
+              },
+              "seesAfter": true
+            },
+            {
+              "from": {
+                "x": 3,
+                "y": 1
+              },
+              "seesAfter": false
+            }
+          ],
+          "decision": "visible_target_priority",
+          "capturesPlayer": false,
+          "layer": 0
+        }
+      ]
+    },
+    {
+      "step": 6,
+      "a": "R",
+      "p": [
+        5,
+        2
+      ],
+      "g": [
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "keys": 0,
+      "diagnostics": []
+    },
+    {
+      "step": 7,
+      "a": "D",
+      "p": [
+        5,
+        3
+      ],
+      "g": [
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "keys": 0,
+      "diagnostics": []
+    },
+    {
+      "step": 8,
+      "a": "L",
+      "p": [
+        4,
+        3
+      ],
+      "g": [
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "keys": 0,
+      "diagnostics": []
+    },
+    {
+      "step": 9,
+      "a": "L",
+      "p": [
+        3,
+        3
+      ],
+      "g": [
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "keys": 0,
+      "diagnostics": []
+    },
+    {
+      "step": 10,
+      "a": "L",
+      "p": [
+        2,
+        3
+      ],
+      "g": [
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "keys": 0,
+      "diagnostics": []
+    },
+    {
+      "step": 11,
+      "a": "D",
+      "p": [
+        2,
+        4
+      ],
+      "g": [
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "keys": 0,
+      "diagnostics": []
+    },
+    {
+      "step": 12,
+      "a": "D",
+      "p": [
+        2,
+        5
+      ],
+      "g": [
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "keys": 1,
+      "diagnostics": []
+    },
+    {
+      "step": 13,
+      "a": "U",
+      "p": [
+        2,
+        4
+      ],
+      "g": [
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "keys": 1,
+      "diagnostics": []
+    },
+    {
+      "step": 14,
+      "a": "U",
+      "p": [
+        2,
+        3
+      ],
+      "g": [
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "keys": 1,
+      "diagnostics": []
+    },
+    {
+      "step": 15,
+      "a": "L",
+      "p": [
+        2,
+        3
+      ],
+      "g": [
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "keys": 1,
+      "diagnostics": []
+    },
+    {
+      "step": 16,
+      "a": "U",
+      "p": [
+        2,
+        2
+      ],
+      "g": [
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "keys": 1,
+      "diagnostics": []
+    },
+    {
+      "step": 17,
+      "a": "L",
+      "p": [
+        1,
+        2
+      ],
+      "g": [
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "keys": 2,
+      "diagnostics": []
+    },
+    {
+      "step": 18,
+      "a": "R",
+      "p": [
+        2,
+        2
+      ],
+      "g": [
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "keys": 2,
+      "diagnostics": []
+    },
+    {
+      "step": 19,
+      "a": "U",
+      "p": [
+        2,
+        1
+      ],
+      "g": [
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "keys": 2,
+      "diagnostics": []
+    },
+    {
+      "step": 20,
+      "a": "U",
+      "p": [
+        2,
+        0
+      ],
+      "g": [
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "keys": 2,
+      "diagnostics": []
+    }
+  ],
+  "queries": [
+    {
+      "excluded": "any",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 16,
+        "transitions": 80,
+        "discovered": 16,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "excluded": "left-role",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 23,
+        "transitions": 115,
+        "discovered": 23,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "excluded": "bottom-role",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 28,
+        "transitions": 140,
+        "discovered": 28,
+        "totalActions": null
+      },
+      "actions": null
+    }
+  ],
+  "role": "design_probe_not_human_quality"
+}
