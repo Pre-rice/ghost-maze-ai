@@ -1,0 +1,55 @@
+{
+  "id": "04",
+  "title": "04",
+  "width": 5,
+  "height": 3,
+  "params": {
+    "start": [
+      2,
+      2
+    ],
+    "end": [
+      4,
+      0
+    ],
+    "ghosts": [
+      [
+        0,
+        1
+      ]
+    ],
+    "edges": [
+      [
+        "v",
+        3,
+        0,
+        1
+      ],
+      [
+        "v",
+        3,
+        1,
+        2
+      ],
+      [
+        "v",
+        3,
+        2,
+        1
+      ]
+    ]
+  },
+  "knowledgeBefore": [
+    "移动与终点",
+    "直线追击",
+    "遮挡"
+  ],
+  "newDiscovery": "普通门允许自己通过，鬼不能穿过，且会遮挡视线。",
+  "evidence": "先向上使左鬼追近；向右穿门后，鬼停在门的左侧。右房可安全移动观察。",
+  "transfer": "把能通过的门当作脱离追击的保护，而非只当墙的缺口。",
+  "risk": "不能借终点提前判胜掩盖鬼是否追到；终点放在门后再转一步的位置。",
+  "familyGroup": "discovery-ordinary-door-20261023-v1",
+  "createdOn": "2026-10-23",
+  "humanQuality": null,
+  "role": "discovery_level_design_not_human_learning_evidence"
+}
