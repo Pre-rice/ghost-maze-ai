@@ -1,5 +1,20 @@
 # AI 地图总目录
 
+## 2026-10-23 单向门候选：《回流》
+
+29格、5×6包络、两鬼，两单向门、一钥匙与两扇1门，无字母门，开局没有追逐。最优37步、七种含停顿鬼轨迹；全部最优去终点、408态4060次编号后继、指定五步实际进入及分享往返通过。桌面／手机明暗主题下求解与回放正常。**尚无真人评价，未入集。** 现有21张及10张站主优化保持，未训练或自动试玩。
+
+[无剧透试玩](https://ghostmaze.novic.cc/?map=AADB4fHx8fHwAAFLICTEAyqgCEAgGqgAKqAAAQghmFk1CFCCEEAAAEBAcA) · [设计、来源与验收](../examples/directed-return-20261023/README.md)
+
+<details>
+<summary>设计预期与参考（含答案）</summary>
+
+单向口不能当回程；就近出口的停位会堵住再次返回，要选择下方出口并留下再入场条件。两箭头分别改普通门后有19或15步安全短解，可绕过原安排。仍包含熟悉的引鬼和优先卡位，方向必要及无逐只方案不证明趣味；新意等待真人体验。
+
+[37步参考回放](https://ghostmaze.novic.cc/?map=AADB4fHx8fHwAAFLICTEAyqgCEAgGqgAKqAAAQghmFk1CFCCEEAAAEBAcA&replay=GGoFHbDViY_Alqf8CKWA)
+
+</details>
+
 ## 2026-10-23 《门庭》用户增强版入集
 
 用户认可原图“不错”，提供更匀称、加一鬼的增强版并明确加入地图集第21位、站主优化第10张。38格、7×7包络、三鬼一钥匙；最优79步，四条原始最优归为一种含停顿鬼轨迹。全部最优无重合、去终点、指定两步实际接入、951态28500次编号后继及码往返通过。**用户原码保持，原生成来源和46步证据另存。** [实际反馈](../data/manifests/queue-separation-review-20261023.json)。
