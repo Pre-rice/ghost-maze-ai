@@ -1,5 +1,20 @@
 # AI 地图总目录
 
+## 2026-10-23 单向门候选：《进退》
+
+[无剧透试玩](https://ghostmaze.novic.cc/?map=AADI_4v_wAAAAAFI4A8VVUqo1SzeqqoAAAAAAgKVVVAUQAAAAAAE) · [设计、来源与验收](../examples/oneway-overshoot-20261023/README.md)
+
+22格、8×4包络，单鬼、三普通门、一向下单向门，无字母门、钥匙或数字门；32步唯一含停顿鬼轨迹。全部最优去终点、117态580次后继与变编号、真正外侧一步进入、分享及桌面／手机明暗主题求解回放通过。尚无真人评价，不入集、训练或自动试玩。
+
+<details>
+<summary>设计预期与参考（含答案）</summary>
+
+端口接触只推进两格，单向支路提供三步；想将鬼引到足够左，须先向右引，取得进入支路的距离。先左引44步仍可恢复，不称死局；单向改普通或反向，24步能从外部进入支路，取消原预备。单鬼关系不同于双鬼卡位，但独解和必要性不证明人的尤里卡。
+
+[32步参考回放](https://ghostmaze.novic.cc/?map=AADI_4v_wAAAAAFI4A8VVUqo1SzeqqoAAAAAAgKVVVAUQAAAAAAE&replay=AFsqWdX9QqqXYD_9aA)
+
+</details>
+
 ## 2026-10-23 单向门候选：《换庭》
 
 [试玩《换庭》](https://ghostmaze.novic.cc/?map=AADJ4eHg8PDwAAECICKsAuqg4AAXmgAACqAAAUQQghAhBCCEAAAAFA) · [参考回放](https://ghostmaze.novic.cc/?map=AADJ4eHg8PDwAAECICKsAuqg4AAXmgAACqAAAUQQghAhBCCEAAAAFA&replay=AOWeZ3z8iV_WAKg)
