@@ -1,0 +1,123 @@
+{
+  "role": "迁移对照，不是新的独立机制或质量评分",
+  "parentCourseLevelId": "25",
+  "changes": [
+    "右侧单向门改为向左",
+    "去掉A门与A按钮，其他格子和起点、目标、鬼、钥匙不变"
+  ],
+  "queries": [
+    {
+      "excluded": "any",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 12,
+        "transitions": 60,
+        "discovered": 12,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "excluded": "left-role",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 20,
+        "transitions": 100,
+        "discovered": 20,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "excluded": "bottom-role",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 70,
+        "transitions": 346,
+        "discovered": 76,
+        "totalActions": 23
+      },
+      "actions": [
+        "D",
+        "R",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "L",
+        "U",
+        "L",
+        "R",
+        "D",
+        "D",
+        "L",
+        "D",
+        "D",
+        "U",
+        "U",
+        "U",
+        "L",
+        "R",
+        "U",
+        "U"
+      ]
+    }
+  ],
+  "comparison": {
+    "forwardWithoutLetterControl": {
+      "schemaVersion": 1,
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+      "mapId": "2ed6f46a00fcd24f2f1fa076556fe685c69bc5dc860ec0477cfdfc45ddb9a144",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "restrictions": []
+      },
+      "optimality": null,
+      "solution": null,
+      "search": {
+        "expanded": 61,
+        "transitions": 305,
+        "discovered": 61,
+        "exhausted": true,
+        "elapsedMs": 11.806062000000004,
+        "budget": {
+          "nodeBudget": 250000,
+          "stateBudget": 250000,
+          "budgetMs": 15000
+        }
+      }
+    },
+    "oldOpening": {
+      "prefix": [
+        "D",
+        "U"
+      ],
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 9,
+        "transitions": 45,
+        "discovered": 9,
+        "totalActions": null
+      },
+      "actions": null
+    }
+  },
+  "scope": "全部无伤无复活查询；原开局DU无续解，无A且箭头仍向右时无解",
+  "humanQuality": null
+}

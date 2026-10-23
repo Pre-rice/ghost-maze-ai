@@ -1,0 +1,51 @@
+{
+  "forwardWithoutLetterControl": {
+    "schemaVersion": 1,
+    "status": "proven_unsat",
+    "reason": "frontier_exhausted",
+    "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+    "mapId": "2ed6f46a00fcd24f2f1fa076556fe685c69bc5dc860ec0477cfdfc45ddb9a144",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "restrictions": []
+    },
+    "optimality": null,
+    "solution": null,
+    "search": {
+      "expanded": 61,
+      "transitions": 305,
+      "discovered": 61,
+      "exhausted": true,
+      "elapsedMs": 11.806062000000004,
+      "budget": {
+        "nodeBudget": 250000,
+        "stateBudget": 250000,
+        "budgetMs": 15000
+      }
+    }
+  },
+  "oldOpening": {
+    "prefix": [
+      "D",
+      "U"
+    ],
+    "result": {
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "expanded": 9,
+      "transitions": 45,
+      "discovered": 9,
+      "totalActions": null
+    },
+    "actions": null
+  }
+}
