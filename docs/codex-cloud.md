@@ -22,6 +22,8 @@ python3 scripts/restore-cloud-data.py <实际资料包路径>
 
 逐文件 SHA-256 核对，已有不同内容拒绝覆盖。新任务检查实际文件；环境保存不等于资料已经恢复或代码已经提交。
 
+若当前清单的`archiveKind`为`supplement_to_full_snapshot`，它只是新增原件的小包。先按清单的`baseSnapshot`恢复完整包，再恢复所列补充包；不要只拿序号最大的补充包当作完整资料。仍使用同一恢复命令，最新完整包及补充关系只在status维护。
+
 新增私人资料后导出新名：
 
 ```sh

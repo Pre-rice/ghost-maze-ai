@@ -1,6 +1,6 @@
-# 《进退》候选
+# 《进退》原候选（已获否定反馈）
 
-22格、8×4包络，单鬼、三个普通门、一个向下单向门，没有按钮、字母门、钥匙或数字门。最优32步、唯一含停顿鬼轨迹；尚无真人评价，不入地图集、训练或自动试玩。
+22格、8×4包络，单鬼、三个普通门、一个向下单向门，没有按钮、字母门、钥匙或数字门。最优32步、唯一含停顿鬼轨迹；生成时尚无真人评价；现已获本批否定反馈，见文末，不入地图集、训练或自动试玩。
 
 预期顿悟：想把鬼送到左边，反复在两端引动却总差一个位置。两端一进一出让鬼走两格，向下单向支路提供三步接触；但不能直接反向进入，要先将鬼引向右边，取得足够距离，再利用支路把它送到真正需要的左端。这里的“先退后进”不依赖双鬼优先争位。
 
@@ -19,3 +19,7 @@
 [试玩](https://ghostmaze.novic.cc/?map=AADI_4v_wAAAAAFI4A8VVUqo1SzeqqoAAAAAAgKVVVAUQAAAAAAE) · [参考回放](https://ghostmaze.novic.cc/?map=AADI_4v_wAAAAAFI4A8VVUqo1SzeqqoAAAAAAgKVVVAUQAAAAAAE&replay=AFsqWdX9QqqXYD_9aA)
 
 [来源](source.json)、[完整证据](evidence.json)、[研究清单与早期反例](../../data/manifests/oneway-overshoot-and-single-ghost-20261023.json)。复核：`node examples/oneway-overshoot-20261023/verify.mjs`。
+
+## 最新实际反馈与停点
+
+2026-10-23用户整体否定《回流》《换庭》《进退》：结构简单、空白冗余和长直走廊难看，单向门没有发挥特别作用。本图未入集，不计新意进展；设计预期与机械验收不构成质量证明。评价为本批整体反馈，不补写逐图体验细节。原地图、生成时来源及证据保持，[真实反馈另存](../../data/manifests/oneway-three-review-20261023.json)。当前阶段收尾后停止地图设计，等待用户新工作，不继续修图或近亲递补。
