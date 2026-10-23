@@ -1,0 +1,230 @@
+{
+  "recordedOn": "2026-10-23",
+  "purpose": "回流交付后继续探索的方向流、回路及首访反例收束，不递补相似稿",
+  "latestActualFeedback": "data/manifests/queue-separation-review-20261023.json",
+  "actualFeedbackAppliesOnlyTo": "门庭及其用户增强版；回流仍未评价，本批私人稿没有人评",
+  "familyGroups": [
+    "directed-theta-20261023-v1",
+    "directed-dual-port-20261023-v1",
+    "directed-loop-operators-20261023-v1",
+    "directed-first-visit-20261023-v1"
+  ],
+  "familyLinks": [
+    [
+      "directed-loop-operators-20261023-v1",
+      "directed-theta-20261023-v1"
+    ]
+  ],
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "humanQuality": null,
+  "trainingAdded": false,
+  "skillNotAutoInvoked": true,
+  "dispositions": {
+    "directed-theta-lift-20261023": "三路与单向竖口四稿均21步安全，普通门保留原参考逐帧角色，方向不是完整计划新认识。下竖口也不是原最优必需，不交付。",
+    "directed-fan-in-20261023": "方向矩阵五稿中三种最优集合含重合，只有LR14步安全且普通门同解逐帧角色；偏移右鬼四稿仍无解或重合，普通门对照14步安全。原referenceArrowCrossings在普通行仅统计对应端口穿越位置，非声称普通门是箭头。不交付。",
+    "directed-loop-operators-20261023": "原回路50步安全，但第三次有长段不改鬼位的赶路，作为回路操作的预期未充分成立；上箭头及中门属性可删而仍同50步。加中支路后44、42等安全，但仍可按三段引动复述，没有新的整体用途认识，不因第一鬼复用和方向改变步数交付。",
+    "directed-first-visit-20261023": "相邻进出口首访四稿全部无解；内部退让修正有21步合格稿，但内部箭头、入口均改普通或移除仍同最优，真正约束只剩外围先拿钥匙顺序。内向返程四稿有无解或最优重合。没有递补，不以修通或更长代替挑战。"
+  },
+  "rawRoots": [
+    "runs/directed-theta-lift-20261023",
+    "runs/directed-fan-in-20261023",
+    "runs/directed-loop-operators-20261023",
+    "runs/directed-first-visit-20261023"
+  ],
+  "files": [
+    {
+      "path": "runs/directed-theta-lift-20261023/design-card.md",
+      "bytes": 1133,
+      "sha256": "22158c1c14309d01598023dd70c966858aaae6f2aad69a0ad25ba915d1a7fe5e"
+    },
+    {
+      "path": "runs/directed-theta-lift-20261023/disposition.json",
+      "bytes": 362,
+      "sha256": "eb663210ee676aaa67ba130d5be0dd7f6d1cc7d5093a22205bb39afdb50b5218"
+    },
+    {
+      "path": "runs/directed-theta-lift-20261023/ordinary-frame-comparison.json",
+      "bytes": 118,
+      "sha256": "ba0814f74b5f0fa2decc3a09e85ffa07db8ce2d7bae39716c83f7643869cbc0a"
+    },
+    {
+      "path": "runs/directed-theta-lift-20261023/probe.log",
+      "bytes": 651,
+      "sha256": "2959111176652992d39f06041d0cd0b29de8a1a386118d03f9bf26b7dfc8544b"
+    },
+    {
+      "path": "runs/directed-theta-lift-20261023/probe.mjs",
+      "bytes": 3044,
+      "sha256": "8ec62524e3df511f6875c997d9cae061e701dc23f89a523155ae2c2187e5d8bd"
+    },
+    {
+      "path": "runs/directed-theta-lift-20261023/probe.ndjson",
+      "bytes": 24138,
+      "sha256": "d55943a5b31ee48f3dddad8d1b0e3b3f97432df7dc572065ea55c00fc460f158"
+    },
+    {
+      "path": "runs/directed-fan-in-20261023/design-card.md",
+      "bytes": 1203,
+      "sha256": "69dcd86b263facc5db53d1e1313597f83ebabd8a1c751e3dcdb9c9fd5ecb16cb"
+    },
+    {
+      "path": "runs/directed-fan-in-20261023/disposition.json",
+      "bytes": 482,
+      "sha256": "b1da814450b17c89a2b3c109681480473463693e89419c4be9c44caa17ebba39"
+    },
+    {
+      "path": "runs/directed-fan-in-20261023/offset-guards.log",
+      "bytes": 856,
+      "sha256": "80f7a36bb9f2c5272d72a6f373374344155384e65ff8435ceb0fe22c1971e2dd"
+    },
+    {
+      "path": "runs/directed-fan-in-20261023/offset-guards.mjs",
+      "bytes": 2012,
+      "sha256": "ccfd7cbf9419819cac6672df4577449627f63b385d3cd6843d5b38d41cbc4f57"
+    },
+    {
+      "path": "runs/directed-fan-in-20261023/offset-guards.ndjson",
+      "bytes": 21525,
+      "sha256": "bc2cd4bbce3baa21e39c5698b6172c93ca7b937d7cea36c0d5703e878dfd717a"
+    },
+    {
+      "path": "runs/directed-fan-in-20261023/ordinary-frame-comparison.json",
+      "bytes": 118,
+      "sha256": "fcb11b184a8252e0405f3c05d6f2b1dd07ea6c3ba113f3bcb713a2d0daf45342"
+    },
+    {
+      "path": "runs/directed-fan-in-20261023/probe.log",
+      "bytes": 1074,
+      "sha256": "e8b071765394972934d70e7db85db4c96ab4cef9cdea7438860becb9daf88b67"
+    },
+    {
+      "path": "runs/directed-fan-in-20261023/probe.mjs",
+      "bytes": 3114,
+      "sha256": "6633b092ae6bd2f8b7f799ef9821ca7309bc06050e830f90f6eb72226283e40f"
+    },
+    {
+      "path": "runs/directed-fan-in-20261023/probe.ndjson",
+      "bytes": 31087,
+      "sha256": "8ca3e27735f1edf68c52835cc1ada8b00b2ba839a95621e44432b84c9c6248f8"
+    },
+    {
+      "path": "runs/directed-loop-operators-20261023/design-card.md",
+      "bytes": 1302,
+      "sha256": "a22eafcb2f727d9ebeec5a4b091146cebd6fff7c884540ccfba8f762bfdce5f9"
+    },
+    {
+      "path": "runs/directed-loop-operators-20261023/disposition.json",
+      "bytes": 506,
+      "sha256": "3f31f1eb005408a8127543473877585d7c7249efa67145c698c5df6e8f81d0dd"
+    },
+    {
+      "path": "runs/directed-loop-operators-20261023/hub-variants.log",
+      "bytes": 648,
+      "sha256": "88e02bf449fb96e57975fa51b059f1772d948444779599456c9944289607099c"
+    },
+    {
+      "path": "runs/directed-loop-operators-20261023/hub-variants.mjs",
+      "bytes": 1821,
+      "sha256": "7937dc29fb248aee26dd72f2de577a2f37df07653479ef859de046588fdbe78d"
+    },
+    {
+      "path": "runs/directed-loop-operators-20261023/hub-variants.ndjson",
+      "bytes": 26710,
+      "sha256": "421790ab057438825f1ac510539e8ddf5831d11304a1243d4d1349779a7559d6"
+    },
+    {
+      "path": "runs/directed-loop-operators-20261023/probe.log",
+      "bytes": 657,
+      "sha256": "8f4d4e47ccfb67e5f8207acbf08ed538834e05da3f0299e599e02d24abedb7bc"
+    },
+    {
+      "path": "runs/directed-loop-operators-20261023/probe.mjs",
+      "bytes": 2958,
+      "sha256": "7423e4fd7a3e2f39343786e79df297dfba80ecfe57adfed3a714cccb370a0ac2"
+    },
+    {
+      "path": "runs/directed-loop-operators-20261023/probe.ndjson",
+      "bytes": 28957,
+      "sha256": "3d07173460639c7ca6e6c251d6a7e989a015fb86880fd59ddfc523adb22e7492"
+    },
+    {
+      "path": "runs/directed-loop-operators-20261023/shortcut-economy.log",
+      "bytes": 661,
+      "sha256": "89052aeac71b48a87d99d4e3681f9ee7575136dfb68798e8aa54866db03b8202"
+    },
+    {
+      "path": "runs/directed-loop-operators-20261023/shortcut-economy.mjs",
+      "bytes": 2253,
+      "sha256": "634874a8b9fcbefc59993988ca766ef42243ad31d33489aa245bd40ed1e16e4b"
+    },
+    {
+      "path": "runs/directed-loop-operators-20261023/shortcut-economy.ndjson",
+      "bytes": 30044,
+      "sha256": "dcb6b869f52d9c4686bf6fbf39aabb9bdc39f617894bd10e2a2d4bd0360505ab"
+    },
+    {
+      "path": "runs/directed-first-visit-20261023/design-card.md",
+      "bytes": 1149,
+      "sha256": "4e300a9d24b6f08d67b415d25c29b38160c6e84fcbfb238587fc117d5795947c"
+    },
+    {
+      "path": "runs/directed-first-visit-20261023/disposition.json",
+      "bytes": 476,
+      "sha256": "2258684b1b434d8b559a7d9a6f4272bbf4dcb379b59fae78c538b942575cac3e"
+    },
+    {
+      "path": "runs/directed-first-visit-20261023/internal-return.log",
+      "bytes": 779,
+      "sha256": "dbcebc623cc3ff15bfd0338e67de175a76df4777c5cca927229d34b05b047e90"
+    },
+    {
+      "path": "runs/directed-first-visit-20261023/internal-return.mjs",
+      "bytes": 1826,
+      "sha256": "35714f18dda238a10c8cdb7a3118337b37ae53da8fb84432b3de7ce6d025f7a9"
+    },
+    {
+      "path": "runs/directed-first-visit-20261023/internal-return.ndjson",
+      "bytes": 24585,
+      "sha256": "29a23207c43b15f59c3e3fd83354a607f5f23f5794fb683c81062f56db93ce1a"
+    },
+    {
+      "path": "runs/directed-first-visit-20261023/probe.log",
+      "bytes": 748,
+      "sha256": "437ef79ed85f2be6ad0d2af25f2d247de0f2b77e6b4aef01e2572d15a75e7b36"
+    },
+    {
+      "path": "runs/directed-first-visit-20261023/probe.mjs",
+      "bytes": 2997,
+      "sha256": "705c345c1c4f01914ab87d26a6f913f88bf6225f65fb1b3abfd913246de883c8"
+    },
+    {
+      "path": "runs/directed-first-visit-20261023/probe.ndjson",
+      "bytes": 15814,
+      "sha256": "19d6735643fa59c52bebbf673f7b54bf379f8dc8c17337a23ec3bfc87f20800a"
+    },
+    {
+      "path": "runs/directed-first-visit-20261023/shedding-passages.log",
+      "bytes": 821,
+      "sha256": "c415473469580a407768a7b9d564fa95399020e65f651f462b10cadaa8efaa20"
+    },
+    {
+      "path": "runs/directed-first-visit-20261023/shedding-passages.mjs",
+      "bytes": 2835,
+      "sha256": "3f037a3bf6350aaba90d390d399fcbea92d66148caab6def5d74be074eeffc1f"
+    },
+    {
+      "path": "runs/directed-first-visit-20261023/shedding-passages.ndjson",
+      "bytes": 28601,
+      "sha256": "5f8a5b4de7b94e37c15aedf71fdc3dccccc3a28659606fbc9a33b7e310fc46d0"
+    }
+  ],
+  "privateArchive": {
+    "file": "artifacts/cloud-data-20261023-planning-127.zip",
+    "files": 15084,
+    "bytes": 167926753,
+    "sha256": "327cb13ce82d4130f204f0536b5e11f570e1f432e108d3b7fd4274850ceef060",
+    "zipIntegrityCheckPassed": true,
+    "rawFileHashesIndependentlyChecked": 37,
+    "downloadedByUser": false
+  }
+}

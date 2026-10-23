@@ -47,12 +47,14 @@
 - [《寄存》](../examples/goal-buffer-20261018/README.md)：完整7×3、21格双鬼，最优33步、九种含停顿鬼轨迹；全部最优及指定实际入场通过。用户认为“没什么难度”“普通的引鬼困鬼”，不入集、不计挑战进展；[实际反馈](../data/manifests/goal-buffer-review-20261018.json)。原图、生成时来源及机械研究不改写，未新增训练或自主试玩。
 
 - 新候选《腾挪》：19格双鬼，一个A按钮及两扇A门、一扇普通门、一把钥匙；41步、三种含停顿轨迹。全部最优边界、去终点、实际入场及排列／变编号通过，普通替代与组合精简留证。[来源](../examples/corner-clearance-20261018/README.md)。用户评价“新地图没什么新意啊。还是老的思路。”；不计新意进展、未入集。[实际反馈](../data/manifests/corner-clearance-review-20261018.json)。
-- 精品地图二十张；其余十九图保持，本轮只追加原版《侧入》，站主优化仍九张。原优化《同调》《换边》及《留隙》的[反馈](../data/manifests/gallery-user-review-20261019.json)保持，不能将用户优化认可转给生成原版。
+- 精品地图现21张、站主优化10张；《侧入》原版及用户《门庭》增强版均已收录，其余已确认图保持。原优化《同调》《换边》及《留隙》的[反馈](../data/manifests/gallery-user-review-20261019.json)保持，不能将用户优化认可转给生成原版。
 - 《调度》在关门追击修正规则下最优70步、四种轨迹，用户认为“甚至更妙”“核心思想几乎完全不变”；原图不改。《后路》按用户决定撤出。[当前证据及判断修正](../data/manifests/inside-shunting-current-review-20261018.json)。
 - 已快进接入用户本地两仓更新；当前规则内容锁为 `sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0`。点击寻路避虚空与死亡画面留存已接入，随后接入本地界面焦点与试玩技能发布更新（本体26daaad）；追逐和无伤动作规则文件不变，本轮侧入入集后的两仓main的cloud:check全部通过，桌面／手机明暗主题预加载20图、求解37步及同页回放通过。历史证书保留其生成时规则标识，不改写为新锁；67份公开原件审查与原种子保持，现行边界见[设计边界](design-boundaries.md)。
 - 作品、历史候选和真实评述统一在本仓[地图总目录](ai-map-catalog.md)；精选设计摘要见[人读小册](https://github.com/Pre-rice/ghost-maze/blob/main/docs/map-design-guide.md)。
 
 ## 研究判断与资料
+
+- [单向回路与首次进入](archive/research/directed-flow-and-first-visit-counterexamples-20261023.md)：竖口、汇入、整圈操作与首访四组没有递补；50步稿存在长段赶路，21步修正稿未使内部方向承担关键计划。37份原件及快照127独立核验。普通门同最优不是方向无作用的充分证明，仍须核对实际完整办法；继续不同用途。
 
 - [单向门与回程承诺](archive/research/directed-return-and-arrow-counterexamples-20261023.md)：普通门同解与仅多追逐圈的稿未递补；侧回口及两个只能离开的口形成《回流》候选。诊断过滤误读字段的初版排除，正确v2另存；取钥匙前先安排上鬼亦全解无解。92份原件及快照126已独立核验，旧包不回写；继续不同关系。
 
@@ -126,6 +128,6 @@
 - 近期《送客》《互锁》《转圜》均未形成用户认可的新意；必要性、跨阶段安排或多个鬼不能替代实际挑战评价。反馈已提炼至[方法](methodology.md)，不继续交付相似构件。
 - [空间安排研究](archive/research/spatial-control-20261018.md)及自动安排诊断保留原型、失败与反例；工具只提供机械证据，不作为趣味分或求解前自主规划能力。
 - 旧规划模型与行动段对照没有原生搜索替代收益，未据此替换现有方法；本轮未新增模型训练。历史15张规划图653行及亲缘拆分保持。[历史清单](../data/manifests/planning-library-20261014-v12.json)。
-- 原图、生成来源、真人反馈与QA分开，历史资料和旧包保持。最新有效私人快照为 `cloud-data-20261021-planning-118.zip`，独立核对[交叉双庭](../data/manifests/cross-court-counterexamples-20261021.json)44份；117独立核对[数字门下限与返回反例](../data/manifests/gate-threshold-and-return-counterexamples-20261021.json)43份；116独立核对[四区共享与三方准备](../data/manifests/shared-quadrants-and-preparation-20261021.json)35份；115独立核对[一次性连接与安全区反例](../data/manifests/one-use-and-refuge-counterexamples-20261021.json)26份；114独立核对[接管实评与未交付构思](../data/manifests/unpublished-staging-and-controller-review-20261021.json)41份；113独立核对[共享控制与接管](../data/manifests/shared-controls-and-clearance-20261021.json)112份；112独立核对[门态与取物折返反例](../data/manifests/phase-and-route-preparation-20261021.json)80份；111独立核对[共享保护与内区切换](../data/manifests/shared-protection-and-coupled-field-20261020.json)51份；110独立核对[整体排列与异地同组控制](../data/manifests/spatial-and-remote-control-20261020.json)41份；109，独立核对[内部控制与空间余地](../data/manifests/internal-controls-research-20261020.json)40份；108，独立核对[控制重排及时序反例](../data/manifests/control-routing-research-20261020.json)24份；107，独立核对[初态控制位置研究](../data/manifests/occupied-controls-20261020.json)24份；106，独立核对[三方交接与安全观察研究](../data/manifests/cyclic-handoff-research-20261020.json)53份；105，独立核对[明显困鬼后的构思与留手实评](../data/manifests/obvious-traps-research-20261020.json)52份；104独立核对[交叉控制、返回通路及留手原件](../data/manifests/return-passage-20261020.json)105份；103独立核对[控制位置反例研究](../data/manifests/control-location-research-20261020.json)78份；102独立核对[侧入真实反馈及入集验收](../data/manifests/temporary-entry-review-20261020.json)17份、[终局守卫研究](../data/manifests/following-gap-20261020.json)16份；101含16份纯门与单鬼控制研究，100含18份换路研究，99含31份双路视线反例，98含《侧入》原始完整QA，97含用户《内外》原码与实际反馈。此后另起批次，不回写冻结原件。69曾因连接中断未完成，不作有效包；未称用户已下载。付费与GPU不自动启动。
+- 原图、生成来源、真人反馈与QA分开，历史资料和旧包保持。最新有效私人快照为 `cloud-data-20261023-planning-127.zip`，独立核对[单向回路与首次进入](../data/manifests/directed-flow-and-first-visit-counterexamples-20261023.json)37份新原件；此前各批入口见上述研究记录与对应逐文件清单，不回写冻结原件。69曾因连接中断未完成，不作有效包；未称用户已下载。付费与GPU不自动启动。
 
 整理前的完整状态及研究入口保留在[历史快照](archive/worklogs/status-before-repository-separation-20261018.md)，无需为接手重跑已完成研究。
