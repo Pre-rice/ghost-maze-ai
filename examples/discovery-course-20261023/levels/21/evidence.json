@@ -1,12 +1,12 @@
 {
-  "mapId": "ffd84f1950f4bd448decde6a325cec0d5b9e7d5e9545e032d0bfbaa562f905c4",
+  "mapId": "f2ffc33355536ff18d6ae13079f418a73e7fae21cb8265fbcec873c8463012cb",
   "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
   "reference": {
     "schemaVersion": 1,
     "status": "solved",
     "reason": "goal_reached",
     "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
-    "mapId": "ffd84f1950f4bd448decde6a325cec0d5b9e7d5e9545e032d0bfbaa562f905c4",
+    "mapId": "f2ffc33355536ff18d6ae13079f418a73e7fae21cb8265fbcec873c8463012cb",
     "scope": {
       "gameMode": "death-loop",
       "objective": "zero_hit_no_revive",
@@ -45,7 +45,7 @@
       "transitions": 256,
       "discovered": 54,
       "exhausted": false,
-      "elapsedMs": 12.940596,
+      "elapsedMs": 18.01303200000001,
       "budget": {
         "nodeBudget": 1000000,
         "stateBudget": 1000000,
@@ -58,7 +58,7 @@
     "status": "solved",
     "reason": "goal_reached",
     "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
-    "mapId": "ffd84f1950f4bd448decde6a325cec0d5b9e7d5e9545e032d0bfbaa562f905c4",
+    "mapId": "f2ffc33355536ff18d6ae13079f418a73e7fae21cb8265fbcec873c8463012cb",
     "scope": {
       "gameMode": "death-loop",
       "objective": "zero_hit_no_revive",
@@ -99,7 +99,7 @@
       "transitions": 155,
       "discovered": 39,
       "exhausted": false,
-      "elapsedMs": 2.2831800000000015,
+      "elapsedMs": 7.251628000000011,
       "budget": {
         "nodeBudget": 1000000,
         "stateBudget": 1000000,
@@ -119,7 +119,7 @@
   "boundary": {
     "status": "safe",
     "reason": "all_optimal_routes_avoid_overlap",
-    "mapId": "ffd84f1950f4bd448decde6a325cec0d5b9e7d5e9545e032d0bfbaa562f905c4",
+    "mapId": "f2ffc33355536ff18d6ae13079f418a73e7fae21cb8265fbcec873c8463012cb",
     "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
     "policy": "all_optimal_routes_avoid_overlap_v2",
     "glassCount": 0,
@@ -144,11 +144,43 @@
       "L",
       "U"
     ],
-    "elapsedMs": 5,
+    "elapsedMs": 19,
     "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
   },
   "cold": true,
-  "entry": null,
+  "entry": {
+    "external": [
+      0,
+      0,
+      2
+    ],
+    "actions": [
+      "R"
+    ],
+    "unitArrival": [
+      0,
+      1,
+      2
+    ],
+    "internal": [
+      0,
+      1,
+      2
+    ],
+    "keys": 0,
+    "externalGhosts": 0,
+    "exteriorSealedExceptEntrance": true,
+    "initialInteriorEqual": true,
+    "afterGhosts": [
+      [
+        [
+          4,
+          2
+        ]
+      ]
+    ],
+    "wholeOptimalRoutesInteriorEqual": true
+  },
   "physicalAudit": {
     "reachable": 54,
     "transitions": 265,
@@ -157,8 +189,8 @@
     "includesFatalActions": true
   },
   "noEndSafeRoutes": 4,
-  "mapCode": "AWM4-fDhwwcMDAyMLQ02DFMdGA9Y7RF1APErmjo0mgQYQICDuwEA",
-  "replayCode": "GK-W3zY-X2oA",
+  "mapCode": "AWM4wPABCBgYGFsabBgauBYwnOC51rSCAQjEOjSaOhQZgICJ6QEA",
+  "replayCode": "GAHTwts-X2oA",
   "actions": [
     "U",
     "R",
@@ -191,7 +223,7 @@
         "L",
         "U"
       ],
-      "replayCode": "GK-W3zY-X2oA",
+      "replayCode": "GAHTwts-X2oA",
       "controls": [],
       "trace": [
         {
@@ -199,14 +231,14 @@
           "action": "U",
           "p": [
             0,
-            0,
-            0
+            1,
+            1
           ],
           "ghosts": [
             [
               [
-                3,
-                1
+                4,
+                2
               ]
             ]
           ],
@@ -217,14 +249,14 @@
           "action": "R",
           "p": [
             0,
-            1,
-            0
+            2,
+            1
           ],
           "ghosts": [
             [
               [
-                3,
-                1
+                4,
+                2
               ]
             ]
           ],
@@ -235,14 +267,14 @@
           "action": "R",
           "p": [
             0,
-            2,
-            0
+            3,
+            1
           ],
           "ghosts": [
             [
               [
-                3,
-                1
+                4,
+                2
               ]
             ]
           ],
@@ -253,14 +285,14 @@
           "action": "L",
           "p": [
             0,
-            1,
-            0
+            2,
+            1
           ],
           "ghosts": [
             [
               [
-                3,
-                1
+                4,
+                2
               ]
             ]
           ],
@@ -271,14 +303,14 @@
           "action": "D",
           "p": [
             0,
-            1,
-            1
+            2,
+            2
           ],
           "ghosts": [
             [
               [
-                2,
-                1
+                3,
+                2
               ]
             ]
           ],
@@ -289,44 +321,8 @@
           "action": "D",
           "p": [
             0,
-            1,
-            2
-          ],
-          "ghosts": [
-            [
-              [
-                1,
-                1
-              ]
-            ]
-          ],
-          "diagnostics": []
-        },
-        {
-          "step": 7,
-          "action": "R",
-          "p": [
-            0,
             2,
-            2
-          ],
-          "ghosts": [
-            [
-              [
-                1,
-                2
-              ]
-            ]
-          ],
-          "diagnostics": []
-        },
-        {
-          "step": 8,
-          "action": "R",
-          "p": [
-            0,
-            3,
-            2
+            3
           ],
           "ghosts": [
             [
@@ -339,8 +335,8 @@
           "diagnostics": []
         },
         {
-          "step": 9,
-          "action": "D",
+          "step": 7,
+          "action": "R",
           "p": [
             0,
             3,
@@ -349,8 +345,44 @@
           "ghosts": [
             [
               [
+                2,
+                3
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 8,
+          "action": "R",
+          "p": [
+            0,
+            4,
+            3
+          ],
+          "ghosts": [
+            [
+              [
                 3,
-                2
+                3
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 9,
+          "action": "D",
+          "p": [
+            0,
+            4,
+            4
+          ],
+          "ghosts": [
+            [
+              [
+                4,
+                3
               ]
             ]
           ],
@@ -361,14 +393,14 @@
           "action": "L",
           "p": [
             0,
-            2,
-            3
+            3,
+            4
           ],
           "ghosts": [
             [
               [
-                3,
-                2
+                4,
+                3
               ]
             ]
           ],
@@ -379,14 +411,14 @@
           "action": "L",
           "p": [
             0,
-            1,
-            3
+            2,
+            4
           ],
           "ghosts": [
             [
               [
-                3,
-                2
+                4,
+                3
               ]
             ]
           ],
@@ -397,14 +429,14 @@
           "action": "L",
           "p": [
             0,
-            0,
-            3
+            1,
+            4
           ],
           "ghosts": [
             [
               [
-                3,
-                2
+                4,
+                3
               ]
             ]
           ],
@@ -415,14 +447,14 @@
           "action": "U",
           "p": [
             0,
-            0,
-            2
+            1,
+            3
           ],
           "ghosts": [
             [
               [
-                3,
-                2
+                4,
+                3
               ]
             ]
           ],
@@ -446,7 +478,7 @@
         "L",
         "U"
       ],
-      "replayCode": "GK-W3zY012oA",
+      "replayCode": "GAHTwts012oA",
       "controls": [],
       "trace": [
         {
@@ -454,14 +486,14 @@
           "action": "U",
           "p": [
             0,
-            0,
-            0
+            1,
+            1
           ],
           "ghosts": [
             [
               [
-                3,
-                1
+                4,
+                2
               ]
             ]
           ],
@@ -472,14 +504,14 @@
           "action": "R",
           "p": [
             0,
-            1,
-            0
+            2,
+            1
           ],
           "ghosts": [
             [
               [
-                3,
-                1
+                4,
+                2
               ]
             ]
           ],
@@ -490,14 +522,14 @@
           "action": "D",
           "p": [
             0,
-            1,
-            1
+            2,
+            2
           ],
           "ghosts": [
             [
               [
-                2,
-                1
+                3,
+                2
               ]
             ]
           ],
@@ -508,14 +540,14 @@
           "action": "U",
           "p": [
             0,
-            1,
-            0
+            2,
+            1
           ],
           "ghosts": [
             [
               [
-                1,
-                1
+                2,
+                2
               ]
             ]
           ],
@@ -526,44 +558,8 @@
           "action": "R",
           "p": [
             0,
-            2,
-            0
-          ],
-          "ghosts": [
-            [
-              [
-                1,
-                0
-              ]
-            ]
-          ],
-          "diagnostics": []
-        },
-        {
-          "step": 6,
-          "action": "D",
-          "p": [
-            0,
-            2,
+            3,
             1
-          ],
-          "ghosts": [
-            [
-              [
-                2,
-                0
-              ]
-            ]
-          ],
-          "diagnostics": []
-        },
-        {
-          "step": 7,
-          "action": "D",
-          "p": [
-            0,
-            2,
-            2
           ],
           "ghosts": [
             [
@@ -576,8 +572,8 @@
           "diagnostics": []
         },
         {
-          "step": 8,
-          "action": "R",
+          "step": 6,
+          "action": "D",
           "p": [
             0,
             3,
@@ -586,15 +582,15 @@
           "ghosts": [
             [
               [
-                2,
-                2
+                3,
+                1
               ]
             ]
           ],
           "diagnostics": []
         },
         {
-          "step": 9,
+          "step": 7,
           "action": "D",
           "p": [
             0,
@@ -612,18 +608,54 @@
           "diagnostics": []
         },
         {
-          "step": 10,
-          "action": "L",
+          "step": 8,
+          "action": "R",
           "p": [
             0,
-            2,
+            4,
             3
           ],
           "ghosts": [
             [
               [
                 3,
-                2
+                3
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 9,
+          "action": "D",
+          "p": [
+            0,
+            4,
+            4
+          ],
+          "ghosts": [
+            [
+              [
+                4,
+                3
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 10,
+          "action": "L",
+          "p": [
+            0,
+            3,
+            4
+          ],
+          "ghosts": [
+            [
+              [
+                4,
+                3
               ]
             ]
           ],
@@ -634,14 +666,14 @@
           "action": "L",
           "p": [
             0,
-            1,
-            3
+            2,
+            4
           ],
           "ghosts": [
             [
               [
-                3,
-                2
+                4,
+                3
               ]
             ]
           ],
@@ -652,14 +684,14 @@
           "action": "L",
           "p": [
             0,
-            0,
-            3
+            1,
+            4
           ],
           "ghosts": [
             [
               [
-                3,
-                2
+                4,
+                3
               ]
             ]
           ],
@@ -670,14 +702,14 @@
           "action": "U",
           "p": [
             0,
-            0,
-            2
+            1,
+            3
           ],
           "ghosts": [
             [
               [
-                3,
-                2
+                4,
+                3
               ]
             ]
           ],
@@ -701,7 +733,7 @@
         "L",
         "U"
       ],
-      "replayCode": "GK-W3zY09WoA",
+      "replayCode": "GAHTwts09WoA",
       "controls": [],
       "trace": [
         {
@@ -709,14 +741,14 @@
           "action": "U",
           "p": [
             0,
-            0,
-            0
+            1,
+            1
           ],
           "ghosts": [
             [
               [
-                3,
-                1
+                4,
+                2
               ]
             ]
           ],
@@ -727,14 +759,14 @@
           "action": "R",
           "p": [
             0,
-            1,
-            0
+            2,
+            1
           ],
           "ghosts": [
             [
               [
-                3,
-                1
+                4,
+                2
               ]
             ]
           ],
@@ -745,14 +777,14 @@
           "action": "D",
           "p": [
             0,
-            1,
-            1
+            2,
+            2
           ],
           "ghosts": [
             [
               [
-                2,
-                1
+                3,
+                2
               ]
             ]
           ],
@@ -763,14 +795,14 @@
           "action": "U",
           "p": [
             0,
-            1,
-            0
+            2,
+            1
           ],
           "ghosts": [
             [
               [
-                1,
-                1
+                2,
+                2
               ]
             ]
           ],
@@ -781,14 +813,14 @@
           "action": "R",
           "p": [
             0,
-            2,
-            0
+            3,
+            1
           ],
           "ghosts": [
             [
               [
-                1,
-                0
+                2,
+                1
               ]
             ]
           ],
@@ -799,44 +831,8 @@
           "action": "R",
           "p": [
             0,
-            3,
-            0
-          ],
-          "ghosts": [
-            [
-              [
-                2,
-                0
-              ]
-            ]
-          ],
-          "diagnostics": []
-        },
-        {
-          "step": 7,
-          "action": "D",
-          "p": [
-            0,
-            3,
+            4,
             1
-          ],
-          "ghosts": [
-            [
-              [
-                3,
-                0
-              ]
-            ]
-          ],
-          "diagnostics": []
-        },
-        {
-          "step": 8,
-          "action": "D",
-          "p": [
-            0,
-            3,
-            2
           ],
           "ghosts": [
             [
@@ -849,18 +845,54 @@
           "diagnostics": []
         },
         {
-          "step": 9,
+          "step": 7,
           "action": "D",
           "p": [
             0,
-            3,
+            4,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                4,
+                1
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 8,
+          "action": "D",
+          "p": [
+            0,
+            4,
             3
           ],
           "ghosts": [
             [
               [
-                3,
+                4,
                 2
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 9,
+          "action": "D",
+          "p": [
+            0,
+            4,
+            4
+          ],
+          "ghosts": [
+            [
+              [
+                4,
+                3
               ]
             ]
           ],
@@ -871,14 +903,14 @@
           "action": "L",
           "p": [
             0,
-            2,
-            3
+            3,
+            4
           ],
           "ghosts": [
             [
               [
-                3,
-                2
+                4,
+                3
               ]
             ]
           ],
@@ -889,14 +921,14 @@
           "action": "L",
           "p": [
             0,
-            1,
-            3
+            2,
+            4
           ],
           "ghosts": [
             [
               [
-                3,
-                2
+                4,
+                3
               ]
             ]
           ],
@@ -907,14 +939,14 @@
           "action": "L",
           "p": [
             0,
-            0,
-            3
+            1,
+            4
           ],
           "ghosts": [
             [
               [
-                3,
-                2
+                4,
+                3
               ]
             ]
           ],
@@ -925,14 +957,14 @@
           "action": "U",
           "p": [
             0,
-            0,
-            2
+            1,
+            3
           ],
           "ghosts": [
             [
               [
-                3,
-                2
+                4,
+                3
               ]
             ]
           ],
@@ -956,7 +988,7 @@
         "L",
         "U"
       ],
-      "replayCode": "GK-W3zY03WoA",
+      "replayCode": "GAHTwts03WoA",
       "controls": [],
       "trace": [
         {
@@ -964,14 +996,14 @@
           "action": "U",
           "p": [
             0,
-            0,
-            0
+            1,
+            1
           ],
           "ghosts": [
             [
               [
-                3,
-                1
+                4,
+                2
               ]
             ]
           ],
@@ -982,14 +1014,14 @@
           "action": "R",
           "p": [
             0,
-            1,
-            0
+            2,
+            1
           ],
           "ghosts": [
             [
               [
-                3,
-                1
+                4,
+                2
               ]
             ]
           ],
@@ -1000,14 +1032,14 @@
           "action": "D",
           "p": [
             0,
-            1,
-            1
+            2,
+            2
           ],
           "ghosts": [
             [
               [
-                2,
-                1
+                3,
+                2
               ]
             ]
           ],
@@ -1018,14 +1050,14 @@
           "action": "U",
           "p": [
             0,
-            1,
-            0
+            2,
+            1
           ],
           "ghosts": [
             [
               [
-                1,
-                1
+                2,
+                2
               ]
             ]
           ],
@@ -1036,14 +1068,14 @@
           "action": "R",
           "p": [
             0,
-            2,
-            0
+            3,
+            1
           ],
           "ghosts": [
             [
               [
-                1,
-                0
+                2,
+                1
               ]
             ]
           ],
@@ -1054,14 +1086,14 @@
           "action": "D",
           "p": [
             0,
-            2,
-            1
+            3,
+            2
           ],
           "ghosts": [
             [
               [
-                2,
-                0
+                3,
+                1
               ]
             ]
           ],
@@ -1072,14 +1104,14 @@
           "action": "R",
           "p": [
             0,
-            3,
-            1
+            4,
+            2
           ],
           "ghosts": [
             [
               [
-                2,
-                1
+                3,
+                2
               ]
             ]
           ],
@@ -1090,14 +1122,14 @@
           "action": "D",
           "p": [
             0,
-            3,
-            2
+            4,
+            3
           ],
           "ghosts": [
             [
               [
-                3,
-                1
+                4,
+                2
               ]
             ]
           ],
@@ -1108,14 +1140,14 @@
           "action": "D",
           "p": [
             0,
-            3,
-            3
+            4,
+            4
           ],
           "ghosts": [
             [
               [
-                3,
-                2
+                4,
+                3
               ]
             ]
           ],
@@ -1126,14 +1158,14 @@
           "action": "L",
           "p": [
             0,
-            2,
-            3
+            3,
+            4
           ],
           "ghosts": [
             [
               [
-                3,
-                2
+                4,
+                3
               ]
             ]
           ],
@@ -1144,14 +1176,14 @@
           "action": "L",
           "p": [
             0,
-            1,
-            3
+            2,
+            4
           ],
           "ghosts": [
             [
               [
-                3,
-                2
+                4,
+                3
               ]
             ]
           ],
@@ -1162,14 +1194,14 @@
           "action": "L",
           "p": [
             0,
-            0,
-            3
+            1,
+            4
           ],
           "ghosts": [
             [
               [
-                3,
-                2
+                4,
+                3
               ]
             ]
           ],
@@ -1180,14 +1212,14 @@
           "action": "U",
           "p": [
             0,
-            0,
-            2
+            1,
+            3
           ],
           "ghosts": [
             [
               [
-                3,
-                2
+                4,
+                3
               ]
             ]
           ],
