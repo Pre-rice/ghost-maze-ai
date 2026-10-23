@@ -106,6 +106,33 @@
       "scope": "全部无伤无复活通关，允许合法非最优重合；不证明玩家主观理解"
     },
     {
+      "id": "28",
+      "allOptimalCloseDoorButGhostStillMoves": true,
+      "closedDoorNotCrossed": true,
+      "withoutClosingAdvance": "proven_unsat",
+      "scope": "原图全部无伤通关不能跳过该可见现象；不改引擎模拟错误规则，不推断玩家必然总结"
+    },
+    {
+      "id": "29",
+      "title": "回望",
+      "courseVariant": "仅补齐外围墙",
+      "allReachableInteriorPhysicalSuccessorsUnchanged": true,
+      "reachable": 260,
+      "compared": 1295,
+      "includesFatalActions": true,
+      "scope": "只排除外围墙补齐的物理影响；不转移原图好评到学习流程"
+    },
+    {
+      "id": "27",
+      "title": "同行",
+      "courseVariant": "仅补齐外围墙",
+      "allReachableInteriorPhysicalSuccessorsUnchanged": true,
+      "reachable": 535,
+      "compared": 2655,
+      "includesFatalActions": true,
+      "scope": "只排除外围墙补齐的物理影响；不转移原图好评到学习流程"
+    },
+    {
       "id": "24",
       "title": "门庭",
       "courseVariant": "仅补齐外围墙",
@@ -439,6 +466,7 @@
     "09",
     "10",
     "11",
+    "28",
     "12",
     "13",
     "14",
@@ -451,6 +479,8 @@
     "25",
     "26",
     "19",
+    "29",
+    "27",
     "20",
     "23",
     "24"
