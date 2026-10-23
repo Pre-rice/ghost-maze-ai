@@ -113,6 +113,41 @@
       "scope": "原图全部无伤通关不能跳过该可见现象；不改引擎模拟错误规则，不推断玩家必然总结"
     },
     {
+      "id": "30",
+      "allOptimalParkBelowPreclosedA": true,
+      "witness": {
+        "arrival": 41,
+        "from": [
+          2,
+          5
+        ],
+        "parking": [
+          1,
+          5
+        ],
+        "doorAlreadyClosed": true,
+        "staysNextAction": true
+      },
+      "scope": "全部最优可见到的停位事实；不声称全部解唯一、真人已理解或无提示发现"
+    },
+    {
+      "id": "31",
+      "allOptimalBothGhostsAdvanceTogether": true,
+      "allOptimalNoConflict": true,
+      "withoutAnySimultaneousMove": "proven_unsat",
+      "scope": "第一次双鬼可观察到共同行动，前鬼腾位后后鬼跟进；不预先依赖后续争位规则，不推断真人已学会"
+    },
+    {
+      "id": "30",
+      "title": "借影",
+      "courseVariant": "仅补齐外围墙",
+      "allReachableInteriorPhysicalSuccessorsUnchanged": true,
+      "reachable": 643,
+      "compared": 3195,
+      "includesFatalActions": true,
+      "scope": "只排除外围墙补齐的物理影响；不转移原图好评到学习流程"
+    },
+    {
       "id": "29",
       "title": "回望",
       "courseVariant": "仅补齐外围墙",
@@ -471,6 +506,7 @@
     "13",
     "14",
     "21",
+    "31",
     "15",
     "22",
     "16",
@@ -480,6 +516,7 @@
     "26",
     "19",
     "29",
+    "30",
     "27",
     "20",
     "23",
