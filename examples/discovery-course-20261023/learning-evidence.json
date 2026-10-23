@@ -5,9 +5,18 @@
   "checks": [
     {
       "id": "02",
+      "allOptimalGhostMoveCounts": [
+        3,
+        3
+      ],
+      "wallInputDoesNotAdvanceAdjacentGhost": true,
+      "scope": "连续追击和无效输入的可见证据；并不要求主动引开终点守卫，也不证明玩家已注意到"
+    },
+    {
+      "id": "02",
       "query": "从未引动鬼的完整无伤通关",
       "result": "proven_unsat",
-      "expanded": 3,
+      "expanded": 2,
       "scope": "鬼必须实际移动，不证明玩家理解追击条件"
     },
     {
@@ -222,23 +231,23 @@
       "id": "02",
       "falseBelief": "鬼总在玩家动作前行动",
       "witness": {
-        "step": 2,
+        "step": 1,
         "action": "U",
         "pBefore": [
-          1,
-          2
-        ],
-        "pAfter": [
-          1,
-          1
-        ],
-        "gBefore": [
-          3,
-          1
-        ],
-        "gAfter": [
           2,
           1
+        ],
+        "pAfter": [
+          2,
+          0
+        ],
+        "gBefore": [
+          4,
+          0
+        ],
+        "gAfter": [
+          3,
+          0
         ],
         "sawBefore": false,
         "seesAfter": true,

@@ -9,6 +9,10 @@ const budget={nodeBudget:250000,stateBudget:250000,budgetMs:10000};
 const moved=(s,n)=>s.layerStates.some((l,i)=>l.ghosts.some((g,j)=>g.x!==n.layerStates[i].ghosts[j].x||g.y!==n.layerStates[i].ghosts[j].y));
 const stationary=(s,n)=>s.player.x===n.player.x&&s.player.y===n.player.y;
 const results=[];
+const e2=createReferenceEnvironment(buildLevel('02')),q2=read('levels/02/evidence.json');
+const ghostMoveCounts=q2.routes.map(r=>{let s=e2.initialState(),count=0;for(const a of r.actions){const n=e2.step(s,a);count+=Number(moved(s,n));s=n;}return count;});assert(ghostMoveCounts.every(n=>n>=3));
+const upper2=e2.step(e2.initialState(),'U');assert.equal(upper2.layerStates[0].ghosts[0].x,3);assert.equal(e2.step(upper2,'U'),upper2);
+results.push({id:'02',allOptimalGhostMoveCounts:ghostMoveCounts,wallInputDoesNotAdvanceAdjacentGhost:true,scope:'连续追击和无效输入的可见证据；并不要求主动引开终点守卫，也不证明玩家已注意到'});
 for(const id of ['02','03','04']){
  const env=createReferenceEnvironment(buildLevel(id)),q=createBreadthFirstSearch(env,{monitor:{initial:()=>[],advance:(h,s,a,n)=>moved(s,n)?null:h}}),r=q.run(budget);assert.equal(r.status,'proven_unsat');results.push({id,query:'从未引动鬼的完整无伤通关',result:r.status,expanded:r.expanded,scope:'鬼必须实际移动，不证明玩家理解追击条件'});
 }
