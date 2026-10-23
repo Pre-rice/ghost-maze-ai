@@ -1,0 +1,245 @@
+{
+  "recordedOn": "2026-10-23",
+  "purpose": "单向门换庭候选与完整计划范围核对，保留未交付原件和无效查询",
+  "latestActualFeedback": "data/manifests/queue-separation-review-20261023.json",
+  "actualFeedbackAppliesOnlyTo": "门庭及其用户增强版；回流与换庭尚无真人评价，不转移反馈",
+  "familyGroups": [
+    "oneway-facing-guard-20261023-v1",
+    "directed-offset-courts-20261023-v1",
+    "directed-shared-neck-20261023-v1"
+  ],
+  "familyLinks": [
+    [
+      "directed-offset-courts-20261023-v1",
+      "directed-shared-neck-20261023-v1"
+    ],
+    [
+      "directed-shared-neck-20261023-v1",
+      "oneway-counterflow-20261023-v1"
+    ],
+    [
+      "directed-shared-neck-20261023-v1",
+      "directed-dual-port-20261023-v1"
+    ]
+  ],
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "humanQuality": null,
+  "trainingAdded": false,
+  "skillNotAutoInvoked": true,
+  "dispositions": {
+    "oneway-facing-guard-20261023": "门在身后、鬼在前方的四稿严格16步安全、下普通14步安全，但实际完整参考仍是外围追逐并在另一门脱身；没有按步数差递补，也未声称已穷尽所有普通计划。",
+    "directed-offset-courts-20261023": "两个错位3×3庭的四种方向普通门稿均50态穷尽无解，未继续补独立困鬼装置；后续共享中口另起构思与亲缘。",
+    "directed-shared-neck-20261023": "两错位4×3庭共24格，左向下单向口取消直接取物原路返回办法。右向上口改普通仍保持所检全解无重合换庭关系，去掉多余方向，完整QA与本地网页通过，候选换庭未获实评、不入集。complete-plans.json第三查询误读不存在的state.diagnostics，结果无效；v2与正式analyze直接请求本体ghostDiagnostics，禁止visible_target_priority两种重合范围都无解。禁止重合时两鬼须在取钥匙前换庭；允许非最优重合有26/30步不换庭替代，未称所有合法解必须换庭。"
+  },
+  "rawRoots": [
+    "runs/oneway-facing-guard-20261023",
+    "runs/directed-offset-courts-20261023",
+    "runs/directed-shared-neck-20261023"
+  ],
+  "files": [
+    {
+      "path": "runs/oneway-facing-guard-20261023/design-card.md",
+      "bytes": 1162,
+      "sha256": "0a75100ffa637b195ad95e7860d101c9e2953a4c7401bc4fcdbd048bcdfcf99c"
+    },
+    {
+      "path": "runs/oneway-facing-guard-20261023/disposition.json",
+      "bytes": 406,
+      "sha256": "72472a52e0e843ccfc532ac96b06c39316145b1fc01a91fb46be125c1778944d"
+    },
+    {
+      "path": "runs/oneway-facing-guard-20261023/probe.log",
+      "bytes": 665,
+      "sha256": "5fd701d91c98ce39c542c2c20dea8549df437803d4cff4f5c1f9bfc8323fe710"
+    },
+    {
+      "path": "runs/oneway-facing-guard-20261023/probe.mjs",
+      "bytes": 2837,
+      "sha256": "639bde9b166c690765604c2c430515a73729d57da9ce96dafb17d532c8c7b594"
+    },
+    {
+      "path": "runs/oneway-facing-guard-20261023/probe.ndjson",
+      "bytes": 22454,
+      "sha256": "3f4c4319ad1ba73a6aeb9627dfb9edd607bb9f56400f3ad1f4a11cb44efb8769"
+    },
+    {
+      "path": "runs/directed-offset-courts-20261023/design-card.md",
+      "bytes": 801,
+      "sha256": "93a6aac6ea42daa6fa5b6967b819da63f6f683e8319b8ea5ba95b99073ae3670"
+    },
+    {
+      "path": "runs/directed-offset-courts-20261023/disposition.json",
+      "bytes": 339,
+      "sha256": "cb0f5f4cfc6ccd61104a9e535f0d7f7494728d7c7e5a0fce8bc20ba8ebd84900"
+    },
+    {
+      "path": "runs/directed-offset-courts-20261023/probe.log",
+      "bytes": 628,
+      "sha256": "264b7323034c96d58139204d100f8366d815e98690e5d930fbc7a24ccad416f2"
+    },
+    {
+      "path": "runs/directed-offset-courts-20261023/probe.mjs",
+      "bytes": 2842,
+      "sha256": "306d9563074dc60dc067b6ab728ed08e3402643a768374b3dcd6b078db9cf140"
+    },
+    {
+      "path": "runs/directed-offset-courts-20261023/probe.ndjson",
+      "bytes": 15614,
+      "sha256": "30cafbfb9e1b2c16d961033244ad0e8d47dc94fafbec3118432c94738c7b57f4"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/browser-check.json",
+      "bytes": 891,
+      "sha256": "fabf3e8634fbdc4de82cbf9deeef69acbd507eaf0b3b79011d23a299d8fdf027"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/browser-check.py",
+      "bytes": 2521,
+      "sha256": "394f502447d6139b5ba7b0c6c90024caccbacfe693fbfe9077b8c0528ba06e79"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/browser.log",
+      "bytes": 737,
+      "sha256": "188c70e7f0dcf62acc21a0cba4038e1e983ca4576cf0c22c7074280850135247"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/cloud-check.log",
+      "bytes": 18795,
+      "sha256": "86c8a940ecc44166c79e8c63d3bac80adeb5587d9a4d2357666de84dde7855b7"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/complete-plans-v2.json",
+      "bytes": 6456,
+      "sha256": "a1b645371cdbef56b9506f50c2fa035b6dadc0e8a33fa1d34c9afe1bbd340da2"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/complete-plans-v2.log",
+      "bytes": 273,
+      "sha256": "75e36631f7e31dfb449829e5b75e31c28f055530cbdd291e68f7acd41104fc4b"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/complete-plans-v2.mjs",
+      "bytes": 2333,
+      "sha256": "43373a7a67c99f7f84c0ca514fae96a3f404b23bd7fe3c889356897f30f3cba4"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/complete-plans.json",
+      "bytes": 5972,
+      "sha256": "e48aa7e56203a18ab3ce9c86a644cd110b959da175a31e47d120c6ce383f7294"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/complete-plans.log",
+      "bytes": 137,
+      "sha256": "db0a67d2418b7130963ff611edadf1ca1d5d05790a8defda29e2bd56b19c4fbd"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/complete-plans.mjs",
+      "bytes": 1556,
+      "sha256": "316583dc270060b197c34e9a0336ab1a259d9c8b34a4d8f7382404d395e438d0"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/design-card.md",
+      "bytes": 838,
+      "sha256": "221179295f12837d9a4b20291c37a38faa45c6e0c5be34566eafd19570118545"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/disposition.json",
+      "bytes": 769,
+      "sha256": "507453ded1bdb73cd9cd0a4c4abd432fadd4c5bcdaf83e68f091228ff493ded3"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/economy.log",
+      "bytes": 723,
+      "sha256": "daccd5a47bef69fda07c204a83d6de8338f0fd1217678537328e3ea60748ced6"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/economy.mjs",
+      "bytes": 1688,
+      "sha256": "9489b27c7bcede1ffc0a5ca57705d31746ea38490d9c8af31e1fbe51d84f8522"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/economy.ndjson",
+      "bytes": 19572,
+      "sha256": "821d0105ede7fe04710cf965f71ba41820b5ddf4d97d5334d53f0c61c031f530"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/map-1360-dark.png",
+      "bytes": 33408,
+      "sha256": "c715e09f2033dc0018ea1aea66490aeaa5e8b0dae10129a4e4544af9bd82b8ec"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/map-1360-light.png",
+      "bytes": 34170,
+      "sha256": "0cb6679b9abf212547a8e2210b1aff7095a74404ddfe00e4fa31be2b989d8cc3"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/map-390-dark.png",
+      "bytes": 23428,
+      "sha256": "23e726a52ed7480499e6bde49c90780d6b03d37aa606bca9474341eb73ce7358"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/map-390-light.png",
+      "bytes": 24020,
+      "sha256": "d41811c0e7dfc33e507ce1a08d2764e05adaa12a0e821bbf8d6cd7d783928025"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/probe.log",
+      "bytes": 658,
+      "sha256": "aee4b0f785167f8d832c22f173bafe5a67b49420849309625c7502386f8bfce3"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/probe.mjs",
+      "bytes": 2842,
+      "sha256": "35f52c52370ea52aa4cdcfca37a45551927e4a5e8f0c9c1998be8a3cd07dee7a"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/probe.ndjson",
+      "bytes": 24080,
+      "sha256": "742009e21eeec7d0f65d7534719c22f9ff0999d7173a38a738294040735ca11e"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/qualification.json",
+      "bytes": 182080,
+      "sha256": "515c93d04b43309da2d9498d39c1c2526a04535d150ef7d33f5ca245da82f5c8"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/qualify.log",
+      "bytes": 2650,
+      "sha256": "e7adef4f4dd30c31986c58ac5af34560d3c96efe82919782e27e8d4a912c7718"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/qualify.mjs",
+      "bytes": 1495,
+      "sha256": "7ba8c1f10cb1d5e98cb4ff23f1bd173fab5b8dafaa0562b172bdad9b53473a0a"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/right-direction-scope.json",
+      "bytes": 8309,
+      "sha256": "dab128dbaf3054d79c96dc0361dab6d50408ed105c5ef48cdf60c54aa48671d7"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/right-direction-scope.log",
+      "bytes": 838,
+      "sha256": "f60f41871d2fb6a28a4456afa3dc48969a09cd3a865fa0b826b0a460d2feabb1"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/right-direction-scope.mjs",
+      "bytes": 1729,
+      "sha256": "fcc4c09deac0c0cd7aa60ec7819421a1dd02aa846e01e7b15b59fb39163f0bc0"
+    },
+    {
+      "path": "runs/directed-shared-neck-20261023/share.json",
+      "bytes": 1618,
+      "sha256": "3c5ce15915eba7d9b0beab753af1804c07996de692a9a00b6856e5777f33ea42"
+    }
+  ],
+  "privateArchive": {
+    "file": "artifacts/cloud-data-20261023-planning-128.zip",
+    "files": 15123,
+    "bytes": 168078684,
+    "sha256": "2ea64000d922c75d14abe6ddaedfcf947773653ef37dc7087ad8993756bccdb9",
+    "zipIntegrityCheckPassed": true,
+    "rawFileHashesIndependentlyChecked": 39,
+    "downloadedByUser": false
+  }
+}
