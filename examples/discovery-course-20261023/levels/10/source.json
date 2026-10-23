@@ -1,0 +1,61 @@
+{
+  "id": "10",
+  "title": "10",
+  "width": 4,
+  "height": 2,
+  "params": {
+    "start": [
+      0,
+      1
+    ],
+    "end": [
+      3,
+      1
+    ],
+    "ghosts": [
+      [
+        3,
+        0
+      ]
+    ],
+    "buttons": [
+      [
+        0,
+        0,
+        0,
+        -1,
+        "A"
+      ]
+    ],
+    "edges": [
+      [
+        "h",
+        3,
+        1,
+        1
+      ],
+      [
+        "v",
+        3,
+        1,
+        6,
+        {
+          "letter": "A",
+          "initialState": "closed"
+        }
+      ]
+    ]
+  },
+  "knowledgeBefore": [
+    "鬼追击与转角",
+    "按钮开关字母门"
+  ],
+  "newDiscovery": "原地按按钮也推进一个回合，鬼会行动；机关操作的时机有风险。",
+  "evidence": "要先到上方A按钮开放终点。按按钮时玩家不动，同行的鬼却继续靠近；继续按会死，转入下排可撤离。",
+  "transfer": "把按钮看作实际行动而非暂停中的设置，再运用已知转角逃离。",
+  "risk": "同字母门不在鬼通路上，避免把鬼移动误归因于开门让它获得通路；需核对所有最优均看到原地按键推进。",
+  "familyGroup": "discovery-control-advances-ghost-20261023-v1",
+  "createdOn": "2026-10-23",
+  "humanQuality": null,
+  "role": "discovery_level_design_not_human_learning_evidence"
+}

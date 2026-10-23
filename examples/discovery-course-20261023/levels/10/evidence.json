@@ -1,0 +1,315 @@
+{
+  "mapId": "8da3a8e29316ca83ee29ccfb07b1876f889e2817eac378ba13af42fd4c5b6daf",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "reference": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+    "mapId": "8da3a8e29316ca83ee29ccfb07b1876f889e2817eac378ba13af42fd4c5b6daf",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "U",
+        "U",
+        "D",
+        "R",
+        "R",
+        "R"
+      ],
+      "totalActions": 6,
+      "movementCost": 5
+    },
+    "search": {
+      "expanded": 16,
+      "transitions": 77,
+      "discovered": 22,
+      "exhausted": false,
+      "elapsedMs": 6.483133999999993,
+      "budget": {
+        "nodeBudget": 1000000,
+        "stateBudget": 1000000,
+        "budgetMs": 30000
+      }
+    }
+  },
+  "fast": {
+    "schemaVersion": 1,
+    "status": "solved",
+    "reason": "goal_reached",
+    "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+    "mapId": "8da3a8e29316ca83ee29ccfb07b1876f889e2817eac378ba13af42fd4c5b6daf",
+    "scope": {
+      "gameMode": "death-loop",
+      "objective": "zero_hit_no_revive",
+      "metric": "successful_actions",
+      "actions": [
+        "U",
+        "R",
+        "D",
+        "L",
+        "STAIR"
+      ],
+      "withGhosts": true,
+      "restrictions": []
+    },
+    "optimality": "proven",
+    "solution": {
+      "actions": [
+        "U",
+        "U",
+        "D",
+        "R",
+        "R",
+        "R"
+      ],
+      "totalActions": 6,
+      "movementCost": 5
+    },
+    "search": {
+      "algorithm": "astar",
+      "expanded": 12,
+      "transitions": 60,
+      "discovered": 18,
+      "exhausted": false,
+      "elapsedMs": 4.019300000000001,
+      "budget": {
+        "nodeBudget": 1000000,
+        "stateBudget": 1000000,
+        "budgetMs": 30000
+      }
+    }
+  },
+  "allResult": {
+    "status": "solved",
+    "reason": "goal_reached",
+    "expanded": 19,
+    "transitions": 95,
+    "discovered": 25,
+    "totalActions": 6
+  },
+  "count": "1",
+  "boundary": {
+    "status": "safe",
+    "reason": "all_optimal_routes_avoid_overlap",
+    "mapId": "8da3a8e29316ca83ee29ccfb07b1876f889e2817eac378ba13af42fd4c5b6daf",
+    "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+    "policy": "all_optimal_routes_avoid_overlap_v2",
+    "glassCount": 0,
+    "expanded": 19,
+    "transitions": 95,
+    "discovered": 24,
+    "optimum": 6,
+    "ignoredFatalOverlap": 0,
+    "observedNonFatalOverlap": null,
+    "safeOptimalWitness": [
+      "U",
+      "U",
+      "D",
+      "R",
+      "R",
+      "R"
+    ],
+    "elapsedMs": 2,
+    "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+  },
+  "cold": true,
+  "entry": {
+    "external": [
+      0,
+      0,
+      2
+    ],
+    "actions": [
+      "U"
+    ],
+    "unitArrival": [
+      0,
+      0,
+      1
+    ],
+    "internal": [
+      0,
+      0,
+      1
+    ],
+    "keys": 0,
+    "externalGhosts": 0,
+    "exteriorSealedExceptEntrance": true,
+    "initialInteriorEqual": true,
+    "afterGhosts": [
+      [
+        [
+          3,
+          0
+        ]
+      ]
+    ],
+    "wholeOptimalRoutesInteriorEqual": true
+  },
+  "physicalAudit": {
+    "reachable": 37,
+    "transitions": 175,
+    "permutations": 1,
+    "compared": 175,
+    "includesFatalActions": true
+  },
+  "noEndSafeRoutes": 1,
+  "mapCode": "AWM4-PABAwgwfmK4wMC0gkXUAcLlUJ7AAAUA",
+  "replayCode": "EHl6MhYH8A",
+  "actions": [
+    "U",
+    "U",
+    "D",
+    "R",
+    "R",
+    "R"
+  ],
+  "routes": [
+    {
+      "actions": [
+        "U",
+        "U",
+        "D",
+        "R",
+        "R",
+        "R"
+      ],
+      "replayCode": "EHl6MhYH8A",
+      "controls": [
+        {
+          "step": 2,
+          "letter": "A",
+          "at": [
+            0,
+            0
+          ]
+        }
+      ],
+      "trace": [
+        {
+          "step": 1,
+          "action": "U",
+          "p": [
+            0,
+            0,
+            0
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                0
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 2,
+          "action": "U",
+          "p": [
+            0,
+            0,
+            0
+          ],
+          "ghosts": [
+            [
+              [
+                1,
+                0
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 3,
+          "action": "D",
+          "p": [
+            0,
+            0,
+            1
+          ],
+          "ghosts": [
+            [
+              [
+                0,
+                0
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 4,
+          "action": "R",
+          "p": [
+            0,
+            1,
+            1
+          ],
+          "ghosts": [
+            [
+              [
+                0,
+                1
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 5,
+          "action": "R",
+          "p": [
+            0,
+            2,
+            1
+          ],
+          "ghosts": [
+            [
+              [
+                1,
+                1
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 6,
+          "action": "R",
+          "p": [
+            0,
+            3,
+            1
+          ],
+          "ghosts": [
+            [
+              [
+                1,
+                1
+              ]
+            ]
+          ],
+          "diagnostics": []
+        }
+      ]
+    }
+  ],
+  "role": "physical_QA_not_human_quality"
+}

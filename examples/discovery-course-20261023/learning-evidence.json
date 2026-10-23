@@ -1,0 +1,150 @@
+{
+  "createdOn": "2026-10-23",
+  "humanLearningValidated": false,
+  "role": "可观察事件与物理对照，不是未知规则真人试玩结果",
+  "checks": [
+    {
+      "id": "02",
+      "query": "从未引动鬼的完整无伤通关",
+      "result": "proven_unsat",
+      "expanded": 3,
+      "scope": "鬼必须实际移动，不证明玩家理解追击条件"
+    },
+    {
+      "id": "03",
+      "query": "从未引动鬼的完整无伤通关",
+      "result": "proven_unsat",
+      "expanded": 5,
+      "scope": "鬼必须实际移动，不证明玩家理解追击条件"
+    },
+    {
+      "id": "04",
+      "query": "从未引动鬼的完整无伤通关",
+      "result": "proven_unsat",
+      "expanded": 3,
+      "scope": "鬼必须实际移动，不证明玩家理解追击条件"
+    },
+    {
+      "ids": [
+        "04",
+        "07"
+      ],
+      "ordinaryDoor": "所有最优鬼均留在左侧",
+      "zeroGate": "所有最优鬼均进入右侧",
+      "scope": "相同布局只换门的直接观察对照，不当作新颖挑战"
+    },
+    {
+      "id": "06",
+      "evidence": "一钥匙通过两扇1门，通关仍有一钥匙，两门均为空",
+      "scope": "不消耗钥匙与开门后消失"
+    },
+    {
+      "id": "10",
+      "query": "从不在原地按钮操作时引动鬼的完整无伤通关",
+      "result": "proven_unsat",
+      "expanded": 20
+    },
+    {
+      "id": "11",
+      "withoutButton": "proven_unsat",
+      "allOptimalKeyPickupAfterClosingA": true,
+      "scope": "全部最优中的保护顺序；不扩大为玩家主观发现或全部解的唯一停位"
+    },
+    {
+      "id": "17",
+      "allOptimalObserveVisiblePriority": true,
+      "twoDifferentGhostsCanTakePriority": true,
+      "scope": "两条方向选择均可比较，不声称玩家必然自行重玩另一支"
+    },
+    {
+      "id": "20",
+      "title": "调度",
+      "courseVariant": "仅补齐外围墙",
+      "allReachableInteriorPhysicalSuccessorsUnchanged": true,
+      "reachable": 2653,
+      "compared": 13245,
+      "includesFatalActions": true,
+      "scope": "只排除外围墙补齐的物理影响；不转移原图好评到学习流程"
+    },
+    {
+      "id": "19",
+      "title": "换席",
+      "courseVariant": "仅补齐外围墙",
+      "allReachableInteriorPhysicalSuccessorsUnchanged": true,
+      "reachable": 297,
+      "compared": 1455,
+      "includesFatalActions": true,
+      "scope": "只排除外围墙补齐的物理影响；不转移原图好评到学习流程"
+    },
+    {
+      "id": "18",
+      "title": "再借",
+      "courseVariant": "仅补齐外围墙",
+      "allReachableInteriorPhysicalSuccessorsUnchanged": true,
+      "reachable": 289,
+      "compared": 1435,
+      "includesFatalActions": true,
+      "scope": "只排除外围墙补齐的物理影响；不转移原图好评到学习流程"
+    },
+    {
+      "id": "15",
+      "title": "回位",
+      "courseVariant": "仅补齐外围墙",
+      "allReachableInteriorPhysicalSuccessorsUnchanged": true,
+      "reachable": 311,
+      "compared": 1540,
+      "includesFatalActions": true,
+      "scope": "只排除外围墙补齐的物理影响；不转移原图好评到学习流程"
+    },
+    {
+      "id": "14",
+      "title": "换边",
+      "courseVariant": "仅补齐外围墙",
+      "allReachableInteriorPhysicalSuccessorsUnchanged": true,
+      "reachable": 68,
+      "compared": 335,
+      "includesFatalActions": true,
+      "scope": "只排除外围墙补齐的物理影响；不转移原图好评到学习流程"
+    },
+    {
+      "id": "13",
+      "title": "错位",
+      "courseVariant": "仅补齐外围墙",
+      "allReachableInteriorPhysicalSuccessorsUnchanged": true,
+      "reachable": 67,
+      "compared": 330,
+      "includesFatalActions": true,
+      "scope": "只排除外围墙补齐的物理影响；不转移原图好评到学习流程"
+    },
+    {
+      "id": "12",
+      "title": "内外",
+      "courseVariant": "仅补齐外围墙",
+      "allReachableInteriorPhysicalSuccessorsUnchanged": true,
+      "reachable": 100,
+      "compared": 490,
+      "includesFatalActions": true,
+      "scope": "只排除外围墙补齐的物理影响；不转移原图好评到学习流程"
+    },
+    {
+      "id": "16",
+      "goalSeparatedFromGhost": true,
+      "allOriginalOptimalPrefixesPreserved": true,
+      "oldT": 31,
+      "newT": 32,
+      "routes": 20,
+      "comparison": "原图去终点与课程副本去终点逐动作内部物理一致，最后新增L进入独立终点",
+      "scope": "保证目标可见，不把多一步当难度提升"
+    },
+    {
+      "id": "15",
+      "allOptimalNoGhostConflict": true,
+      "scope": "前置双鬼关不暗中依赖尚未介绍的争位"
+    },
+    {
+      "id": "16",
+      "allOptimalNoGhostConflict": true,
+      "scope": "前置双鬼关不暗中依赖尚未介绍的争位"
+    }
+  ]
+}
