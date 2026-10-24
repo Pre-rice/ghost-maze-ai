@@ -1,0 +1,10 @@
+import fs from 'node:fs';import {room} from '/workspace/ghost-maze-ai/examples/discovery-course-20261023/build.mjs';
+import {WALL_TYPES as W} from '/workspace/ghost-maze-ai/src/reference/engine.js';import {createReferenceEnvironment} from '/workspace/ghost-maze-ai/src/reference/environment.js';import {createBreadthFirstSearch} from '/workspace/ghost-maze/src/solver/breadthFirst.js';import {auditPuzzleBoundaries} from '/workspace/ghost-maze-ai/src/design/rule-boundaries.js';
+const root='/workspace/work/discovery-committed-courts-20261023/';
+const card={goal:'拿到底部钥匙后回到起点旁的目标',knownPlan:'先把堵路的鬼引出，再沿门后的安全路线返回',contradiction:'保护通道有方向；把鬼停在出口附近，可能正好堵住自己的另一条回路',intendedRevision:'从取物后的退出方向倒推前面的引离与两鬼位置，不能把安全穿门直接当作已经处理完威胁',visibleBasis:'左环与右房、三处箭头、钥匙和近处1门同时可见；不依赖未知编号',scope:'手工完整问题原型，若箭头只是必经许可、旧安置即可解释则不接入'};
+for(const[name,holes]of [['narrow-right',[[1,1],[3,1],[3,2]]],['open-right',[[1,1]]]]){
+ const params={start:[1,0],end:[0,0],ghosts:[[0,2],[2,2]],items:[[1,3]],cells:Array.from({length:4},(_,y)=>Array.from({length:5},(_,x)=>[x,y])).flat().filter(([x,y])=>!holes.some(([a,b])=>a===x&&b===y)),edges:[['v',1,0,W.LOCKED,{keys:1}],['h',0,1,W.LOCKED,{keys:1}],['h',1,3,W.SOLID],['v',2,3,W.ONE_WAY,{direction:{dx:-1,dy:0}}],['v',3,0,W.ONE_WAY,{direction:{dx:1,dy:0}}],['v',3,3,W.ONE_WAY,{direction:{dx:-1,dy:0}}]]};
+ const map=room(5,4,params),env=createReferenceEnvironment(map),q=createBreadthFirstSearch(env,{allOptimal:true}),result=q.run({nodeBudget:1000000,stateBudget:1000000,budgetMs:30000}),routes=[];if(result.status==='solved')for(const r of q.routes()){routes.push(r);if(routes.length===1000)break;}
+ const boundary=result.status==='solved'?auditPuzzleBoundaries(map,{nodeBudget:1000000,stateBudget:1000000,budgetMs:30000}):null;
+ fs.writeFileSync(root+name+'.json',JSON.stringify({name,card,params,map,result,totalRawOptimalCount:q.routeCount().toString(),routes,boundary,humanQuality:null,scope:'手工原型最优与重合初检，尚非完整交付证书或体验评价'},null,2)+'\n');console.log(JSON.stringify({name,status:result.status,T:result.totalActions,count:q.routeCount().toString(),boundary:boundary?.status,reference:routes[0]}));
+}
