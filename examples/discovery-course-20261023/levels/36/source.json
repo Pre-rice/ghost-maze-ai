@@ -1,12 +1,12 @@
 {
   "id": "36",
   "title": "36",
-  "revision": 2,
+  "revision": 3,
   "width": 4,
   "height": 4,
   "params": {
     "start": [
-      3,
+      2,
       3
     ],
     "end": [
@@ -60,7 +60,8 @@
     "courseLevelId": "34",
     "changes": [
       "扩展右室，加入会干扰引出左守卫的第二只鬼",
-      "右上门与短墙提供事先安置位置；不是只重复通过两次门"
+      "右上门与短墙提供事先安置位置；不是只重复通过两次门",
+      "将出生从右下角内移一格，省去全部最优都先走且不改变鬼、物品、门的空移动；保留原格用于其它探索路线"
     ]
   },
   "knowledgeBefore": [
@@ -73,6 +74,19 @@
   "transfer": "先在门的保护下遇到两只鬼，通过准备空间再处理目标；后面才撤去门的保护面对共同阻路，不在首次双鬼时同时要求发现争位。",
   "risk": "属于上一门房问题的扩展亲缘，不计独立新意；先右后左是当前最优的设计观察，未据此声称所有通关只能这一顺序，真实趣味仍待体验。",
   "familyGroup": "discovery-guarded-door-room-20261023-v1",
+  "revisedOn": "2026-10-24",
+  "openingAdjustment": {
+    "oldStart": [
+      3,
+      3
+    ],
+    "newStart": [
+      2,
+      3
+    ],
+    "omittedCommonFirstAction": "L",
+    "roomCellsRetained": true
+  },
   "createdOn": "2026-10-23",
   "humanQuality": null,
   "role": "discovery_level_design_not_human_learning_evidence"
