@@ -18,3 +18,5 @@
 本轮[地图改稿评述与反思](reviews/map-maintenance-review-20261014.md)记录取消两稿、采用四稿与边界审查；持续经验已归方法文档。
 
 2026-10-18仓库分离：[研究资料迁移清单](../../data/manifests/repository-separation-20261018.json)保留原提交与文件哈希。主仓历史种子和同名旧研究另存 imported-game-20261018，不覆盖已有原件；这些仅作追溯，不是另一套运行规则。
+
+2026-10-24将状态入口收拢到当前逐关课程。[整理前完整状态及研究索引](worklogs/status-before-course-cleanup-20261024.md)保留原作品、实验、旧决定和资料来源；[整理清单](worklogs/status-cleanup-20261024.json)记录原提交和哈希。日常只读现行status，需要查证才进入历史。
