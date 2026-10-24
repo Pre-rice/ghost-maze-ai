@@ -6,7 +6,7 @@
 
 2026-10-24首次A已由九格一次关门图改为十格完整往返，仍是第六关、不增加关数；旧稿与只开一次A绕行的反例都保留，见[修订依据](../examples/discovery-course-20261023/reviews/first-letter-full-detour-20261024.md)。正式地图集不变，课程新稿仍未获真人评价。
 
-首次方向限制改为20格的双端取物小室，替代《归途》在试验线路的位置，当时保持24关；[来源与对照](../examples/discovery-course-20261023/levels/43/source.json) · [关序依据](../examples/discovery-course-20261023/reviews/directed-key-chamber-placement-20261024.md)。新题只进入公开试验课程，不是正式入集。《归途》的认可与正式原码保持，不转移给新图。
+首次方向限制曾用20格双端小室43替代《归途》，原稿与原证据保持；现用19格新关46替换同一位置，按两种停位选择相应回程，总数仍25。[现版来源](../examples/discovery-course-20261023/levels/46/source.json) · [取舍与反例](../examples/discovery-course-20261023/reviews/directional-flow-20261024.md)。新题只进入公开试验课程，不是正式入集。《归途》的认可与正式原码保持，不转移给新图。
 
 曾加入《换岗》的75步安静开场课程变式，保留主要角色流程；继续比较后从本次流程撤下，原图、证据和原评述保持。[原适配](../examples/discovery-course-20261023/levels/44/source.json)不作现行位置。现在首次A之后增设13格单A双鬼完整问题45，17步、左右两套引动，仍25关；先延续同种机关，再引A/B。[新关及回放入口](../examples/discovery-course-20261023/levels/45/share.json) · [设计与新旧理由](../examples/discovery-course-20261023/reviews/single-letter-application-20261024.md)。这不是原图等价精简或正式入集，仍缺未知规则真人过程，不将机械通过当作学习或趣味。
 

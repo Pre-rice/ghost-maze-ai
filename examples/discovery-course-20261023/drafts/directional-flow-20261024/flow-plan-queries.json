@@ -1,0 +1,674 @@
+{
+  "name": "flow",
+  "mapId": "db2898645a5599ef9cf5b0cfff773f0a8cd41abf2d19fe6d9746bcc4fa6bcd1b",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "scope": "原图全无伤无复活、全程无非死亡重合、去终点到达安全。具名左右角色及全部历史标志进入完整键；允许交接当步旧鬼最后移动与新鬼首次移动，不把必要性当趣味分。",
+  "queries": {
+    "no-visible-priority": {
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 166,
+        "transitions": 828,
+        "discovered": 170,
+        "totalActions": 16
+      },
+      "actions": [
+        "L",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "D",
+        "R",
+        "D",
+        "R",
+        "D"
+      ]
+    },
+    "left-then-right-complete": {
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 81,
+        "transitions": 405,
+        "discovered": 81,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    "right-then-left-complete": {
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 163,
+        "transitions": 815,
+        "discovered": 163,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    "helper-never-moves": {
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 49,
+        "transitions": 245,
+        "discovered": 49,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    "no-actual-ghost-interference": {
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 166,
+        "transitions": 828,
+        "discovered": 170,
+        "totalActions": 16
+      },
+      "actions": [
+        "L",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "D",
+        "R",
+        "D",
+        "R",
+        "D"
+      ]
+    },
+    "keep-helper-until-key": {
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 60,
+        "transitions": 298,
+        "discovered": 64,
+        "totalActions": 16
+      },
+      "actions": [
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "R",
+        "D",
+        "D",
+        "D"
+      ]
+    },
+    "move-helper-before-key": {
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 162,
+        "transitions": 808,
+        "discovered": 173,
+        "totalActions": 16
+      },
+      "actions": [
+        "L",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "D",
+        "R",
+        "R",
+        "D",
+        "D"
+      ]
+    }
+  },
+  "prefixes": [
+    {
+      "label": "middle-parking-still-before-oneway",
+      "prefix": [
+        "L",
+        "U",
+        "R",
+        "U"
+      ],
+      "player": [
+        4,
+        1
+      ],
+      "ghosts": [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "keys": 0,
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 113,
+        "transitions": 563,
+        "discovered": 117,
+        "totalActions": 20
+      },
+      "actions": [
+        "D",
+        "D",
+        "D",
+        "L",
+        "R",
+        "U",
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "D",
+        "R",
+        "R",
+        "D",
+        "D"
+      ]
+    },
+    {
+      "label": "middle-parking-after-oneway",
+      "prefix": [
+        "L",
+        "U",
+        "R",
+        "U",
+        "L"
+      ],
+      "player": [
+        3,
+        1
+      ],
+      "ghosts": [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "keys": 0,
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 45,
+        "transitions": 225,
+        "discovered": 45,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "label": "prepare-middle-port-then-enter-left",
+      "prefix": [
+        "L",
+        "U",
+        "R",
+        "U",
+        "L",
+        "L"
+      ],
+      "player": [
+        2,
+        1
+      ],
+      "ghosts": [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "keys": 0,
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 45,
+        "transitions": 225,
+        "discovered": 45,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "label": "turn-right-with-helper-still-below",
+      "prefix": [
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "D",
+        "R",
+        "R"
+      ],
+      "player": [
+        4,
+        3
+      ],
+      "ghosts": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "keys": 1,
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 13,
+        "transitions": 65,
+        "discovered": 13,
+        "totalActions": null
+      },
+      "actions": null
+    }
+  ],
+  "noPriorityTrace": [
+    {
+      "step": 1,
+      "a": "L",
+      "p": [
+        3,
+        3
+      ],
+      "g": [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "interaction": {
+        "diag": [],
+        "held": []
+      }
+    },
+    {
+      "step": 2,
+      "a": "R",
+      "p": [
+        4,
+        3
+      ],
+      "g": [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "interaction": {
+        "diag": [],
+        "held": []
+      }
+    },
+    {
+      "step": 3,
+      "a": "U",
+      "p": [
+        4,
+        2
+      ],
+      "g": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "interaction": {
+        "diag": [],
+        "held": []
+      }
+    },
+    {
+      "step": 4,
+      "a": "U",
+      "p": [
+        4,
+        1
+      ],
+      "g": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "interaction": {
+        "diag": [],
+        "held": []
+      }
+    },
+    {
+      "step": 5,
+      "a": "L",
+      "p": [
+        3,
+        1
+      ],
+      "g": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "interaction": {
+        "diag": [],
+        "held": []
+      }
+    },
+    {
+      "step": 6,
+      "a": "L",
+      "p": [
+        2,
+        1
+      ],
+      "g": [
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "interaction": {
+        "diag": [],
+        "held": []
+      }
+    },
+    {
+      "step": 7,
+      "a": "L",
+      "p": [
+        1,
+        1
+      ],
+      "g": [
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "interaction": {
+        "diag": [],
+        "held": []
+      }
+    },
+    {
+      "step": 8,
+      "a": "L",
+      "p": [
+        0,
+        1
+      ],
+      "g": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "interaction": {
+        "diag": [],
+        "held": []
+      }
+    },
+    {
+      "step": 9,
+      "a": "D",
+      "p": [
+        0,
+        2
+      ],
+      "g": [
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "interaction": {
+        "diag": [],
+        "held": []
+      }
+    },
+    {
+      "step": 10,
+      "a": "R",
+      "p": [
+        1,
+        2
+      ],
+      "g": [
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "interaction": {
+        "diag": [],
+        "held": []
+      }
+    },
+    {
+      "step": 11,
+      "a": "R",
+      "p": [
+        2,
+        2
+      ],
+      "g": [
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "interaction": {
+        "diag": [],
+        "held": []
+      }
+    },
+    {
+      "step": 12,
+      "a": "D",
+      "p": [
+        2,
+        3
+      ],
+      "g": [
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "interaction": {
+        "diag": [],
+        "held": []
+      }
+    },
+    {
+      "step": 13,
+      "a": "R",
+      "p": [
+        3,
+        3
+      ],
+      "g": [
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "interaction": {
+        "diag": [],
+        "held": []
+      }
+    },
+    {
+      "step": 14,
+      "a": "D",
+      "p": [
+        3,
+        4
+      ],
+      "g": [
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "interaction": {
+        "diag": [],
+        "held": []
+      }
+    },
+    {
+      "step": 15,
+      "a": "R",
+      "p": [
+        4,
+        4
+      ],
+      "g": [
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "interaction": {
+        "diag": [],
+        "held": []
+      }
+    },
+    {
+      "step": 16,
+      "a": "D",
+      "p": [
+        4,
+        5
+      ],
+      "g": [
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "interaction": {
+        "diag": [],
+        "held": []
+      }
+    }
+  ],
+  "humanQuality": null
+}
