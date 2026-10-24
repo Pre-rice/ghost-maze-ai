@@ -1,0 +1,68 @@
+{
+  "scope": "正式站引擎嵌入与当前37→45→13次序的工程交互验收；Chromium手机触控仿真，不是真实手机硬件、盲AI或未知规则真人学习效果。",
+  "publicOnlyIdsAndMapURLs": true,
+  "results": [
+    {
+      "id": "45",
+      "mapId": "d70cebf75407af82be66378ec50b9d81858dfe5f83cb86de3f6d83529faf55ed",
+      "viewport": {
+        "width": 1360,
+        "height": 900
+      },
+      "input": "keyboard",
+      "steps": 17,
+      "allReferencePlayerAndGhostFramesMatched": true,
+      "won": true,
+      "loadingClearedBeforeVisualReview": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "37",
+      "mapId": "3db6bd772dd27f0f80097ff442436d7bc5d904d640f1788d898b6d0ab0d8b013",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "input": "pure_touch_dpad",
+      "steps": 19,
+      "allReferencePlayerAndGhostFramesMatched": true,
+      "won": true,
+      "loadingClearedBeforeVisualReview": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "45",
+      "mapId": "d70cebf75407af82be66378ec50b9d81858dfe5f83cb86de3f6d83529faf55ed",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "input": "pure_touch_dpad",
+      "steps": 17,
+      "allReferencePlayerAndGhostFramesMatched": true,
+      "won": true,
+      "loadingClearedBeforeVisualReview": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "13",
+      "mapId": "c70045ba3ef77900928d0dc2722c5892ab3429852928e03f84be5495222389c2",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "input": "pure_touch_dpad",
+      "steps": 32,
+      "allReferencePlayerAndGhostFramesMatched": true,
+      "won": true,
+      "loadingClearedBeforeVisualReview": true,
+      "noHorizontalOverflow": true
+    }
+  ],
+  "harnessObservation": {
+    "mixedScreenshotTouchRuns": 3,
+    "lostFirstTouchAfterScreenshotObserved": true,
+    "separateTouchRunPassed": true,
+    "observation": "截图混合流程中，45的首次触控未到达子文档；分开截图与触控后，37→45→13连续纯触控、两次换关和全部动作逐帧通过。未修改游戏或Site输入代码，不据此声称真实手机首触无问题。"
+  }
+}

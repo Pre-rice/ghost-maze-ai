@@ -1,0 +1,404 @@
+{
+  "mapId": "d70cebf75407af82be66378ec50b9d81858dfe5f83cb86de3f6d83529faf55ed",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "scope": "13格单A双鬼完整问题；原图查询限无伤无复活、无非死亡重合和去终点到达安全，具名角色在完整键中。删改另列；不以必要性证明趣味，不继承课程44或来源图好评。",
+  "queries": {
+    "never-upper-control": {
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 61,
+        "transitions": 305,
+        "discovered": 61,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    "never-lower-control": {
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 25,
+        "transitions": 125,
+        "discovered": 25,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    "left-ghost-before-right": {
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 9,
+        "transitions": 45,
+        "discovered": 9,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    "right-ghost-never-moves": {
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 7,
+        "transitions": 35,
+        "discovered": 7,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    "left-ghost-never-moves": {
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 35,
+        "transitions": 175,
+        "discovered": 35,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    "no-visible-priority": {
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 61,
+        "transitions": 302,
+        "discovered": 62,
+        "totalActions": 17
+      },
+      "actions": [
+        "R",
+        "R",
+        "R",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "L",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "U",
+        "U",
+        "R"
+      ]
+    }
+  },
+  "componentAndCellComparisons": [
+    {
+      "name": "empty-h-1-1",
+      "mapId": "1e0fdc1e62c1582b9b95087f4b236b1c88291552a18a4ca3289577589c7471b1",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 61,
+        "transitions": 305,
+        "discovered": 61,
+        "totalActions": null
+      },
+      "count": "0",
+      "routes": null
+    },
+    {
+      "name": "empty-h-0-2",
+      "mapId": "c02ff099011186f5b2aa90a21be74959ba00b1fbe8872cd095fccd6abf3e1d0e",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 16,
+        "transitions": 80,
+        "discovered": 17,
+        "totalActions": 11
+      },
+      "count": "1",
+      "routes": [
+        [
+          "R",
+          "D",
+          "R",
+          "R",
+          "U",
+          "L",
+          "U",
+          "L",
+          "U",
+          "U",
+          "R"
+        ]
+      ]
+    },
+    {
+      "name": "empty-h-1-3",
+      "mapId": "0db572e450ce0b212c63ccc58c8899448973f3a389058a4cbd3c1cabc4be5849",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 42,
+        "transitions": 210,
+        "discovered": 42,
+        "totalActions": null
+      },
+      "count": "0",
+      "routes": null
+    },
+    {
+      "name": "empty-v-2-0",
+      "mapId": "d2f0cae3d6fe2544ada4f632731f49dd924ceb680b3cebfccc5d644cfee5ff9f",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 61,
+        "transitions": 305,
+        "discovered": 63,
+        "totalActions": 16
+      },
+      "count": "2",
+      "routes": [
+        [
+          "R",
+          "R",
+          "R",
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "L",
+          "R",
+          "R",
+          "U",
+          "U",
+          "L",
+          "U",
+          "R"
+        ],
+        [
+          "R",
+          "R",
+          "L",
+          "L",
+          "U",
+          "R",
+          "D",
+          "D",
+          "L",
+          "R",
+          "R",
+          "U",
+          "U",
+          "L",
+          "U",
+          "R"
+        ]
+      ]
+    },
+    {
+      "name": "empty-v-2-2",
+      "mapId": "f091e0aa0da275c77c895b62c0f1a381968263d7563b5e48af7bab2b40c17a3e",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 50,
+        "transitions": 250,
+        "discovered": 50,
+        "totalActions": null
+      },
+      "count": "0",
+      "routes": null
+    },
+    {
+      "name": "remove-cell-1-1",
+      "mapId": "a55bcc25e8162d258e6de7791c58777b4420f0817011583869baee6d3bb3f5ee",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 57,
+        "transitions": 285,
+        "discovered": 57,
+        "totalActions": null
+      },
+      "count": "0",
+      "routes": null
+    },
+    {
+      "name": "remove-cell-0-2",
+      "mapId": "9383abf3365f51d5f6ce261ffad48366f05c4f1bcf40bace281c1c9c374398ca",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 51,
+        "transitions": 255,
+        "discovered": 52,
+        "totalActions": 21
+      },
+      "count": "2",
+      "routes": [
+        [
+          "R",
+          "R",
+          "R",
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "R",
+          "U",
+          "U",
+          "D",
+          "R",
+          "D",
+          "L",
+          "U",
+          "U",
+          "L",
+          "U",
+          "U",
+          "R"
+        ],
+        [
+          "R",
+          "R",
+          "R",
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "R",
+          "U",
+          "U",
+          "D",
+          "D",
+          "R",
+          "U",
+          "L",
+          "U",
+          "L",
+          "U",
+          "U",
+          "R"
+        ]
+      ]
+    },
+    {
+      "name": "remove-cell-1-2",
+      "mapId": "d7a19f6e66d3c66d40ef10fcca17fc7e36a515f492e91799e9c5f6d2795866f4",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 23,
+        "transitions": 115,
+        "discovered": 23,
+        "totalActions": null
+      },
+      "count": "0",
+      "routes": null
+    },
+    {
+      "name": "remove-cell-2-2",
+      "mapId": "7f5b56dc6ca4f834133f5de6d27b9a369b8d6cca236d0ad069c4dea15cae276f",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 16,
+        "transitions": 80,
+        "discovered": 16,
+        "totalActions": null
+      },
+      "count": "0",
+      "routes": null
+    },
+    {
+      "name": "remove-cell-3-2",
+      "mapId": "50ed3bae35abc7181884d5ad825834922ab4f334eed93c514af434c668a64e65",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 48,
+        "transitions": 240,
+        "discovered": 49,
+        "totalActions": 17
+      },
+      "count": "1",
+      "routes": [
+        [
+          "R",
+          "R",
+          "L",
+          "L",
+          "U",
+          "R",
+          "D",
+          "D",
+          "L",
+          "R",
+          "R",
+          "U",
+          "U",
+          "L",
+          "U",
+          "U",
+          "R"
+        ]
+      ]
+    },
+    {
+      "name": "remove-cell-2-3",
+      "mapId": "40c4a034525dda1c1dc7e96bcff1a9a4e34ff0252f0412fb389ae26456c5e737",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 7,
+        "transitions": 35,
+        "discovered": 7,
+        "totalActions": null
+      },
+      "count": "0",
+      "routes": null
+    },
+    {
+      "name": "remove-cell-3-3",
+      "mapId": "da36b044d6f55e6a234a7a0a1864d5dff6812bafbaa0d20d9721a10b93fdc60b",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 46,
+        "transitions": 230,
+        "discovered": 47,
+        "totalActions": 17
+      },
+      "count": "1",
+      "routes": [
+        [
+          "R",
+          "R",
+          "L",
+          "L",
+          "U",
+          "R",
+          "D",
+          "D",
+          "L",
+          "R",
+          "R",
+          "U",
+          "U",
+          "L",
+          "U",
+          "U",
+          "R"
+        ]
+      ]
+    }
+  ],
+  "reachable": {
+    "states": 63,
+    "nonfatalOverlapStates": 0
+  },
+  "humanQuality": null
+}

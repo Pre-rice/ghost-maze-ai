@@ -10,13 +10,13 @@
 
 ## 公开试玩与当前取舍
 
-[鬼迷宫 · 初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)已公开给所有人。目前公开25关，7张课程专用图、18张既有图的复用或课程变式；来源与是否已获评价逐项列在课程表，《对门》明确来自未评价研究稿。均不继承为本次未知规则体验已获好评。
+[鬼迷宫 · 初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)已公开给所有人。目前公开25关，8张课程专用图、17张既有图的复用或课程变式；来源与是否已获评价逐项列在课程表，《对门》明确来自未评价研究稿。均不继承为本次未知规则体验已获好评。
 
 Site项目`appgprj_6adb4b311474819180db83f0509d84e1`；源码在独立Site仓，工作目录`/workspace/sites/ghostmaze-discovery-path`。仅公开稳定ID与正式站游玩入口，不公开解法、规则或设计思想；关序变化保留正在玩的局面。按[课程目录](../examples/discovery-course-20261023/README.md)与其中`course-order.json`推进，ID不是关序。原31关已留档撤下。
 
-- 前五关围绕墙、鬼与普通门形成引离、调位、返回及共同阻路；不恢复逐步执行的观察小关。第五关增加短墙，保留最优及左上调动，整理短试探中的无关合并，见[修订取舍](../examples/discovery-course-20261023/reviews/early-ghost-observation-20261024.md)。首A已改为完整往返，不提前拆掉《错位》《接力》的关键发现。
+- 前五关围绕墙、鬼与普通门形成引离、调位、返回及共同阻路；不恢复逐步执行的观察小关。第五关增加短墙，保留最优及左上调动，整理短试探中的无关合并，见[修订取舍](../examples/discovery-course-20261023/reviews/early-ghost-observation-20261024.md)。首A已改为完整往返。
+- 新关45为13格单A双鬼完整问题，接在首A后，再进入《错位》的A/B；不为困鬼另设短演示。《接力》据此承接已有主动保护与换控制经验，继续两组保护和多鬼准备。75步《换岗》课程适配44撤下，原稿与正式集保持；不是把49步删掉后段的改稿冒称等价优化。[取舍、来源与范围](../examples/discovery-course-20261023/reviews/single-letter-application-20261024.md)。
 - 《暂驻》《再借》《对门》从重新引走推进到借鬼和共同安置。《对门》明确是未评价研究复用。[较后位置的依据](../examples/discovery-course-20261023/reviews/shared-trap-after-recruitment-20261024.md)。
-- 新增《换岗》安静开场课程变式，保留原四条主要最优角色流程；数字门消失后交接保护，再由《换席》让立即关门也不再适合取物。原用户图不改，75步的操作负担仍需真实反馈。[取舍与原图对照](../examples/discovery-course-20261023/reviews/whole-problem-and-two-key-handoff-20261024.md)。
 - 首次方向限制由双端取物小室43承担，替代《归途》的课程位置，要求先为退出准备；不是给旧题前面再加箭头说明关。《归途》的正式图与认可保持。[位置依据](../examples/discovery-course-20261023/reviews/directed-key-chamber-placement-20261024.md)。
 
 《同行》的普通通关与51步优化时机已分开：52步也可在A后召回。下一关仅沿用召回、借鬼与控距，不将最优细节当作必然学过；地图和关序不改。[衔接范围](../examples/discovery-course-20261023/reviews/ordinary-clear-and-optimal-timing-20261024.md)。
@@ -27,7 +27,7 @@ Site项目`appgprj_6adb4b311474819180db83f0509d84e1`；源码在独立Site仓，
 
 25关构造器、现存地图和证书绑定已核对，共同规则锁为`sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0`。全部最优非死亡重合、去终点安全、指定实际中性入场、编号无关及码往返要求分别留证；证据范围见[现版核对](../examples/discovery-course-20261023/certificate-check-redesign-20261023.json)。
 
-本轮新增双钥匙图通过桌面／手机视口正式站真实键盘操作；首A和随后《错位》另完成纯触控仿真与“下一关”切换，见[触控记录](../examples/discovery-course-20261023/touch-letter-check-20261024.json)。这不是实际手机硬件、AI自主试玩或真人学习验收。统一cloud:check已通过两仓、规则锁、原种子及22个HTTP入口；当前环境Node24，未重做Node22验收。Site已原生发布成功，当前版本标识见[发布记录](../examples/discovery-course-20261023/site-publication.json)。
+新单A应用通过桌面键盘及37→45→13连续手机触控，全部玩家与鬼帧同证书，见[当前切换检查](../examples/discovery-course-20261023/single-letter-browser-check-20261024.json)；截图混合流程中首次触控未到达子文档的现象另记，未称本体bug已修复。这不是实际手机硬件、AI自主试玩或真人学习验收。npm test与统一cloud:check通过两仓、规则锁、原种子及22个HTTP入口；当前环境Node24，未重做Node22验收。当前发布版本见[发布记录](../examples/discovery-course-20261023/site-publication.json)。
 
 已另验首关试错：直接撤销死亡、重做死亡、复活后再撤销、一直撤销到开局并继续通关均恢复正确。手机仿真默认展开方向按键会遮住“重做”，拖开后可完成；遮挡未修本体，不能称默认布局验收通过。[实际记录](../examples/discovery-course-20261023/trial-recovery-check-20261024.json)。
 
