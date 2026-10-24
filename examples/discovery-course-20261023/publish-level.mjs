@@ -20,5 +20,5 @@ else{
 }
 assert.equal(qa.boundary.status,'safe');
 const dir=new URL(`./levels/${id}/`,import.meta.url);fs.mkdirSync(dir,{recursive:true});
-for(const [name,data]of Object.entries({'map.json':map,'source.json':{...d,createdOn:'2026-10-23',humanQuality:null,role:'discovery_level_design_not_human_learning_evidence'},'evidence.json':qa,'share.json':{mapCode,replayCode:qa.replayCode,url:`https://ghostmaze.novic.cc/?map=${mapCode}`}}))fs.writeFileSync(new URL(name,dir),JSON.stringify(data,null,2)+'\n');
+for(const [name,data]of Object.entries({'map.json':map,'source.json':{...d,createdOn:d.createdOn??'2026-10-23',humanQuality:null,role:'discovery_level_design_not_human_learning_evidence'},'evidence.json':qa,'share.json':{mapCode,replayCode:qa.replayCode,url:`https://ghostmaze.novic.cc/?map=${mapCode}`}}))fs.writeFileSync(new URL(name,dir),JSON.stringify(data,null,2)+'\n');
 console.log(JSON.stringify({id,cells:map.layers[0].activeCells.flat().filter(Boolean).length,T:qa.allResult.totalActions,routes:qa.count,cold:qa.cold,code:mapCode}));
