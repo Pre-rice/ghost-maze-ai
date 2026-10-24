@@ -14,7 +14,7 @@
 
 Site项目`appgprj_6adb4b311474819180db83f0509d84e1`；源码在独立Site仓，工作目录`/workspace/sites/ghostmaze-discovery-path`。仅公开稳定ID与正式站游玩入口，不公开解法、规则或设计思想；关序变化保留正在玩的局面。按[课程目录](../examples/discovery-course-20261023/README.md)与其中`course-order.json`推进，ID不是关序。原31关已留档撤下。
 
-- 前五关围绕墙、鬼与普通门形成引离、调位、返回及共同阻路；不恢复逐步执行的观察小关。首A已改为完整往返，不提前拆掉《错位》《接力》的关键发现。
+- 前五关围绕墙、鬼与普通门形成引离、调位、返回及共同阻路；不恢复逐步执行的观察小关。第五关增加短墙，保留最优及左上调动，整理短试探中的无关合并，见[修订取舍](../examples/discovery-course-20261023/reviews/early-ghost-observation-20261024.md)。首A已改为完整往返，不提前拆掉《错位》《接力》的关键发现。
 - 《暂驻》《再借》《对门》从重新引走推进到借鬼和共同安置。《对门》明确是未评价研究复用。[较后位置的依据](../examples/discovery-course-20261023/reviews/shared-trap-after-recruitment-20261024.md)。
 - 新增《换岗》安静开场课程变式，保留原四条主要最优角色流程；数字门消失后交接保护，再由《换席》让立即关门也不再适合取物。原用户图不改，75步的操作负担仍需真实反馈。[取舍与原图对照](../examples/discovery-course-20261023/reviews/whole-problem-and-two-key-handoff-20261024.md)。
 - 首次方向限制由双端取物小室43承担，替代《归途》的课程位置，要求先为退出准备；不是给旧题前面再加箭头说明关。《归途》的正式图与认可保持。[位置依据](../examples/discovery-course-20261023/reviews/directed-key-chamber-placement-20261024.md)。

@@ -1,0 +1,90 @@
+{
+  "out": [
+    {
+      "name": "original",
+      "mapId": "59287a625a111f75d5bf8ecf1458429450d00673b492d41f396eda3664847110",
+      "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+      "allReachableNonfatalStates": 77,
+      "nonfatalOverlapWitness": {
+        "actions": [
+          "D",
+          "U",
+          "U",
+          "R",
+          "R",
+          "D",
+          "L"
+        ],
+        "p": [
+          2,
+          2
+        ],
+        "g": [
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      },
+      "upperRightVisitWithoutOverlap": {
+        "target": [
+          4,
+          1
+        ],
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 47,
+          "transitions": 235,
+          "discovered": 47,
+          "totalActions": null
+        },
+        "actions": null
+      }
+    },
+    {
+      "name": "upper-solid",
+      "mapId": "5e815078adb9daa6cf16532590111e6d8c996d092e5b5a24cb156cdb93be7974",
+      "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+      "allReachableNonfatalStates": 27,
+      "nonfatalOverlapWitness": null,
+      "upperRightVisitWithoutOverlap": {
+        "target": [
+          4,
+          1
+        ],
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 47,
+          "transitions": 231,
+          "discovered": 49,
+          "totalActions": 15
+        },
+        "actions": [
+          "U",
+          "R",
+          "R",
+          "R",
+          "L",
+          "L",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "D",
+          "R",
+          "R",
+          "U"
+        ]
+      }
+    }
+  ],
+  "allOriginalOptimalPlayerGhostFramesEqual": true,
+  "scope": "穷尽当前原图到实际通关前的非致死局面；只是本轮前段设计选择，不将全部错路都无重合设为通用验收边界，也没有真人反馈"
+}

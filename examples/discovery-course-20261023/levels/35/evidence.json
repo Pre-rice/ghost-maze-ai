@@ -1,12 +1,12 @@
 {
-  "mapId": "59287a625a111f75d5bf8ecf1458429450d00673b492d41f396eda3664847110",
+  "mapId": "5e815078adb9daa6cf16532590111e6d8c996d092e5b5a24cb156cdb93be7974",
   "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
   "reference": {
     "schemaVersion": 1,
     "status": "solved",
     "reason": "goal_reached",
     "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
-    "mapId": "59287a625a111f75d5bf8ecf1458429450d00673b492d41f396eda3664847110",
+    "mapId": "5e815078adb9daa6cf16532590111e6d8c996d092e5b5a24cb156cdb93be7974",
     "scope": {
       "gameMode": "death-loop",
       "objective": "zero_hit_no_revive",
@@ -35,11 +35,11 @@
       "movementCost": 7
     },
     "search": {
-      "expanded": 31,
-      "transitions": 151,
-      "discovered": 39,
+      "expanded": 23,
+      "transitions": 111,
+      "discovered": 25,
       "exhausted": false,
-      "elapsedMs": 8.841711000000004,
+      "elapsedMs": 4.226103999999992,
       "budget": {
         "nodeBudget": 1000000,
         "stateBudget": 1000000,
@@ -52,7 +52,7 @@
     "status": "solved",
     "reason": "goal_reached",
     "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
-    "mapId": "59287a625a111f75d5bf8ecf1458429450d00673b492d41f396eda3664847110",
+    "mapId": "5e815078adb9daa6cf16532590111e6d8c996d092e5b5a24cb156cdb93be7974",
     "scope": {
       "gameMode": "death-loop",
       "objective": "zero_hit_no_revive",
@@ -83,11 +83,11 @@
     },
     "search": {
       "algorithm": "astar",
-      "expanded": 11,
-      "transitions": 55,
-      "discovered": 19,
+      "expanded": 10,
+      "transitions": 50,
+      "discovered": 16,
       "exhausted": false,
-      "elapsedMs": 2.71042700000001,
+      "elapsedMs": 2.1261769999999984,
       "budget": {
         "nodeBudget": 1000000,
         "stateBudget": 1000000,
@@ -98,60 +98,25 @@
   "allResult": {
     "status": "solved",
     "reason": "goal_reached",
-    "expanded": 31,
-    "transitions": 155,
-    "discovered": 39,
+    "expanded": 23,
+    "transitions": 115,
+    "discovered": 25,
     "totalActions": 7
   },
   "count": "1",
   "boundary": {
     "status": "safe",
     "reason": "all_optimal_routes_avoid_overlap",
-    "mapId": "59287a625a111f75d5bf8ecf1458429450d00673b492d41f396eda3664847110",
+    "mapId": "5e815078adb9daa6cf16532590111e6d8c996d092e5b5a24cb156cdb93be7974",
     "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
     "policy": "all_optimal_routes_avoid_overlap_v2",
     "glassCount": 0,
-    "expanded": 31,
-    "transitions": 155,
-    "discovered": 38,
+    "expanded": 23,
+    "transitions": 115,
+    "discovered": 24,
     "optimum": 7,
     "ignoredFatalOverlap": 0,
-    "observedNonFatalOverlap": {
-      "witness": [
-        "D",
-        "U",
-        "U",
-        "R",
-        "R",
-        "D",
-        "L"
-      ],
-      "conflict": {
-        "target": {
-          "x": 3,
-          "y": 2
-        },
-        "contenders": [
-          {
-            "from": {
-              "x": 3,
-              "y": 1
-            },
-            "seesAfter": false
-          },
-          {
-            "from": {
-              "x": 3,
-              "y": 3
-            },
-            "seesAfter": false
-          }
-        ],
-        "decision": "equal_priority_overlap",
-        "capturesPlayer": false,
-        "layer": 0
-      }
-    },
+    "observedNonFatalOverlap": null,
     "safeOptimalWitness": [
       "D",
       "U",
@@ -161,7 +126,7 @@
       "R",
       "U"
     ],
-    "elapsedMs": 4,
+    "elapsedMs": 2,
     "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
   },
   "cold": true,
@@ -203,15 +168,15 @@
     "wholeOptimalRoutesInteriorEqual": true
   },
   "physicalAudit": {
-    "reachable": 77,
-    "transitions": 375,
+    "reachable": 27,
+    "transitions": 130,
     "permutations": 2,
-    "compared": 750,
+    "compared": 260,
     "includesFatalActions": true
   },
   "noEndSafeRoutes": 1,
-  "mapCode": "AADAAPDw8CAgAAF0gNaACqAQAFIAAgAAAAIQRQQgKAUAAAA",
-  "replayCode": "CHJN9RRN8A",
+  "mapCode": "AADAAPDw8CAgAAF0gNaACqAoACkAAQAAAAEIIoIQFAKAAAA",
+  "replayCode": "CD6rXlxN8A",
   "actions": [
     "D",
     "U",
@@ -232,7 +197,7 @@
         "R",
         "U"
       ],
-      "replayCode": "CHJN9RRN8A",
+      "replayCode": "CD6rXlxN8A",
       "controls": [],
       "trace": [
         {
