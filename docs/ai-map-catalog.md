@@ -6,6 +6,8 @@
 
 2026-10-24首次A已由九格一次关门图改为十格完整往返，仍是第六关、不增加关数；旧稿与只开一次A绕行的反例都保留，见[修订依据](../examples/discovery-course-20261023/reviews/first-letter-full-detour-20261024.md)。正式地图集不变，课程新稿仍未获真人评价。
 
+首次方向限制改为20格的双端取物小室，替代《归途》在试验线路的位置，关数仍24；[来源与对照](../examples/discovery-course-20261023/levels/43/source.json) · [关序依据](../examples/discovery-course-20261023/reviews/directed-key-chamber-placement-20261024.md)。新题只进入公开试验课程，不是正式入集。《归途》的认可与正式原码保持，不转移给新图。
+
 ## 2026-10-23 三图否定反馈与地图设计暂停
 
 用户整体否定《回流》《换庭》《进退》：结构简单、相比以往退步，大量冗余、大片空白及长直走廊难看，单向门没有发挥特别作用。**三图不入集，不计新意进展；当前阶段收尾后停止地图设计，等待新的工作。** [实际反馈及原件归属](../data/manifests/oneway-three-review-20261023.json) · [判断修正与收尾](archive/research/oneway-review-and-stage-close-20261023.md)。评价是三图整体反馈，不补写逐图路线、用时或提示条件。原图、来源与机械证据保持；下列设计预期是当时假说，不是获认可的体验。

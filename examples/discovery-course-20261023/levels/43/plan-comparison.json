@@ -1,0 +1,75 @@
+{
+  "mapId": "b6b1859aa0c646059039650a14770ce9d4dea0aa108e5a4213c3fb87d53ac8a6",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "ordinaryEntrance": {
+    "mapId": "c1c95463e5209f5bd85a74bfcc3bcd3ba6430b41b60634e0f5eb28c61b524642",
+    "status": "solved",
+    "T": 18,
+    "actions": [
+      "U",
+      "R",
+      "L",
+      "D",
+      "R",
+      "U",
+      "U",
+      "U",
+      "U",
+      "L",
+      "L",
+      "R",
+      "R",
+      "R",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    "leftGhostNeverMoves": true,
+    "noEndSafe": true,
+    "scope": "只改小室入口为普通门，独立重新查询，不把改图事实冒作原图事件"
+  },
+  "wrongOriginalPlan": {
+    "prefix": [
+      "U",
+      "R",
+      "L",
+      "D",
+      "R",
+      "U",
+      "U",
+      "U",
+      "U",
+      "L",
+      "L"
+    ],
+    "at": {
+      "player": [
+        0,
+        0
+      ],
+      "keys": 1,
+      "ghosts": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          4
+        ]
+      ]
+    },
+    "result": {
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "expanded": 2,
+      "transitions": 10,
+      "discovered": 2,
+      "totalActions": null
+    },
+    "scope": "原图这个拿到钥匙后的安全局面已经没有无伤续解，不声称所有先右后左都对应同一条路线"
+  },
+  "humanQuality": null,
+  "scope": "设计者的实际计划与原生反例，不是人类操作或尤里卡证据"
+}
