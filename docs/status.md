@@ -19,6 +19,8 @@ Site项目`appgprj_6adb4b311474819180db83f0509d84e1`；源码在独立Site仓，
 - 《暂驻》《再借》《对门》从重新引走推进到借鬼和共同安置。《对门》明确是未评价研究复用。[较后位置的依据](../examples/discovery-course-20261023/reviews/shared-trap-after-recruitment-20261024.md)。
 - 首次方向限制改用19格新关46：两个相反接口支持两类停位与对应回程，替换此前43的小室稿。原稿、正式《归途》及其认可保持，不额外叠箭头说明关。存在同16步无实际互挡方案，故不强称借鬼必学。[当前取舍及反例](../examples/discovery-course-20261023/reviews/directional-flow-20261024.md)。
 
+《侧入》用18格双鬼变式替换同一位置，删去独立的首鬼前置，保留由终局倒推接近侧；首次完整三鬼任务留给《同行》。[取舍及后缀对应范围](../examples/discovery-course-20261023/reviews/side-entry-focus-20261024.md)。
+
 《同行》的普通通关与51步优化时机已分开：52步也可在A后召回。下一关仅沿用召回、借鬼与控距，不将最优细节当作必然学过；地图和关序不改。[衔接范围](../examples/discovery-course-20261023/reviews/ordinary-clear-and-optimal-timing-20261024.md)。
 
 这些是设计假说，仍缺真正未知规则玩家的尝试过程：首次按钮是否易于发现、关键跨度和后段重复感如何。没有补写评分、用时、提示或尤里卡记录，不将来源图好评转移给新变式或关序。
@@ -30,6 +32,8 @@ Site项目`appgprj_6adb4b311474819180db83f0509d84e1`；源码在独立Site仓，
 新单A应用通过桌面键盘及37→45→13连续手机触控，全部玩家与鬼帧同证书，见[当前切换检查](../examples/discovery-course-20261023/single-letter-browser-check-20261024.json)；截图混合流程中首次触控未到达子文档的现象另记，未称本体bug已修复。这不是实际手机硬件、AI自主试玩或真人学习验收。npm test与统一cloud:check通过两仓、规则锁、原种子及22个HTTP入口；当前环境Node24，未重做Node22验收。当前发布版本见[发布记录](../examples/discovery-course-20261023/site-publication.json)。
 
 方向关46另通过两套不同准备的桌面／纯触控16步、全部玩家与鬼帧及到《侧入》的换关首触；截图另开上下文并已查看两端地图。新改动后的npm test、cloud:check及25关证书绑定复核均通过。[当前方向关验收](../examples/discovery-course-20261023/directional-flow-browser-check-20261024.json)。
+
+《侧入》聚焦变式另通过两端23步及46→47→27纯触控换关，全部玩家与鬼帧一致；本次npm test、cloud:check与25关绑定复核通过。[当前检查](../examples/discovery-course-20261023/side-entry-browser-check-20261024.json)。
 
 已另验首关试错：直接撤销死亡、重做死亡、复活后再撤销、一直撤销到开局并继续通关均恢复正确。手机仿真默认展开方向按键会遮住“重做”，拖开后可完成；遮挡未修本体，不能称默认布局验收通过。[实际记录](../examples/discovery-course-20261023/trial-recovery-check-20261024.json)。
 

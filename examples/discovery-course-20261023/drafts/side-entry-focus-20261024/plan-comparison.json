@@ -1,0 +1,252 @@
+{
+  "sourceId": "39",
+  "mapId": "9091cea4a3e66aaa439ef1c646efdfe1b7f83db34fa3b0c8543166e8a30777c9",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "queries": {
+    "target-never-moves-left-of-entry": {
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 175,
+        "transitions": 875,
+        "discovered": 175,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    "left-ghost-never-moves": {
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 31,
+        "transitions": 155,
+        "discovered": 31,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    "never-use-left-ordinary-door": {
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 57,
+        "transitions": 285,
+        "discovered": 57,
+        "totalActions": null
+      },
+      "actions": null
+    }
+  },
+  "reductions": [
+    {
+      "name": "remove-left-ghost",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 121,
+        "transitions": 602,
+        "discovered": 130,
+        "totalActions": 21
+      },
+      "actions": [
+        "U",
+        "D",
+        "L",
+        "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "U",
+        "U",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R",
+        "R",
+        "U",
+        "L",
+        "U",
+        "R",
+        "R"
+      ]
+    },
+    {
+      "name": "left-ordinary-to-empty",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 137,
+        "transitions": 685,
+        "discovered": 137,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "name": "entry-letter-to-ordinary",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 216,
+        "transitions": 1080,
+        "discovered": 216,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "name": "goal-letter-to-empty",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 120,
+        "transitions": 597,
+        "discovered": 133,
+        "totalActions": 16
+      },
+      "actions": [
+        "L",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "R"
+      ]
+    }
+  ],
+  "referenceSuffixMapping": {
+    "oldPrefixRemoved": 14,
+    "mapped": [
+      {
+        "oldStep": 15,
+        "newStep": 1,
+        "action": "U"
+      },
+      {
+        "oldStep": 16,
+        "newStep": 2,
+        "action": "D"
+      },
+      {
+        "oldStep": 17,
+        "newStep": 3,
+        "action": "L"
+      },
+      {
+        "oldStep": 18,
+        "newStep": 4,
+        "action": "D"
+      },
+      {
+        "oldStep": 19,
+        "newStep": 5,
+        "action": "L"
+      },
+      {
+        "oldStep": 20,
+        "newStep": 6,
+        "action": "L"
+      },
+      {
+        "oldStep": 21,
+        "newStep": 7,
+        "action": "L"
+      },
+      {
+        "oldStep": 22,
+        "newStep": 8,
+        "action": "L"
+      },
+      {
+        "oldStep": 23,
+        "newStep": 9,
+        "action": "U"
+      },
+      {
+        "oldStep": 24,
+        "newStep": 10,
+        "action": "U"
+      },
+      {
+        "oldStep": 25,
+        "newStep": 11,
+        "action": "R"
+      },
+      {
+        "oldStep": 26,
+        "newStep": 12,
+        "action": "D"
+      },
+      {
+        "oldStep": 27,
+        "newStep": 13,
+        "action": "L"
+      },
+      {
+        "oldStep": 28,
+        "newStep": 14,
+        "action": "D"
+      },
+      {
+        "oldStep": 29,
+        "newStep": 15,
+        "action": "R"
+      },
+      {
+        "oldStep": 30,
+        "newStep": 16,
+        "action": "R"
+      },
+      {
+        "oldStep": 31,
+        "newStep": 17,
+        "action": "R"
+      },
+      {
+        "oldStep": 32,
+        "newStep": 18,
+        "action": "R"
+      },
+      {
+        "oldStep": 33,
+        "newStep": 19,
+        "action": "U"
+      },
+      {
+        "oldStep": 34,
+        "newStep": 20,
+        "action": "L"
+      },
+      {
+        "oldStep": 35,
+        "newStep": 21,
+        "action": "U"
+      },
+      {
+        "oldStep": 36,
+        "newStep": 22,
+        "action": "R"
+      },
+      {
+        "oldStep": 37,
+        "newStep": 23,
+        "action": "R"
+      }
+    ],
+    "remainingPlayerAndGhostFramesEqual": true,
+    "scope": "仅原37步最优后23步，不声称全部探索等价"
+  },
+  "humanQuality": null
+}
