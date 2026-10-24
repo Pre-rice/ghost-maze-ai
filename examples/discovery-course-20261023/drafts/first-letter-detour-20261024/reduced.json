@@ -1,0 +1,1922 @@
+{
+  "card": {
+    "goal": "到达左下方目标，守卫堵在已经开放的近入口后面",
+    "knownPlan": "看见开放通路就进去，或者按按钮开路后直接走向目标",
+    "contradiction": "近入口虽已开放但无法接近守卫；要打开远端诱导通路，反而必须先关闭眼前通路",
+    "intendedRevision": "先改变门态把守卫引出，再利用已熟悉的普通门脱离追击，回到同一按钮重新开放近路",
+    "visibleBasis": "一个A按钮、两扇反相A门、一普通门和一个守卫；不用B、钥匙或原地推进谜题来堆叠首次字母机关",
+    "scope": "替代首次字母图的完整问题候选，不是要求关门两次的演示；需要实际反例和精简检查"
+  },
+  "params": {
+    "start": [
+      2,
+      3
+    ],
+    "end": [
+      0,
+      3
+    ],
+    "ghosts": [
+      [
+        0,
+        2
+      ]
+    ],
+    "buttons": [
+      [
+        1,
+        1,
+        0,
+        -1,
+        "A"
+      ]
+    ],
+    "edges": [
+      [
+        "v",
+        1,
+        0,
+        6,
+        {
+          "letter": "A",
+          "initialState": "closed"
+        }
+      ],
+      [
+        "v",
+        1,
+        1,
+        6,
+        {
+          "letter": "A",
+          "initialState": "open"
+        }
+      ],
+      [
+        "v",
+        1,
+        2,
+        1
+      ],
+      [
+        "v",
+        1,
+        3,
+        1
+      ],
+      [
+        "h",
+        1,
+        1,
+        1
+      ],
+      [
+        "h",
+        1,
+        2,
+        2
+      ]
+    ]
+  },
+  "map": {
+    "width": 8,
+    "height": 8,
+    "editorMode": "free",
+    "gameMode": "death-loop",
+    "initialHealth": 5,
+    "multiLayerMode": false,
+    "layerCount": 1,
+    "layers": [
+      {
+        "hWalls": [
+          [
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 2,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ]
+        ],
+        "vWalls": [
+          [
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 6,
+              "keys": 0,
+              "letter": "A",
+              "initialState": "closed"
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 6,
+              "keys": 0,
+              "letter": "A",
+              "initialState": "open"
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ]
+        ],
+        "activeCells": [
+          [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "ghosts": [
+          {
+            "x": 0,
+            "y": 2,
+            "id": 0
+          }
+        ],
+        "items": [],
+        "buttons": [
+          {
+            "x": 1,
+            "y": 1,
+            "direction": {
+              "dx": 0,
+              "dy": -1
+            },
+            "letter": "A"
+          }
+        ],
+        "endPos": {
+          "x": 0,
+          "y": 3
+        },
+        "customStartPos": {
+          "x": 2,
+          "y": 3
+        }
+      }
+    ],
+    "stairs": []
+  },
+  "result": {
+    "status": "solved",
+    "reason": "goal_reached",
+    "expanded": 45,
+    "transitions": 225,
+    "discovered": 49,
+    "totalActions": 18
+  },
+  "routes": [
+    [
+      "U",
+      "U",
+      "L",
+      "U",
+      "R",
+      "U",
+      "L",
+      "L",
+      "R",
+      "R",
+      "D",
+      "D",
+      "L",
+      "U",
+      "U",
+      "L",
+      "D",
+      "D"
+    ],
+    [
+      "U",
+      "L",
+      "U",
+      "U",
+      "R",
+      "U",
+      "L",
+      "L",
+      "R",
+      "R",
+      "D",
+      "D",
+      "L",
+      "U",
+      "U",
+      "L",
+      "D",
+      "D"
+    ],
+    [
+      "L",
+      "U",
+      "U",
+      "U",
+      "R",
+      "U",
+      "L",
+      "L",
+      "R",
+      "R",
+      "D",
+      "D",
+      "L",
+      "U",
+      "U",
+      "L",
+      "D",
+      "D"
+    ]
+  ],
+  "count": "3",
+  "boundary": {
+    "status": "safe",
+    "reason": "all_optimal_routes_avoid_overlap",
+    "mapId": "85b2be96f58ab7a7d8019b5340b1049ab9d0c7c2d40bdaa1053f705da16e4940",
+    "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+    "policy": "all_optimal_routes_avoid_overlap_v2",
+    "glassCount": 0,
+    "expanded": 45,
+    "transitions": 225,
+    "discovered": 48,
+    "optimum": 18,
+    "ignoredFatalOverlap": 0,
+    "observedNonFatalOverlap": null,
+    "safeOptimalWitness": [
+      "U",
+      "U",
+      "L",
+      "U",
+      "R",
+      "U",
+      "L",
+      "L",
+      "R",
+      "R",
+      "D",
+      "D",
+      "L",
+      "U",
+      "U",
+      "L",
+      "D",
+      "D"
+    ],
+    "elapsedMs": 7,
+    "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+  },
+  "controls": [
+    [
+      {
+        "step": 4,
+        "action": "U",
+        "player": [
+          1,
+          1
+        ],
+        "ghost": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        "step": 15,
+        "action": "U",
+        "player": [
+          1,
+          1
+        ],
+        "ghost": [
+          [
+            1,
+            2
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "step": 4,
+        "action": "U",
+        "player": [
+          1,
+          1
+        ],
+        "ghost": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        "step": 15,
+        "action": "U",
+        "player": [
+          1,
+          1
+        ],
+        "ghost": [
+          [
+            1,
+            2
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "step": 4,
+        "action": "U",
+        "player": [
+          1,
+          1
+        ],
+        "ghost": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        "step": 15,
+        "action": "U",
+        "player": [
+          1,
+          1
+        ],
+        "ghost": [
+          [
+            1,
+            2
+          ]
+        ]
+      }
+    ]
+  ],
+  "atMostOnePress": {
+    "status": "solved",
+    "reason": "goal_reached",
+    "expanded": 45,
+    "transitions": 223,
+    "discovered": 47,
+    "totalActions": 21
+  },
+  "ordinaryToOpen": {
+    "map": {
+      "width": 8,
+      "height": 8,
+      "editorMode": "free",
+      "gameMode": "death-loop",
+      "initialHealth": 5,
+      "multiLayerMode": false,
+      "layerCount": 1,
+      "layers": [
+        {
+          "hWalls": [
+            [
+              {
+                "type": 1,
+                "keys": 0
+              },
+              {
+                "type": 1,
+                "keys": 0
+              },
+              {
+                "type": 1,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 1,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0
+              },
+              {
+                "type": 1,
+                "keys": 0
+              },
+              {
+                "type": 1,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              }
+            ]
+          ],
+          "vWalls": [
+            [
+              {
+                "type": 1,
+                "keys": 0
+              },
+              {
+                "type": 6,
+                "keys": 0,
+                "letter": "A",
+                "initialState": "closed"
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 1,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0
+              },
+              {
+                "type": 6,
+                "keys": 0,
+                "letter": "A",
+                "initialState": "open"
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 1,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0
+              },
+              {
+                "type": 1,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 1,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              }
+            ],
+            [
+              {
+                "type": 1,
+                "keys": 0
+              },
+              {
+                "type": 1,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 1,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              }
+            ],
+            [
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              },
+              {
+                "type": 0,
+                "keys": 0
+              }
+            ]
+          ],
+          "activeCells": [
+            [
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ]
+          ],
+          "ghosts": [
+            {
+              "x": 0,
+              "y": 2,
+              "id": 0
+            }
+          ],
+          "items": [],
+          "buttons": [
+            {
+              "x": 1,
+              "y": 1,
+              "direction": {
+                "dx": 0,
+                "dy": -1
+              },
+              "letter": "A"
+            }
+          ],
+          "endPos": {
+            "x": 0,
+            "y": 3
+          },
+          "customStartPos": {
+            "x": 2,
+            "y": 3
+          }
+        }
+      ],
+      "stairs": []
+    },
+    "result": {
+      "status": "solved",
+      "reason": "goal_reached",
+      "expanded": 39,
+      "transitions": 195,
+      "discovered": 40,
+      "totalActions": 21
+    },
+    "routes": [
+      [
+        "U",
+        "U",
+        "L",
+        "U",
+        "R",
+        "U",
+        "L",
+        "L",
+        "R",
+        "R",
+        "D",
+        "D",
+        "L",
+        "U",
+        "R",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "U",
+        "L",
+        "U",
+        "U",
+        "R",
+        "U",
+        "L",
+        "L",
+        "R",
+        "R",
+        "D",
+        "D",
+        "L",
+        "U",
+        "R",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "L",
+        "U",
+        "U",
+        "U",
+        "R",
+        "U",
+        "L",
+        "L",
+        "R",
+        "R",
+        "D",
+        "D",
+        "L",
+        "U",
+        "R",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "U",
+        "U",
+        "L",
+        "U",
+        "R",
+        "U",
+        "L",
+        "L",
+        "R",
+        "R",
+        "D",
+        "L",
+        "D",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "U",
+        "L",
+        "U",
+        "U",
+        "R",
+        "U",
+        "L",
+        "L",
+        "R",
+        "R",
+        "D",
+        "L",
+        "D",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D"
+      ],
+      [
+        "L",
+        "U",
+        "U",
+        "U",
+        "R",
+        "U",
+        "L",
+        "L",
+        "R",
+        "R",
+        "D",
+        "L",
+        "D",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D"
+      ]
+    ]
+  },
+  "changeReason": "开放控制点右侧墙，省掉第一次操作后从下方绕出的两步；所有新最优仍先关闭近路、引出守卫、返回后再次切换。只保留按钮所需依附墙及实际分隔。",
+  "humanQuality": null
+}
