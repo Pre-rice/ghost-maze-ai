@@ -1,0 +1,168 @@
+{
+  "mapId": "aadd2d33ed90b6f52017f1600c4c56a31e889c2a2052b415cf121b907d7820b2",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "role": "原图含来源角色的事件查询，不把编号写入物理规则；非真人体验",
+  "humanQuality": null,
+  "tests": {
+    "noRightPrepBeforeKey": {
+      "mapId": "aadd2d33ed90b6f52017f1600c4c56a31e889c2a2052b415cf121b907d7820b2",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 33,
+        "transitions": 165,
+        "discovered": 33,
+        "totalActions": null
+      },
+      "actions": null,
+      "noEndSafe": null
+    },
+    "noRightPrepBeforeOpening": {
+      "mapId": "aadd2d33ed90b6f52017f1600c4c56a31e889c2a2052b415cf121b907d7820b2",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 80,
+        "transitions": 397,
+        "discovered": 81,
+        "totalActions": 18
+      },
+      "actions": [
+        "L",
+        "R",
+        "D",
+        "U",
+        "L",
+        "L",
+        "R",
+        "U",
+        "U",
+        "L",
+        "D",
+        "R",
+        "D",
+        "R",
+        "R",
+        "R",
+        "D",
+        "R"
+      ],
+      "noEndSafe": true
+    },
+    "noLeftLeavesRoom": {
+      "mapId": "aadd2d33ed90b6f52017f1600c4c56a31e889c2a2052b415cf121b907d7820b2",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 85,
+        "transitions": 425,
+        "discovered": 85,
+        "totalActions": null
+      },
+      "actions": null,
+      "noEndSafe": null
+    },
+    "ordinaryKeyFirst": {
+      "mapId": "f071c8c276f263e9b4a7c6a0bdcedb189a2c103f45fe4902cda0c023bd06b674",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 34,
+        "transitions": 167,
+        "discovered": 36,
+        "totalActions": 16
+      },
+      "actions": [
+        "L",
+        "L",
+        "R",
+        "U",
+        "U",
+        "L",
+        "D",
+        "R",
+        "D",
+        "R",
+        "D",
+        "U",
+        "R",
+        "R",
+        "D",
+        "R"
+      ],
+      "noEndSafe": true
+    }
+  },
+  "keyFirst": {
+    "prefix": [
+      "L",
+      "L",
+      "R",
+      "U",
+      "U"
+    ],
+    "p": [
+      1,
+      1
+    ],
+    "ghosts": [
+      [
+        1,
+        2
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "keys": 1,
+    "continuation": {
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "expanded": 17,
+      "transitions": 85,
+      "discovered": 17,
+      "totalActions": null
+    }
+  },
+  "earlyPeek": {
+    "prefix": [
+      "L",
+      "R",
+      "D",
+      "U"
+    ],
+    "zeroOpened": true,
+    "rightGuard": [
+      2,
+      4
+    ],
+    "result": {
+      "status": "solved",
+      "reason": "goal_reached",
+      "expanded": 48,
+      "transitions": 237,
+      "discovered": 49,
+      "totalActions": 14
+    },
+    "actions": [
+      "L",
+      "L",
+      "R",
+      "U",
+      "U",
+      "L",
+      "D",
+      "R",
+      "D",
+      "R",
+      "R",
+      "R",
+      "D",
+      "R"
+    ],
+    "scope": "可先过0探看再返回准备；不是一进门就失去全部后路。"
+  },
+  "allOptimalNoEndSafe": 3,
+  "roleKey": "完整物理键另带原右鬼坐标，避免按无编号位置排序时丢失事件的来源角色；物理规则仍编号无关。"
+}

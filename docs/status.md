@@ -10,7 +10,7 @@
 
 ## 公开试玩与当前取舍
 
-[鬼迷宫 · 初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)已公开给所有人。目前公开30关，12张课程专用图、18张既有图的复用或课程变式；来源与是否已获评价逐项列在课程表，《对门》《逆渡》明确来自未评价研究稿。均不继承为本次未知规则体验已获好评。
+[鬼迷宫 · 初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)已公开给所有人。目前公开31关，13张课程专用图、18张既有图的复用或课程变式；来源与是否已获评价逐项列在课程表，《对门》《逆渡》明确来自未评价研究稿。均不继承为本次未知规则体验已获好评。
 
 Site项目`appgprj_6adb4b311474819180db83f0509d84e1`；源码在独立Site仓，工作目录`/workspace/sites/ghostmaze-discovery-path`。仅公开稳定ID与正式站游玩入口，不公开解法、规则或设计思想；关序变化保留正在玩的局面。按[课程目录](../examples/discovery-course-20261023/README.md)与其中`course-order.json`推进，ID不是关序。原31关已留档撤下。
 
@@ -19,7 +19,9 @@ Site项目`appgprj_6adb4b311474819180db83f0509d84e1`；源码在独立Site仓，
 - 《暂驻》《再借》《对门》从重新引走推进到借鬼和共同安置。《对门》明确是未评价研究复用。[较后位置的依据](../examples/discovery-course-20261023/reviews/shared-trap-after-recruitment-20261024.md)。
 - 首次方向改用11格无鬼控制室50：在室内关回B重新接通外部，再经单向口出来；随后46继续同种元件与双鬼停位、取物回程。50不是最高难度突破，是否显教学仍待真人；46存在同16步无实际互挡方案，不强称借鬼必学。原43、正式《归途》及其认可保持。[当前取舍](../examples/discovery-course-20261023/reviews/control-circuit-20261025.md)。
 
-第14关复用25格逆渡研究稿52，接在暂驻与再借之间：首次开0须从上方并先于取物；也有24步不使用优先争位的普通通关，不要求提前掌握主动借鬼。当前22步、24种轨迹及完整实际入场复验通过，原研究与正式集保持。[取舍与原图查询](../examples/discovery-course-20261023/reviews/zero-opening-application-20261025.md)。
+第13关新增13格53，作为首次0的完整问题：先取近钥匙会把追者带回中部，堵住远端准备的出口。可先探0再退回准备，必要的是取钥匙前的安排；之后暂驻与逆渡继续同一0门。16步三种鬼轨迹，不称挑战突破。[设计与实际反例](../examples/discovery-course-20261023/reviews/before-key-entry-20261025.md)。
+
+第15关复用25格逆渡研究稿52，接在暂驻与再借之间：首次开0须从上方并先于取物；也有24步不使用优先争位的普通通关，不要求提前掌握主动借鬼。当前22步、24种轨迹及完整实际入场复验通过，原研究与正式集保持。[取舍与原图查询](../examples/discovery-course-20261023/reviews/zero-opening-application-20261025.md)。
 
 新增15格无鬼控制访问题51，接在46与《侧入》之间：A会关住内B入口，取物前先准备B，带钥匙回来再恢复A；不把同一次序照走两遍。两个方向口各有具体进出作用，未采用给旧控制室机械加鬼的稿。[当前取舍](../examples/discovery-course-20261023/reviews/controller-access-20261025.md)。
 
@@ -41,9 +43,11 @@ Site项目`appgprj_6adb4b311474819180db83f0509d84e1`；源码在独立Site仓，
 
 ## 当前验收与基线
 
-30关构造器、现存地图和证书绑定已核对，共同规则锁为`sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0`。全部最优重合边界、去终点安全、指定实际中性入场及码往返分别留证；有鬼图另验编号无关，无鬼50、51不冒称编号试验；证据范围见[现版核对](../examples/discovery-course-20261023/certificate-check-redesign-20261023.json)。
+31关构造器、现存地图和证书绑定已核对，共同规则锁为`sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0`。全部最优重合边界、去终点安全、指定实际中性入场及码往返分别留证；有鬼图另验编号无关，无鬼50、51不冒称编号试验；证据范围见[现版核对](../examples/discovery-course-20261023/certificate-check-redesign-20261023.json)。
 
-当前30关的物理证书绑定通过；加入52后的npm test与cloud:check通过两仓、规则锁、原种子及22个HTTP入口。当前环境Node24，未重做Node22验收；发布版本见[发布记录](../examples/discovery-course-20261023/site-publication.json)。
+当前31关的物理证书绑定通过；加入53后的npm test与cloud:check通过两仓、规则锁、原种子及22个HTTP入口。当前环境Node24，未重做Node22验收；发布版本见[发布记录](../examples/discovery-course-20261023/site-publication.json)。
+
+53另过[桌面16步、手机先探0的18步及38→53→41切换](../examples/discovery-course-20261023/before-key-entry-browser-check-20261025.json)，全部资源、墙态与角色帧一致；0门撤销重做、重置撤销重做及三解回放切换通过。
 
 52另过[桌面22步与手机24步普通方案](../examples/discovery-course-20261023/zero-opening-browser-check-20261025.json)，全部资源、门态与角色帧一致；0门撤销／重做、求解22步／24类、回放切换24解及41→52→18换关通过。只是工程验收，不是真人未知规则记录。
 
