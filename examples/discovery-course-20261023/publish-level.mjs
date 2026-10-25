@@ -7,16 +7,17 @@ import {auditEntry as auditSharedTrapEntry} from '../shared-trap-20261019/verify
 import {assertExterior} from '../spatial-clearance-20261019/verify.mjs';
 import {DataSerializer} from '../../src/reference/engine.js';
 import {auditEntryPath} from './entry-path.mjs';
+import {auditMultilayerMap} from './multilayer-audit.mjs';
 const id=process.argv[2];const d=definitions.find(x=>x.id===id);assert(d);
 const map=buildLevel(id);assertExterior(map);const encoded=DataSerializer.generateShareCode(map);assert(encoded.success);
 const mapCode=sourceMapCode(id)??encoded.code;
 let qa;
 const ghostCount=map.layers[0].ghosts.length;
-qa=(ghostCount===0||ghostCount>3?auditMoreGhosts:auditMap)(map,mapCode);
+qa=(map.layers.length>1?auditMultilayerMap:ghostCount===0||ghostCount>3?auditMoreGhosts:auditMap)(map,mapCode);
 if(ghostCount===0)qa.physicalAudit.ghostPermutationCheck='not_applicable_no_ghosts';
 assert.equal(qa.boundary.status,'safe');
 if(d.neutralEntry==='shared-trap-20261019')qa.entry=auditSharedTrapEntry(map,qa.routes);
 if(d.entryPath){qa.localAdjacentEntry=qa.entry;qa.entry=auditEntryPath(map,qa.routes,d.entryPath);}
 const dir=new URL(`./levels/${id}/`,import.meta.url);fs.mkdirSync(dir,{recursive:true});
 for(const [name,data]of Object.entries({'map.json':map,'source.json':{...d,createdOn:d.createdOn??'2026-10-23',humanQuality:null,role:'discovery_level_design_not_human_learning_evidence'},'evidence.json':qa,'share.json':{mapCode,replayCode:qa.replayCode,url:`https://ghostmaze.novic.cc/?map=${mapCode}`}}))fs.writeFileSync(new URL(name,dir),JSON.stringify(data,null,2)+'\n');
-console.log(JSON.stringify({id,cells:map.layers[0].activeCells.flat().filter(Boolean).length,T:qa.allResult.totalActions,routes:qa.count,cold:qa.cold,code:mapCode}));
+console.log(JSON.stringify({id,cells:map.layers.flatMap(l=>l.activeCells.flat()).filter(Boolean).length,T:qa.allResult.totalActions,routes:qa.count,cold:qa.cold,code:mapCode}));

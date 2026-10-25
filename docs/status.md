@@ -10,7 +10,7 @@
 
 ## 公开试玩与当前取舍
 
-[鬼迷宫 · 初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)已公开给所有人。目前公开31关，13张课程专用图、18张既有图的复用或课程变式；来源与是否已获评价逐项列在课程表，《对门》《逆渡》明确来自未评价研究稿。均不继承为本次未知规则体验已获好评。
+[鬼迷宫 · 初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)已公开给所有人。目前公开32关，14张课程专用图、18张既有图的复用或课程变式；来源与是否已获评价逐项列在课程表，《对门》《逆渡》明确来自未评价研究稿。均不继承为本次未知规则体验已获好评。
 
 Site项目`appgprj_6adb4b311474819180db83f0509d84e1`；源码在独立Site仓，工作目录`/workspace/sites/ghostmaze-discovery-path`。仅公开稳定ID与正式站游玩入口，不公开解法、规则或设计思想；关序变化保留正在玩的局面。按[课程目录](../examples/discovery-course-20261023/README.md)与其中`course-order.json`推进，ID不是关序。原31关已留档撤下。
 
@@ -35,6 +35,8 @@ Site项目`appgprj_6adb4b311474819180db83f0509d84e1`；源码在独立Site仓，
 
 《布阵》的四种三鬼减负稿均未采用：两稿有最优重合，另两稿绕过A/B工作空间关系；原四鬼及关序保持。后段按整体调度、撤去保护、回合相位区分，不把它们写成再新增第三只鬼。[实际对照与范围](../examples/discovery-course-20261023/reviews/late-course-scope-20261025.md)。
 
+新增25格双层54作为第32关，在完整取物任务中首次使用楼梯：近端搬运会堵住最终入口，从北端准备才保留返回。定位为已有停位规划的跨层应用，不称高阶楼梯独有突破，后续不重复搬运凑关。[取舍、两端输入与原图反例](../examples/discovery-course-20261023/reviews/overpass-20261025.md)。
+
 这些是设计假说，仍缺真正未知规则玩家的尝试过程：首次按钮是否易于发现、关键跨度和后段重复感如何。没有补写评分、用时、提示或尤里卡记录，不将来源图好评转移给新变式或关序。
 
 已复查[观察机会与前段错误续解](../examples/discovery-course-20261023/reviews/knowledge-assumptions-20261025.md)：不把早段保护当作已完整理解门的遮视线，也不把一次阻路当作已懂全部优先规则。第2关填格会取消原调动问题，未采用；该复查不改图或关序，不为追求全部可恢复而增加说明关或削弱原题。
@@ -43,9 +45,11 @@ Site项目`appgprj_6adb4b311474819180db83f0509d84e1`；源码在独立Site仓，
 
 ## 当前验收与基线
 
-31关构造器、现存地图和证书绑定已核对，共同规则锁为`sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0`。全部最优重合边界、去终点安全、指定实际中性入场及码往返分别留证；有鬼图另验编号无关，无鬼50、51不冒称编号试验；证据范围见[现版核对](../examples/discovery-course-20261023/certificate-check-redesign-20261023.json)。
+32关构造器、现存地图和证书绑定已核对，共同规则锁为`sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0`。全部最优重合边界、去终点安全、指定实际中性入场及码往返分别留证；有鬼图另验编号无关，无鬼50、51不冒称编号试验；证据范围见[现版核对](../examples/discovery-course-20261023/certificate-check-redesign-20261023.json)。
 
-当前31关的物理证书绑定通过；加入53后的npm test与cloud:check通过两仓、规则锁、原种子及22个HTTP入口。当前环境Node24，未重做Node22验收；发布版本见[发布记录](../examples/discovery-course-20261023/site-publication.json)。
+当前32关的物理证书绑定通过；加入54及多层验收适配后的npm test与cloud:check通过两仓、规则锁、原种子及22个HTTP入口。当前环境Node24，未重做Node22验收；发布版本见[发布记录](../examples/discovery-course-20261023/site-publication.json)。
+
+54另过[桌面与手机两条35步、转层撤销及两解回放](../examples/discovery-course-20261023/overpass-browser-check-20261025.json)，上下层角色／资源／墙态全部一致；追加关卡未改变前31张图。
 
 53另过[桌面16步、手机先探0的18步及38→53→41切换](../examples/discovery-course-20261023/before-key-entry-browser-check-20261025.json)，全部资源、墙态与角色帧一致；0门撤销重做、重置撤销重做及三解回放切换通过。
 

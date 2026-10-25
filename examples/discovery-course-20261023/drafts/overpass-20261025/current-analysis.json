@@ -1,0 +1,117 @@
+{
+  "mapId": "0511fe18b2fc0740de391a5381fcc3d7083ddd6748ed101e4fc561ba1d26306f",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "role": "新终局下的原图事件和错误入口方向查询，非真人感受",
+  "humanQuality": null,
+  "tests": {
+    "noGhostUpNorth": {
+      "mapId": "0511fe18b2fc0740de391a5381fcc3d7083ddd6748ed101e4fc561ba1d26306f",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 156,
+        "transitions": 780,
+        "discovered": 156,
+        "totalActions": null
+      },
+      "actions": null,
+      "noEndSafe": null
+    },
+    "keyWithoutGhostAbove": {
+      "mapId": "0511fe18b2fc0740de391a5381fcc3d7083ddd6748ed101e4fc561ba1d26306f",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 234,
+        "transitions": 1170,
+        "discovered": 234,
+        "totalActions": null
+      },
+      "actions": null,
+      "noEndSafe": null
+    },
+    "noNorthStair": {
+      "mapId": "0511fe18b2fc0740de391a5381fcc3d7083ddd6748ed101e4fc561ba1d26306f",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 25,
+        "transitions": 125,
+        "discovered": 25,
+        "totalActions": null
+      },
+      "actions": null,
+      "noEndSafe": null
+    },
+    "noSouthStair": {
+      "mapId": "0511fe18b2fc0740de391a5381fcc3d7083ddd6748ed101e4fc561ba1d26306f",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 16,
+        "transitions": 80,
+        "discovered": 16,
+        "totalActions": null
+      },
+      "actions": null,
+      "noEndSafe": null
+    },
+    "bridgeDoorEmpty": {
+      "mapId": "1358ea1d5b8de57c0ab8c6e2a0f24eeb905c6e19b2a0354b35513d855a9bb097",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 189,
+        "transitions": 945,
+        "discovered": 189,
+        "totalActions": null
+      },
+      "actions": null,
+      "noEndSafe": null
+    }
+  },
+  "wrongCarrySide": {
+    "prefix": [
+      "L",
+      "L",
+      "R",
+      "R",
+      "U",
+      "STAIR",
+      "U",
+      "U",
+      "STAIR"
+    ],
+    "scene": {
+      "p": [
+        0,
+        2,
+        1
+      ],
+      "ghosts": [
+        [
+          [
+            4,
+            2
+          ]
+        ],
+        [
+          [
+            2,
+            3
+          ]
+        ]
+      ]
+    },
+    "continuation": {
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "expanded": 109,
+      "transitions": 545,
+      "discovered": 109,
+      "totalActions": null
+    }
+  },
+  "allOptimalNoEndSafe": 2,
+  "qualitativeScope": "新目标把桥上停位纳入之后入口；不是仅将鬼移到钥匙投影上就声称有新意。是否有趣仍缺实际反馈。"
+}
