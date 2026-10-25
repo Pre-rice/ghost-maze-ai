@@ -1,0 +1,111 @@
+{
+  "scope": "正式站引擎中的实际键盘／触控仿真与机关墙态、撤销重做和求解分组验收；非盲AI或未知规则真人体验。",
+  "visualInspectionSeparatedFromTouch": true,
+  "records": [
+    {
+      "id": "50",
+      "mapId": "a2d037b6856c077d739d2c9f378ecf9e79620da4136d84af03228ad4951ff43e",
+      "viewport": {
+        "width": 1360,
+        "height": 900
+      },
+      "input": "keyboard_without_manual_refocus_after_next",
+      "actions": [
+        "R",
+        "D",
+        "R",
+        "L",
+        "L",
+        "L",
+        "U",
+        "U",
+        "U",
+        "L",
+        "R",
+        "D",
+        "R",
+        "R",
+        "D",
+        "L",
+        "D"
+      ],
+      "allPlayerAndWallFramesMatched": true,
+      "won": true,
+      "steps": 17,
+      "undoRedoRestoredPocketDoorPhase": true,
+      "noHorizontalOverflow": true,
+      "webSolver": {
+        "steps": 17,
+        "ghostTrajectoryGroups": 1,
+        "visibleReplayLinks": 1
+      }
+    },
+    {
+      "id": "50",
+      "mapId": "a2d037b6856c077d739d2c9f378ecf9e79620da4136d84af03228ad4951ff43e",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "input": "pure_touch_dpad",
+      "actions": [
+        "R",
+        "D",
+        "R",
+        "L",
+        "L",
+        "L",
+        "U",
+        "U",
+        "L",
+        "U",
+        "R",
+        "D",
+        "R",
+        "R",
+        "D",
+        "L",
+        "D"
+      ],
+      "allPlayerAndWallFramesMatched": true,
+      "won": true,
+      "steps": 17,
+      "undoRedoRestoredPocketDoorPhase": "not_retested_on_touch",
+      "noHorizontalOverflow": true
+    },
+    {
+      "id": "46",
+      "scope": "只验换关后首个触控，不重报原16步整条验收",
+      "firstTouchMatched": true
+    }
+  ],
+  "visualCaptureNote": {
+    "initialPhoneImage": "首张视觉捕捉仍含加载画面，未用作已加载验收",
+    "retake": {
+      "scope": "只重新捕捉视觉，不重跑已通过触控或修改网站；首图包含加载画面，不能用作已加载视觉验收",
+      "before": {
+        "origin": 1792907691078.1,
+        "p": [
+          3,
+          2
+        ],
+        "mode": "死亡循环",
+        "loading": false,
+        "loadingHidden": true,
+        "ready": "complete"
+      },
+      "after": {
+        "origin": 1792907691078.1,
+        "p": [
+          3,
+          2
+        ],
+        "mode": "死亡循环",
+        "loading": false,
+        "loadingHidden": true,
+        "ready": "complete"
+      }
+    },
+    "inputScope": "不重报已通过的两条操作；未修改网站或把截图现象称为已修复的本体bug"
+  }
+}
