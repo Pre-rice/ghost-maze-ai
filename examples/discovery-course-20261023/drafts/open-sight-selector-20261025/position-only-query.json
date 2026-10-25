@@ -1,0 +1,164 @@
+{
+  "validity": "position_only_is_not_a_clean_ordinary_witness",
+  "role": "保留早期旧查询输出摘录；地图与原始最优路线在probe.json，不把重合路径当普通反例",
+  "cases": [
+    {
+      "name": "base",
+      "mapId": "a84040a932c9420d96e058f01373bbe4bd7ca5faba99a052ba6c25a52e89134a",
+      "oldQuery": {
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 162,
+          "transitions": 807,
+          "discovered": 177,
+          "totalActions": 15
+        },
+        "actions": [
+          "U",
+          "L",
+          "U",
+          "D",
+          "R",
+          "U",
+          "L",
+          "L",
+          "L",
+          "U",
+          "U",
+          "R",
+          "R",
+          "R",
+          "R"
+        ]
+      },
+      "correctedQuery": {
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 122,
+          "transitions": 610,
+          "discovered": 122,
+          "totalActions": null
+        },
+        "actions": null
+      }
+    },
+    {
+      "name": "zeroInitiallyEmpty",
+      "mapId": "8a52327a98712faa08c371d7af5c431ceb0a3ec368ef87af55b81fe93af840d2",
+      "oldQuery": {
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 251,
+          "transitions": 1252,
+          "discovered": 273,
+          "totalActions": 15
+        },
+        "actions": [
+          "U",
+          "D",
+          "L",
+          "L",
+          "L",
+          "L",
+          "U",
+          "U",
+          "U",
+          "R",
+          "U",
+          "R",
+          "R",
+          "R",
+          "R"
+        ]
+      },
+      "correctedQuery": {
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 192,
+          "transitions": 957,
+          "discovered": 205,
+          "totalActions": 15
+        },
+        "actions": [
+          "U",
+          "D",
+          "L",
+          "L",
+          "L",
+          "L",
+          "U",
+          "U",
+          "U",
+          "R",
+          "U",
+          "R",
+          "R",
+          "R",
+          "R"
+        ]
+      }
+    },
+    {
+      "name": "zeroOrdinary",
+      "mapId": "03236cb22aec483b9a3e3394b98f67fcf5078564e7d073c1aab743c8c20a032e",
+      "oldQuery": {
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 235,
+          "transitions": 1172,
+          "discovered": 269,
+          "totalActions": 15
+        },
+        "actions": [
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "U",
+          "U",
+          "U",
+          "R",
+          "R",
+          "R",
+          "R"
+        ]
+      },
+      "correctedQuery": {
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 204,
+          "transitions": 1017,
+          "discovered": 223,
+          "totalActions": 15
+        },
+        "actions": [
+          "U",
+          "U",
+          "D",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "U",
+          "U",
+          "U",
+          "R",
+          "R",
+          "R",
+          "R"
+        ]
+      }
+    }
+  ]
+}
