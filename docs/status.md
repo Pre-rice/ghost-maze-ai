@@ -19,7 +19,7 @@ Site项目`appgprj_6adb4b311474819180db83f0509d84e1`；源码在独立Site仓，
 - 《暂驻》《再借》《对门》从重新引走推进到借鬼和共同安置。《对门》明确是未评价研究复用。[较后位置的依据](../examples/discovery-course-20261023/reviews/shared-trap-after-recruitment-20261024.md)。
 - 首次方向限制改用19格新关46：两个相反接口支持两类停位与对应回程，替换此前43的小室稿。原稿、正式《归途》及其认可保持，不额外叠箭头说明关。存在同16步无实际互挡方案，故不强称借鬼必学。[当前取舍及反例](../examples/discovery-course-20261023/reviews/directional-flow-20261024.md)。
 
-新增18格阶梯形49，接在《再借》与《对门》之间，撤去字母控制继续借鬼取物返回；17步有先取物与先引守卫两类安排，不要求最短。A、方向属性及内侧数字门均按反例删去，没有继承好评。[取舍与完整证据](../examples/discovery-course-20261023/reviews/borrowed-passage-20261025.md)。
+18格阶梯形49仍接在《再借》与《对门》之间，v02以三处取物配2门，在同一完整问题里提供可余钥匙通关的机会；全部三条17步最优动作与玩家／鬼帧保持，也可19步收齐。此为任务选择与引导调整，不称推理难度增强；v75单钥匙稿及其证据保持。[当前取舍](../examples/discovery-course-20261023/reviews/key-choice-20261025.md)。
 
 新增20格双鬼保护交接题48，放在《对门》与《换席》之间；取物后由A接管B的保护，B再打开目标房。两钥匙与1／2门在完整任务中使用，原75步44仍撤下。[布局取舍、普通计划及范围](../examples/discovery-course-20261023/reviews/protection-handoff-20261024.md)。
 
@@ -35,9 +35,9 @@ Site项目`appgprj_6adb4b311474819180db83f0509d84e1`；源码在独立Site仓，
 
 27关构造器、现存地图和证书绑定已核对，共同规则锁为`sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0`。全部最优非死亡重合、去终点安全、指定实际中性入场、编号无关及码往返要求分别留证；证据范围见[现版核对](../examples/discovery-course-20261023/certificate-check-redesign-20261023.json)。
 
-当前27关的物理证书绑定通过；新增49后的npm test与cloud:check通过两仓、规则锁、原种子及22个HTTP入口。当前环境Node24，未重做Node22验收；发布版本见[发布记录](../examples/discovery-course-20261023/site-publication.json)。
+当前27关的物理证书绑定通过；49三钥匙修订后的npm test与cloud:check通过两仓、规则锁、原种子及22个HTTP入口。当前环境Node24，未重做Node22验收；发布版本见[发布记录](../examples/discovery-course-20261023/site-publication.json)。
 
-新49的两类17步安排通过两端操作及18→49→42换关，全部玩家与鬼帧匹配；指定包络外入场另比较全部160个内部可达局面的790个后继，含死亡动作。[当前检查](../examples/discovery-course-20261023/borrowed-passage-browser-check-20261025.json)。
+49当前三钥匙稿的两类17步、19步收齐已逐步核对玩家／鬼／资源与钥匙显示；电脑、手机触控仿真及18→49→42换关通过，见[现版操作记录](../examples/discovery-course-20261023/key-choice-browser-check-20261025.json)。原单钥匙稿另存，不混称为同一资源任务。[原操作范围](../examples/discovery-course-20261023/levels/49/revisions/v01/browser-check.json)。
 
 重点接点的电脑／手机触控及全部玩家与鬼帧分别留证：[37→45→13](../examples/discovery-course-20261023/single-letter-browser-check-20261024.json)、[42→48→19](../examples/discovery-course-20261023/protection-handoff-browser-check-20261024.json)、[46→47→27](../examples/discovery-course-20261023/side-entry-browser-check-20261024.json)。方向关两种停位另有[操作记录](../examples/discovery-course-20261023/directional-flow-browser-check-20261024.json)。截图与触控分开，不把自动化现象或物理QA当成未知规则真人体验。
 

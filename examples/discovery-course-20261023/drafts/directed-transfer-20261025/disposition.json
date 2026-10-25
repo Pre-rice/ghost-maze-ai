@@ -1,0 +1,519 @@
+{
+  "parentMapId": "c25a68166cfc2c834af7900da451330dd270c7d8c57e05acbe7282109f7c9faf",
+  "decision": "四稿均不采用；两稿穷尽无解，另两稿并列最优含非致死重合。不是第28关，不据此否定所有方向构思，不再继续叠限制修补。",
+  "edits": {
+    "lower": "v(3,4)改向右单向门",
+    "upper": "v(3,2)改向左单向门",
+    "side": "v(4,2)改空"
+  },
+  "records": [
+    {
+      "name": "lower-to-right",
+      "mapId": "5cee500e5ac15152619d2aae46cd7f9c016dbb474089037a77b53cb18502a51f",
+      "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 186,
+        "transitions": 930,
+        "discovered": 186,
+        "totalActions": null
+      },
+      "count": "0",
+      "oldRoutes": [
+        {
+          "actions": [
+            "U",
+            "R",
+            "R",
+            "L",
+            "L",
+            "D",
+            "D",
+            "R",
+            "U",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "stillWon": false,
+          "error": "证书包含无效动作"
+        },
+        {
+          "actions": [
+            "D",
+            "D",
+            "L",
+            "U",
+            "U",
+            "R",
+            "U",
+            "R",
+            "R",
+            "L",
+            "D",
+            "D",
+            "L",
+            "D",
+            "L",
+            "L",
+            "L"
+          ],
+          "stillWon": false,
+          "error": "证书包含无效动作"
+        },
+        {
+          "actions": [
+            "D",
+            "D",
+            "L",
+            "U",
+            "U",
+            "R",
+            "U",
+            "R",
+            "R",
+            "L",
+            "L",
+            "D",
+            "D",
+            "D",
+            "L",
+            "L",
+            "L"
+          ],
+          "stillWon": false,
+          "error": "证书包含无效动作"
+        }
+      ],
+      "boundary": null,
+      "humanQuality": null
+    },
+    {
+      "name": "opposing-ports",
+      "mapId": "b82a04ff6c9da174976fc3589b97a1eef1191a45ce1c7537ea9f367c8f8f9500",
+      "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 150,
+        "transitions": 750,
+        "discovered": 150,
+        "totalActions": null
+      },
+      "count": "0",
+      "oldRoutes": [
+        {
+          "actions": [
+            "U",
+            "R",
+            "R",
+            "L",
+            "L",
+            "D",
+            "D",
+            "R",
+            "U",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "stillWon": false,
+          "error": "证书包含无效动作"
+        },
+        {
+          "actions": [
+            "D",
+            "D",
+            "L",
+            "U",
+            "U",
+            "R",
+            "U",
+            "R",
+            "R",
+            "L",
+            "D",
+            "D",
+            "L",
+            "D",
+            "L",
+            "L",
+            "L"
+          ],
+          "stillWon": false,
+          "error": "证书包含无效动作"
+        },
+        {
+          "actions": [
+            "D",
+            "D",
+            "L",
+            "U",
+            "U",
+            "R",
+            "U",
+            "R",
+            "R",
+            "L",
+            "L",
+            "D",
+            "D",
+            "D",
+            "L",
+            "L",
+            "L"
+          ],
+          "stillWon": false,
+          "error": "证书包含无效动作"
+        }
+      ],
+      "boundary": null,
+      "humanQuality": null
+    },
+    {
+      "name": "lower-and-side-opening",
+      "mapId": "ed089491ffffceb040f2dc7ab631c5a3a822b11de372363ea5da6e52c44da7f2",
+      "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 181,
+        "transitions": 905,
+        "discovered": 190,
+        "totalActions": 19
+      },
+      "count": "4",
+      "oldRoutes": [
+        {
+          "actions": [
+            "U",
+            "R",
+            "R",
+            "L",
+            "L",
+            "D",
+            "D",
+            "R",
+            "U",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "stillWon": false,
+          "error": "证书重放时死亡"
+        },
+        {
+          "actions": [
+            "D",
+            "D",
+            "L",
+            "U",
+            "U",
+            "R",
+            "U",
+            "R",
+            "R",
+            "L",
+            "D",
+            "D",
+            "L",
+            "D",
+            "L",
+            "L",
+            "L"
+          ],
+          "stillWon": false,
+          "error": "证书包含无效动作"
+        },
+        {
+          "actions": [
+            "D",
+            "D",
+            "L",
+            "U",
+            "U",
+            "R",
+            "U",
+            "R",
+            "R",
+            "L",
+            "L",
+            "D",
+            "D",
+            "D",
+            "L",
+            "L",
+            "L"
+          ],
+          "stillWon": false,
+          "error": "证书包含无效动作"
+        }
+      ],
+      "boundary": {
+        "status": "conflict",
+        "reason": "optimal_solution_uses_overlap",
+        "mapId": "ed089491ffffceb040f2dc7ab631c5a3a822b11de372363ea5da6e52c44da7f2",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 172,
+        "transitions": 859,
+        "discovered": 182,
+        "optimum": 19,
+        "ignoredFatalOverlap": 3,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "U",
+            "R",
+            "R",
+            "L",
+            "D",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "U",
+            "R",
+            "U",
+            "L",
+            "L"
+          ],
+          "conflict": {
+            "target": {
+              "x": 3,
+              "y": 2
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 4,
+                  "y": 2
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 3,
+                  "y": 3
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 0
+          }
+        },
+        "safeOptimalWitness": null,
+        "elapsedMs": 13,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除",
+        "witness": [
+          "U",
+          "R",
+          "R",
+          "L",
+          "D",
+          "R",
+          "D",
+          "D",
+          "L",
+          "L",
+          "U",
+          "R",
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "L",
+          "L"
+        ]
+      },
+      "humanQuality": null
+    },
+    {
+      "name": "opposing-and-side-opening",
+      "mapId": "c0a5ed92eeba8829b6c0b1c2116faa99ead854dbe0d9263fe63f237c211f6ef4",
+      "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 147,
+        "transitions": 735,
+        "discovered": 153,
+        "totalActions": 19
+      },
+      "count": "4",
+      "oldRoutes": [
+        {
+          "actions": [
+            "U",
+            "R",
+            "R",
+            "L",
+            "L",
+            "D",
+            "D",
+            "R",
+            "U",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "stillWon": false,
+          "error": "证书重放时死亡"
+        },
+        {
+          "actions": [
+            "D",
+            "D",
+            "L",
+            "U",
+            "U",
+            "R",
+            "U",
+            "R",
+            "R",
+            "L",
+            "D",
+            "D",
+            "L",
+            "D",
+            "L",
+            "L",
+            "L"
+          ],
+          "stillWon": false,
+          "error": "证书包含无效动作"
+        },
+        {
+          "actions": [
+            "D",
+            "D",
+            "L",
+            "U",
+            "U",
+            "R",
+            "U",
+            "R",
+            "R",
+            "L",
+            "L",
+            "D",
+            "D",
+            "D",
+            "L",
+            "L",
+            "L"
+          ],
+          "stillWon": false,
+          "error": "证书包含无效动作"
+        }
+      ],
+      "boundary": {
+        "status": "conflict",
+        "reason": "optimal_solution_uses_overlap",
+        "mapId": "c0a5ed92eeba8829b6c0b1c2116faa99ead854dbe0d9263fe63f237c211f6ef4",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 141,
+        "transitions": 704,
+        "discovered": 148,
+        "optimum": 19,
+        "ignoredFatalOverlap": 2,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "U",
+            "R",
+            "R",
+            "L",
+            "D",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "U",
+            "R",
+            "U",
+            "L",
+            "L"
+          ],
+          "conflict": {
+            "target": {
+              "x": 3,
+              "y": 2
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 4,
+                  "y": 2
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 3,
+                  "y": 3
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 0
+          }
+        },
+        "safeOptimalWitness": null,
+        "elapsedMs": 9,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除",
+        "witness": [
+          "U",
+          "R",
+          "R",
+          "L",
+          "D",
+          "R",
+          "D",
+          "D",
+          "L",
+          "L",
+          "U",
+          "R",
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "L",
+          "L"
+        ]
+      },
+      "humanQuality": null
+    }
+  ]
+}
