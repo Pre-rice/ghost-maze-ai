@@ -49,6 +49,8 @@ Site项目`appgprj_6adb4b311474819180db83f0509d84e1`；源码在独立Site仓，
 
 当前32关的物理证书绑定通过；加入54及52轮廓精简后的npm test与cloud:check通过两仓、规则锁、原种子及22个HTTP入口。当前环境Node24，未重做Node22验收；发布版本见[发布记录](../examples/discovery-course-20261023/site-publication.json)。
 
+54还补验[跨层攻击与上层碰鬼的两类失败恢复](../examples/discovery-course-20261023/overpass-recovery-check-20261025.json)：四次电脑／手机仿真均可死亡撤销、重做、复活后撤回，并从开局再通关。按本地主站既定死亡瞬间显示核对，状态仍在出生层，不回退本体；手机方向盘遮挡重做的既有限制保持。
+
 54另过[桌面与手机两条35步、转层撤销及两解回放](../examples/discovery-course-20261023/overpass-browser-check-20261025.json)，上下层角色／资源／墙态全部一致；追加关卡未改变前31张图。
 
 53另过[桌面16步、手机先探0的18步及38→53→41切换](../examples/discovery-course-20261023/before-key-entry-browser-check-20261025.json)，全部资源、墙态与角色帧一致；0门撤销重做、重置撤销重做及三解回放切换通过。

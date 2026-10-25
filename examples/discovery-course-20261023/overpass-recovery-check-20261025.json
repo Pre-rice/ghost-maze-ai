@@ -1,0 +1,244 @@
+{
+  "testAssumptionCorrection": "初次按较早的出生点显示约定断言，核对本体e91dafb的有意显示改动后修正为死亡瞬间画面；状态、记录和恢复仍按复活后局面，未改本体或将此当成bug。",
+  "scope": "首次跨层课程的两类失败恢复，四次电脑／手机仿真；不是规则变更、真人评价或AI自主试玩",
+  "mapId": "0511fe18b2fc0740de391a5381fcc3d7083ddd6748ed101e4fc561ba1d26306f",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "witnesses": {
+    "mapId": "0511fe18b2fc0740de391a5381fcc3d7083ddd6748ed101e4fc561ba1d26306f",
+    "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+    "crossFloorContact": {
+      "prefix": [
+        "L",
+        "L",
+        "R",
+        "R",
+        "U",
+        "STAIR",
+        "U",
+        "U",
+        "STAIR",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R"
+      ],
+      "fatal": "U",
+      "before": {
+        "p": [
+          0,
+          2,
+          4
+        ],
+        "g": [
+          [
+            [
+              2,
+              2
+            ]
+          ],
+          [
+            [
+              2,
+              3
+            ]
+          ]
+        ]
+      },
+      "after": {
+        "p": [
+          0,
+          2,
+          3
+        ],
+        "g": [
+          [
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          []
+        ]
+      }
+    },
+    "upperContact": {
+      "prefix": [
+        "U",
+        "STAIR",
+        "U",
+        "U",
+        "STAIR",
+        "U",
+        "R",
+        "R",
+        "L",
+        "L",
+        "D",
+        "STAIR",
+        "D"
+      ],
+      "fatal": "U"
+    }
+  },
+  "records": [
+    {
+      "kind": "crossFloorContact",
+      "touch": false,
+      "viewport": {
+        "width": 1360,
+        "height": 900
+      },
+      "mapId": "0511fe18b2fc0740de391a5381fcc3d7083ddd6748ed101e4fc561ba1d26306f",
+      "safePrefix": [
+        "L",
+        "L",
+        "R",
+        "R",
+        "U",
+        "STAIR",
+        "U",
+        "U",
+        "STAIR",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R"
+      ],
+      "fatal": "U",
+      "deathLayer": 0,
+      "respawnLayer": 0,
+      "allSafePrefixFramesMatched": true,
+      "deathStateAfterRespawnExact": true,
+      "fatalReplayShowsDeathMoment": true,
+      "authoritativeReplayStateUsesRespawnFloor": true,
+      "deathUndoRedoAndReviveExact": true,
+      "undoToOpeningThen35StepWin": true,
+      "dragRequiredForRedo": false,
+      "scope": "实际键盘／按钮恢复工程QA，非未知规则体验"
+    },
+    {
+      "kind": "upperContact",
+      "touch": false,
+      "viewport": {
+        "width": 1360,
+        "height": 900
+      },
+      "mapId": "0511fe18b2fc0740de391a5381fcc3d7083ddd6748ed101e4fc561ba1d26306f",
+      "safePrefix": [
+        "U",
+        "STAIR",
+        "U",
+        "U",
+        "STAIR",
+        "U",
+        "R",
+        "R",
+        "L",
+        "L",
+        "D",
+        "STAIR",
+        "D"
+      ],
+      "fatal": "U",
+      "deathLayer": 1,
+      "respawnLayer": 0,
+      "allSafePrefixFramesMatched": true,
+      "deathStateAfterRespawnExact": true,
+      "fatalReplayShowsDeathMoment": true,
+      "authoritativeReplayStateUsesRespawnFloor": true,
+      "deathUndoRedoAndReviveExact": true,
+      "undoToOpeningThen35StepWin": true,
+      "dragRequiredForRedo": false,
+      "scope": "实际键盘／按钮恢复工程QA，非未知规则体验"
+    },
+    {
+      "kind": "crossFloorContact",
+      "touch": true,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mapId": "0511fe18b2fc0740de391a5381fcc3d7083ddd6748ed101e4fc561ba1d26306f",
+      "safePrefix": [
+        "L",
+        "L",
+        "R",
+        "R",
+        "U",
+        "STAIR",
+        "U",
+        "U",
+        "STAIR",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R"
+      ],
+      "fatal": "U",
+      "deathLayer": 0,
+      "respawnLayer": 0,
+      "allSafePrefixFramesMatched": true,
+      "deathStateAfterRespawnExact": true,
+      "fatalReplayShowsDeathMoment": true,
+      "authoritativeReplayStateUsesRespawnFloor": true,
+      "deathUndoRedoAndReviveExact": true,
+      "undoToOpeningThen35StepWin": true,
+      "dragRequiredForRedo": true,
+      "scope": "沿用现有拖动避开已知方向盘遮挡，不称真实手机或默认布局无障碍"
+    },
+    {
+      "kind": "upperContact",
+      "touch": true,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mapId": "0511fe18b2fc0740de391a5381fcc3d7083ddd6748ed101e4fc561ba1d26306f",
+      "safePrefix": [
+        "U",
+        "STAIR",
+        "U",
+        "U",
+        "STAIR",
+        "U",
+        "R",
+        "R",
+        "L",
+        "L",
+        "D",
+        "STAIR",
+        "D"
+      ],
+      "fatal": "U",
+      "deathLayer": 1,
+      "respawnLayer": 0,
+      "allSafePrefixFramesMatched": true,
+      "deathStateAfterRespawnExact": true,
+      "fatalReplayShowsDeathMoment": true,
+      "authoritativeReplayStateUsesRespawnFloor": true,
+      "deathUndoRedoAndReviveExact": true,
+      "undoToOpeningThen35StepWin": true,
+      "dragRequiredForRedo": true,
+      "scope": "沿用现有拖动避开已知方向盘遮挡，不称真实手机或默认布局无障碍"
+    }
+  ]
+}
