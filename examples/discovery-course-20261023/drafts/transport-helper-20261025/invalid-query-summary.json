@@ -1,0 +1,321 @@
+{
+  "validity": "invalid_research_query_not_game_bug_not_admission",
+  "reason": "初始编号是层内编号，跨层可重复；旧where以id查找把两个鬼混为一鬼，第一步无接触也被误报互动。修正版每个局面先在克隆上临时唯一标记、断言物理不变，再逐鬼删去其它鬼比较，不保留角色历史。",
+  "rawMapAndRoutePreservedIn": "taller.json",
+  "humanQuality": null,
+  "cases": [
+    {
+      "name": "south-door-east-guard",
+      "mapId": "80935bfb6a7ea070ef3a6aeac37ea48269367c5c74f4b612df657be75407580b",
+      "initialIds": [
+        [
+          {
+            "x": 0,
+            "y": 2,
+            "id": 0
+          }
+        ],
+        [
+          {
+            "x": 3,
+            "y": 2,
+            "id": 0
+          }
+        ]
+      ],
+      "invalidNoInteractionOutput": {
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 1,
+          "transitions": 5,
+          "discovered": 1,
+          "totalActions": null
+        },
+        "actions": null
+      },
+      "firstInvalidFlag": {
+        "action": "L",
+        "p": [
+          0,
+          1,
+          4,
+          0
+        ],
+        "g": [
+          [
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          [
+            [
+              0,
+              3,
+              2
+            ]
+          ]
+        ],
+        "interaction": true,
+        "diagnostics": []
+      },
+      "correctedNoInteractionOutput": {
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 334,
+          "transitions": 1667,
+          "discovered": 339,
+          "totalActions": 33
+        },
+        "actions": [
+          "L",
+          "L",
+          "R",
+          "R",
+          "U",
+          "STAIR",
+          "L",
+          "D",
+          "R",
+          "U",
+          "STAIR",
+          "D",
+          "L",
+          "L",
+          "U",
+          "U",
+          "R",
+          "R",
+          "L",
+          "L",
+          "U",
+          "U",
+          "R",
+          "R",
+          "D",
+          "STAIR",
+          "U",
+          "R",
+          "L",
+          "D",
+          "R",
+          "D",
+          "R"
+        ]
+      }
+    },
+    {
+      "name": "north-door-east-guard",
+      "mapId": "dc2672fea7fb2c04504d4009d2d8415443309936b21ddae7ed70996e96d7c29d",
+      "initialIds": [
+        [
+          {
+            "x": 0,
+            "y": 2,
+            "id": 0
+          }
+        ],
+        [
+          {
+            "x": 3,
+            "y": 2,
+            "id": 0
+          }
+        ]
+      ],
+      "invalidNoInteractionOutput": {
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 1,
+          "transitions": 5,
+          "discovered": 1,
+          "totalActions": null
+        },
+        "actions": null
+      },
+      "firstInvalidFlag": {
+        "action": "L",
+        "p": [
+          0,
+          1,
+          4,
+          0
+        ],
+        "g": [
+          [
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          [
+            [
+              0,
+              3,
+              2
+            ]
+          ]
+        ],
+        "interaction": true,
+        "diagnostics": []
+      },
+      "correctedNoInteractionOutput": {
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 334,
+          "transitions": 1667,
+          "discovered": 340,
+          "totalActions": 35
+        },
+        "actions": [
+          "L",
+          "L",
+          "R",
+          "R",
+          "U",
+          "STAIR",
+          "L",
+          "U",
+          "U",
+          "U",
+          "R",
+          "D",
+          "STAIR",
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "R",
+          "R",
+          "L",
+          "L",
+          "D",
+          "D",
+          "R",
+          "R",
+          "U",
+          "STAIR",
+          "D",
+          "R",
+          "L",
+          "U",
+          "R",
+          "U",
+          "R"
+        ]
+      }
+    },
+    {
+      "name": "south-door-east-upper",
+      "mapId": "419041225136cd823a84401e2eed3338d0f17f336f3f2c08ae47cb7daec6000b",
+      "initialIds": [
+        [
+          {
+            "x": 0,
+            "y": 2,
+            "id": 0
+          }
+        ],
+        [
+          {
+            "x": 3,
+            "y": 1,
+            "id": 0
+          }
+        ]
+      ],
+      "invalidNoInteractionOutput": {
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 1,
+          "transitions": 5,
+          "discovered": 1,
+          "totalActions": null
+        },
+        "actions": null
+      },
+      "firstInvalidFlag": {
+        "action": "L",
+        "p": [
+          0,
+          1,
+          4,
+          0
+        ],
+        "g": [
+          [
+            [
+              0,
+              0,
+              2
+            ]
+          ],
+          [
+            [
+              0,
+              3,
+              1
+            ]
+          ]
+        ],
+        "interaction": true,
+        "diagnostics": []
+      },
+      "correctedNoInteractionOutput": {
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 330,
+          "transitions": 1647,
+          "discovered": 338,
+          "totalActions": 35
+        },
+        "actions": [
+          "L",
+          "L",
+          "R",
+          "R",
+          "U",
+          "STAIR",
+          "L",
+          "D",
+          "R",
+          "U",
+          "STAIR",
+          "D",
+          "L",
+          "L",
+          "U",
+          "U",
+          "R",
+          "R",
+          "L",
+          "L",
+          "D",
+          "D",
+          "R",
+          "R",
+          "U",
+          "STAIR",
+          "R",
+          "L",
+          "L",
+          "U",
+          "U",
+          "R",
+          "R",
+          "D",
+          "R"
+        ]
+      }
+    }
+  ]
+}
