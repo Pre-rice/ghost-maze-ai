@@ -21,7 +21,7 @@ Site项目`appgprj_6adb4b311474819180db83f0509d84e1`；源码在独立Site仓，
 
 第13关新增13格53，作为首次0的完整问题：先取近钥匙会把追者带回中部，堵住远端准备的出口。可先探0再退回准备，必要的是取钥匙前的安排；之后暂驻与逆渡继续同一0门。16步三种鬼轨迹，不称挑战突破。[设计与实际反例](../examples/discovery-course-20261023/reviews/before-key-entry-20261025.md)。
 
-第15关复用25格逆渡研究稿52，接在暂驻与再借之间：首次开0须从上方并先于取物；也有24步不使用优先争位的普通通关，不要求提前掌握主动借鬼。当前22步、24种轨迹及完整实际入场复验通过，原研究与正式集保持。[取舍与原图查询](../examples/discovery-course-20261023/reviews/zero-opening-application-20261025.md)。
+第15关复用逆渡研究稿52，接在暂驻与再借之间。现v02收去左上三格，25格变22格阶梯轮廓；全部24条原22步最优动作与角色／资源帧保持，旧24步不用优先争位的普通方案也保留，不要求提前掌握主动借鬼。首次开0须从上方且先于取物，原研究与v01完整保留。[精简、原图事件及范围](../examples/discovery-course-20261023/reviews/zero-economy-20261025.md)。
 
 新增15格无鬼控制访问题51，接在46与《侧入》之间：A会关住内B入口，取物前先准备B，带钥匙回来再恢复A；不把同一次序照走两遍。两个方向口各有具体进出作用，未采用给旧控制室机械加鬼的稿。[当前取舍](../examples/discovery-course-20261023/reviews/controller-access-20261025.md)。
 
@@ -47,13 +47,13 @@ Site项目`appgprj_6adb4b311474819180db83f0509d84e1`；源码在独立Site仓，
 
 32关构造器、现存地图和证书绑定已核对，共同规则锁为`sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0`。全部最优重合边界、去终点安全、指定实际中性入场及码往返分别留证；有鬼图另验编号无关，无鬼50、51不冒称编号试验；证据范围见[现版核对](../examples/discovery-course-20261023/certificate-check-redesign-20261023.json)。
 
-当前32关的物理证书绑定通过；加入54及多层验收适配后的npm test与cloud:check通过两仓、规则锁、原种子及22个HTTP入口。当前环境Node24，未重做Node22验收；发布版本见[发布记录](../examples/discovery-course-20261023/site-publication.json)。
+当前32关的物理证书绑定通过；加入54及52轮廓精简后的npm test与cloud:check通过两仓、规则锁、原种子及22个HTTP入口。当前环境Node24，未重做Node22验收；发布版本见[发布记录](../examples/discovery-course-20261023/site-publication.json)。
 
 54另过[桌面与手机两条35步、转层撤销及两解回放](../examples/discovery-course-20261023/overpass-browser-check-20261025.json)，上下层角色／资源／墙态全部一致；追加关卡未改变前31张图。
 
 53另过[桌面16步、手机先探0的18步及38→53→41切换](../examples/discovery-course-20261023/before-key-entry-browser-check-20261025.json)，全部资源、墙态与角色帧一致；0门撤销重做、重置撤销重做及三解回放切换通过。
 
-52另过[桌面22步与手机24步普通方案](../examples/discovery-course-20261023/zero-opening-browser-check-20261025.json)，全部资源、门态与角色帧一致；0门撤销／重做、求解22步／24类、回放切换24解及41→52→18换关通过。只是工程验收，不是真人未知规则记录。
+52现v02另过[桌面22步与手机24步普通方案](../examples/discovery-course-20261023/zero-opening-browser-check-20261025.json)，全部资源、门态与角色帧一致；0门撤销／重做、求解22步／24类、回放切换24解及41→52→18换关通过。只是工程验收，不是真人未知规则记录。
 
 49当前三钥匙稿的两类17步、19步收齐已逐步核对玩家／鬼／资源与钥匙显示；电脑、手机触控仿真及18→49→42换关通过，见[现版操作记录](../examples/discovery-course-20261023/key-choice-browser-check-20261025.json)。原单钥匙稿另存，不混称为同一资源任务。[原操作范围](../examples/discovery-course-20261023/levels/49/revisions/v01/browser-check.json)。
 

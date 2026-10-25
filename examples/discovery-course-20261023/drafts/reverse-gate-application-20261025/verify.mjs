@@ -1,11 +1,10 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
-import {buildLevel} from '../../build.mjs';
 import {createReferenceEnvironment} from '../../../../src/reference/environment.js';
 import {GameLogic,WALL_TYPES as W,actionFromName} from '../../../../src/reference/engine.js';
 import {createBreadthFirstSearch} from '../../../../../ghost-maze/src/solver/breadthFirst.js';
 import {createTrajectoryGroups,ghostFrame} from '../../../../../ghost-maze/src/solver/trajectoryGroups.js';
-const map=buildLevel('52'),e=createReferenceEnvironment(map),copy=structuredClone(map);copy.layers[0].endPos=null;const noEnd=createReferenceEnvironment(copy),budget={nodeBudget:300000,stateBudget:300000,budgetMs:20000};
+const map=JSON.parse(fs.readFileSync(new URL('../../levels/52/revisions/v01/map.json',import.meta.url))),e=createReferenceEnvironment(map),copy=structuredClone(map);copy.layers[0].endPos=null;const noEnd=createReferenceEnvironment(copy),budget={nodeBudget:300000,stateBudget:300000,budgetMs:20000};
 const opened=(s,n)=>s.layerStates[0].wallStates.h[5][5].type===W.LOCKED&&n.layerStates[0].wallStates.h[5][5].type===W.EMPTY;
 const diag=(s,a)=>{const d=[];GameLogic.calculateNextState(s,actionFromName(a),e.mapDefinition,{trails:false,visibility:false,ghostDiagnostics:d});return d;};
 function query(advance){const q=createBreadthFirstSearch(e,{monitor:{initial:()=>[],advance:(p,s,a,n)=>n.isWon&&noEnd.step(s,a).isDead?null:advance(p,s,a,n)}}),result=q.run(budget);assert.notEqual(result.status,'unknown');if(result.status==='solved')noEnd.replay(q.firstActions());return{result,actions:q.firstActions(),noEndSafe:result.status==='solved'?true:null};}
