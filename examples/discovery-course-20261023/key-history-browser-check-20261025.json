@@ -1,0 +1,49 @@
+{
+  "recordedOn": "2026-10-25",
+  "mapId": "7256ea01ae5b059a3197c863a6d0109a3cecd5018f4f3683d7b8db20e8aecb6d",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "scope": "新保护交接题的物品、数字门、重置和死亡恢复；工程输入QA，不是AI自主试玩或未知规则真人反馈",
+  "verificationAdjustment": "初版快照含鬼的实时拖尾时间戳，撤销比较因此失败；改为玩家、鬼位、物品、门态、循环和历史游标，不把动画差异称作局面恢复bug。",
+  "results": [
+    {
+      "input": "keyboard",
+      "viewport": {
+        "width": 1360,
+        "height": 900
+      },
+      "keysAndOpenedDoorUndoRedoExact": true,
+      "resetAfterTwoKeysUndoRedoExact": true,
+      "wrongActions": [
+        "R",
+        "R",
+        "D",
+        "D"
+      ],
+      "deathUndoRedoAndReviveExact": true,
+      "canUndoToOpeningAndContinueToWin": true,
+      "allFinalPlayerAndGhostFramesMatched": true,
+      "dragRequiredForRedo": false,
+      "scope": "实际键盘和按钮操作，不是未知规则玩家的尝试"
+    },
+    {
+      "input": "pure_touch",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "keysAndOpenedDoorUndoRedoExact": true,
+      "resetAfterTwoKeysUndoRedoExact": true,
+      "wrongActions": [
+        "R",
+        "R",
+        "D",
+        "D"
+      ],
+      "deathUndoRedoAndReviveExact": true,
+      "canUndoToOpeningAndContinueToWin": true,
+      "allFinalPlayerAndGhostFramesMatched": true,
+      "dragRequiredForRedo": true,
+      "scope": "沿用现有拖动避开已知方向盘遮挡；不宣称默认布局遮挡已修复或真实手机已验收"
+    }
+  ]
+}
