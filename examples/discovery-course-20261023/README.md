@@ -61,6 +61,8 @@
 
 ## 修订依据与待观察之处
 
+[方向观察与回程稿复查](reviews/direction-observation-and-return-counterexamples-20261025.md)确认46有箭头前的人鬼差异观察机会，但不据此宣称完整视线理解；本轮回程稿的侧门与较长补救反例未采用，29关保持。
+
 [观察机会与前段错误续解复查](reviews/knowledge-assumptions-20261025.md)区分实际呈现、设计前提与真人理解；第2关的填格反例未采用，地图和关序保持。
 
 原版及每次判断改变保存在[复盘目录](reviews/)。当前证书绑定见[核对记录](certificate-check-redesign-20261023.json)；`learning-evidence.json`等旧规则覆盖材料对应撤下的31关，不能当现版关序的趣味依据。未成题原型存`drafts/`，不会因为可解、唯一或方向必要就接入公开流程。

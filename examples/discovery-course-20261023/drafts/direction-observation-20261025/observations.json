@@ -1,0 +1,2783 @@
+{
+  "mapId": "db2898645a5599ef9cf5b0cfff773f0a8cd41abf2d19fe6d9746bcc4fa6bcd1b",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "role": "方向关的实际可观察机会与原图事件范围，不是玩家已经学会或盲AI体验",
+  "humanQuality": null,
+  "criterion": "有效且未终止的行动前，玩家与鬼之间整条射线只含空边或同方向箭头；鬼的下一格无其它鬼占位，原生无视线，行动后鬼原位。第一步为空时才能单独指向远处箭头的遮视线，邻接箭头只说明整体阻隔。",
+  "routes": [
+    {
+      "index": 0,
+      "actions": [
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "R",
+        "D",
+        "D",
+        "D"
+      ],
+      "observationCount": 1,
+      "hasForwardBarrierObservation": true,
+      "hasDistantSightObservation": false,
+      "observations": [
+        {
+          "prefix": [
+            "U",
+            "U",
+            "L",
+            "L",
+            "L",
+            "L",
+            "D",
+            "R",
+            "R",
+            "D",
+            "R",
+            "U",
+            "R",
+            "D"
+          ],
+          "action": "D",
+          "step": 14,
+          "ghostId": 1,
+          "distance": 1,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                3,
+                2
+              ],
+              "to": [
+                4,
+                2
+              ],
+              "type": 4,
+              "direction": {
+                "dx": 1,
+                "dy": 0
+              }
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              4,
+              2
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 2,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 3,
+                "y": 2
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              4,
+              3
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 3,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 3,
+                "y": 2
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "actions": [
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "R",
+        "D",
+        "R",
+        "R",
+        "U",
+        "R",
+        "D",
+        "D",
+        "D"
+      ],
+      "observationCount": 1,
+      "hasForwardBarrierObservation": true,
+      "hasDistantSightObservation": false,
+      "observations": [
+        {
+          "prefix": [
+            "U",
+            "U",
+            "L",
+            "L",
+            "L",
+            "L",
+            "D",
+            "R",
+            "D",
+            "R",
+            "R",
+            "U",
+            "R",
+            "D"
+          ],
+          "action": "D",
+          "step": 14,
+          "ghostId": 1,
+          "distance": 1,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                3,
+                2
+              ],
+              "to": [
+                4,
+                2
+              ],
+              "type": 4,
+              "direction": {
+                "dx": 1,
+                "dy": 0
+              }
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              4,
+              2
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 2,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 3,
+                "y": 2
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              4,
+              3
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 3,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 3,
+                "y": 2
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "actions": [
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R",
+        "U",
+        "R",
+        "D",
+        "D",
+        "D"
+      ],
+      "observationCount": 1,
+      "hasForwardBarrierObservation": true,
+      "hasDistantSightObservation": false,
+      "observations": [
+        {
+          "prefix": [
+            "U",
+            "U",
+            "L",
+            "L",
+            "L",
+            "L",
+            "D",
+            "D",
+            "R",
+            "R",
+            "R",
+            "U",
+            "R",
+            "D"
+          ],
+          "action": "D",
+          "step": 14,
+          "ghostId": 1,
+          "distance": 1,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                3,
+                2
+              ],
+              "to": [
+                4,
+                2
+              ],
+              "type": 4,
+              "direction": {
+                "dx": 1,
+                "dy": 0
+              }
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              4,
+              2
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 2,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 3,
+                "y": 2
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              4,
+              3
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 3,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 3,
+                "y": 2
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "actions": [
+        "L",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "D",
+        "R",
+        "R",
+        "D",
+        "D"
+      ],
+      "observationCount": 4,
+      "hasForwardBarrierObservation": true,
+      "hasDistantSightObservation": false,
+      "observations": [
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L"
+          ],
+          "action": "L",
+          "step": 6,
+          "ghostId": 1,
+          "distance": 1,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              3,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              2,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        },
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L",
+            "L"
+          ],
+          "action": "L",
+          "step": 7,
+          "ghostId": 1,
+          "distance": 2,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            },
+            {
+              "from": [
+                3,
+                1
+              ],
+              "to": [
+                2,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              2,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              1,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 2
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        },
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "action": "L",
+          "step": 8,
+          "ghostId": 1,
+          "distance": 3,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            },
+            {
+              "from": [
+                3,
+                1
+              ],
+              "to": [
+                2,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            },
+            {
+              "from": [
+                2,
+                1
+              ],
+              "to": [
+                1,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              1,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 2
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              0,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        },
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L",
+            "L",
+            "L",
+            "D"
+          ],
+          "action": "D",
+          "step": 9,
+          "ghostId": 1,
+          "distance": 4,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            },
+            {
+              "from": [
+                3,
+                1
+              ],
+              "to": [
+                2,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            },
+            {
+              "from": [
+                2,
+                1
+              ],
+              "to": [
+                1,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            },
+            {
+              "from": [
+                1,
+                1
+              ],
+              "to": [
+                0,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              0,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              0,
+              2
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 0,
+                "y": 1
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "actions": [
+        "L",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "R",
+        "D",
+        "R",
+        "R",
+        "R",
+        "D",
+        "D"
+      ],
+      "observationCount": 4,
+      "hasForwardBarrierObservation": true,
+      "hasDistantSightObservation": false,
+      "observations": [
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L"
+          ],
+          "action": "L",
+          "step": 6,
+          "ghostId": 1,
+          "distance": 1,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              3,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              2,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        },
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L",
+            "L"
+          ],
+          "action": "L",
+          "step": 7,
+          "ghostId": 1,
+          "distance": 2,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            },
+            {
+              "from": [
+                3,
+                1
+              ],
+              "to": [
+                2,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              2,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              1,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 2
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        },
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "action": "L",
+          "step": 8,
+          "ghostId": 1,
+          "distance": 3,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            },
+            {
+              "from": [
+                3,
+                1
+              ],
+              "to": [
+                2,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            },
+            {
+              "from": [
+                2,
+                1
+              ],
+              "to": [
+                1,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              1,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 2
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              0,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        },
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L",
+            "L",
+            "L",
+            "D"
+          ],
+          "action": "D",
+          "step": 9,
+          "ghostId": 1,
+          "distance": 4,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            },
+            {
+              "from": [
+                3,
+                1
+              ],
+              "to": [
+                2,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            },
+            {
+              "from": [
+                2,
+                1
+              ],
+              "to": [
+                1,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            },
+            {
+              "from": [
+                1,
+                1
+              ],
+              "to": [
+                0,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              0,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              0,
+              2
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 0,
+                "y": 1
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "actions": [
+        "L",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R",
+        "R",
+        "D",
+        "D"
+      ],
+      "observationCount": 4,
+      "hasForwardBarrierObservation": true,
+      "hasDistantSightObservation": false,
+      "observations": [
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L"
+          ],
+          "action": "L",
+          "step": 6,
+          "ghostId": 1,
+          "distance": 1,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              3,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              2,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        },
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L",
+            "L"
+          ],
+          "action": "L",
+          "step": 7,
+          "ghostId": 1,
+          "distance": 2,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            },
+            {
+              "from": [
+                3,
+                1
+              ],
+              "to": [
+                2,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              2,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              1,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 2
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        },
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "action": "L",
+          "step": 8,
+          "ghostId": 1,
+          "distance": 3,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            },
+            {
+              "from": [
+                3,
+                1
+              ],
+              "to": [
+                2,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            },
+            {
+              "from": [
+                2,
+                1
+              ],
+              "to": [
+                1,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              1,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 2
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              0,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        },
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L",
+            "L",
+            "L",
+            "D"
+          ],
+          "action": "D",
+          "step": 9,
+          "ghostId": 1,
+          "distance": 4,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            },
+            {
+              "from": [
+                3,
+                1
+              ],
+              "to": [
+                2,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            },
+            {
+              "from": [
+                2,
+                1
+              ],
+              "to": [
+                1,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            },
+            {
+              "from": [
+                1,
+                1
+              ],
+              "to": [
+                0,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              0,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              0,
+              2
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 0,
+                "y": 1
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "actions": [
+        "L",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "D",
+        "R",
+        "D",
+        "R",
+        "D"
+      ],
+      "observationCount": 4,
+      "hasForwardBarrierObservation": true,
+      "hasDistantSightObservation": false,
+      "observations": [
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L"
+          ],
+          "action": "L",
+          "step": 6,
+          "ghostId": 1,
+          "distance": 1,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              3,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              2,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        },
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L",
+            "L"
+          ],
+          "action": "L",
+          "step": 7,
+          "ghostId": 1,
+          "distance": 2,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            },
+            {
+              "from": [
+                3,
+                1
+              ],
+              "to": [
+                2,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              2,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              1,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 2
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        },
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "action": "L",
+          "step": 8,
+          "ghostId": 1,
+          "distance": 3,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            },
+            {
+              "from": [
+                3,
+                1
+              ],
+              "to": [
+                2,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            },
+            {
+              "from": [
+                2,
+                1
+              ],
+              "to": [
+                1,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              1,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 2
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              0,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        },
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L",
+            "L",
+            "L",
+            "D"
+          ],
+          "action": "D",
+          "step": 9,
+          "ghostId": 1,
+          "distance": 4,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            },
+            {
+              "from": [
+                3,
+                1
+              ],
+              "to": [
+                2,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            },
+            {
+              "from": [
+                2,
+                1
+              ],
+              "to": [
+                1,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            },
+            {
+              "from": [
+                1,
+                1
+              ],
+              "to": [
+                0,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              0,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              0,
+              2
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 0,
+                "y": 1
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "actions": [
+        "L",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "R",
+        "D",
+        "R",
+        "R",
+        "D",
+        "R",
+        "D"
+      ],
+      "observationCount": 4,
+      "hasForwardBarrierObservation": true,
+      "hasDistantSightObservation": false,
+      "observations": [
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L"
+          ],
+          "action": "L",
+          "step": 6,
+          "ghostId": 1,
+          "distance": 1,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              3,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              2,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        },
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L",
+            "L"
+          ],
+          "action": "L",
+          "step": 7,
+          "ghostId": 1,
+          "distance": 2,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            },
+            {
+              "from": [
+                3,
+                1
+              ],
+              "to": [
+                2,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              2,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              1,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 2
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        },
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "action": "L",
+          "step": 8,
+          "ghostId": 1,
+          "distance": 3,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            },
+            {
+              "from": [
+                3,
+                1
+              ],
+              "to": [
+                2,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            },
+            {
+              "from": [
+                2,
+                1
+              ],
+              "to": [
+                1,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              1,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 2
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              0,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        },
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L",
+            "L",
+            "L",
+            "D"
+          ],
+          "action": "D",
+          "step": 9,
+          "ghostId": 1,
+          "distance": 4,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            },
+            {
+              "from": [
+                3,
+                1
+              ],
+              "to": [
+                2,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            },
+            {
+              "from": [
+                2,
+                1
+              ],
+              "to": [
+                1,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            },
+            {
+              "from": [
+                1,
+                1
+              ],
+              "to": [
+                0,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              0,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              0,
+              2
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 0,
+                "y": 1
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "actions": [
+        "L",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R",
+        "D",
+        "R",
+        "D"
+      ],
+      "observationCount": 4,
+      "hasForwardBarrierObservation": true,
+      "hasDistantSightObservation": false,
+      "observations": [
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L"
+          ],
+          "action": "L",
+          "step": 6,
+          "ghostId": 1,
+          "distance": 1,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              3,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              2,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        },
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L",
+            "L"
+          ],
+          "action": "L",
+          "step": 7,
+          "ghostId": 1,
+          "distance": 2,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            },
+            {
+              "from": [
+                3,
+                1
+              ],
+              "to": [
+                2,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              2,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 3
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              1,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 2
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        },
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "action": "L",
+          "step": 8,
+          "ghostId": 1,
+          "distance": 3,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            },
+            {
+              "from": [
+                3,
+                1
+              ],
+              "to": [
+                2,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            },
+            {
+              "from": [
+                2,
+                1
+              ],
+              "to": [
+                1,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              1,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 2
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              0,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        },
+        {
+          "prefix": [
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L",
+            "L",
+            "L",
+            "D"
+          ],
+          "action": "D",
+          "step": 9,
+          "ghostId": 1,
+          "distance": 4,
+          "firstEdgeEmpty": false,
+          "ray": [
+            {
+              "from": [
+                4,
+                1
+              ],
+              "to": [
+                3,
+                1
+              ],
+              "type": 4,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            },
+            {
+              "from": [
+                3,
+                1
+              ],
+              "to": [
+                2,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            },
+            {
+              "from": [
+                2,
+                1
+              ],
+              "to": [
+                1,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            },
+            {
+              "from": [
+                1,
+                1
+              ],
+              "to": [
+                0,
+                1
+              ],
+              "type": 0,
+              "direction": null
+            }
+          ],
+          "nativeSightBefore": false,
+          "ghostStayed": true,
+          "before": {
+            "p": [
+              0,
+              1
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          },
+          "after": {
+            "p": [
+              0,
+              2
+            ],
+            "ghosts": [
+              {
+                "id": 0,
+                "x": 0,
+                "y": 1
+              },
+              {
+                "id": 1,
+                "x": 4,
+                "y": 1
+              }
+            ],
+            "won": false,
+            "dead": false
+          }
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "query": "普通无伤通关中不出现any_forward_barrier",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 73,
+        "transitions": 365,
+        "discovered": 73,
+        "totalActions": null
+      },
+      "actions": null,
+      "scope": "原图事件过滤，不是把箭头改成普通门；含全部非最优清洁及允许的非死亡重合范围"
+    },
+    {
+      "query": "普通无伤通关中不出现distant_sight_only",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 195,
+        "transitions": 973,
+        "discovered": 210,
+        "totalActions": 16
+      },
+      "actions": [
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "R",
+        "D",
+        "D",
+        "D"
+      ],
+      "scope": "原图事件过滤，不是把箭头改成普通门；含全部非最优清洁及允许的非死亡重合范围"
+    }
+  ],
+  "limits": [
+    "只记录提供了观察机会，不声称玩家实际注意、推断完整规则或找到最优。",
+    "没有为补齐观察新增关卡、文字提示或改动正式机制。",
+    "不依赖编号，未把终点先判胜造成的停止当成鬼的行为。"
+  ]
+}

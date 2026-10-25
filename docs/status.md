@@ -35,6 +35,8 @@ Site项目`appgprj_6adb4b311474819180db83f0509d84e1`；源码在独立Site仓，
 
 已复查[观察机会与前段错误续解](../examples/discovery-course-20261023/reviews/knowledge-assumptions-20261025.md)：不把早段保护当作已完整理解门的遮视线，也不把一次阻路当作已懂全部优先规则。第2关填格会取消原调动问题，未采用；该复查不改图或关序，不为追求全部可恢复而增加说明关或削弱原题。
 
+另查[方向观察与新回程原型](../examples/discovery-course-20261023/reviews/direction-observation-and-return-counterexamples-20261025.md)：46已有箭头前的人鬼差异观察机会。新稿存在侧入口和38步普通补救，不把22步最优的提前召回说成必学；几批近亲均未接入，当前29关保持，继续从不同完整问题或合适既有作品中选取。
+
 ## 当前验收与基线
 
 29关构造器、现存地图和证书绑定已核对，共同规则锁为`sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0`。全部最优重合边界、去终点安全、指定实际中性入场及码往返分别留证；有鬼图另验编号无关，无鬼50、51不冒称编号试验；证据范围见[现版核对](../examples/discovery-course-20261023/certificate-check-redesign-20261023.json)。
