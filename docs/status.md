@@ -10,7 +10,7 @@
 
 ## 公开试玩与当前取舍
 
-[鬼迷宫 · 初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)已公开给所有人。目前公开29关，12张课程专用图、17张既有图的复用或课程变式；来源与是否已获评价逐项列在课程表，《对门》明确来自未评价研究稿。均不继承为本次未知规则体验已获好评。
+[鬼迷宫 · 初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)已公开给所有人。目前公开30关，12张课程专用图、18张既有图的复用或课程变式；来源与是否已获评价逐项列在课程表，《对门》《逆渡》明确来自未评价研究稿。均不继承为本次未知规则体验已获好评。
 
 Site项目`appgprj_6adb4b311474819180db83f0509d84e1`；源码在独立Site仓，工作目录`/workspace/sites/ghostmaze-discovery-path`。仅公开稳定ID与正式站游玩入口，不公开解法、规则或设计思想；关序变化保留正在玩的局面。按[课程目录](../examples/discovery-course-20261023/README.md)与其中`course-order.json`推进，ID不是关序。原31关已留档撤下。
 
@@ -18,6 +18,8 @@ Site项目`appgprj_6adb4b311474819180db83f0509d84e1`；源码在独立Site仓，
 - 新关45为13格单A双鬼完整问题，接在首A后，再进入《错位》的A/B；不为困鬼另设短演示。《接力》据此承接已有主动保护与换控制经验，继续两组保护和多鬼准备。75步《换岗》课程适配44撤下，原稿与正式集保持；不是把49步删掉后段的改稿冒称等价优化。[取舍、来源与范围](../examples/discovery-course-20261023/reviews/single-letter-application-20261024.md)。
 - 《暂驻》《再借》《对门》从重新引走推进到借鬼和共同安置。《对门》明确是未评价研究复用。[较后位置的依据](../examples/discovery-course-20261023/reviews/shared-trap-after-recruitment-20261024.md)。
 - 首次方向改用11格无鬼控制室50：在室内关回B重新接通外部，再经单向口出来；随后46继续同种元件与双鬼停位、取物回程。50不是最高难度突破，是否显教学仍待真人；46存在同16步无实际互挡方案，不强称借鬼必学。原43、正式《归途》及其认可保持。[当前取舍](../examples/discovery-course-20261023/reviews/control-circuit-20261025.md)。
+
+第14关复用25格逆渡研究稿52，接在暂驻与再借之间：首次开0须从上方并先于取物；也有24步不使用优先争位的普通通关，不要求提前掌握主动借鬼。当前22步、24种轨迹及完整实际入场复验通过，原研究与正式集保持。[取舍与原图查询](../examples/discovery-course-20261023/reviews/zero-opening-application-20261025.md)。
 
 新增15格无鬼控制访问题51，接在46与《侧入》之间：A会关住内B入口，取物前先准备B，带钥匙回来再恢复A；不把同一次序照走两遍。两个方向口各有具体进出作用，未采用给旧控制室机械加鬼的稿。[当前取舍](../examples/discovery-course-20261023/reviews/controller-access-20261025.md)。
 
@@ -35,13 +37,15 @@ Site项目`appgprj_6adb4b311474819180db83f0509d84e1`；源码在独立Site仓，
 
 已复查[观察机会与前段错误续解](../examples/discovery-course-20261023/reviews/knowledge-assumptions-20261025.md)：不把早段保护当作已完整理解门的遮视线，也不把一次阻路当作已懂全部优先规则。第2关填格会取消原调动问题，未采用；该复查不改图或关序，不为追求全部可恢复而增加说明关或削弱原题。
 
-另查[方向观察与新回程原型](../examples/discovery-course-20261023/reviews/direction-observation-and-return-counterexamples-20261025.md)：46已有箭头前的人鬼差异观察机会。新稿存在侧入口和38步普通补救，不把22步最优的提前召回说成必学；几批近亲均未接入，当前29关保持，继续从不同完整问题或合适既有作品中选取。
+另查[方向观察与新回程原型](../examples/discovery-course-20261023/reviews/direction-observation-and-return-counterexamples-20261025.md)：46已有箭头前的人鬼差异观察机会。新稿存在侧入口和38步普通补救，不把22步最优的提前召回说成必学；几批近亲均未接入；随后复用逆渡作为同0门的完整应用，未恢复这几批稿。
 
 ## 当前验收与基线
 
-29关构造器、现存地图和证书绑定已核对，共同规则锁为`sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0`。全部最优重合边界、去终点安全、指定实际中性入场及码往返分别留证；有鬼图另验编号无关，无鬼50、51不冒称编号试验；证据范围见[现版核对](../examples/discovery-course-20261023/certificate-check-redesign-20261023.json)。
+30关构造器、现存地图和证书绑定已核对，共同规则锁为`sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0`。全部最优重合边界、去终点安全、指定实际中性入场及码往返分别留证；有鬼图另验编号无关，无鬼50、51不冒称编号试验；证据范围见[现版核对](../examples/discovery-course-20261023/certificate-check-redesign-20261023.json)。
 
-当前29关的物理证书绑定通过；加入51后的npm test与cloud:check通过两仓、规则锁、原种子及22个HTTP入口。当前环境Node24，未重做Node22验收；发布版本见[发布记录](../examples/discovery-course-20261023/site-publication.json)。
+当前30关的物理证书绑定通过；加入52后的npm test与cloud:check通过两仓、规则锁、原种子及22个HTTP入口。当前环境Node24，未重做Node22验收；发布版本见[发布记录](../examples/discovery-course-20261023/site-publication.json)。
+
+52另过[桌面22步与手机24步普通方案](../examples/discovery-course-20261023/zero-opening-browser-check-20261025.json)，全部资源、门态与角色帧一致；0门撤销／重做、求解22步／24类、回放切换24解及41→52→18换关通过。只是工程验收，不是真人未知规则记录。
 
 49当前三钥匙稿的两类17步、19步收齐已逐步核对玩家／鬼／资源与钥匙显示；电脑、手机触控仿真及18→49→42换关通过，见[现版操作记录](../examples/discovery-course-20261023/key-choice-browser-check-20261025.json)。原单钥匙稿另存，不混称为同一资源任务。[原操作范围](../examples/discovery-course-20261023/levels/49/revisions/v01/browser-check.json)。
 
