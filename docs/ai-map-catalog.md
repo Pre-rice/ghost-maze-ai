@@ -18,11 +18,13 @@
 
 2026-10-25新增25格双层课程专用54，接在末尾作为首次楼梯的完整取物题，当时32关。安置方向决定未来返回入口是否被占；35步两种鬼轨迹，原图事件、全最优、真正外侧入场、电脑／手机操作及跨层回放通过。只入课程，无真人评价，不称高阶楼梯独有突破。[取舍与证据](../examples/discovery-course-20261023/reviews/overpass-20261025.md)。
 
-2026-10-26新增课程专用57「内室交接」，放在接力之后、首次钥匙之前，当前35关。25格三鬼、单A、一普通门，23步；进入前要准备队列与另一出口，门外追者会封住回头。去箭头、资源与多余普通门的迭代原件保留，不冒称旧解等价精简；无真人质量评价、未入正式集。[试玩](https://ghostmaze.novic.cc/?map=AWM4-BEIPjAwMBos8OkOEGQo41qh59DAEMa0ioGBQcCpS-CJxkIWBhBoAAA) · [课程作用与证据](../examples/discovery-course-20261023/reviews/inner-queue-20261026.md)。
+2026-10-26新增课程专用57「内室交接」，放在接力之后、首次钥匙之前，当时35关。25格三鬼、单A、一普通门，23步；进入前要准备队列与另一出口，门外追者会封住回头。去箭头、资源与多余普通门的迭代原件保留，不冒称旧解等价精简；无真人质量评价、未入正式集。[试玩](https://ghostmaze.novic.cc/?map=AWM4-BEIPjAwMBos8OkOEGQo41qh59DAEMa0ioGBQcCpS-CJxkIWBhBoAAA) · [课程作用与证据](../examples/discovery-course-20261023/reviews/inner-queue-20261026.md)。
+
+2026-10-26新增课程专用58「同室两用」，接首次楼梯54之后，当前36关。下层9格、上层6格，双鬼一钥匙；同一上层小室第一次带追者回来、第二次才留下另一追者，26步两种鬼轨迹。先永久安置仍有34步恢复，不称死局；无真人质量评价、未入正式集。[试玩](https://ghostmaze.novic.cc/?map=AWN4wcDAx36EgYGBm4VNjiGBgavRPkTUiQEM5jXscGoAMQ4o8PGBRRgZChi0GBsDIPKCTAoQBosDAA) · [课程作用与当前证据](../examples/discovery-course-20261023/reviews/shared-slot-20261026.md)。
 
 ## 2026-10-23 未知规则的逐关发现线路
 
-用户新授权只做死亡循环的循序渐进关卡，公开线路持续更新，现有正式地图集保持。[公开试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site) · [关卡设计与证据目录](../examples/discovery-course-20261023/README.md)。当前试验线路已重排35关，继续检视重复与认知跨度。用户现已明确否定连续纯机制演示的安排，已按[真实反馈](../examples/discovery-course-20261023/reviews/teaching-feedback-20261023.json)重做：先用少数元件形成可探索的完整谜题，再逐步加入新元件。旧31关资料保留，演示小关不再串入流程；没有未知规则真人录制，不把通关或机械QA当成学会或趣味。旧三张单向门图的负评与停止记录保持，本次不是恢复旧稿递补。
+用户新授权只做死亡循环的循序渐进关卡，公开线路持续更新，现有正式地图集保持。[公开试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site) · [关卡设计与证据目录](../examples/discovery-course-20261023/README.md)。当前试验线路已重排36关，继续检视重复与认知跨度。用户现已明确否定连续纯机制演示的安排，已按[真实反馈](../examples/discovery-course-20261023/reviews/teaching-feedback-20261023.json)重做：先用少数元件形成可探索的完整谜题，再逐步加入新元件。旧31关资料保留，演示小关不再串入流程；没有未知规则真人录制，不把通关或机械QA当成学会或趣味。旧三张单向门图的负评与停止记录保持，本次不是恢复旧稿递补。
 
 2026-10-24首次A已由九格一次关门图改为十格完整往返，仍是第六关、不增加关数；旧稿与只开一次A绕行的反例都保留，见[修订依据](../examples/discovery-course-20261023/reviews/first-letter-full-detour-20261024.md)。正式地图集不变，课程新稿仍未获真人评价。
 

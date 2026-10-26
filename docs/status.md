@@ -10,7 +10,7 @@
 
 ## 公开试玩与当前取舍
 
-[鬼迷宫 · 初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)公开给所有人，当前35关：15张课程专用图、20张既有图的复用或课程变式。Site第86版原生部署成功，来源与版本见[发布记录](../examples/discovery-course-20261023/site-publication.json)。不是原31张机制演示串重新上架。
+[鬼迷宫 · 初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)公开给所有人，当前36关：16张课程专用图、20张既有图的复用或课程变式。Site第87版原生部署成功，来源与版本见[发布记录](../examples/discovery-course-20261023/site-publication.json)。不是原31张机制演示串重新上架。
 
 [课程目录与设计关键](../examples/discovery-course-20261023/README.md)是完整人读入口，`course-order.json`是关序唯一来源，目录ID不是关数。Site只公开ID与正式站游玩入口，刷新清单保留当前局面，不显示设计意图或解法。项目`appgprj_6adb4b311474819180db83f0509d84e1`，Site独立源码在`/workspace/sites/ghostmaze-discovery-path`。
 
@@ -23,8 +23,9 @@
 - 第24关56复用未评价《借道》，回望→借道→借影：把未来开路应用到不可恢复的0与双取物；24格含两处封闭美化格，44步六条原始最优为两种鬼轨迹。旧参考映射保持，八项事件、错误计划与真正入场另验，不把机械事实当趣味。[取舍与当前证据](../examples/discovery-course-20261023/reviews/borrowed-route-course-20261026.md)。
 - 第10关57为25格单A三鬼完整任务，接在接力与首次钥匙之间。先准备队列及离开相位，再借普通门进入；门外追者会封住回头。少一次A的实际安全前缀已无续解，仍无真人评价。[设计与取舍](../examples/discovery-course-20261023/reviews/inner-queue-20261026.md)。
 - 第35关54为25格双层完整取物题，35步两种轨迹：近端搬运堵住最后入口，从北端准备才保留返回。定位为停位规划的首次跨层应用，不称高阶楼梯独有突破，原楼间仍撤下。[设计与当前证据](../examples/discovery-course-20261023/reviews/overpass-20261025.md)。
+- 第36关58用15格同室两用承接54：第一次带追者跟下楼，第二次才留住另一只，结合已有单向口和跨层A。26步两种鬼轨迹，先永久停车的8步仍可再26步恢复；固定原停位才无续解，不声称楼梯独有突破。[当前取舍](../examples/discovery-course-20261023/reviews/shared-slot-20261026.md)。
 
-最新楼梯续篇没有接入：落点争位虽必要却由唯一安全离开自动触发；运送稿能同最优地分别处理两鬼；单楼梯共享保护稿无解，一处连接的31项对照中13项可解却均有同最优的无互挡通关。相关原稿、错误查询及修正留在[落点研究](../examples/discovery-course-20261023/drafts/stair-priority-20261025/)、[运送研究](../examples/discovery-course-20261023/drafts/transport-helper-20261025/)、[共享小室](../examples/discovery-course-20261023/drafts/shared-stair-controls-20261025/)。不继续加机关修补这组，后续换整体关系；此局部否决不扩大为所有楼梯题都无价值。
+此前的楼梯续篇未接入：落点争位虽必要却由唯一安全离开自动触发；运送稿能同最优地分别处理两鬼；单楼梯共享保护稿无解，一处连接的31项对照中13项可解却均有同最优的无互挡通关。相关原稿、错误查询及修正留在[落点研究](../examples/discovery-course-20261023/drafts/stair-priority-20261025/)、[运送研究](../examples/discovery-course-20261023/drafts/transport-helper-20261025/)、[共享小室](../examples/discovery-course-20261023/drafts/shared-stair-controls-20261025/)。不继续加机关修补这组，后续换整体关系；此局部否决不扩大为所有楼梯题都无价值。
 
 新的[0门开视线试构](../examples/discovery-course-20261023/drafts/open-sight-selector-20261025/)也未接入：普通门仍有相同15步参考，且原稿有15步最优重合捷径。一步对照工具补齐重合、层内重复编号和实际终局的区分；不是修改物理规则，也不把互动必要当趣味。
 
@@ -38,11 +39,13 @@
 
 ## 当前验收与基线
 
-35关构造器、存图与证书在[现版绑定记录](../examples/discovery-course-20261023/certificate-check-redesign-20261023.json)核对；共同规则锁`sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0`。全部最优重合边界、去终点安全、指定真正外侧入场与编码分别留证；有鬼图另查编号，无鬼50、51不冒称鬼编号试验。
+36关构造器、存图与证书在[现版绑定记录](../examples/discovery-course-20261023/certificate-check-redesign-20261023.json)核对；共同规则锁`sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0`。全部最优重合边界、去终点安全、指定真正外侧入场与编码分别留证；有鬼图另查编号，无鬼50、51不冒称鬼编号试验。
 
 52现v02的[电脑22步／手机24步](../examples/discovery-course-20261023/zero-opening-browser-check-20261025.json)、54的[两条35步及跨层回放](../examples/discovery-course-20261023/overpass-browser-check-20261025.json)均逐步核对全部层的角色、门与资源。其它关卡操作范围统一见课程目录，不把一次换关首触控冒称整图复验。 新复用55的[电脑／手机22步及前后换关](../examples/discovery-course-20261023/suspended-browser-check-20261025.json)通过，另核对开0、两次A的撤销／重做及同页求解回放。 56的[电脑／手机两种44步及前后换关](../examples/discovery-course-20261023/borrowed-route-browser-check-20261026.json)也通过，五次取物／开门撤销重做、同页求解与切解回放保留原局。
 
-新57的[电脑／手机23步](../examples/discovery-course-20261023/inner-queue-browser-check-20261026.json)核对三次A、入室与东向争位、撤销重做和同页求解回放；[失败恢复与旧清单刷新](../examples/discovery-course-20261023/inner-queue-recovery-and-refresh-20261026.json)补验死亡撤回及插入第10关后旧局面不重载。其它34图码保持，后续同行不再称首次三鬼。
+新57的[电脑／手机23步](../examples/discovery-course-20261023/inner-queue-browser-check-20261026.json)核对三次A、入室与东向争位、撤销重做和同页求解回放；[失败恢复与旧清单刷新](../examples/discovery-course-20261023/inner-queue-recovery-and-refresh-20261026.json)补验死亡撤回及插入第10关后旧局面不重载。57加入时其它34图码保持，后续同行不再称首次三鬼。
+
+58的[电脑／手机26步与34步恢复](../examples/discovery-course-20261023/shared-slot-browser-check-20261026.json)核对两层角色、门、资源和全部转层；跨层A、撤销重做、同页求解切解回放及54→58→54通过。两个视口两层图均检视；仍非真人过程。
 
 54还补验[跨层攻击与上层碰鬼的失败恢复](../examples/discovery-course-20261023/overpass-recovery-check-20261025.json)：四次电脑／手机仿真均可死亡撤销、重做、复活后撤回，并从开局再通关。当前主站已由本地e91dafb改为显示死亡瞬间，逻辑与记录仍使用复活后局面；按既定显示方案核对，不回退本体，也不把旧验收预期误报成bug。
 
