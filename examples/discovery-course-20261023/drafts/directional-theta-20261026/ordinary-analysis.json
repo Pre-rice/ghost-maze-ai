@@ -1,0 +1,329 @@
+{
+  "withoutInfluence": {
+    "result": {
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "expanded": 40,
+      "transitions": 200,
+      "discovered": 40,
+      "totalActions": null
+    },
+    "actions": null
+  },
+  "ordinary": {
+    "analysisVersion": "ordinary-plans-v1",
+    "mapId": "6cc2b9d0f67572d9086190130b9dd139d735577bc05c6c09b33b32c79edd4e06",
+    "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+    "ghosts": [
+      {
+        "index": 0,
+        "initialPosition": [
+          4,
+          0
+        ]
+      },
+      {
+        "index": 1,
+        "initialPosition": [
+          3,
+          1
+        ]
+      },
+      {
+        "index": 2,
+        "initialPosition": [
+          3,
+          4
+        ]
+      }
+    ],
+    "budget": {
+      "nodeBudget": 500000,
+      "stateBudget": 500000,
+      "budgetMs": 25000,
+      "totalBudgetMs": 60000,
+      "orderBudget": 24,
+      "avoidOverlap": true
+    },
+    "scope": {
+      "singleLayerOnly": true,
+      "noDamageOrRevival": true,
+      "avoidOverlap": true,
+      "arrivalDeathCheckedWithoutGoal": true,
+      "movement": "按本体实际记录计鬼移动；终局动作另查去终点死亡，不把该反事实当实际轨迹",
+      "handoff": "一方末次与另一方首次移动允许同一动作；不要求所有鬼必须移动",
+      "history": "处理阶段进入完整状态键；本体参考键保留同层鬼数组位置",
+      "optimality": "只比较本报告明确限制范围内的最短步数，不能替代正式全部最优验收"
+    },
+    "baseline": {
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 86,
+        "transitions": 428,
+        "discovered": 96,
+        "totalActions": 25
+      },
+      "actions": [
+        "D",
+        "U",
+        "R",
+        "D",
+        "R",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "U",
+        "U",
+        "U",
+        "R",
+        "R",
+        "R",
+        "D",
+        "D",
+        "D",
+        "D",
+        "L",
+        "D"
+      ],
+      "movementSpans": [
+        {
+          "ghost": 0,
+          "firstMove": 7,
+          "lastMove": 15
+        },
+        {
+          "ghost": 1,
+          "firstMove": 1,
+          "lastMove": 18
+        },
+        {
+          "ghost": 2,
+          "firstMove": 6,
+          "lastMove": 24
+        }
+      ]
+    },
+    "queries": [
+      {
+        "kind": "independent_prefix",
+        "ghost": 0,
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 28,
+          "transitions": 140,
+          "discovered": 28,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      },
+      {
+        "kind": "independent_suffix",
+        "ghost": 0,
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 36,
+          "transitions": 180,
+          "discovered": 36,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      },
+      {
+        "kind": "independent_prefix",
+        "ghost": 1,
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 55,
+          "transitions": 275,
+          "discovered": 55,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      },
+      {
+        "kind": "independent_suffix",
+        "ghost": 1,
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 10,
+          "transitions": 50,
+          "discovered": 10,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      },
+      {
+        "kind": "independent_prefix",
+        "ghost": 2,
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 10,
+          "transitions": 50,
+          "discovered": 10,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      },
+      {
+        "kind": "independent_suffix",
+        "ghost": 2,
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 27,
+          "transitions": 135,
+          "discovered": 27,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      },
+      {
+        "kind": "complete_sequential",
+        "order": [
+          0,
+          1,
+          2
+        ],
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 27,
+          "transitions": 135,
+          "discovered": 27,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      },
+      {
+        "kind": "complete_sequential",
+        "order": [
+          0,
+          2,
+          1
+        ],
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 10,
+          "transitions": 50,
+          "discovered": 10,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      },
+      {
+        "kind": "complete_sequential",
+        "order": [
+          1,
+          0,
+          2
+        ],
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 27,
+          "transitions": 135,
+          "discovered": 27,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      },
+      {
+        "kind": "complete_sequential",
+        "order": [
+          1,
+          2,
+          0
+        ],
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 35,
+          "transitions": 175,
+          "discovered": 35,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      },
+      {
+        "kind": "complete_sequential",
+        "order": [
+          2,
+          0,
+          1
+        ],
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 10,
+          "transitions": 50,
+          "discovered": 10,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      },
+      {
+        "kind": "complete_sequential",
+        "order": [
+          2,
+          1,
+          0
+        ],
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 10,
+          "transitions": 50,
+          "discovered": 10,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      }
+    ],
+    "completeOrders": {
+      "possible": "6",
+      "queried": 6,
+      "coverageComplete": true
+    },
+    "conclusion": "no_complete_sequential_plan_within_scope",
+    "humanQualityScore": null,
+    "interpretation": "有普通替代只给出具体证书；没有普通替代也不证明新意、难度或尤里卡。",
+    "elapsedMs": 43.10383300000001
+  },
+  "humanQuality": null
+}
