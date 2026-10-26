@@ -1,12 +1,12 @@
 {
-  "mapId": "6e2071405ad7d51af64f8211611e22ebef6595cef8d56ecbb470f5cc93373745",
+  "mapId": "2844b1fc7a102c8a345078f8c8d8da96fa2b998932b074078b39443e13a1f95a",
   "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
   "reference": {
     "schemaVersion": 1,
     "status": "solved",
     "reason": "goal_reached",
     "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
-    "mapId": "6e2071405ad7d51af64f8211611e22ebef6595cef8d56ecbb470f5cc93373745",
+    "mapId": "2844b1fc7a102c8a345078f8c8d8da96fa2b998932b074078b39443e13a1f95a",
     "scope": {
       "gameMode": "death-loop",
       "objective": "zero_hit_no_revive",
@@ -23,12 +23,10 @@
     "optimality": "proven",
     "solution": {
       "actions": [
-        "R",
         "U",
         "U",
         "D",
         "L",
-        "D",
         "D",
         "L",
         "L",
@@ -38,7 +36,6 @@
         "R",
         "R",
         "L",
-        "U",
         "U",
         "L",
         "U",
@@ -48,15 +45,15 @@
         "U",
         "R"
       ],
-      "totalActions": 24,
-      "movementCost": 21
+      "totalActions": 21,
+      "movementCost": 18
     },
     "search": {
-      "expanded": 124,
-      "transitions": 617,
-      "discovered": 135,
+      "expanded": 112,
+      "transitions": 557,
+      "discovered": 122,
       "exhausted": false,
-      "elapsedMs": 26.936656,
+      "elapsedMs": 20.33327100000001,
       "budget": {
         "nodeBudget": 1000000,
         "stateBudget": 1000000,
@@ -69,7 +66,7 @@
     "status": "solved",
     "reason": "goal_reached",
     "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
-    "mapId": "6e2071405ad7d51af64f8211611e22ebef6595cef8d56ecbb470f5cc93373745",
+    "mapId": "2844b1fc7a102c8a345078f8c8d8da96fa2b998932b074078b39443e13a1f95a",
     "scope": {
       "gameMode": "death-loop",
       "objective": "zero_hit_no_revive",
@@ -87,12 +84,10 @@
     "optimality": "proven",
     "solution": {
       "actions": [
-        "R",
         "U",
         "U",
         "D",
         "L",
-        "D",
         "D",
         "L",
         "L",
@@ -102,7 +97,6 @@
         "R",
         "R",
         "L",
-        "U",
         "U",
         "L",
         "U",
@@ -112,16 +106,16 @@
         "U",
         "R"
       ],
-      "totalActions": 24,
-      "movementCost": 21
+      "totalActions": 21,
+      "movementCost": 18
     },
     "search": {
       "algorithm": "astar",
-      "expanded": 103,
-      "transitions": 515,
-      "discovered": 118,
+      "expanded": 95,
+      "transitions": 475,
+      "discovered": 110,
       "exhausted": false,
-      "elapsedMs": 5.677318,
+      "elapsedMs": 4.796848999999995,
       "budget": {
         "nodeBudget": 1000000,
         "stateBudget": 1000000,
@@ -132,32 +126,30 @@
   "allResult": {
     "status": "solved",
     "reason": "goal_reached",
-    "expanded": 129,
-    "transitions": 645,
-    "discovered": 138,
-    "totalActions": 24
+    "expanded": 116,
+    "transitions": 580,
+    "discovered": 124,
+    "totalActions": 21
   },
   "count": "1",
   "boundary": {
     "status": "safe",
     "reason": "all_optimal_routes_avoid_overlap",
-    "mapId": "6e2071405ad7d51af64f8211611e22ebef6595cef8d56ecbb470f5cc93373745",
+    "mapId": "2844b1fc7a102c8a345078f8c8d8da96fa2b998932b074078b39443e13a1f95a",
     "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
     "policy": "all_optimal_routes_avoid_overlap_v2",
     "glassCount": 0,
-    "expanded": 129,
-    "transitions": 645,
-    "discovered": 137,
-    "optimum": 24,
+    "expanded": 116,
+    "transitions": 580,
+    "discovered": 123,
+    "optimum": 21,
     "ignoredFatalOverlap": 1,
     "observedNonFatalOverlap": null,
     "safeOptimalWitness": [
-      "R",
       "U",
       "U",
       "D",
       "L",
-      "D",
       "D",
       "L",
       "L",
@@ -167,7 +159,6 @@
       "R",
       "R",
       "L",
-      "U",
       "U",
       "L",
       "U",
@@ -177,39 +168,38 @@
       "U",
       "R"
     ],
-    "elapsedMs": 13,
+    "elapsedMs": 10,
     "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
   },
   "cold": true,
   "entry": {
     "external": [
       0,
-      0,
-      2
+      7,
+      1
     ],
     "actions": [
-      "R",
-      "R",
-      "R",
-      "U"
+      "L",
+      "L",
+      "L"
     ],
     "externalCells": [
       [
-        0,
-        2
+        7,
+        1
       ],
       [
-        1,
-        2
+        6,
+        1
       ],
       [
-        2,
-        2
+        5,
+        1
       ]
     ],
     "internal": [
       0,
-      3,
+      4,
       1
     ],
     "keys": 0,
@@ -225,36 +215,34 @@
         ],
         [
           4,
-          4
+          3
         ]
       ]
     ],
     "wholeOptimalRoutesInteriorEqual": true,
     "allInternalSuccessorsEqual": {
-      "states": 184,
-      "transitions": 900,
+      "states": 168,
+      "transitions": 820,
       "includesFatalActions": true
     },
     "noEndSafeRoutes": 1,
     "scope": "只声明所列外侧路径、零钥匙与无外部鬼；不声称任意外部局面均适用"
   },
   "physicalAudit": {
-    "reachable": 184,
-    "transitions": 900,
+    "reachable": 168,
+    "transitions": 820,
     "permutations": 2,
-    "compared": 1800,
+    "compared": 1640,
     "includesFatalActions": true
   },
   "noEndSafeRoutes": 1,
-  "mapCode": "AADA-HAgcHAAAAFGgIdALgJgJgKqEsQSBcgYAVAAAABDMEQFARAnIAAAAAABBA",
-  "replayCode": "AAA8PEPBlpL4IfM",
+  "mapCode": "AWM48KOgoICBgYHRvaHtgBZTghLTKqEj4goJrA4gQZ6DAkosTxjAQMABAA",
+  "replayCode": "GBQkNNQGaS-IfMA",
   "actions": [
-    "R",
     "U",
     "U",
     "D",
     "L",
-    "D",
     "D",
     "L",
     "L",
@@ -264,7 +252,6 @@
     "R",
     "R",
     "L",
-    "U",
     "U",
     "L",
     "U",
@@ -277,12 +264,10 @@
   "routes": [
     {
       "actions": [
-        "R",
         "U",
         "U",
         "D",
         "L",
-        "D",
         "D",
         "L",
         "L",
@@ -292,7 +277,6 @@
         "R",
         "R",
         "L",
-        "U",
         "U",
         "L",
         "U",
@@ -302,10 +286,10 @@
         "U",
         "R"
       ],
-      "replayCode": "AAA8PEPBlpL4IfM",
+      "replayCode": "GBQkNNQGaS-IfMA",
       "controls": [
         {
-          "step": 3,
+          "step": 2,
           "letter": "A",
           "at": [
             4,
@@ -313,40 +297,40 @@
           ]
         },
         {
-          "step": 9,
+          "step": 7,
           "letter": "A",
           "at": [
             2,
-            3
+            2
           ]
         },
         {
-          "step": 12,
+          "step": 10,
           "letter": "A",
           "at": [
             2,
-            3
+            2
           ]
         }
       ],
       "trace": [
         {
           "step": 1,
-          "action": "R",
+          "action": "U",
           "p": [
             0,
             4,
-            1
+            0
           ],
           "ghosts": [
             [
               [
-                1,
+                2,
                 0
               ],
               [
                 4,
-                4
+                3
               ]
             ]
           ],
@@ -363,12 +347,12 @@
           "ghosts": [
             [
               [
-                2,
+                3,
                 0
               ],
               [
                 4,
-                4
+                3
               ]
             ]
           ],
@@ -376,28 +360,6 @@
         },
         {
           "step": 3,
-          "action": "U",
-          "p": [
-            0,
-            4,
-            0
-          ],
-          "ghosts": [
-            [
-              [
-                3,
-                0
-              ],
-              [
-                4,
-                4
-              ]
-            ]
-          ],
-          "diagnostics": []
-        },
-        {
-          "step": 4,
           "action": "D",
           "p": [
             0,
@@ -412,14 +374,14 @@
               ],
               [
                 4,
-                4
+                3
               ]
             ]
           ],
           "diagnostics": []
         },
         {
-          "step": 5,
+          "step": 4,
           "action": "L",
           "p": [
             0,
@@ -434,14 +396,14 @@
               ],
               [
                 4,
-                4
+                3
               ]
             ]
           ],
           "diagnostics": []
         },
         {
-          "step": 6,
+          "step": 5,
           "action": "D",
           "p": [
             0,
@@ -456,7 +418,29 @@
               ],
               [
                 4,
-                4
+                3
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 6,
+          "action": "L",
+          "p": [
+            0,
+            2,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                4,
+                0
+              ],
+              [
+                4,
+                3
               ]
             ]
           ],
@@ -464,11 +448,11 @@
         },
         {
           "step": 7,
-          "action": "D",
+          "action": "L",
           "p": [
             0,
-            3,
-            3
+            2,
+            2
           ],
           "ghosts": [
             [
@@ -478,7 +462,7 @@
               ],
               [
                 4,
-                4
+                3
               ]
             ]
           ],
@@ -486,55 +470,11 @@
         },
         {
           "step": 8,
-          "action": "L",
-          "p": [
-            0,
-            2,
-            3
-          ],
-          "ghosts": [
-            [
-              [
-                4,
-                0
-              ],
-              [
-                4,
-                4
-              ]
-            ]
-          ],
-          "diagnostics": []
-        },
-        {
-          "step": 9,
-          "action": "L",
-          "p": [
-            0,
-            2,
-            3
-          ],
-          "ghosts": [
-            [
-              [
-                4,
-                0
-              ],
-              [
-                4,
-                4
-              ]
-            ]
-          ],
-          "diagnostics": []
-        },
-        {
-          "step": 10,
           "action": "D",
           "p": [
             0,
             2,
-            4
+            3
           ],
           "ghosts": [
             [
@@ -544,7 +484,51 @@
               ],
               [
                 3,
-                4
+                3
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 9,
+          "action": "U",
+          "p": [
+            0,
+            2,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                4,
+                0
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 10,
+          "action": "L",
+          "p": [
+            0,
+            2,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                4,
+                0
+              ],
+              [
+                2,
+                3
               ]
             ]
           ],
@@ -552,11 +536,11 @@
         },
         {
           "step": 11,
-          "action": "U",
+          "action": "R",
           "p": [
             0,
-            2,
-            3
+            3,
+            2
           ],
           "ghosts": [
             [
@@ -566,7 +550,7 @@
               ],
               [
                 2,
-                4
+                3
               ]
             ]
           ],
@@ -574,11 +558,11 @@
         },
         {
           "step": 12,
-          "action": "L",
+          "action": "R",
           "p": [
             0,
-            2,
-            3
+            4,
+            2
           ],
           "ghosts": [
             [
@@ -588,7 +572,7 @@
               ],
               [
                 2,
-                4
+                3
               ]
             ]
           ],
@@ -596,11 +580,11 @@
         },
         {
           "step": 13,
-          "action": "R",
+          "action": "L",
           "p": [
             0,
             3,
-            3
+            2
           ],
           "ghosts": [
             [
@@ -610,7 +594,7 @@
               ],
               [
                 2,
-                4
+                3
               ]
             ]
           ],
@@ -618,11 +602,11 @@
         },
         {
           "step": 14,
-          "action": "R",
+          "action": "U",
           "p": [
             0,
-            4,
-            3
+            3,
+            1
           ],
           "ghosts": [
             [
@@ -632,7 +616,7 @@
               ],
               [
                 2,
-                4
+                3
               ]
             ]
           ],
@@ -643,72 +627,6 @@
           "action": "L",
           "p": [
             0,
-            3,
-            3
-          ],
-          "ghosts": [
-            [
-              [
-                4,
-                0
-              ],
-              [
-                2,
-                4
-              ]
-            ]
-          ],
-          "diagnostics": []
-        },
-        {
-          "step": 16,
-          "action": "U",
-          "p": [
-            0,
-            3,
-            2
-          ],
-          "ghosts": [
-            [
-              [
-                4,
-                0
-              ],
-              [
-                2,
-                4
-              ]
-            ]
-          ],
-          "diagnostics": []
-        },
-        {
-          "step": 17,
-          "action": "U",
-          "p": [
-            0,
-            3,
-            1
-          ],
-          "ghosts": [
-            [
-              [
-                4,
-                0
-              ],
-              [
-                2,
-                4
-              ]
-            ]
-          ],
-          "diagnostics": []
-        },
-        {
-          "step": 18,
-          "action": "L",
-          "p": [
-            0,
             2,
             1
           ],
@@ -720,14 +638,14 @@
               ],
               [
                 2,
-                4
+                3
               ]
             ]
           ],
           "diagnostics": []
         },
         {
-          "step": 19,
+          "step": 16,
           "action": "U",
           "p": [
             0,
@@ -742,14 +660,14 @@
               ],
               [
                 2,
-                4
+                3
               ]
             ]
           ],
           "diagnostics": []
         },
         {
-          "step": 20,
+          "step": 17,
           "action": "D",
           "p": [
             0,
@@ -764,14 +682,14 @@
               ],
               [
                 2,
-                4
+                3
               ]
             ]
           ],
           "diagnostics": []
         },
         {
-          "step": 21,
+          "step": 18,
           "action": "R",
           "p": [
             0,
@@ -786,14 +704,14 @@
               ],
               [
                 2,
-                4
+                3
               ]
             ]
           ],
           "diagnostics": []
         },
         {
-          "step": 22,
+          "step": 19,
           "action": "R",
           "p": [
             0,
@@ -808,14 +726,14 @@
               ],
               [
                 2,
-                4
+                3
               ]
             ]
           ],
           "diagnostics": []
         },
         {
-          "step": 23,
+          "step": 20,
           "action": "U",
           "p": [
             0,
@@ -830,14 +748,14 @@
               ],
               [
                 2,
-                4
+                3
               ]
             ]
           ],
           "diagnostics": []
         },
         {
-          "step": 24,
+          "step": 21,
           "action": "R",
           "p": [
             0,
@@ -852,7 +770,7 @@
               ],
               [
                 2,
-                4
+                3
               ]
             ]
           ],
@@ -869,7 +787,6 @@
       1
     ],
     "actions": [
-      "L",
       "L"
     ],
     "unitArrival": [
@@ -879,7 +796,7 @@
     ],
     "internal": [
       0,
-      3,
+      4,
       1
     ],
     "keys": 0,
@@ -894,7 +811,7 @@
         ],
         [
           4,
-          4
+          3
         ]
       ]
     ],

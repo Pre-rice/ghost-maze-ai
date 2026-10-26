@@ -1,6 +1,6 @@
 # AI 地图总目录
 
-2026-10-26新增课程62《留席》，暂第40：15格两鬼、单A两处控制、24步；控制被追者占据，另一处控制先完成取物，最后回头重新安置。只留两A及两普通门，建议最终接首次钥匙第11后；没有真人评价，不入正式集，不继承悬置等亲缘好评。[统一人读说明](../examples/discovery-course-20261023/review-guide.md#level-62) · [构造与范围](../examples/discovery-course-20261023/drafts/occupied-control-20261026/README.md)。
+2026-10-26新增课程62《留席》，暂第40，现v02：14格两鬼、单A两处控制、21步（原15格24步留档）；控制被追者占据，另一处控制先完成取物，最后回头重新安置。只留两A及两普通门，建议最终接首次钥匙第11后；没有真人评价，不入正式集，不继承悬置等亲缘好评。[统一人读说明](../examples/discovery-course-20261023/review-guide.md#level-62) · [构造与范围](../examples/discovery-course-20261023/drafts/occupied-control-20261026/README.md)。
 
 2026-10-26新增课程整图重构61《携影》，暂追加第39：复用错位／再借的局部空间，取消重复引活前置，29格两鬼、单A、现v02为44步（原48步留档）；将左鬼带入右院协助取物，回来仍需重新调动帮手。不是原图等价精简，不转移好评，原38关及正式地图集保持。具体来源、迭代与审查重点见[统一人读说明](../examples/discovery-course-20261023/review-guide.md#level-61)，证据见[研究归档](../examples/discovery-course-20261023/drafts/cross-unit-return-20261026/README.md)。
 

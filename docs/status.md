@@ -12,7 +12,7 @@
 
 ## 公开试玩与当前取舍
 
-[鬼迷宫 · 初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)公开给所有人，当前40关：19张课程专用图、21张既有图的复用或课程变式。Site第93版原生部署成功，来源与版本见[发布记录](../examples/discovery-course-20261023/site-publication.json)。不是原31张机制演示串重新上架。
+[鬼迷宫 · 初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)公开给所有人，当前40关：19张课程专用图、21张既有图的复用或课程变式。Site第94版原生部署成功，来源与版本见[发布记录](../examples/discovery-course-20261023/site-publication.json)。不是原31张机制演示串重新上架。
 
 [逐关设计审查说明](../examples/discovery-course-20261023/review-guide.md)是本轮人读入口，[课程目录](../examples/discovery-course-20261023/README.md)保留证据索引。`course-order.json`是关序唯一来源，目录ID不是关数。Site的“设计说明 · 含剧透”跳到当前关，正常试玩不显示意图或解法，刷新清单保留当前局面。项目`appgprj_6adb4b311474819180db83f0509d84e1`，Site独立源码在`/workspace/sites/ghostmaze-discovery-path`。
 
@@ -31,7 +31,7 @@
 
 - 新第39关61「携影」重构错位／再借空间，29格两鬼、单A、现v02为44步一类鬼轨迹。取消重复引活前置，让左追者成为右院帮手，再处理它对取物回程的妨碍；两父题好评不转移，是否只是旧题加赶路仍待审。[构造与范围](../examples/discovery-course-20261023/drafts/cross-unit-return-20261026/README.md)。
 
-- 新第40关62「留席」为15格单A双控制，24步。上鬼暂占控制与目标前厅，下方控制完成取物后才回上区重新安置；去掉两扇上区资格A、内移出生，实际最优没有双鬼争位。提前清上区仍可38步恢复；建议最终接首次钥匙第11之后，暂追加审查。[构造与完整范围](../examples/discovery-course-20261023/drafts/occupied-control-20261026/README.md)。
+- 新第40关62「留席」现v02为14格单A双控制，21步（原15格24步留档）。上鬼暂占控制与目标前厅，下方控制完成取物后才回上区重新安置；去掉两扇上区资格A、内移出生，实际最优没有双鬼争位。提前清上区仍可38步恢复；建议最终接首次钥匙第11之后，暂追加审查。[构造与完整范围](../examples/discovery-course-20261023/drafts/occupied-control-20261026/README.md)。
 
 此前的楼梯续篇未接入：落点争位虽必要却由唯一安全离开自动触发；运送稿能同最优地分别处理两鬼；单楼梯共享保护稿无解，一处连接的31项对照中13项可解却均有同最优的无互挡通关。相关原稿、错误查询及修正留在[落点研究](../examples/discovery-course-20261023/drafts/stair-priority-20261025/)、[运送研究](../examples/discovery-course-20261023/drafts/transport-helper-20261025/)、[共享小室](../examples/discovery-course-20261023/drafts/shared-stair-controls-20261025/)。不继续加机关修补这组，后续换整体关系；此局部否决不扩大为所有楼梯题都无价值。
 
@@ -50,6 +50,8 @@
 观察机会不等于玩家学会。已复查[知识前提与早段续解](../examples/discovery-course-20261023/reviews/knowledge-assumptions-20261025.md)，撤回把实墙遮挡误归给普通门的初步判断；第2关填格取消原调动问题，未采用。其它曾否决的回程稿保留[具体反例](../examples/discovery-course-20261023/reviews/direction-observation-and-return-counterexamples-20261025.md)，不重复复活。
 
 ## 当前验收与基线
+
+62现v02整下区上移、出生内收，14格21步；原24步删三步，映射后的21帧角色、资源及A相位匹配，完整探索未称等价。[精简与证据](../examples/discovery-course-20261023/drafts/occupied-control-economy-20261026/README.md)。[新电脑/手机21步](../examples/discovery-course-20261023/occupied-control-economy-browser-check-20261026.json)含桌面35步提前清上区恢复、2步错误撤回、关键重做、网页求解回放与61↔62首输入/预加载；新证书另查。Site94原生部署成功，未重复访问部署；下述24/38步记录保留为v01。
 
 第40关[电脑／手机24步](../examples/discovery-course-20261023/occupied-control-browser-check-20261026.json)逐帧核对两鬼、玩家、门及资源；桌面另实走11步提前清上区加27步恢复，共38步。三步无续解错误前缀可撤回，三次A、两次跨普通门、取物与最终引动的关键撤销重做、24步一类网页求解和同页回放通过。61↔62首输入、40段说明与下载一致，单实例预加载保持。Site93原生部署成功，原39码／顺序保持；本体main未推送。
 
