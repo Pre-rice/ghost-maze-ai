@@ -47,6 +47,8 @@
 
 第37之后另排除[四组具体构造](../examples/discovery-course-20261023/drafts/followup-relationships-20261026/README.md)：212项中8项不冷未搜索，其余204项确定复算。三室返回被锁死；横闸的安全最优不用A；内室控制稿或无解、或有逐只方案；腾位新增取物也无解，未改原37。原卡、几何假设修正和紧凑地图编辑记录保持，不继续添机关修补这四组；不扩大为所有同类机制不可用。后续先以原生完整动作核对进入、操作、退出，再谈新关系，不能把搜索数量算进度。
 
+后续单张[双控制预检](../examples/discovery-course-20261023/drafts/double-control-preflight-20261026/README.md)虽有合法六步准备，整图419态穷尽无解，不加机关修补；[携影上口近路](../examples/discovery-course-20261023/drafts/cross-unit-return-economy-20261026/README.md#未采用的上口近路)虽29步，却有不再处理回程帮手的清洁通关，拒绝这项过度简化。公开40关保持。
+
 观察机会不等于玩家学会。已复查[知识前提与早段续解](../examples/discovery-course-20261023/reviews/knowledge-assumptions-20261025.md)，撤回把实墙遮挡误归给普通门的初步判断；第2关填格取消原调动问题，未采用。其它曾否决的回程稿保留[具体反例](../examples/discovery-course-20261023/reviews/direction-observation-and-return-counterexamples-20261025.md)，不重复复活。
 
 ## 当前验收与基线
