@@ -1,8 +1,10 @@
 # AI 地图总目录
 
-2026-10-26新增课程62《留席》，暂第40，现v02：14格两鬼、单A两处控制、21步（原15格24步留档）；控制被追者占据，另一处控制先完成取物，最后回头重新安置。只留两A及两普通门，建议最终接首次钥匙第11后；没有真人评价，不入正式集，不继承悬置等亲缘好评。[统一人读说明](../examples/discovery-course-20261023/review-guide.md#level-62) · [构造与范围](../examples/discovery-course-20261023/drafts/occupied-control-20261026/README.md)。
+2026-10-26本轮四候选编排为《留席》第12、《携影》第20、《归还》第31、《腾位》第34；原36相对顺序及全部40地图码保持。以下产出日志保留当时编号，当前流程以[统一人读说明](../examples/discovery-course-20261023/review-guide.md)为准。编排没有真人认可标签。[前后对照及前置依据](../examples/discovery-course-20261023/reviews/placement-of-new-candidates-20261026.json)。
 
-2026-10-26新增课程整图重构61《携影》，暂追加第39：复用错位／再借的局部空间，取消重复引活前置，29格两鬼、单A、现v02为44步（原48步留档）；将左鬼带入右院协助取物，回来仍需重新调动帮手。不是原图等价精简，不转移好评，原38关及正式地图集保持。具体来源、迭代与审查重点见[统一人读说明](../examples/discovery-course-20261023/review-guide.md#level-61)，证据见[研究归档](../examples/discovery-course-20261023/drafts/cross-unit-return-20261026/README.md)。
+2026-10-26新增课程62《留席》，新增时暂第40，现编排第12关、v02：14格两鬼、单A两处控制、21步（原15格24步留档）；控制被追者占据，另一处控制先完成取物，最后回头重新安置。只留两A及两普通门，已编排接首次钥匙第11后；没有真人评价，不入正式集，不继承悬置等亲缘好评。[统一人读说明](../examples/discovery-course-20261023/review-guide.md#level-62) · [构造与范围](../examples/discovery-course-20261023/drafts/occupied-control-20261026/README.md)。
+
+2026-10-26新增课程整图重构61《携影》，新增时暂第39，现编排第20关：复用错位／再借的局部空间，取消重复引活前置，29格两鬼、单A、现v02为44步（原48步留档）；将左鬼带入右院协助取物，回来仍需重新调动帮手。不是原图等价精简，不转移好评，原38关及正式地图集保持。具体来源、迭代与审查重点见[统一人读说明](../examples/discovery-course-20261023/review-guide.md#level-61)，证据见[研究归档](../examples/discovery-course-20261023/drafts/cross-unit-return-20261026/README.md)。
 
 2026-10-24《侧入》独立课程变式47替换第20关，集中终点守卫的接近侧，原37步图及正式集保持。[来源、23帧对应和普通替代](../examples/discovery-course-20261023/reviews/side-entry-focus-20261024.md)。课程总数仍25，未转移原好评。
 
