@@ -1,0 +1,400 @@
+{
+  "mapId": "ccd9ead167e17093c83db6a48adef8b57f24d7fe7bd3c530fe61236fa26678de",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "humanQuality": null,
+  "proofs": [
+    {
+      "name": "win_after_departure_with_C_ready_B_unrestored",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 104,
+        "transitions": 520,
+        "discovered": 104,
+        "totalActions": null
+      },
+      "scope": "原图全部完整通关，历史进入状态键；不是只查最优或改图"
+    },
+    {
+      "name": "at_most_one_B_operation",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 78,
+        "transitions": 390,
+        "discovered": 78,
+        "totalActions": null
+      },
+      "scope": "原图全部完整通关，历史进入状态键；不是只查最优或改图"
+    },
+    {
+      "name": "never_activate_C_with_A_return_prepared",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 63,
+        "transitions": 315,
+        "discovered": 63,
+        "totalActions": null
+      },
+      "scope": "原图全部完整通关，历史进入状态键；不是只查最优或改图"
+    }
+  ],
+  "controls": [
+    {
+      "step": 5,
+      "letter": "A",
+      "at": [
+        2,
+        0
+      ]
+    },
+    {
+      "step": 10,
+      "letter": "B",
+      "at": [
+        4,
+        2
+      ]
+    },
+    {
+      "step": 12,
+      "letter": "C",
+      "at": [
+        4,
+        3
+      ]
+    },
+    {
+      "step": 14,
+      "letter": "B",
+      "at": [
+        4,
+        2
+      ]
+    }
+  ],
+  "wrongDeparture": {
+    "prefix": [
+      "U",
+      "U",
+      "R",
+      "R",
+      "U",
+      "R",
+      "R",
+      "D",
+      "D",
+      "R",
+      "D",
+      "R",
+      "U",
+      "L",
+      "L",
+      "L",
+      "L"
+    ],
+    "p": [
+      0,
+      2
+    ],
+    "continuations": [
+      {
+        "reference": false,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "prefix": [
+          "U",
+          "U",
+          "R",
+          "R",
+          "U",
+          "R",
+          "R",
+          "D",
+          "D",
+          "R",
+          "D",
+          "R",
+          "U",
+          "L",
+          "L",
+          "L",
+          "L"
+        ],
+        "actions": null,
+        "optimality": null,
+        "search": {
+          "algorithm": "fast_bfs",
+          "expanded": 16,
+          "discovered": 16,
+          "exhausted": true,
+          "elapsedMs": 0.592105999999994,
+          "nodeBudget": 150000,
+          "budgetMs": 10000
+        }
+      },
+      {
+        "reference": true,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "prefix": [
+          "U",
+          "U",
+          "R",
+          "R",
+          "U",
+          "R",
+          "R",
+          "D",
+          "D",
+          "R",
+          "D",
+          "R",
+          "U",
+          "L",
+          "L",
+          "L",
+          "L"
+        ],
+        "actions": null,
+        "optimality": null,
+        "search": {
+          "algorithm": "reference_bfs",
+          "expanded": 16,
+          "discovered": 16,
+          "exhausted": true,
+          "elapsedMs": 1.964712999999989,
+          "nodeBudget": 150000,
+          "budgetMs": 10000
+        }
+      }
+    ]
+  },
+  "earlyC": {
+    "prefix": [
+      "U",
+      "U",
+      "R",
+      "R",
+      "R",
+      "R",
+      "D",
+      "D",
+      "R",
+      "D",
+      "R"
+    ],
+    "player": [
+      4,
+      3
+    ],
+    "AOpen": false,
+    "BRestored": false,
+    "COpen": true,
+    "continuations": [
+      {
+        "reference": false,
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "U",
+          "U",
+          "R",
+          "R",
+          "R",
+          "R",
+          "D",
+          "D",
+          "R",
+          "D",
+          "R"
+        ],
+        "actions": [
+          "R",
+          "U",
+          "U",
+          "U",
+          "L",
+          "L",
+          "U",
+          "R",
+          "R",
+          "D",
+          "D",
+          "D",
+          "R",
+          "U",
+          "R",
+          "L",
+          "L",
+          "L",
+          "L",
+          "U",
+          "R",
+          "R"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "fast_bfs",
+          "expanded": 84,
+          "discovered": 86,
+          "exhausted": false,
+          "elapsedMs": 1.0765889999999843,
+          "nodeBudget": 150000,
+          "budgetMs": 10000
+        }
+      },
+      {
+        "reference": true,
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "U",
+          "U",
+          "R",
+          "R",
+          "R",
+          "R",
+          "D",
+          "D",
+          "R",
+          "D",
+          "R"
+        ],
+        "actions": [
+          "R",
+          "U",
+          "U",
+          "U",
+          "L",
+          "L",
+          "U",
+          "R",
+          "R",
+          "D",
+          "D",
+          "D",
+          "R",
+          "U",
+          "R",
+          "L",
+          "L",
+          "L",
+          "L",
+          "U",
+          "R",
+          "R"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "reference_bfs",
+          "expanded": 84,
+          "discovered": 86,
+          "exhausted": false,
+          "elapsedMs": 8.836390999999992,
+          "nodeBudget": 150000,
+          "budgetMs": 10000
+        }
+      }
+    ],
+    "scope": "提前C不永久死，可先恢复C再准备A；不与不可逆返回后的失控混淆"
+  },
+  "ordinaryDirection": {
+    "mapId": "f3b87da40c189fa411a21446b396ed8028a4f7fe73d838f807895065715f8ec1",
+    "optimumUnchanged": true,
+    "steps": 21,
+    "wrongDepartureRecoverable": true,
+    "recoveryActions": [
+      "R",
+      "R",
+      "R",
+      "R",
+      "R",
+      "L",
+      "L",
+      "L",
+      "L",
+      "U",
+      "R",
+      "R"
+    ],
+    "wholePlan": [
+      "U",
+      "U",
+      "R",
+      "R",
+      "U",
+      "R",
+      "R",
+      "D",
+      "D",
+      "R",
+      "D",
+      "R",
+      "U",
+      "L",
+      "L",
+      "L",
+      "L",
+      "R",
+      "R",
+      "R",
+      "R",
+      "R",
+      "L",
+      "L",
+      "L",
+      "L",
+      "U",
+      "R",
+      "R"
+    ],
+    "scope": "单向属性改变完整恢复与时序要求，而不改变最佳21步。不能据此宣称高阶方向机制突破或最佳计划新颖。"
+  },
+  "entry": {
+    "external": [
+      0,
+      0,
+      4
+    ],
+    "actions": [
+      "U",
+      "U"
+    ],
+    "externalCells": [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "internal": [
+      0,
+      0,
+      2
+    ],
+    "keys": 0,
+    "externalGhosts": 0,
+    "actualExternalStartOutsideEnvelope": true,
+    "exteriorSealedExceptEntrance": true,
+    "initialInteriorEqual": true,
+    "afterGhosts": [
+      []
+    ],
+    "wholeOptimalRoutesInteriorEqual": true,
+    "allInternalSuccessorsEqual": {
+      "states": 106,
+      "transitions": 520,
+      "includesFatalActions": true
+    },
+    "noEndSafeRoutes": 1,
+    "scope": "只声明所列外侧路径、零钥匙与无外部鬼；不声称任意外部局面均适用"
+  },
+  "noGhosts": true,
+  "noGhostPermutationClaim": true,
+  "scope": "无鬼控制课程候选；不能将独解、先后条件或机械对照称作真人顿悟"
+}
