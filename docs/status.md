@@ -12,7 +12,7 @@
 
 ## 公开试玩与当前取舍
 
-[鬼迷宫 · 初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)公开给所有人，当前38关：17张课程专用图、21张既有图的复用或课程变式。Site第90版原生部署成功，来源与版本见[发布记录](../examples/discovery-course-20261023/site-publication.json)。不是原31张机制演示串重新上架。
+[鬼迷宫 · 初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)公开给所有人，当前39关：18张课程专用图、21张既有图的复用或课程变式。Site第91版原生部署成功，来源与版本见[发布记录](../examples/discovery-course-20261023/site-publication.json)。不是原31张机制演示串重新上架。
 
 [逐关设计审查说明](../examples/discovery-course-20261023/review-guide.md)是本轮人读入口，[课程目录](../examples/discovery-course-20261023/README.md)保留证据索引。`course-order.json`是关序唯一来源，目录ID不是关数。Site的“设计说明 · 含剧透”跳到当前关，正常试玩不显示意图或解法，刷新清单保留当前局面。项目`appgprj_6adb4b311474819180db83f0509d84e1`，Site独立源码在`/workspace/sites/ghostmaze-discovery-path`。
 
@@ -28,6 +28,8 @@
 - 第36关58用15格同室两用承接54：第一次带追者跟下楼，第二次才留住另一只，结合已有单向口和跨层A。26步两种鬼轨迹，先永久停车的8步仍可再26步恢复；固定原停位才无续解，不声称楼梯独有突破。[当前取舍](../examples/discovery-course-20261023/reviews/shared-slot-20261026.md)。
 - 新第37关59适配未评价旧研究《腾位》：19格三鬼、一处A。出生内移、终点前移，23→20省去三步接近收尾；真实静止后放出旧守卫、另一鬼接替同位置仍全解必要。终点再前移会有不用A捷径，未采用。原图、旧评价空缺和亲缘保持。[来源与新证据](../examples/discovery-course-20261023/drafts/slot-succession-course-20261026/README.md)。
 - 新第38关60「归还」为手工16格无鬼控制题，21步；先借B进C，再归还B才走单向出口，否则安全回起点后失去控制。普通替代最优仍21，只改变错误返回的恢复能力，不称高阶方向突破。建议最终接51之后，暂按产出追加以保留旧编号；无真人评价。[新图与范围](../examples/discovery-course-20261023/drafts/return-control-cycle-20261026/README.md)。
+
+- 新第39关61「携影」重构错位／再借空间，29格两鬼、单A、48步一类鬼轨迹。取消重复引活前置，让左追者成为右院帮手，再处理它对取物回程的妨碍；两父题好评不转移，是否只是旧题加赶路仍待审。[构造与范围](../examples/discovery-course-20261023/drafts/cross-unit-return-20261026/README.md)。
 
 此前的楼梯续篇未接入：落点争位虽必要却由唯一安全离开自动触发；运送稿能同最优地分别处理两鬼；单楼梯共享保护稿无解，一处连接的31项对照中13项可解却均有同最优的无互挡通关。相关原稿、错误查询及修正留在[落点研究](../examples/discovery-course-20261023/drafts/stair-priority-20261025/)、[运送研究](../examples/discovery-course-20261023/drafts/transport-helper-20261025/)、[共享小室](../examples/discovery-course-20261023/drafts/shared-stair-controls-20261025/)。不继续加机关修补这组，后续换整体关系；此局部否决不扩大为所有楼梯题都无价值。
 
@@ -46,6 +48,8 @@
 观察机会不等于玩家学会。已复查[知识前提与早段续解](../examples/discovery-course-20261023/reviews/knowledge-assumptions-20261025.md)，撤回把实墙遮挡误归给普通门的初步判断；第2关填格取消原调动问题，未采用。其它曾否决的回程稿保留[具体反例](../examples/discovery-course-20261023/reviews/direction-observation-and-return-counterexamples-20261025.md)，不重复复活。
 
 ## 当前验收与基线
+
+第39关[电脑／手机两条48步](../examples/discovery-course-20261023/cross-unit-return-browser-check-20261026.json)逐步核对玩家、两鬼、资源和门态；41步错误回程的死亡按复活后状态保存，撤回到错误前及开局通过。两次A、真实争位和回程引动的撤销重做、网页48步一类求解与同页回放通过；60→61→60单实例预加载及39段说明／下载一致。Site91原生部署成功；原38码与次序保持，本体main仍未推送。
 
 第38关的[桌面／手机21步](../examples/discovery-course-20261023/return-control-cycle-browser-check-20261026.json)逐步吻合完整门态、资源与玩家；17步错误返回可撤回，桌面另实走提前C再恢复的33步。A、两次B、C与方向口撤销重做、同页求解及回放通过；无鬼，不冒称鬼排列验收。59→60→59首输入与单实例预加载保持；38段说明和下载一致。Site90原生部署成功，未访问部署重复核验。
 
