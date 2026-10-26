@@ -1,0 +1,79 @@
+{
+  "id": "64",
+  "title": "64",
+  "revision": 1,
+  "createdOn": "2026-10-27",
+  "galleryTitle": "回环",
+  "galleryVariant": "two-ghost-course-reconstruction",
+  "workingTitle": "回环（两鬼课程版）",
+  "frozenMapCode": "AADBAeHh4fDAAAEjoDAEAjAjAHAUwoAqBMgoCUIoKAAAFAIoJxBcIJziCQAAAAEMQMA",
+  "reuseNote": "对已确认原作作实质课程重构，正式地图集及原参考不改；原带提示通关和复杂性担忧保留，质量不转移。",
+  "derivedFrom": {
+    "kind": "approved_parent_with_separate_course_reconstruction",
+    "source": {
+      "title": "回环",
+      "mapCode": "AADBweHh4eDAwAE1YEKQICGUCQAgBXCqA4gTIKAkEQACgAEQJygnEFziCc5AkBIAABAgAxAgwA",
+      "replayCode": "EOhbsb4LzGYiMlwXjCpz6gXciDIHNcA",
+      "gameCommit": "94d49a5",
+      "capturedOn": "2026-10-27",
+      "humanFeedback": "原作带前五步提示通关，评价比较困难、勉强可称精妙，也担忧复杂性堆砌；原评价不转移给课程改作。",
+      "feedbackURL": "https://github.com/Pre-rice/ghost-maze-ai/blob/main/docs/archive/reviews/shelter-exchange-review-20261010.md"
+    },
+    "researchDirectory": "drafts/partial-bait-course-20261027",
+    "changes": [
+      "移除独立上方守卫及其钥匙，目标门2改1；保留两鬼取物前后交错的主问题。",
+      "出生从(1,6)移到B控制(1,4)，原下方格不立即删，先以完整旧计划另验。",
+      "上方两格与两扇相关A去掉，是改题，不冒称原图所有探索等价；原纯裁格计划在第61步被原生无效输入检查拒绝，判断及实际替代保留。",
+      "再删中间B门(2,3)；50步变44步，原分段引动仍全解必要。因不再需要原B双按与最下层绕行，删(1,6)/(2,6)，保留实际使用的下方转角。",
+      "钥匙移至独立东侧支格(4,4)，不再与右鬼初始重合；44步加两次实际取物位移，现20格46步，一类鬼轨迹。"
+    ]
+  },
+  "designCard": [
+    "左侧守卫需先短暂引动、停在第一准备位，再从另一侧引到中部；右侧钥匙守卫还未处理，目标入口仍被前者挡着。",
+    "一直带左鬼追会使机关操作与后续停位无法安排，先急着把它处理完也没有完整逐只通关；不能把引鬼只理解为一路追逐。",
+    "先在(0,2)暂存，再换侧移到(2,2)；为右鬼准备并取钥匙后，再招回左鬼，从另一侧通过目标入口。实际原解没有双鬼互挡，不称互助机制突破。",
+    "第28关，放在借道56之后、借影30之前，承接未来准备，加入分段控制停位，再由借影应用控距与预先关门。C只是字母分组的延续，没有新物理规则；编排待审。",
+    "20格两鬼、一钥匙、三处ABC控制、四扇字母门与1；下方只留真实转角，去掉独立收物与一扇B后另查，钥匙与鬼分格。",
+    "46步两条原始最优；完整查询排除左鬼取物前或后从不动、从未在两处准备位静止、右鬼取物前从不动、从不操作任一ABC的通关；完整逐只方案也无解。必要性不代表趣味。"
+  ],
+  "knowledgeBefore": [
+    "普通门、字母分组与反相开关",
+    "有效按钮操作也推进鬼",
+    "钥匙资格与取物返回",
+    "已经用过暂存与招回，不预设已懂本题具体停位与顺序"
+  ],
+  "newDiscovery": "引鬼不必一路带着追；先分段安排两个准备位，处理取物守卫后再招回原先那只，清出最终通路。",
+  "learningRole": "第28关的两鬼分段引动与精确停位前置候选；原作已有好评，但本次重构、跨度与是否重复尚待真人审查，不当成新的最高创意。",
+  "evidence": "共同引擎46步两条原始最优，全部边界、去终点、两种编号及码往返通过；完整8项历史查询与允许非最优重合的逐只处理无解，先持续追逐的两步安全前缀无伤续解无解。先按B可恢复：前缀1加47步共48，不是所有试探都永久失去机会。真正外侧三步入场874态4340个内部后继含死亡保持。",
+  "risk": "无真人或盲AI试玩评价。原作曾需提示并被担忧复杂性；三组字母是否负担过高、分段停位是否可推断、是否仍是熟悉的线性操作需审查。独立钥匙支格的两步用于避免重合显示，不声称增强推理。",
+  "familyGroup": "discovery-reuse-shelter-exchange-20261027-v1",
+  "variantGroup": "partial-bait-two-ghost-course-v1",
+  "trainingScope": "与原回环及本轮两鬼、裁格、删门和钥匙位置对照同族，不拆分为新独立训练样本；没有训练或真人质量标签。",
+  "entryPath": {
+    "external": [
+      0,
+      2,
+      6
+    ],
+    "externalCells": [
+      [
+        2,
+        6
+      ]
+    ],
+    "actions": [
+      "U",
+      "L",
+      "U"
+    ]
+  },
+  "coursePlacement": {
+    "date": "2026-10-27",
+    "ordinal": 28,
+    "afterLevelId": "56",
+    "beforeLevelId": "30",
+    "humanApproval": null
+  },
+  "humanQuality": null,
+  "role": "discovery_level_design_not_human_learning_evidence"
+}

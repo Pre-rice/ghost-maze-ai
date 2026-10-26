@@ -16,7 +16,7 @@
 
 [实际局面与修正](../drafts/knowledge-assumptions-20261025/witnesses.json) · [前七关续解范围](../drafts/knowledge-assumptions-20261025/early-recovery.json) · [未采用的填格反例](../drafts/knowledge-assumptions-20261025/unadopted-fill.json)
 
-## 当前41关的所选参考复查
+## 64插入前41关的所选参考快照
 
 [现版绑定观察记录](../drafts/knowledge-assumptions-20261025/current-reference-profile-20261026.json)按现有顺序检查每关证书的一条完整参考，并明确标出额外的撞墙／反向试探，不是所有解法普查。首关已有失去视线当步仍移动及无效输入不推进的机会；第5关出现实际互挡；第8关《错位》有首步通道空、只隔一扇闭A的远停，以及视线路径不变时按钮推进追者。第11关实际过1门后钥匙保留；第19关有数字门远停；第29关单向口可反向试探。普通门“首格还可走、仅因更远门而停”的严格见证，在这些所选参考里首次为第36关《布阵》，不代表其它探索中此前不可能出现。
 
