@@ -1,0 +1,1230 @@
+{
+  "mapId": "3661ad5fd3b6fb9ebb1bb25731d4d555c7fca520115fb8f6b2c569f3cfe5cdf2",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "humanQuality": null,
+  "wrongPlan": {
+    "prefix": [
+      "U",
+      "L",
+      "L",
+      "D",
+      "D",
+      "D",
+      "D",
+      "R",
+      "R",
+      "R",
+      "U"
+    ],
+    "p": [
+      3,
+      3
+    ],
+    "g": [
+      [
+        3,
+        4
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "phase": [
+      "open",
+      "closed"
+    ],
+    "continuations": [
+      {
+        "reference": false,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "prefix": [
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "D",
+          "D",
+          "R",
+          "R",
+          "R",
+          "U"
+        ],
+        "actions": null,
+        "optimality": null,
+        "search": {
+          "algorithm": "fast_bfs",
+          "expanded": 9,
+          "discovered": 9,
+          "exhausted": true,
+          "elapsedMs": 0.5058460000000053,
+          "nodeBudget": 500000,
+          "budgetMs": 25000
+        }
+      },
+      {
+        "reference": true,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "prefix": [
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "D",
+          "D",
+          "R",
+          "R",
+          "R",
+          "U"
+        ],
+        "actions": null,
+        "optimality": null,
+        "search": {
+          "algorithm": "reference_bfs",
+          "expanded": 9,
+          "discovered": 9,
+          "exhausted": true,
+          "elapsedMs": 0.748974000000004,
+          "nodeBudget": 500000,
+          "budgetMs": 25000
+        }
+      }
+    ]
+  },
+  "preparedComparison": {
+    "prefix": [
+      "U",
+      "U",
+      "L",
+      "L",
+      "D",
+      "D",
+      "D",
+      "D",
+      "R",
+      "R",
+      "R",
+      "U"
+    ],
+    "samePlayerAndSortedGhostPositions": true,
+    "doorPhasesDiffer": true,
+    "ghostIdentifiersNotUsedForClaim": true
+  },
+  "withoutInfluence": {
+    "result": {
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "expanded": 78,
+      "transitions": 390,
+      "discovered": 78,
+      "totalActions": null
+    },
+    "actions": null
+  },
+  "ordinary": {
+    "analysisVersion": "ordinary-plans-v1",
+    "mapId": "3661ad5fd3b6fb9ebb1bb25731d4d555c7fca520115fb8f6b2c569f3cfe5cdf2",
+    "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+    "ghosts": [
+      {
+        "index": 0,
+        "initialPosition": [
+          2,
+          2
+        ]
+      },
+      {
+        "index": 1,
+        "initialPosition": [
+          2,
+          3
+        ]
+      },
+      {
+        "index": 2,
+        "initialPosition": [
+          3,
+          2
+        ]
+      }
+    ],
+    "budget": {
+      "nodeBudget": 500000,
+      "stateBudget": 500000,
+      "budgetMs": 25000,
+      "totalBudgetMs": 60000,
+      "orderBudget": 24,
+      "avoidOverlap": true
+    },
+    "scope": {
+      "singleLayerOnly": true,
+      "noDamageOrRevival": true,
+      "avoidOverlap": true,
+      "arrivalDeathCheckedWithoutGoal": true,
+      "movement": "按本体实际记录计鬼移动；终局动作另查去终点死亡，不把该反事实当实际轨迹",
+      "handoff": "一方末次与另一方首次移动允许同一动作；不要求所有鬼必须移动",
+      "history": "处理阶段进入完整状态键；本体参考键保留同层鬼数组位置",
+      "optimality": "只比较本报告明确限制范围内的最短步数，不能替代正式全部最优验收"
+    },
+    "baseline": {
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 159,
+        "transitions": 794,
+        "discovered": 167,
+        "totalActions": 23
+      },
+      "actions": [
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R",
+        "U",
+        "L",
+        "R",
+        "U",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "L"
+      ],
+      "movementSpans": [
+        {
+          "ghost": 0,
+          "firstMove": 1,
+          "lastMove": 15
+        },
+        {
+          "ghost": 1,
+          "firstMove": 1,
+          "lastMove": 12
+        },
+        {
+          "ghost": 2,
+          "firstMove": 6,
+          "lastMove": 16
+        }
+      ]
+    },
+    "queries": [
+      {
+        "kind": "independent_prefix",
+        "ghost": 0,
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 71,
+          "transitions": 355,
+          "discovered": 71,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      },
+      {
+        "kind": "independent_suffix",
+        "ghost": 0,
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 16,
+          "transitions": 80,
+          "discovered": 16,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      },
+      {
+        "kind": "independent_prefix",
+        "ghost": 1,
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 48,
+          "transitions": 240,
+          "discovered": 48,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      },
+      {
+        "kind": "independent_suffix",
+        "ghost": 1,
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 48,
+          "transitions": 240,
+          "discovered": 48,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      },
+      {
+        "kind": "independent_prefix",
+        "ghost": 2,
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 30,
+          "transitions": 150,
+          "discovered": 30,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      },
+      {
+        "kind": "independent_suffix",
+        "ghost": 2,
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 33,
+          "transitions": 165,
+          "discovered": 33,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      },
+      {
+        "kind": "complete_sequential",
+        "order": [
+          0,
+          1,
+          2
+        ],
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 17,
+          "transitions": 85,
+          "discovered": 17,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      },
+      {
+        "kind": "complete_sequential",
+        "order": [
+          0,
+          2,
+          1
+        ],
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 16,
+          "transitions": 80,
+          "discovered": 16,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      },
+      {
+        "kind": "complete_sequential",
+        "order": [
+          1,
+          0,
+          2
+        ],
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 16,
+          "transitions": 80,
+          "discovered": 16,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      },
+      {
+        "kind": "complete_sequential",
+        "order": [
+          1,
+          2,
+          0
+        ],
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 16,
+          "transitions": 80,
+          "discovered": 16,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      },
+      {
+        "kind": "complete_sequential",
+        "order": [
+          2,
+          0,
+          1
+        ],
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 16,
+          "transitions": 80,
+          "discovered": 16,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      },
+      {
+        "kind": "complete_sequential",
+        "order": [
+          2,
+          1,
+          0
+        ],
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 16,
+          "transitions": 80,
+          "discovered": 16,
+          "totalActions": null
+        },
+        "actions": null,
+        "movementSpans": null,
+        "sameBaselineLength": null
+      }
+    ],
+    "completeOrders": {
+      "possible": "6",
+      "queried": 6,
+      "coverageComplete": true
+    },
+    "conclusion": "no_complete_sequential_plan_within_scope",
+    "humanQualityScore": null,
+    "interpretation": "有普通替代只给出具体证书；没有普通替代也不证明新意、难度或尤里卡。",
+    "elapsedMs": 63.03113499999999
+  },
+  "entry": {
+    "external": [
+      0,
+      5,
+      0
+    ],
+    "actions": [
+      "L",
+      "L",
+      "L"
+    ],
+    "externalCells": [
+      [
+        5,
+        0
+      ]
+    ],
+    "internal": [
+      0,
+      2,
+      0
+    ],
+    "keys": 0,
+    "externalGhosts": 0,
+    "actualExternalStartOutsideEnvelope": true,
+    "exteriorSealedExceptEntrance": true,
+    "initialInteriorEqual": true,
+    "afterGhosts": [
+      [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    ],
+    "wholeOptimalRoutesInteriorEqual": true,
+    "allInternalSuccessorsEqual": {
+      "states": 246,
+      "transitions": 1210,
+      "includesFatalActions": true
+    },
+    "noEndSafeRoutes": 1,
+    "scope": "只声明所列外侧路径、零钥匙与无外部鬼；不声称任意外部局面均适用"
+  },
+  "graph": {
+    "status": "exhausted",
+    "states": 246,
+    "overlapStates": 0
+  },
+  "trace": [
+    {
+      "step": 1,
+      "a": "U",
+      "p": [
+        2,
+        0
+      ],
+      "g": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "phase": [
+        "open",
+        "closed"
+      ],
+      "influence": {
+        "kind": "none",
+        "changes": []
+      }
+    },
+    {
+      "step": 2,
+      "a": "U",
+      "p": [
+        2,
+        0
+      ],
+      "g": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "phase": [
+        "closed",
+        "open"
+      ],
+      "influence": {
+        "kind": "motion",
+        "changes": [
+          {
+            "from": [
+              0,
+              2,
+              2
+            ],
+            "actual": [
+              0,
+              2,
+              2
+            ],
+            "alone": [
+              0,
+              2,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "step": 3,
+      "a": "L",
+      "p": [
+        1,
+        0
+      ],
+      "g": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "phase": [
+        "closed",
+        "open"
+      ],
+      "influence": {
+        "kind": "none",
+        "changes": []
+      }
+    },
+    {
+      "step": 4,
+      "a": "L",
+      "p": [
+        0,
+        0
+      ],
+      "g": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "phase": [
+        "closed",
+        "open"
+      ],
+      "influence": {
+        "kind": "none",
+        "changes": []
+      }
+    },
+    {
+      "step": 5,
+      "a": "D",
+      "p": [
+        0,
+        1
+      ],
+      "g": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "phase": [
+        "closed",
+        "open"
+      ],
+      "influence": {
+        "kind": "none",
+        "changes": []
+      }
+    },
+    {
+      "step": 6,
+      "a": "D",
+      "p": [
+        0,
+        2
+      ],
+      "g": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "phase": [
+        "closed",
+        "open"
+      ],
+      "influence": {
+        "kind": "none",
+        "changes": []
+      }
+    },
+    {
+      "step": 7,
+      "a": "D",
+      "p": [
+        0,
+        3
+      ],
+      "g": [
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "phase": [
+        "closed",
+        "open"
+      ],
+      "influence": {
+        "kind": "none",
+        "changes": []
+      }
+    },
+    {
+      "step": 8,
+      "a": "D",
+      "p": [
+        0,
+        4
+      ],
+      "g": [
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "phase": [
+        "closed",
+        "open"
+      ],
+      "influence": {
+        "kind": "none",
+        "changes": []
+      }
+    },
+    {
+      "step": 9,
+      "a": "R",
+      "p": [
+        1,
+        4
+      ],
+      "g": [
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "phase": [
+        "closed",
+        "open"
+      ],
+      "influence": {
+        "kind": "none",
+        "changes": []
+      }
+    },
+    {
+      "step": 10,
+      "a": "R",
+      "p": [
+        2,
+        4
+      ],
+      "g": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "phase": [
+        "closed",
+        "open"
+      ],
+      "influence": {
+        "kind": "none",
+        "changes": []
+      }
+    },
+    {
+      "step": 11,
+      "a": "R",
+      "p": [
+        3,
+        4
+      ],
+      "g": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "phase": [
+        "closed",
+        "open"
+      ],
+      "influence": {
+        "kind": "none",
+        "changes": []
+      }
+    },
+    {
+      "step": 12,
+      "a": "U",
+      "p": [
+        3,
+        3
+      ],
+      "g": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "phase": [
+        "closed",
+        "open"
+      ],
+      "influence": {
+        "kind": "none",
+        "changes": []
+      }
+    },
+    {
+      "step": 13,
+      "a": "L",
+      "p": [
+        2,
+        3
+      ],
+      "g": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "phase": [
+        "closed",
+        "open"
+      ],
+      "influence": {
+        "kind": "none",
+        "changes": []
+      }
+    },
+    {
+      "step": 14,
+      "a": "R",
+      "p": [
+        3,
+        3
+      ],
+      "g": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "phase": [
+        "closed",
+        "open"
+      ],
+      "influence": {
+        "kind": "none",
+        "changes": []
+      }
+    },
+    {
+      "step": 15,
+      "a": "U",
+      "p": [
+        3,
+        2
+      ],
+      "g": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "phase": [
+        "closed",
+        "open"
+      ],
+      "influence": {
+        "kind": "none",
+        "changes": []
+      }
+    },
+    {
+      "step": 16,
+      "a": "R",
+      "p": [
+        4,
+        2
+      ],
+      "g": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "phase": [
+        "closed",
+        "open"
+      ],
+      "influence": {
+        "kind": "motion",
+        "changes": [
+          {
+            "from": [
+              0,
+              3,
+              3
+            ],
+            "actual": [
+              0,
+              3,
+              3
+            ],
+            "alone": [
+              0,
+              3,
+              2
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "step": 17,
+      "a": "R",
+      "p": [
+        4,
+        2
+      ],
+      "g": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "phase": [
+        "open",
+        "closed"
+      ],
+      "influence": {
+        "kind": "none",
+        "changes": []
+      }
+    },
+    {
+      "step": 18,
+      "a": "U",
+      "p": [
+        4,
+        1
+      ],
+      "g": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "phase": [
+        "open",
+        "closed"
+      ],
+      "influence": {
+        "kind": "none",
+        "changes": []
+      }
+    },
+    {
+      "step": 19,
+      "a": "U",
+      "p": [
+        4,
+        0
+      ],
+      "g": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "phase": [
+        "open",
+        "closed"
+      ],
+      "influence": {
+        "kind": "none",
+        "changes": []
+      }
+    },
+    {
+      "step": 20,
+      "a": "L",
+      "p": [
+        3,
+        0
+      ],
+      "g": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "phase": [
+        "open",
+        "closed"
+      ],
+      "influence": {
+        "kind": "none",
+        "changes": []
+      }
+    },
+    {
+      "step": 21,
+      "a": "L",
+      "p": [
+        2,
+        0
+      ],
+      "g": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "phase": [
+        "open",
+        "closed"
+      ],
+      "influence": {
+        "kind": "none",
+        "changes": []
+      }
+    },
+    {
+      "step": 22,
+      "a": "D",
+      "p": [
+        2,
+        1
+      ],
+      "g": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "phase": [
+        "open",
+        "closed"
+      ],
+      "influence": {
+        "kind": "none",
+        "changes": []
+      }
+    },
+    {
+      "step": 23,
+      "a": "L",
+      "p": [
+        1,
+        1
+      ],
+      "g": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "phase": [
+        "open",
+        "closed"
+      ],
+      "influence": {
+        "kind": "none",
+        "changes": []
+      }
+    }
+  ]
+}

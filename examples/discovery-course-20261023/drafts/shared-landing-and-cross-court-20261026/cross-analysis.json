@@ -1,0 +1,263 @@
+{
+  "mapId": "c77556f60d8ac0760b1f717177166952c345ccb78630ea1c49cc845bde7a65d6",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "ghostGroups": 2,
+  "representatives": [
+    [
+      "R",
+      "U",
+      "L",
+      "R",
+      "D",
+      "L",
+      "L",
+      "U",
+      "R",
+      "U",
+      "U",
+      "U"
+    ],
+    [
+      "R",
+      "U",
+      "L",
+      "L",
+      "D",
+      "R",
+      "R",
+      "U",
+      "L",
+      "U",
+      "U",
+      "U"
+    ]
+  ],
+  "allOptimalRelays": [
+    {
+      "actions": [
+        "R",
+        "U",
+        "L",
+        "R",
+        "D",
+        "L",
+        "L",
+        "U",
+        "R",
+        "U",
+        "U",
+        "U"
+      ],
+      "events": [
+        11
+      ]
+    },
+    {
+      "actions": [
+        "L",
+        "U",
+        "R",
+        "R",
+        "D",
+        "L",
+        "L",
+        "U",
+        "R",
+        "U",
+        "U",
+        "U"
+      ],
+      "events": [
+        11
+      ]
+    },
+    {
+      "actions": [
+        "R",
+        "U",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "U",
+        "U",
+        "U"
+      ],
+      "events": [
+        11
+      ]
+    },
+    {
+      "actions": [
+        "L",
+        "U",
+        "R",
+        "L",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "U",
+        "U",
+        "U"
+      ],
+      "events": [
+        11
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "withoutAnyInfluence",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 19,
+        "transitions": 95,
+        "discovered": 19,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "name": "withoutGoalGuardRelay",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 19,
+        "transitions": 95,
+        "discovered": 19,
+        "totalActions": null
+      },
+      "actions": null
+    }
+  ],
+  "graph": {
+    "status": "exhausted",
+    "states": 21,
+    "overlapStates": 0,
+    "firstOverlap": null
+  },
+  "removals": [
+    {
+      "ghost": 0,
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 59,
+        "transitions": 291,
+        "discovered": 71,
+        "totalActions": 10
+      },
+      "actions": [
+        "R",
+        "U",
+        "L",
+        "L",
+        "L",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ]
+    },
+    {
+      "ghost": 1,
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 64,
+        "transitions": 316,
+        "discovered": 75,
+        "totalActions": 10
+      },
+      "actions": [
+        "R",
+        "U",
+        "L",
+        "R",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "U"
+      ]
+    },
+    {
+      "ghost": 2,
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 8,
+        "transitions": 36,
+        "discovered": 10,
+        "totalActions": 6
+      },
+      "actions": [
+        "R",
+        "U",
+        "L",
+        "U",
+        "U",
+        "U"
+      ]
+    }
+  ],
+  "entry": {
+    "external": [
+      0,
+      2,
+      5
+    ],
+    "actions": [
+      "U"
+    ],
+    "externalCells": [
+      [
+        2,
+        5
+      ]
+    ],
+    "internal": [
+      0,
+      2,
+      4
+    ],
+    "keys": 0,
+    "externalGhosts": 0,
+    "actualExternalStartOutsideEnvelope": true,
+    "exteriorSealedExceptEntrance": true,
+    "initialInteriorEqual": true,
+    "afterGhosts": [
+      [
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    ],
+    "wholeOptimalRoutesInteriorEqual": true,
+    "allInternalSuccessorsEqual": {
+      "states": 21,
+      "transitions": 100,
+      "includesFatalActions": true
+    },
+    "noEndSafeRoutes": 4,
+    "scope": "只声明所列外侧路径、零钥匙与无外部鬼；不声称任意外部局面均适用"
+  },
+  "humanQuality": null
+}
