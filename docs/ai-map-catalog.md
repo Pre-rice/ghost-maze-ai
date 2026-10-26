@@ -20,7 +20,7 @@
 
 ## 2026-10-23 未知规则的逐关发现线路
 
-用户新授权只做死亡循环的循序渐进关卡，公开线路持续更新，现有正式地图集保持。[公开试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site) · [关卡设计与证据目录](../examples/discovery-course-20261023/README.md)。当前试验线路已重排33关，继续检视重复与认知跨度。用户现已明确否定连续纯机制演示的安排，已按[真实反馈](../examples/discovery-course-20261023/reviews/teaching-feedback-20261023.json)重做：先用少数元件形成可探索的完整谜题，再逐步加入新元件。旧31关资料保留，演示小关不再串入流程；没有未知规则真人录制，不把通关或机械QA当成学会或趣味。旧三张单向门图的负评与停止记录保持，本次不是恢复旧稿递补。
+用户新授权只做死亡循环的循序渐进关卡，公开线路持续更新，现有正式地图集保持。[公开试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site) · [关卡设计与证据目录](../examples/discovery-course-20261023/README.md)。当前试验线路已重排34关，继续检视重复与认知跨度。用户现已明确否定连续纯机制演示的安排，已按[真实反馈](../examples/discovery-course-20261023/reviews/teaching-feedback-20261023.json)重做：先用少数元件形成可探索的完整谜题，再逐步加入新元件。旧31关资料保留，演示小关不再串入流程；没有未知规则真人录制，不把通关或机械QA当成学会或趣味。旧三张单向门图的负评与停止记录保持，本次不是恢复旧稿递补。
 
 2026-10-24首次A已由九格一次关门图改为十格完整往返，仍是第六关、不增加关数；旧稿与只开一次A绕行的反例都保留，见[修订依据](../examples/discovery-course-20261023/reviews/first-letter-full-detour-20261024.md)。正式地图集不变，课程新稿仍未获真人评价。
 
@@ -456,7 +456,7 @@
 
 ## 2026-10-15 新候选：《悬置》
 
-2026-10-25原图作为课程稳定ID55复用为第16关，线路现33关；只加课程，不入正式集。旧规则证据保持，现行22步、四项事件及两项错误计划另验；电脑／手机操作与前后换关通过。[本次取舍及证据](../examples/discovery-course-20261023/reviews/suspended-course-20261025.md)。仍无真人评价。
+2026-10-25原图作为课程稳定ID55复用为第16关，当时线路33关；只加课程，不入正式集。旧规则证据保持，现行22步、四项事件及两项错误计划另验；电脑／手机操作与前后换关通过。[本次取舍及证据](../examples/discovery-course-20261023/reviews/suspended-course-20261025.md)。仍无真人评价。
 
 单层15格、两鬼，A／0／普通门各一，无钥匙、玻璃、楼梯。唯一最优22，中性开局及指定实际入场通过。**未获真人评价，未入地图集。** [完整来源与机械证据](https://github.com/Pre-rice/ghost-maze-ai/tree/main/examples/suspended-exit-20261015)。
 
@@ -699,6 +699,14 @@
 </details>
 
 ## 2026-10-13 新候选：《借道》
+
+2026-10-26以课程ID56适配置于回望后、第23关，线路现34关。24格含两处封闭美化格、双鬼两钥匙，44步六条原始最优归两种鬼轨迹；原图及原评价状态保持，无真人反馈、未入正式集。[课程试玩](https://ghostmaze.novic.cc/?map=AADIAPw4-Pj4AAEtICE0BBIAKqikikGnAgKqAAAACHdBVCCFRCCAAAAAAAg) · [调整与现行证据](../examples/discovery-course-20261023/reviews/borrowed-route-course-20261026.md)。
+
+<details><summary>课程版参考（答案）</summary>
+
+[44步回放](https://ghostmaze.novic.cc/?map=AADIAPw4-Pj4AAEtICE0BBIAKqikikGnAgKqAAAACHdBVCCFRCCAAAAAAAg&replay=ABru7If8Jil88C1WqDwr_w)。原取物折返与0门准备保留，和下方旧原图入口分别标记。
+
+</details>
 
 22格、两鬼、两钥匙，无按钮和玻璃，中性开局。已制备44个求解器规划状态，未训练，不是独立作品或真人好评。暂无用户评述与真人路线，未加入九图网页地图集；完整资料见[作品说明](https://github.com/Pre-rice/ghost-maze-ai/blob/main/examples/borrowed-route-20261013/README.md)。本条当前规则证据有效，以下历史统计未重新批量扫描，不包含本题。
 
