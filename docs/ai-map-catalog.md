@@ -1,6 +1,8 @@
 # AI 地图总目录
 
-2026-10-26本轮四候选编排为《留席》第12、《携影》第20、《归还》第31、《腾位》第34；原36相对顺序及全部40地图码保持。以下产出日志保留当时编号，当前流程以[统一人读说明](../examples/discovery-course-20261023/review-guide.md)为准。编排没有真人认可标签。[前后对照及前置依据](../examples/discovery-course-20261023/reviews/placement-of-new-candidates-20261026.json)。
+2026-10-26《腾位》现第34关v02：出生再内移到按钮前，19格19步，原20步仅省首步，其余鬼位、资源及门态保持；三鬼换守关系与真正外侧入场重验。原20步版留档，其余39码和当前顺序保持，未获真人评价，不入正式地图集。[本次范围](../examples/discovery-course-20261023/drafts/slot-start-economy-20261026/README.md) · [统一人读说明](../examples/discovery-course-20261023/review-guide.md#level-59)。
+
+2026-10-26本轮四候选编排为《留席》第12、《携影》第20、《归还》第31、《腾位》第34；编排时原36相对顺序及全部40地图码保持。以下产出日志保留当时编号，当前流程以[统一人读说明](../examples/discovery-course-20261023/review-guide.md)为准。编排没有真人认可标签。[前后对照及前置依据](../examples/discovery-course-20261023/reviews/placement-of-new-candidates-20261026.json)。
 
 2026-10-26新增课程62《留席》，新增时暂第40，现编排第12关、v02：14格两鬼、单A两处控制、21步（原15格24步留档）；控制被追者占据，另一处控制先完成取物，最后回头重新安置。只留两A及两普通门，已编排接首次钥匙第11后；没有真人评价，不入正式集，不继承悬置等亲缘好评。[统一人读说明](../examples/discovery-course-20261023/review-guide.md#level-62) · [构造与范围](../examples/discovery-course-20261023/drafts/occupied-control-20261026/README.md)。
 
