@@ -24,6 +24,8 @@
 
 ## 2026-10-23 未知规则的逐关发现线路
 
+本轮集中审查入口：[逐关设计审查说明](../examples/discovery-course-20261023/review-guide.md)。当前36关的来源、改动、意图与待审问题统一在该文件；审查期间地图及顺序固定。
+
 用户新授权只做死亡循环的循序渐进关卡，公开线路持续更新，现有正式地图集保持。[公开试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site) · [关卡设计与证据目录](../examples/discovery-course-20261023/README.md)。当前试验线路已重排36关，继续检视重复与认知跨度。用户现已明确否定连续纯机制演示的安排，已按[真实反馈](../examples/discovery-course-20261023/reviews/teaching-feedback-20261023.json)重做：先用少数元件形成可探索的完整谜题，再逐步加入新元件。旧31关资料保留，演示小关不再串入流程；没有未知规则真人录制，不把通关或机械QA当成学会或趣味。旧三张单向门图的负评与停止记录保持，本次不是恢复旧稿递补。
 
 2026-10-24首次A已由九格一次关门图改为十格完整往返，仍是第六关、不增加关数；旧稿与只开一次A绕行的反例都保留，见[修订依据](../examples/discovery-course-20261023/reviews/first-letter-full-detour-20261024.md)。正式地图集不变，课程新稿仍未获真人评价。

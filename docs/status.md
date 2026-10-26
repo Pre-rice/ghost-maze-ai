@@ -4,15 +4,17 @@
 
 ## 当前任务与持续范围
 
-持续设计几乎没有文字教程、玩家起初不知道规则的逐关关卡，仅死亡循环。先让少数元件支持完整问题，再逐步引入新元件；不逐条规则配一关，不凭必要性、步数、唯一解或搜索量认定趣味。用户已授权自主修改未确认课程图和关序、验证并更新公开试验站，不需逐关审批，不以提交或一次实验收尾代替持续任务。
+用户开始系统性审查当前36关，现阶段暂停新图、改图和关序调整，冻结当前地图与顺序。交付逐关页面的预加载及一个人读[设计审查说明](../examples/discovery-course-20261023/review-guide.md)：每关写明来源、具体改动、设计意图、关序作用和待验证问题。原作好评不转移给课程改作或关序，机械证据不代替真人反馈。
 
-范围不含本体代码、正式地图集、付费／GPU训练或自动试玩skill。只有用户明确调用时才用试玩skill。此前《回流》《换庭》《进退》的负反馈与冻结保持，不恢复旧近亲递补。最新课程整体反馈见[原话记录](../examples/discovery-course-20261023/reviews/teaching-feedback-20261023.json)。
+预加载采用同一游戏实例准备相邻两图，切关不重载整个游戏；原逐关网址使用本体预览副本提供预加载，不要求试玩者另换入口；正式站链接仍指向原站。本体嵌入支持先在公开Site验收，未获得本轮正式发布授权前不推送本体main。当前本体交互改动受其AGENTS的“先验收后上线”约束。审查材料及研究归本仓，网站实现归本体与Site源码，不复制物理规则。
+
+仅死亡循环，不涉及正式地图集、训练、付费／GPU或自动试玩skill。只有用户明确调用时才用试玩skill。此前《回流》《换庭》《进退》的负反馈与冻结保持，不恢复旧近亲递补。最新课程整体反馈见[原话记录](../examples/discovery-course-20261023/reviews/teaching-feedback-20261023.json)。
 
 ## 公开试玩与当前取舍
 
-[鬼迷宫 · 初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)公开给所有人，当前36关：16张课程专用图、20张既有图的复用或课程变式。Site第87版原生部署成功，来源与版本见[发布记录](../examples/discovery-course-20261023/site-publication.json)。不是原31张机制演示串重新上架。
+[鬼迷宫 · 初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)公开给所有人，当前36关：16张课程专用图、20张既有图的复用或课程变式。Site第88版原生部署成功，来源与版本见[发布记录](../examples/discovery-course-20261023/site-publication.json)。不是原31张机制演示串重新上架。
 
-[课程目录与设计关键](../examples/discovery-course-20261023/README.md)是完整人读入口，`course-order.json`是关序唯一来源，目录ID不是关数。Site只公开ID与正式站游玩入口，刷新清单保留当前局面，不显示设计意图或解法。项目`appgprj_6adb4b311474819180db83f0509d84e1`，Site独立源码在`/workspace/sites/ghostmaze-discovery-path`。
+[逐关设计审查说明](../examples/discovery-course-20261023/review-guide.md)是本轮人读入口，[课程目录](../examples/discovery-course-20261023/README.md)保留证据索引。`course-order.json`是关序唯一来源，目录ID不是关数。Site的“设计说明 · 含剧透”跳到当前关，正常试玩不显示意图或解法，刷新清单保留当前局面。项目`appgprj_6adb4b311474819180db83f0509d84e1`，Site独立源码在`/workspace/sites/ghostmaze-discovery-path`。
 
 - 前五关只用墙、鬼和普通门；首A已改完整往返，并由单A双鬼45承接，再进入《错位》的A/B。钥匙与1在第11关《内外》的完整取物任务中引入。原演示小关不恢复。
 - 第14关53首次使用0，先准备远端守卫再取物；可先探门退回，不是碰门即错。暂驻与逆渡继续同0门，再借再主动招回旧鬼；第19关49可余一把钥匙过2门。两钥匙保护交接48随后使用资源不消耗的关系。[首次0](../examples/discovery-course-20261023/reviews/before-key-entry-20261025.md) · [数量选择](../examples/discovery-course-20261023/reviews/key-choice-20261025.md)。
@@ -35,9 +37,13 @@
 
 新的[共用落点、十字庭院、双取物与双叶方向往返](../examples/discovery-course-20261023/drafts/shared-landing-and-cross-court-20261026/README.md)也不接入：有的无解，有的只是逐只安置或重复现有方向关；安全十字三鬼稿也未仅凭增加威胁递补。41项有限对照保留，未替换既有46。
 
+[三路方向取物的26项对照](../examples/discovery-course-20261023/drafts/directional-theta-20261026/README.md)未接入：唯一合格21格稿仍是熟悉的绕回取物，普通替代保留25步完整动作而另增合并分支，不把过滤分支当方向新意。原卡只改初位，扩展又加面积与两处保护，已明确属于改题；这组不继续追加机关。公开36关保持。
+
 观察机会不等于玩家学会。已复查[知识前提与早段续解](../examples/discovery-course-20261023/reviews/knowledge-assumptions-20261025.md)，撤回把实墙遮挡误归给普通门的初步判断；第2关填格取消原调动问题，未采用。其它曾否决的回程稿保留[具体反例](../examples/discovery-course-20261023/reviews/direction-observation-and-return-counterexamples-20261025.md)，不重复复活。
 
 ## 当前验收与基线
+
+逐关预加载与审查说明已发布Site第88版，保持公开。电脑与手机各遍历36关，只发生一次游戏文档加载；各图初态与共同引擎一致，换关后输入、快速连续选择、前后回切及准备期间保留局面／草稿通过。不同源与旧版降级、清单重排／本关改码／移除不重载当前局面另验。说明36个定位、手机阅读、下载与仓内唯一文字源一致。记录见[交付核对](../examples/discovery-course-20261023/review-delivery-check-20261026.json)；本地耗时不是公网速度或真人体验。
 
 36关构造器、存图与证书在[现版绑定记录](../examples/discovery-course-20261023/certificate-check-redesign-20261023.json)核对；共同规则锁`sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0`。全部最优重合边界、去终点安全、指定真正外侧入场与编码分别留证；有鬼图另查编号，无鬼50、51不冒称鬼编号试验。
 
@@ -49,7 +55,7 @@
 
 54还补验[跨层攻击与上层碰鬼的失败恢复](../examples/discovery-course-20261023/overpass-recovery-check-20261025.json)：四次电脑／手机仿真均可死亡撤销、重做、复活后撤回，并从开局再通关。当前主站已由本地e91dafb改为显示死亡瞬间，逻辑与记录仍使用复活后局面；按既定显示方案核对，不回退本体，也不把旧验收预期误报成bug。
 
-最新npm test与cloud:check通过，本体、AI、规则锁、原种子及22个HTTP入口通过；当前环境Node24，未重做Node22验收。本体main仍94d49a5，本任务未改；正式地图集21张、站主优化10张保持。两个main开工及推送前fetch核对，保留本地用户更新，不reset、rebase或覆盖。
+最新npm test与cloud:check通过，本体、AI、规则锁、原种子及22个HTTP入口通过；当前环境Node24，未重做Node22验收。本体正式基线94d49a5；本地main已提交4cd4d31的嵌入预加载支持，仅在Site预览使用，未经本轮正式发布认可不推送本体main；正式地图集21张、站主优化10张保持。两个main开工及推送前fetch核对，保留本地用户更新，不reset、rebase或覆盖。
 
 实际缺失仍是未知规则真人的过程：按钮是否能被发现、跨度、失败原因与后段重复感。没有补评分、用时、提示或尤里卡记录，原图好评不转移给变式或关序。手机方向盘默认会遮住重做，拖开后可操作；本体未修，仿真也不等于真实手机验收。
 
