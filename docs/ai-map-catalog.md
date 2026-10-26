@@ -1,6 +1,6 @@
 # AI 地图总目录
 
-2026-10-26新增课程整图重构61《携影》，暂追加第39：复用错位／再借的局部空间，取消重复引活前置，29格两鬼、单A、48步；将左鬼带入右院协助取物，回来仍需重新调动帮手。不是原图等价精简，不转移好评，原38关及正式地图集保持。具体来源、迭代与审查重点见[统一人读说明](../examples/discovery-course-20261023/review-guide.md#level-61)，证据见[研究归档](../examples/discovery-course-20261023/drafts/cross-unit-return-20261026/README.md)。
+2026-10-26新增课程整图重构61《携影》，暂追加第39：复用错位／再借的局部空间，取消重复引活前置，29格两鬼、单A、现v02为44步（原48步留档）；将左鬼带入右院协助取物，回来仍需重新调动帮手。不是原图等价精简，不转移好评，原38关及正式地图集保持。具体来源、迭代与审查重点见[统一人读说明](../examples/discovery-course-20261023/review-guide.md#level-61)，证据见[研究归档](../examples/discovery-course-20261023/drafts/cross-unit-return-20261026/README.md)。
 
 2026-10-24《侧入》独立课程变式47替换第20关，集中终点守卫的接近侧，原37步图及正式集保持。[来源、23帧对应和普通替代](../examples/discovery-course-20261023/reviews/side-entry-focus-20261024.md)。课程总数仍25，未转移原好评。
 
