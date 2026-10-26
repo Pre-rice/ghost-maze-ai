@@ -28,6 +28,8 @@
 
 另排除[回程出口与双0小室](../examples/discovery-course-20261023/drafts/control-and-zero-counterexamples-20261025/)：前者的两个A控制没有参与16步参考，后者仍不成立。它们不接入，也不靠新增机关修补。 后续[共享庭院、单楼梯返回与四小室](../examples/discovery-course-20261023/drafts/shared-returns-20261025/README.md)同样未采用：有的是尾随一圈或独立角色，有的是最优重合；17步楼梯稿虽安全，仍没有提出区别于分区搬运的新理解。
 
+首次三鬼的后续比较保持原安排：[腾位目标调整与双环反例](../examples/discovery-course-20261023/drafts/three-ghost-and-direction-20261026/README.md)未接入。内收24步稿仍主要尾随，缩圈改变了停位，去保护出现到达死亡捷径；双环箭头允许方向从终点出发，非终局全图等价于墙。后续在构思时先核对方向的真实用途，不能用普通门出现捷径代替。
+
 观察机会不等于玩家学会。已复查[知识前提与早段续解](../examples/discovery-course-20261023/reviews/knowledge-assumptions-20261025.md)，撤回把实墙遮挡误归给普通门的初步判断；第2关填格取消原调动问题，未采用。其它曾否决的回程稿保留[具体反例](../examples/discovery-course-20261023/reviews/direction-observation-and-return-counterexamples-20261025.md)，不重复复活。
 
 ## 当前验收与基线
