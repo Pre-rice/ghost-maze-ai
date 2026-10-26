@@ -1,5 +1,7 @@
 # AI 地图总目录
 
+2026-10-27课程第2关33更新v02：目标由上端转到守卫右侧，14格、13步两类保持，活动包络5×5收为5×4。两条前12步及映射后的全部43态210后继一致，只改最后进入方向；不是新谜题或增强，审美仍待评。原图四文件留档，当前43顺序及其它42码保持；旧局面收到修订仍可继续。[统一说明](../examples/discovery-course-20261023/review-guide.md#level-33) · [构造与范围](../examples/discovery-course-20261023/drafts/second-level-shape-20261027/README.md)。
+
 2026-10-27公开课程现43关，第6新增《换尾》65：14格、两鬼一普通门、16步两类鬼轨迹。延续少量元件的完整返回，先安置左鬼的安全计划失去退路，实际两处争位改变谁追谁留；没有真人评价，不入正式集，也不把两次轨迹影响当质量证明。原42码与相对顺序保持，旧关序日志按当时编号。[统一说明](../examples/discovery-course-20261023/review-guide.md#level-65) · [来源与范围](../examples/discovery-course-20261023/drafts/reciprocal-return-course-20261027/README.md)。
 
 2026-10-27课程现42关，第28新增《回环》两鬼课程重构64：20格两鬼、一钥匙、46步两条原始最优归一类鬼轨迹。去独立末尾任务、删中B及不用的上下格，钥匙另设支格；分段停位、取物后再引动仍必要，但没有实际互挡，不称新互助突破。正式原图与原带提示通关、复杂性担忧保持，不转移好评；原41码及相对顺序不变，不入正式集。[人读说明](../examples/discovery-course-20261023/review-guide.md#level-64) · [构造与范围](../examples/discovery-course-20261023/drafts/partial-bait-course-20261027/README.md)。以下日志保留当时编号。
