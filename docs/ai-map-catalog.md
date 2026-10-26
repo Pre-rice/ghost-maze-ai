@@ -1,5 +1,7 @@
 # AI 地图总目录
 
+2026-10-27课程现41关，第11新增《借角》63：手工14格两鬼、两普通门、一钥匙与1，22步两类鬼轨迹；先暂存目标侧、取物后再引动，实际没有双鬼互挡。作为首次资源完整问题，内外等原40图码及相对顺序保持；双向帮助初稿无解未采用，不能称原假说实现。没有真人或盲AI试玩结论，不入正式地图集。[人读说明](../examples/discovery-course-20261023/review-guide.md#level-63) · [构造与范围](../examples/discovery-course-20261023/drafts/crossed-shelters-20261026/README.md)。四候选现为留席13、携影21、归还32、腾位35；下方产出日志保留当时编号。
+
 2026-10-26《腾位》现第34关v02：出生再内移到按钮前，19格19步，原20步仅省首步，其余鬼位、资源及门态保持；三鬼换守关系与真正外侧入场重验。原20步版留档，其余39码和当前顺序保持，未获真人评价，不入正式地图集。[本次范围](../examples/discovery-course-20261023/drafts/slot-start-economy-20261026/README.md) · [统一人读说明](../examples/discovery-course-20261023/review-guide.md#level-59)。
 
 2026-10-26本轮四候选编排为《留席》第12、《携影》第20、《归还》第31、《腾位》第34；编排时原36相对顺序及全部40地图码保持。以下产出日志保留当时编号，当前流程以[统一人读说明](../examples/discovery-course-20261023/review-guide.md)为准。编排没有真人认可标签。[前后对照及前置依据](../examples/discovery-course-20261023/reviews/placement-of-new-candidates-20261026.json)。
