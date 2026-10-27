@@ -1,5 +1,7 @@
 # AI 地图总目录
 
+2026-10-27课程25保护交接题48现v02：仅删上室内部1，20格、38步及全部有效无伤通关安排保持；三条最短走法归一种鬼动停轨迹。近钥匙先与正确安置上鬼的空间关系保留，不再由冗余门提示。三处反馈差异均来自已无续解局面，其中两处更早死亡，已验撤回；原图留档，当前43顺序和其它42码不变。没有新质量评价，不入正式集。[统一说明](../examples/discovery-course-20261023/review-guide.md#level-48) · [完整对照](../examples/discovery-course-20261023/drafts/key-route-economy-20261027/README.md)。
+
 2026-10-27课程34《归还》60现v02：保留16格与ABC／方向口，只把出生移到A，唯一21步省为17步，机关安排A B C B保持；原路仍服务返回，旧21步版留档。不是难度增强；出生贴近A的提示感仍待审。当前43顺序和其余42码保持，旧局面接收清单更新仍可继续。[统一说明](../examples/discovery-course-20261023/review-guide.md#level-60) · [精简与未采用反例](../examples/discovery-course-20261023/drafts/return-control-start-20261027/README.md)。
 
 2026-10-27课程第2关33更新v02：目标由上端转到守卫右侧，14格、13步两类保持，活动包络5×5收为5×4。两条前12步及映射后的全部43态210后继一致，只改最后进入方向；不是新谜题或增强，审美仍待评。原图四文件留档，当前43顺序及其它42码保持；旧局面收到修订仍可继续。[统一说明](../examples/discovery-course-20261023/review-guide.md#level-33) · [构造与范围](../examples/discovery-course-20261023/drafts/second-level-shape-20261027/README.md)。

@@ -1,0 +1,581 @@
+{
+  "mapId": "7256ea01ae5b059a3197c863a6d0109a3cecd5018f4f3683d7b8db20e8aecb6d",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "sourceMapCode": "AWM48OHDnz8MDAyMXAqGJqzODUtZBFY1mzEe1xJqDWUAAiHHYskmFncOBhBwZBDgcAAA",
+  "scope": "原图历史查询与删改对照分开；终点到达另查死亡，重合限制显式记录；不是质量评分",
+  "rows": [
+    {
+      "name": "upper_key_first",
+      "avoidOverlap": false,
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 105,
+        "transitions": 525,
+        "discovered": 105,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "name": "never_upper_ghost_crosses_one",
+      "avoidOverlap": false,
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 205,
+        "transitions": 1025,
+        "discovered": 205,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "name": "one_not_opened_before_upper_key",
+      "avoidOverlap": false,
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 181,
+        "transitions": 905,
+        "discovered": 181,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "name": "never_upper_ghost_stationary_above_ordinary",
+      "avoidOverlap": false,
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 208,
+        "transitions": 1040,
+        "discovered": 208,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "name": "upper_key_first",
+      "avoidOverlap": true,
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 105,
+        "transitions": 525,
+        "discovered": 105,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "name": "never_upper_ghost_crosses_one",
+      "avoidOverlap": true,
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 205,
+        "transitions": 1025,
+        "discovered": 205,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "name": "one_not_opened_before_upper_key",
+      "avoidOverlap": true,
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 181,
+        "transitions": 905,
+        "discovered": 181,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "name": "never_upper_ghost_stationary_above_ordinary",
+      "avoidOverlap": true,
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 208,
+        "transitions": 1040,
+        "discovered": 208,
+        "totalActions": null
+      },
+      "actions": null
+    }
+  ],
+  "wrong": {
+    "prefix": [
+      "R",
+      "D",
+      "L",
+      "D",
+      "R",
+      "R",
+      "L",
+      "L",
+      "U",
+      "R",
+      "U",
+      "R",
+      "U",
+      "R"
+    ],
+    "player": [
+      4,
+      0
+    ],
+    "upperGhost": [
+      2,
+      1
+    ],
+    "keys": 1,
+    "continuations": [
+      {
+        "reference": false,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "prefix": [
+          "R",
+          "D",
+          "L",
+          "D",
+          "R",
+          "R",
+          "L",
+          "L",
+          "U",
+          "R",
+          "U",
+          "R",
+          "U",
+          "R"
+        ],
+        "actions": null,
+        "optimality": null,
+        "search": {
+          "algorithm": "fast_bfs",
+          "expanded": 86,
+          "discovered": 86,
+          "exhausted": true,
+          "elapsedMs": 1.5990840000000048,
+          "nodeBudget": 500000,
+          "budgetMs": 20000
+        }
+      },
+      {
+        "reference": true,
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "prefix": [
+          "R",
+          "D",
+          "L",
+          "D",
+          "R",
+          "R",
+          "L",
+          "L",
+          "U",
+          "R",
+          "U",
+          "R",
+          "U",
+          "R"
+        ],
+        "actions": null,
+        "optimality": null,
+        "search": {
+          "algorithm": "reference_bfs",
+          "expanded": 86,
+          "discovered": 86,
+          "exhausted": true,
+          "elapsedMs": 11.658034000000015,
+          "nodeBudget": 500000,
+          "budgetMs": 20000
+        }
+      }
+    ]
+  },
+  "comparisons": [
+    {
+      "type": "ordinary",
+      "avoidOverlap": false,
+      "mapId": "4cf85a3f3fd5cdae467e0593143e46f7cb4d52b806b49377522b3ac95c80970c",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 128,
+        "transitions": 640,
+        "discovered": 128,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "type": "ordinary",
+      "avoidOverlap": true,
+      "mapId": "4cf85a3f3fd5cdae467e0593143e46f7cb4d52b806b49377522b3ac95c80970c",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 128,
+        "transitions": 640,
+        "discovered": 128,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "type": "empty",
+      "avoidOverlap": false,
+      "mapId": "ef60cd3ae2af3d35050c050c1209b65308765f44f2eaa7c3cfb0f61587eaf8c0",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 290,
+        "transitions": 1447,
+        "discovered": 295,
+        "totalActions": 38
+      },
+      "actions": [
+        "R",
+        "D",
+        "L",
+        "D",
+        "R",
+        "R",
+        "L",
+        "L",
+        "U",
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R",
+        "D",
+        "U",
+        "L",
+        "L",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "R",
+        "D",
+        "D",
+        "U",
+        "L",
+        "U",
+        "L",
+        "U",
+        "R"
+      ]
+    },
+    {
+      "type": "empty",
+      "avoidOverlap": true,
+      "mapId": "ef60cd3ae2af3d35050c050c1209b65308765f44f2eaa7c3cfb0f61587eaf8c0",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 290,
+        "transitions": 1447,
+        "discovered": 295,
+        "totalActions": 38
+      },
+      "actions": [
+        "R",
+        "D",
+        "L",
+        "D",
+        "R",
+        "R",
+        "L",
+        "L",
+        "U",
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R",
+        "D",
+        "U",
+        "L",
+        "L",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "R",
+        "D",
+        "D",
+        "U",
+        "L",
+        "U",
+        "L",
+        "U",
+        "R"
+      ]
+    },
+    {
+      "type": "solid",
+      "avoidOverlap": false,
+      "mapId": "87b97ec1421288e3adb27a4f8f3c5e59e8122bfd77712a5e47d056a69521a90b",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 124,
+        "transitions": 620,
+        "discovered": 124,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "type": "solid",
+      "avoidOverlap": true,
+      "mapId": "87b97ec1421288e3adb27a4f8f3c5e59e8122bfd77712a5e47d056a69521a90b",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 124,
+        "transitions": 620,
+        "discovered": 124,
+        "totalActions": null
+      },
+      "actions": null
+    }
+  ],
+  "opt": [
+    {
+      "actions": [
+        "R",
+        "D",
+        "L",
+        "D",
+        "R",
+        "R",
+        "L",
+        "L",
+        "U",
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R",
+        "D",
+        "U",
+        "L",
+        "L",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "R",
+        "D",
+        "D",
+        "U",
+        "L",
+        "U",
+        "L",
+        "U",
+        "R"
+      ],
+      "events": [
+        {
+          "step": 11,
+          "kind": "key",
+          "position": [
+            3,
+            2
+          ],
+          "keys": 1
+        },
+        {
+          "step": 13,
+          "kind": "open_one"
+        },
+        {
+          "step": 14,
+          "kind": "key",
+          "position": [
+            4,
+            0
+          ],
+          "keys": 2
+        },
+        {
+          "step": 14,
+          "kind": "upper_ghost_crosses_one"
+        }
+      ]
+    },
+    {
+      "actions": [
+        "R",
+        "D",
+        "L",
+        "D",
+        "R",
+        "R",
+        "L",
+        "L",
+        "U",
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R",
+        "D",
+        "U",
+        "L",
+        "L",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "R",
+        "D",
+        "D",
+        "U",
+        "L",
+        "L",
+        "U",
+        "U",
+        "R"
+      ],
+      "events": [
+        {
+          "step": 11,
+          "kind": "key",
+          "position": [
+            3,
+            2
+          ],
+          "keys": 1
+        },
+        {
+          "step": 13,
+          "kind": "open_one"
+        },
+        {
+          "step": 14,
+          "kind": "key",
+          "position": [
+            4,
+            0
+          ],
+          "keys": 2
+        },
+        {
+          "step": 14,
+          "kind": "upper_ghost_crosses_one"
+        }
+      ]
+    },
+    {
+      "actions": [
+        "R",
+        "D",
+        "L",
+        "D",
+        "R",
+        "R",
+        "L",
+        "L",
+        "U",
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R",
+        "D",
+        "U",
+        "L",
+        "L",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "events": [
+        {
+          "step": 11,
+          "kind": "key",
+          "position": [
+            3,
+            2
+          ],
+          "keys": 1
+        },
+        {
+          "step": 13,
+          "kind": "open_one"
+        },
+        {
+          "step": 14,
+          "kind": "key",
+          "position": [
+            4,
+            0
+          ],
+          "keys": 2
+        },
+        {
+          "step": 14,
+          "kind": "upper_ghost_crosses_one"
+        }
+      ]
+    }
+  ]
+}

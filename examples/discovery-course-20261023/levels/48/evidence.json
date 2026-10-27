@@ -1,12 +1,12 @@
 {
-  "mapId": "7256ea01ae5b059a3197c863a6d0109a3cecd5018f4f3683d7b8db20e8aecb6d",
+  "mapId": "ef60cd3ae2af3d35050c050c1209b65308765f44f2eaa7c3cfb0f61587eaf8c0",
   "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
   "reference": {
     "schemaVersion": 1,
     "status": "solved",
     "reason": "goal_reached",
     "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
-    "mapId": "7256ea01ae5b059a3197c863a6d0109a3cecd5018f4f3683d7b8db20e8aecb6d",
+    "mapId": "ef60cd3ae2af3d35050c050c1209b65308765f44f2eaa7c3cfb0f61587eaf8c0",
     "scope": {
       "gameMode": "death-loop",
       "objective": "zero_hit_no_revive",
@@ -66,11 +66,11 @@
       "movementCost": 35
     },
     "search": {
-      "expanded": 340,
-      "transitions": 1697,
-      "discovered": 345,
+      "expanded": 290,
+      "transitions": 1447,
+      "discovered": 295,
       "exhausted": false,
-      "elapsedMs": 65.337163,
+      "elapsedMs": 53.33538700000001,
       "budget": {
         "nodeBudget": 1000000,
         "stateBudget": 1000000,
@@ -83,7 +83,7 @@
     "status": "solved",
     "reason": "goal_reached",
     "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
-    "mapId": "7256ea01ae5b059a3197c863a6d0109a3cecd5018f4f3683d7b8db20e8aecb6d",
+    "mapId": "ef60cd3ae2af3d35050c050c1209b65308765f44f2eaa7c3cfb0f61587eaf8c0",
     "scope": {
       "gameMode": "death-loop",
       "objective": "zero_hit_no_revive",
@@ -145,11 +145,11 @@
     },
     "search": {
       "algorithm": "astar",
-      "expanded": 294,
-      "transitions": 1470,
-      "discovered": 312,
+      "expanded": 244,
+      "transitions": 1220,
+      "discovered": 262,
       "exhausted": false,
-      "elapsedMs": 12.040519000000003,
+      "elapsedMs": 8.635631000000018,
       "budget": {
         "nodeBudget": 1000000,
         "stateBudget": 1000000,
@@ -160,22 +160,22 @@
   "allResult": {
     "status": "solved",
     "reason": "goal_reached",
-    "expanded": 344,
-    "transitions": 1720,
-    "discovered": 349,
+    "expanded": 294,
+    "transitions": 1470,
+    "discovered": 299,
     "totalActions": 38
   },
   "count": "3",
   "boundary": {
     "status": "safe",
     "reason": "all_optimal_routes_avoid_overlap",
-    "mapId": "7256ea01ae5b059a3197c863a6d0109a3cecd5018f4f3683d7b8db20e8aecb6d",
+    "mapId": "ef60cd3ae2af3d35050c050c1209b65308765f44f2eaa7c3cfb0f61587eaf8c0",
     "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
     "policy": "all_optimal_routes_avoid_overlap_v2",
     "glassCount": 0,
-    "expanded": 318,
-    "transitions": 1590,
-    "discovered": 322,
+    "expanded": 268,
+    "transitions": 1340,
+    "discovered": 272,
     "optimum": 38,
     "ignoredFatalOverlap": 2,
     "observedNonFatalOverlap": null,
@@ -219,7 +219,7 @@
       "U",
       "R"
     ],
-    "elapsedMs": 23,
+    "elapsedMs": 29,
     "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
   },
   "cold": true,
@@ -232,10 +232,11 @@
     "actions": [
       "R"
     ],
-    "unitArrival": [
-      0,
-      1,
-      2
+    "externalCells": [
+      [
+        0,
+        2
+      ]
     ],
     "internal": [
       0,
@@ -244,6 +245,7 @@
     ],
     "keys": 0,
     "externalGhosts": 0,
+    "actualExternalStartOutsideEnvelope": true,
     "exteriorSealedExceptEntrance": true,
     "initialInteriorEqual": true,
     "afterGhosts": [
@@ -258,18 +260,25 @@
         ]
       ]
     ],
-    "wholeOptimalRoutesInteriorEqual": true
+    "wholeOptimalRoutesInteriorEqual": true,
+    "allInternalSuccessorsEqual": {
+      "states": 511,
+      "transitions": 2540,
+      "includesFatalActions": true
+    },
+    "noEndSafeRoutes": 3,
+    "scope": "只声明所列外侧路径、零钥匙与无外部鬼；不声称任意外部局面均适用"
   },
   "physicalAudit": {
-    "reachable": 561,
-    "transitions": 2790,
+    "reachable": 511,
+    "transitions": 2540,
     "permutations": 2,
-    "compared": 5580,
+    "compared": 5080,
     "includesFatalActions": true
   },
   "noEndSafeRoutes": 3,
-  "mapCode": "AWM48OHDnz8MDAyMXAqGJqzODUtZBFY1mzEe1xJqDWUAAiHHYskmFncOBhBwZBDgcAAA",
-  "replayCode": "EL3Av4TZ-jzJf0qJdSIw",
+  "mapCode": "AADA8PD8_AAAAAEKIDE0BUOApQQQqoM2AccqEoVVAAAAABJBcwggRHCAAAAAAAQQAQQ",
+  "replayCode": "ELKOIiXZ-jzJf0qJdSIw",
   "actions": [
     "R",
     "D",
@@ -352,7 +361,7 @@
         "U",
         "R"
       ],
-      "replayCode": "EL3Av4TZ-jzJf0qJdSIw",
+      "replayCode": "ELKOIiXZ-jzJf0qJdSIw",
       "controls": [
         {
           "step": 2,
@@ -1259,7 +1268,7 @@
         "U",
         "R"
       ],
-      "replayCode": "EL3Av4TZ-jzJf0qJdSgw",
+      "replayCode": "ELKOIiXZ-jzJf0qJdSgw",
       "controls": [
         {
           "step": 2,
@@ -2166,7 +2175,7 @@
         "U",
         "R"
       ],
-      "replayCode": "EL3Av4TZ-jzJf0qJdaAw",
+      "replayCode": "ELKOIiXZ-jzJf0qJdaAw",
       "controls": [
         {
           "step": 2,
@@ -3033,5 +3042,42 @@
       ]
     }
   ],
-  "role": "physical_QA_not_human_quality"
+  "role": "physical_QA_not_human_quality",
+  "localAdjacentEntry": {
+    "external": [
+      0,
+      0,
+      2
+    ],
+    "actions": [
+      "R"
+    ],
+    "unitArrival": [
+      0,
+      1,
+      2
+    ],
+    "internal": [
+      0,
+      1,
+      2
+    ],
+    "keys": 0,
+    "externalGhosts": 0,
+    "exteriorSealedExceptEntrance": true,
+    "initialInteriorEqual": true,
+    "afterGhosts": [
+      [
+        [
+          4,
+          3
+        ],
+        [
+          3,
+          1
+        ]
+      ]
+    ],
+    "wholeOptimalRoutesInteriorEqual": true
+  }
 }
