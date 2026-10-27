@@ -1,0 +1,3210 @@
+{
+  "sourceDefinition": {
+    "id": "51",
+    "title": "51",
+    "revision": 1,
+    "createdOn": "2026-10-25",
+    "width": 8,
+    "height": 8,
+    "params": {
+      "start": [
+        4,
+        3
+      ],
+      "end": [
+        1,
+        1
+      ],
+      "cells": [
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "items": [
+        [
+          4,
+          5
+        ]
+      ],
+      "buttons": [
+        [
+          5,
+          4,
+          1,
+          0,
+          "B"
+        ],
+        [
+          2,
+          2,
+          0,
+          -1,
+          "A"
+        ],
+        [
+          1,
+          2,
+          -1,
+          0,
+          "B"
+        ]
+      ],
+      "edges": [
+        [
+          "v",
+          4,
+          4,
+          6,
+          {
+            "letter": "A",
+            "initialState": "open"
+          }
+        ],
+        [
+          "v",
+          4,
+          5,
+          4,
+          {
+            "direction": {
+              "dx": -1,
+              "dy": 0
+            }
+          }
+        ],
+        [
+          "v",
+          3,
+          2,
+          4,
+          {
+            "direction": {
+              "dx": 1,
+              "dy": 0
+            }
+          }
+        ],
+        [
+          "v",
+          2,
+          2,
+          6,
+          {
+            "letter": "A",
+            "initialState": "open"
+          }
+        ],
+        [
+          "h",
+          5,
+          4,
+          6,
+          {
+            "letter": "B",
+            "initialState": "open"
+          }
+        ],
+        [
+          "h",
+          4,
+          4,
+          1,
+          {}
+        ],
+        [
+          "h",
+          4,
+          5,
+          6,
+          {
+            "letter": "A",
+            "initialState": "closed"
+          }
+        ],
+        [
+          "h",
+          3,
+          4,
+          1,
+          {}
+        ],
+        [
+          "h",
+          2,
+          3,
+          6,
+          {
+            "letter": "B",
+            "initialState": "closed"
+          }
+        ],
+        [
+          "h",
+          1,
+          2,
+          3,
+          {
+            "keys": 1
+          }
+        ]
+      ]
+    },
+    "derivedFrom": {
+      "courseLevelId": "50",
+      "researchDirectory": "drafts/controller-access-20261025",
+      "scope": "以同家族16格骨架另设取物与控制入口关系，不是只在50加鬼或同一路线重复；50原图不改。",
+      "changes": [
+        "旧目标成为钥匙，真正目标放在内B控制之后，经1门进入",
+        "内B移到A门之后；开钥匙侧时会切断去内B的路",
+        "钥匙侧补一个相反方向口，A关掉旧桥后仍可回到A所在一侧",
+        "删两扇次要B门，出生内收，钥匙移到A与返回口之间；18格31步变15格28步，保留五次核心操作",
+        "旋转使两个箭头分别向右、向左，便于辨认"
+      ]
+    },
+    "designCard": [
+      "目标在内B控制后方，需要右下钥匙；A既控制钥匙入口，也控制通往内B的门，两个控制并非随时都能按到。",
+      "第一次若先把A切到取钥匙相位，会把还要使用的内B隔开；恢复外部返回路线所需的B应先准备，再切A离开。",
+      "带钥匙回来又需要恢复A，才能进入深处目标；两次到访的用途和操作要求不同，不是同一圈照走两遍。临时B相位还用于走到另一控制面。",
+      "承接50的封入口后经单向口离开与46的方向回程，把方向用于控制可达性；现有A/B、钥匙和1门继续使用，不加新字母组或鬼数。",
+      "15格、三个按钮、三A两B、两个相反箭头和1门，无鬼。两个原始最优只有取道差异，按既定鬼轨迹口径是一种；步数、必要性和无鬼均不证明趣味。",
+      "普通替代会绕过关键控制：一口普通可省两次B，另一口普通甚至不用A。删内A门则无需取物后恢复A；保留这项真正改变完整计划的关系，不以多门多绕路增强。"
+    ],
+    "knowledgeBefore": [
+      "A/B反相与对应组联动",
+      "已在50借单向口离开封闭控制室",
+      "已在46将进入与返回条件一起准备",
+      "钥匙取物、数量门与安全返回"
+    ],
+    "newDiscovery": "一个开关也会改变另一个开关是否可达；取物前与取物后的到访，需要不同的准备和恢复。",
+    "evidence": "28步两条原始最优，核心控制词同为B、B、A、B、A；两个箭头普通替代分别20／14步，改变必要操作。内A门删空27步且不再需要最后恢复A；不把一条标准参考等同所有普通通关的唯一次序。",
+    "transfer": "放在46之后、侧入之前，用完整取物任务重新审视50中可在同室自由交换次序的A/B；后续不假定所有通关者都已找到最优的提前B时机。",
+    "risk": "没有未知规则真人评价。两次回到同一机关可能仍显重复；当前采用依据是控制入口受A制约及目标在内侧，不能用31到28的缩短或五次操作宣称精妙，若实际只是固定序列应撤回。",
+    "familyGroup": "discovery-switch-only-direction-20261025-v1",
+    "trainingScope": "原18格、15格删减、普通／实墙替代与50原稿同家族，未制备训练、未转移好评。",
+    "entryPath": {
+      "external": [
+        0,
+        4,
+        0
+      ],
+      "externalCells": [
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "actions": [
+        "D",
+        "D",
+        "D"
+      ]
+    }
+  },
+  "sourceMap": {
+    "width": 8,
+    "height": 8,
+    "editorMode": "free",
+    "gameMode": "death-loop",
+    "initialHealth": 5,
+    "multiLayerMode": false,
+    "layerCount": 1,
+    "layers": [
+      {
+        "hWalls": [
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 3,
+              "keys": 1
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 6,
+              "keys": 0,
+              "letter": "B",
+              "initialState": "closed"
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 6,
+              "keys": 0,
+              "letter": "B",
+              "initialState": "open"
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 6,
+              "keys": 0,
+              "letter": "A",
+              "initialState": "closed"
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ]
+        ],
+        "vWalls": [
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 6,
+              "keys": 0,
+              "letter": "A",
+              "initialState": "open"
+            },
+            {
+              "type": 4,
+              "keys": 0,
+              "direction": {
+                "dx": 1,
+                "dy": 0
+              }
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 6,
+              "keys": 0,
+              "letter": "A",
+              "initialState": "open"
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 4,
+              "keys": 0,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ]
+        ],
+        "activeCells": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "ghosts": [],
+        "items": [
+          {
+            "x": 4,
+            "y": 5,
+            "type": "key"
+          }
+        ],
+        "buttons": [
+          {
+            "x": 5,
+            "y": 4,
+            "direction": {
+              "dx": 1,
+              "dy": 0
+            },
+            "letter": "B"
+          },
+          {
+            "x": 2,
+            "y": 2,
+            "direction": {
+              "dx": 0,
+              "dy": -1
+            },
+            "letter": "A"
+          },
+          {
+            "x": 1,
+            "y": 2,
+            "direction": {
+              "dx": -1,
+              "dy": 0
+            },
+            "letter": "B"
+          }
+        ],
+        "endPos": {
+          "x": 1,
+          "y": 1
+        },
+        "customStartPos": {
+          "x": 4,
+          "y": 3
+        }
+      }
+    ],
+    "stairs": []
+  },
+  "params": {
+    "start": [
+      4,
+      3
+    ],
+    "end": [
+      1,
+      1
+    ],
+    "cells": [
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "items": [
+      [
+        4,
+        5
+      ]
+    ],
+    "buttons": [
+      [
+        4,
+        4,
+        1,
+        0,
+        "B"
+      ],
+      [
+        2,
+        2,
+        0,
+        -1,
+        "A"
+      ],
+      [
+        1,
+        2,
+        -1,
+        0,
+        "B"
+      ]
+    ],
+    "edges": [
+      [
+        "v",
+        4,
+        4,
+        6,
+        {
+          "letter": "A",
+          "initialState": "open"
+        }
+      ],
+      [
+        "v",
+        4,
+        5,
+        4,
+        {
+          "direction": {
+            "dx": -1,
+            "dy": 0
+          }
+        }
+      ],
+      [
+        "v",
+        3,
+        2,
+        4,
+        {
+          "direction": {
+            "dx": 1,
+            "dy": 0
+          }
+        }
+      ],
+      [
+        "v",
+        2,
+        2,
+        6,
+        {
+          "letter": "A",
+          "initialState": "open"
+        }
+      ],
+      [
+        "h",
+        4,
+        4,
+        6,
+        {
+          "letter": "B",
+          "initialState": "open"
+        }
+      ],
+      [
+        "h",
+        4,
+        5,
+        6,
+        {
+          "letter": "A",
+          "initialState": "closed"
+        }
+      ],
+      [
+        "h",
+        3,
+        4,
+        1,
+        {}
+      ],
+      [
+        "h",
+        2,
+        3,
+        6,
+        {
+          "letter": "B",
+          "initialState": "closed"
+        }
+      ],
+      [
+        "h",
+        1,
+        2,
+        3,
+        {
+          "keys": 1
+        }
+      ]
+    ]
+  },
+  "map": {
+    "width": 8,
+    "height": 8,
+    "editorMode": "free",
+    "gameMode": "death-loop",
+    "initialHealth": 5,
+    "multiLayerMode": false,
+    "layerCount": 1,
+    "layers": [
+      {
+        "hWalls": [
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 3,
+              "keys": 1
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 6,
+              "keys": 0,
+              "letter": "B",
+              "initialState": "closed"
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 6,
+              "keys": 0,
+              "letter": "B",
+              "initialState": "open"
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 6,
+              "keys": 0,
+              "letter": "A",
+              "initialState": "closed"
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ]
+        ],
+        "vWalls": [
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 6,
+              "keys": 0,
+              "letter": "A",
+              "initialState": "open"
+            },
+            {
+              "type": 4,
+              "keys": 0,
+              "direction": {
+                "dx": 1,
+                "dy": 0
+              }
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 6,
+              "keys": 0,
+              "letter": "A",
+              "initialState": "open"
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 4,
+              "keys": 0,
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            },
+            {
+              "type": 1,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ],
+          [
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            },
+            {
+              "type": 0,
+              "keys": 0
+            }
+          ]
+        ],
+        "activeCells": [
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        ],
+        "ghosts": [],
+        "items": [
+          {
+            "x": 4,
+            "y": 5,
+            "type": "key"
+          }
+        ],
+        "buttons": [
+          {
+            "x": 4,
+            "y": 4,
+            "direction": {
+              "dx": 1,
+              "dy": 0
+            },
+            "letter": "B"
+          },
+          {
+            "x": 2,
+            "y": 2,
+            "direction": {
+              "dx": 0,
+              "dy": -1
+            },
+            "letter": "A"
+          },
+          {
+            "x": 1,
+            "y": 2,
+            "direction": {
+              "dx": -1,
+              "dy": 0
+            },
+            "letter": "B"
+          }
+        ],
+        "endPos": {
+          "x": 1,
+          "y": 1
+        },
+        "customStartPos": {
+          "x": 4,
+          "y": 3
+        }
+      }
+    ],
+    "stairs": []
+  },
+  "mapId": "9335d0d95c466e08fe783bfc542d381d60074c9f773e5a6683a370ffb85e9de9",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "result": {
+    "status": "solved",
+    "reason": "goal_reached",
+    "expanded": 67,
+    "transitions": 335,
+    "discovered": 71,
+    "totalActions": 24
+  },
+  "count": "2",
+  "routes": [
+    [
+      "D",
+      "R",
+      "L",
+      "L",
+      "U",
+      "U",
+      "L",
+      "L",
+      "R",
+      "U",
+      "R",
+      "D",
+      "R",
+      "D",
+      "R",
+      "D",
+      "L",
+      "U",
+      "L",
+      "U",
+      "U",
+      "U",
+      "L",
+      "U"
+    ],
+    [
+      "D",
+      "R",
+      "L",
+      "L",
+      "U",
+      "U",
+      "L",
+      "L",
+      "R",
+      "U",
+      "R",
+      "D",
+      "R",
+      "D",
+      "R",
+      "D",
+      "L",
+      "L",
+      "U",
+      "U",
+      "U",
+      "U",
+      "L",
+      "U"
+    ]
+  ],
+  "qa": {
+    "mapId": "9335d0d95c466e08fe783bfc542d381d60074c9f773e5a6683a370ffb85e9de9",
+    "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+    "reference": {
+      "schemaVersion": 1,
+      "status": "solved",
+      "reason": "goal_reached",
+      "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+      "mapId": "9335d0d95c466e08fe783bfc542d381d60074c9f773e5a6683a370ffb85e9de9",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "restrictions": []
+      },
+      "optimality": "proven",
+      "solution": {
+        "actions": [
+          "D",
+          "R",
+          "L",
+          "L",
+          "U",
+          "U",
+          "L",
+          "L",
+          "R",
+          "U",
+          "R",
+          "D",
+          "R",
+          "D",
+          "R",
+          "D",
+          "L",
+          "U",
+          "L",
+          "U",
+          "U",
+          "U",
+          "L",
+          "U"
+        ],
+        "totalActions": 24,
+        "movementCost": 19
+      },
+      "search": {
+        "expanded": 67,
+        "transitions": 331,
+        "discovered": 70,
+        "exhausted": false,
+        "elapsedMs": 15.192706000000001,
+        "budget": {
+          "nodeBudget": 1000000,
+          "stateBudget": 1000000,
+          "budgetMs": 30000
+        }
+      }
+    },
+    "fast": {
+      "schemaVersion": 1,
+      "status": "solved",
+      "reason": "goal_reached",
+      "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+      "mapId": "9335d0d95c466e08fe783bfc542d381d60074c9f773e5a6683a370ffb85e9de9",
+      "scope": {
+        "gameMode": "death-loop",
+        "objective": "zero_hit_no_revive",
+        "metric": "successful_actions",
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "L",
+          "STAIR"
+        ],
+        "withGhosts": true,
+        "restrictions": []
+      },
+      "optimality": "proven",
+      "solution": {
+        "actions": [
+          "D",
+          "R",
+          "L",
+          "L",
+          "U",
+          "U",
+          "L",
+          "L",
+          "R",
+          "U",
+          "R",
+          "D",
+          "R",
+          "D",
+          "R",
+          "D",
+          "L",
+          "U",
+          "L",
+          "U",
+          "U",
+          "U",
+          "L",
+          "U"
+        ],
+        "totalActions": 24,
+        "movementCost": 19
+      },
+      "search": {
+        "algorithm": "astar",
+        "expanded": 62,
+        "transitions": 310,
+        "discovered": 68,
+        "exhausted": false,
+        "elapsedMs": 2.157696999999999,
+        "budget": {
+          "nodeBudget": 1000000,
+          "stateBudget": 1000000,
+          "budgetMs": 30000
+        }
+      }
+    },
+    "allResult": {
+      "status": "solved",
+      "reason": "goal_reached",
+      "expanded": 67,
+      "transitions": 335,
+      "discovered": 71,
+      "totalActions": 24
+    },
+    "count": "2",
+    "boundary": {
+      "status": "safe",
+      "reason": "all_optimal_routes_avoid_overlap",
+      "mapId": "9335d0d95c466e08fe783bfc542d381d60074c9f773e5a6683a370ffb85e9de9",
+      "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+      "policy": "all_optimal_routes_avoid_overlap_v2",
+      "glassCount": 0,
+      "expanded": 67,
+      "transitions": 335,
+      "discovered": 70,
+      "optimum": 24,
+      "ignoredFatalOverlap": 0,
+      "observedNonFatalOverlap": null,
+      "safeOptimalWitness": [
+        "D",
+        "R",
+        "L",
+        "L",
+        "U",
+        "U",
+        "L",
+        "L",
+        "R",
+        "U",
+        "R",
+        "D",
+        "R",
+        "D",
+        "R",
+        "D",
+        "L",
+        "U",
+        "L",
+        "U",
+        "U",
+        "U",
+        "L",
+        "U"
+      ],
+      "elapsedMs": 6,
+      "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+    },
+    "cold": true,
+    "entry": {
+      "external": [
+        0,
+        5,
+        3
+      ],
+      "actions": [
+        "L"
+      ],
+      "unitArrival": [
+        0,
+        4,
+        3
+      ],
+      "internal": [
+        0,
+        4,
+        3
+      ],
+      "keys": 0,
+      "externalGhosts": 0,
+      "exteriorSealedExceptEntrance": true,
+      "initialInteriorEqual": true,
+      "afterGhosts": [
+        []
+      ],
+      "wholeOptimalRoutesInteriorEqual": true
+    },
+    "physicalAudit": {
+      "reachable": 88,
+      "transitions": 430,
+      "permutations": 1,
+      "compared": 430,
+      "includesFatalActions": true
+    },
+    "noEndSafeRoutes": 2,
+    "mapCode": "AADAAIDgcHBwAAEGQDIFOEgAwQBAM0C4gLgDgKgAAAAUAuagIgTkCagAAAAhBgA4MA",
+    "replayCode": "ANHZjDR6Cs3diAg",
+    "actions": [
+      "D",
+      "R",
+      "L",
+      "L",
+      "U",
+      "U",
+      "L",
+      "L",
+      "R",
+      "U",
+      "R",
+      "D",
+      "R",
+      "D",
+      "R",
+      "D",
+      "L",
+      "U",
+      "L",
+      "U",
+      "U",
+      "U",
+      "L",
+      "U"
+    ],
+    "routes": [
+      {
+        "actions": [
+          "D",
+          "R",
+          "L",
+          "L",
+          "U",
+          "U",
+          "L",
+          "L",
+          "R",
+          "U",
+          "R",
+          "D",
+          "R",
+          "D",
+          "R",
+          "D",
+          "L",
+          "U",
+          "L",
+          "U",
+          "U",
+          "U",
+          "L",
+          "U"
+        ],
+        "replayCode": "ANHZjDR6Cs3diAg",
+        "controls": [
+          {
+            "step": 2,
+            "letter": "B",
+            "at": [
+              4,
+              4
+            ]
+          },
+          {
+            "step": 8,
+            "letter": "B",
+            "at": [
+              1,
+              2
+            ]
+          },
+          {
+            "step": 10,
+            "letter": "A",
+            "at": [
+              2,
+              2
+            ]
+          },
+          {
+            "step": 15,
+            "letter": "B",
+            "at": [
+              4,
+              4
+            ]
+          },
+          {
+            "step": 22,
+            "letter": "A",
+            "at": [
+              2,
+              2
+            ]
+          }
+        ],
+        "trace": [
+          {
+            "step": 1,
+            "action": "D",
+            "p": [
+              0,
+              4,
+              4
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 2,
+            "action": "R",
+            "p": [
+              0,
+              4,
+              4
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 3,
+            "action": "L",
+            "p": [
+              0,
+              3,
+              4
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 4,
+            "action": "L",
+            "p": [
+              0,
+              2,
+              4
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 5,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              3
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 6,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              2
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 7,
+            "action": "L",
+            "p": [
+              0,
+              1,
+              2
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 8,
+            "action": "L",
+            "p": [
+              0,
+              1,
+              2
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 9,
+            "action": "R",
+            "p": [
+              0,
+              2,
+              2
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 10,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              2
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 11,
+            "action": "R",
+            "p": [
+              0,
+              3,
+              2
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 12,
+            "action": "D",
+            "p": [
+              0,
+              3,
+              3
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 13,
+            "action": "R",
+            "p": [
+              0,
+              4,
+              3
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 14,
+            "action": "D",
+            "p": [
+              0,
+              4,
+              4
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 15,
+            "action": "R",
+            "p": [
+              0,
+              4,
+              4
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 16,
+            "action": "D",
+            "p": [
+              0,
+              4,
+              5
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 17,
+            "action": "L",
+            "p": [
+              0,
+              3,
+              5
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 18,
+            "action": "U",
+            "p": [
+              0,
+              3,
+              4
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 19,
+            "action": "L",
+            "p": [
+              0,
+              2,
+              4
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 20,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              3
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 21,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              2
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 22,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              2
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 23,
+            "action": "L",
+            "p": [
+              0,
+              1,
+              2
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 24,
+            "action": "U",
+            "p": [
+              0,
+              1,
+              1
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          }
+        ]
+      },
+      {
+        "actions": [
+          "D",
+          "R",
+          "L",
+          "L",
+          "U",
+          "U",
+          "L",
+          "L",
+          "R",
+          "U",
+          "R",
+          "D",
+          "R",
+          "D",
+          "R",
+          "D",
+          "L",
+          "L",
+          "U",
+          "U",
+          "U",
+          "U",
+          "L",
+          "U"
+        ],
+        "replayCode": "ANHZjDR6Cs3doAg",
+        "controls": [
+          {
+            "step": 2,
+            "letter": "B",
+            "at": [
+              4,
+              4
+            ]
+          },
+          {
+            "step": 8,
+            "letter": "B",
+            "at": [
+              1,
+              2
+            ]
+          },
+          {
+            "step": 10,
+            "letter": "A",
+            "at": [
+              2,
+              2
+            ]
+          },
+          {
+            "step": 15,
+            "letter": "B",
+            "at": [
+              4,
+              4
+            ]
+          },
+          {
+            "step": 22,
+            "letter": "A",
+            "at": [
+              2,
+              2
+            ]
+          }
+        ],
+        "trace": [
+          {
+            "step": 1,
+            "action": "D",
+            "p": [
+              0,
+              4,
+              4
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 2,
+            "action": "R",
+            "p": [
+              0,
+              4,
+              4
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 3,
+            "action": "L",
+            "p": [
+              0,
+              3,
+              4
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 4,
+            "action": "L",
+            "p": [
+              0,
+              2,
+              4
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 5,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              3
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 6,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              2
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 7,
+            "action": "L",
+            "p": [
+              0,
+              1,
+              2
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 8,
+            "action": "L",
+            "p": [
+              0,
+              1,
+              2
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 9,
+            "action": "R",
+            "p": [
+              0,
+              2,
+              2
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 10,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              2
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 11,
+            "action": "R",
+            "p": [
+              0,
+              3,
+              2
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 12,
+            "action": "D",
+            "p": [
+              0,
+              3,
+              3
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 13,
+            "action": "R",
+            "p": [
+              0,
+              4,
+              3
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 14,
+            "action": "D",
+            "p": [
+              0,
+              4,
+              4
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 15,
+            "action": "R",
+            "p": [
+              0,
+              4,
+              4
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 16,
+            "action": "D",
+            "p": [
+              0,
+              4,
+              5
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 17,
+            "action": "L",
+            "p": [
+              0,
+              3,
+              5
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 18,
+            "action": "L",
+            "p": [
+              0,
+              2,
+              5
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 19,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              4
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 20,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              3
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 21,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              2
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 22,
+            "action": "U",
+            "p": [
+              0,
+              2,
+              2
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 23,
+            "action": "L",
+            "p": [
+              0,
+              1,
+              2
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          },
+          {
+            "step": 24,
+            "action": "U",
+            "p": [
+              0,
+              1,
+              1
+            ],
+            "ghosts": [
+              []
+            ],
+            "diagnostics": []
+          }
+        ]
+      }
+    ],
+    "role": "physical_QA_not_human_quality"
+  },
+  "wrong": [
+    {
+      "name": "early_A_then_depart",
+      "prefix": [
+        "D",
+        "R",
+        "L",
+        "L",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "p": [
+        3,
+        2
+      ],
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "D",
+          "R",
+          "L",
+          "L",
+          "U",
+          "U",
+          "U",
+          "R"
+        ],
+        "actions": [
+          "D",
+          "L",
+          "U",
+          "U",
+          "L",
+          "L",
+          "R",
+          "U",
+          "R",
+          "D",
+          "R",
+          "D",
+          "R",
+          "D",
+          "L",
+          "U",
+          "L",
+          "U",
+          "U",
+          "U",
+          "L",
+          "U"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "reference_bfs",
+          "expanded": 70,
+          "discovered": 74,
+          "exhausted": false,
+          "elapsedMs": 10.524755999999996,
+          "nodeBudget": 500000,
+          "budgetMs": 20000
+        }
+      },
+      "fullLength": 30
+    },
+    {
+      "name": "skip_outer_B",
+      "prefix": [
+        "L",
+        "U",
+        "L",
+        "U"
+      ],
+      "invalid": "证书包含无效动作"
+    }
+  ],
+  "entry": {
+    "external": [
+      0,
+      4,
+      0
+    ],
+    "actions": [
+      "D",
+      "D",
+      "D"
+    ],
+    "externalCells": [
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ]
+    ],
+    "internal": [
+      0,
+      4,
+      3
+    ],
+    "keys": 0,
+    "externalGhosts": 0,
+    "actualExternalStartOutsideEnvelope": true,
+    "exteriorSealedExceptEntrance": true,
+    "initialInteriorEqual": true,
+    "afterGhosts": [
+      []
+    ],
+    "wholeOptimalRoutesInteriorEqual": true,
+    "allInternalSuccessorsEqual": {
+      "states": 88,
+      "transitions": 430,
+      "includesFatalActions": true
+    },
+    "noEndSafeRoutes": 2,
+    "scope": "只声明所列外侧路径、零钥匙与无外部鬼；不声称任意外部局面均适用"
+  }
+}

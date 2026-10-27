@@ -1,0 +1,713 @@
+{
+  "mapId": "9335d0d95c466e08fe783bfc542d381d60074c9f773e5a6683a370ffb85e9de9",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "role": "完整机关计划与控制可达性诊断，不是趣味分或真人学习证据",
+  "humanQuality": null,
+  "tests": {
+    "atMostOneA": {
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 63,
+        "transitions": 315,
+        "discovered": 63,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    "atMostTwoB": {
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 60,
+        "transitions": 300,
+        "discovered": 60,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    "noAAfterKey": {
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 63,
+        "transitions": 315,
+        "discovered": 63,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    "noInnerBBeforeKey": {
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 29,
+        "transitions": 145,
+        "discovered": 29,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    "withoutControlExit": {
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 32,
+        "transitions": 160,
+        "discovered": 32,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    "withoutKeyExit": {
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 54,
+        "transitions": 270,
+        "discovered": 54,
+        "totalActions": null
+      },
+      "actions": null
+    }
+  },
+  "allOptimalControlWords": [
+    "BBABA",
+    "BBABA"
+  ],
+  "recovery": {
+    "states": 88,
+    "transitions": 430,
+    "withWinningContinuation": 88,
+    "allHaveWinningContinuation": true,
+    "scope": "完整安全可达图，不含撤销／重置动作"
+  },
+  "wrongAFirst": {
+    "prefix": [
+      "D",
+      "R",
+      "L",
+      "L",
+      "U",
+      "U",
+      "U"
+    ],
+    "player": [
+      2,
+      2
+    ],
+    "innerDoor": "closed",
+    "repairAction": "U",
+    "doorAfterRepair": "open",
+    "scope": "先A会关住内B，但可在原处再次A恢复；不冒称永远坏局"
+  },
+  "gates": [
+    {
+      "at": [
+        "h",
+        1,
+        2
+      ],
+      "was": {
+        "type": 3,
+        "keys": 1
+      },
+      "replacement": 0,
+      "mapId": "65ebbe7b8e200de8b25463bef5cb09449269f5ec74c456e107d54d188d8b5d33",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 21,
+        "transitions": 105,
+        "discovered": 25,
+        "totalActions": 8
+      },
+      "count": "1",
+      "actions": [
+        "D",
+        "R",
+        "L",
+        "L",
+        "U",
+        "U",
+        "L",
+        "U"
+      ]
+    },
+    {
+      "at": [
+        "h",
+        2,
+        3
+      ],
+      "was": {
+        "type": 6,
+        "keys": 0,
+        "letter": "B",
+        "initialState": "closed"
+      },
+      "replacement": 0,
+      "mapId": "5441e612e72a0fc584a7cb58724ee8bda19af8cb68029a0c9b594e5a0184ed3a",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 69,
+        "transitions": 345,
+        "discovered": 75,
+        "totalActions": 17
+      },
+      "count": "6",
+      "actions": [
+        "L",
+        "L",
+        "U",
+        "U",
+        "R",
+        "D",
+        "R",
+        "D",
+        "D",
+        "U",
+        "U",
+        "L",
+        "L",
+        "U",
+        "U",
+        "L",
+        "U"
+      ]
+    },
+    {
+      "at": [
+        "h",
+        4,
+        4
+      ],
+      "was": {
+        "type": 6,
+        "keys": 0,
+        "letter": "B",
+        "initialState": "open"
+      },
+      "replacement": 0,
+      "mapId": "9239e27f846418c7cbe394609a830bab6f460026fbb95e49d02cfffa4927f99b",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 67,
+        "transitions": 335,
+        "discovered": 71,
+        "totalActions": 20
+      },
+      "count": "12",
+      "actions": [
+        "D",
+        "R",
+        "U",
+        "L",
+        "L",
+        "U",
+        "U",
+        "R",
+        "D",
+        "R",
+        "D",
+        "D",
+        "U",
+        "U",
+        "L",
+        "L",
+        "U",
+        "U",
+        "L",
+        "U"
+      ]
+    },
+    {
+      "at": [
+        "h",
+        4,
+        5
+      ],
+      "was": {
+        "type": 6,
+        "keys": 0,
+        "letter": "A",
+        "initialState": "closed"
+      },
+      "replacement": 0,
+      "mapId": "ff7b4f5869470ade2836e576bdd9acfea7181f047544c8bc3363a2855bf60240",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 50,
+        "transitions": 250,
+        "discovered": 58,
+        "totalActions": 10
+      },
+      "count": "4",
+      "actions": [
+        "D",
+        "R",
+        "D",
+        "U",
+        "L",
+        "L",
+        "U",
+        "U",
+        "L",
+        "U"
+      ]
+    },
+    {
+      "at": [
+        "v",
+        2,
+        2
+      ],
+      "was": {
+        "type": 6,
+        "keys": 0,
+        "letter": "A",
+        "initialState": "open"
+      },
+      "replacement": 0,
+      "mapId": "b7ecf6ee7a3cfa71ed004833edd134078a08128f94a798e825718e65e45b959e",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 67,
+        "transitions": 335,
+        "discovered": 72,
+        "totalActions": 23
+      },
+      "count": "4",
+      "actions": [
+        "D",
+        "R",
+        "L",
+        "L",
+        "U",
+        "U",
+        "U",
+        "L",
+        "L",
+        "R",
+        "R",
+        "D",
+        "R",
+        "D",
+        "R",
+        "D",
+        "L",
+        "U",
+        "L",
+        "U",
+        "U",
+        "L",
+        "U"
+      ]
+    },
+    {
+      "at": [
+        "v",
+        3,
+        2
+      ],
+      "was": {
+        "type": 4,
+        "keys": 0,
+        "direction": {
+          "dx": 1,
+          "dy": 0
+        }
+      },
+      "replacement": 2,
+      "mapId": "c6e97a84a3f6c2ce16501bd898b3eac4f8f79f39d5b96b058e3ae446f7c73ee5",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 68,
+        "transitions": 340,
+        "discovered": 73,
+        "totalActions": 17
+      },
+      "count": "1",
+      "actions": [
+        "L",
+        "U",
+        "L",
+        "U",
+        "R",
+        "D",
+        "R",
+        "D",
+        "D",
+        "U",
+        "U",
+        "L",
+        "U",
+        "L",
+        "U",
+        "L",
+        "U"
+      ]
+    },
+    {
+      "at": [
+        "v",
+        3,
+        2
+      ],
+      "was": {
+        "type": 4,
+        "keys": 0,
+        "direction": {
+          "dx": 1,
+          "dy": 0
+        }
+      },
+      "replacement": 1,
+      "mapId": "de7c7f9efefce15b4c5102b007ab92912349b0dd5f9a3aad483e5fd14a90f02b",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 32,
+        "transitions": 160,
+        "discovered": 32,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "at": [
+        "v",
+        4,
+        4
+      ],
+      "was": {
+        "type": 6,
+        "keys": 0,
+        "letter": "A",
+        "initialState": "open"
+      },
+      "replacement": 0,
+      "mapId": "26170e4fc2884a6068e6c890c39797d4d8c4da70f317679d46751f5458ce82af",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 67,
+        "transitions": 335,
+        "discovered": 71,
+        "totalActions": 20
+      },
+      "count": "3",
+      "actions": [
+        "D",
+        "R",
+        "L",
+        "L",
+        "U",
+        "U",
+        "U",
+        "D",
+        "D",
+        "R",
+        "R",
+        "D",
+        "U",
+        "L",
+        "L",
+        "U",
+        "U",
+        "U",
+        "L",
+        "U"
+      ]
+    },
+    {
+      "at": [
+        "v",
+        4,
+        5
+      ],
+      "was": {
+        "type": 4,
+        "keys": 0,
+        "direction": {
+          "dx": -1,
+          "dy": 0
+        }
+      },
+      "replacement": 2,
+      "mapId": "2c4e03c1a9878dc3091cefdf2ffc9b3e46ff540508a3f70a01b9ec1bdf8d9f2d",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 56,
+        "transitions": 280,
+        "discovered": 62,
+        "totalActions": 12
+      },
+      "count": "2",
+      "actions": [
+        "D",
+        "R",
+        "L",
+        "D",
+        "R",
+        "L",
+        "U",
+        "L",
+        "U",
+        "U",
+        "L",
+        "U"
+      ]
+    },
+    {
+      "at": [
+        "v",
+        4,
+        5
+      ],
+      "was": {
+        "type": 4,
+        "keys": 0,
+        "direction": {
+          "dx": -1,
+          "dy": 0
+        }
+      },
+      "replacement": 1,
+      "mapId": "f33ae2ef1ebc0b92b698a647b683c049dc4df7f0828343f7d8d27dbc30708f43",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 54,
+        "transitions": 270,
+        "discovered": 54,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    }
+  ],
+  "cells": [
+    {
+      "removed": [
+        3,
+        2
+      ],
+      "mapId": "d6a5011d0302c2b6d1ea85f838e3ceaf4df712a26cf322380a61b98d7526c7c4",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 29,
+        "transitions": 145,
+        "discovered": 29,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "removed": [
+        2,
+        3
+      ],
+      "mapId": "443aff788796222f17c4bc97cb0bf30e18bde55da15216a158f0fe80b40b3851",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 13,
+        "transitions": 65,
+        "discovered": 13,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "removed": [
+        3,
+        3
+      ],
+      "mapId": "67bc2a2ef71c3478ffc5e00adb12413bedcb8b9d241eb8cfbd692af98792866c",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 28,
+        "transitions": 140,
+        "discovered": 28,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "removed": [
+        2,
+        4
+      ],
+      "mapId": "1b2fc308dce8e0f1d780368d6214d73156b392a1c844b083a2ea6eb9454c9dbf",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 12,
+        "transitions": 60,
+        "discovered": 12,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "removed": [
+        3,
+        4
+      ],
+      "mapId": "ddd88b7f1bc8e43847ff4471e88b690ee3c8181b4aeb8eb2ef4d404dacec523b",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 9,
+        "transitions": 45,
+        "discovered": 9,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "removed": [
+        2,
+        5
+      ],
+      "mapId": "d26800760d82020a879a3cf781dfbe1ae95312322e8bd15fc68a5fc0593d899f",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 61,
+        "transitions": 305,
+        "discovered": 65,
+        "totalActions": 24
+      },
+      "count": "1",
+      "actions": [
+        "D",
+        "R",
+        "L",
+        "L",
+        "U",
+        "U",
+        "L",
+        "L",
+        "R",
+        "U",
+        "R",
+        "D",
+        "R",
+        "D",
+        "R",
+        "D",
+        "L",
+        "U",
+        "L",
+        "U",
+        "U",
+        "U",
+        "L",
+        "U"
+      ]
+    },
+    {
+      "removed": [
+        3,
+        5
+      ],
+      "mapId": "6bd18c96d3a82371905b7aea5aa0f07fbb0b471b67ffacaa175b3c46551c8cc0",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 49,
+        "transitions": 245,
+        "discovered": 49,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    }
+  ],
+  "gateWitnesses": [
+    {
+      "at": [
+        "v",
+        2,
+        2
+      ],
+      "replacement": 0,
+      "T": 23,
+      "controls": [
+        {
+          "step": 2,
+          "letter": "B",
+          "keysBefore": 0
+        },
+        {
+          "step": 7,
+          "letter": "A",
+          "keysBefore": 0
+        },
+        {
+          "step": 9,
+          "letter": "B",
+          "keysBefore": 0
+        },
+        {
+          "step": 15,
+          "letter": "B",
+          "keysBefore": 0
+        }
+      ]
+    },
+    {
+      "at": [
+        "v",
+        3,
+        2
+      ],
+      "replacement": 2,
+      "T": 17,
+      "controls": [
+        {
+          "step": 4,
+          "letter": "A",
+          "keysBefore": 0
+        },
+        {
+          "step": 15,
+          "letter": "A",
+          "keysBefore": 1
+        }
+      ]
+    },
+    {
+      "at": [
+        "v",
+        4,
+        5
+      ],
+      "replacement": 2,
+      "T": 12,
+      "controls": [
+        {
+          "step": 2,
+          "letter": "B",
+          "keysBefore": 0
+        }
+      ]
+    }
+  ]
+}

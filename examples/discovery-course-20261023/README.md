@@ -41,7 +41,7 @@
 | [31](levels/30/source.json) | 可以先关好未来停位上方的门，再通过距离和切换视线把鬼引到门下 | 《借影》课程变式 | 24 / 53 |
 | [32](levels/50/source.json) | 为了重新连通外部通路，可以在控制室内关回入口，再从单向口出来。 | 课程专用图 | 11 / 17 |
 | [33](levels/46/source.json) | 单向入口让先前的停位持续影响回程 | 课程专用图 | 19 / 16 |
-| [34](levels/51/source.json) | 一个开关也会改变另一个开关是否可达 | 课程专用图 | 15 / 28 |
+| [34](levels/51/source.json) | 一个开关也会改变另一个开关是否可达 | 课程专用图 | 13 / 24 |
 | [35](levels/60/source.json) | 一个控制也可以只是暂时借用 | 课程专用图 | 16 / 17 |
 | [36](levels/47/source.json) | 目标前的守卫要从特定一侧引走 | 《侧入》课程变式 | 18 / 23 |
 | [37](levels/27/source.json) | 三鬼不必从头一起调度 | 《同行》课程变式 | 19 / 51 |
@@ -143,3 +143,5 @@
 本轮新增[《并肩》设计与证据](drafts/compressed-pair-course-20261027/README.md)，当前第11关；[电脑／触屏验收](compressed-pair-browser-check-20261027.json)与44关说明同步。9格13步的短题仍缺初见趣味评价，不以唯一解宣布教学或顿悟有效。
 
 新增[《楼下》设计与证据](drafts/downstairs-course-20261027/README.md)，现第43关先用一对楼梯，原54与58后移；[跨层电脑／触屏验收](downstairs-browser-check-20261027.json)另存。原44地图及相对顺序保持。[单钥匙双1的四项未采用对照](drafts/shared-key-screen-20261027/README.md)只归研究，不为补规则演示增关。
+
+第34关51已作[外B移近精简](drafts/controller-economy-20261027/README.md)，13格24步，全部机关事件安排保持；[两端验收](controller-economy-browser-check-20261027.json)。旧15格版与旧验证留档且只读，未将注意力或趣味等同。

@@ -1,5 +1,7 @@
 # AI 地图总目录
 
+2026-10-27课程第34关51 v02：外B移到邻接入口，删右侧两格，15格28步收为13格24步；两条原始最优仍BBABA，按无鬼轨迹一类。全部有效机关事件安排保持，原始按键与注意力另论；提前A离开可30步恢复。原版四件与旧证据留存，45关序与其它44码不动，无新质量评价、未入正式集。[统一说明](../examples/discovery-course-20261023/review-guide.md#level-51) · [全部对照](../examples/discovery-course-20261023/drafts/controller-economy-20261027/README.md)。
+
 ## 2026-10-27 · 课程新增《楼下》（稳定ID67，当前第43关）
 
 [逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=67) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWN4ocBw-MABBgYGFkYGRkcfEUYHBhBQEXTwADMaHzxIAMlGMXAwJggINTEsEAEJczH9VfBigqhlbgAA) · [来源、设计与范围](../examples/discovery-course-20261023/drafts/downstairs-course-20261027/README.md)。两层18格，一对楼梯、双鬼、普通门和单A，24步一类。先让带下来的追者帮忙阻住原下守卫，再选择普通门的安置面，两只都留楼下；最近门侧返回不能停步按A。新候选，无用户评价，不入正式地图集；原44码与相对顺序保持，流程45关。
