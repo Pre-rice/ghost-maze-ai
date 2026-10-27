@@ -10,11 +10,13 @@
 
 ## 当前公开流程
 
-[鬼迷宫 · 初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)对所有人公开，当前45关；Site104原生部署成功，准确来源见[发布记录](../examples/discovery-course-20261023/site-publication.json)。项目`appgprj_6adb4b311474819180db83f0509d84e1`，独立源码`/workspace/sites/ghostmaze-discovery-path`。成功后未访问部署重复核验。
+[鬼迷宫 · 初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)对所有人公开，当前45关；Site105原生部署成功，准确来源见[发布记录](../examples/discovery-course-20261023/site-publication.json)。项目`appgprj_6adb4b311474819180db83f0509d84e1`，独立源码`/workspace/sites/ghostmaze-discovery-path`。成功后未访问部署重复核验。
 
 [统一人读审查说明](../examples/discovery-course-20261023/review-guide.md)按当前关序列来源、实际改动、设计意图和待审问题；试玩标题旁入口定位当前关，正常游玩不显示答案。按人读口径17份认可作品来源、6份未评价研究、22份新布局／重构；按构造器另计23张课程专用、22张复用／变式，两种口径不混同。父题认可不转移。[证据目录](../examples/discovery-course-20261023/README.md)与`course-order.json`维护当前顺序，稳定ID不是关数。
 
 前六关墙、鬼与普通门：65换尾现第6，接短争位35后再进入第7首次A37；第8单A45、第9错位、第10接力、第11新66并肩、第12三鬼内室57，资源首次为第13借角63。留席15、首次0为18的53，再借22、携影23、回环课程版30、借影31；方向首次32的50，归还35、侧入36、同行37、腾位38。布阵39、调度40、留隙41、门庭42；首次单对楼梯新67楼下为43，双楼梯54与同室两用58为44、45。原楼间仍撤下，不声称楼梯独有突破。观察过不等于学会：49第三钥匙可选、46有同最优不互挡、同行有更长晚召回，不把所选最优现象作后题必备知识。
+
+统一说明开头已改为当前编排，末三关明确“留楼下→带上桥→同室不同用途”。地图、顺序均不变；两端阅读和下载同源通过，游戏QA沿用104。54／58来源文字跟随当前定位，63来源把两条最优误写一类的笔误已按原证据纠正为两类。
 
 ## 最新设计与验收
 
