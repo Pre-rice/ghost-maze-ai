@@ -4,13 +4,15 @@ import {createReferenceEnvironment} from '../../src/reference/environment.js';
 
 /** 指定真正外侧路径，仅增加外部格与单向入场边；物理后继仍由本体计算。 */
 export function auditEntryPath(map,routes,{external,externalCells,actions}){
- assert.equal(map.layers[0].customStartPos!=null,true,'指定入场仍从第零层出生点开始');
- const layer=map.layers[0],points=[];
+ const entryLayer=external[0];
+ assert(Number.isInteger(entryLayer)&&entryLayer>=0&&entryLayer<map.layers.length,'入场层必须存在');
+ assert.equal(map.layers[entryLayer].customStartPos!=null,true,'外侧路径必须进入实际出生层');
+ const layer=map.layers[entryLayer],points=[];
  for(let y=0;y<map.height;y++)for(let x=0;x<map.width;x++)if(layer.activeCells[y][x])points.push([x,y]);
  const xs=points.map(p=>p[0]),ys=points.map(p=>p[1]);
- assert(external[0]===0&&externalCells.some(([x,y])=>x===external[1]&&y===external[2]));
+ assert(externalCells.some(([x,y])=>x===external[1]&&y===external[2]));
  assert(external[1]<Math.min(...xs)||external[1]>Math.max(...xs)||external[2]<Math.min(...ys)||external[2]>Math.max(...ys),'路径必须从原包络外起步');
- const enteredMap=structuredClone(map),l=enteredMap.layers[0],outside=new Set(externalCells.map(p=>p.join(',')));
+ const enteredMap=structuredClone(map),l=enteredMap.layers[entryLayer],outside=new Set(externalCells.map(p=>p.join(',')));
  const edge=(from,to)=>({axis:from[0]===to[0]?'h':'v',x:Math.max(from[0],to[0]),y:Math.max(from[1],to[1])});
  for(const[x,y]of externalCells){assert(x>=0&&x<map.width&&y>=0&&y<map.height&&!layer.activeCells[y][x]);l.activeCells[y][x]=true;for(const[dx,dy]of[[1,0],[-1,0],[0,1],[0,-1]]){const e=edge([x,y],[x+dx,y+dy]);l[e.axis+'Walls'][e.y][e.x]={type:W.SOLID,keys:0};}}
  let pos=[external[1],external[2]],entrances=0;const deltas={U:[0,-1],D:[0,1],L:[-1,0],R:[1,0]};
@@ -24,5 +26,5 @@ export function auditEntryPath(map,routes,{external,externalCells,actions}){
  for(let i=0;i<queue.length;i++){assert(queue.length<1000000);const[a,b]=queue[i];if(a.isDead||a.isWon)continue;for(const action of unit.actions){const n=unit.step(a,action),m=entered.step(b,action);assert.equal(physical(n),physical(m));transitions++;if(n===a||n.isDead)continue;const key=unit.stateKey(n);if(!seen.has(key)){seen.add(key);queue.push([n,m]);}}}
  for(const r of routes){let a=unit.initialState(),b=arrival;for(const action of r.actions){a=unit.step(a,action);b=entered.step(b,action);assert.equal(physical(a),physical(b));}assert(a.isWon&&b.isWon);}
  const noEnd=structuredClone(enteredMap);noEnd.layers.forEach(l=>l.endPos=null);const ne=createReferenceEnvironment(normalizeVoidWalls(normalizeMapData(noEnd)));for(const r of routes)assert(!ne.replay([...actions,...r.actions]).state.isDead);
- return{external,actions,externalCells,internal:[0,...pos],keys:0,externalGhosts:0,actualExternalStartOutsideEnvelope:true,exteriorSealedExceptEntrance:true,initialInteriorEqual:true,afterGhosts:arrival.layerStates.map(l=>l.ghosts.map(g=>[g.x,g.y])),wholeOptimalRoutesInteriorEqual:true,allInternalSuccessorsEqual:{states:queue.length,transitions,includesFatalActions:true},noEndSafeRoutes:routes.length,scope:'只声明所列外侧路径、零钥匙与无外部鬼；不声称任意外部局面均适用'};
+ return{external,actions,externalCells,internal:[entryLayer,...pos],keys:0,externalGhosts:0,actualExternalStartOutsideEnvelope:true,exteriorSealedExceptEntrance:true,initialInteriorEqual:true,afterGhosts:arrival.layerStates.map(l=>l.ghosts.map(g=>[g.x,g.y])),wholeOptimalRoutesInteriorEqual:true,allInternalSuccessorsEqual:{states:queue.length,transitions,includesFatalActions:true},noEndSafeRoutes:routes.length,scope:'只声明所列外侧路径、零钥匙与无外部鬼；不声称任意外部局面均适用'};
 }

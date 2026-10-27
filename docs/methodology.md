@@ -193,6 +193,8 @@
 
 本轮《并肩》的第一稿也否定了“预期能走完就代表核心成立”：15格远环虽有19步预期，却能14步先后安置。把普通门移到近角，让头鬼的安置真正占掉日后接近尾鬼的入口，才出现先缩短队列间距再安置的完整问题；没有靠增加门型或第三鬼保住故事。9格13步仍可能试按即解，必要性不替代初见评价。[构造、反例与范围](../examples/discovery-course-20261023/drafts/compressed-pair-course-20261027/README.md)。
 
+《楼下》还对照了末尾A的实际作用：无A时两条23步分别允许“互挡后两鬼留楼下”和“没有互挡、追者跟回也跑到目标”；加A才要求安全停步，后者真正失败。这与被用户批评的《接管》终点A只需最后打开不同，但仍不能据机械必要性宣称题好。首稿5步不下楼和单向强制交换楼层的23步稿都未发布，当前双面安置的趣味仍待审。[反例与范围](../examples/discovery-course-20261023/drafts/downstairs-course-20261027/README.md)。
+
 ## 每次反馈后的固定维护
 
 原话、日期、提示／回放条件与真人路线是否存在分别保存，不补数值分、用时或实际动作。随后更新[地图总目录](https://github.com/Pre-rice/ghost-maze-ai/blob/main/docs/ai-map-catalog.md)；只有用户明确选入的图才上架，并同步[设计小册](https://github.com/Pre-rice/ghost-maze/blob/main/docs/map-design-guide.md)的该题条目。亲缘改图不继承反馈。

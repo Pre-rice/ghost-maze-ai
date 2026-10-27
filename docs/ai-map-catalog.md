@@ -1,5 +1,15 @@
 # AI 地图总目录
 
+## 2026-10-27 · 课程新增《楼下》（稳定ID67，当前第43关）
+
+[逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=67) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWN4ocBw-MABBgYGFkYGRkcfEUYHBhBQEXTwADMaHzxIAMlGMXAwJggINTEsEAEJczH9VfBigqhlbgAA) · [来源、设计与范围](../examples/discovery-course-20261023/drafts/downstairs-course-20261027/README.md)。两层18格，一对楼梯、双鬼、普通门和单A，24步一类。先让带下来的追者帮忙阻住原下守卫，再选择普通门的安置面，两只都留楼下；最近门侧返回不能停步按A。新候选，无用户评价，不入正式地图集；原44码与相对顺序保持，流程45关。
+
+<details><summary>参考24步（答案）</summary>
+
+[同页回放](https://ghostmaze.novic.cc/?map=AWN4ocBw-MABBgYGFkYGRkcfEUYHBhBQEXTwADMaHzxIAMlGMXAwJggINTEsEAEJczH9VfBigqhlbgAA&replay=ArClOFKDRjEE8tyR)。全部最优不重合／去终点安全、当前层内排列与全局编号、码往返、上层包络外三步入场通过。第10步存在实际互挡，五项全历史约束无解；错误15步安全返回无续解，初空身下楼可共36步恢复。工程QA非盲AI或真人顿悟。
+
+</details>
+
 ## 2026-10-27 · 课程新增《并肩》（稳定ID66，当前第11关）
 
 [逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=66) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWM4kJCQ4ODgwMBY3LBFQZXBQYSBnUGBAYTEFPQcPLgYHTQYgNwGAA) · [来源、设计和范围](../examples/discovery-course-20261023/drafts/compressed-pair-course-20261027/README.md)。9格双鬼，A两控制／两门和一普通门；13步唯一最优、一类鬼轨迹。先让队列靠近，再分放两个保护位，避免第一份安置占掉第二次接近。新手工课程候选，尚未获得用户评价，不进入正式地图集；原43关图码和相对顺序保持，公开流程44关。
