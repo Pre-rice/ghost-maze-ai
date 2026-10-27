@@ -1,5 +1,17 @@
 # AI 地图总目录
 
+## 2026-10-27 · 课程新增《并肩》（稳定ID66，当前第11关）
+
+[逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=66) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWM4kJCQ4ODgwMBY3LBFQZXBQYSBnUGBAYTEFPQcPLgYHTQYgNwGAA) · [来源、设计和范围](../examples/discovery-course-20261023/drafts/compressed-pair-course-20261027/README.md)。9格双鬼，A两控制／两门和一普通门；13步唯一最优、一类鬼轨迹。先让队列靠近，再分放两个保护位，避免第一份安置占掉第二次接近。新手工课程候选，尚未获得用户评价，不进入正式地图集；原43关图码和相对顺序保持，公开流程44关。
+
+<details><summary>参考13步（答案）</summary>
+
+[同页回放](https://ghostmaze.novic.cc/?map=AWM4kJCQ4ODgwMBY3LBFQZXBQYSBnUGBAYTEFPQcPLgYHTQYgNwGAA&replay=GBoumF-jLFlA)。前15格布局有14步普通替代，未用；9格版初态冷、全部最优无重合／去终点安全、两编号排列、码往返与真正外侧一步入场通过。电脑键盘／触屏逐步与回放验收另存，非盲AI试玩或真人顿悟。
+
+</details>
+
+以下课程日志保留当时关数与编号；当前顺序以统一说明为准。
+
 2026-10-27课程25保护交接题48现v02：仅删上室内部1，20格、38步及全部有效无伤通关安排保持；三条最短走法归一种鬼动停轨迹。近钥匙先与正确安置上鬼的空间关系保留，不再由冗余门提示。三处反馈差异均来自已无续解局面，其中两处更早死亡，已验撤回；原图留档，当前43顺序和其它42码不变。没有新质量评价，不入正式集。[统一说明](../examples/discovery-course-20261023/review-guide.md#level-48) · [完整对照](../examples/discovery-course-20261023/drafts/key-route-economy-20261027/README.md)。
 
 2026-10-27课程34《归还》60现v02：保留16格与ABC／方向口，只把出生移到A，唯一21步省为17步，机关安排A B C B保持；原路仍服务返回，旧21步版留档。不是难度增强；出生贴近A的提示感仍待审。当前43顺序和其余42码保持，旧局面接收清单更新仍可继续。[统一说明](../examples/discovery-course-20261023/review-guide.md#level-60) · [精简与未采用反例](../examples/discovery-course-20261023/drafts/return-control-start-20261027/README.md)。
@@ -45,6 +57,8 @@
 2026-10-26在用户恢复设计授权后追加第37关：未评价旧研究《腾位》的课程适配，19格三鬼、一A，20步。省三步纯靠近与收尾，真实换守和初期制动在新图完整通关范围另验；不是今天新发明，不继承旧作好评。原36图码、顺序及正式地图集保持。[试玩](https://ghostmaze.novic.cc/?map=AADAAAD9_PAQEAGJIFJBkAGAAABVUlciUoqAACAAAAAgSAiEAoBQAAA) · [统一设计说明](../examples/discovery-course-20261023/review-guide.md#level-59) · [取舍与证据](../examples/discovery-course-20261023/drafts/slot-succession-course-20261026/README.md)。
 
 2026-10-26再追加新手工第38关「归还」（ID60）：16格无鬼，A准备返回、B借入C、最后B还原，21步。原17步忘还B返回的实际局面穷尽无解，普通口可补；提前C可恢复。它是控制可达性主题候选，建议接51之后，未评价、不入正式地图集，不称比旧37都难。[试玩](https://ghostmaze.novic.cc/?map=AWM4-PHjBwEGBgbGKgUX5g3_tFZoPQgRjWFkAAIOxeIucSkHDQYQWMimIAAA) · [统一说明](../examples/discovery-course-20261023/review-guide.md#level-60) · [来源与复验](../examples/discovery-course-20261023/drafts/return-control-cycle-20261026/README.md)。
+
+
 
 ## 2026-10-23 未知规则的逐关发现线路
 
