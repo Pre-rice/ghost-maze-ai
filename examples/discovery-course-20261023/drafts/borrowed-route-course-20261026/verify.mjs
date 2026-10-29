@@ -3,7 +3,7 @@ import {fileURLToPath} from 'node:url';
 import {buildLevel} from '../../build.mjs';
 const root=new URL('.',import.meta.url);
 export function verify(){
-const pack=JSON.parse(fs.readFileSync(new URL('variants.json',root))),base={map:pack.baseMap},map=buildLevel('56');
+const pack=JSON.parse(fs.readFileSync(new URL('variants.json',root))),base={map:pack.baseMap},map=JSON.parse(fs.readFileSync(new URL('../../levels/56/revisions/v01/map.json',import.meta.url)));
 const e=createReferenceEnvironment(map),q=createBreadthFirstSearch(e,{allOptimal:true}),budget={nodeBudget:500000,stateBudget:500000,budgetMs:25000},result=q.run(budget),boundary=auditPuzzleBoundaries(map,budget);assert.equal(result.status,'solved');assert.equal(result.totalActions,44);assert.equal(boundary.status,'safe');
 const source=createReferenceEnvironment(base.map),sourceQuery=createBreadthFirstSearch(source,{allOptimal:true});assert.equal(sourceQuery.run(budget).totalActions,44);const originals=[...sourceQuery.routes()],routes=[...q.routes()],mapped=[];let comparedFrames=0,insertedFrames=0;
 const common=state=>({p:[state.player.layer,state.player.x,state.player.y],g:state.layerStates.map(l=>l.ghosts.map(g=>[g.x,g.y])),walls:state.layerStates.map(l=>['h','v'].map(axis=>l.wallStates[axis].flatMap((row,y)=>row.flatMap((w,x)=>{const a=base.map.layers[0].activeCells,b=map.layers[0].activeCells;return a[y]?.[x]&&b[y]?.[x]&&(axis==='h'?a[y-1]?.[x]&&b[y-1]?.[x]:a[y]?.[x-1]&&b[y]?.[x-1])?[[x,y,w]]:[];}))))});

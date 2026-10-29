@@ -1,5 +1,7 @@
 # AI 地图总目录
 
+2026-10-30课程第29关56《借道》v02仅两0改1，已有引鬼通路展示一把钥匙反复开门，24格与六条44步保持。285个共同安全非终局态1425动作后继含无效／死亡全部对应；不是新题或增强。两端六条、两类回放及旧局保持通过。原版四件与旧证明留存，公开45关序及其它44码不变，无真人评价、不入正式集。[统一说明](../examples/discovery-course-20261023/review-guide.md#level-56) · [范围](../examples/discovery-course-20261023/drafts/resource-preparation-20261030/README.md)。
+
 2026-10-29发布课程第32关50 v02（27日完成）：外B移近、收右两格，11格17步变9格13步；室内BAB／BBA先后仍可，按无鬼轨迹一类。全部有效机关事件安排保持，出生仍留一步接近；只A出室可17步修正。原版四件与旧证据留档，45关序和其它44码不动，无新用户评价、不入正式集。[统一说明](../examples/discovery-course-20261023/review-guide.md#level-50) · [对照](../examples/discovery-course-20261023/drafts/first-direction-economy-20261027/README.md)。
 
 2026-10-27课程第34关51 v02：外B移到邻接入口，删右侧两格，15格28步收为13格24步；两条原始最优仍BBABA，按无鬼轨迹一类。全部有效机关事件安排保持，原始按键与注意力另论；提前A离开可30步恢复。原版四件与旧证据留存，45关序与其它44码不动，无新质量评价、未入正式集。[统一说明](../examples/discovery-course-20261023/review-guide.md#level-51) · [全部对照](../examples/discovery-course-20261023/drafts/controller-economy-20261027/README.md)。
