@@ -1,6 +1,10 @@
 # AI 地图总目录
 
-## 2026-10-30 · 课程候选《出路》（稳定ID68，当前第37关）
+## 2026-10-30 · 课程候选《留门》（稳定ID69，当前第20关）
+
+[逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=69) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWM42NDw4ccHBgbGvQ08DCIsDCvEAs44rWBgYPBgZWgROKPIAAZMAA) · [来源、设计与范围](../examples/discovery-course-20261023/drafts/zero-roles-course-20261030/README.md)。16格一鬼、两0、一钥匙与目标1，24步四原始四类。下0开通、上0暂留保护取物，之后重新引动以接近目标；上0取物后仍可持1打开。19格初稿收上三格后保留全部四类含停顿鬼过程，原件保留。七项历史条件、两普通替代、全部最优、去终点、实际外侧入场与电脑／触屏四条及四类回放通过。新手工图，无真人评价，不入正式地图集；公开47关，原46码及相对顺序保持。必要性和精简不作趣味结论。
+
+## 2026-10-30 · 课程候选《出路》（稳定ID68，当前第38关）
 
 [逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=68) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AADAOHh4eHh4AAFC4DRUACFQWrQKAgCAAVQAAAiCEFmoLFQUQQgAAAQE) · [来源、设计与范围](../examples/discovery-course-20261023/drafts/directional-delivery-20261030/README.md)。由《再借》改作，23格含2封闭美化格、双鬼、一普通门、两箭头与钥匙目标1；32步两原始最优、一类。单程取物前先安排出口，帮手在普通门两侧临时与最终安置；原作好评不转移，尚无真人评价，不入正式地图集。原45码和相对顺序保持，公开流程46关。全部最优、16项历史查询、编号、真正外侧入场与两端完整操作、回放、死亡撤回及插入保持通过；这些不作新颖或顿悟结论。
 
@@ -13,7 +17,7 @@
 
 2026-10-27课程第34关51 v02：外B移到邻接入口，删右侧两格，15格28步收为13格24步；两条原始最优仍BBABA，按无鬼轨迹一类。全部有效机关事件安排保持，原始按键与注意力另论；提前A离开可30步恢复。原版四件与旧证据留存，45关序与其它44码不动，无新质量评价、未入正式集。[统一说明](../examples/discovery-course-20261023/review-guide.md#level-51) · [全部对照](../examples/discovery-course-20261023/drafts/controller-economy-20261027/README.md)。
 
-## 2026-10-27 · 课程新增《楼下》（稳定ID67，当前第43关）
+## 2026-10-27 · 课程新增《楼下》（稳定ID67，当前第45关）
 
 [逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=67) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWN4ocBw-MABBgYGFkYGRkcfEUYHBhBQEXTwADMaHzxIAMlGMXAwJggINTEsEAEJczH9VfBigqhlbgAA) · [来源、设计与范围](../examples/discovery-course-20261023/drafts/downstairs-course-20261027/README.md)。两层18格，一对楼梯、双鬼、普通门和单A，24步一类。先让带下来的追者帮忙阻住原下守卫，再选择普通门的安置面，两只都留楼下；最近门侧返回不能停步按A。新候选，无用户评价，不入正式地图集；原44码与相对顺序保持，流程45关。
 
@@ -23,7 +27,7 @@
 
 </details>
 
-## 2026-10-27 · 课程新增《并肩》（稳定ID66，当前第11关）
+## 2026-10-27 · 课程新增《并肩》（稳定ID66，当前第12关）
 
 [逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=66) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWM4kJCQ4ODgwMBY3LBFQZXBQYSBnUGBAYTEFPQcPLgYHTQYgNwGAA) · [来源、设计和范围](../examples/discovery-course-20261023/drafts/compressed-pair-course-20261027/README.md)。9格双鬼，A两控制／两门和一普通门；13步唯一最优、一类鬼轨迹。先让队列靠近，再分放两个保护位，避免第一份安置占掉第二次接近。新手工课程候选，尚未获得用户评价，不进入正式地图集；原43关图码和相对顺序保持，公开流程44关。
 
