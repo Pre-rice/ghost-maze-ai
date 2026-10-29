@@ -1,0 +1,331 @@
+{
+  "mapId": "8ef0a4e71ec2627c429f97ebb3c4a2b46690127d5c560fe7308110ca741b1fac",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "role": "原生机关计划诊断，不是趣味、盲AI或真人学习证据",
+  "humanQuality": null,
+  "atMostOneB": {
+    "result": {
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "expanded": 22,
+      "transitions": 110,
+      "discovered": 22,
+      "totalActions": null
+    },
+    "actions": null
+  },
+  "withoutUsingArrow": {
+    "result": {
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "expanded": 24,
+      "transitions": 120,
+      "discovered": 24,
+      "totalActions": null
+    },
+    "actions": null
+  },
+  "recovery": {
+    "scope": "完整可达局面，包括非最优试探；原生动作图反向核对均有通关续解，不等于人会找到",
+    "states": 34,
+    "transitions": 160,
+    "allHaveWinningContinuation": true
+  },
+  "gates": [
+    {
+      "at": [
+        "h",
+        1,
+        2
+      ],
+      "was": {
+        "type": 6,
+        "keys": 0,
+        "letter": "B",
+        "initialState": "closed"
+      },
+      "replacement": 0,
+      "mapId": "c54e809c1ee1c03803e4b23cd7f26a5c4619e986869cefd114b51bd87f803a95",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 31,
+        "transitions": 155,
+        "discovered": 33,
+        "totalActions": 9
+      },
+      "count": "2",
+      "actions": [
+        "L",
+        "L",
+        "U",
+        "U",
+        "R",
+        "D",
+        "R",
+        "D",
+        "D"
+      ]
+    },
+    {
+      "at": [
+        "h",
+        3,
+        3
+      ],
+      "was": {
+        "type": 6,
+        "keys": 0,
+        "letter": "B",
+        "initialState": "open"
+      },
+      "replacement": 0,
+      "mapId": "f97caeecb3f483616a94de94efd8fb8eb60737ba52825c7ab765e7bf6b51e1e0",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 29,
+        "transitions": 145,
+        "discovered": 32,
+        "totalActions": 12
+      },
+      "count": "4",
+      "actions": [
+        "D",
+        "R",
+        "U",
+        "L",
+        "L",
+        "U",
+        "U",
+        "R",
+        "D",
+        "R",
+        "D",
+        "D"
+      ]
+    },
+    {
+      "at": [
+        "h",
+        3,
+        4
+      ],
+      "was": {
+        "type": 6,
+        "keys": 0,
+        "letter": "A",
+        "initialState": "closed"
+      },
+      "replacement": 0,
+      "mapId": "d895a95702d039c9d65c97ef9397d7c00922fc28cab071b3c2d97bec5688a458",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 3,
+        "transitions": 15,
+        "discovered": 8,
+        "totalActions": 2
+      },
+      "count": "1",
+      "actions": [
+        "D",
+        "D"
+      ]
+    },
+    {
+      "at": [
+        "v",
+        2,
+        1
+      ],
+      "was": {
+        "type": 4,
+        "keys": 0,
+        "direction": {
+          "dx": 1,
+          "dy": 0
+        }
+      },
+      "replacement": 2,
+      "mapId": "af496599a0d9f35c82eec90d65ccab6223c5baa436b470e6e759ec3fa62e89f4",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 30,
+        "transitions": 150,
+        "discovered": 33,
+        "totalActions": 9
+      },
+      "count": "1",
+      "actions": [
+        "L",
+        "U",
+        "L",
+        "U",
+        "R",
+        "D",
+        "R",
+        "D",
+        "D"
+      ]
+    },
+    {
+      "at": [
+        "v",
+        2,
+        1
+      ],
+      "was": {
+        "type": 4,
+        "keys": 0,
+        "direction": {
+          "dx": 1,
+          "dy": 0
+        }
+      },
+      "replacement": 1,
+      "mapId": "a0796c46a48126dcdc6ea8929e8983fc07bd740c4903a735d1bdb09d36b2a399",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 24,
+        "transitions": 120,
+        "discovered": 24,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "at": [
+        "v",
+        3,
+        3
+      ],
+      "was": {
+        "type": 6,
+        "keys": 0,
+        "letter": "A",
+        "initialState": "open"
+      },
+      "replacement": 0,
+      "mapId": "43147bd092f7acb675f2d6c033c90573813b4556f22d79d410ac3d17dc8fe231",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 29,
+        "transitions": 145,
+        "discovered": 32,
+        "totalActions": 12
+      },
+      "count": "1",
+      "actions": [
+        "D",
+        "R",
+        "L",
+        "L",
+        "U",
+        "U",
+        "U",
+        "D",
+        "D",
+        "R",
+        "R",
+        "D"
+      ]
+    }
+  ],
+  "cells": [
+    {
+      "removed": [
+        2,
+        1
+      ],
+      "scope": "删格并清理成为边界的旧机关；不保留非法空边",
+      "mapId": "56d451762fe7e2dc26b54d176690f60d0310d02121ceff0938bde1d04965de95",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 21,
+        "transitions": 105,
+        "discovered": 21,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "removed": [
+        1,
+        2
+      ],
+      "scope": "删格并清理成为边界的旧机关；不保留非法空边",
+      "mapId": "dc0ba8199e20309fde582f3a353144a08ce7c802842fb7cff3bb1518e05b35f2",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 9,
+        "transitions": 45,
+        "discovered": 9,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "removed": [
+        2,
+        2
+      ],
+      "scope": "删格并清理成为边界的旧机关；不保留非法空边",
+      "mapId": "1459d53a455e29b3a4a045e62cbc9ef246952884926896ee7f6630b63b357c2e",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 20,
+        "transitions": 100,
+        "discovered": 20,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "removed": [
+        1,
+        3
+      ],
+      "scope": "删格并清理成为边界的旧机关；不保留非法空边",
+      "mapId": "eaa6f583ccc8d0ae2349485540953792a3793b8ae32ba870a0bd2248c97071d5",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 8,
+        "transitions": 40,
+        "discovered": 8,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "removed": [
+        2,
+        3
+      ],
+      "scope": "删格并清理成为边界的旧机关；不保留非法空边",
+      "mapId": "ca91ecfdaaa78ee270d3ffe6f1dc16b31f83ea235035776e60ad3e4477ee1f27",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 7,
+        "transitions": 35,
+        "discovered": 7,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    }
+  ]
+}

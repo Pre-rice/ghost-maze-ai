@@ -1,12 +1,12 @@
 {
-  "mapId": "a2d037b6856c077d739d2c9f378ecf9e79620da4136d84af03228ad4951ff43e",
+  "mapId": "8ef0a4e71ec2627c429f97ebb3c4a2b46690127d5c560fe7308110ca741b1fac",
   "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
   "reference": {
     "schemaVersion": 1,
     "status": "solved",
     "reason": "goal_reached",
     "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
-    "mapId": "a2d037b6856c077d739d2c9f378ecf9e79620da4136d84af03228ad4951ff43e",
+    "mapId": "8ef0a4e71ec2627c429f97ebb3c4a2b46690127d5c560fe7308110ca741b1fac",
     "scope": {
       "gameMode": "death-loop",
       "objective": "zero_hit_no_revive",
@@ -23,10 +23,8 @@
     "optimality": "proven",
     "solution": {
       "actions": [
-        "R",
         "D",
         "R",
-        "L",
         "L",
         "L",
         "U",
@@ -36,20 +34,18 @@
         "R",
         "D",
         "R",
-        "R",
         "D",
-        "L",
         "D"
       ],
-      "totalActions": 17,
-      "movementCost": 14
+      "totalActions": 13,
+      "movementCost": 10
     },
     "search": {
-      "expanded": 39,
-      "transitions": 193,
-      "discovered": 41,
+      "expanded": 29,
+      "transitions": 143,
+      "discovered": 32,
       "exhausted": false,
-      "elapsedMs": 8.756318999999998,
+      "elapsedMs": 7.453406999999999,
       "budget": {
         "nodeBudget": 1000000,
         "stateBudget": 1000000,
@@ -62,7 +58,7 @@
     "status": "solved",
     "reason": "goal_reached",
     "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
-    "mapId": "a2d037b6856c077d739d2c9f378ecf9e79620da4136d84af03228ad4951ff43e",
+    "mapId": "8ef0a4e71ec2627c429f97ebb3c4a2b46690127d5c560fe7308110ca741b1fac",
     "scope": {
       "gameMode": "death-loop",
       "objective": "zero_hit_no_revive",
@@ -80,10 +76,8 @@
     "optimality": "proven",
     "solution": {
       "actions": [
-        "R",
         "D",
         "R",
-        "L",
         "L",
         "L",
         "U",
@@ -93,21 +87,19 @@
         "R",
         "D",
         "R",
-        "R",
         "D",
-        "L",
         "D"
       ],
-      "totalActions": 17,
-      "movementCost": 14
+      "totalActions": 13,
+      "movementCost": 10
     },
     "search": {
       "algorithm": "astar",
-      "expanded": 35,
-      "transitions": 175,
-      "discovered": 38,
+      "expanded": 28,
+      "transitions": 140,
+      "discovered": 31,
       "exhausted": false,
-      "elapsedMs": 1.8481169999999878,
+      "elapsedMs": 1.874323000000004,
       "budget": {
         "nodeBudget": 1000000,
         "stateBudget": 1000000,
@@ -118,30 +110,28 @@
   "allResult": {
     "status": "solved",
     "reason": "goal_reached",
-    "expanded": 39,
-    "transitions": 195,
-    "discovered": 41,
-    "totalActions": 17
+    "expanded": 30,
+    "transitions": 150,
+    "discovered": 33,
+    "totalActions": 13
   },
   "count": "2",
   "boundary": {
     "status": "safe",
     "reason": "all_optimal_routes_avoid_overlap",
-    "mapId": "a2d037b6856c077d739d2c9f378ecf9e79620da4136d84af03228ad4951ff43e",
+    "mapId": "8ef0a4e71ec2627c429f97ebb3c4a2b46690127d5c560fe7308110ca741b1fac",
     "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
     "policy": "all_optimal_routes_avoid_overlap_v2",
     "glassCount": 0,
-    "expanded": 39,
-    "transitions": 195,
-    "discovered": 40,
-    "optimum": 17,
+    "expanded": 30,
+    "transitions": 150,
+    "discovered": 32,
+    "optimum": 13,
     "ignoredFatalOverlap": 0,
     "observedNonFatalOverlap": null,
     "safeOptimalWitness": [
-      "R",
       "D",
       "R",
-      "L",
       "L",
       "L",
       "U",
@@ -151,12 +141,10 @@
       "R",
       "D",
       "R",
-      "R",
       "D",
-      "L",
       "D"
     ],
-    "elapsedMs": 4,
+    "elapsedMs": 3,
     "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
   },
   "cold": true,
@@ -195,29 +183,27 @@
     ],
     "wholeOptimalRoutesInteriorEqual": true,
     "allInternalSuccessorsEqual": {
-      "states": 42,
-      "transitions": 200,
+      "states": 34,
+      "transitions": 160,
       "includesFatalActions": true
     },
     "noEndSafeRoutes": 2,
     "scope": "只声明所列外侧路径、零钥匙与无外部鬼；不声称任意外部局面均适用"
   },
   "physicalAudit": {
-    "reachable": 42,
-    "transitions": 200,
+    "reachable": 34,
+    "transitions": 160,
     "permutations": 1,
-    "compared": 200,
+    "compared": 160,
     "includesFatalActions": true,
     "ghostPermutationCheck": "not_applicable_no_ghosts"
   },
   "noEndSafeRoutes": 2,
-  "mapCode": "AADAAMDw8CAAAAGkIFOEAAQQBQHFArgVyAgAAAAAC1AQgnEBQAAAAAIMDBA",
-  "replayCode": "GLsEVGveoC32QA",
+  "mapCode": "AADAAMDg4CAAAAGEIE-EAAQQBQHEBcBXAEAAAAAAWoCIE5AKAAAAABBgYIA",
+  "replayCode": "GFVCCLd6At1A",
   "actions": [
-    "R",
     "D",
     "R",
-    "L",
     "L",
     "L",
     "U",
@@ -227,18 +213,14 @@
     "R",
     "D",
     "R",
-    "R",
     "D",
-    "L",
     "D"
   ],
   "routes": [
     {
       "actions": [
-        "R",
         "D",
         "R",
-        "L",
         "L",
         "L",
         "U",
@@ -248,23 +230,21 @@
         "R",
         "D",
         "R",
-        "R",
         "D",
-        "L",
         "D"
       ],
-      "replayCode": "GLsEVGveoC32QA",
+      "replayCode": "GFVCCLd6At1A",
       "controls": [
         {
-          "step": 3,
+          "step": 2,
           "letter": "B",
           "at": [
-            4,
+            3,
             3
           ]
         },
         {
-          "step": 9,
+          "step": 7,
           "letter": "A",
           "at": [
             1,
@@ -272,7 +252,7 @@
           ]
         },
         {
-          "step": 10,
+          "step": 8,
           "letter": "B",
           "at": [
             1,
@@ -283,11 +263,11 @@
       "trace": [
         {
           "step": 1,
-          "action": "R",
+          "action": "D",
           "p": [
             0,
-            4,
-            2
+            3,
+            3
           ],
           "ghosts": [
             []
@@ -296,10 +276,10 @@
         },
         {
           "step": 2,
-          "action": "D",
+          "action": "R",
           "p": [
             0,
-            4,
+            3,
             3
           ],
           "ghosts": [
@@ -309,10 +289,10 @@
         },
         {
           "step": 3,
-          "action": "R",
+          "action": "L",
           "p": [
             0,
-            4,
+            2,
             3
           ],
           "ghosts": [
@@ -325,7 +305,7 @@
           "action": "L",
           "p": [
             0,
-            3,
+            1,
             3
           ],
           "ghosts": [
@@ -335,11 +315,11 @@
         },
         {
           "step": 5,
-          "action": "L",
+          "action": "U",
           "p": [
             0,
-            2,
-            3
+            1,
+            2
           ],
           "ghosts": [
             []
@@ -348,11 +328,11 @@
         },
         {
           "step": 6,
-          "action": "L",
+          "action": "U",
           "p": [
             0,
             1,
-            3
+            1
           ],
           "ghosts": [
             []
@@ -365,7 +345,7 @@
           "p": [
             0,
             1,
-            2
+            1
           ],
           "ghosts": [
             []
@@ -374,7 +354,7 @@
         },
         {
           "step": 8,
-          "action": "U",
+          "action": "L",
           "p": [
             0,
             1,
@@ -387,10 +367,10 @@
         },
         {
           "step": 9,
-          "action": "U",
+          "action": "R",
           "p": [
             0,
-            1,
+            2,
             1
           ],
           "ghosts": [
@@ -400,11 +380,11 @@
         },
         {
           "step": 10,
-          "action": "L",
+          "action": "D",
           "p": [
             0,
-            1,
-            1
+            2,
+            2
           ],
           "ghosts": [
             []
@@ -416,8 +396,8 @@
           "action": "R",
           "p": [
             0,
-            2,
-            1
+            3,
+            2
           ],
           "ghosts": [
             []
@@ -429,8 +409,8 @@
           "action": "D",
           "p": [
             0,
-            2,
-            2
+            3,
+            3
           ],
           "ghosts": [
             []
@@ -439,58 +419,6 @@
         },
         {
           "step": 13,
-          "action": "R",
-          "p": [
-            0,
-            3,
-            2
-          ],
-          "ghosts": [
-            []
-          ],
-          "diagnostics": []
-        },
-        {
-          "step": 14,
-          "action": "R",
-          "p": [
-            0,
-            4,
-            2
-          ],
-          "ghosts": [
-            []
-          ],
-          "diagnostics": []
-        },
-        {
-          "step": 15,
-          "action": "D",
-          "p": [
-            0,
-            4,
-            3
-          ],
-          "ghosts": [
-            []
-          ],
-          "diagnostics": []
-        },
-        {
-          "step": 16,
-          "action": "L",
-          "p": [
-            0,
-            3,
-            3
-          ],
-          "ghosts": [
-            []
-          ],
-          "diagnostics": []
-        },
-        {
-          "step": 17,
           "action": "D",
           "p": [
             0,
@@ -506,10 +434,8 @@
     },
     {
       "actions": [
-        "R",
         "D",
         "R",
-        "L",
         "L",
         "L",
         "U",
@@ -519,23 +445,21 @@
         "R",
         "D",
         "R",
-        "R",
         "D",
-        "L",
         "D"
       ],
-      "replayCode": "GLsEVGveoI32QA",
+      "replayCode": "GFVCCLd6CN1A",
       "controls": [
         {
-          "step": 3,
+          "step": 2,
           "letter": "B",
           "at": [
-            4,
+            3,
             3
           ]
         },
         {
-          "step": 9,
+          "step": 7,
           "letter": "B",
           "at": [
             1,
@@ -543,7 +467,7 @@
           ]
         },
         {
-          "step": 10,
+          "step": 8,
           "letter": "A",
           "at": [
             1,
@@ -554,46 +478,7 @@
       "trace": [
         {
           "step": 1,
-          "action": "R",
-          "p": [
-            0,
-            4,
-            2
-          ],
-          "ghosts": [
-            []
-          ],
-          "diagnostics": []
-        },
-        {
-          "step": 2,
           "action": "D",
-          "p": [
-            0,
-            4,
-            3
-          ],
-          "ghosts": [
-            []
-          ],
-          "diagnostics": []
-        },
-        {
-          "step": 3,
-          "action": "R",
-          "p": [
-            0,
-            4,
-            3
-          ],
-          "ghosts": [
-            []
-          ],
-          "diagnostics": []
-        },
-        {
-          "step": 4,
-          "action": "L",
           "p": [
             0,
             3,
@@ -605,7 +490,20 @@
           "diagnostics": []
         },
         {
-          "step": 5,
+          "step": 2,
+          "action": "R",
+          "p": [
+            0,
+            3,
+            3
+          ],
+          "ghosts": [
+            []
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 3,
           "action": "L",
           "p": [
             0,
@@ -618,7 +516,7 @@
           "diagnostics": []
         },
         {
-          "step": 6,
+          "step": 4,
           "action": "L",
           "p": [
             0,
@@ -631,12 +529,38 @@
           "diagnostics": []
         },
         {
-          "step": 7,
+          "step": 5,
           "action": "U",
           "p": [
             0,
             1,
             2
+          ],
+          "ghosts": [
+            []
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 6,
+          "action": "U",
+          "p": [
+            0,
+            1,
+            1
+          ],
+          "ghosts": [
+            []
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 7,
+          "action": "L",
+          "p": [
+            0,
+            1,
+            1
           ],
           "ghosts": [
             []
@@ -658,10 +582,10 @@
         },
         {
           "step": 9,
-          "action": "L",
+          "action": "R",
           "p": [
             0,
-            1,
+            2,
             1
           ],
           "ghosts": [
@@ -671,11 +595,11 @@
         },
         {
           "step": 10,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
-            1,
-            1
+            2,
+            2
           ],
           "ghosts": [
             []
@@ -687,8 +611,8 @@
           "action": "R",
           "p": [
             0,
-            2,
-            1
+            3,
+            2
           ],
           "ghosts": [
             []
@@ -700,8 +624,8 @@
           "action": "D",
           "p": [
             0,
-            2,
-            2
+            3,
+            3
           ],
           "ghosts": [
             []
@@ -710,58 +634,6 @@
         },
         {
           "step": 13,
-          "action": "R",
-          "p": [
-            0,
-            3,
-            2
-          ],
-          "ghosts": [
-            []
-          ],
-          "diagnostics": []
-        },
-        {
-          "step": 14,
-          "action": "R",
-          "p": [
-            0,
-            4,
-            2
-          ],
-          "ghosts": [
-            []
-          ],
-          "diagnostics": []
-        },
-        {
-          "step": 15,
-          "action": "D",
-          "p": [
-            0,
-            4,
-            3
-          ],
-          "ghosts": [
-            []
-          ],
-          "diagnostics": []
-        },
-        {
-          "step": 16,
-          "action": "L",
-          "p": [
-            0,
-            3,
-            3
-          ],
-          "ghosts": [
-            []
-          ],
-          "diagnostics": []
-        },
-        {
-          "step": 17,
           "action": "D",
           "p": [
             0,
@@ -780,11 +652,11 @@
   "localAdjacentEntry": {
     "external": [
       0,
-      3,
-      1
+      4,
+      2
     ],
     "actions": [
-      "D"
+      "L"
     ],
     "unitArrival": [
       0,

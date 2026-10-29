@@ -1,9 +1,17 @@
 import assert from'node:assert/strict';import{createReferenceEnvironment}from'../../../../src/reference/environment.js';import{WALL_TYPES as W}from'../../../../src/reference/engine.js';
 // 只比较无鬼题的事件可达性；所有后继均由本体生成，不模拟通行规则。
-export function buildEventGraph(map,{outerGate,outerButton}){
- assert.equal(map.layers.length,1);assert.equal(map.stairs.length,0);assert.equal(map.layers[0].ghosts.length,0);assert.equal(map.layers[0].buttons.length,3);assert.deepEqual(map.layers[0].items.map(i=>[i.x,i.y,i.type]),[[4,5,'key']]);
- const env=createReferenceEnvironment(map),gates=[['v',4,4],['v',2,2],['h',4,5],outerGate,['h',2,3],['h',1,2]],delta={U:[0,-1],R:[1,0],D:[0,1],L:[-1,0]},anchors=[[4,3],[4,4],[4,5],[3,2],[3,3],[3,4],[3,5],[2,2],[2,3],[2,4],[2,5],[1,1],[1,2]],layer=map.layers[0];
- assert.equal(['h','v'].flatMap(a=>layer[a+'Walls'].flat()).filter(w=>[W.LOCKED,W.LETTER_DOOR].includes(w.type)).length,gates.length,'全部可变墙必须显式包含');
+export function buildEventGraph(map,{outerGate,outerButton,layout='51'}){
+ assert(['50','51'].includes(layout),'只核对本轮两个指定骨架');
+ assert.equal(map.layers.length,1);assert.equal(map.stairs.length,0);assert.equal(map.layers[0].ghosts.length,0);assert.equal(map.layers[0].buttons.length,3);
+ const env=createReferenceEnvironment(map),delta={U:[0,-1],R:[1,0],D:[0,1],L:[-1,0]},layer=map.layers[0];
+ const gates=layout==='51'?[['v',4,4],['v',2,2],['h',4,5],outerGate,['h',2,3],['h',1,2]]:[['v',3,3],['h',3,4],outerGate,['h',1,2]];
+ const anchors=layout==='51'?[[4,3],[4,4],[4,5],[3,2],[3,3],[3,4],[3,5],[2,2],[2,3],[2,4],[2,5],[1,1],[1,2]]:[[3,2],[3,3],[3,4],[2,1],[2,2],[2,3],[1,1],[1,2],[1,3]];
+ assert.deepEqual(layer.items.map(i=>[i.x,i.y,i.type]),layout==='51'?[[4,5,'key']]:[]);
+ const actualButtons=layer.buttons.map(b=>[b.x,b.y,b.direction.dx,b.direction.dy,b.letter].join(',')).sort();
+ const expectedButtons=layout==='51'?[[2,2,0,-1,'A'],[1,2,-1,0,'B']]:[[1,1,0,-1,'A'],[1,1,-1,0,'B']];
+ expectedButtons.push([...outerButton,1,0,'B']);assert.deepEqual(actualButtons,expectedButtons.map(b=>b.join(',')).sort());
+ const mutable=[];for(const a of['h','v'])layer[a+'Walls'].forEach((row,y)=>row.forEach((w,x)=>{if([W.LOCKED,W.LETTER_DOOR].includes(w.type))mutable.push([a,x,y].join(','));}));
+ assert.deepEqual(mutable.sort(),gates.map(g=>g.join(',')).sort(),'全部可变墙必须按坐标完整纳入，不能仅比较数量');
  const world=s=>JSON.stringify({hp:s.player.hp,keys:s.player.keys,dead:s.isDead,won:s.isWon,items:s.layerStates[0].items.map(i=>[i.x,i.y,i.type]),gates:gates.map(([a,x,y])=>{const w=s.layerStates[0].wallStates[a][y][x];return[w.type,w.keys??0,w.currentState??null];})});
  const wallBetween=(b,n)=>{const dx=n.player.x-b.player.x,dy=n.player.y-b.player.y;if(!dx&&!dy)return null;assert.equal(Math.abs(dx)+Math.abs(dy),1);const axis=dx?'v':'h',x=Math.max(b.player.x,n.player.x),y=Math.max(b.player.y,n.player.y);return{axis,x,y,wall:b.layerStates[0].wallStates[axis][y][x]};};
  const quiet=(b,n)=>world(b)===world(n)&&wallBetween(b,n)?.wall.type!==W.ONE_WAY;

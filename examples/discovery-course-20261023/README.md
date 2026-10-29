@@ -39,7 +39,7 @@
 | [29](levels/56/source.json) | 不可恢复的门也可能要提前替鬼打开，让后来的安置真正留出通路。 | 《借道》研究稿适配（未评价） | 24 / 44 |
 | [30](levels/64/source.json) | 引鬼不必一路带着追 | 《回环》课程变式 | 20 / 46 |
 | [31](levels/30/source.json) | 可以先关好未来停位上方的门，再通过距离和切换视线把鬼引到门下 | 《借影》课程变式 | 24 / 53 |
-| [32](levels/50/source.json) | 为了重新连通外部通路，可以在控制室内关回入口，再从单向口出来。 | 课程专用图 | 11 / 17 |
+| [32](levels/50/source.json) | 为了重新连通外部通路，可以在控制室内关回入口，再从单向口出来。 | 课程专用图 | 9 / 13 |
 | [33](levels/46/source.json) | 单向入口让先前的停位持续影响回程 | 课程专用图 | 19 / 16 |
 | [34](levels/51/source.json) | 一个开关也会改变另一个开关是否可达 | 课程专用图 | 13 / 24 |
 | [35](levels/60/source.json) | 一个控制也可以只是暂时借用 | 课程专用图 | 16 / 17 |
@@ -145,3 +145,5 @@
 新增[《楼下》设计与证据](drafts/downstairs-course-20261027/README.md)，现第43关先用一对楼梯，原54与58后移；[跨层电脑／触屏验收](downstairs-browser-check-20261027.json)另存。原44地图及相对顺序保持。[单钥匙双1的四项未采用对照](drafts/shared-key-screen-20261027/README.md)只归研究，不为补规则演示增关。
 
 第34关51已作[外B移近精简](drafts/controller-economy-20261027/README.md)，13格24步，全部机关事件安排保持；[两端验收](controller-economy-browser-check-20261027.json)。旧15格版与旧验证留档且只读，未将注意力或趣味等同。
+
+第32关50已作[外B移近精简](drafts/first-direction-economy-20261027/README.md)，9格13步，室内A/B两种先后与全部机关事件安排保持；[两端验收](first-direction-economy-browser-check-20261027.json)。原11格四件和旧证据只读保留。当前Node22.21.1目标版本检查及50／51／66／67证明已通过。
