@@ -20,3 +20,5 @@
 2026-10-18仓库分离：[研究资料迁移清单](../../data/manifests/repository-separation-20261018.json)保留原提交与文件哈希。主仓历史种子和同名旧研究另存 imported-game-20261018，不覆盖已有原件；这些仅作追溯，不是另一套运行规则。
 
 2026-10-24将状态入口收拢到当前逐关课程。[整理前完整状态及研究索引](worklogs/status-before-course-cleanup-20261024.md)保留原作品、实验、旧决定和资料来源；[整理清单](worklogs/status-cleanup-20261024.json)记录原提交和哈希。日常只读现行status，需要查证才进入历史。
+
+2026-10-31收拢状态入口：[Site113前完整状态](worklogs/status-before-guard-order-20261031.md)保留此前各课程版本与反例指针；现行status只保留当前流程、边界和待做，具体证明按需从唯一审查说明进入。
