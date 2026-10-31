@@ -1,0 +1,373 @@
+{
+  "mapId": "bc65538203c98bb6108f713b43df2cedd3f435d2db1d7e194bf74754716fe89d",
+  "wrongs": [
+    {
+      "prefix": [
+        "R"
+      ],
+      "p": [
+        0,
+        2,
+        2
+      ],
+      "fast": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "R"
+        ],
+        "actions": [
+          "L",
+          "L",
+          "R",
+          "R",
+          "STAIR",
+          "D",
+          "R",
+          "U",
+          "D",
+          "D",
+          "L",
+          "R",
+          "U",
+          "U",
+          "R",
+          "U",
+          "STAIR",
+          "R",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "L",
+          "L",
+          "U",
+          "D",
+          "R",
+          "R",
+          "STAIR",
+          "D",
+          "L"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "fast_bfs",
+          "expanded": 497,
+          "discovered": 523,
+          "exhausted": false,
+          "elapsedMs": 18.229166,
+          "nodeBudget": 500000,
+          "budgetMs": 20000
+        }
+      },
+      "reference": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "R"
+        ],
+        "actions": [
+          "L",
+          "L",
+          "R",
+          "R",
+          "STAIR",
+          "D",
+          "R",
+          "U",
+          "D",
+          "D",
+          "L",
+          "R",
+          "U",
+          "U",
+          "R",
+          "U",
+          "STAIR",
+          "R",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "L",
+          "L",
+          "U",
+          "D",
+          "R",
+          "R",
+          "STAIR",
+          "D",
+          "L"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "reference_bfs",
+          "expanded": 497,
+          "discovered": 523,
+          "exhausted": false,
+          "elapsedMs": 73.543818,
+          "nodeBudget": 500000,
+          "budgetMs": 20000
+        }
+      },
+      "total": 33
+    },
+    {
+      "prefix": [
+        "L",
+        "R",
+        "R",
+        "STAIR",
+        "D",
+        "R",
+        "U",
+        "R",
+        "U",
+        "STAIR"
+      ],
+      "p": [
+        0,
+        4,
+        2
+      ],
+      "fast": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "L",
+          "R",
+          "R",
+          "STAIR",
+          "D",
+          "R",
+          "U",
+          "R",
+          "U",
+          "STAIR"
+        ],
+        "actions": [
+          "R",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "L",
+          "L",
+          "U",
+          "D",
+          "R",
+          "R",
+          "R",
+          "R",
+          "STAIR",
+          "D",
+          "L",
+          "D",
+          "D",
+          "L",
+          "R",
+          "U",
+          "L",
+          "U",
+          "L"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "fast_bfs",
+          "expanded": 199,
+          "discovered": 217,
+          "exhausted": false,
+          "elapsedMs": 7.713333999999975,
+          "nodeBudget": 500000,
+          "budgetMs": 20000
+        }
+      },
+      "reference": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "L",
+          "R",
+          "R",
+          "STAIR",
+          "D",
+          "R",
+          "U",
+          "R",
+          "U",
+          "STAIR"
+        ],
+        "actions": [
+          "R",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "L",
+          "L",
+          "U",
+          "D",
+          "R",
+          "R",
+          "R",
+          "R",
+          "STAIR",
+          "D",
+          "L",
+          "D",
+          "D",
+          "L",
+          "R",
+          "U",
+          "L",
+          "U",
+          "L"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "reference_bfs",
+          "expanded": 199,
+          "discovered": 217,
+          "exhausted": false,
+          "elapsedMs": 34.67905099999999,
+          "nodeBudget": 500000,
+          "budgetMs": 20000
+        }
+      },
+      "total": 35
+    }
+  ],
+  "deaths": [
+    {
+      "prefix": [
+        "L"
+      ],
+      "action": "U",
+      "at": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "prefix": [
+        "L",
+        "R",
+        "R",
+        "STAIR"
+      ],
+      "action": "U",
+      "at": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "prefix": [
+        "L",
+        "R",
+        "R",
+        "STAIR",
+        "D",
+        "R",
+        "U",
+        "R",
+        "U",
+        "STAIR"
+      ],
+      "action": "L",
+      "at": [
+        0,
+        3,
+        2
+      ]
+    }
+  ],
+  "invalids": [
+    {
+      "prefix": [
+        "R"
+      ],
+      "action": "D",
+      "at": [
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "prefix": [
+        "L",
+        "R",
+        "R",
+        "STAIR",
+        "D"
+      ],
+      "action": "L",
+      "at": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "prefix": [
+        "L",
+        "R",
+        "R",
+        "STAIR",
+        "D",
+        "R",
+        "U"
+      ],
+      "action": "L",
+      "at": [
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "prefix": [
+        "L",
+        "R",
+        "R",
+        "STAIR",
+        "D",
+        "R",
+        "U",
+        "D",
+        "D",
+        "L",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U",
+        "STAIR"
+      ],
+      "action": "D",
+      "at": [
+        0,
+        4,
+        2
+      ]
+    }
+  ],
+  "neverOperateA": {
+    "result": {
+      "status": "proven_unsat",
+      "reason": "frontier_exhausted",
+      "expanded": 215,
+      "transitions": 1075,
+      "discovered": 215,
+      "totalActions": null
+    },
+    "actions": null
+  }
+}

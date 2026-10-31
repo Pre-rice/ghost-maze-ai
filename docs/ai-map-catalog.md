@@ -1,5 +1,15 @@
 # AI 地图总目录
 
+## 2026-10-31 · 课程第48关《留层》（稳定ID72）
+
+[逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=72) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWN4wcHBf_gAAwMD4wEmBg0GplXaJ0QdGBgYWBkWCP5oEmAAASYmpvZmZgYGLgdGhgQWBoYmhw4GEbASUcfyCSosDSDdExsA) · [构造与证据范围](../examples/discovery-course-20261023/drafts/stair-relay-course-20261031/README.md)。新手画24格双层、双鬼、一A与两箭头，31步唯一一类；最佳两次跨层互挡、两鬼各留原层，先隔开的上鬼仍须召回。召回本身必要，时机与双向互挡只对最优必要；35步晚召回与37步无实际影响方案均保留。全部最优／去终点／编号／码／实际外侧入场及两端完整操作、恢复、死亡撤回与32帧回放通过；旧47码与顺序不变，公开48关。未知规则真人质量与跨度待审，不入正式地图集，不转移亲缘好评。
+
+<details><summary>31步参考回放（含解法）</summary>
+
+[同页回放](https://ghostmaze.novic.cc/?map=AWN4wcHBf_gAAwMD4wEmBg0GplXaJ0QdGBgYWBkWCP5oEmAAASYmpvZmZgYGLgdGhgQWBoYmhw4GEbASUcfyCSosDSDdExsA&replay=djf0HXiJsDQR_R8MEYEA)。参考仅最优之一；工程证书不是真人记录。
+
+</details>
+
 ## 2026-10-31 · 《门外》替换课程第33关（稳定ID71）
 
 [逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=71) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWM48PDDAwYgYLRsYGE81STQIsoAAkwKmyb4OjCAgQwA) · [完整任务、原小室与范围](../examples/discovery-course-20261023/drafts/reserved-entry-course-20261031/README.md)。11格十字，一鬼、一箭头、钥匙与目标1，11步唯一一类；先为返回入口引动鬼再出门取物，不能等拿钥匙后补准备。改普通门同11步却允许先取钥匙，方向影响计划先后。三种安全错误均无续解，上探可共13步恢复；五项历史、全部最优／去终点／编号／入场及两端完整操作、回放、死亡撤回和旧局保持通过。原50无鬼小室退出流程、原件与原说明保留，仍47关、其余46码与顺序不变。无真人评价、不入正式地图集；初次方向是否更自然仍待审。
