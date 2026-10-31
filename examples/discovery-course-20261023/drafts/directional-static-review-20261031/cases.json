@@ -1,0 +1,7448 @@
+{
+  "date": "2026-10-31",
+  "scope": "明确手工构图与静态替代，无地图搜索生成或训练；全部未上课程，不继承原作评价",
+  "humanQuality": null,
+  "adopted": 0,
+  "cases": [
+    {
+      "params": {
+        "start": [
+          2,
+          2
+        ],
+        "end": [
+          0,
+          1
+        ],
+        "ghosts": [
+          [
+            1,
+            0
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "items": [
+          [
+            4,
+            1
+          ]
+        ],
+        "cells": [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "edges": [
+          [
+            "v",
+            3,
+            0,
+            0
+          ],
+          [
+            "v",
+            3,
+            1,
+            1
+          ],
+          [
+            "v",
+            3,
+            2,
+            4,
+            {
+              "direction": {
+                "dx": 1,
+                "dy": 0
+              }
+            }
+          ],
+          [
+            "v",
+            1,
+            1,
+            3,
+            {
+              "keys": 1
+            }
+          ],
+          [
+            "h",
+            0,
+            1,
+            1
+          ],
+          [
+            "h",
+            0,
+            2,
+            1
+          ]
+        ]
+      },
+      "mapId": "a61a37036ee912d579c102a27d97293ca4bfc46f7917324b430e1a3875583e8c",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 115,
+        "transitions": 575,
+        "discovered": 133,
+        "totalActions": 13
+      },
+      "count": "4",
+      "actions": [
+        "R",
+        "U",
+        "U",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "L",
+        "L",
+        "D",
+        "L",
+        "L"
+      ],
+      "error": "{\"status\":\"conflict\",\"reason\":\"optimal_solution_uses_overlap\",\"mapId\":\"a61a37036ee912d579c102a27d97293ca4bfc46f7917324b430e1a3875583e8c\",\"ruleset\":\"sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0\",\"policy\":\"all_optimal_routes_",
+      "type": 4,
+      "case": "exported-escort-1",
+      "group": "exported-escort",
+      "size": [
+        6,
+        4
+      ],
+      "nativeQueries": [
+        {
+          "name": "never_inside_ghost_outside",
+          "result": {
+            "status": "proven_unsat",
+            "reason": "frontier_exhausted",
+            "expanded": 73,
+            "transitions": 365,
+            "discovered": 73,
+            "totalActions": null
+          },
+          "actions": null
+        },
+        {
+          "name": "no_mutual_influence_or_overlap",
+          "result": {
+            "status": "proven_unsat",
+            "reason": "frontier_exhausted",
+            "expanded": 80,
+            "transitions": 400,
+            "discovered": 80,
+            "totalActions": null
+          },
+          "actions": null
+        },
+        {
+          "name": "key_before_inside_ghost_outside",
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 97,
+            "transitions": 484,
+            "discovered": 107,
+            "totalActions": 13
+          },
+          "actions": [
+            "R",
+            "U",
+            "R",
+            "R",
+            "U",
+            "L",
+            "D",
+            "L",
+            "U",
+            "L",
+            "D",
+            "L",
+            "L"
+          ]
+        }
+      ]
+    },
+    {
+      "params": {
+        "start": [
+          2,
+          2
+        ],
+        "end": [
+          0,
+          1
+        ],
+        "ghosts": [
+          [
+            1,
+            0
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "items": [
+          [
+            4,
+            1
+          ]
+        ],
+        "cells": [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "edges": [
+          [
+            "v",
+            3,
+            0,
+            0
+          ],
+          [
+            "v",
+            3,
+            1,
+            1
+          ],
+          [
+            "v",
+            3,
+            2,
+            2
+          ],
+          [
+            "v",
+            1,
+            1,
+            3,
+            {
+              "keys": 1
+            }
+          ],
+          [
+            "h",
+            0,
+            1,
+            1
+          ],
+          [
+            "h",
+            0,
+            2,
+            1
+          ]
+        ]
+      },
+      "mapId": "caedb0e004387740761b23a327cfdb39b288e7411f9f367db13fa1d6eb4c13af",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 108,
+        "transitions": 540,
+        "discovered": 124,
+        "totalActions": 11
+      },
+      "count": "1",
+      "actions": [
+        "R",
+        "U",
+        "R",
+        "L",
+        "D",
+        "L",
+        "L",
+        "R",
+        "U",
+        "L",
+        "L"
+      ],
+      "type": 2,
+      "case": "exported-escort-2",
+      "group": "exported-escort",
+      "size": [
+        6,
+        4
+      ],
+      "nativeQueries": [
+        {
+          "name": "never_inside_ghost_outside",
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 63,
+            "transitions": 314,
+            "discovered": 69,
+            "totalActions": 11
+          },
+          "actions": [
+            "R",
+            "U",
+            "R",
+            "L",
+            "D",
+            "L",
+            "L",
+            "R",
+            "U",
+            "L",
+            "L"
+          ]
+        },
+        {
+          "name": "no_mutual_influence_or_overlap",
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 78,
+            "transitions": 389,
+            "discovered": 86,
+            "totalActions": 11
+          },
+          "actions": [
+            "R",
+            "U",
+            "R",
+            "L",
+            "D",
+            "L",
+            "L",
+            "R",
+            "U",
+            "L",
+            "L"
+          ]
+        },
+        {
+          "name": "key_before_inside_ghost_outside",
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 96,
+            "transitions": 479,
+            "discovered": 112,
+            "totalActions": 11
+          },
+          "actions": [
+            "R",
+            "U",
+            "R",
+            "L",
+            "D",
+            "L",
+            "L",
+            "R",
+            "U",
+            "L",
+            "L"
+          ]
+        }
+      ],
+      "audit": {
+        "count": "1",
+        "cold": true,
+        "noEndSafeRoutes": 1,
+        "physicalAudit": {
+          "reachable": 194,
+          "transitions": 920,
+          "permutations": 2,
+          "compared": 1840,
+          "includesFatalActions": true
+        },
+        "mapCode": "AWM48PPHBwEGBgbGmIb2AyqrOlgEVjAxAAGH0ilFg4YABhAQAAA",
+        "actions": [
+          "R",
+          "U",
+          "R",
+          "L",
+          "D",
+          "L",
+          "L",
+          "R",
+          "U",
+          "L",
+          "L"
+        ]
+      }
+    },
+    {
+      "params": {
+        "start": [
+          2,
+          2
+        ],
+        "end": [
+          0,
+          1
+        ],
+        "ghosts": [
+          [
+            1,
+            0
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "items": [
+          [
+            4,
+            1
+          ]
+        ],
+        "cells": [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "edges": [
+          [
+            "v",
+            3,
+            0,
+            0
+          ],
+          [
+            "v",
+            3,
+            1,
+            1
+          ],
+          [
+            "v",
+            3,
+            2,
+            1
+          ],
+          [
+            "v",
+            1,
+            1,
+            3,
+            {
+              "keys": 1
+            }
+          ],
+          [
+            "h",
+            0,
+            1,
+            1
+          ],
+          [
+            "h",
+            0,
+            2,
+            1
+          ]
+        ]
+      },
+      "mapId": "f6d11baed282bbd0e550fdbc7c647736dca420f513bae0467c436918c461d4a9",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 35,
+        "transitions": 175,
+        "discovered": 41,
+        "totalActions": 15
+      },
+      "count": "2",
+      "actions": [
+        "L",
+        "R",
+        "U",
+        "U",
+        "R",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "L",
+        "L",
+        "D",
+        "L",
+        "L"
+      ],
+      "type": 1,
+      "case": "exported-escort-3",
+      "group": "exported-escort",
+      "size": [
+        6,
+        4
+      ],
+      "nativeQueries": [
+        {
+          "name": "never_inside_ghost_outside",
+          "result": {
+            "status": "proven_unsat",
+            "reason": "frontier_exhausted",
+            "expanded": 17,
+            "transitions": 85,
+            "discovered": 17,
+            "totalActions": null
+          },
+          "actions": null
+        },
+        {
+          "name": "no_mutual_influence_or_overlap",
+          "result": {
+            "status": "proven_unsat",
+            "reason": "frontier_exhausted",
+            "expanded": 22,
+            "transitions": 110,
+            "discovered": 22,
+            "totalActions": null
+          },
+          "actions": null
+        },
+        {
+          "name": "key_before_inside_ghost_outside",
+          "result": {
+            "status": "proven_unsat",
+            "reason": "frontier_exhausted",
+            "expanded": 21,
+            "transitions": 105,
+            "discovered": 21,
+            "totalActions": null
+          },
+          "actions": null
+        }
+      ],
+      "audit": {
+        "count": "2",
+        "cold": true,
+        "noEndSafeRoutes": 2,
+        "physicalAudit": {
+          "reachable": 48,
+          "transitions": 225,
+          "permutations": 2,
+          "compared": 450,
+          "includesFatalActions": true
+        },
+        "mapCode": "AWM48fPHBwEGBgbGmIb2AyqrOlgEVjAxAAGH0hMnD1YGEGAEAA",
+        "actions": [
+          "L",
+          "R",
+          "U",
+          "U",
+          "R",
+          "D",
+          "R",
+          "R",
+          "U",
+          "L",
+          "L",
+          "L",
+          "D",
+          "L",
+          "L"
+        ]
+      }
+    },
+    {
+      "params": {
+        "start": [
+          0,
+          4
+        ],
+        "end": [
+          4,
+          4
+        ],
+        "ghosts": [
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "items": [
+          [
+            2,
+            2
+          ]
+        ],
+        "edges": [
+          [
+            "h",
+            1,
+            1,
+            1
+          ],
+          [
+            "h",
+            2,
+            1,
+            1
+          ],
+          [
+            "v",
+            1,
+            1,
+            2
+          ],
+          [
+            "v",
+            1,
+            2,
+            1
+          ],
+          [
+            "h",
+            2,
+            2,
+            1
+          ],
+          [
+            "h",
+            2,
+            3,
+            1
+          ],
+          [
+            "v",
+            3,
+            2,
+            1
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "h",
+            3,
+            4,
+            1
+          ],
+          [
+            "h",
+            4,
+            1,
+            1
+          ],
+          [
+            "h",
+            4,
+            4,
+            1
+          ],
+          [
+            "v",
+            4,
+            4,
+            3,
+            {
+              "keys": 1
+            }
+          ],
+          [
+            "h",
+            1,
+            3,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            4,
+            2,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ]
+        ]
+      },
+      "mapId": "75c89904f42b2e70b343a629395525d545babe0bf3afff87f2c72aab177b0416",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 183,
+        "transitions": 915,
+        "discovered": 193,
+        "totalActions": 26
+      },
+      "count": "2",
+      "actions": [
+        "U",
+        "U",
+        "U",
+        "U",
+        "R",
+        "R",
+        "R",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "U",
+        "U",
+        "R",
+        "D",
+        "R",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R"
+      ],
+      "lower": 4,
+      "east": 4,
+      "case": "two-exits-1",
+      "group": "two-exits",
+      "size": [
+        5,
+        5
+      ],
+      "nativeQueries": [
+        {
+          "name": "safe_no_overlap",
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 174,
+            "transitions": 867,
+            "discovered": 185,
+            "totalActions": 26
+          },
+          "actions": [
+            "U",
+            "U",
+            "U",
+            "U",
+            "R",
+            "R",
+            "R",
+            "D",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "L",
+            "L",
+            "U",
+            "U",
+            "R",
+            "D",
+            "R",
+            "L",
+            "D",
+            "D",
+            "R",
+            "R",
+            "R"
+          ]
+        },
+        {
+          "name": "no_mutual_influence_or_overlap",
+          "result": {
+            "status": "proven_unsat",
+            "reason": "frontier_exhausted",
+            "expanded": 35,
+            "transitions": 175,
+            "discovered": 35,
+            "totalActions": null
+          },
+          "actions": null
+        },
+        {
+          "name": "never_G1_at_east_niche",
+          "result": {
+            "status": "proven_unsat",
+            "reason": "frontier_exhausted",
+            "expanded": 74,
+            "transitions": 370,
+            "discovered": 74,
+            "totalActions": null
+          },
+          "actions": null
+        }
+      ],
+      "audit": {
+        "count": "2",
+        "cold": true,
+        "noEndSafeRoutes": 2,
+        "physicalAudit": {
+          "reachable": 225,
+          "transitions": 1105,
+          "permutations": 2,
+          "compared": 2210,
+          "includesFatalActions": true
+        },
+        "mapCode": "AADB8fHx8fAAAAHFIDE0AYqoKQJoNQCoVUAAAAIIWBCkhBCGYAAAABQE",
+        "actions": [
+          "U",
+          "U",
+          "U",
+          "U",
+          "R",
+          "R",
+          "R",
+          "D",
+          "R",
+          "D",
+          "D",
+          "L",
+          "L",
+          "L",
+          "L",
+          "U",
+          "U",
+          "R",
+          "D",
+          "R",
+          "L",
+          "D",
+          "D",
+          "R",
+          "R",
+          "R"
+        ]
+      }
+    },
+    {
+      "params": {
+        "start": [
+          0,
+          4
+        ],
+        "end": [
+          4,
+          4
+        ],
+        "ghosts": [
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "items": [
+          [
+            2,
+            2
+          ]
+        ],
+        "edges": [
+          [
+            "h",
+            1,
+            1,
+            1
+          ],
+          [
+            "h",
+            2,
+            1,
+            1
+          ],
+          [
+            "v",
+            1,
+            1,
+            2
+          ],
+          [
+            "v",
+            1,
+            2,
+            1
+          ],
+          [
+            "h",
+            2,
+            2,
+            1
+          ],
+          [
+            "h",
+            2,
+            3,
+            1
+          ],
+          [
+            "v",
+            3,
+            2,
+            1
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "h",
+            3,
+            4,
+            1
+          ],
+          [
+            "h",
+            4,
+            1,
+            1
+          ],
+          [
+            "h",
+            4,
+            4,
+            1
+          ],
+          [
+            "v",
+            4,
+            4,
+            3,
+            {
+              "keys": 1
+            }
+          ],
+          [
+            "h",
+            1,
+            3,
+            2
+          ],
+          [
+            "h",
+            4,
+            2,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ]
+        ]
+      },
+      "mapId": "a35122db30e3f53367a282cfc7bfd3093148d448ed8c635ff4f94fd6d4e9166e",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 182,
+        "transitions": 910,
+        "discovered": 195,
+        "totalActions": 22
+      },
+      "count": "1",
+      "actions": [
+        "U",
+        "U",
+        "U",
+        "U",
+        "R",
+        "R",
+        "R",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "R",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R"
+      ],
+      "lower": 2,
+      "east": 4,
+      "case": "two-exits-2",
+      "group": "two-exits",
+      "size": [
+        5,
+        5
+      ],
+      "nativeQueries": [
+        {
+          "name": "safe_no_overlap",
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 174,
+            "transitions": 867,
+            "discovered": 186,
+            "totalActions": 22
+          },
+          "actions": [
+            "U",
+            "U",
+            "U",
+            "U",
+            "R",
+            "R",
+            "R",
+            "D",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "L",
+            "U",
+            "R",
+            "L",
+            "D",
+            "D",
+            "R",
+            "R",
+            "R"
+          ]
+        },
+        {
+          "name": "no_mutual_influence_or_overlap",
+          "result": {
+            "status": "proven_unsat",
+            "reason": "frontier_exhausted",
+            "expanded": 35,
+            "transitions": 175,
+            "discovered": 35,
+            "totalActions": null
+          },
+          "actions": null
+        },
+        {
+          "name": "never_G1_at_east_niche",
+          "result": {
+            "status": "proven_unsat",
+            "reason": "frontier_exhausted",
+            "expanded": 77,
+            "transitions": 385,
+            "discovered": 77,
+            "totalActions": null
+          },
+          "actions": null
+        }
+      ],
+      "audit": {
+        "count": "1",
+        "cold": true,
+        "noEndSafeRoutes": 1,
+        "physicalAudit": {
+          "reachable": 302,
+          "transitions": 1480,
+          "permutations": 2,
+          "compared": 2960,
+          "includesFatalActions": true
+        },
+        "mapCode": "AADJ8fHx8fAAAAHFIDE0AYqoKQJ4NAKhVQAAAAghYQpIQQh0AAAAAgI",
+        "actions": [
+          "U",
+          "U",
+          "U",
+          "U",
+          "R",
+          "R",
+          "R",
+          "D",
+          "R",
+          "D",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "R",
+          "L",
+          "D",
+          "D",
+          "R",
+          "R",
+          "R"
+        ]
+      }
+    },
+    {
+      "params": {
+        "start": [
+          0,
+          4
+        ],
+        "end": [
+          4,
+          4
+        ],
+        "ghosts": [
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "items": [
+          [
+            2,
+            2
+          ]
+        ],
+        "edges": [
+          [
+            "h",
+            1,
+            1,
+            1
+          ],
+          [
+            "h",
+            2,
+            1,
+            1
+          ],
+          [
+            "v",
+            1,
+            1,
+            2
+          ],
+          [
+            "v",
+            1,
+            2,
+            1
+          ],
+          [
+            "h",
+            2,
+            2,
+            1
+          ],
+          [
+            "h",
+            2,
+            3,
+            1
+          ],
+          [
+            "v",
+            3,
+            2,
+            1
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "h",
+            3,
+            4,
+            1
+          ],
+          [
+            "h",
+            4,
+            1,
+            1
+          ],
+          [
+            "h",
+            4,
+            4,
+            1
+          ],
+          [
+            "v",
+            4,
+            4,
+            3,
+            {
+              "keys": 1
+            }
+          ],
+          [
+            "h",
+            1,
+            3,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            4,
+            2,
+            2
+          ]
+        ]
+      },
+      "mapId": "d3a7885fd4ce8de8f1bcc5280bafa6a93fb3b38d38365ed81821f5d31ae89c72",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 186,
+        "transitions": 930,
+        "discovered": 197,
+        "totalActions": 26
+      },
+      "count": "2",
+      "actions": [
+        "U",
+        "U",
+        "U",
+        "U",
+        "R",
+        "R",
+        "R",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "U",
+        "U",
+        "R",
+        "D",
+        "R",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R"
+      ],
+      "lower": 4,
+      "east": 2,
+      "case": "two-exits-3",
+      "group": "two-exits",
+      "size": [
+        5,
+        5
+      ],
+      "nativeQueries": [
+        {
+          "name": "safe_no_overlap",
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 176,
+            "transitions": 877,
+            "discovered": 188,
+            "totalActions": 26
+          },
+          "actions": [
+            "U",
+            "U",
+            "U",
+            "U",
+            "R",
+            "R",
+            "R",
+            "D",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "L",
+            "L",
+            "U",
+            "U",
+            "R",
+            "D",
+            "R",
+            "L",
+            "D",
+            "D",
+            "R",
+            "R",
+            "R"
+          ]
+        },
+        {
+          "name": "no_mutual_influence_or_overlap",
+          "result": {
+            "status": "proven_unsat",
+            "reason": "frontier_exhausted",
+            "expanded": 36,
+            "transitions": 180,
+            "discovered": 36,
+            "totalActions": null
+          },
+          "actions": null
+        },
+        {
+          "name": "never_G1_at_east_niche",
+          "result": {
+            "status": "proven_unsat",
+            "reason": "frontier_exhausted",
+            "expanded": 76,
+            "transitions": 380,
+            "discovered": 76,
+            "totalActions": null
+          },
+          "actions": null
+        }
+      ],
+      "audit": {
+        "count": "2",
+        "cold": true,
+        "noEndSafeRoutes": 2,
+        "physicalAudit": {
+          "reachable": 290,
+          "transitions": 1415,
+          "permutations": 2,
+          "compared": 2830,
+          "includesFatalActions": true
+        },
+        "mapCode": "AADJ8fHx8fAAAAHFIDE0AYqoKQJg9AKhVQAAAAghYQpIQQh0AAAAAgI",
+        "actions": [
+          "U",
+          "U",
+          "U",
+          "U",
+          "R",
+          "R",
+          "R",
+          "D",
+          "R",
+          "D",
+          "D",
+          "L",
+          "L",
+          "L",
+          "L",
+          "U",
+          "U",
+          "R",
+          "D",
+          "R",
+          "L",
+          "D",
+          "D",
+          "R",
+          "R",
+          "R"
+        ]
+      }
+    },
+    {
+      "params": {
+        "start": [
+          0,
+          4
+        ],
+        "end": [
+          4,
+          4
+        ],
+        "ghosts": [
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "items": [
+          [
+            2,
+            2
+          ]
+        ],
+        "edges": [
+          [
+            "h",
+            1,
+            1,
+            1
+          ],
+          [
+            "h",
+            2,
+            1,
+            1
+          ],
+          [
+            "v",
+            1,
+            1,
+            2
+          ],
+          [
+            "v",
+            1,
+            2,
+            1
+          ],
+          [
+            "h",
+            2,
+            2,
+            1
+          ],
+          [
+            "h",
+            2,
+            3,
+            1
+          ],
+          [
+            "v",
+            3,
+            2,
+            1
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "h",
+            3,
+            4,
+            1
+          ],
+          [
+            "h",
+            4,
+            1,
+            1
+          ],
+          [
+            "h",
+            4,
+            4,
+            1
+          ],
+          [
+            "v",
+            4,
+            4,
+            3,
+            {
+              "keys": 1
+            }
+          ],
+          [
+            "h",
+            1,
+            3,
+            2
+          ],
+          [
+            "h",
+            4,
+            2,
+            2
+          ]
+        ]
+      },
+      "mapId": "5c0bec1c166eabfbf0ebac18621f50b1d4b7d1c8b6bbf64951aa22acc1ef2a5a",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 184,
+        "transitions": 920,
+        "discovered": 197,
+        "totalActions": 22
+      },
+      "count": "1",
+      "actions": [
+        "U",
+        "U",
+        "U",
+        "U",
+        "R",
+        "R",
+        "R",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "R",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R"
+      ],
+      "lower": 2,
+      "east": 2,
+      "case": "two-exits-4",
+      "group": "two-exits",
+      "size": [
+        5,
+        5
+      ],
+      "nativeQueries": [
+        {
+          "name": "safe_no_overlap",
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 176,
+            "transitions": 877,
+            "discovered": 188,
+            "totalActions": 22
+          },
+          "actions": [
+            "U",
+            "U",
+            "U",
+            "U",
+            "R",
+            "R",
+            "R",
+            "D",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "L",
+            "U",
+            "R",
+            "L",
+            "D",
+            "D",
+            "R",
+            "R",
+            "R"
+          ]
+        },
+        {
+          "name": "no_mutual_influence_or_overlap",
+          "result": {
+            "status": "proven_unsat",
+            "reason": "frontier_exhausted",
+            "expanded": 36,
+            "transitions": 180,
+            "discovered": 36,
+            "totalActions": null
+          },
+          "actions": null
+        },
+        {
+          "name": "never_G1_at_east_niche",
+          "result": {
+            "status": "proven_unsat",
+            "reason": "frontier_exhausted",
+            "expanded": 79,
+            "transitions": 395,
+            "discovered": 79,
+            "totalActions": null
+          },
+          "actions": null
+        }
+      ],
+      "audit": {
+        "count": "1",
+        "cold": true,
+        "noEndSafeRoutes": 1,
+        "physicalAudit": {
+          "reachable": 338,
+          "transitions": 1650,
+          "permutations": 2,
+          "compared": 3300,
+          "includesFatalActions": true
+        },
+        "mapCode": "AADJ8fHx8fAAAAHFIDE0AYqoKQJg0AqFVAAAACCFhCkhBCHQAAAAACA",
+        "actions": [
+          "U",
+          "U",
+          "U",
+          "U",
+          "R",
+          "R",
+          "R",
+          "D",
+          "R",
+          "D",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "R",
+          "L",
+          "D",
+          "D",
+          "R",
+          "R",
+          "R"
+        ]
+      }
+    },
+    {
+      "params": {
+        "start": [
+          3,
+          0
+        ],
+        "end": [
+          4,
+          5
+        ],
+        "ghosts": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ]
+        ],
+        "cells": [
+          [
+            3,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "edges": [
+          [
+            "v",
+            1,
+            2,
+            2
+          ],
+          [
+            "v",
+            1,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "v",
+            3,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            5,
+            1
+          ],
+          [
+            "h",
+            3,
+            5,
+            1
+          ],
+          [
+            "v",
+            4,
+            5,
+            3,
+            {
+              "keys": 1
+            }
+          ],
+          [
+            "h",
+            1,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            4,
+            3,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            1,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            4,
+            3,
+            2
+          ],
+          [
+            "h",
+            4,
+            5,
+            1
+          ]
+        ]
+      },
+      "mapId": "b4853414c2393900da7ce509cf16013d451d05a0327bc6c0f9a5ca733bf7b446",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 104,
+        "transitions": 520,
+        "discovered": 110,
+        "totalActions": 20
+      },
+      "count": "2",
+      "actions": [
+        "D",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "U",
+        "U",
+        "R",
+        "D",
+        "R",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R"
+      ],
+      "lower": 4,
+      "variant": "one-birth",
+      "case": "short-entrance-1",
+      "group": "short-entrance",
+      "size": [
+        5,
+        6
+      ],
+      "nativeQueries": [],
+      "ordinary": {
+        "conclusion": "no_complete_sequential_plan_within_scope",
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 97,
+            "transitions": 482,
+            "discovered": 105,
+            "totalActions": 20
+          },
+          "actions": [
+            "D",
+            "D",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "L",
+            "L",
+            "U",
+            "U",
+            "R",
+            "D",
+            "R",
+            "L",
+            "D",
+            "D",
+            "R",
+            "R",
+            "R"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 1,
+              "lastMove": 7
+            },
+            {
+              "ghost": 1,
+              "firstMove": 2,
+              "lastMove": 13
+            }
+          ]
+        },
+        "queries": [
+          {
+            "kind": "independent_prefix",
+            "ghost": 0,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 7,
+              "transitions": 35,
+              "discovered": 7,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 0,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 3,
+              "transitions": 15,
+              "discovered": 3,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_prefix",
+            "ghost": 1,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 3,
+              "transitions": 15,
+              "discovered": 3,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 1,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 7,
+              "transitions": 35,
+              "discovered": 7,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 7,
+              "transitions": 35,
+              "discovered": 7,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 3,
+              "transitions": 15,
+              "discovered": 3,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          }
+        ],
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        }
+      },
+      "audit": {
+        "count": "2",
+        "cold": true,
+        "noEndSafeRoutes": 2,
+        "physicalAudit": {
+          "reachable": 172,
+          "transitions": 835,
+          "permutations": 2,
+          "compared": 1670,
+          "includesFatalActions": true
+        },
+        "mapCode": "AADIIOHx8fDwAAGwICEsAWECgQgTB6BKgqgAAAoEQWEKSEEEdAAABAQ",
+        "actions": [
+          "D",
+          "D",
+          "R",
+          "D",
+          "D",
+          "L",
+          "L",
+          "L",
+          "L",
+          "U",
+          "U",
+          "R",
+          "D",
+          "R",
+          "L",
+          "D",
+          "D",
+          "R",
+          "R",
+          "R"
+        ]
+      }
+    },
+    {
+      "params": {
+        "start": [
+          3,
+          0
+        ],
+        "end": [
+          4,
+          5
+        ],
+        "ghosts": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ]
+        ],
+        "cells": [
+          [
+            3,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "edges": [
+          [
+            "v",
+            1,
+            2,
+            2
+          ],
+          [
+            "v",
+            1,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "v",
+            3,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            5,
+            1
+          ],
+          [
+            "h",
+            3,
+            5,
+            1
+          ],
+          [
+            "v",
+            4,
+            5,
+            3,
+            {
+              "keys": 1
+            }
+          ],
+          [
+            "h",
+            1,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            4,
+            3,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            1,
+            4,
+            2
+          ],
+          [
+            "h",
+            4,
+            3,
+            2
+          ],
+          [
+            "h",
+            4,
+            5,
+            1
+          ]
+        ]
+      },
+      "mapId": "c7f979c00dfde463afa08435026fb3f682fc31414abec87249e0d952f5ce9b85",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 107,
+        "transitions": 535,
+        "discovered": 113,
+        "totalActions": 16
+      },
+      "count": "1",
+      "actions": [
+        "D",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "R",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R"
+      ],
+      "lower": 2,
+      "variant": "one-birth",
+      "case": "short-entrance-2",
+      "group": "short-entrance",
+      "size": [
+        5,
+        6
+      ],
+      "nativeQueries": [],
+      "ordinary": {
+        "conclusion": "no_complete_sequential_plan_within_scope",
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 102,
+            "transitions": 507,
+            "discovered": 109,
+            "totalActions": 16
+          },
+          "actions": [
+            "D",
+            "D",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "L",
+            "U",
+            "R",
+            "L",
+            "D",
+            "D",
+            "R",
+            "R",
+            "R"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 1,
+              "lastMove": 7
+            },
+            {
+              "ghost": 1,
+              "firstMove": 2,
+              "lastMove": 4
+            }
+          ]
+        },
+        "queries": [
+          {
+            "kind": "independent_prefix",
+            "ghost": 0,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 7,
+              "transitions": 35,
+              "discovered": 7,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 0,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 3,
+              "transitions": 15,
+              "discovered": 3,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_prefix",
+            "ghost": 1,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 3,
+              "transitions": 15,
+              "discovered": 3,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 1,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 7,
+              "transitions": 35,
+              "discovered": 7,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 7,
+              "transitions": 35,
+              "discovered": 7,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 3,
+              "transitions": 15,
+              "discovered": 3,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          }
+        ],
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        }
+      },
+      "audit": {
+        "count": "1",
+        "cold": true,
+        "noEndSafeRoutes": 1,
+        "physicalAudit": {
+          "reachable": 203,
+          "transitions": 985,
+          "permutations": 2,
+          "compared": 1970,
+          "includesFatalActions": true
+        },
+        "mapCode": "AADIIOHx8fDwAAGwICEsAWECgQgTBoEqCqAAACgRBYQpIQQR0AAAAEA",
+        "actions": [
+          "D",
+          "D",
+          "R",
+          "D",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "R",
+          "L",
+          "D",
+          "D",
+          "R",
+          "R",
+          "R"
+        ]
+      }
+    },
+    {
+      "params": {
+        "start": [
+          3,
+          0
+        ],
+        "end": [
+          4,
+          5
+        ],
+        "ghosts": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ]
+        ],
+        "cells": [
+          [
+            3,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "edges": [
+          [
+            "v",
+            1,
+            2,
+            2
+          ],
+          [
+            "v",
+            1,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "v",
+            3,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            5,
+            1
+          ],
+          [
+            "h",
+            3,
+            5,
+            1
+          ],
+          [
+            "v",
+            4,
+            5,
+            3,
+            {
+              "keys": 1
+            }
+          ],
+          [
+            "h",
+            1,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            4,
+            3,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            1,
+            4,
+            1
+          ],
+          [
+            "h",
+            4,
+            3,
+            2
+          ],
+          [
+            "h",
+            4,
+            5,
+            1
+          ]
+        ]
+      },
+      "mapId": "872b27baa7a9b5d8adc37eb354677f9e1fd8456ea9bd99726e4dd0fb6329260c",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 70,
+        "transitions": 350,
+        "discovered": 70,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null,
+      "lower": 1,
+      "variant": "one-birth",
+      "case": "short-entrance-3",
+      "group": "short-entrance",
+      "size": [
+        5,
+        6
+      ],
+      "nativeQueries": []
+    },
+    {
+      "params": {
+        "start": [
+          2,
+          0
+        ],
+        "end": [
+          4,
+          5
+        ],
+        "ghosts": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ]
+        ],
+        "cells": [
+          [
+            3,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        "edges": [
+          [
+            "v",
+            1,
+            2,
+            2
+          ],
+          [
+            "v",
+            1,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "v",
+            3,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            5,
+            1
+          ],
+          [
+            "h",
+            3,
+            5,
+            1
+          ],
+          [
+            "v",
+            4,
+            5,
+            3,
+            {
+              "keys": 1
+            }
+          ],
+          [
+            "h",
+            1,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            4,
+            3,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            1,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            4,
+            3,
+            2
+          ],
+          [
+            "h",
+            4,
+            5,
+            1
+          ]
+        ]
+      },
+      "mapId": "e211d69accdb6ee78fdf5c0a92234e2e75d56ac792a539caea94a19bfcfd9013",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 107,
+        "transitions": 535,
+        "discovered": 113,
+        "totalActions": 21
+      },
+      "count": "2",
+      "actions": [
+        "R",
+        "D",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "U",
+        "U",
+        "R",
+        "D",
+        "R",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R"
+      ],
+      "lower": 4,
+      "variant": "two-birth",
+      "case": "short-entrance-4",
+      "group": "short-entrance",
+      "size": [
+        5,
+        6
+      ],
+      "nativeQueries": [],
+      "ordinary": {
+        "conclusion": "no_complete_sequential_plan_within_scope",
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 100,
+            "transitions": 497,
+            "discovered": 108,
+            "totalActions": 21
+          },
+          "actions": [
+            "R",
+            "D",
+            "D",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "L",
+            "L",
+            "U",
+            "U",
+            "R",
+            "D",
+            "R",
+            "L",
+            "D",
+            "D",
+            "R",
+            "R",
+            "R"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 2,
+              "lastMove": 8
+            },
+            {
+              "ghost": 1,
+              "firstMove": 3,
+              "lastMove": 14
+            }
+          ]
+        },
+        "queries": [
+          {
+            "kind": "independent_prefix",
+            "ghost": 0,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 10,
+              "transitions": 50,
+              "discovered": 10,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 0,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 6,
+              "transitions": 30,
+              "discovered": 6,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_prefix",
+            "ghost": 1,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 6,
+              "transitions": 30,
+              "discovered": 6,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 1,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 10,
+              "transitions": 50,
+              "discovered": 10,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 10,
+              "transitions": 50,
+              "discovered": 10,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 6,
+              "transitions": 30,
+              "discovered": 6,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          }
+        ],
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        }
+      },
+      "audit": {
+        "count": "2",
+        "cold": true,
+        "noEndSafeRoutes": 2,
+        "physicalAudit": {
+          "reachable": 175,
+          "transitions": 850,
+          "permutations": 2,
+          "compared": 1700,
+          "includesFatalActions": true
+        },
+        "mapCode": "AADIYOHx8fDwAAG4ICI0AYKBAQgTB6BKgqgAABIEQWEKSEEEdAAABAQ",
+        "actions": [
+          "R",
+          "D",
+          "D",
+          "R",
+          "D",
+          "D",
+          "L",
+          "L",
+          "L",
+          "L",
+          "U",
+          "U",
+          "R",
+          "D",
+          "R",
+          "L",
+          "D",
+          "D",
+          "R",
+          "R",
+          "R"
+        ]
+      }
+    },
+    {
+      "params": {
+        "start": [
+          2,
+          0
+        ],
+        "end": [
+          4,
+          5
+        ],
+        "ghosts": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ]
+        ],
+        "cells": [
+          [
+            3,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        "edges": [
+          [
+            "v",
+            1,
+            2,
+            2
+          ],
+          [
+            "v",
+            1,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "v",
+            3,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            5,
+            1
+          ],
+          [
+            "h",
+            3,
+            5,
+            1
+          ],
+          [
+            "v",
+            4,
+            5,
+            3,
+            {
+              "keys": 1
+            }
+          ],
+          [
+            "h",
+            1,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            4,
+            3,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            1,
+            4,
+            2
+          ],
+          [
+            "h",
+            4,
+            3,
+            2
+          ],
+          [
+            "h",
+            4,
+            5,
+            1
+          ]
+        ]
+      },
+      "mapId": "4b9f5a4b2bb5404396f5f4466fefff7bb63ad29daa8dc0ab7caef1bd09d7fc8c",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 110,
+        "transitions": 550,
+        "discovered": 116,
+        "totalActions": 17
+      },
+      "count": "1",
+      "actions": [
+        "R",
+        "D",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "R",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R"
+      ],
+      "lower": 2,
+      "variant": "two-birth",
+      "case": "short-entrance-5",
+      "group": "short-entrance",
+      "size": [
+        5,
+        6
+      ],
+      "nativeQueries": [],
+      "ordinary": {
+        "conclusion": "no_complete_sequential_plan_within_scope",
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 105,
+            "transitions": 522,
+            "discovered": 112,
+            "totalActions": 17
+          },
+          "actions": [
+            "R",
+            "D",
+            "D",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "L",
+            "U",
+            "R",
+            "L",
+            "D",
+            "D",
+            "R",
+            "R",
+            "R"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 2,
+              "lastMove": 8
+            },
+            {
+              "ghost": 1,
+              "firstMove": 3,
+              "lastMove": 5
+            }
+          ]
+        },
+        "queries": [
+          {
+            "kind": "independent_prefix",
+            "ghost": 0,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 10,
+              "transitions": 50,
+              "discovered": 10,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 0,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 6,
+              "transitions": 30,
+              "discovered": 6,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_prefix",
+            "ghost": 1,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 6,
+              "transitions": 30,
+              "discovered": 6,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 1,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 10,
+              "transitions": 50,
+              "discovered": 10,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 10,
+              "transitions": 50,
+              "discovered": 10,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 6,
+              "transitions": 30,
+              "discovered": 6,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          }
+        ],
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        }
+      },
+      "audit": {
+        "count": "1",
+        "cold": true,
+        "noEndSafeRoutes": 1,
+        "physicalAudit": {
+          "reachable": 206,
+          "transitions": 1000,
+          "permutations": 2,
+          "compared": 2000,
+          "includesFatalActions": true
+        },
+        "mapCode": "AADIYOHx8fDwAAG4ICI0AYKBAQgTBoEqCqAAAEgRBYQpIQQR0AAAAEA",
+        "actions": [
+          "R",
+          "D",
+          "D",
+          "R",
+          "D",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "R",
+          "L",
+          "D",
+          "D",
+          "R",
+          "R",
+          "R"
+        ]
+      }
+    },
+    {
+      "params": {
+        "start": [
+          2,
+          0
+        ],
+        "end": [
+          4,
+          5
+        ],
+        "ghosts": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ]
+        ],
+        "cells": [
+          [
+            3,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        "edges": [
+          [
+            "v",
+            1,
+            2,
+            2
+          ],
+          [
+            "v",
+            1,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "v",
+            3,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            5,
+            1
+          ],
+          [
+            "h",
+            3,
+            5,
+            1
+          ],
+          [
+            "v",
+            4,
+            5,
+            3,
+            {
+              "keys": 1
+            }
+          ],
+          [
+            "h",
+            1,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            4,
+            3,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            1,
+            4,
+            1
+          ],
+          [
+            "h",
+            4,
+            3,
+            2
+          ],
+          [
+            "h",
+            4,
+            5,
+            1
+          ]
+        ]
+      },
+      "mapId": "d46598a573928ab3924d031a0fced6b0808f9c276811100c779df79ec92dc66e",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 73,
+        "transitions": 365,
+        "discovered": 73,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null,
+      "lower": 1,
+      "variant": "two-birth",
+      "case": "short-entrance-6",
+      "group": "short-entrance",
+      "size": [
+        5,
+        6
+      ],
+      "nativeQueries": []
+    },
+    {
+      "params": {
+        "start": [
+          3,
+          0
+        ],
+        "end": [
+          3,
+          5
+        ],
+        "ghosts": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ]
+        ],
+        "cells": [
+          [
+            3,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "edges": [
+          [
+            "v",
+            1,
+            2,
+            2
+          ],
+          [
+            "v",
+            1,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "v",
+            3,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            5,
+            1
+          ],
+          [
+            "h",
+            3,
+            5,
+            1
+          ],
+          [
+            "h",
+            1,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            4,
+            3,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            1,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            4,
+            3,
+            2
+          ],
+          [
+            "h",
+            4,
+            5,
+            1
+          ],
+          [
+            "v",
+            3,
+            5,
+            3,
+            {
+              "keys": 1
+            }
+          ]
+        ]
+      },
+      "mapId": "e878d047cf5a5fa5b4cbf573900768ffaaddbfb82325a87702a2e8fba2734111",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 91,
+        "transitions": 455,
+        "discovered": 99,
+        "totalActions": 19
+      },
+      "count": "2",
+      "actions": [
+        "D",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "U",
+        "U",
+        "R",
+        "D",
+        "R",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R"
+      ],
+      "lower": 4,
+      "goal": [
+        3,
+        5
+      ],
+      "case": "short-goals-1",
+      "group": "short-goals",
+      "size": [
+        5,
+        6
+      ],
+      "nativeQueries": [],
+      "audit": {
+        "count": "2",
+        "cold": true,
+        "noEndSafeRoutes": 2,
+        "physicalAudit": {
+          "reachable": 161,
+          "transitions": 780,
+          "permutations": 2,
+          "compared": 1560,
+          "includesFatalActions": true
+        },
+        "mapCode": "AADIIOHx8fDgAAGoICEsAWECgQgTB6BKgqAAABQIgsIUkIIJ0AAACAg",
+        "actions": [
+          "D",
+          "D",
+          "R",
+          "D",
+          "D",
+          "L",
+          "L",
+          "L",
+          "L",
+          "U",
+          "U",
+          "R",
+          "D",
+          "R",
+          "L",
+          "D",
+          "D",
+          "R",
+          "R"
+        ]
+      }
+    },
+    {
+      "params": {
+        "start": [
+          3,
+          0
+        ],
+        "end": [
+          3,
+          5
+        ],
+        "ghosts": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ]
+        ],
+        "cells": [
+          [
+            3,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "edges": [
+          [
+            "v",
+            1,
+            2,
+            2
+          ],
+          [
+            "v",
+            1,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "v",
+            3,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            5,
+            1
+          ],
+          [
+            "h",
+            3,
+            5,
+            1
+          ],
+          [
+            "h",
+            1,
+            4,
+            2
+          ],
+          [
+            "h",
+            4,
+            3,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            1,
+            4,
+            2
+          ],
+          [
+            "h",
+            4,
+            3,
+            2
+          ],
+          [
+            "h",
+            4,
+            5,
+            1
+          ],
+          [
+            "v",
+            3,
+            5,
+            3,
+            {
+              "keys": 1
+            }
+          ]
+        ]
+      },
+      "mapId": "4cced11d6e3f272df61c8b04216bb984063436cb7d8e5dcb0ef62c401ac33449",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 94,
+        "transitions": 470,
+        "discovered": 103,
+        "totalActions": 15
+      },
+      "count": "1",
+      "actions": [
+        "D",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "R",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R"
+      ],
+      "lower": 2,
+      "goal": [
+        3,
+        5
+      ],
+      "case": "short-goals-2",
+      "group": "short-goals",
+      "size": [
+        5,
+        6
+      ],
+      "nativeQueries": [],
+      "audit": {
+        "count": "1",
+        "cold": true,
+        "noEndSafeRoutes": 1,
+        "physicalAudit": {
+          "reachable": 191,
+          "transitions": 925,
+          "permutations": 2,
+          "compared": 1850,
+          "includesFatalActions": true
+        },
+        "mapCode": "AADAIOHx8fDgAAGoICEsAWECgQgTAYgSoKgAAAUCILAhSQggmYAAAAE",
+        "actions": [
+          "D",
+          "D",
+          "R",
+          "D",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "R",
+          "L",
+          "D",
+          "D",
+          "R",
+          "R"
+        ]
+      }
+    },
+    {
+      "params": {
+        "start": [
+          3,
+          0
+        ],
+        "end": [
+          2,
+          5
+        ],
+        "ghosts": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ]
+        ],
+        "cells": [
+          [
+            3,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "edges": [
+          [
+            "v",
+            1,
+            2,
+            2
+          ],
+          [
+            "v",
+            1,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "v",
+            3,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            5,
+            1
+          ],
+          [
+            "h",
+            3,
+            5,
+            1
+          ],
+          [
+            "h",
+            1,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            4,
+            3,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            1,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            4,
+            3,
+            2
+          ],
+          [
+            "h",
+            4,
+            5,
+            1
+          ],
+          [
+            "v",
+            2,
+            5,
+            3,
+            {
+              "keys": 1
+            }
+          ]
+        ]
+      },
+      "mapId": "818ccaac66c5d4be9744bb8a023f9af7fc4343beddac0cfb2a370611c5a6c7b1",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 79,
+        "transitions": 395,
+        "discovered": 86,
+        "totalActions": 18
+      },
+      "count": "2",
+      "actions": [
+        "D",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "U",
+        "U",
+        "R",
+        "D",
+        "R",
+        "L",
+        "D",
+        "D",
+        "R"
+      ],
+      "lower": 4,
+      "goal": [
+        2,
+        5
+      ],
+      "case": "short-goals-3",
+      "group": "short-goals",
+      "size": [
+        5,
+        6
+      ],
+      "nativeQueries": [],
+      "audit": {
+        "count": "2",
+        "cold": true,
+        "noEndSafeRoutes": 2,
+        "physicalAudit": {
+          "reachable": 150,
+          "transitions": 725,
+          "permutations": 2,
+          "compared": 1450,
+          "includesFatalActions": true
+        },
+        "mapCode": "AADIIOHx8fDAAAGgICEsAWECgQgTB6BKgoAAACgRBYQpIQQXQAAAEBA",
+        "actions": [
+          "D",
+          "D",
+          "R",
+          "D",
+          "D",
+          "L",
+          "L",
+          "L",
+          "L",
+          "U",
+          "U",
+          "R",
+          "D",
+          "R",
+          "L",
+          "D",
+          "D",
+          "R"
+        ]
+      }
+    },
+    {
+      "params": {
+        "start": [
+          3,
+          0
+        ],
+        "end": [
+          2,
+          5
+        ],
+        "ghosts": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ]
+        ],
+        "cells": [
+          [
+            3,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "edges": [
+          [
+            "v",
+            1,
+            2,
+            2
+          ],
+          [
+            "v",
+            1,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "v",
+            3,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            5,
+            1
+          ],
+          [
+            "h",
+            3,
+            5,
+            1
+          ],
+          [
+            "h",
+            1,
+            4,
+            2
+          ],
+          [
+            "h",
+            4,
+            3,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            1,
+            4,
+            2
+          ],
+          [
+            "h",
+            4,
+            3,
+            2
+          ],
+          [
+            "h",
+            4,
+            5,
+            1
+          ],
+          [
+            "v",
+            2,
+            5,
+            3,
+            {
+              "keys": 1
+            }
+          ]
+        ]
+      },
+      "mapId": "89b66776a2e1fe7c1851d2521299ad0bd97ced131baa961669c8c78220c26cbd",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 83,
+        "transitions": 415,
+        "discovered": 90,
+        "totalActions": 14
+      },
+      "count": "1",
+      "actions": [
+        "D",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "R",
+        "L",
+        "D",
+        "D",
+        "R"
+      ],
+      "lower": 2,
+      "goal": [
+        2,
+        5
+      ],
+      "case": "short-goals-4",
+      "group": "short-goals",
+      "size": [
+        5,
+        6
+      ],
+      "nativeQueries": [],
+      "audit": {
+        "count": "1",
+        "cold": true,
+        "noEndSafeRoutes": 1,
+        "physicalAudit": {
+          "reachable": 179,
+          "transitions": 865,
+          "permutations": 2,
+          "compared": 1730,
+          "includesFatalActions": true
+        },
+        "mapCode": "AADIIOHx8fDAAAGgICEsAWECgQgTBoEqCgAAAKBEFhCkhBBdAAAAAQ",
+        "actions": [
+          "D",
+          "D",
+          "R",
+          "D",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "R",
+          "L",
+          "D",
+          "D",
+          "R"
+        ]
+      }
+    },
+    {
+      "params": {
+        "start": [
+          3,
+          0
+        ],
+        "end": [
+          0,
+          5
+        ],
+        "ghosts": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ]
+        ],
+        "cells": [
+          [
+            3,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "edges": [
+          [
+            "v",
+            1,
+            2,
+            2
+          ],
+          [
+            "v",
+            1,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "v",
+            3,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            5,
+            1
+          ],
+          [
+            "h",
+            3,
+            5,
+            1
+          ],
+          [
+            "h",
+            1,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            4,
+            3,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            1,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            4,
+            3,
+            2
+          ],
+          [
+            "h",
+            4,
+            5,
+            1
+          ],
+          [
+            "v",
+            1,
+            5,
+            3,
+            {
+              "keys": 1
+            }
+          ],
+          [
+            "h",
+            0,
+            5,
+            1
+          ]
+        ]
+      },
+      "mapId": "4265b162a4a850ac81f788c472fbbe415a1b51f076b13afe564f0f81f25b88d8",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 79,
+        "transitions": 395,
+        "discovered": 86,
+        "totalActions": 18
+      },
+      "count": "2",
+      "actions": [
+        "D",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "U",
+        "U",
+        "R",
+        "D",
+        "R",
+        "L",
+        "D",
+        "D",
+        "L"
+      ],
+      "lower": 4,
+      "goal": [
+        0,
+        5
+      ],
+      "case": "short-goals-5",
+      "group": "short-goals",
+      "size": [
+        5,
+        6
+      ],
+      "nativeQueries": [],
+      "audit": {
+        "count": "2",
+        "cold": true,
+        "noEndSafeRoutes": 2,
+        "physicalAudit": {
+          "reachable": 150,
+          "transitions": 725,
+          "permutations": 2,
+          "compared": 1450,
+          "includesFatalActions": true
+        },
+        "mapCode": "AADIIOHx8fGAAAGYICEsAWECgQgTB6BKhQAAACgRBYQpIQQugAAAEBA",
+        "actions": [
+          "D",
+          "D",
+          "R",
+          "D",
+          "D",
+          "L",
+          "L",
+          "L",
+          "L",
+          "U",
+          "U",
+          "R",
+          "D",
+          "R",
+          "L",
+          "D",
+          "D",
+          "L"
+        ]
+      }
+    },
+    {
+      "params": {
+        "start": [
+          3,
+          0
+        ],
+        "end": [
+          0,
+          5
+        ],
+        "ghosts": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ]
+        ],
+        "cells": [
+          [
+            3,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "edges": [
+          [
+            "v",
+            1,
+            2,
+            2
+          ],
+          [
+            "v",
+            1,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "v",
+            3,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            5,
+            1
+          ],
+          [
+            "h",
+            3,
+            5,
+            1
+          ],
+          [
+            "h",
+            1,
+            4,
+            2
+          ],
+          [
+            "h",
+            4,
+            3,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            1,
+            4,
+            2
+          ],
+          [
+            "h",
+            4,
+            3,
+            2
+          ],
+          [
+            "h",
+            4,
+            5,
+            1
+          ],
+          [
+            "v",
+            1,
+            5,
+            3,
+            {
+              "keys": 1
+            }
+          ],
+          [
+            "h",
+            0,
+            5,
+            1
+          ]
+        ]
+      },
+      "mapId": "12a054d86e608e8c7ca9498fe22caea1d3a9a060311c0fd08561083485b52c40",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 83,
+        "transitions": 415,
+        "discovered": 90,
+        "totalActions": 14
+      },
+      "count": "1",
+      "actions": [
+        "D",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "R",
+        "L",
+        "D",
+        "D",
+        "L"
+      ],
+      "lower": 2,
+      "goal": [
+        0,
+        5
+      ],
+      "case": "short-goals-6",
+      "group": "short-goals",
+      "size": [
+        5,
+        6
+      ],
+      "nativeQueries": [],
+      "audit": {
+        "count": "1",
+        "cold": true,
+        "noEndSafeRoutes": 1,
+        "physicalAudit": {
+          "reachable": 179,
+          "transitions": 865,
+          "permutations": 2,
+          "compared": 1730,
+          "includesFatalActions": true
+        },
+        "mapCode": "AADIIOHx8fGAAAGYICEsAWECgQgTBoEqFAAAAKBEFhCkhBC6AAAAAQ",
+        "actions": [
+          "D",
+          "D",
+          "R",
+          "D",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "R",
+          "L",
+          "D",
+          "D",
+          "L"
+        ]
+      }
+    },
+    {
+      "params": {
+        "start": [
+          3,
+          0
+        ],
+        "end": [
+          2,
+          5
+        ],
+        "ghosts": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ]
+        ],
+        "cells": [
+          [
+            3,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "edges": [
+          [
+            "v",
+            1,
+            2,
+            2
+          ],
+          [
+            "v",
+            1,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "v",
+            3,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            5,
+            1
+          ],
+          [
+            "h",
+            3,
+            5,
+            1
+          ],
+          [
+            "h",
+            1,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            4,
+            3,
+            2
+          ],
+          [
+            "h",
+            1,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            4,
+            3,
+            2
+          ],
+          [
+            "h",
+            4,
+            5,
+            1
+          ],
+          [
+            "v",
+            2,
+            5,
+            3,
+            {
+              "keys": 1
+            }
+          ]
+        ]
+      },
+      "mapId": "818ccaac66c5d4be9744bb8a023f9af7fc4343beddac0cfb2a370611c5a6c7b1",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 79,
+        "transitions": 395,
+        "discovered": 86,
+        "totalActions": 18
+      },
+      "count": "2",
+      "actions": [
+        "D",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "U",
+        "U",
+        "R",
+        "D",
+        "R",
+        "L",
+        "D",
+        "D",
+        "R"
+      ],
+      "lower": 4,
+      "east": 2,
+      "case": "continuous-follower-1",
+      "group": "continuous-follower",
+      "size": [
+        5,
+        6
+      ],
+      "nativeQueries": [],
+      "ordinary": {
+        "conclusion": "no_complete_sequential_plan_within_scope",
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 72,
+            "transitions": 357,
+            "discovered": 80,
+            "totalActions": 18
+          },
+          "actions": [
+            "D",
+            "D",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "L",
+            "L",
+            "U",
+            "U",
+            "R",
+            "D",
+            "R",
+            "L",
+            "D",
+            "D",
+            "R"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 1,
+              "lastMove": 7
+            },
+            {
+              "ghost": 1,
+              "firstMove": 2,
+              "lastMove": 13
+            }
+          ]
+        },
+        "queries": [
+          {
+            "kind": "independent_prefix",
+            "ghost": 0,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 7,
+              "transitions": 35,
+              "discovered": 7,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 0,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 3,
+              "transitions": 15,
+              "discovered": 3,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_prefix",
+            "ghost": 1,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 3,
+              "transitions": 15,
+              "discovered": 3,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 1,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 7,
+              "transitions": 35,
+              "discovered": 7,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 7,
+              "transitions": 35,
+              "discovered": 7,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 3,
+              "transitions": 15,
+              "discovered": 3,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          }
+        ],
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        }
+      },
+      "audit": {
+        "count": "2",
+        "cold": true,
+        "noEndSafeRoutes": 2,
+        "physicalAudit": {
+          "reachable": 150,
+          "transitions": 725,
+          "permutations": 2,
+          "compared": 1450,
+          "includesFatalActions": true
+        },
+        "mapCode": "AADIIOHx8fDAAAGgICEsAWECgQgTB6BKgoAAACgRBYQpIQQXQAAAEBA",
+        "actions": [
+          "D",
+          "D",
+          "R",
+          "D",
+          "D",
+          "L",
+          "L",
+          "L",
+          "L",
+          "U",
+          "U",
+          "R",
+          "D",
+          "R",
+          "L",
+          "D",
+          "D",
+          "R"
+        ]
+      }
+    },
+    {
+      "params": {
+        "start": [
+          3,
+          0
+        ],
+        "end": [
+          2,
+          5
+        ],
+        "ghosts": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ]
+        ],
+        "cells": [
+          [
+            3,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "edges": [
+          [
+            "v",
+            1,
+            2,
+            2
+          ],
+          [
+            "v",
+            1,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "v",
+            3,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            5,
+            1
+          ],
+          [
+            "h",
+            3,
+            5,
+            1
+          ],
+          [
+            "h",
+            1,
+            4,
+            2
+          ],
+          [
+            "h",
+            4,
+            3,
+            2
+          ],
+          [
+            "h",
+            1,
+            4,
+            2
+          ],
+          [
+            "h",
+            4,
+            3,
+            2
+          ],
+          [
+            "h",
+            4,
+            5,
+            1
+          ],
+          [
+            "v",
+            2,
+            5,
+            3,
+            {
+              "keys": 1
+            }
+          ]
+        ]
+      },
+      "mapId": "89b66776a2e1fe7c1851d2521299ad0bd97ced131baa961669c8c78220c26cbd",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 83,
+        "transitions": 415,
+        "discovered": 90,
+        "totalActions": 14
+      },
+      "count": "1",
+      "actions": [
+        "D",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "R",
+        "L",
+        "D",
+        "D",
+        "R"
+      ],
+      "lower": 2,
+      "east": 2,
+      "case": "continuous-follower-2",
+      "group": "continuous-follower",
+      "size": [
+        5,
+        6
+      ],
+      "nativeQueries": [],
+      "ordinary": {
+        "conclusion": "no_complete_sequential_plan_within_scope",
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 78,
+            "transitions": 387,
+            "discovered": 86,
+            "totalActions": 14
+          },
+          "actions": [
+            "D",
+            "D",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "L",
+            "U",
+            "R",
+            "L",
+            "D",
+            "D",
+            "R"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 1,
+              "lastMove": 7
+            },
+            {
+              "ghost": 1,
+              "firstMove": 2,
+              "lastMove": 4
+            }
+          ]
+        },
+        "queries": [
+          {
+            "kind": "independent_prefix",
+            "ghost": 0,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 7,
+              "transitions": 35,
+              "discovered": 7,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 0,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 3,
+              "transitions": 15,
+              "discovered": 3,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_prefix",
+            "ghost": 1,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 3,
+              "transitions": 15,
+              "discovered": 3,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 1,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 7,
+              "transitions": 35,
+              "discovered": 7,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 7,
+              "transitions": 35,
+              "discovered": 7,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 3,
+              "transitions": 15,
+              "discovered": 3,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          }
+        ],
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        }
+      },
+      "audit": {
+        "count": "1",
+        "cold": true,
+        "noEndSafeRoutes": 1,
+        "physicalAudit": {
+          "reachable": 179,
+          "transitions": 865,
+          "permutations": 2,
+          "compared": 1730,
+          "includesFatalActions": true
+        },
+        "mapCode": "AADIIOHx8fDAAAGgICEsAWECgQgTBoEqCgAAAKBEFhCkhBBdAAAAAQ",
+        "actions": [
+          "D",
+          "D",
+          "R",
+          "D",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "R",
+          "L",
+          "D",
+          "D",
+          "R"
+        ]
+      }
+    },
+    {
+      "params": {
+        "start": [
+          3,
+          0
+        ],
+        "end": [
+          2,
+          5
+        ],
+        "ghosts": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ]
+        ],
+        "cells": [
+          [
+            3,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "edges": [
+          [
+            "v",
+            1,
+            2,
+            2
+          ],
+          [
+            "v",
+            1,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "v",
+            3,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            5,
+            1
+          ],
+          [
+            "h",
+            3,
+            5,
+            1
+          ],
+          [
+            "h",
+            1,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            4,
+            3,
+            0
+          ],
+          [
+            "h",
+            1,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "h",
+            4,
+            3,
+            0
+          ],
+          [
+            "h",
+            4,
+            5,
+            1
+          ],
+          [
+            "v",
+            2,
+            5,
+            3,
+            {
+              "keys": 1
+            }
+          ]
+        ]
+      },
+      "mapId": "b2a8439579ea1d9a790b50651ad1bebe80ac47ca61b58b244f2f5dde2a5c5218",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 87,
+        "transitions": 435,
+        "discovered": 99,
+        "totalActions": 18
+      },
+      "count": "2",
+      "actions": [
+        "D",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "U",
+        "U",
+        "R",
+        "D",
+        "R",
+        "L",
+        "D",
+        "D",
+        "R"
+      ],
+      "lower": 4,
+      "east": 0,
+      "case": "continuous-follower-3",
+      "group": "continuous-follower",
+      "size": [
+        5,
+        6
+      ],
+      "nativeQueries": [],
+      "ordinary": {
+        "conclusion": "no_complete_sequential_plan_within_scope",
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 79,
+            "transitions": 392,
+            "discovered": 92,
+            "totalActions": 18
+          },
+          "actions": [
+            "D",
+            "D",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "L",
+            "L",
+            "U",
+            "U",
+            "R",
+            "D",
+            "R",
+            "L",
+            "D",
+            "D",
+            "R"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 1,
+              "lastMove": 7
+            },
+            {
+              "ghost": 1,
+              "firstMove": 2,
+              "lastMove": 12
+            }
+          ]
+        },
+        "queries": [
+          {
+            "kind": "independent_prefix",
+            "ghost": 0,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 7,
+              "transitions": 35,
+              "discovered": 7,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 0,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 3,
+              "transitions": 15,
+              "discovered": 3,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_prefix",
+            "ghost": 1,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 3,
+              "transitions": 15,
+              "discovered": 3,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 1,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 7,
+              "transitions": 35,
+              "discovered": 7,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 7,
+              "transitions": 35,
+              "discovered": 7,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 3,
+              "transitions": 15,
+              "discovered": 3,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          }
+        ],
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        }
+      },
+      "audit": {
+        "count": "2",
+        "cold": true,
+        "noEndSafeRoutes": 2,
+        "physicalAudit": {
+          "reachable": 266,
+          "transitions": 1295,
+          "permutations": 2,
+          "compared": 2590,
+          "includesFatalActions": true
+        },
+        "mapCode": "AADAIOHx8fDAAAGgICEsAWECgQgQGoEqCgAAAKBEFgQpIQQWYAAACAg",
+        "actions": [
+          "D",
+          "D",
+          "R",
+          "D",
+          "D",
+          "L",
+          "L",
+          "L",
+          "L",
+          "U",
+          "U",
+          "R",
+          "D",
+          "R",
+          "L",
+          "D",
+          "D",
+          "R"
+        ]
+      }
+    },
+    {
+      "params": {
+        "start": [
+          3,
+          0
+        ],
+        "end": [
+          2,
+          5
+        ],
+        "ghosts": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ]
+        ],
+        "cells": [
+          [
+            3,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "edges": [
+          [
+            "v",
+            1,
+            2,
+            2
+          ],
+          [
+            "v",
+            1,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "v",
+            3,
+            3,
+            1
+          ],
+          [
+            "h",
+            2,
+            5,
+            1
+          ],
+          [
+            "h",
+            3,
+            5,
+            1
+          ],
+          [
+            "h",
+            1,
+            4,
+            2
+          ],
+          [
+            "h",
+            4,
+            3,
+            0
+          ],
+          [
+            "h",
+            1,
+            4,
+            2
+          ],
+          [
+            "h",
+            4,
+            3,
+            0
+          ],
+          [
+            "h",
+            4,
+            5,
+            1
+          ],
+          [
+            "v",
+            2,
+            5,
+            3,
+            {
+              "keys": 1
+            }
+          ]
+        ]
+      },
+      "mapId": "526a2db581ddae1db5eef2543c594b344f1247f2592bc355399de1b3c3797674",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 145,
+        "transitions": 725,
+        "discovered": 167,
+        "totalActions": 18
+      },
+      "count": "2",
+      "actions": [
+        "D",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "U",
+        "U",
+        "R",
+        "D",
+        "R",
+        "L",
+        "D",
+        "D",
+        "R"
+      ],
+      "lower": 2,
+      "east": 0,
+      "case": "continuous-follower-4",
+      "group": "continuous-follower",
+      "size": [
+        5,
+        6
+      ],
+      "nativeQueries": [],
+      "ordinary": {
+        "conclusion": "no_complete_sequential_plan_within_scope",
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 137,
+            "transitions": 682,
+            "discovered": 160,
+            "totalActions": 18
+          },
+          "actions": [
+            "D",
+            "D",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "L",
+            "L",
+            "U",
+            "U",
+            "R",
+            "D",
+            "R",
+            "L",
+            "D",
+            "D",
+            "R"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 1,
+              "lastMove": 7
+            },
+            {
+              "ghost": 1,
+              "firstMove": 2,
+              "lastMove": 12
+            }
+          ]
+        },
+        "queries": [
+          {
+            "kind": "independent_prefix",
+            "ghost": 0,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 7,
+              "transitions": 35,
+              "discovered": 7,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 0,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 3,
+              "transitions": 15,
+              "discovered": 3,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_prefix",
+            "ghost": 1,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 3,
+              "transitions": 15,
+              "discovered": 3,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 1,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 7,
+              "transitions": 35,
+              "discovered": 7,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 7,
+              "transitions": 35,
+              "discovered": 7,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 3,
+              "transitions": 15,
+              "discovered": 3,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          }
+        ],
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        }
+      },
+      "audit": {
+        "count": "2",
+        "cold": true,
+        "noEndSafeRoutes": 2,
+        "physicalAudit": {
+          "reachable": 395,
+          "transitions": 1940,
+          "permutations": 2,
+          "compared": 3880,
+          "includesFatalActions": true
+        },
+        "mapCode": "AADIIOHx8fDAAAGgICEsAWECgQgQGgSoKAAAAoEQWEKSEEF0AAAABA",
+        "actions": [
+          "D",
+          "D",
+          "R",
+          "D",
+          "D",
+          "L",
+          "L",
+          "L",
+          "L",
+          "U",
+          "U",
+          "R",
+          "D",
+          "R",
+          "L",
+          "D",
+          "D",
+          "R"
+        ]
+      }
+    }
+  ]
+}
