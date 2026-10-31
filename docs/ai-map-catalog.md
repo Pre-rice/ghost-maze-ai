@@ -1,5 +1,9 @@
 # AI 地图总目录
 
+## 2026-10-31 · 《门外》替换课程第33关（稳定ID71）
+
+[逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=71) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWM48PDDAwYgYLRsYGE81STQIsoAAkwKmyb4OjCAgQwA) · [完整任务、原小室与范围](../examples/discovery-course-20261023/drafts/reserved-entry-course-20261031/README.md)。11格十字，一鬼、一箭头、钥匙与目标1，11步唯一一类；先为返回入口引动鬼再出门取物，不能等拿钥匙后补准备。改普通门同11步却允许先取钥匙，方向影响计划先后。三种安全错误均无续解，上探可共13步恢复；五项历史、全部最优／去终点／编号／入场及两端完整操作、回放、死亡撤回和旧局保持通过。原50无鬼小室退出流程、原件与原说明保留，仍47关、其余46码与顺序不变。无真人评价、不入正式地图集；初次方向是否更自然仍待审。
+
 2026-10-31课程仅对调《腾位》与《同行》，现39／40；47张地图码及全部地图保持，先单A三鬼换守、再组合A/B与多阶段保护。原质量反馈不变，新顺序仍待人审。[统一说明](../examples/discovery-course-20261023/review-guide.md#level-59) · [两端切关及两旧局刷新保持](../examples/discovery-course-20261023/guard-order-browser-check-20261031.json)。
 
 ## 2026-10-31 · 《合流》替换课程第5关（稳定ID70）
