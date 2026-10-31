@@ -1,5 +1,9 @@
 # AI 地图总目录
 
+## 2026-10-31 · 《合流》替换课程第5关（稳定ID70）
+
+[逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=70) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AADAAAD4-PggIAF5IDAoAACqgqBUFKAAQAAAACCEEIIFAKAAAA) · [来源、完整意图与原短题](../examples/discovery-course-20261023/drafts/early-merging-course-20261030/README.md)。17格双鬼、仅墙与目标，17步两条两类；目标守卫变追者，在交汇时帮玩家挡住另一鬼，再绕回目标。替换原35七步短争位，总数仍47，旧图与说明保留，其余46码／顺序不动。中道两步安全却无续解，左探可19步恢复；14项历史、全部最优／去终点／编号／外侧入场及两端完整操作和回放通过。30日完成物理与页面QA、31日发布，未新增真人评价或入正式地图集；跨度与是否比短题更有趣待人审，不按步数作结论。
+
 ## 2026-10-30 · 课程候选《留门》（稳定ID69，当前第20关）
 
 [逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=69) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWM42NDw4ccHBgbGvQ08DCIsDCvEAs44rWBgYPBgZWgROKPIAAZMAA) · [来源、设计与范围](../examples/discovery-course-20261023/drafts/zero-roles-course-20261030/README.md)。16格一鬼、两0、一钥匙与目标1，24步四原始四类。下0开通、上0暂留保护取物，之后重新引动以接近目标；上0取物后仍可持1打开。19格初稿收上三格后保留全部四类含停顿鬼过程，原件保留。七项历史条件、两普通替代、全部最优、去终点、实际外侧入场与电脑／触屏四条及四类回放通过。新手工图，无真人评价，不入正式地图集；公开47关，原46码及相对顺序保持。必要性和精简不作趣味结论。

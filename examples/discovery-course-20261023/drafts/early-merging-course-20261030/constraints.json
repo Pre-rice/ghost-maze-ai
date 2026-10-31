@@ -1,0 +1,738 @@
+{
+  "mapId": "3d5949eee96fa5f012b0ea6a6c526aa6dacaf9564a19dcaa0de75f9bc7f20927",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "rows": [
+    {
+      "avoidOverlap": false,
+      "name": "no_mutual_influence_or_overlap",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 45,
+        "transitions": 225,
+        "discovered": 45,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "avoidOverlap": false,
+      "name": "never_goal_guard_reaches_upper_row",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 77,
+        "transitions": 385,
+        "discovered": 77,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "avoidOverlap": false,
+      "name": "never_side_guard_moves",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 4,
+        "transitions": 20,
+        "discovered": 4,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "avoidOverlap": false,
+      "name": "goal_guard_first",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 99,
+        "transitions": 495,
+        "discovered": 99,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "avoidOverlap": false,
+      "name": "never_goal_guard_holds_side",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 75,
+        "transitions": 375,
+        "discovered": 75,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "avoidOverlap": false,
+      "name": "goal_guard_never_stops_after_start",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 62,
+        "transitions": 308,
+        "discovered": 65,
+        "totalActions": 17
+      },
+      "actions": [
+        "D",
+        "D",
+        "L",
+        "L",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R",
+        "D"
+      ]
+    },
+    {
+      "avoidOverlap": false,
+      "name": "side_stops_before_goal_guard_starts",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 41,
+        "transitions": 205,
+        "discovered": 41,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "avoidOverlap": true,
+      "name": "no_mutual_influence_or_overlap",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 45,
+        "transitions": 225,
+        "discovered": 45,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "avoidOverlap": true,
+      "name": "never_goal_guard_reaches_upper_row",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 77,
+        "transitions": 385,
+        "discovered": 77,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "avoidOverlap": true,
+      "name": "never_side_guard_moves",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 4,
+        "transitions": 20,
+        "discovered": 4,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "avoidOverlap": true,
+      "name": "goal_guard_first",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 99,
+        "transitions": 495,
+        "discovered": 99,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "avoidOverlap": true,
+      "name": "never_goal_guard_holds_side",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 75,
+        "transitions": 375,
+        "discovered": 75,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "avoidOverlap": true,
+      "name": "goal_guard_never_stops_after_start",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 62,
+        "transitions": 308,
+        "discovered": 65,
+        "totalActions": 17
+      },
+      "actions": [
+        "D",
+        "D",
+        "L",
+        "L",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R",
+        "D"
+      ]
+    },
+    {
+      "avoidOverlap": true,
+      "name": "side_stops_before_goal_guard_starts",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 41,
+        "transitions": 205,
+        "discovered": 41,
+        "totalActions": null
+      },
+      "actions": null
+    }
+  ],
+  "wrongs": [
+    {
+      "prefix": [
+        "L"
+      ],
+      "p": [
+        4,
+        2
+      ],
+      "g": [
+        [
+          3,
+          6
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "fast": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "L"
+        ],
+        "actions": [
+          "R",
+          "D",
+          "D",
+          "L",
+          "L",
+          "R",
+          "R",
+          "U",
+          "U",
+          "L",
+          "L",
+          "L",
+          "L",
+          "D",
+          "D",
+          "R",
+          "R",
+          "D"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "fast_bfs",
+          "expanded": 91,
+          "discovered": 96,
+          "exhausted": false,
+          "elapsedMs": 4.147188999999997,
+          "nodeBudget": 500000,
+          "budgetMs": 20000
+        }
+      },
+      "reference": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "L"
+        ],
+        "actions": [
+          "R",
+          "D",
+          "D",
+          "L",
+          "L",
+          "R",
+          "R",
+          "U",
+          "U",
+          "L",
+          "L",
+          "L",
+          "L",
+          "D",
+          "D",
+          "R",
+          "R",
+          "D"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "reference_bfs",
+          "expanded": 91,
+          "discovered": 96,
+          "exhausted": false,
+          "elapsedMs": 12.88711699999999,
+          "nodeBudget": 500000,
+          "budgetMs": 20000
+        }
+      }
+    },
+    {
+      "prefix": [
+        "D",
+        "L"
+      ],
+      "p": [
+        4,
+        3
+      ],
+      "g": [
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "fast": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "prefix": [
+          "D",
+          "L"
+        ],
+        "actions": null,
+        "optimality": null,
+        "search": {
+          "algorithm": "fast_bfs",
+          "expanded": 46,
+          "discovered": 46,
+          "exhausted": true,
+          "elapsedMs": 0.885154,
+          "nodeBudget": 500000,
+          "budgetMs": 20000
+        }
+      },
+      "reference": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "prefix": [
+          "D",
+          "L"
+        ],
+        "actions": null,
+        "optimality": null,
+        "search": {
+          "algorithm": "reference_bfs",
+          "expanded": 46,
+          "discovered": 46,
+          "exhausted": true,
+          "elapsedMs": 5.114073000000019,
+          "nodeBudget": 500000,
+          "budgetMs": 20000
+        }
+      }
+    },
+    {
+      "prefix": [
+        "D",
+        "D",
+        "L",
+        "L"
+      ],
+      "p": [
+        3,
+        4
+      ],
+      "g": [
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "fast": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "D",
+          "D",
+          "L",
+          "L"
+        ],
+        "actions": [
+          "R",
+          "R",
+          "U",
+          "U",
+          "L",
+          "L",
+          "L",
+          "L",
+          "D",
+          "D",
+          "R",
+          "R",
+          "D"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "fast_bfs",
+          "expanded": 27,
+          "discovered": 30,
+          "exhausted": false,
+          "elapsedMs": 3.103582000000017,
+          "nodeBudget": 500000,
+          "budgetMs": 20000
+        }
+      },
+      "reference": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "D",
+          "D",
+          "L",
+          "L"
+        ],
+        "actions": [
+          "R",
+          "R",
+          "U",
+          "U",
+          "L",
+          "L",
+          "L",
+          "L",
+          "D",
+          "D",
+          "R",
+          "R",
+          "D"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "reference_bfs",
+          "expanded": 27,
+          "discovered": 30,
+          "exhausted": false,
+          "elapsedMs": 2.317754000000008,
+          "nodeBudget": 500000,
+          "budgetMs": 20000
+        }
+      }
+    }
+  ],
+  "economy": [
+    {
+      "cell": [
+        1,
+        2
+      ],
+      "mapId": "b47a1000f628f069130756afad320c03279769609c149e230f89e2f8cd1f0143",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 44,
+        "transitions": 220,
+        "discovered": 44,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "cell": [
+        2,
+        2
+      ],
+      "mapId": "65e943c23d0640176b596318189389f2684f5cb780474aacdcd7c15f7d937177",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 41,
+        "transitions": 205,
+        "discovered": 41,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "cell": [
+        3,
+        2
+      ],
+      "mapId": "f81c655e41251498af1126a92399434f2fc86c7e83a49219201bd77949017e9f",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 38,
+        "transitions": 190,
+        "discovered": 38,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "cell": [
+        4,
+        2
+      ],
+      "mapId": "efd2d8a60bd96e5af03518431f7e1ccc692ead01b353c499be57385cc4d9a1cd",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 35,
+        "transitions": 175,
+        "discovered": 35,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "cell": [
+        2,
+        3
+      ],
+      "mapId": "f6ec813e3122377b2461876183ebf870ed7f862ab59831f5ecd4af34d31625e0",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 20,
+        "transitions": 100,
+        "discovered": 20,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "cell": [
+        3,
+        3
+      ],
+      "mapId": "ded948b7f95a0e4b963250486c5a6a1c357f0acd5b77e101821274c0eb0037ee",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 18,
+        "transitions": 90,
+        "discovered": 18,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "cell": [
+        4,
+        3
+      ],
+      "mapId": "f77626324dc617ed48a5f534535dde75e2aea0a5a351b777ae2aeacb8abf3985",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 16,
+        "transitions": 80,
+        "discovered": 16,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "cell": [
+        5,
+        3
+      ],
+      "mapId": "40a9b74c02bc40ea8ded246458e7f00d29d6fb894f6a1a10120ae71a09b57681",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 4,
+        "transitions": 20,
+        "discovered": 4,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "cell": [
+        1,
+        4
+      ],
+      "mapId": "5fdaaa2fc81eba85f119f83999e8fc6ddc74bb5a926ed819cfb85a31382463dd",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 47,
+        "transitions": 235,
+        "discovered": 47,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "cell": [
+        2,
+        4
+      ],
+      "mapId": "76b82ac3b99abe4a7ebebd60c34920c0e878f3b509d888321120bb53366db869",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 47,
+        "transitions": 235,
+        "discovered": 47,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "cell": [
+        3,
+        4
+      ],
+      "mapId": "6dc9f990743eb1e8c342f2ad9c7b706fe2046253f341b636bf07dc6643ec661d",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 36,
+        "transitions": 180,
+        "discovered": 36,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "cell": [
+        4,
+        4
+      ],
+      "mapId": "dfa85250a8f1a0d91ca151736c2562011770e54b58c70554356c210839cc98fe",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 35,
+        "transitions": 175,
+        "discovered": 35,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "cell": [
+        5,
+        4
+      ],
+      "mapId": "6233db5c1fba352baae2da3d25d0794d06c1d745ee1959f672ea922cff9b8a2c",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 34,
+        "transitions": 170,
+        "discovered": 34,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    }
+  ],
+  "entry": {
+    "external": [
+      0,
+      5,
+      1
+    ],
+    "actions": [
+      "D"
+    ],
+    "externalCells": [
+      [
+        5,
+        1
+      ]
+    ],
+    "internal": [
+      0,
+      5,
+      2
+    ],
+    "keys": 0,
+    "externalGhosts": 0,
+    "actualExternalStartOutsideEnvelope": true,
+    "exteriorSealedExceptEntrance": true,
+    "initialInteriorEqual": true,
+    "afterGhosts": [
+      [
+        [
+          3,
+          6
+        ],
+        [
+          1,
+          3
+        ]
+      ]
+    ],
+    "wholeOptimalRoutesInteriorEqual": true,
+    "allInternalSuccessorsEqual": {
+      "states": 101,
+      "transitions": 495,
+      "includesFatalActions": true
+    },
+    "noEndSafeRoutes": 2,
+    "scope": "只声明所列外侧路径、零钥匙与无外部鬼；不声称任意外部局面均适用"
+  }
+}
