@@ -6,7 +6,7 @@
 
 <details><summary>31步参考回放（含解法）</summary>
 
-[同页回放](https://ghostmaze.novic.cc/?map=AWN4wcHBf_gAAwMD4wEmBg0GplXaJ0QdGBgYWBkWCP5oEmAAASYmpvZmZgYGLgdGhgQWBoYmhw4GEbASUcfyCSosDSDdExsA&replay=djf0HXiJsDQR_R8MEYEA)。参考仅最优之一；工程证书不是真人记录。
+[同页回放](https://ghostmaze.novic.cc/?map=AWN4wcHBf_gAAwMD4wEmBg0GplXaJ0QdGBgYWBkWCP5oEmAAASYmpvZmZgYGLgdGhgQWBoYmhw4GEbASUcfyCSosDSDdExsA&replay=djf0HXiJsDQR_R8MEYEA)。这是当前唯一最优的工程证书，不是真人记录。
 
 </details>
 

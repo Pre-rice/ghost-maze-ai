@@ -1,0 +1,360 @@
+[
+  {
+    "name": "original",
+    "mapId": "cb50ddc80674a8599bbac8d1f8d62b3b84758f11dbd08b039b22bbdbada3ab39",
+    "queries": [
+      {
+        "name": "never_ghost_moves_on_button",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 108,
+          "transitions": 540,
+          "discovered": 108,
+          "totalActions": null
+        },
+        "actions": null
+      },
+      {
+        "name": "never_any_ghost_enters_perimeter",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 550,
+          "transitions": 2750,
+          "discovered": 550,
+          "totalActions": null
+        },
+        "actions": null
+      }
+    ],
+    "firstButton": {
+      "dead": false,
+      "p": [
+        0,
+        3
+      ],
+      "g": [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "continuation": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "prefix": [
+          "L"
+        ],
+        "actions": null,
+        "optimality": null,
+        "search": {
+          "algorithm": "fast_bfs",
+          "expanded": 55,
+          "discovered": 55,
+          "exhausted": true,
+          "elapsedMs": 2.069028000000003,
+          "nodeBudget": 1000000,
+          "budgetMs": 30000
+        }
+      }
+    },
+    "controls": [
+      {
+        "step": 26,
+        "a": "U",
+        "p": [
+          5,
+          3
+        ],
+        "g": [
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "moved": [
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "step": 40,
+        "a": "L",
+        "p": [
+          0,
+          3
+        ],
+        "g": [
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "moved": [
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "step": 53,
+        "a": "L",
+        "p": [
+          0,
+          3
+        ],
+        "g": [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "moved": [
+          false,
+          false,
+          false
+        ]
+      }
+    ]
+  },
+  {
+    "name": "west",
+    "mapId": "a1514f8ad1a00a3ac34045cbb7fe8c89eca995840a45bbd6960741c8f84f980b",
+    "queries": [
+      {
+        "name": "never_ghost_moves_on_button",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 97,
+          "transitions": 485,
+          "discovered": 97,
+          "totalActions": null
+        },
+        "actions": null
+      },
+      {
+        "name": "never_any_ghost_enters_perimeter",
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 641,
+          "transitions": 3203,
+          "discovered": 665,
+          "totalActions": 71
+        },
+        "actions": [
+          "U",
+          "U",
+          "U",
+          "R",
+          "R",
+          "L",
+          "L",
+          "D",
+          "D",
+          "D",
+          "D",
+          "D",
+          "D",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "U",
+          "U",
+          "U",
+          "L",
+          "U",
+          "R",
+          "U",
+          "U",
+          "U",
+          "L",
+          "L",
+          "L",
+          "L",
+          "L",
+          "D",
+          "D",
+          "D",
+          "L",
+          "U",
+          "U",
+          "U",
+          "R",
+          "R",
+          "L",
+          "L",
+          "D",
+          "D",
+          "D",
+          "L",
+          "R",
+          "D",
+          "R",
+          "L",
+          "U",
+          "R",
+          "D",
+          "L",
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "D",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "U",
+          "U",
+          "U",
+          "L",
+          "D"
+        ]
+      }
+    ],
+    "firstButton": {
+      "dead": true,
+      "p": [
+        0,
+        3
+      ],
+      "g": [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    "controls": [
+      {
+        "step": 23,
+        "a": "U",
+        "p": [
+          4,
+          3
+        ],
+        "g": [
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "moved": [
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "step": 36,
+        "a": "L",
+        "p": [
+          0,
+          3
+        ],
+        "g": [
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "moved": [
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "step": 47,
+        "a": "L",
+        "p": [
+          0,
+          3
+        ],
+        "g": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "moved": [
+          false,
+          false,
+          false
+        ]
+      }
+    ]
+  }
+]
