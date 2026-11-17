@@ -1,5 +1,15 @@
 # AI 地图总目录
 
+## 2026-11-17 · 第14关《两面》重构首次资源（稳定ID77）
+
+[逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=77) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWM42Pjw4QMGBgbG6AYWhhBGh8MKjCEMQCDElNQk4MQAAowA) · [原件、判断变化与范围](../examples/discovery-course-20261023/drafts/first-key-parking-course-20261117/README.md)。参照未评价借角63去右守卫、重设目标，主动取消原双鬼先后准备；14格、一鬼、两普通门、钥匙与1，无字母。六条14步分四类计时鬼过程，有先外停再取物、先取物再内停两种设计思路；原唯一右停假设被同长反例推翻，未强封另一完整方案。13格稿会使其中一类多绕两步，未选；单鬼14格目标叶室旋转保全部115态560后继映射，不扩大为原双鬼等价。全部最优／去终点／编号／码、外侧入场、两端六条操作及四类60帧回放通过。开局可先安全试1门，18步恢复；原双鬼也有30步先探见证，不说它不许探索。旧63四件与说明、其余48码及相对顺序保持，Site121公开49关；原生成功后未访问部署重复检查。是否过浅、两门是否过于明显仍待未知规则真人，不入正式地图集、不转移好评。
+
+<details><summary>两种同14步策略参考（含解法）</summary>
+
+[先外停再取物](https://ghostmaze.novic.cc/?map=AWM42Pjw4QMGBgbG6AYWhhBGh8MKjCEMQCDElNQk4MQAAowA&replay=EFsVI9gvIV8A) · [先取物再内停](https://ghostmaze.novic.cc/?map=AWM42Pjw4QMGBgbG6AYWhhBGh8MKjCEMQCDElNQk4MQAAowA&replay=EFsVI9gtgN3A)。均为规划证书；设计策略两种、计时鬼类四种，不混为同一统计，不是真人过程。
+
+</details>
+
 ## 2026-11-17 · 第7关《远门》普通门移位（稳定ID37 v03）
 
 [逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=37) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWM4CAQMQMA4o8GIoUGLiZFhgQMDEOgpxBzhcljAAAYKAA) · [原件、反例及范围](../examples/discovery-course-20261023/drafts/first-letter-door-relocation-course-20261117/README.md)。十格、一鬼、一个A按钮、两反相A与一普通门；普通门移到控制室右侧、旧下口封墙，鬼停位改变，原19步收15步唯一。保留临时关闭近路、从远口引鬼、借普通门回来恢复近路的完整问题；不称旧解逐帧或全部探索等价。两份只看最优似乎可用的对照都有20步一次A绕过，已拒绝；最终四完整条件均无解。全部最优／去终点／编号／码／右外24态115后继及两端完整操作、16帧回放通过，旧v02两端可继续第2步，主动刷新才加载新码；原v02四件原样归档，v01保持，其余48码、49关顺序不变，Site120已公开。原生成功后未访问部署重复检查；趣味、理解和跨度仍待未知规则真人，不入正式地图集。
