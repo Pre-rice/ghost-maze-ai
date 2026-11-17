@@ -1,5 +1,15 @@
 # AI 地图总目录
 
+## 2026-11-17 · 第37关《闭环》替换纯机关稿（稳定ID76）
+
+[逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=76) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWM4-PHjBwEGBgZGFQc7lgRrXodVTWe4mlY3KIDENLnnBOy4xOjAAAJOPAIKAA) · [设计、原件与范围](../examples/discovery-course-20261023/drafts/self-closure-return-course-20261117/README.md)。参照未评价归还60的空间重构16格无鬼任务，三字母改A/B、钥匙与1、一左向口，18步唯一；不是旧图等价精简，也不说总元件减少。B必须在过口前恢复，A却须进入后从内侧恢复，主动封住回头路以开放目标。八项完整历史六无解，先物后A22步、外侧误恢复A26步仍可补救；普通替代同18步但允许过口后补还B。全部最优／去终点／码、外侧99态490后继及两端完整操作、19帧回放通过，四幅画面已检视；无鬼死亡与编号不适用。旧60四件、原说明、其余48码和相对顺序保持，Site119公开49关，原生成功后未访问部署重复核验。真人趣味、跨度与学习待审，不入正式地图集、不转移亲缘好评。
+
+<details><summary>18步参考回放（含解法）</summary>
+
+[同页回放](https://ghostmaze.novic.cc/?map=AWM4-PHjBwEGBgZGFQc7lgRrXodVTWe4mlY3KIDENLnnBOy4xOjAAAJOPAIKAA&replay=EBr_EqKNdOqjwA)。规划证书，不是真人或AI试玩过程。
+
+</details>
+
 ## 2026-11-17 · 第25关《伴归》替换课程研究稿（稳定ID75）
 
 [逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=75) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AADIgODg-Dg4AAECICOMBE4gHUAANQpAICoAABQCIEQIIFUCIAAAAg) · [设计、原件与证据](../examples/discovery-course-20261023/drafts/escort-return-course-20261117/README.md)。新手画18格斜接双室，两鬼两钥匙、一普通门及目标2，无A／0／箭头／楼梯，26步四原始路线、两类。先前留下的旧鬼会在回程再追来，新追者需要带回来保护自己；仍与再借概念亲缘，不继承好评。原20格删除无必要0及下侧两格；以更少元件和执行替换未评价的29格44步携影，但不是旧图等价精简。旧61四件与原说明保留，其余48码和相对顺序保持，Site118公开49关。十项完整历史、全部最优／去终点／编号／码、外侧194态965后继、两端完整操作和两类54帧回放通过；原生成功后未访问部署重复检查。没有真人质量、学习或AI感受，不入正式地图集。
