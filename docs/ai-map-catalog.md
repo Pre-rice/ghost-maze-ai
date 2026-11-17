@@ -1,5 +1,15 @@
 # AI 地图总目录
 
+## 2026-11-17 · 第48关《迁居》替换课程研究稿（稳定ID74）
+
+[逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=74) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWN4wMDAfvwAAwMDswMPA0Oog2MoAxgwcfgIgBkc_AfAVIMEK4ODcahoCEReg4UDwuAQWAAA) · [完整任务与原件](../examples/discovery-course-20261023/drafts/exchanged-floors-course-20261117/README.md)。新手画17格，双层双鬼、两对楼梯、普通门、钥匙与目标1，15步唯一一类。先到右上取物再回左上目标，须暂留下鬼、把上鬼带下，最后下鬼追到上层，两只实际交换楼层。无资源原稿可19步逐只完成，加入完整取物目标后才排除，最佳15步未变。14项完整历史、全部最优／去终点／编号／码／外侧108态535后继及两端完整操作与16帧回放通过。旧58《同室两用》的地图、证据、码和原说明保留，其余48码及相对顺序保持，当前公开49关。未知规则真人体验仍待审，不入正式地图集、不转移亲缘好评。
+
+<details><summary>15步参考回放（含解法）</summary>
+
+[同页回放](https://ghostmaze.novic.cc/?map=AWN4wMDAfvwAAwMDswMPA0Oog2MoAxgwcfgIgBkc_AfAVIMEK4ODcahoCEReg4UDwuAQWAAA&replay=UmUmgj4veStngA)。规划证书，不是真人过程。
+
+</details>
+
 ## 2026-11-17 · 课程第27关《先后》（稳定ID73）
 
 [逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=73) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWM4wFBR8eMHAwNjZoJGCqs6g6gDE6OH1gIGIHDiUuQSc2EAAgUA) · [设计与重建范围](../examples/discovery-course-20261023/drafts/two-retrievals-course-20261117/README.md)。由未评价课程49《借途》重构，18格、双鬼、双钥匙目标2，22步两原始走法按含停顿鬼轨迹合一类。拿齐两把仍可能无出口，先交换两鬼先后，再接近第二资源以留下退出位。全部最优／去终点／编号／码／真实外侧181态900后继及两端完整操作、恢复、死亡撤回与23帧回放通过。五项完整历史在允许／排除非最优重合两范围均无解；不是趣味证明。原48码与相对顺序保持，49只补工作名、未改图，当前公开49关。没有真人反馈、不入正式地图集、不继承亲缘好评；临时原件缺失，本次按记录重建后重新验证。
