@@ -1,5 +1,15 @@
 # AI 地图总目录
 
+## 2026-11-17 · 第7关《远门》普通门移位（稳定ID37 v03）
+
+[逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=37) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWM4CAQMQMA4o8GIoUGLiZFhgQMDEOgpxBzhcljAAAYKAA) · [原件、反例及范围](../examples/discovery-course-20261023/drafts/first-letter-door-relocation-course-20261117/README.md)。十格、一鬼、一个A按钮、两反相A与一普通门；普通门移到控制室右侧、旧下口封墙，鬼停位改变，原19步收15步唯一。保留临时关闭近路、从远口引鬼、借普通门回来恢复近路的完整问题；不称旧解逐帧或全部探索等价。两份只看最优似乎可用的对照都有20步一次A绕过，已拒绝；最终四完整条件均无解。全部最优／去终点／编号／码／右外24态115后继及两端完整操作、16帧回放通过，旧v02两端可继续第2步，主动刷新才加载新码；原v02四件原样归档，v01保持，其余48码、49关顺序不变，Site120已公开。原生成功后未访问部署重复检查；趣味、理解和跨度仍待未知规则真人，不入正式地图集。
+
+<details><summary>15步参考回放（含解法）</summary>
+
+[同页回放](https://ghostmaze.novic.cc/?map=AWM4CAQMQMA4o8GIoUGLiZFhgQMDEOgpxBzhcljAAAYKAA&replay=CNCCI50jK9iU)。设计与规划证书，不是真人或AI盲试玩过程。
+
+</details>
+
 ## 2026-11-17 · 第37关《闭环》替换纯机关稿（稳定ID76）
 
 [逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=76) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWM4-PHjBwEGBgZGFQc7lgRrXodVTWe4mlY3KIDENLnnBOy4xOjAAAJOPAIKAA) · [设计、原件与范围](../examples/discovery-course-20261023/drafts/self-closure-return-course-20261117/README.md)。参照未评价归还60的空间重构16格无鬼任务，三字母改A/B、钥匙与1、一左向口，18步唯一；不是旧图等价精简，也不说总元件减少。B必须在过口前恢复，A却须进入后从内侧恢复，主动封住回头路以开放目标。八项完整历史六无解，先物后A22步、外侧误恢复A26步仍可补救；普通替代同18步但允许过口后补还B。全部最优／去终点／码、外侧99态490后继及两端完整操作、19帧回放通过，四幅画面已检视；无鬼死亡与编号不适用。旧60四件、原说明、其余48码和相对顺序保持，Site119公开49关，原生成功后未访问部署重复核验。真人趣味、跨度与学习待审，不入正式地图集、不转移亲缘好评。
