@@ -1,5 +1,15 @@
 # AI 地图总目录
 
+## 2026-11-17 · 课程第27关《先后》（稳定ID73）
+
+[逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=73) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWM4wFBR8eMHAwNjZoJGCqs6g6gDE6OH1gIGIHDiUuQSc2EAAgUA) · [设计与重建范围](../examples/discovery-course-20261023/drafts/two-retrievals-course-20261117/README.md)。由未评价课程49《借途》重构，18格、双鬼、双钥匙目标2，22步两原始走法按含停顿鬼轨迹合一类。拿齐两把仍可能无出口，先交换两鬼先后，再接近第二资源以留下退出位。全部最优／去终点／编号／码／真实外侧181态900后继及两端完整操作、恢复、死亡撤回与23帧回放通过。五项完整历史在允许／排除非最优重合两范围均无解；不是趣味证明。原48码与相对顺序保持，49只补工作名、未改图，当前公开49关。没有真人反馈、不入正式地图集、不继承亲缘好评；临时原件缺失，本次按记录重建后重新验证。
+
+<details><summary>22步参考回放（含解法）</summary>
+
+[同页回放](https://ghostmaze.novic.cc/?map=AWM4wFBR8eMHAwNjZoJGCqs6g6gDE6OH1gIGIHDiUuQSc2EAAgUA&replay=EBXj7Sk-daMiXaA)。规划证书，不是真人过程。
+
+</details>
+
 ## 2026-10-31 · 课程第48关《留层》（稳定ID72）
 
 [逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=72) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWN4wcHBf_gAAwMD4wEmBg0GplXaJ0QdGBgYWBkWCP5oEmAAASYmpvZmZgYGLgdGhgQWBoYmhw4GEbASUcfyCSosDSDdExsA) · [构造与证据范围](../examples/discovery-course-20261023/drafts/stair-relay-course-20261031/README.md)。新手画24格双层、双鬼、一A与两箭头，31步唯一一类；最佳两次跨层互挡、两鬼各留原层，先隔开的上鬼仍须召回。召回本身必要，时机与双向互挡只对最优必要；35步晚召回与37步无实际影响方案均保留。全部最优／去终点／编号／码／实际外侧入场及两端完整操作、恢复、死亡撤回与32帧回放通过；旧47码与顺序不变，公开48关。未知规则真人质量与跨度待审，不入正式地图集，不转移亲缘好评。
