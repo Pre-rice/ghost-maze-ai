@@ -1,0 +1,277 @@
+{
+  "createdOn": "2026-11-17",
+  "humanQuality": null,
+  "scope": "七份明确手画修订，不作任意位置生成；全部最优重合和全部去终点分别记录。干净方案查询不允许非死亡重合，到达另查不以终点掩盖死亡。没有发布证书或真人体验。",
+  "rows": [
+    {
+      "name": "prototype",
+      "mapId": "97b1cdc3de397e22789aa6c4c3fb99571c20bb680dc175ed5af5f0f9f27200e1",
+      "cells": 16,
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 135,
+        "transitions": 675,
+        "discovered": 165,
+        "totalActions": 10
+      },
+      "count": "2",
+      "boundary": "safe",
+      "cleanResult": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 104,
+        "transitions": 517,
+        "discovered": 120,
+        "totalActions": 10
+      },
+      "cleanActions": [
+        "R",
+        "R",
+        "STAIR",
+        "D",
+        "L",
+        "U",
+        "R",
+        "STAIR",
+        "U",
+        "R"
+      ],
+      "noEndSafeRoutes": 2
+    },
+    {
+      "name": "goal-return",
+      "mapId": "c3556cacdf9688d14a271bd88db12a3ad2756bf5246cac429c367afb851db679",
+      "cells": 16,
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 194,
+        "transitions": 970,
+        "discovered": 201,
+        "totalActions": 13
+      },
+      "count": "1",
+      "boundary": "conflict",
+      "cleanResult": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 140,
+        "transitions": 696,
+        "discovered": 141,
+        "totalActions": 17
+      },
+      "cleanActions": [
+        "R",
+        "R",
+        "STAIR",
+        "D",
+        "L",
+        "U",
+        "R",
+        "U",
+        "L",
+        "STAIR",
+        "R",
+        "D",
+        "L",
+        "L",
+        "U",
+        "L",
+        "U"
+      ],
+      "noEndSafeRoutes": 1
+    },
+    {
+      "name": "return-bay",
+      "mapId": "aa94821f89f0add46bd2798cf93688bc278db3efedd1f4bf4a6c30bfdb5ffb64",
+      "cells": 18,
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 198,
+        "transitions": 990,
+        "discovered": 204,
+        "totalActions": 15
+      },
+      "count": "6",
+      "boundary": "conflict",
+      "cleanResult": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 166,
+        "transitions": 826,
+        "discovered": 167,
+        "totalActions": 17
+      },
+      "cleanActions": [
+        "R",
+        "R",
+        "STAIR",
+        "D",
+        "L",
+        "R",
+        "U",
+        "STAIR",
+        "R",
+        "U",
+        "L",
+        "D",
+        "L",
+        "L",
+        "U",
+        "L",
+        "U"
+      ],
+      "noEndSafeRoutes": 6
+    },
+    {
+      "name": "guarded-key",
+      "mapId": "f8df4f67350abcd1bf3f688f00bcb16ab888eed7112fa510d2f315dcb379f4e8",
+      "cells": 18,
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 229,
+        "transitions": 1145,
+        "discovered": 240,
+        "totalActions": 19
+      },
+      "count": "3",
+      "boundary": "safe",
+      "cleanResult": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 184,
+        "transitions": 916,
+        "discovered": 185,
+        "totalActions": 19
+      },
+      "cleanActions": [
+        "R",
+        "R",
+        "STAIR",
+        "D",
+        "L",
+        "U",
+        "D",
+        "R",
+        "U",
+        "L",
+        "U",
+        "U",
+        "D",
+        "STAIR",
+        "D",
+        "L",
+        "U",
+        "L",
+        "U"
+      ],
+      "noEndSafeRoutes": 3,
+      "noActualInfluence": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 181,
+        "transitions": 901,
+        "discovered": 182,
+        "totalActions": 19
+      },
+      "noActualActions": [
+        "R",
+        "R",
+        "STAIR",
+        "D",
+        "L",
+        "U",
+        "D",
+        "R",
+        "U",
+        "L",
+        "U",
+        "U",
+        "D",
+        "STAIR",
+        "D",
+        "L",
+        "U",
+        "L",
+        "U"
+      ]
+    },
+    {
+      "name": "without-door",
+      "mapId": "0ee1bd610ca66caa4730ea8900f94b001f4295bdb5d26cc1df30df138d591fc9",
+      "cells": 18,
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 165,
+        "transitions": 825,
+        "discovered": 165,
+        "totalActions": null
+      },
+      "count": "0",
+      "cleanResult": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 127,
+        "transitions": 635,
+        "discovered": 127,
+        "totalActions": null
+      },
+      "cleanActions": null,
+      "noEndSafeRoutes": 0
+    },
+    {
+      "name": "lower-door",
+      "mapId": "4d825285604dc620aae31aea0362830fb1e21fceb4bc962cfdc5b9ff32abe15a",
+      "cells": 18,
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 226,
+        "transitions": 1130,
+        "discovered": 228,
+        "totalActions": 19
+      },
+      "count": "1",
+      "boundary": "conflict",
+      "cleanResult": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 157,
+        "transitions": 785,
+        "discovered": 157,
+        "totalActions": null
+      },
+      "cleanActions": null,
+      "noEndSafeRoutes": 1
+    },
+    {
+      "name": "split-return",
+      "mapId": "6d596112d52e8a9518da916a9eb21886e00fcf5d65ab66b52a56a8ac3c6589a6",
+      "cells": 18,
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 207,
+        "transitions": 1035,
+        "discovered": 210,
+        "totalActions": 21
+      },
+      "count": "1",
+      "boundary": "conflict",
+      "cleanResult": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 141,
+        "transitions": 705,
+        "discovered": 141,
+        "totalActions": null
+      },
+      "cleanActions": null,
+      "noEndSafeRoutes": 1
+    }
+  ]
+}
