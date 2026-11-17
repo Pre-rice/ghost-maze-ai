@@ -1,0 +1,2397 @@
+{
+  "createdOn": "2026-11-17",
+  "humanQuality": null,
+  "scope": "三种明示目标／返回口设计；边界政策与去终点分开，不因为新元件出现而判采用",
+  "cases": [
+    {
+      "name": "center_open_return",
+      "mapId": "265cb321eddc7582357ca8fcd4b4a46ab763ca89e419f1e199e26a285991c012",
+      "mapCode": "AWM4wPDhw4cCBgbGmIZGBq4FDgpqDisYgECgKUTQoYMBBAA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 51,
+        "transitions": 255,
+        "discovered": 57,
+        "totalActions": 10
+      },
+      "count": "1",
+      "actions": [
+        "U",
+        "L",
+        "R",
+        "D",
+        "R",
+        "U",
+        "L",
+        "L",
+        "U",
+        "R"
+      ],
+      "boundary": {
+        "status": "conflict",
+        "reason": "optimal_solution_uses_overlap",
+        "mapId": "265cb321eddc7582357ca8fcd4b4a46ab763ca89e419f1e199e26a285991c012",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 51,
+        "transitions": 252,
+        "discovered": 56,
+        "optimum": 10,
+        "ignoredFatalOverlap": 4,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "U",
+            "L",
+            "R",
+            "D",
+            "R",
+            "U",
+            "L"
+          ],
+          "conflict": {
+            "target": {
+              "x": 3,
+              "y": 3
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 3,
+                  "y": 4
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 3,
+                  "y": 2
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 0
+          }
+        },
+        "safeOptimalWitness": null,
+        "elapsedMs": 7,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除",
+        "witness": [
+          "U",
+          "L",
+          "R",
+          "D",
+          "R",
+          "U",
+          "L",
+          "L",
+          "U",
+          "R"
+        ]
+      },
+      "noEnd": [
+        {
+          "actions": [
+            "U",
+            "L",
+            "R",
+            "D",
+            "R",
+            "U",
+            "L",
+            "L",
+            "U",
+            "R"
+          ],
+          "safe": true,
+          "fatalAt": null
+        }
+      ],
+      "noActualInfluence": {
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 40,
+          "transitions": 200,
+          "discovered": 40,
+          "totalActions": null
+        },
+        "actions": null
+      },
+      "ordinary": {
+        "analysisVersion": "ordinary-plans-v1",
+        "mapId": "265cb321eddc7582357ca8fcd4b4a46ab763ca89e419f1e199e26a285991c012",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "ghosts": [
+          {
+            "index": 0,
+            "initialPosition": [
+              1,
+              1
+            ]
+          },
+          {
+            "index": 1,
+            "initialPosition": [
+              3,
+              1
+            ]
+          }
+        ],
+        "budget": {
+          "nodeBudget": 400000,
+          "stateBudget": 400000,
+          "budgetMs": 20000,
+          "totalBudgetMs": 40000,
+          "orderBudget": 24,
+          "avoidOverlap": true
+        },
+        "scope": {
+          "singleLayerOnly": true,
+          "noDamageOrRevival": true,
+          "avoidOverlap": true,
+          "arrivalDeathCheckedWithoutGoal": true,
+          "movement": "按本体实际记录计鬼移动；终局动作另查去终点死亡，不把该反事实当实际轨迹",
+          "handoff": "一方末次与另一方首次移动允许同一动作；不要求所有鬼必须移动",
+          "history": "处理阶段进入完整状态键；本体参考键保留同层鬼数组位置",
+          "optimality": "只比较本报告明确限制范围内的最短步数，不能替代正式全部最优验收"
+        },
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 55,
+            "transitions": 272,
+            "discovered": 57,
+            "totalActions": 14
+          },
+          "actions": [
+            "U",
+            "L",
+            "R",
+            "R",
+            "D",
+            "R",
+            "U",
+            "U",
+            "U",
+            "L",
+            "L",
+            "L",
+            "D",
+            "R"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 2,
+              "lastMove": 4
+            },
+            {
+              "ghost": 1,
+              "firstMove": 4,
+              "lastMove": 13
+            }
+          ]
+        },
+        "queries": [
+          {
+            "kind": "independent_prefix",
+            "ghost": 0,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 45,
+              "transitions": 222,
+              "discovered": 46,
+              "totalActions": 14
+            },
+            "actions": [
+              "U",
+              "L",
+              "R",
+              "R",
+              "D",
+              "R",
+              "U",
+              "U",
+              "U",
+              "L",
+              "L",
+              "L",
+              "D",
+              "R"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 2,
+                "lastMove": 4
+              },
+              {
+                "ghost": 1,
+                "firstMove": 4,
+                "lastMove": 13
+              }
+            ],
+            "sameBaselineLength": true
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 0,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 42,
+              "transitions": 210,
+              "discovered": 42,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_prefix",
+            "ghost": 1,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 42,
+              "transitions": 210,
+              "discovered": 42,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 1,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 45,
+              "transitions": 222,
+              "discovered": 46,
+              "totalActions": 14
+            },
+            "actions": [
+              "U",
+              "L",
+              "R",
+              "R",
+              "D",
+              "R",
+              "U",
+              "U",
+              "U",
+              "L",
+              "L",
+              "L",
+              "D",
+              "R"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 2,
+                "lastMove": 4
+              },
+              {
+                "ghost": 1,
+                "firstMove": 4,
+                "lastMove": 13
+              }
+            ],
+            "sameBaselineLength": true
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 45,
+              "transitions": 222,
+              "discovered": 46,
+              "totalActions": 14
+            },
+            "actions": [
+              "U",
+              "L",
+              "R",
+              "R",
+              "D",
+              "R",
+              "U",
+              "U",
+              "U",
+              "L",
+              "L",
+              "L",
+              "D",
+              "R"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 2,
+                "lastMove": 4
+              },
+              {
+                "ghost": 1,
+                "firstMove": 4,
+                "lastMove": 13
+              }
+            ],
+            "sameBaselineLength": true
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 42,
+              "transitions": 210,
+              "discovered": 42,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          }
+        ],
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        },
+        "conclusion": "complete_sequential_witness_found",
+        "humanQualityScore": null,
+        "interpretation": "有普通替代只给出具体证书；没有普通替代也不证明新意、难度或尤里卡。",
+        "elapsedMs": 55.39990800000001
+      },
+      "trace": [
+        {
+          "step": 1,
+          "action": "U",
+          "p": [
+            2,
+            3
+          ],
+          "g": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 2,
+          "action": "L",
+          "p": [
+            1,
+            3
+          ],
+          "g": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 3,
+          "action": "R",
+          "p": [
+            2,
+            3
+          ],
+          "g": [
+            [
+              1,
+              3
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 4,
+          "action": "D",
+          "p": [
+            2,
+            4
+          ],
+          "g": [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 5,
+          "action": "R",
+          "p": [
+            3,
+            4
+          ],
+          "g": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 6,
+          "action": "U",
+          "p": [
+            3,
+            3
+          ],
+          "g": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 7,
+          "action": "L",
+          "p": [
+            2,
+            3
+          ],
+          "g": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "influence": {
+            "kind": "overlap",
+            "layer": 0,
+            "at": [
+              3,
+              3
+            ],
+            "changes": []
+          }
+        },
+        {
+          "step": 8,
+          "action": "L",
+          "p": [
+            1,
+            3
+          ],
+          "g": [
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "influence": {
+            "kind": "overlap",
+            "layer": 0,
+            "at": [
+              2,
+              3
+            ],
+            "changes": []
+          }
+        },
+        {
+          "step": 9,
+          "action": "U",
+          "p": [
+            1,
+            2
+          ],
+          "g": [
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "influence": {
+            "kind": "overlap",
+            "layer": 0,
+            "at": [
+              1,
+              3
+            ],
+            "changes": []
+          }
+        },
+        {
+          "step": 10,
+          "action": "R",
+          "p": [
+            2,
+            2
+          ],
+          "g": [
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "influence": {
+            "kind": "overlap",
+            "layer": 0,
+            "at": [
+              1,
+              3
+            ],
+            "changes": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "top_open_return",
+      "mapId": "de46659173c775a91548e297c87ce7306a10b166f2bfae30ffb126b8d9aaa148",
+      "mapCode": "AWM4wfDhw4cCBgZGmYZGBq4FDgrqjAEMQKDIGiLo0MEAAgA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 56,
+        "transitions": 280,
+        "discovered": 62,
+        "totalActions": 11
+      },
+      "count": "2",
+      "actions": [
+        "U",
+        "L",
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "U",
+        "L",
+        "L"
+      ],
+      "boundary": {
+        "status": "conflict",
+        "reason": "optimal_solution_uses_overlap",
+        "mapId": "de46659173c775a91548e297c87ce7306a10b166f2bfae30ffb126b8d9aaa148",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 56,
+        "transitions": 277,
+        "discovered": 60,
+        "optimum": 11,
+        "ignoredFatalOverlap": 7,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "U",
+            "L",
+            "R",
+            "D",
+            "R",
+            "U",
+            "L"
+          ],
+          "conflict": {
+            "target": {
+              "x": 3,
+              "y": 3
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 3,
+                  "y": 4
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 3,
+                  "y": 2
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 0
+          }
+        },
+        "safeOptimalWitness": [
+          "U",
+          "L",
+          "R",
+          "R",
+          "D",
+          "R",
+          "U",
+          "U",
+          "U",
+          "L",
+          "L"
+        ],
+        "elapsedMs": 8,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除",
+        "witness": [
+          "U",
+          "L",
+          "R",
+          "D",
+          "R",
+          "U",
+          "L",
+          "L",
+          "U",
+          "U",
+          "R"
+        ]
+      },
+      "noEnd": [
+        {
+          "actions": [
+            "U",
+            "L",
+            "R",
+            "R",
+            "D",
+            "R",
+            "U",
+            "U",
+            "U",
+            "L",
+            "L"
+          ],
+          "safe": true,
+          "fatalAt": null
+        },
+        {
+          "actions": [
+            "U",
+            "L",
+            "R",
+            "D",
+            "R",
+            "U",
+            "L",
+            "L",
+            "U",
+            "U",
+            "R"
+          ],
+          "safe": true,
+          "fatalAt": null
+        }
+      ],
+      "noActualInfluence": {
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 40,
+          "transitions": 200,
+          "discovered": 40,
+          "totalActions": null
+        },
+        "actions": null
+      },
+      "ordinary": {
+        "analysisVersion": "ordinary-plans-v1",
+        "mapId": "de46659173c775a91548e297c87ce7306a10b166f2bfae30ffb126b8d9aaa148",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "ghosts": [
+          {
+            "index": 0,
+            "initialPosition": [
+              1,
+              1
+            ]
+          },
+          {
+            "index": 1,
+            "initialPosition": [
+              3,
+              1
+            ]
+          }
+        ],
+        "budget": {
+          "nodeBudget": 400000,
+          "stateBudget": 400000,
+          "budgetMs": 20000,
+          "totalBudgetMs": 40000,
+          "orderBudget": 24,
+          "avoidOverlap": true
+        },
+        "scope": {
+          "singleLayerOnly": true,
+          "noDamageOrRevival": true,
+          "avoidOverlap": true,
+          "arrivalDeathCheckedWithoutGoal": true,
+          "movement": "按本体实际记录计鬼移动；终局动作另查去终点死亡，不把该反事实当实际轨迹",
+          "handoff": "一方末次与另一方首次移动允许同一动作；不要求所有鬼必须移动",
+          "history": "处理阶段进入完整状态键；本体参考键保留同层鬼数组位置",
+          "optimality": "只比较本报告明确限制范围内的最短步数，不能替代正式全部最优验收"
+        },
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 48,
+            "transitions": 239,
+            "discovered": 51,
+            "totalActions": 11
+          },
+          "actions": [
+            "U",
+            "L",
+            "R",
+            "R",
+            "D",
+            "R",
+            "U",
+            "U",
+            "U",
+            "L",
+            "L"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 2,
+              "lastMove": 4
+            },
+            {
+              "ghost": 1,
+              "firstMove": 4,
+              "lastMove": 10
+            }
+          ]
+        },
+        "queries": [
+          {
+            "kind": "independent_prefix",
+            "ghost": 0,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 41,
+              "transitions": 204,
+              "discovered": 43,
+              "totalActions": 11
+            },
+            "actions": [
+              "U",
+              "L",
+              "R",
+              "R",
+              "D",
+              "R",
+              "U",
+              "U",
+              "U",
+              "L",
+              "L"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 2,
+                "lastMove": 4
+              },
+              {
+                "ghost": 1,
+                "firstMove": 4,
+                "lastMove": 10
+              }
+            ],
+            "sameBaselineLength": true
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 0,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 42,
+              "transitions": 210,
+              "discovered": 42,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_prefix",
+            "ghost": 1,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 42,
+              "transitions": 210,
+              "discovered": 42,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 1,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 41,
+              "transitions": 204,
+              "discovered": 43,
+              "totalActions": 11
+            },
+            "actions": [
+              "U",
+              "L",
+              "R",
+              "R",
+              "D",
+              "R",
+              "U",
+              "U",
+              "U",
+              "L",
+              "L"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 2,
+                "lastMove": 4
+              },
+              {
+                "ghost": 1,
+                "firstMove": 4,
+                "lastMove": 10
+              }
+            ],
+            "sameBaselineLength": true
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 41,
+              "transitions": 204,
+              "discovered": 43,
+              "totalActions": 11
+            },
+            "actions": [
+              "U",
+              "L",
+              "R",
+              "R",
+              "D",
+              "R",
+              "U",
+              "U",
+              "U",
+              "L",
+              "L"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 2,
+                "lastMove": 4
+              },
+              {
+                "ghost": 1,
+                "firstMove": 4,
+                "lastMove": 10
+              }
+            ],
+            "sameBaselineLength": true
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 42,
+              "transitions": 210,
+              "discovered": 42,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          }
+        ],
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        },
+        "conclusion": "complete_sequential_witness_found",
+        "humanQualityScore": null,
+        "interpretation": "有普通替代只给出具体证书；没有普通替代也不证明新意、难度或尤里卡。",
+        "elapsedMs": 36.023796000000004
+      },
+      "trace": [
+        {
+          "step": 1,
+          "action": "U",
+          "p": [
+            2,
+            3
+          ],
+          "g": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 2,
+          "action": "L",
+          "p": [
+            1,
+            3
+          ],
+          "g": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 3,
+          "action": "R",
+          "p": [
+            2,
+            3
+          ],
+          "g": [
+            [
+              1,
+              3
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 4,
+          "action": "R",
+          "p": [
+            3,
+            3
+          ],
+          "g": [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 5,
+          "action": "D",
+          "p": [
+            3,
+            4
+          ],
+          "g": [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "influence": {
+            "kind": "motion",
+            "changes": [
+              {
+                "from": [
+                  0,
+                  2,
+                  3
+                ],
+                "actual": [
+                  0,
+                  2,
+                  3
+                ],
+                "alone": [
+                  0,
+                  3,
+                  3
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "step": 6,
+          "action": "R",
+          "p": [
+            4,
+            4
+          ],
+          "g": [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 7,
+          "action": "U",
+          "p": [
+            4,
+            3
+          ],
+          "g": [
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 8,
+          "action": "U",
+          "p": [
+            4,
+            2
+          ],
+          "g": [
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              3
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 9,
+          "action": "U",
+          "p": [
+            4,
+            1
+          ],
+          "g": [
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 10,
+          "action": "L",
+          "p": [
+            3,
+            1
+          ],
+          "g": [
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 11,
+          "action": "L",
+          "p": [
+            2,
+            1
+          ],
+          "g": [
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "top_ordinary_return",
+      "mapId": "d3f708de91a03744b3a3378fddefd16864de435666c85fd692eb3954e22a7ce9",
+      "mapCode": "AWM4wfDhw4cCBgZGmYZGBq4FDgrqjAEMQKDsGMoSoMQAAgA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 62,
+        "transitions": 310,
+        "discovered": 71,
+        "totalActions": 11
+      },
+      "count": "2",
+      "actions": [
+        "U",
+        "L",
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "U",
+        "L",
+        "L"
+      ],
+      "boundary": {
+        "status": "conflict",
+        "reason": "optimal_solution_uses_overlap",
+        "mapId": "d3f708de91a03744b3a3378fddefd16864de435666c85fd692eb3954e22a7ce9",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 62,
+        "transitions": 307,
+        "discovered": 69,
+        "optimum": 11,
+        "ignoredFatalOverlap": 8,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "U",
+            "L",
+            "R",
+            "D",
+            "R",
+            "U",
+            "L"
+          ],
+          "conflict": {
+            "target": {
+              "x": 3,
+              "y": 3
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 3,
+                  "y": 4
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 3,
+                  "y": 2
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 0
+          }
+        },
+        "safeOptimalWitness": [
+          "U",
+          "L",
+          "R",
+          "R",
+          "D",
+          "R",
+          "U",
+          "U",
+          "U",
+          "L",
+          "L"
+        ],
+        "elapsedMs": 4,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除",
+        "witness": [
+          "U",
+          "L",
+          "R",
+          "D",
+          "R",
+          "U",
+          "L",
+          "L",
+          "U",
+          "U",
+          "R"
+        ]
+      },
+      "noEnd": [
+        {
+          "actions": [
+            "U",
+            "L",
+            "R",
+            "R",
+            "D",
+            "R",
+            "U",
+            "U",
+            "U",
+            "L",
+            "L"
+          ],
+          "safe": true,
+          "fatalAt": null
+        },
+        {
+          "actions": [
+            "U",
+            "L",
+            "R",
+            "D",
+            "R",
+            "U",
+            "L",
+            "L",
+            "U",
+            "U",
+            "R"
+          ],
+          "safe": true,
+          "fatalAt": null
+        }
+      ],
+      "noActualInfluence": {
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 61,
+          "transitions": 302,
+          "discovered": 65,
+          "totalActions": 15
+        },
+        "actions": [
+          "U",
+          "R",
+          "D",
+          "R",
+          "U",
+          "U",
+          "U",
+          "L",
+          "D",
+          "D",
+          "L",
+          "L",
+          "U",
+          "U",
+          "R"
+        ]
+      },
+      "ordinary": {
+        "analysisVersion": "ordinary-plans-v1",
+        "mapId": "d3f708de91a03744b3a3378fddefd16864de435666c85fd692eb3954e22a7ce9",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "ghosts": [
+          {
+            "index": 0,
+            "initialPosition": [
+              1,
+              1
+            ]
+          },
+          {
+            "index": 1,
+            "initialPosition": [
+              3,
+              1
+            ]
+          }
+        ],
+        "budget": {
+          "nodeBudget": 400000,
+          "stateBudget": 400000,
+          "budgetMs": 20000,
+          "totalBudgetMs": 40000,
+          "orderBudget": 24,
+          "avoidOverlap": true
+        },
+        "scope": {
+          "singleLayerOnly": true,
+          "noDamageOrRevival": true,
+          "avoidOverlap": true,
+          "arrivalDeathCheckedWithoutGoal": true,
+          "movement": "按本体实际记录计鬼移动；终局动作另查去终点死亡，不把该反事实当实际轨迹",
+          "handoff": "一方末次与另一方首次移动允许同一动作；不要求所有鬼必须移动",
+          "history": "处理阶段进入完整状态键；本体参考键保留同层鬼数组位置",
+          "optimality": "只比较本报告明确限制范围内的最短步数，不能替代正式全部最优验收"
+        },
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 52,
+            "transitions": 259,
+            "discovered": 57,
+            "totalActions": 11
+          },
+          "actions": [
+            "U",
+            "L",
+            "R",
+            "R",
+            "D",
+            "R",
+            "U",
+            "U",
+            "U",
+            "L",
+            "L"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 2,
+              "lastMove": 4
+            },
+            {
+              "ghost": 1,
+              "firstMove": 4,
+              "lastMove": 10
+            }
+          ]
+        },
+        "queries": [
+          {
+            "kind": "independent_prefix",
+            "ghost": 0,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 45,
+              "transitions": 224,
+              "discovered": 47,
+              "totalActions": 11
+            },
+            "actions": [
+              "U",
+              "L",
+              "R",
+              "R",
+              "D",
+              "R",
+              "U",
+              "U",
+              "U",
+              "L",
+              "L"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 2,
+                "lastMove": 4
+              },
+              {
+                "ghost": 1,
+                "firstMove": 4,
+                "lastMove": 10
+              }
+            ],
+            "sameBaselineLength": true
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 0,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 58,
+              "transitions": 287,
+              "discovered": 62,
+              "totalActions": 15
+            },
+            "actions": [
+              "U",
+              "R",
+              "D",
+              "R",
+              "U",
+              "U",
+              "U",
+              "L",
+              "D",
+              "D",
+              "L",
+              "L",
+              "U",
+              "U",
+              "R"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 8,
+                "lastMove": 14
+              },
+              {
+                "ghost": 1,
+                "firstMove": 2,
+                "lastMove": 8
+              }
+            ],
+            "sameBaselineLength": false
+          },
+          {
+            "kind": "independent_prefix",
+            "ghost": 1,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 58,
+              "transitions": 287,
+              "discovered": 62,
+              "totalActions": 15
+            },
+            "actions": [
+              "U",
+              "R",
+              "D",
+              "R",
+              "U",
+              "U",
+              "U",
+              "L",
+              "D",
+              "D",
+              "L",
+              "L",
+              "U",
+              "U",
+              "R"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 8,
+                "lastMove": 14
+              },
+              {
+                "ghost": 1,
+                "firstMove": 2,
+                "lastMove": 8
+              }
+            ],
+            "sameBaselineLength": false
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 1,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 45,
+              "transitions": 224,
+              "discovered": 47,
+              "totalActions": 11
+            },
+            "actions": [
+              "U",
+              "L",
+              "R",
+              "R",
+              "D",
+              "R",
+              "U",
+              "U",
+              "U",
+              "L",
+              "L"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 2,
+                "lastMove": 4
+              },
+              {
+                "ghost": 1,
+                "firstMove": 4,
+                "lastMove": 10
+              }
+            ],
+            "sameBaselineLength": true
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 45,
+              "transitions": 224,
+              "discovered": 47,
+              "totalActions": 11
+            },
+            "actions": [
+              "U",
+              "L",
+              "R",
+              "R",
+              "D",
+              "R",
+              "U",
+              "U",
+              "U",
+              "L",
+              "L"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 2,
+                "lastMove": 4
+              },
+              {
+                "ghost": 1,
+                "firstMove": 4,
+                "lastMove": 10
+              }
+            ],
+            "sameBaselineLength": true
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 58,
+              "transitions": 287,
+              "discovered": 62,
+              "totalActions": 15
+            },
+            "actions": [
+              "U",
+              "R",
+              "D",
+              "R",
+              "U",
+              "U",
+              "U",
+              "L",
+              "D",
+              "D",
+              "L",
+              "L",
+              "U",
+              "U",
+              "R"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 8,
+                "lastMove": 14
+              },
+              {
+                "ghost": 1,
+                "firstMove": 2,
+                "lastMove": 8
+              }
+            ],
+            "sameBaselineLength": false
+          }
+        ],
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        },
+        "conclusion": "complete_sequential_witness_found",
+        "humanQualityScore": null,
+        "interpretation": "有普通替代只给出具体证书；没有普通替代也不证明新意、难度或尤里卡。",
+        "elapsedMs": 55.837692000000004
+      },
+      "trace": [
+        {
+          "step": 1,
+          "action": "U",
+          "p": [
+            2,
+            3
+          ],
+          "g": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 2,
+          "action": "L",
+          "p": [
+            1,
+            3
+          ],
+          "g": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 3,
+          "action": "R",
+          "p": [
+            2,
+            3
+          ],
+          "g": [
+            [
+              1,
+              3
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 4,
+          "action": "R",
+          "p": [
+            3,
+            3
+          ],
+          "g": [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 5,
+          "action": "D",
+          "p": [
+            3,
+            4
+          ],
+          "g": [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "influence": {
+            "kind": "motion",
+            "changes": [
+              {
+                "from": [
+                  0,
+                  2,
+                  3
+                ],
+                "actual": [
+                  0,
+                  2,
+                  3
+                ],
+                "alone": [
+                  0,
+                  3,
+                  3
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "step": 6,
+          "action": "R",
+          "p": [
+            4,
+            4
+          ],
+          "g": [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 7,
+          "action": "U",
+          "p": [
+            4,
+            3
+          ],
+          "g": [
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 8,
+          "action": "U",
+          "p": [
+            4,
+            2
+          ],
+          "g": [
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              3
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 9,
+          "action": "U",
+          "p": [
+            4,
+            1
+          ],
+          "g": [
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 10,
+          "action": "L",
+          "p": [
+            3,
+            1
+          ],
+          "g": [
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 11,
+          "action": "L",
+          "p": [
+            2,
+            1
+          ],
+          "g": [
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "closed_shortcut_start_inside_goal_behind_guard",
+      "mapId": "f7e22edb43bea1c6fd513d2025874ef4e2321afc34c869017261ad6e2fdd93d7",
+      "mapCode": "AADAgPDw8DAAAAEKgImIAqBAICsgKAAAACgEIKqCKAkAAAAAAA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 21,
+        "transitions": 105,
+        "discovered": 23,
+        "totalActions": 12
+      },
+      "count": "1",
+      "actions": [
+        "L",
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "U"
+      ],
+      "scope": "封掉出生支路绕回0入口的最优合体捷径，并收出生到内室；目标放守卫身后独立一格，不以邻格威胁代替实际阻挡。未改公开地图。",
+      "boundary": {
+        "status": "safe",
+        "reason": "all_optimal_routes_avoid_overlap",
+        "mapId": "f7e22edb43bea1c6fd513d2025874ef4e2321afc34c869017261ad6e2fdd93d7",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 21,
+        "transitions": 105,
+        "discovered": 22,
+        "optimum": 12,
+        "ignoredFatalOverlap": 0,
+        "observedNonFatalOverlap": null,
+        "safeOptimalWitness": [
+          "L",
+          "R",
+          "R",
+          "D",
+          "R",
+          "U",
+          "U",
+          "U",
+          "L",
+          "L",
+          "L",
+          "U"
+        ],
+        "elapsedMs": 4,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+      },
+      "noEnd": [
+        {
+          "actions": [
+            "L",
+            "R",
+            "R",
+            "D",
+            "R",
+            "U",
+            "U",
+            "U",
+            "L",
+            "L",
+            "L",
+            "U"
+          ],
+          "safe": true,
+          "fatalAt": null
+        }
+      ],
+      "ordinary": {
+        "analysisVersion": "ordinary-plans-v1",
+        "mapId": "f7e22edb43bea1c6fd513d2025874ef4e2321afc34c869017261ad6e2fdd93d7",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "ghosts": [
+          {
+            "index": 0,
+            "initialPosition": [
+              1,
+              1
+            ]
+          },
+          {
+            "index": 1,
+            "initialPosition": [
+              3,
+              1
+            ]
+          }
+        ],
+        "budget": {
+          "nodeBudget": 400000,
+          "stateBudget": 400000,
+          "budgetMs": 20000,
+          "totalBudgetMs": 40000,
+          "orderBudget": 24,
+          "avoidOverlap": true
+        },
+        "scope": {
+          "singleLayerOnly": true,
+          "noDamageOrRevival": true,
+          "avoidOverlap": true,
+          "arrivalDeathCheckedWithoutGoal": true,
+          "movement": "按本体实际记录计鬼移动；终局动作另查去终点死亡，不把该反事实当实际轨迹",
+          "handoff": "一方末次与另一方首次移动允许同一动作；不要求所有鬼必须移动",
+          "history": "处理阶段进入完整状态键；本体参考键保留同层鬼数组位置",
+          "optimality": "只比较本报告明确限制范围内的最短步数，不能替代正式全部最优验收"
+        },
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 21,
+            "transitions": 101,
+            "discovered": 22,
+            "totalActions": 12
+          },
+          "actions": [
+            "L",
+            "R",
+            "R",
+            "D",
+            "R",
+            "U",
+            "U",
+            "U",
+            "L",
+            "L",
+            "L",
+            "U"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 1,
+              "lastMove": 3
+            },
+            {
+              "ghost": 1,
+              "firstMove": 3,
+              "lastMove": 11
+            }
+          ]
+        },
+        "queries": [
+          {
+            "kind": "independent_prefix",
+            "ghost": 0,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 19,
+              "transitions": 91,
+              "discovered": 20,
+              "totalActions": 12
+            },
+            "actions": [
+              "L",
+              "R",
+              "R",
+              "D",
+              "R",
+              "U",
+              "U",
+              "U",
+              "L",
+              "L",
+              "L",
+              "U"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 1,
+                "lastMove": 3
+              },
+              {
+                "ghost": 1,
+                "firstMove": 3,
+                "lastMove": 11
+              }
+            ],
+            "sameBaselineLength": true
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 0,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 11,
+              "transitions": 55,
+              "discovered": 11,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_prefix",
+            "ghost": 1,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 11,
+              "transitions": 55,
+              "discovered": 11,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 1,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 19,
+              "transitions": 91,
+              "discovered": 20,
+              "totalActions": 12
+            },
+            "actions": [
+              "L",
+              "R",
+              "R",
+              "D",
+              "R",
+              "U",
+              "U",
+              "U",
+              "L",
+              "L",
+              "L",
+              "U"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 1,
+                "lastMove": 3
+              },
+              {
+                "ghost": 1,
+                "firstMove": 3,
+                "lastMove": 11
+              }
+            ],
+            "sameBaselineLength": true
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 19,
+              "transitions": 91,
+              "discovered": 20,
+              "totalActions": 12
+            },
+            "actions": [
+              "L",
+              "R",
+              "R",
+              "D",
+              "R",
+              "U",
+              "U",
+              "U",
+              "L",
+              "L",
+              "L",
+              "U"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 1,
+                "lastMove": 3
+              },
+              {
+                "ghost": 1,
+                "firstMove": 3,
+                "lastMove": 11
+              }
+            ],
+            "sameBaselineLength": true
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 11,
+              "transitions": 55,
+              "discovered": 11,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          }
+        ],
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        },
+        "conclusion": "complete_sequential_witness_found",
+        "humanQualityScore": null,
+        "interpretation": "有普通替代只给出具体证书；没有普通替代也不证明新意、难度或尤里卡。",
+        "elapsedMs": 25.270854
+      },
+      "noActualInfluence": {
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 12,
+          "transitions": 60,
+          "discovered": 12,
+          "totalActions": null
+        },
+        "actions": null
+      }
+    }
+  ]
+}
