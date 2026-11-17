@@ -1,0 +1,3495 @@
+{
+  "reconstructedOn": "2026-11-17",
+  "originalTemporaryFilesAvailable": false,
+  "basis": "按2026-10-31对话中的明确构图参数、动作证书及当时最优／条数重建；不是找回临时原件，所有本文件结果均重新运行。",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "selectedForCourse": null,
+  "humanQuality": null,
+  "cases": [
+    {
+      "lower": "down",
+      "bay": "ordinary",
+      "size": 19,
+      "params": {
+        "start": [
+          3,
+          2
+        ],
+        "end": [
+          0,
+          4
+        ],
+        "ghosts": [
+          [
+            1,
+            3
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "cells": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "edges": [
+          [
+            "h",
+            4,
+            4,
+            1
+          ],
+          [
+            "v",
+            5,
+            3,
+            1
+          ],
+          [
+            "h",
+            1,
+            4,
+            1
+          ],
+          [
+            "v",
+            1,
+            4,
+            3,
+            {
+              "keys": 2
+            }
+          ],
+          [
+            "h",
+            2,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "v",
+            3,
+            2,
+            2
+          ]
+        ]
+      },
+      "mapId": "4bd49aa194d45cb85eaf57fa0d3147b81cd5c5dd606911d5f053b8e398ae8524",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 354,
+        "transitions": 1770,
+        "discovered": 387,
+        "totalActions": 17
+      },
+      "count": "1",
+      "actions": [
+        "R",
+        "D",
+        "U",
+        "U",
+        "R",
+        "L",
+        "D",
+        "R",
+        "U",
+        "L",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "L",
+        "L"
+      ],
+      "mapCode": "AADAAHh4-fgAAAFpYChkBScAFUACArSFVQAAAAACEFghCiyEAAAABAg",
+      "ordinary": {
+        "conclusion": "complete_sequential_witness_found",
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 336,
+            "transitions": 1679,
+            "discovered": 364,
+            "totalActions": 17
+          },
+          "actions": [
+            "R",
+            "D",
+            "U",
+            "U",
+            "R",
+            "L",
+            "D",
+            "R",
+            "U",
+            "L",
+            "L",
+            "L",
+            "D",
+            "D",
+            "D",
+            "L",
+            "L"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 2,
+              "lastMove": 11
+            },
+            {
+              "ghost": 1,
+              "firstMove": 5,
+              "lastMove": 15
+            }
+          ]
+        },
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        },
+        "orders": [
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 260,
+              "transitions": 1299,
+              "discovered": 266,
+              "totalActions": 21
+            },
+            "actions": [
+              "D",
+              "U",
+              "R",
+              "D",
+              "L",
+              "L",
+              "U",
+              "R",
+              "U",
+              "R",
+              "R",
+              "L",
+              "D",
+              "R",
+              "D",
+              "D",
+              "L",
+              "L",
+              "L",
+              "L",
+              "L"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 1,
+                "lastMove": 8
+              },
+              {
+                "ghost": 1,
+                "firstMove": 11,
+                "lastMove": 20
+              }
+            ],
+            "sameBaselineLength": false
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 231,
+              "transitions": 1155,
+              "discovered": 231,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          }
+        ]
+      }
+    },
+    {
+      "lower": "up",
+      "bay": "ordinary",
+      "size": 19,
+      "params": {
+        "start": [
+          3,
+          2
+        ],
+        "end": [
+          0,
+          4
+        ],
+        "ghosts": [
+          [
+            1,
+            3
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "cells": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "edges": [
+          [
+            "h",
+            4,
+            4,
+            1
+          ],
+          [
+            "v",
+            5,
+            3,
+            1
+          ],
+          [
+            "h",
+            1,
+            4,
+            1
+          ],
+          [
+            "v",
+            1,
+            4,
+            3,
+            {
+              "keys": 2
+            }
+          ],
+          [
+            "h",
+            2,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": -1
+              }
+            }
+          ],
+          [
+            "v",
+            3,
+            2,
+            2
+          ]
+        ]
+      },
+      "mapId": "c09e2eb5738b91bf4ebcf1e4a730117152e9937e70720dd0cc18ce17d322cf3b",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 498,
+        "transitions": 2490,
+        "discovered": 508,
+        "totalActions": 21
+      },
+      "count": "4",
+      "actions": [
+        "D",
+        "U",
+        "R",
+        "D",
+        "L",
+        "L",
+        "U",
+        "R",
+        "U",
+        "R",
+        "R",
+        "L",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "mapCode": "AWM4wFBR8fMHAwNjZoJGCqs6g6gDE9OW1lAGIGASiFDk0mlhAAIOAA",
+      "ordinary": {
+        "conclusion": "complete_sequential_witness_found",
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 489,
+            "transitions": 2444,
+            "discovered": 499,
+            "totalActions": 21
+          },
+          "actions": [
+            "D",
+            "U",
+            "R",
+            "D",
+            "L",
+            "L",
+            "U",
+            "R",
+            "U",
+            "R",
+            "R",
+            "L",
+            "D",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 1,
+              "lastMove": 8
+            },
+            {
+              "ghost": 1,
+              "firstMove": 11,
+              "lastMove": 20
+            }
+          ]
+        },
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        },
+        "orders": [
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 342,
+              "transitions": 1709,
+              "discovered": 349,
+              "totalActions": 21
+            },
+            "actions": [
+              "D",
+              "U",
+              "R",
+              "D",
+              "L",
+              "L",
+              "U",
+              "R",
+              "U",
+              "R",
+              "R",
+              "L",
+              "D",
+              "R",
+              "D",
+              "D",
+              "L",
+              "L",
+              "L",
+              "L",
+              "L"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 1,
+                "lastMove": 8
+              },
+              {
+                "ghost": 1,
+                "firstMove": 11,
+                "lastMove": 20
+              }
+            ],
+            "sameBaselineLength": true
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 235,
+              "transitions": 1175,
+              "discovered": 235,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          }
+        ]
+      }
+    },
+    {
+      "lower": "ordinary",
+      "bay": "ordinary",
+      "size": 19,
+      "params": {
+        "start": [
+          3,
+          2
+        ],
+        "end": [
+          0,
+          4
+        ],
+        "ghosts": [
+          [
+            1,
+            3
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "cells": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "edges": [
+          [
+            "h",
+            4,
+            4,
+            1
+          ],
+          [
+            "v",
+            5,
+            3,
+            1
+          ],
+          [
+            "h",
+            1,
+            4,
+            1
+          ],
+          [
+            "v",
+            1,
+            4,
+            3,
+            {
+              "keys": 2
+            }
+          ],
+          [
+            "h",
+            2,
+            4,
+            2
+          ],
+          [
+            "v",
+            3,
+            2,
+            2
+          ]
+        ]
+      },
+      "mapId": "1acdc671a4e90fc3c4d33f5531aa4d3f9e0a167393b410cfaa951a778ff4ed57",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 412,
+        "transitions": 2060,
+        "discovered": 457,
+        "totalActions": 17
+      },
+      "count": "1",
+      "actions": [
+        "R",
+        "D",
+        "U",
+        "U",
+        "R",
+        "L",
+        "D",
+        "R",
+        "U",
+        "L",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "L",
+        "L"
+      ],
+      "mapCode": "AADIAHh4-fgAAAFpYChkBScAFUACArIVVAAAAAAIQWIQouCAAAAABA",
+      "ordinary": {
+        "conclusion": "complete_sequential_witness_found",
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 385,
+            "transitions": 1924,
+            "discovered": 422,
+            "totalActions": 17
+          },
+          "actions": [
+            "R",
+            "D",
+            "U",
+            "U",
+            "R",
+            "L",
+            "D",
+            "R",
+            "U",
+            "L",
+            "L",
+            "L",
+            "D",
+            "D",
+            "D",
+            "L",
+            "L"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 2,
+              "lastMove": 11
+            },
+            {
+              "ghost": 1,
+              "firstMove": 5,
+              "lastMove": 15
+            }
+          ]
+        },
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        },
+        "orders": [
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 348,
+              "transitions": 1739,
+              "discovered": 355,
+              "totalActions": 21
+            },
+            "actions": [
+              "D",
+              "U",
+              "R",
+              "D",
+              "L",
+              "L",
+              "U",
+              "R",
+              "U",
+              "R",
+              "R",
+              "L",
+              "D",
+              "R",
+              "D",
+              "D",
+              "L",
+              "L",
+              "L",
+              "L",
+              "L"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 1,
+                "lastMove": 8
+              },
+              {
+                "ghost": 1,
+                "firstMove": 11,
+                "lastMove": 20
+              }
+            ],
+            "sameBaselineLength": false
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 241,
+              "transitions": 1205,
+              "discovered": 241,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          }
+        ]
+      }
+    },
+    {
+      "lower": "up",
+      "bay": "left",
+      "size": 19,
+      "params": {
+        "start": [
+          3,
+          2
+        ],
+        "end": [
+          0,
+          4
+        ],
+        "ghosts": [
+          [
+            1,
+            3
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "cells": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "edges": [
+          [
+            "h",
+            4,
+            4,
+            1
+          ],
+          [
+            "v",
+            5,
+            3,
+            1
+          ],
+          [
+            "h",
+            1,
+            4,
+            1
+          ],
+          [
+            "v",
+            1,
+            4,
+            3,
+            {
+              "keys": 2
+            }
+          ],
+          [
+            "h",
+            2,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": -1
+              }
+            }
+          ],
+          [
+            "v",
+            3,
+            2,
+            4,
+            {
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            }
+          ]
+        ]
+      },
+      "mapId": "80c714c5032b3331be048d041ac51f40b39f7b3b02b91445c24623ff135f6d63",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 277,
+        "transitions": 1385,
+        "discovered": 282,
+        "totalActions": 23
+      },
+      "count": "2",
+      "actions": [
+        "U",
+        "R",
+        "R",
+        "L",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "U",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "R",
+        "D",
+        "L",
+        "L",
+        "L"
+      ],
+      "mapCode": "AADAAHh4-fgAAAFpYChkBScAFUACArSFVQAAAAACEFohCiyEAAAAAgI",
+      "ordinary": {
+        "conclusion": "no_complete_sequential_plan_within_scope",
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 271,
+            "transitions": 1354,
+            "discovered": 276,
+            "totalActions": 23
+          },
+          "actions": [
+            "U",
+            "R",
+            "R",
+            "L",
+            "D",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "U",
+            "R",
+            "U",
+            "L",
+            "U",
+            "L",
+            "D",
+            "D",
+            "R",
+            "D",
+            "L",
+            "L",
+            "L"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 11,
+              "lastMove": 14
+            },
+            {
+              "ghost": 1,
+              "firstMove": 3,
+              "lastMove": 22
+            }
+          ]
+        },
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        },
+        "orders": [
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 188,
+              "transitions": 940,
+              "discovered": 188,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 131,
+              "transitions": 655,
+              "discovered": 131,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          }
+        ]
+      }
+    },
+    {
+      "lower": "up",
+      "bay": "right",
+      "size": 19,
+      "params": {
+        "start": [
+          3,
+          2
+        ],
+        "end": [
+          0,
+          4
+        ],
+        "ghosts": [
+          [
+            1,
+            3
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "cells": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "edges": [
+          [
+            "h",
+            4,
+            4,
+            1
+          ],
+          [
+            "v",
+            5,
+            3,
+            1
+          ],
+          [
+            "h",
+            1,
+            4,
+            1
+          ],
+          [
+            "v",
+            1,
+            4,
+            3,
+            {
+              "keys": 2
+            }
+          ],
+          [
+            "h",
+            2,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": -1
+              }
+            }
+          ],
+          [
+            "v",
+            3,
+            2,
+            4,
+            {
+              "direction": {
+                "dx": 1,
+                "dy": 0
+              }
+            }
+          ]
+        ]
+      },
+      "mapId": "0a61dcd22198e0f0d3ed7a01624b37cd8633ed40ccd4b855d50ca8669bbb40df",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 474,
+        "transitions": 2370,
+        "discovered": 484,
+        "totalActions": 21
+      },
+      "count": "4",
+      "actions": [
+        "D",
+        "U",
+        "R",
+        "D",
+        "L",
+        "L",
+        "U",
+        "R",
+        "U",
+        "R",
+        "R",
+        "L",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "mapCode": "AADAAHh4-fgAAAFpYChkBScAFUACArSFVQAAAAACEFohCiyEAAAAAwI",
+      "ordinary": {
+        "conclusion": "complete_sequential_witness_found",
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 471,
+            "transitions": 2354,
+            "discovered": 481,
+            "totalActions": 21
+          },
+          "actions": [
+            "D",
+            "U",
+            "R",
+            "D",
+            "L",
+            "L",
+            "U",
+            "R",
+            "U",
+            "R",
+            "R",
+            "L",
+            "D",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "L",
+            "L",
+            "L"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 1,
+              "lastMove": 8
+            },
+            {
+              "ghost": 1,
+              "firstMove": 11,
+              "lastMove": 20
+            }
+          ]
+        },
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        },
+        "orders": [
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 324,
+              "transitions": 1619,
+              "discovered": 331,
+              "totalActions": 21
+            },
+            "actions": [
+              "D",
+              "U",
+              "R",
+              "D",
+              "L",
+              "L",
+              "U",
+              "R",
+              "U",
+              "R",
+              "R",
+              "L",
+              "D",
+              "R",
+              "D",
+              "D",
+              "L",
+              "L",
+              "L",
+              "L",
+              "L"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 1,
+                "lastMove": 8
+              },
+              {
+                "ghost": 1,
+                "firstMove": 11,
+                "lastMove": 20
+              }
+            ],
+            "sameBaselineLength": true
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 225,
+              "transitions": 1125,
+              "discovered": 225,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          }
+        ]
+      }
+    },
+    {
+      "lower": "down",
+      "bay": "left",
+      "size": 19,
+      "params": {
+        "start": [
+          3,
+          2
+        ],
+        "end": [
+          0,
+          4
+        ],
+        "ghosts": [
+          [
+            1,
+            3
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "cells": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "edges": [
+          [
+            "h",
+            4,
+            4,
+            1
+          ],
+          [
+            "v",
+            5,
+            3,
+            1
+          ],
+          [
+            "h",
+            1,
+            4,
+            1
+          ],
+          [
+            "v",
+            1,
+            4,
+            3,
+            {
+              "keys": 2
+            }
+          ],
+          [
+            "h",
+            2,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "v",
+            3,
+            2,
+            4,
+            {
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            }
+          ]
+        ]
+      },
+      "mapId": "087f1b67ef8e5dee3ac042e754a8572ba1872faa035e298ca67a0000c136b9a5",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 199,
+        "transitions": 995,
+        "discovered": 212,
+        "totalActions": 17
+      },
+      "count": "1",
+      "actions": [
+        "R",
+        "D",
+        "U",
+        "U",
+        "R",
+        "L",
+        "D",
+        "R",
+        "U",
+        "L",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "L",
+        "L"
+      ],
+      "mapCode": "AADAAHh4-fgAAAFpYChkBScAFUACArSFVQAAAAACEFohCiyEAAAABgI",
+      "ordinary": {
+        "conclusion": "no_complete_sequential_plan_within_scope",
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 195,
+            "transitions": 974,
+            "discovered": 204,
+            "totalActions": 17
+          },
+          "actions": [
+            "R",
+            "D",
+            "U",
+            "U",
+            "R",
+            "L",
+            "D",
+            "R",
+            "U",
+            "L",
+            "L",
+            "L",
+            "D",
+            "D",
+            "D",
+            "L",
+            "L"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 2,
+              "lastMove": 11
+            },
+            {
+              "ghost": 1,
+              "firstMove": 5,
+              "lastMove": 15
+            }
+          ]
+        },
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        },
+        "orders": [
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 120,
+              "transitions": 600,
+              "discovered": 120,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 127,
+              "transitions": 635,
+              "discovered": 127,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          }
+        ]
+      }
+    },
+    {
+      "lower": "down",
+      "bay": "right",
+      "size": 19,
+      "params": {
+        "start": [
+          3,
+          2
+        ],
+        "end": [
+          0,
+          4
+        ],
+        "ghosts": [
+          [
+            1,
+            3
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "cells": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "edges": [
+          [
+            "h",
+            4,
+            4,
+            1
+          ],
+          [
+            "v",
+            5,
+            3,
+            1
+          ],
+          [
+            "h",
+            1,
+            4,
+            1
+          ],
+          [
+            "v",
+            1,
+            4,
+            3,
+            {
+              "keys": 2
+            }
+          ],
+          [
+            "h",
+            2,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": 1
+              }
+            }
+          ],
+          [
+            "v",
+            3,
+            2,
+            4,
+            {
+              "direction": {
+                "dx": 1,
+                "dy": 0
+              }
+            }
+          ]
+        ]
+      },
+      "mapId": "b35904c3e0f4ff5fced5cc54f7e11e810c3ec1e1ebe906d3d00e5228db75c362",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 339,
+        "transitions": 1695,
+        "discovered": 369,
+        "totalActions": 17
+      },
+      "count": "1",
+      "actions": [
+        "R",
+        "D",
+        "U",
+        "U",
+        "R",
+        "L",
+        "D",
+        "R",
+        "U",
+        "L",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "L",
+        "L"
+      ],
+      "mapCode": "AADAAHh4-fgAAAFpYChkBScAFUACArSFVQAAAAACEFohCiyEAAAABwI",
+      "ordinary": {
+        "conclusion": "complete_sequential_witness_found",
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 324,
+            "transitions": 1619,
+            "discovered": 352,
+            "totalActions": 17
+          },
+          "actions": [
+            "R",
+            "D",
+            "U",
+            "U",
+            "R",
+            "L",
+            "D",
+            "R",
+            "U",
+            "L",
+            "L",
+            "L",
+            "D",
+            "D",
+            "D",
+            "L",
+            "L"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 2,
+              "lastMove": 11
+            },
+            {
+              "ghost": 1,
+              "firstMove": 5,
+              "lastMove": 15
+            }
+          ]
+        },
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        },
+        "orders": [
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 248,
+              "transitions": 1239,
+              "discovered": 254,
+              "totalActions": 21
+            },
+            "actions": [
+              "D",
+              "U",
+              "R",
+              "D",
+              "L",
+              "L",
+              "U",
+              "R",
+              "U",
+              "R",
+              "R",
+              "L",
+              "D",
+              "R",
+              "D",
+              "D",
+              "L",
+              "L",
+              "L",
+              "L",
+              "L"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 1,
+                "lastMove": 8
+              },
+              {
+                "ghost": 1,
+                "firstMove": 11,
+                "lastMove": 20
+              }
+            ],
+            "sameBaselineLength": false
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 219,
+              "transitions": 1095,
+              "discovered": 219,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          }
+        ]
+      }
+    },
+    {
+      "lower": "wall",
+      "bay": "wall",
+      "size": 19,
+      "params": {
+        "start": [
+          3,
+          2
+        ],
+        "end": [
+          0,
+          4
+        ],
+        "ghosts": [
+          [
+            1,
+            3
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "cells": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "edges": [
+          [
+            "h",
+            4,
+            4,
+            1
+          ],
+          [
+            "v",
+            5,
+            3,
+            1
+          ],
+          [
+            "h",
+            1,
+            4,
+            1
+          ],
+          [
+            "v",
+            1,
+            4,
+            3,
+            {
+              "keys": 2
+            }
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "v",
+            3,
+            2,
+            1
+          ]
+        ]
+      },
+      "mapId": "36607c25279e8d0517f182bfb21ea18fe4761865228ee66a0b96b96c067eb08d",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 185,
+        "transitions": 925,
+        "discovered": 187,
+        "totalActions": 23
+      },
+      "count": "2",
+      "actions": [
+        "U",
+        "R",
+        "R",
+        "L",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "U",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "R",
+        "D",
+        "L",
+        "L",
+        "L"
+      ],
+      "mapCode": "AWM4wFBR8fMHAwNjZoJGCqs6g6gDE9MSrRUMQCDQ1OHUrcgABBwA"
+    },
+    {
+      "lower": "wall",
+      "bay": "left",
+      "size": 19,
+      "params": {
+        "start": [
+          3,
+          2
+        ],
+        "end": [
+          0,
+          4
+        ],
+        "ghosts": [
+          [
+            1,
+            3
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "cells": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "edges": [
+          [
+            "h",
+            4,
+            4,
+            1
+          ],
+          [
+            "v",
+            5,
+            3,
+            1
+          ],
+          [
+            "h",
+            1,
+            4,
+            1
+          ],
+          [
+            "v",
+            1,
+            4,
+            3,
+            {
+              "keys": 2
+            }
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "v",
+            3,
+            2,
+            4,
+            {
+              "direction": {
+                "dx": -1,
+                "dy": 0
+              }
+            }
+          ]
+        ]
+      },
+      "mapId": "9cd3104386593d46fea7fcc403319694be35c24cbeb52997d5cfeeda0f91a588",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 201,
+        "transitions": 1005,
+        "discovered": 203,
+        "totalActions": 23
+      },
+      "count": "2",
+      "actions": [
+        "U",
+        "R",
+        "R",
+        "L",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "U",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "R",
+        "D",
+        "L",
+        "L",
+        "L"
+      ],
+      "mapCode": "AADAAHh4-fgAAAFpYChkBScAFUACAqQqqAAAAAAQgtEIUWQgAAAAQEA"
+    },
+    {
+      "lower": "up",
+      "bay": "wall",
+      "size": 19,
+      "params": {
+        "start": [
+          3,
+          2
+        ],
+        "end": [
+          0,
+          4
+        ],
+        "ghosts": [
+          [
+            1,
+            3
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "cells": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "edges": [
+          [
+            "h",
+            4,
+            4,
+            1
+          ],
+          [
+            "v",
+            5,
+            3,
+            1
+          ],
+          [
+            "h",
+            1,
+            4,
+            1
+          ],
+          [
+            "v",
+            1,
+            4,
+            3,
+            {
+              "keys": 2
+            }
+          ],
+          [
+            "h",
+            2,
+            4,
+            4,
+            {
+              "direction": {
+                "dx": 0,
+                "dy": -1
+              }
+            }
+          ],
+          [
+            "v",
+            3,
+            2,
+            1
+          ]
+        ]
+      },
+      "mapId": "cb2f583b46d8bafb39b23dd69748665038ca739359fbad60649f6053d60e0741",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 253,
+        "transitions": 1265,
+        "discovered": 258,
+        "totalActions": 23
+      },
+      "count": "2",
+      "actions": [
+        "U",
+        "R",
+        "R",
+        "L",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "U",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "R",
+        "D",
+        "L",
+        "L",
+        "L"
+      ],
+      "mapCode": "AWM4wFBR8fMHAwNjZoJGCqs6g6gDE9OW1lAGIGASCOQITFFgAAIHAA",
+      "ordinary": {
+        "conclusion": "no_complete_sequential_plan_within_scope",
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 253,
+            "transitions": 1264,
+            "discovered": 258,
+            "totalActions": 23
+          },
+          "actions": [
+            "U",
+            "R",
+            "R",
+            "L",
+            "D",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "U",
+            "R",
+            "U",
+            "L",
+            "U",
+            "L",
+            "D",
+            "D",
+            "R",
+            "D",
+            "L",
+            "L",
+            "L"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 11,
+              "lastMove": 14
+            },
+            {
+              "ghost": 1,
+              "firstMove": 3,
+              "lastMove": 22
+            }
+          ]
+        },
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        },
+        "orders": [
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 170,
+              "transitions": 850,
+              "discovered": 170,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 121,
+              "transitions": 605,
+              "discovered": 121,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          }
+        ]
+      }
+    },
+    {
+      "lower": "wall",
+      "bay": "wall",
+      "size": 18,
+      "params": {
+        "start": [
+          3,
+          2
+        ],
+        "end": [
+          1,
+          4
+        ],
+        "ghosts": [
+          [
+            1,
+            3
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "cells": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "edges": [
+          [
+            "h",
+            4,
+            4,
+            1
+          ],
+          [
+            "v",
+            5,
+            3,
+            1
+          ],
+          [
+            "h",
+            1,
+            4,
+            1
+          ],
+          [
+            "v",
+            2,
+            4,
+            3,
+            {
+              "keys": 2
+            }
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "v",
+            3,
+            2,
+            1
+          ]
+        ]
+      },
+      "mapId": "bef837199c722aecd08c459e095b84f72cd89582f1219af86f44c0d3e8ffa23c",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 178,
+        "transitions": 890,
+        "discovered": 180,
+        "totalActions": 22
+      },
+      "count": "2",
+      "actions": [
+        "U",
+        "R",
+        "R",
+        "L",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "U",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "R",
+        "D",
+        "L",
+        "L"
+      ],
+      "mapCode": "AWM4wFBR8eMHAwNjZoJGCqs6g6gDE6OH1gIGIHDiUuQSc2EAAgUA",
+      "ordinary": {
+        "conclusion": "no_complete_sequential_plan_within_scope",
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 178,
+            "transitions": 889,
+            "discovered": 180,
+            "totalActions": 22
+          },
+          "actions": [
+            "U",
+            "R",
+            "R",
+            "L",
+            "D",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "U",
+            "R",
+            "U",
+            "L",
+            "U",
+            "L",
+            "D",
+            "D",
+            "R",
+            "D",
+            "L",
+            "L"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 11,
+              "lastMove": 14
+            },
+            {
+              "ghost": 1,
+              "firstMove": 3,
+              "lastMove": 21
+            }
+          ]
+        },
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        },
+        "orders": [
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 101,
+              "transitions": 505,
+              "discovered": 101,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 108,
+              "transitions": 540,
+              "discovered": 108,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          }
+        ]
+      },
+      "physicalAudit": {
+        "reachable": 181,
+        "transitions": 900,
+        "permutations": 2,
+        "compared": 1800,
+        "includesFatalActions": true
+      },
+      "entry": {
+        "external": [
+          0,
+          3,
+          0
+        ],
+        "actions": [
+          "D",
+          "D"
+        ],
+        "externalCells": [
+          [
+            3,
+            0
+          ]
+        ],
+        "internal": [
+          0,
+          3,
+          2
+        ],
+        "keys": 0,
+        "externalGhosts": 0,
+        "actualExternalStartOutsideEnvelope": true,
+        "exteriorSealedExceptEntrance": true,
+        "initialInteriorEqual": true,
+        "afterGhosts": [
+          [
+            [
+              1,
+              3
+            ],
+            [
+              5,
+              3
+            ]
+          ]
+        ],
+        "wholeOptimalRoutesInteriorEqual": true,
+        "allInternalSuccessorsEqual": {
+          "states": 181,
+          "transitions": 900,
+          "includesFatalActions": true
+        },
+        "noEndSafeRoutes": 2,
+        "scope": "只声明所列外侧路径、零钥匙与无外部鬼；不声称任意外部局面均适用"
+      },
+      "allOptimalSafe": true,
+      "cold": true
+    },
+    {
+      "lower": "wall",
+      "bay": "wall",
+      "size": 17,
+      "params": {
+        "start": [
+          3,
+          2
+        ],
+        "end": [
+          2,
+          4
+        ],
+        "ghosts": [
+          [
+            1,
+            3
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        "items": [
+          [
+            2,
+            3
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "cells": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "edges": [
+          [
+            "h",
+            4,
+            4,
+            1
+          ],
+          [
+            "v",
+            5,
+            3,
+            1
+          ],
+          [
+            "h",
+            1,
+            4,
+            1
+          ],
+          [
+            "v",
+            3,
+            4,
+            3,
+            {
+              "keys": 2
+            }
+          ],
+          [
+            "h",
+            2,
+            4,
+            1
+          ],
+          [
+            "v",
+            3,
+            2,
+            1
+          ]
+        ]
+      },
+      "mapId": "a3b7c44370a50beb524f083ea3b36a544768fae11e1ab5a29ce21e9bdf336aba",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 171,
+        "transitions": 855,
+        "discovered": 173,
+        "totalActions": 21
+      },
+      "count": "2",
+      "actions": [
+        "U",
+        "R",
+        "R",
+        "L",
+        "D",
+        "R",
+        "D",
+        "D",
+        "L",
+        "L",
+        "U",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "R",
+        "D",
+        "L"
+      ],
+      "mapCode": "AWM4wFBR8aOCgYExM0EjhVWdQdSBidFD1IEBCFpEnETEPBiAwAEA",
+      "ordinary": {
+        "conclusion": "no_complete_sequential_plan_within_scope",
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 171,
+            "transitions": 854,
+            "discovered": 173,
+            "totalActions": 21
+          },
+          "actions": [
+            "U",
+            "R",
+            "R",
+            "L",
+            "D",
+            "R",
+            "D",
+            "D",
+            "L",
+            "L",
+            "U",
+            "R",
+            "U",
+            "L",
+            "U",
+            "L",
+            "D",
+            "D",
+            "R",
+            "D",
+            "L"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 11,
+              "lastMove": 14
+            },
+            {
+              "ghost": 1,
+              "firstMove": 3,
+              "lastMove": 20
+            }
+          ]
+        },
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        },
+        "orders": [
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 98,
+              "transitions": 490,
+              "discovered": 98,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 105,
+              "transitions": 525,
+              "discovered": 105,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          }
+        ]
+      },
+      "physicalAudit": {
+        "reachable": 175,
+        "transitions": 870,
+        "permutations": 2,
+        "compared": 1740,
+        "includesFatalActions": true
+      },
+      "entry": {
+        "external": [
+          0,
+          3,
+          0
+        ],
+        "actions": [
+          "D",
+          "D"
+        ],
+        "externalCells": [
+          [
+            3,
+            0
+          ]
+        ],
+        "internal": [
+          0,
+          3,
+          2
+        ],
+        "keys": 0,
+        "externalGhosts": 0,
+        "actualExternalStartOutsideEnvelope": true,
+        "exteriorSealedExceptEntrance": true,
+        "initialInteriorEqual": true,
+        "afterGhosts": [
+          [
+            [
+              1,
+              3
+            ],
+            [
+              5,
+              3
+            ]
+          ]
+        ],
+        "wholeOptimalRoutesInteriorEqual": true,
+        "allInternalSuccessorsEqual": {
+          "states": 175,
+          "transitions": 870,
+          "includesFatalActions": true
+        },
+        "noEndSafeRoutes": 2,
+        "scope": "只声明所列外侧路径、零钥匙与无外部鬼；不声称任意外部局面均适用"
+      },
+      "allOptimalSafe": true,
+      "cold": true
+    }
+  ]
+}
