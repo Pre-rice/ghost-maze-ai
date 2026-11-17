@@ -1,0 +1,956 @@
+{
+  "createdOn": "2026-11-17",
+  "scope": "仅列明的合法非实体单删，不声称全局最小；封闭美化格也列出但不按无用自动删除",
+  "mapId": "2570c1cecc91e0591ed12665ed20234d7cc51b306b9a4df0ac203013ab35e57a",
+  "deletions": [
+    {
+      "cell": [
+        1,
+        1
+      ],
+      "mapId": "9212466939155481d5917d953c95bb4e182e8b4a8623f3c6a30ccde851161d50",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 74,
+        "transitions": 370,
+        "discovered": 74,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null,
+      "boundary": null
+    },
+    {
+      "cell": [
+        1,
+        2
+      ],
+      "mapId": "6ff00a63ff0fd7db5bd56634344102ba7595de52c4bfc778c7832da1bc5088d0",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 60,
+        "transitions": 300,
+        "discovered": 60,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null,
+      "boundary": null
+    },
+    {
+      "cell": [
+        2,
+        2
+      ],
+      "mapId": "316d3f701bb2f855462982463580807b55fc5990f5ccccdaab566548eb59fde7",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 208,
+        "transitions": 1040,
+        "discovered": 213,
+        "totalActions": 34
+      },
+      "count": "1",
+      "actions": [
+        "D",
+        "D",
+        "U",
+        "U",
+        "L",
+        "U",
+        "U",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "U",
+        "U",
+        "R",
+        "R",
+        "D",
+        "D",
+        "R",
+        "R",
+        "D",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "U",
+        "U",
+        "U"
+      ],
+      "boundary": {
+        "status": "conflict",
+        "reason": "optimal_solution_uses_overlap",
+        "mapId": "316d3f701bb2f855462982463580807b55fc5990f5ccccdaab566548eb59fde7",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 203,
+        "transitions": 1011,
+        "discovered": 208,
+        "optimum": 34,
+        "ignoredFatalOverlap": 11,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "D",
+            "D",
+            "U",
+            "U",
+            "L",
+            "U",
+            "U",
+            "D",
+            "D",
+            "R",
+            "R",
+            "U"
+          ],
+          "conflict": {
+            "target": {
+              "x": 3,
+              "y": 3
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 2,
+                  "y": 3
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 3,
+                  "y": 4
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 0
+          }
+        },
+        "safeOptimalWitness": null,
+        "elapsedMs": 13,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除",
+        "witness": [
+          "D",
+          "D",
+          "U",
+          "U",
+          "L",
+          "U",
+          "U",
+          "D",
+          "D",
+          "R",
+          "R",
+          "U",
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "U",
+          "U",
+          "R",
+          "R",
+          "D",
+          "D",
+          "R",
+          "R",
+          "D",
+          "U",
+          "L",
+          "L",
+          "L",
+          "L",
+          "U",
+          "U",
+          "U"
+        ]
+      }
+    },
+    {
+      "cell": [
+        3,
+        2
+      ],
+      "mapId": "ccd894fb35fb56d06c54b6982c1cf0860dd1f01ae08b4f97ceed0a8a6ab7d5cb",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 190,
+        "transitions": 950,
+        "discovered": 190,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null,
+      "boundary": null
+    },
+    {
+      "cell": [
+        1,
+        3
+      ],
+      "mapId": "6f04f96bce43c3d1a5471bbbff4e505590ec125139ec242890f94907755511c6",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 287,
+        "transitions": 1435,
+        "discovered": 287,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null,
+      "boundary": null
+    },
+    {
+      "cell": [
+        3,
+        3
+      ],
+      "mapId": "9d3e64363bd15db8eb3be9f73178106a5fc8f8dbe7d6a0a92ac7e314708f004c",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 83,
+        "transitions": 415,
+        "discovered": 83,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null,
+      "boundary": null
+    },
+    {
+      "cell": [
+        4,
+        3
+      ],
+      "mapId": "9a0077db26e6867685da824a98e47d82882e6faeea2affb306b43bbd8b3e3309",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 356,
+        "transitions": 1780,
+        "discovered": 366,
+        "totalActions": 36
+      },
+      "count": "56",
+      "actions": [
+        "D",
+        "D",
+        "U",
+        "U",
+        "U",
+        "L",
+        "U",
+        "D",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "L",
+        "D",
+        "L",
+        "D",
+        "U",
+        "R",
+        "R",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "D",
+        "L",
+        "L",
+        "U",
+        "U",
+        "L",
+        "L",
+        "U",
+        "U",
+        "U"
+      ],
+      "boundary": {
+        "status": "conflict",
+        "reason": "optimal_solution_uses_overlap",
+        "mapId": "9a0077db26e6867685da824a98e47d82882e6faeea2affb306b43bbd8b3e3309",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 350,
+        "transitions": 1746,
+        "discovered": 356,
+        "optimum": 36,
+        "ignoredFatalOverlap": 81,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "D",
+            "D",
+            "U",
+            "U",
+            "U",
+            "L",
+            "U",
+            "D",
+            "R",
+            "D",
+            "R",
+            "U"
+          ],
+          "conflict": {
+            "target": {
+              "x": 3,
+              "y": 3
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 2,
+                  "y": 3
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 3,
+                  "y": 4
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 0
+          }
+        },
+        "safeOptimalWitness": null,
+        "elapsedMs": 18,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除",
+        "witness": [
+          "D",
+          "D",
+          "U",
+          "U",
+          "U",
+          "L",
+          "U",
+          "D",
+          "R",
+          "D",
+          "R",
+          "U",
+          "U",
+          "L",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "R",
+          "D",
+          "D",
+          "D",
+          "R",
+          "R",
+          "U",
+          "D",
+          "L",
+          "L",
+          "U",
+          "U",
+          "L",
+          "L",
+          "U",
+          "U",
+          "U"
+        ]
+      }
+    },
+    {
+      "cell": [
+        5,
+        3
+      ],
+      "mapId": "2eedd490b72dfa3acce09a91f5c74fdbb1fbcb58e8072f544421f180c49538c3",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 365,
+        "transitions": 1825,
+        "discovered": 376,
+        "totalActions": 36
+      },
+      "count": "56",
+      "actions": [
+        "D",
+        "D",
+        "U",
+        "U",
+        "U",
+        "L",
+        "U",
+        "D",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "L",
+        "D",
+        "L",
+        "D",
+        "U",
+        "R",
+        "R",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "D",
+        "L",
+        "L",
+        "U",
+        "U",
+        "L",
+        "L",
+        "U",
+        "U",
+        "U"
+      ],
+      "boundary": {
+        "status": "conflict",
+        "reason": "optimal_solution_uses_overlap",
+        "mapId": "2eedd490b72dfa3acce09a91f5c74fdbb1fbcb58e8072f544421f180c49538c3",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 359,
+        "transitions": 1791,
+        "discovered": 365,
+        "optimum": 36,
+        "ignoredFatalOverlap": 81,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "D",
+            "D",
+            "U",
+            "U",
+            "U",
+            "L",
+            "U",
+            "D",
+            "R",
+            "D",
+            "R",
+            "U"
+          ],
+          "conflict": {
+            "target": {
+              "x": 3,
+              "y": 3
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 2,
+                  "y": 3
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 3,
+                  "y": 4
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 0
+          }
+        },
+        "safeOptimalWitness": null,
+        "elapsedMs": 24,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除",
+        "witness": [
+          "D",
+          "D",
+          "U",
+          "U",
+          "U",
+          "L",
+          "U",
+          "D",
+          "R",
+          "D",
+          "R",
+          "U",
+          "U",
+          "L",
+          "D",
+          "L",
+          "D",
+          "U",
+          "R",
+          "R",
+          "D",
+          "D",
+          "D",
+          "R",
+          "R",
+          "U",
+          "D",
+          "L",
+          "L",
+          "U",
+          "U",
+          "L",
+          "L",
+          "U",
+          "U",
+          "U"
+        ]
+      }
+    },
+    {
+      "cell": [
+        2,
+        4
+      ],
+      "mapId": "a73ad5e4ba61ec6f4c0451dff4cd3ce6741e6894634c330e183d3df14d023b89",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 201,
+        "transitions": 1005,
+        "discovered": 202,
+        "totalActions": 26
+      },
+      "count": "4",
+      "actions": [
+        "U",
+        "L",
+        "U",
+        "D",
+        "R",
+        "U",
+        "R",
+        "D",
+        "D",
+        "R",
+        "R",
+        "L",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "U",
+        "U",
+        "U"
+      ],
+      "boundary": {
+        "status": "safe",
+        "reason": "all_optimal_routes_avoid_overlap",
+        "mapId": "a73ad5e4ba61ec6f4c0451dff4cd3ce6741e6894634c330e183d3df14d023b89",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 201,
+        "transitions": 1005,
+        "discovered": 201,
+        "optimum": 26,
+        "ignoredFatalOverlap": 0,
+        "observedNonFatalOverlap": null,
+        "safeOptimalWitness": [
+          "U",
+          "L",
+          "U",
+          "D",
+          "R",
+          "U",
+          "R",
+          "D",
+          "D",
+          "R",
+          "R",
+          "L",
+          "L",
+          "D",
+          "D",
+          "R",
+          "R",
+          "U",
+          "U",
+          "L",
+          "L",
+          "L",
+          "L",
+          "U",
+          "U",
+          "U"
+        ],
+        "elapsedMs": 12,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+      }
+    },
+    {
+      "cell": [
+        3,
+        4
+      ],
+      "mapId": "3457a77ab19b22786f1b2c979b0e01dd4af31c24e43e350e3d2a693754903e44",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 264,
+        "transitions": 1320,
+        "discovered": 277,
+        "totalActions": 20
+      },
+      "count": "2",
+      "actions": [
+        "D",
+        "D",
+        "U",
+        "U",
+        "R",
+        "R",
+        "R",
+        "D",
+        "U",
+        "L",
+        "L",
+        "L",
+        "U",
+        "L",
+        "U",
+        "D",
+        "R",
+        "U",
+        "L",
+        "U"
+      ],
+      "boundary": {
+        "status": "safe",
+        "reason": "all_optimal_routes_avoid_overlap",
+        "mapId": "3457a77ab19b22786f1b2c979b0e01dd4af31c24e43e350e3d2a693754903e44",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 264,
+        "transitions": 1320,
+        "discovered": 276,
+        "optimum": 20,
+        "ignoredFatalOverlap": 0,
+        "observedNonFatalOverlap": null,
+        "safeOptimalWitness": [
+          "D",
+          "D",
+          "U",
+          "U",
+          "R",
+          "R",
+          "R",
+          "D",
+          "U",
+          "L",
+          "L",
+          "L",
+          "U",
+          "L",
+          "U",
+          "D",
+          "R",
+          "U",
+          "L",
+          "U"
+        ],
+        "elapsedMs": 21,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+      }
+    },
+    {
+      "cell": [
+        4,
+        4
+      ],
+      "mapId": "31bb36a1f3675601ea2eb7f38492a935760c6fe036b35a786d13b7896061e163",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 454,
+        "transitions": 2270,
+        "discovered": 467,
+        "totalActions": 26
+      },
+      "count": "10",
+      "actions": [
+        "U",
+        "L",
+        "U",
+        "D",
+        "R",
+        "U",
+        "R",
+        "D",
+        "D",
+        "R",
+        "R",
+        "L",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "U",
+        "U",
+        "U"
+      ],
+      "boundary": {
+        "status": "safe",
+        "reason": "all_optimal_routes_avoid_overlap",
+        "mapId": "31bb36a1f3675601ea2eb7f38492a935760c6fe036b35a786d13b7896061e163",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 454,
+        "transitions": 2270,
+        "discovered": 466,
+        "optimum": 26,
+        "ignoredFatalOverlap": 78,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "D",
+            "D",
+            "U",
+            "U",
+            "U",
+            "L",
+            "U",
+            "D",
+            "R",
+            "D",
+            "R",
+            "U"
+          ],
+          "conflict": {
+            "target": {
+              "x": 3,
+              "y": 3
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 2,
+                  "y": 3
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 3,
+                  "y": 4
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 0
+          }
+        },
+        "safeOptimalWitness": [
+          "U",
+          "L",
+          "U",
+          "D",
+          "R",
+          "U",
+          "R",
+          "D",
+          "D",
+          "R",
+          "R",
+          "L",
+          "L",
+          "D",
+          "D",
+          "R",
+          "R",
+          "U",
+          "U",
+          "L",
+          "L",
+          "L",
+          "L",
+          "U",
+          "U",
+          "U"
+        ],
+        "elapsedMs": 27,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+      }
+    },
+    {
+      "cell": [
+        2,
+        5
+      ],
+      "mapId": "f79c95ec424b4711ce4a9bb8dc4a4a5ea9f2b06f7dbc0113ac18e24c9695626a",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 204,
+        "transitions": 1020,
+        "discovered": 205,
+        "totalActions": 26
+      },
+      "count": "4",
+      "actions": [
+        "U",
+        "L",
+        "U",
+        "D",
+        "R",
+        "U",
+        "R",
+        "D",
+        "D",
+        "R",
+        "R",
+        "L",
+        "L",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "L",
+        "L",
+        "U",
+        "U",
+        "U"
+      ],
+      "boundary": {
+        "status": "safe",
+        "reason": "all_optimal_routes_avoid_overlap",
+        "mapId": "f79c95ec424b4711ce4a9bb8dc4a4a5ea9f2b06f7dbc0113ac18e24c9695626a",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 204,
+        "transitions": 1020,
+        "discovered": 204,
+        "optimum": 26,
+        "ignoredFatalOverlap": 0,
+        "observedNonFatalOverlap": null,
+        "safeOptimalWitness": [
+          "U",
+          "L",
+          "U",
+          "D",
+          "R",
+          "U",
+          "R",
+          "D",
+          "D",
+          "R",
+          "R",
+          "L",
+          "L",
+          "D",
+          "D",
+          "R",
+          "R",
+          "U",
+          "U",
+          "L",
+          "L",
+          "L",
+          "L",
+          "U",
+          "U",
+          "U"
+        ],
+        "elapsedMs": 11,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+      }
+    },
+    {
+      "cell": [
+        3,
+        5
+      ],
+      "mapId": "209dd6a220028843e7adad44785a318fd910cf1cfa7f898d1bb3434f05411cb4",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 121,
+        "transitions": 605,
+        "discovered": 121,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null,
+      "boundary": null
+    },
+    {
+      "cell": [
+        4,
+        5
+      ],
+      "mapId": "16f53e8aeaa74c98c4bc1ba2743b656215347523d7fd6a9523152e6298569ec8",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 170,
+        "transitions": 850,
+        "discovered": 170,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null,
+      "boundary": null
+    }
+  ]
+}
