@@ -2,7 +2,7 @@
 
 ## 2026-11-17 · 第49关《留层》重画完整取物任务（稳定ID72 v02）
 
-[逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=72) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWN4wMHBf_4AAwMDhwyDB5uD1oJLoiEMQBDAxcik4MAAAk1MTM3NzAwMLAwKTAoMLCyMDEwNDAwLRJhWiE1QYWlgYDgwsQEA) · [原件、反例与范围](../examples/discovery-course-20261023/drafts/key-room-before-parking-course-20261117/README.md)。去A、钥匙移到上守卫后、目标到下守卫后1门，新增下方两格引鬼回路并删旧目标叶格，24变25格，27步唯一；不是旧解等价精简。原图37步无互相影响方案不再完成新任务，完整禁重合任务分别跳过任一梯口保护均无解。两鬼最佳各留原层，延续旧主题，不称新机制或品质已提升。23格左移稿虽24步最佳安全，却有34步无互相影响通关，拒绝；上层两底格保留31步走错箭头后的恢复选择。全部最优／去终点／跨层编号／码、外侧801态3970后继及两端27步、29／31／35步补救、错误撤回和28帧回放通过，六图已检视。旧v01四件原样归档，两端旧局能继续第2步，主动刷新才载新码；其余48码和关序保持。当前49关，新版公开页正在同步；趣味、观察成本与末段跨度仍待未知规则真人，不入正式地图集。
+[逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=72) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWN4wMHBf_4AAwMDhwyDB5uD1oJLoiEMQBDAxcik4MAAAk1MTM3NzAwMLAwKTAoMLCyMDEwNDAwLRJhWiE1QYWlgYDgwsQEA) · [原件、反例与范围](../examples/discovery-course-20261023/drafts/key-room-before-parking-course-20261117/README.md)。去A、钥匙移到上守卫后、目标到下守卫后1门，新增下方两格引鬼回路并删旧目标叶格，24变25格，27步唯一；不是旧解等价精简。原图37步无互相影响方案不再完成新任务，完整禁重合任务分别跳过任一梯口保护均无解。两鬼最佳各留原层，延续旧主题，不称新机制或品质已提升。23格左移稿虽24步最佳安全，却有34步无互相影响通关，拒绝；上层两底格保留31步走错箭头后的恢复选择。全部最优／去终点／跨层编号／码、外侧801态3970后继及两端27步、29／31／35步补救、错误撤回和28帧回放通过，六图已检视。旧v01四件原样归档，两端旧局能继续第2步，主动刷新才载新码；其余48码和关序保持。当前49关，Site122原生部署成功，成功后未重复访问线上；趣味、观察成本与末段跨度仍待未知规则真人，不入正式地图集。
 
 <details><summary>27步参考回放（含解法）</summary>
 

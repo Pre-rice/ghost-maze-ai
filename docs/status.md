@@ -4,7 +4,7 @@
 
 ## 公开产品与入口
 
-[鬼迷宫·初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)对所有人公开，当前49关，Site121原生部署成功。成功后未访问部署重复核验；[精确发布记录](../examples/discovery-course-20261023/site-publication.json)保存来源、版本和部署ID。[唯一人读审查说明](../examples/discovery-course-20261023/review-guide.md)逐关列来源、实际改动、设计意图和待审；网页可定位当前关，正常游玩不显示设计提示。
+[鬼迷宫·初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)对所有人公开，当前49关，Site122原生部署成功。成功后未访问部署重复核验；[精确发布记录](../examples/discovery-course-20261023/site-publication.json)保存来源、版本和部署ID。[唯一人读审查说明](../examples/discovery-course-20261023/review-guide.md)逐关列来源、实际改动、设计意图和待审；网页可定位当前关，正常游玩不显示设计提示。
 
 顺序唯一来源为[course-order.json](../examples/discovery-course-20261023/course-order.json)，目录ID不等于关号。1—6墙、追逐与普通门；7—13延续A及A/B；14首次钥匙、19首次0，资源与安排到33；34—37方向和控制可达性；38—45多鬼与既有策略；46—49楼梯。观察不当掌握，原作好评不转移给改图或关序。人读来源口径仍18认可作品来源、5未评价研究、26课程新构／重构；构造器26课程专用、23复用／变式，两种口径分开。
 
@@ -16,6 +16,7 @@ Site源码在`/workspace/sites/ghostmaze-discovery-path`。仅一个游戏实例
 
 | 现关号／ID | 本次改变与已知范围 | 设计及验收 |
 | --- | --- | --- |
+| 49／72 v02《留层》 | 去A、上钥匙与下目标重设，24变25格27步。原v01保持；完整禁重合任务的两次保护都需要。23格左移虽24步，却有34步无实际影响方案，拒绝。 | [重画与取舍](../examples/discovery-course-20261023/drafts/key-room-before-parking-course-20261117/README.md) · [浏览器](../examples/discovery-course-20261023/stair-key-revision-browser-check-20261117.json) |
 | 7／37 v03《远门》 | 普通门由下移右，原下口封墙，19收15步；实体与十格保持，停车侧改变，非旧解逐帧等价。两种开侧路稿均有20步一次A，拒绝；最终恢复要求保留。原v02四件归档、v01保持，同ID旧局两端可继续。 | [取舍](../examples/discovery-course-20261023/drafts/first-letter-door-relocation-course-20261117/README.md) · [浏览器](../examples/discovery-course-20261023/first-letter-relocation-browser-check-20261117.json) |
 | 14／77《两面》 | 替换63双鬼22步，主动取消双守卫准备。单鬼14格、14步六走法／四鬼动停类，先外停或先取物再内停两策略；撤回唯一右停假说。原63也能先探门，不说旧图不许探索。旧63四件与说明保持。 | [判断变化](../examples/discovery-course-20261023/drafts/first-key-parking-course-20261117/README.md) · [浏览器](../examples/discovery-course-20261023/first-key-parking-browser-check-20261117.json) |
 | 25／75《伴归》 | 替换61长回程稿，18格26步两类；旧鬼回程再成威胁，要保留新追者保护。原20格不必要0删去、收两格，非旧携影等价精简。旧61四件保持。 | [完整任务](../examples/discovery-course-20261023/drafts/escort-return-course-20261117/README.md) · [浏览器](../examples/discovery-course-20261023/escort-return-browser-check-20261117.json) |
@@ -27,7 +28,7 @@ Site源码在`/workspace/sites/ghostmaze-discovery-path`。仅一个游戏实例
 
 ## 下一步与真实缺失
 
-第49《留层》v02重画已验收，正在同步公开页；目前Site121仍为v01。25格去A，钥匙到楼上守卫后、目标到楼下守卫后1门，27步唯一。原v01四件原样保留；原37步独立安置不再完成新目标，完整禁重合任务分别跳过两个梯口的任一次保护均无解。上鬼不能迁层，下鬼可中途转层后返回；不把41／43步迂回当另一设计策略。最初“先搬上鬼下去再停车”的卡被实际反例撤回。[取舍与范围](../examples/discovery-course-20261023/drafts/key-room-before-parking-course-20261117/README.md)及唯一人读说明已同步。23格左移压缩虽24步最佳安全，却有34步无实际互相影响通关，故拒绝；上层两底格保留31步恢复选择。
+第49《留层》v02重画已验收并以Site122公开，原生成功后未重复访问线上部署。25格去A，钥匙到楼上守卫后、目标到楼下守卫后1门，27步唯一。原v01四件原样保留；原37步独立安置不再完成新目标，完整禁重合任务分别跳过两个梯口的任一次保护均无解。上鬼不能迁层，下鬼可中途转层后返回；不把41／43步迂回当另一设计策略。最初“先搬上鬼下去再停车”的卡被实际反例撤回。[取舍与范围](../examples/discovery-course-20261023/drafts/key-room-before-parking-course-20261117/README.md)及唯一人读说明已同步。23格左移压缩虽24步最佳安全，却有34步无实际互相影响通关，故拒绝；上层两底格保留31步恢复选择。
 
 全部最优、去终点、跨层编号／码、801态3970后继的外侧入场，以及电脑／触屏操作、29／31／35步恢复、四死亡与四无效、十一处历史、28帧回放通过，六图已检视。旧72两端继续第2步、主动刷新才载v02；其余48码与49项关序保持。17日cloud:check再通过，未声称重验全部49图。下一组转向中段方向与不可逆门的完整问题，先确认需要更新的认识，不继续给留层或第三鬼稿添机关。
 
