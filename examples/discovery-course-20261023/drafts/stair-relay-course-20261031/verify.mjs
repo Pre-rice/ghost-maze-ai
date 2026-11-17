@@ -5,10 +5,10 @@ import{createBreadthFirstSearch}from'../../../../../ghost-maze/src/solver/breadt
 import{solveContinuation}from'../../../../src/design/continuation.js';
 import{auditPuzzleBoundaries}from'../../../../src/design/rule-boundaries.js';
 import{auditMultilayerMap}from'../../multilayer-audit.mjs';import{auditEntryPath}from'../../entry-path.mjs';
-import{assertExterior}from'../../../spatial-clearance-20261019/verify.mjs';import{buildLevel}from'../../build.mjs';
+import{assertExterior}from'../../../spatial-clearance-20261019/verify.mjs';
 import{analyzeRelay}from'./queries.mjs';
-const root=new URL('.',import.meta.url),read=p=>JSON.parse(fs.readFileSync(new URL(p,root))),map=read('../../levels/72/map.json'),stored=read('analysis.json'),env=createReferenceEnvironment(map),budget={nodeBudget:500000,stateBudget:500000,budgetMs:20000};assert.deepEqual(buildLevel('72'),map);assert.equal(env.mapId,stored.mapId);assert.equal(env.ruleset,stored.ruleset);assertExterior(map);
-const qa=auditMultilayerMap(map,read('../../levels/72/share.json').mapCode);assert.equal(qa.allResult.totalActions,31);assert.equal(qa.count,'1');assert(qa.cold);assert.equal(qa.noEndSafeRoutes,1);
+const root=new URL('.',import.meta.url),read=p=>JSON.parse(fs.readFileSync(new URL(p,root))),map=read('../../levels/72/revisions/v01/map.json'),stored=read('analysis.json'),env=createReferenceEnvironment(map),budget={nodeBudget:500000,stateBudget:500000,budgetMs:20000};assert.deepEqual(DataSerializer.loadFromShareCode(read('../../levels/72/revisions/v01/share.json').mapCode).data.mapData,map);assert.equal(env.mapId,stored.mapId);assert.equal(env.ruleset,stored.ruleset);assertExterior(map);
+const qa=auditMultilayerMap(map,read('../../levels/72/revisions/v01/share.json').mapCode);assert.equal(qa.allResult.totalActions,31);assert.equal(qa.count,'1');assert(qa.cold);assert.equal(qa.noEndSafeRoutes,1);
 const sig=r=>[r.result.status,r.result.totalActions,r.actions],fresh=analyzeRelay(map,qa.actions);assert.deepEqual(fresh.rows.map(sig),stored.rows.map(sig));assert.deepEqual(fresh.trace,stored.trace);
 const effects=fresh.trace.filter(r=>r.influence.kind==='motion');assert.deepEqual(effects.map(r=>r.step),[5,17]);assert(fresh.trace.every(r=>r.lower[0]===0&&r.upper[0]===1));
 const econ=read('economy.json');

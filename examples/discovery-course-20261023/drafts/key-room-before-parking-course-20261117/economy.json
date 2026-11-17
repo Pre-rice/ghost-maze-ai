@@ -1,0 +1,2357 @@
+{
+  "mapId": "688539efc5d7fcf51e2ec5ec47f2dbd624a35f73ed636ae7c0fa14b016522385",
+  "humanQuality": null,
+  "scope": "当前25格新任务的六项明确门替代与全部合法非实体单删；不是重复原72的十四单删，也不是全局最小证明。",
+  "changes": [
+    {
+      "name": "upper_solid",
+      "mapId": "e1029f2056c4cecccb0681dd7c468f7573c71eec645c370c5d6cc21fe105ff2f",
+      "mapCode": "AWN4wMHBf_4AAwMDhwyDB5uD1oJLoiEMQBDAxcik4MAAAk1MTM3NzAwMLAwKTAoMLCyMDEwNDAwLRJhWiDQqqDAwMAgZAAA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 539,
+        "transitions": 2695,
+        "discovered": 560,
+        "totalActions": 27
+      },
+      "count": "1",
+      "actions": [
+        "D",
+        "L",
+        "R",
+        "U",
+        "R",
+        "STAIR",
+        "D",
+        "D",
+        "R",
+        "U",
+        "R",
+        "U",
+        "STAIR",
+        "R",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "STAIR",
+        "U",
+        "D",
+        "STAIR",
+        "L",
+        "L",
+        "U",
+        "U"
+      ],
+      "boundary": {
+        "status": "safe",
+        "reason": "all_optimal_routes_avoid_overlap",
+        "mapId": "e1029f2056c4cecccb0681dd7c468f7573c71eec645c370c5d6cc21fe105ff2f",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 538,
+        "transitions": 2690,
+        "discovered": 558,
+        "optimum": 27,
+        "ignoredFatalOverlap": 36,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "D",
+            "L",
+            "R",
+            "R",
+            "U",
+            "R",
+            "R",
+            "R",
+            "D",
+            "U",
+            "L",
+            "L",
+            "L",
+            "STAIR",
+            "STAIR",
+            "L",
+            "L",
+            "D",
+            "R",
+            "U"
+          ],
+          "conflict": {
+            "target": {
+              "x": 1,
+              "y": 3
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 2,
+                  "y": 3
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 0,
+                  "y": 3
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 0
+          }
+        },
+        "safeOptimalWitness": [
+          "D",
+          "L",
+          "R",
+          "U",
+          "R",
+          "STAIR",
+          "D",
+          "D",
+          "R",
+          "U",
+          "R",
+          "U",
+          "STAIR",
+          "R",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "STAIR",
+          "U",
+          "D",
+          "STAIR",
+          "L",
+          "L",
+          "U",
+          "U"
+        ],
+        "elapsedMs": 137,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+      }
+    },
+    {
+      "name": "upper_ordinary",
+      "mapId": "6ff29302f410e12f7497155b9f053770d43a4e28cfff9d6f05b0e46756512896",
+      "mapCode": "AWN4wMHBf_4AAwMDhwyDB5uD1oJLoiEMQBDAxcik4MAAAk1MTM3NzAwMLAwKTAoMLCyMDEwNDAwLRJhWiAmosDQwMDC5AQA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 524,
+        "transitions": 2620,
+        "discovered": 570,
+        "totalActions": 19
+      },
+      "count": "2",
+      "actions": [
+        "R",
+        "STAIR",
+        "D",
+        "D",
+        "R",
+        "U",
+        "L",
+        "U",
+        "U",
+        "D",
+        "STAIR",
+        "L",
+        "D",
+        "L",
+        "R",
+        "U",
+        "L",
+        "U",
+        "U"
+      ],
+      "boundary": {
+        "status": "safe",
+        "reason": "all_optimal_routes_avoid_overlap",
+        "mapId": "6ff29302f410e12f7497155b9f053770d43a4e28cfff9d6f05b0e46756512896",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 523,
+        "transitions": 2615,
+        "discovered": 567,
+        "optimum": 19,
+        "ignoredFatalOverlap": 4,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "D",
+            "L",
+            "R",
+            "U",
+            "R",
+            "R",
+            "R",
+            "STAIR",
+            "D",
+            "L",
+            "D",
+            "L",
+            "U",
+            "R"
+          ],
+          "conflict": {
+            "target": {
+              "x": 2,
+              "y": 3
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 2,
+                  "y": 2
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 2,
+                  "y": 4
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 1
+          }
+        },
+        "safeOptimalWitness": [
+          "R",
+          "STAIR",
+          "D",
+          "D",
+          "R",
+          "U",
+          "L",
+          "U",
+          "U",
+          "D",
+          "STAIR",
+          "L",
+          "D",
+          "L",
+          "R",
+          "U",
+          "L",
+          "U",
+          "U"
+        ],
+        "elapsedMs": 118,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+      }
+    },
+    {
+      "name": "upper_empty",
+      "mapId": "ea0e90d0de90b7722bf92c7304c71043d54788116a0fc717a56f32383b8df0c3",
+      "mapCode": "AWN4wMHBf_4AAwMDhwyDB5uD1oJLoiEMQBDAxcik4MAAAk1MTM3NzAwMLAwKTAoMLCyMDEwNDAwLRJhWCDI5eDAwMKgkAAA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 526,
+        "transitions": 2630,
+        "discovered": 538,
+        "totalActions": 25
+      },
+      "count": "1",
+      "actions": [
+        "D",
+        "L",
+        "R",
+        "U",
+        "R",
+        "STAIR",
+        "D",
+        "R",
+        "R",
+        "U",
+        "STAIR",
+        "R",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "STAIR",
+        "U",
+        "D",
+        "STAIR",
+        "L",
+        "L",
+        "U",
+        "U"
+      ],
+      "boundary": {
+        "status": "safe",
+        "reason": "all_optimal_routes_avoid_overlap",
+        "mapId": "ea0e90d0de90b7722bf92c7304c71043d54788116a0fc717a56f32383b8df0c3",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 525,
+        "transitions": 2625,
+        "discovered": 536,
+        "optimum": 25,
+        "ignoredFatalOverlap": 57,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "D",
+            "L",
+            "R",
+            "U",
+            "R",
+            "R",
+            "R",
+            "STAIR",
+            "D",
+            "L",
+            "D",
+            "L",
+            "U",
+            "R"
+          ],
+          "conflict": {
+            "target": {
+              "x": 2,
+              "y": 3
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 2,
+                  "y": 2
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 2,
+                  "y": 4
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 1
+          }
+        },
+        "safeOptimalWitness": [
+          "D",
+          "L",
+          "R",
+          "U",
+          "R",
+          "STAIR",
+          "D",
+          "R",
+          "R",
+          "U",
+          "STAIR",
+          "R",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "STAIR",
+          "U",
+          "D",
+          "STAIR",
+          "L",
+          "L",
+          "U",
+          "U"
+        ],
+        "elapsedMs": 55,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+      }
+    },
+    {
+      "name": "lower_solid",
+      "mapId": "5a91254c285a655f9a34861d429f8430e1ecfaf5271d7d3134c74ccece27d8b6",
+      "mapCode": "AADgCAgPz8AAAAAIHABIBkAqoJCqoAAAAAKAUAgRAgAAAAAABEBAUHBgYAAAgAQARAAAgIAgAFAAABQCgFUC0gSAkAAAGBIw",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 350,
+        "transitions": 1750,
+        "discovered": 350,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null,
+      "boundary": null
+    },
+    {
+      "name": "lower_ordinary",
+      "mapId": "01e3818aca653d906fa629a2ca868f60fc5ac993edb02a606bfdbf683146a6ef",
+      "mapCode": "AWN4wMHBf_4AAwMDhwyDB5uD1oJDoiEMQBDAxcik4MAAAh0cXHw8PAwMAgwNHA0MAgIsDFwMDEwNAVwLohwmCDEwMDO5AQA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 689,
+        "transitions": 3445,
+        "discovered": 717,
+        "totalActions": 27
+      },
+      "count": "1",
+      "actions": [
+        "D",
+        "L",
+        "R",
+        "U",
+        "R",
+        "STAIR",
+        "D",
+        "D",
+        "R",
+        "U",
+        "R",
+        "U",
+        "STAIR",
+        "R",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "STAIR",
+        "U",
+        "D",
+        "STAIR",
+        "L",
+        "L",
+        "U",
+        "U"
+      ],
+      "boundary": {
+        "status": "safe",
+        "reason": "all_optimal_routes_avoid_overlap",
+        "mapId": "01e3818aca653d906fa629a2ca868f60fc5ac993edb02a606bfdbf683146a6ef",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 688,
+        "transitions": 3440,
+        "discovered": 715,
+        "optimum": 27,
+        "ignoredFatalOverlap": 56,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "D",
+            "L",
+            "R",
+            "U",
+            "R",
+            "R",
+            "R",
+            "STAIR",
+            "D",
+            "L",
+            "D",
+            "L",
+            "U",
+            "R"
+          ],
+          "conflict": {
+            "target": {
+              "x": 2,
+              "y": 3
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 2,
+                  "y": 2
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 2,
+                  "y": 4
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 1
+          }
+        },
+        "safeOptimalWitness": [
+          "D",
+          "L",
+          "R",
+          "U",
+          "R",
+          "STAIR",
+          "D",
+          "D",
+          "R",
+          "U",
+          "R",
+          "U",
+          "STAIR",
+          "R",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "STAIR",
+          "U",
+          "D",
+          "STAIR",
+          "L",
+          "L",
+          "U",
+          "U"
+        ],
+        "elapsedMs": 70,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+      }
+    },
+    {
+      "name": "lower_empty",
+      "mapId": "e963dfb725b265de563e48e55fee28f975553ba895b48dfaf1d3de1b89923467",
+      "mapCode": "AADgCAgPz8AAAAAIHABIBkAqoCFVQAAAAAUAoBAiBAAAAAAACICAoODAwAABAAgAiAABAQBAAKAAACgFAKoFpAkBIAAAMCRg",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 360,
+        "transitions": 1800,
+        "discovered": 360,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null,
+      "boundary": null
+    }
+  ],
+  "deletions": [
+    {
+      "name": "0,0,2",
+      "mapId": "c7de8bfc458705189ae84ab182e0876425140134bdcabab9fdd86bb1b318b6ea",
+      "mapCode": "AWN4wMHBfv4AAwMDhwiDB5tDaKBJaygDEIgwNSh0CDCAgEJDw4IHBw4wMDJwMHQwMDIyODAsYGDQYGVYxbqEk1GBgcFAOQAA",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 167,
+        "transitions": 835,
+        "discovered": 167,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null,
+      "boundary": null
+    },
+    {
+      "name": "0,3,2",
+      "mapId": "e7f5c64454eb8293153586d47cbd21e4bb7164957119354826431dee3a0ee09a",
+      "mapCode": "AWN4wMHBd_4AAwMDhwyDB5uDpuMq0RAGIAjgYhTpEGAAAYWGhgUPDhxgYGTgYOhgYGRkcGBYwMCgwcqwinUJJ6MCA4OBSgAA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 431,
+        "transitions": 2155,
+        "discovered": 439,
+        "totalActions": 37
+      },
+      "count": "1",
+      "actions": [
+        "D",
+        "L",
+        "R",
+        "R",
+        "R",
+        "R",
+        "R",
+        "U",
+        "L",
+        "STAIR",
+        "D",
+        "L",
+        "D",
+        "L",
+        "U",
+        "R",
+        "D",
+        "D",
+        "L",
+        "R",
+        "U",
+        "L",
+        "U",
+        "U",
+        "STAIR",
+        "L",
+        "D",
+        "R",
+        "U",
+        "STAIR",
+        "U",
+        "D",
+        "STAIR",
+        "L",
+        "L",
+        "U",
+        "U"
+      ],
+      "boundary": {
+        "status": "conflict",
+        "reason": "optimal_solution_uses_overlap",
+        "mapId": "e7f5c64454eb8293153586d47cbd21e4bb7164957119354826431dee3a0ee09a",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 426,
+        "transitions": 2126,
+        "discovered": 433,
+        "optimum": 37,
+        "ignoredFatalOverlap": 46,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "D",
+            "L",
+            "R",
+            "R",
+            "R",
+            "R",
+            "R",
+            "U",
+            "L",
+            "STAIR",
+            "D",
+            "L",
+            "D",
+            "L",
+            "U",
+            "R"
+          ],
+          "conflict": {
+            "target": {
+              "x": 2,
+              "y": 3
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 2,
+                  "y": 2
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 2,
+                  "y": 4
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 1
+          }
+        },
+        "safeOptimalWitness": null,
+        "elapsedMs": 35,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除",
+        "witness": [
+          "D",
+          "L",
+          "R",
+          "R",
+          "R",
+          "R",
+          "R",
+          "U",
+          "L",
+          "STAIR",
+          "D",
+          "L",
+          "D",
+          "L",
+          "U",
+          "R",
+          "D",
+          "D",
+          "L",
+          "R",
+          "U",
+          "L",
+          "U",
+          "U",
+          "STAIR",
+          "L",
+          "D",
+          "R",
+          "U",
+          "STAIR",
+          "U",
+          "D",
+          "STAIR",
+          "L",
+          "L",
+          "U",
+          "U"
+        ]
+      }
+    },
+    {
+      "name": "0,5,2",
+      "mapId": "de943539f534f779721e05471434a82803871669605d3ac37ea348251e09980f",
+      "mapCode": "AWN4wMHB33-AgYGBQ4bBg81Bq3GpaAgDEARwMbIoODCAQBMTU3MzMwMDC4MCkwIDCwsjA1MDA8MCEaYVYhNUWBoYGA5MbAAA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 390,
+        "transitions": 1950,
+        "discovered": 392,
+        "totalActions": 35
+      },
+      "count": "6",
+      "actions": [
+        "D",
+        "L",
+        "R",
+        "U",
+        "R",
+        "R",
+        "R",
+        "STAIR",
+        "D",
+        "L",
+        "D",
+        "L",
+        "U",
+        "R",
+        "D",
+        "D",
+        "L",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U",
+        "STAIR",
+        "L",
+        "D",
+        "L",
+        "U",
+        "STAIR",
+        "U",
+        "D",
+        "STAIR",
+        "L",
+        "L",
+        "U",
+        "U"
+      ],
+      "boundary": {
+        "status": "conflict",
+        "reason": "optimal_solution_uses_overlap",
+        "mapId": "de943539f534f779721e05471434a82803871669605d3ac37ea348251e09980f",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 388,
+        "transitions": 1936,
+        "discovered": 389,
+        "optimum": 35,
+        "ignoredFatalOverlap": 53,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "D",
+            "L",
+            "R",
+            "U",
+            "R",
+            "R",
+            "R",
+            "STAIR",
+            "D",
+            "L",
+            "D",
+            "L",
+            "U",
+            "R"
+          ],
+          "conflict": {
+            "target": {
+              "x": 2,
+              "y": 3
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 2,
+                  "y": 2
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 2,
+                  "y": 4
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 1
+          }
+        },
+        "safeOptimalWitness": null,
+        "elapsedMs": 53,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除",
+        "witness": [
+          "D",
+          "L",
+          "R",
+          "U",
+          "R",
+          "R",
+          "R",
+          "STAIR",
+          "D",
+          "L",
+          "D",
+          "L",
+          "U",
+          "R",
+          "D",
+          "D",
+          "L",
+          "R",
+          "U",
+          "U",
+          "R",
+          "U",
+          "STAIR",
+          "L",
+          "D",
+          "L",
+          "U",
+          "STAIR",
+          "U",
+          "D",
+          "STAIR",
+          "L",
+          "L",
+          "U",
+          "U"
+        ]
+      }
+    },
+    {
+      "name": "0,0,3",
+      "mapId": "612f9c4e9f680a5ed6a624b7a9efeef15a68724dcc2b5cc5c4de11304b52a8f3",
+      "mapCode": "AWN4wMHBf_wAAwMDhwyDB5uD1qJM1hAGIAjgYmQScGAAgSYmpuZmZgYGFgYFJgUGFhZGBqYGBoYFIkwrxCaosDQwMByY2AAA",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 161,
+        "transitions": 805,
+        "discovered": 161,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null,
+      "boundary": null
+    },
+    {
+      "name": "0,1,3",
+      "mapId": "93c74ee33fc72629cb6fb98e8d453542429b2368c55e90a330d8ed5acc8c533a",
+      "mapCode": "AWN4wMHBf_oAAwMDhwyDB5uD1sJMzhAGIAjgYmTSEmAAAYWGhgUPDhxgYGTgYOhgYGRkcGBYwMCgwcqwinUJJ6MCA4OBSgIA",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 149,
+        "transitions": 745,
+        "discovered": 149,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null,
+      "boundary": null
+    },
+    {
+      "name": "0,2,3",
+      "mapId": "4840742cb4ff57ac0840762b58fa3df342a27b3481e198b42263b82ff2234914",
+      "mapCode": "AADgCAgPzcAAAAAIHABIBkAqoJClQAAAAAUAoBAiUQAAAAAAAiAgKDgwMAAAQAIAIgAAQEAQACgAAAoBQCqBaQJASAAADAkY",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 289,
+        "transitions": 1445,
+        "discovered": 289,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null,
+      "boundary": null
+    },
+    {
+      "name": "0,3,3",
+      "mapId": "60f2b83e9d0c8285ecf8d47e480111afd2bfe63e31d9a298f0e85e1d9ab23933",
+      "mapCode": "AWN4wMHBf-4AAwMDhwyDB5uD1oKrXFMYgCCAi5FJaQIDCCg0NCx4cOAAAyMDB0MHAyMjgwPDAgYGDVaGVaxLOBkVGBgMVBIA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 373,
+        "transitions": 1865,
+        "discovered": 376,
+        "totalActions": 35
+      },
+      "count": "1",
+      "actions": [
+        "D",
+        "L",
+        "R",
+        "U",
+        "R",
+        "R",
+        "R",
+        "STAIR",
+        "D",
+        "L",
+        "D",
+        "L",
+        "U",
+        "R",
+        "D",
+        "D",
+        "L",
+        "R",
+        "U",
+        "L",
+        "U",
+        "U",
+        "STAIR",
+        "L",
+        "D",
+        "R",
+        "U",
+        "STAIR",
+        "U",
+        "D",
+        "STAIR",
+        "L",
+        "L",
+        "U",
+        "U"
+      ],
+      "boundary": {
+        "status": "conflict",
+        "reason": "optimal_solution_uses_overlap",
+        "mapId": "60f2b83e9d0c8285ecf8d47e480111afd2bfe63e31d9a298f0e85e1d9ab23933",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 371,
+        "transitions": 1851,
+        "discovered": 373,
+        "optimum": 35,
+        "ignoredFatalOverlap": 47,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "D",
+            "L",
+            "R",
+            "U",
+            "R",
+            "R",
+            "R",
+            "STAIR",
+            "D",
+            "L",
+            "D",
+            "L",
+            "U",
+            "R"
+          ],
+          "conflict": {
+            "target": {
+              "x": 2,
+              "y": 3
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 2,
+                  "y": 2
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 2,
+                  "y": 4
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 1
+          }
+        },
+        "safeOptimalWitness": null,
+        "elapsedMs": 37,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除",
+        "witness": [
+          "D",
+          "L",
+          "R",
+          "U",
+          "R",
+          "R",
+          "R",
+          "STAIR",
+          "D",
+          "L",
+          "D",
+          "L",
+          "U",
+          "R",
+          "D",
+          "D",
+          "L",
+          "R",
+          "U",
+          "L",
+          "U",
+          "U",
+          "STAIR",
+          "L",
+          "D",
+          "R",
+          "U",
+          "STAIR",
+          "U",
+          "D",
+          "STAIR",
+          "L",
+          "L",
+          "U",
+          "U"
+        ]
+      }
+    },
+    {
+      "name": "0,4,3",
+      "mapId": "1963ff4b2f1577b1a3714b1f194cd9367b337a7671f05ab2676b58b7c8cad199",
+      "mapCode": "AWN4wMHBf96BgYGBQ4bBg81Ba8ElUQ8GIFggwsTitIABBBwZGR0PNjYwMDEIMAowMDExNDA6MDAEcDGGcHsIMTkwMCR4HAAA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 407,
+        "transitions": 2035,
+        "discovered": 410,
+        "totalActions": 35
+      },
+      "count": "6",
+      "actions": [
+        "D",
+        "L",
+        "R",
+        "U",
+        "R",
+        "R",
+        "R",
+        "STAIR",
+        "D",
+        "L",
+        "D",
+        "L",
+        "U",
+        "R",
+        "D",
+        "D",
+        "L",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U",
+        "STAIR",
+        "L",
+        "D",
+        "L",
+        "U",
+        "STAIR",
+        "U",
+        "D",
+        "STAIR",
+        "L",
+        "L",
+        "U",
+        "U"
+      ],
+      "boundary": {
+        "status": "conflict",
+        "reason": "optimal_solution_uses_overlap",
+        "mapId": "1963ff4b2f1577b1a3714b1f194cd9367b337a7671f05ab2676b58b7c8cad199",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 405,
+        "transitions": 2021,
+        "discovered": 407,
+        "optimum": 35,
+        "ignoredFatalOverlap": 53,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "D",
+            "L",
+            "R",
+            "U",
+            "R",
+            "R",
+            "R",
+            "STAIR",
+            "D",
+            "L",
+            "D",
+            "L",
+            "U",
+            "R"
+          ],
+          "conflict": {
+            "target": {
+              "x": 2,
+              "y": 3
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 2,
+                  "y": 2
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 2,
+                  "y": 4
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 1
+          }
+        },
+        "safeOptimalWitness": null,
+        "elapsedMs": 56,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除",
+        "witness": [
+          "D",
+          "L",
+          "R",
+          "U",
+          "R",
+          "R",
+          "R",
+          "STAIR",
+          "D",
+          "L",
+          "D",
+          "L",
+          "U",
+          "R",
+          "D",
+          "D",
+          "L",
+          "R",
+          "U",
+          "U",
+          "R",
+          "U",
+          "STAIR",
+          "L",
+          "D",
+          "L",
+          "U",
+          "STAIR",
+          "U",
+          "D",
+          "STAIR",
+          "L",
+          "L",
+          "U",
+          "U"
+        ]
+      }
+    },
+    {
+      "name": "0,5,3",
+      "mapId": "24e9e6fb24d71201d58f8d67cad3886167c84de9ca8dc03d54d3524c8b4736a6",
+      "mapCode": "AWN4wcHBf76BgYGBQ4bBg50h1PGpaAADECwQYWJxZAABRhYWVnY2NgYGDgYHFgcGDg4mBlYGBkYHDdYAfQUPTgYGxkZlBgA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 399,
+        "transitions": 1995,
+        "discovered": 401,
+        "totalActions": 35
+      },
+      "count": "6",
+      "actions": [
+        "D",
+        "L",
+        "R",
+        "U",
+        "R",
+        "R",
+        "R",
+        "STAIR",
+        "D",
+        "L",
+        "D",
+        "L",
+        "U",
+        "R",
+        "D",
+        "D",
+        "L",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U",
+        "STAIR",
+        "L",
+        "D",
+        "L",
+        "U",
+        "STAIR",
+        "U",
+        "D",
+        "STAIR",
+        "L",
+        "L",
+        "U",
+        "U"
+      ],
+      "boundary": {
+        "status": "conflict",
+        "reason": "optimal_solution_uses_overlap",
+        "mapId": "24e9e6fb24d71201d58f8d67cad3886167c84de9ca8dc03d54d3524c8b4736a6",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 397,
+        "transitions": 1981,
+        "discovered": 398,
+        "optimum": 35,
+        "ignoredFatalOverlap": 53,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "D",
+            "L",
+            "R",
+            "U",
+            "R",
+            "R",
+            "R",
+            "STAIR",
+            "D",
+            "L",
+            "D",
+            "L",
+            "U",
+            "R"
+          ],
+          "conflict": {
+            "target": {
+              "x": 2,
+              "y": 3
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 2,
+                  "y": 2
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 2,
+                  "y": 4
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 1
+          }
+        },
+        "safeOptimalWitness": null,
+        "elapsedMs": 68,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除",
+        "witness": [
+          "D",
+          "L",
+          "R",
+          "U",
+          "R",
+          "R",
+          "R",
+          "STAIR",
+          "D",
+          "L",
+          "D",
+          "L",
+          "U",
+          "R",
+          "D",
+          "D",
+          "L",
+          "R",
+          "U",
+          "U",
+          "R",
+          "U",
+          "STAIR",
+          "L",
+          "D",
+          "L",
+          "U",
+          "STAIR",
+          "U",
+          "D",
+          "STAIR",
+          "L",
+          "L",
+          "U",
+          "U"
+        ]
+      }
+    },
+    {
+      "name": "1,2,3",
+      "mapId": "2cdf19d461a6d85b539536f267e05c567cb6da064d0f5dfcb39ae9e77f979779",
+      "mapCode": "AWN4wMHBf_4AAwMDhwyDB5uD1oJLoiEMQBDAxcik4MAAAk1MTI3NzAwMLAwKTAoMLFxMDgwLGBg0WBlWMTlMEGJgYOCUAAA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 343,
+        "transitions": 1715,
+        "discovered": 352,
+        "totalActions": 33
+      },
+      "count": "2",
+      "actions": [
+        "D",
+        "L",
+        "R",
+        "R",
+        "U",
+        "R",
+        "R",
+        "R",
+        "D",
+        "U",
+        "L",
+        "L",
+        "L",
+        "STAIR",
+        "STAIR",
+        "L",
+        "L",
+        "D",
+        "R",
+        "U",
+        "R",
+        "R",
+        "D",
+        "L",
+        "U",
+        "STAIR",
+        "U",
+        "D",
+        "STAIR",
+        "L",
+        "L",
+        "U",
+        "U"
+      ],
+      "boundary": {
+        "status": "conflict",
+        "reason": "optimal_solution_uses_overlap",
+        "mapId": "2cdf19d461a6d85b539536f267e05c567cb6da064d0f5dfcb39ae9e77f979779",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 341,
+        "transitions": 1701,
+        "discovered": 349,
+        "optimum": 33,
+        "ignoredFatalOverlap": 52,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "D",
+            "L",
+            "R",
+            "R",
+            "U",
+            "R",
+            "R",
+            "R",
+            "D",
+            "U",
+            "L",
+            "L",
+            "L",
+            "STAIR",
+            "STAIR",
+            "L",
+            "L",
+            "D",
+            "R",
+            "U"
+          ],
+          "conflict": {
+            "target": {
+              "x": 1,
+              "y": 3
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 2,
+                  "y": 3
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 0,
+                  "y": 3
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 0
+          }
+        },
+        "safeOptimalWitness": null,
+        "elapsedMs": 31,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除",
+        "witness": [
+          "D",
+          "L",
+          "R",
+          "R",
+          "U",
+          "R",
+          "R",
+          "R",
+          "D",
+          "U",
+          "L",
+          "L",
+          "L",
+          "STAIR",
+          "STAIR",
+          "L",
+          "L",
+          "D",
+          "R",
+          "U",
+          "R",
+          "R",
+          "D",
+          "L",
+          "U",
+          "STAIR",
+          "U",
+          "D",
+          "STAIR",
+          "L",
+          "L",
+          "U",
+          "U"
+        ]
+      }
+    },
+    {
+      "name": "1,3,3",
+      "mapId": "e3f79e102d178ddfec4eed070d4e7b25cda8a61896e16885a1eca6461b5ab1d7",
+      "mapCode": "AWN4wMHBf_4AAwMDhwyDB5uD1oJLoiEMQBDAxcik4MAAAk1MTE3NzAwMLAwKTAoMLAysDEwNDAwLRJhWiDpMEGJgYOCUAAA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 323,
+        "transitions": 1615,
+        "discovered": 329,
+        "totalActions": 33
+      },
+      "count": "2",
+      "actions": [
+        "D",
+        "L",
+        "R",
+        "R",
+        "U",
+        "R",
+        "R",
+        "R",
+        "D",
+        "U",
+        "L",
+        "L",
+        "L",
+        "STAIR",
+        "STAIR",
+        "L",
+        "L",
+        "D",
+        "R",
+        "U",
+        "R",
+        "R",
+        "D",
+        "L",
+        "U",
+        "STAIR",
+        "U",
+        "D",
+        "STAIR",
+        "L",
+        "L",
+        "U",
+        "U"
+      ],
+      "boundary": {
+        "status": "conflict",
+        "reason": "optimal_solution_uses_overlap",
+        "mapId": "e3f79e102d178ddfec4eed070d4e7b25cda8a61896e16885a1eca6461b5ab1d7",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 321,
+        "transitions": 1601,
+        "discovered": 326,
+        "optimum": 33,
+        "ignoredFatalOverlap": 54,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "D",
+            "L",
+            "R",
+            "R",
+            "U",
+            "R",
+            "R",
+            "R",
+            "D",
+            "U",
+            "L",
+            "L",
+            "L",
+            "STAIR",
+            "STAIR",
+            "L",
+            "L",
+            "D",
+            "R",
+            "U"
+          ],
+          "conflict": {
+            "target": {
+              "x": 1,
+              "y": 3
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 2,
+                  "y": 3
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 0,
+                  "y": 3
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 0
+          }
+        },
+        "safeOptimalWitness": null,
+        "elapsedMs": 28,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除",
+        "witness": [
+          "D",
+          "L",
+          "R",
+          "R",
+          "U",
+          "R",
+          "R",
+          "R",
+          "D",
+          "U",
+          "L",
+          "L",
+          "L",
+          "STAIR",
+          "STAIR",
+          "L",
+          "L",
+          "D",
+          "R",
+          "U",
+          "R",
+          "R",
+          "D",
+          "L",
+          "U",
+          "STAIR",
+          "U",
+          "D",
+          "STAIR",
+          "L",
+          "L",
+          "U",
+          "U"
+        ]
+      }
+    },
+    {
+      "name": "1,4,3",
+      "mapId": "777c51cfac57b0cd5ae29e6c490fd104083eb136a663c948339ccca7751ed157",
+      "mapCode": "AWN4wMHBf_4AAwMDhwyDB5uD1oJLoiEMQBDAxcik4MAAAk1MTM3MzAwMLAwKTAoMLKwMDEwNDAwLRJhWiC1QYWlgYDgwsQEA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 336,
+        "transitions": 1680,
+        "discovered": 340,
+        "totalActions": 33
+      },
+      "count": "2",
+      "actions": [
+        "D",
+        "L",
+        "R",
+        "R",
+        "U",
+        "R",
+        "R",
+        "R",
+        "D",
+        "U",
+        "L",
+        "L",
+        "L",
+        "STAIR",
+        "STAIR",
+        "L",
+        "L",
+        "D",
+        "R",
+        "U",
+        "R",
+        "R",
+        "D",
+        "L",
+        "U",
+        "STAIR",
+        "U",
+        "D",
+        "STAIR",
+        "L",
+        "L",
+        "U",
+        "U"
+      ],
+      "boundary": {
+        "status": "conflict",
+        "reason": "optimal_solution_uses_overlap",
+        "mapId": "777c51cfac57b0cd5ae29e6c490fd104083eb136a663c948339ccca7751ed157",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 334,
+        "transitions": 1666,
+        "discovered": 337,
+        "optimum": 33,
+        "ignoredFatalOverlap": 55,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "D",
+            "L",
+            "R",
+            "R",
+            "U",
+            "R",
+            "R",
+            "R",
+            "D",
+            "U",
+            "L",
+            "L",
+            "L",
+            "STAIR",
+            "STAIR",
+            "L",
+            "L",
+            "D",
+            "R",
+            "U"
+          ],
+          "conflict": {
+            "target": {
+              "x": 1,
+              "y": 3
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 2,
+                  "y": 3
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 0,
+                  "y": 3
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 0
+          }
+        },
+        "safeOptimalWitness": null,
+        "elapsedMs": 34,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除",
+        "witness": [
+          "D",
+          "L",
+          "R",
+          "R",
+          "U",
+          "R",
+          "R",
+          "R",
+          "D",
+          "U",
+          "L",
+          "L",
+          "L",
+          "STAIR",
+          "STAIR",
+          "L",
+          "L",
+          "D",
+          "R",
+          "U",
+          "R",
+          "R",
+          "D",
+          "L",
+          "U",
+          "STAIR",
+          "U",
+          "D",
+          "STAIR",
+          "L",
+          "L",
+          "U",
+          "U"
+        ]
+      }
+    },
+    {
+      "name": "1,2,4",
+      "mapId": "cfae63333b5a8f7097391f61f3dc613ba88c38b1533d9aaa44a42ab0b3d74ed3",
+      "mapCode": "AWN4wMHBf_4AAwMDhwyDB5uD1oJLoiEMQBDAxcik4MAAAk1MTM2NzAwMLAwKTAoMLCwsjQwLGBg0WBlWsS5hZVRgYDBQSQAA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 404,
+        "transitions": 2020,
+        "discovered": 410,
+        "totalActions": 33
+      },
+      "count": "2",
+      "actions": [
+        "D",
+        "L",
+        "R",
+        "R",
+        "U",
+        "R",
+        "R",
+        "R",
+        "D",
+        "U",
+        "L",
+        "L",
+        "L",
+        "STAIR",
+        "STAIR",
+        "L",
+        "L",
+        "D",
+        "R",
+        "U",
+        "R",
+        "R",
+        "D",
+        "L",
+        "U",
+        "STAIR",
+        "U",
+        "D",
+        "STAIR",
+        "L",
+        "L",
+        "U",
+        "U"
+      ],
+      "boundary": {
+        "status": "conflict",
+        "reason": "optimal_solution_uses_overlap",
+        "mapId": "cfae63333b5a8f7097391f61f3dc613ba88c38b1533d9aaa44a42ab0b3d74ed3",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 400,
+        "transitions": 1996,
+        "discovered": 407,
+        "optimum": 33,
+        "ignoredFatalOverlap": 47,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "D",
+            "L",
+            "R",
+            "R",
+            "U",
+            "R",
+            "R",
+            "R",
+            "D",
+            "U",
+            "L",
+            "L",
+            "L",
+            "STAIR",
+            "STAIR",
+            "L",
+            "L",
+            "D",
+            "R",
+            "U"
+          ],
+          "conflict": {
+            "target": {
+              "x": 1,
+              "y": 3
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 2,
+                  "y": 3
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 0,
+                  "y": 3
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 0
+          }
+        },
+        "safeOptimalWitness": null,
+        "elapsedMs": 35,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除",
+        "witness": [
+          "D",
+          "L",
+          "R",
+          "R",
+          "U",
+          "R",
+          "R",
+          "R",
+          "D",
+          "U",
+          "L",
+          "L",
+          "L",
+          "STAIR",
+          "STAIR",
+          "L",
+          "L",
+          "D",
+          "R",
+          "U",
+          "R",
+          "R",
+          "D",
+          "L",
+          "U",
+          "STAIR",
+          "U",
+          "D",
+          "STAIR",
+          "L",
+          "L",
+          "U",
+          "U"
+        ]
+      }
+    },
+    {
+      "name": "1,3,4",
+      "mapId": "0e6abc28dd510323aec911695a5f52a193e657b49cc66e45e59f2562744cf20c",
+      "mapCode": "AWN4wMHBf_4AAwMDhwyDB5uD1oJLoiEMQBDAxcik4MAAAk1MTM1NzAwMLAwKTAoMLCxMDQ0LGBg0WBlWsS7hYlRgYDBQSQAA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 378,
+        "transitions": 1890,
+        "discovered": 383,
+        "totalActions": 33
+      },
+      "count": "2",
+      "actions": [
+        "D",
+        "L",
+        "R",
+        "R",
+        "U",
+        "R",
+        "R",
+        "R",
+        "D",
+        "U",
+        "L",
+        "L",
+        "L",
+        "STAIR",
+        "STAIR",
+        "L",
+        "L",
+        "D",
+        "R",
+        "U",
+        "R",
+        "R",
+        "D",
+        "L",
+        "U",
+        "STAIR",
+        "U",
+        "D",
+        "STAIR",
+        "L",
+        "L",
+        "U",
+        "U"
+      ],
+      "boundary": {
+        "status": "conflict",
+        "reason": "optimal_solution_uses_overlap",
+        "mapId": "0e6abc28dd510323aec911695a5f52a193e657b49cc66e45e59f2562744cf20c",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 374,
+        "transitions": 1866,
+        "discovered": 380,
+        "optimum": 33,
+        "ignoredFatalOverlap": 47,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "D",
+            "L",
+            "R",
+            "R",
+            "U",
+            "R",
+            "R",
+            "R",
+            "D",
+            "U",
+            "L",
+            "L",
+            "L",
+            "STAIR",
+            "STAIR",
+            "L",
+            "L",
+            "D",
+            "R",
+            "U"
+          ],
+          "conflict": {
+            "target": {
+              "x": 1,
+              "y": 3
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 2,
+                  "y": 3
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 0,
+                  "y": 3
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 0
+          }
+        },
+        "safeOptimalWitness": null,
+        "elapsedMs": 38,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除",
+        "witness": [
+          "D",
+          "L",
+          "R",
+          "R",
+          "U",
+          "R",
+          "R",
+          "R",
+          "D",
+          "U",
+          "L",
+          "L",
+          "L",
+          "STAIR",
+          "STAIR",
+          "L",
+          "L",
+          "D",
+          "R",
+          "U",
+          "R",
+          "R",
+          "D",
+          "L",
+          "U",
+          "STAIR",
+          "U",
+          "D",
+          "STAIR",
+          "L",
+          "L",
+          "U",
+          "U"
+        ]
+      }
+    },
+    {
+      "name": "1,2,5",
+      "mapId": "3737528ba2b9dff8bf914ce917215329c6a383de035b715b0aee1bcf6ccf06e2",
+      "mapCode": "AWN4wMHBf_4AAwMDhwyDB5uD1oJLoiEMQBDAxcik4MAAAk1MTM3NjAwMLAwKTAoMLCyMTAwNDAwLRJhWiE1QYWpgYDgwsQEA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 513,
+        "transitions": 2565,
+        "discovered": 528,
+        "totalActions": 27
+      },
+      "count": "1",
+      "actions": [
+        "D",
+        "L",
+        "R",
+        "U",
+        "R",
+        "STAIR",
+        "D",
+        "D",
+        "R",
+        "U",
+        "R",
+        "U",
+        "STAIR",
+        "R",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "STAIR",
+        "U",
+        "D",
+        "STAIR",
+        "L",
+        "L",
+        "U",
+        "U"
+      ],
+      "boundary": {
+        "status": "safe",
+        "reason": "all_optimal_routes_avoid_overlap",
+        "mapId": "3737528ba2b9dff8bf914ce917215329c6a383de035b715b0aee1bcf6ccf06e2",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 512,
+        "transitions": 2560,
+        "discovered": 526,
+        "optimum": 27,
+        "ignoredFatalOverlap": 36,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "D",
+            "L",
+            "R",
+            "U",
+            "R",
+            "R",
+            "R",
+            "STAIR",
+            "D",
+            "L",
+            "D",
+            "L",
+            "U",
+            "R"
+          ],
+          "conflict": {
+            "target": {
+              "x": 2,
+              "y": 3
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 2,
+                  "y": 2
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 2,
+                  "y": 4
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 1
+          }
+        },
+        "safeOptimalWitness": [
+          "D",
+          "L",
+          "R",
+          "U",
+          "R",
+          "STAIR",
+          "D",
+          "D",
+          "R",
+          "U",
+          "R",
+          "U",
+          "STAIR",
+          "R",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "STAIR",
+          "U",
+          "D",
+          "STAIR",
+          "L",
+          "L",
+          "U",
+          "U"
+        ],
+        "elapsedMs": 46,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+      }
+    },
+    {
+      "name": "1,3,5",
+      "mapId": "2555d1f1b9ec7e5df116476f9c845f02a16a00872bb9483fba9d591ee33e1726",
+      "mapCode": "AWN4wMHBf_4AAwMDhwyDB5uD1oJLoiEMQBDAxcik4MAAAk1MTM3NTAwMLAwKTAoMLCyMjIwMDAwLRJhWiE1QYWVgYDgwsQEA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 503,
+        "transitions": 2515,
+        "discovered": 518,
+        "totalActions": 27
+      },
+      "count": "1",
+      "actions": [
+        "D",
+        "L",
+        "R",
+        "U",
+        "R",
+        "STAIR",
+        "D",
+        "D",
+        "R",
+        "U",
+        "R",
+        "U",
+        "STAIR",
+        "R",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "STAIR",
+        "U",
+        "D",
+        "STAIR",
+        "L",
+        "L",
+        "U",
+        "U"
+      ],
+      "boundary": {
+        "status": "safe",
+        "reason": "all_optimal_routes_avoid_overlap",
+        "mapId": "2555d1f1b9ec7e5df116476f9c845f02a16a00872bb9483fba9d591ee33e1726",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 502,
+        "transitions": 2510,
+        "discovered": 516,
+        "optimum": 27,
+        "ignoredFatalOverlap": 36,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "D",
+            "L",
+            "R",
+            "U",
+            "R",
+            "R",
+            "R",
+            "STAIR",
+            "D",
+            "L",
+            "D",
+            "L",
+            "U",
+            "R"
+          ],
+          "conflict": {
+            "target": {
+              "x": 2,
+              "y": 3
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 2,
+                  "y": 2
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 2,
+                  "y": 4
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 1
+          }
+        },
+        "safeOptimalWitness": [
+          "D",
+          "L",
+          "R",
+          "U",
+          "R",
+          "STAIR",
+          "D",
+          "D",
+          "R",
+          "U",
+          "R",
+          "U",
+          "STAIR",
+          "R",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "STAIR",
+          "U",
+          "D",
+          "STAIR",
+          "L",
+          "L",
+          "U",
+          "U"
+        ],
+        "elapsedMs": 49,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+      }
+    }
+  ]
+}

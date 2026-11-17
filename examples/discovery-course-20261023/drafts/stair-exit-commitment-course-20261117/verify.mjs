@@ -1,13 +1,12 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
-import {buildLevel} from '../../build.mjs';
 import {DataSerializer} from '../../../../src/reference/engine.js';
 import {createReferenceEnvironment} from '../../../../src/reference/environment.js';
 import {createBreadthFirstSearch} from '../../../../../ghost-maze/src/solver/breadthFirst.js';
 import {inspectGhostInfluence} from '../../../../src/design/ghost-influence.js';
 
 const root=new URL('./',import.meta.url),budget={nodeBudget:500000,stateBudget:500000,budgetMs:20000};
-const original=buildLevel('72'),saved=JSON.parse(fs.readFileSync(new URL('construction.json',root)));
+const original=JSON.parse(fs.readFileSync(new URL('../../levels/72/revisions/v01/map.json',root))),saved=JSON.parse(fs.readFileSync(new URL('construction.json',root)));
 const m=DataSerializer.loadFromShareCode(saved.rows[0].mapCode).data.mapData,e=createReferenceEnvironment(m);
 const noMap=structuredClone(m);noMap.layers.forEach(l=>l.endPos=null);
 const no=createReferenceEnvironment(noMap),where=(s,id)=>s.layerStates.flatMap((l,k)=>l.ghosts.filter(g=>g.id===id).map(g=>[k,g.x,g.y]))[0];

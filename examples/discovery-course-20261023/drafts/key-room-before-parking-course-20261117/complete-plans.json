@@ -1,0 +1,386 @@
+{
+  "mapId": "688539efc5d7fcf51e2ec5ec47f2dbd624a35f73ed636ae7c0fa14b016522385",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "humanQuality": null,
+  "scope": "原图事件约束，角色坐标与迁层取物历史进入完整键；排除非死亡重合与终点掩盖死亡。与删改箭头是不同证据。",
+  "rows": [
+    {
+      "name": "no_actual_influence",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 796,
+        "transitions": 3980,
+        "discovered": 796,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "name": "no_ghost_migration",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 351,
+        "transitions": 1751,
+        "discovered": 355,
+        "totalActions": 27
+      },
+      "actions": [
+        "D",
+        "L",
+        "R",
+        "U",
+        "R",
+        "STAIR",
+        "D",
+        "D",
+        "R",
+        "U",
+        "R",
+        "U",
+        "STAIR",
+        "R",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "STAIR",
+        "U",
+        "D",
+        "STAIR",
+        "L",
+        "L",
+        "U",
+        "U"
+      ]
+    },
+    {
+      "name": "no_actual_and_no_migration",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 286,
+        "transitions": 1430,
+        "discovered": 286,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "name": "lower_always_lower",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 588,
+        "transitions": 2936,
+        "discovered": 602,
+        "totalActions": 27
+      },
+      "actions": [
+        "D",
+        "L",
+        "R",
+        "U",
+        "R",
+        "STAIR",
+        "D",
+        "D",
+        "R",
+        "U",
+        "R",
+        "U",
+        "STAIR",
+        "R",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "STAIR",
+        "U",
+        "D",
+        "STAIR",
+        "L",
+        "L",
+        "U",
+        "U"
+      ]
+    },
+    {
+      "name": "upper_always_upper",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 428,
+        "transitions": 2136,
+        "discovered": 436,
+        "totalActions": 27
+      },
+      "actions": [
+        "D",
+        "L",
+        "R",
+        "U",
+        "R",
+        "STAIR",
+        "D",
+        "D",
+        "R",
+        "U",
+        "R",
+        "U",
+        "STAIR",
+        "R",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "STAIR",
+        "U",
+        "D",
+        "STAIR",
+        "L",
+        "L",
+        "U",
+        "U"
+      ]
+    },
+    {
+      "name": "upper_changes_layer",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 1096,
+        "transitions": 5480,
+        "discovered": 1096,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "name": "swap_end_layers",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 1096,
+        "transitions": 5480,
+        "discovered": 1096,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "name": "never_first_hold",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 797,
+        "transitions": 3985,
+        "discovered": 797,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "name": "never_second_hold",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 817,
+        "transitions": 4085,
+        "discovered": 817,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "name": "lower_up_before_key",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 856,
+        "transitions": 4276,
+        "discovered": 866,
+        "totalActions": 41
+      },
+      "actions": [
+        "D",
+        "L",
+        "R",
+        "U",
+        "R",
+        "STAIR",
+        "D",
+        "D",
+        "R",
+        "U",
+        "R",
+        "U",
+        "STAIR",
+        "R",
+        "D",
+        "L",
+        "L",
+        "U",
+        "L",
+        "STAIR",
+        "D",
+        "D",
+        "R",
+        "D",
+        "L",
+        "U",
+        "U",
+        "U",
+        "STAIR",
+        "R",
+        "D",
+        "L",
+        "U",
+        "STAIR",
+        "U",
+        "D",
+        "STAIR",
+        "L",
+        "L",
+        "U",
+        "U"
+      ]
+    },
+    {
+      "name": "lower_up_after_key",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 885,
+        "transitions": 4421,
+        "discovered": 903,
+        "totalActions": 43
+      },
+      "actions": [
+        "D",
+        "L",
+        "R",
+        "U",
+        "R",
+        "STAIR",
+        "D",
+        "D",
+        "R",
+        "U",
+        "R",
+        "U",
+        "STAIR",
+        "R",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "STAIR",
+        "U",
+        "D",
+        "STAIR",
+        "L",
+        "L",
+        "D",
+        "U",
+        "R",
+        "R",
+        "STAIR",
+        "D",
+        "D",
+        "R",
+        "D",
+        "L",
+        "U",
+        "U",
+        "U",
+        "STAIR",
+        "L",
+        "L",
+        "U",
+        "U"
+      ]
+    },
+    {
+      "name": "both_end_upper",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 1096,
+        "transitions": 5480,
+        "discovered": 1096,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "name": "both_end_lower",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 1096,
+        "transitions": 5480,
+        "discovered": 1096,
+        "totalActions": null
+      },
+      "actions": null
+    },
+    {
+      "name": "never_upper_shortcut",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 580,
+        "transitions": 2896,
+        "discovered": 598,
+        "totalActions": 27
+      },
+      "actions": [
+        "D",
+        "L",
+        "R",
+        "U",
+        "R",
+        "STAIR",
+        "D",
+        "D",
+        "R",
+        "U",
+        "R",
+        "U",
+        "STAIR",
+        "R",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "STAIR",
+        "U",
+        "D",
+        "STAIR",
+        "L",
+        "L",
+        "U",
+        "U"
+      ]
+    },
+    {
+      "name": "never_lower_arrow",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 401,
+        "transitions": 2005,
+        "discovered": 401,
+        "totalActions": null
+      },
+      "actions": null
+    }
+  ]
+}

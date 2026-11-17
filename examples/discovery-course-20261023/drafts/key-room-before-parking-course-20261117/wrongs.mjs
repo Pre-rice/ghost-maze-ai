@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {createReferenceEnvironment} from '../../../../src/reference/environment.js';
+import {solveContinuation} from '../../../../src/design/continuation.js';
+const root=new URL('./',import.meta.url),s=JSON.parse(fs.readFileSync(new URL('prototype.json',root))),e=createReferenceEnvironment(s.map),budget={nodeBudget:500000,stateBudget:500000,budgetMs:20000},nm=structuredClone(s.map);nm.layers.forEach(l=>l.endPos=null);const no=createReferenceEnvironment(nm);
+const prefixes=[['D'],['R'],['R','STAIR'],['R','R','R','STAIR'],['D','L','R','U','R','STAIR','D','R'],['D','L','R','U','L','U']];
+const rows=prefixes.map(prefix=>{assert(!e.replay(prefix).state.isDead);const fast=solveContinuation(s.map,prefix,budget),reference=solveContinuation(s.map,prefix,{...budget,reference:true});assert.equal(fast.status,reference.status);let overlap=false;if(fast.actions){assert(!no.replay([...prefix,...fast.actions]).state.isDead);let st=e.initialState();for(const a of [...prefix,...fast.actions]){st=e.step(st,a);if(st.layerStates.some(l=>new Set(l.ghosts.map(g=>g.x+','+g.y)).size<l.ghosts.length))overlap=true;}}return{prefix,fast,reference,total:fast.actions?prefix.length+fast.actions.length:null,...(fast.actions?{recoveryContainsNonfatalOverlap:overlap}:{})};});
+const deaths=[{prefix:[],action:'L'},{prefix:['D','L'],action:'U'},{prefix:s.actions.slice(0,6),action:'U'},{prefix:s.actions.slice(0,13),action:'L'}];for(const r of deaths)assert(e.step(e.replay(r.prefix).state,r.action).isDead);
+const invalids=[{prefix:[],action:'U'},{prefix:[],action:'STAIR'},{prefix:s.actions.slice(0,13),action:'D'},{prefix:['D','L','R','U','L','U'],action:'U'}];for(const r of invalids){const state=e.replay(r.prefix).state;assert.equal(e.step(state,r.action),state);}
+fs.writeFileSync(new URL('wrongs.json',root),JSON.stringify({mapId:e.mapId,prefixes:rows,deaths,invalids,humanQuality:null},null,2)+'\n');console.log(JSON.stringify(rows.map(r=>({prefix:r.prefix.join(' '),status:r.fast.status,total:r.total}))));
