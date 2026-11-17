@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {DataSerializer} from '../../../../src/reference/engine.js';
+import {createReferenceEnvironment} from '../../../../src/reference/environment.js';
+import {createBreadthFirstSearch} from '../../../../../ghost-maze/src/solver/breadthFirst.js';
+const root=new URL('./',import.meta.url),parent=JSON.parse(fs.readFileSync(new URL('parent.json',root))),saved=JSON.parse(fs.readFileSync(new URL('prototype.json',root))),old=DataSerializer.loadFromShareCode(parent.mapCode).data.mapData,map=saved.map,a=createReferenceEnvironment(old),b=createReferenceEnvironment(map),key=(e,s)=>JSON.stringify(JSON.parse(e.stateKey(s)).slice(1));
+const startA=a.step(a.initialState(),'U'),startB=b.step(b.initialState(),'D');assert.equal(key(a,startA),key(b,startB));
+const queue=[[startA,startB]],seen=new Set([key(a,startA)]);let transitions=0;
+for(let i=0;i<queue.length;i++){const[x,y]=queue[i];if(x.isWon||x.isDead)continue;for(const action of a.actions){const nx=a.step(x,action),ny=b.step(y,action);assert.equal(nx===x,ny===y);assert(key(a,nx)===key(b,ny),'首下后完整物理后继不等');transitions++;if(nx.isDead)continue;const k=key(a,nx);if(!seen.has(k)){seen.add(k);queue.push([nx,ny]);}}assert(queue.length<300000);}
+const budget={nodeBudget:500000,stateBudget:500000,budgetMs:20000},oq=createBreadthFirstSearch(a,{allOptimal:true}),nq=createBreadthFirstSearch(b,{allOptimal:true});oq.run(budget);nq.run(budget);const mapped=[...oq.routes()].map(as=>['D',...as.slice(1)]),routes=[...nq.routes()],set=new Set(mapped.map(as=>as.join(',')));assert.equal(mapped.length,24);assert.equal(routes.length,28);assert(mapped.every(as=>routes.some(bs=>bs.join(',')===as.join(','))));const extra=routes.filter(as=>!set.has(as.join(',')));assert.equal(extra.length,4);assert(extra.every(as=>as[0]==='R'));
+const out={oldMapId:a.mapId,mapId:b.mapId,joinedAfter:{old:'U',new:'D',player:[0,1,4],ghosts:[[5,1],[2,4]]},states:queue.length,transitions,includesInvalidActions:true,includesFatalBeforeRespawn:true,excludesRespawnAndVisibility:true,mappedOldOptimalRoutes:24,newOptimalRoutes:28,newAdditionalOptimalRoutes:extra,humanQuality:null,scope:'只比较首次下引后的全部原生物理后继；出生与复活位置不同，新增初态和注意力也不同，不称全部游戏体验或全历史等价。'};
+fs.writeFileSync(new URL('preservation.json',root),JSON.stringify(out,null,2)+'\n');console.log(JSON.stringify({states:queue.length,transitions,mapped:24,extra:4}));

@@ -1,0 +1,22 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {buildLevel} from '../../build.mjs';
+import {DataSerializer} from '../../../../src/reference/engine.js';
+import {createReferenceEnvironment} from '../../../../src/reference/environment.js';
+import {createBreadthFirstSearch} from '../../../../../ghost-maze/src/solver/breadthFirst.js';
+import {auditMap} from '../../../gallery-adjustments-20261014/verify.mjs';
+import {auditEntryPath} from '../../entry-path.mjs';
+import {solveContinuation} from '../../../../src/design/continuation.js';
+import {analyzeEntry} from './analyze.mjs';
+const root=new URL('./',import.meta.url),read=n=>JSON.parse(fs.readFileSync(new URL(n,root))),task=read('final-task.json'),map=read('../../levels/52/map.json'),parent=DataSerializer.loadFromShareCode(read('parent.json').mapCode).data.mapData,e=createReferenceEnvironment(map),old=createReferenceEnvironment(parent),budget={nodeBudget:500000,stateBudget:500000,budgetMs:20000};
+assert.deepEqual(map,task.map);assert.deepEqual(buildLevel('52'),map);const restored=structuredClone(map);restored.layers[0].customStartPos={x:1,y:5};assert.deepEqual(restored,parent);assert.deepEqual(parent,read('../../levels/52/revisions/v02/map.json'));
+const qa=auditMap(map,read('../../levels/52/share.json').mapCode);assert.equal(qa.allResult.totalActions,22);assert.equal(qa.count,'28');assert.equal(qa.noEndSafeRoutes,28);assert.deepEqual(auditEntryPath(map,qa.routes,task.entryPath),task.qa.entry);
+const plans=analyzeEntry(map),sig=r=>[r.name,r.result.status,r.result.totalActions,r.actions];assert.deepEqual(plans.rows.map(sig),read('complete-plans.json').rows.map(sig));assert.equal(plans.grouping.count,'28');
+const physical=(env,s)=>JSON.stringify(JSON.parse(env.stateKey(s)).slice(1)),oa=old.step(old.initialState(),'U'),nb=e.step(e.initialState(),'D'),pairs=[[oa,nb]],seen=new Set([physical(old,oa)]);assert.equal(physical(old,oa),physical(e,nb));let transitions=0;
+for(let i=0;i<pairs.length;i++){const[a,b]=pairs[i];if(a.isWon||a.isDead)continue;for(const action of old.actions){const x=old.step(a,action),y=e.step(b,action);assert.equal(x===a,y===b);assert(physical(old,x)===physical(e,y));transitions++;if(x.isDead)continue;const k=physical(old,x);if(!seen.has(k)){seen.add(k);pairs.push([x,y]);}}}
+const preservation=read('preservation.json');assert.equal(pairs.length,1323);assert.equal(transitions,6475);assert.equal(pairs.length,preservation.states);assert.equal(transitions,preservation.transitions);
+const oq=createBreadthFirstSearch(old,{allOptimal:true});oq.run(budget);const allKeys=new Set(qa.routes.map(r=>r.actions.join(',')));let mapped=0;for(const actions of oq.routes()){assert.equal(actions[0],'U');const as=['D',...actions.slice(1)];assert(allKeys.has(as.join(',')));let a=old.initialState(),b=e.initialState();for(const[i,action]of actions.entries()){a=old.step(a,action);b=e.step(b,as[i]);assert(physical(old,a)===physical(e,b));}mapped++;}assert.equal(mapped,24);
+const nm=structuredClone(map);nm.layers[0].endPos=null;const no=createReferenceEnvironment(nm),wrongs=read('wrongs.json');for(const r of wrongs.prefixes){const c=solveContinuation(map,r.prefix,budget);assert.equal(c.status,r.fast.status);if(c.actions){assert.equal(r.prefix.length+c.actions.length,r.total);assert(!no.replay([...r.prefix,...c.actions]).state.isDead);}}for(const r of wrongs.deaths)assert(e.step(e.replay(r.prefix).state,r.action).isDead);for(const r of wrongs.invalids){const s=e.replay(r.prefix).state;assert.equal(e.step(s,r.action),s);}
+for(const row of read('probe-comparison.json').rows){const env=row.name==='old'?old:e,st=env.replay(row.prefix).state;assert.equal(env.step(st,'U'),st);const c=solveContinuation(row.name==='old'?parent:map,row.prefix,budget);assert.equal(c.status,'solved');assert.equal(row.prefix.length+c.actions.length,row.total);}
+const ordinary=read('economy.json').ordinaryReplacement,om=DataSerializer.loadFromShareCode(ordinary.mapCode).data.mapData,oe=createReferenceEnvironment(om),q=createBreadthFirstSearch(oe,{allOptimal:true}),answer=q.run(budget);assert.equal(answer.totalActions,14);assert.equal(q.routeCount().toString(),'1');om.layers[0].endPos=null;assert(!createReferenceEnvironment(om).replay(q.firstActions()).state.isDead);
+console.log(JSON.stringify({id:'52',revision:3,cells:22,T:22,raw:28,classes:28,oldMapped:24,postFirstStates:1323,postFirstTransitions:6475,actualEntry:task.qa.entry.allInternalSuccessorsEqual,allOptimalNoEnd:28,humanQuality:null}));

@@ -1,12 +1,12 @@
 {
-  "mapId": "8925743658f89a8e52ad2b4d0de5e1d5817af3503b1acea835a0ade93d213e8c",
+  "mapId": "d3d8cde25cf9de971355f751bb0c00483986632261eae95eb8c9ad9c65ef0245",
   "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
   "reference": {
     "schemaVersion": 1,
     "status": "solved",
     "reason": "goal_reached",
     "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
-    "mapId": "8925743658f89a8e52ad2b4d0de5e1d5817af3503b1acea835a0ade93d213e8c",
+    "mapId": "d3d8cde25cf9de971355f751bb0c00483986632261eae95eb8c9ad9c65ef0245",
     "scope": {
       "gameMode": "death-loop",
       "objective": "zero_hit_no_revive",
@@ -23,11 +23,11 @@
     "optimality": "proven",
     "solution": {
       "actions": [
+        "R",
         "U",
-        "U",
         "R",
         "R",
-        "R",
+        "D",
         "D",
         "R",
         "D",
@@ -50,11 +50,11 @@
       "movementCost": 22
     },
     "search": {
-      "expanded": 302,
-      "transitions": 1506,
-      "discovered": 340,
+      "expanded": 303,
+      "transitions": 1511,
+      "discovered": 341,
       "exhausted": false,
-      "elapsedMs": 59.288067999999996,
+      "elapsedMs": 83.723819,
       "budget": {
         "nodeBudget": 1000000,
         "stateBudget": 1000000,
@@ -67,7 +67,7 @@
     "status": "solved",
     "reason": "goal_reached",
     "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
-    "mapId": "8925743658f89a8e52ad2b4d0de5e1d5817af3503b1acea835a0ade93d213e8c",
+    "mapId": "d3d8cde25cf9de971355f751bb0c00483986632261eae95eb8c9ad9c65ef0245",
     "scope": {
       "gameMode": "death-loop",
       "objective": "zero_hit_no_revive",
@@ -85,11 +85,11 @@
     "optimality": "proven",
     "solution": {
       "actions": [
+        "R",
         "U",
-        "U",
         "R",
         "R",
-        "R",
+        "D",
         "D",
         "R",
         "D",
@@ -113,11 +113,11 @@
     },
     "search": {
       "algorithm": "astar",
-      "expanded": 202,
-      "transitions": 1010,
-      "discovered": 232,
+      "expanded": 203,
+      "transitions": 1015,
+      "discovered": 233,
       "exhausted": false,
-      "elapsedMs": 12.042079000000001,
+      "elapsedMs": 29.72359399999999,
       "budget": {
         "nodeBudget": 1000000,
         "stateBudget": 1000000,
@@ -128,31 +128,31 @@
   "allResult": {
     "status": "solved",
     "reason": "goal_reached",
-    "expanded": 322,
-    "transitions": 1610,
-    "discovered": 359,
+    "expanded": 323,
+    "transitions": 1615,
+    "discovered": 360,
     "totalActions": 22
   },
-  "count": "24",
+  "count": "28",
   "boundary": {
     "status": "safe",
     "reason": "all_optimal_routes_avoid_overlap",
-    "mapId": "8925743658f89a8e52ad2b4d0de5e1d5817af3503b1acea835a0ade93d213e8c",
+    "mapId": "d3d8cde25cf9de971355f751bb0c00483986632261eae95eb8c9ad9c65ef0245",
     "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
     "policy": "all_optimal_routes_avoid_overlap_v2",
     "glassCount": 0,
-    "expanded": 304,
-    "transitions": 1520,
-    "discovered": 333,
+    "expanded": 305,
+    "transitions": 1525,
+    "discovered": 334,
     "optimum": 22,
     "ignoredFatalOverlap": 60,
     "observedNonFatalOverlap": {
       "witness": [
+        "R",
         "U",
-        "U",
         "R",
         "R",
-        "R",
+        "D",
         "D",
         "R",
         "D",
@@ -191,11 +191,11 @@
       }
     },
     "safeOptimalWitness": [
+      "R",
       "U",
-      "U",
       "R",
       "R",
-      "R",
+      "D",
       "D",
       "R",
       "D",
@@ -214,7 +214,7 @@
       "L",
       "U"
     ],
-    "elapsedMs": 29,
+    "elapsedMs": 66,
     "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
   },
   "cold": true,
@@ -222,7 +222,7 @@
     "external": [
       0,
       0,
-      5
+      3
     ],
     "actions": [
       "R"
@@ -230,13 +230,13 @@
     "externalCells": [
       [
         0,
-        5
+        3
       ]
     ],
     "internal": [
       0,
       1,
-      5
+      3
     ],
     "keys": 0,
     "externalGhosts": 0,
@@ -257,29 +257,29 @@
     ],
     "wholeOptimalRoutesInteriorEqual": true,
     "allInternalSuccessorsEqual": {
-      "states": 1325,
-      "transitions": 6485,
+      "states": 1326,
+      "transitions": 6490,
       "includesFatalActions": true
     },
-    "noEndSafeRoutes": 24,
+    "noEndSafeRoutes": 28,
     "scope": "只声明所列外侧路径、零钥匙与无外部鬼；不声称任意外部局面均适用"
   },
   "physicalAudit": {
-    "reachable": 1325,
-    "transitions": 6485,
+    "reachable": 1326,
+    "transitions": 6490,
     "permutations": 2,
-    "compared": 12970,
+    "compared": 12980,
     "includesFatalActions": true
   },
-  "noEndSafeRoutes": 24,
-  "mapCode": "AADIADh4-Pj4AAEEYCJ0ACABUFwIAABwqoAAAACkEIQoQQggAAABAA",
-  "replayCode": "EPqyX80P3aIzNoA",
+  "noEndSafeRoutes": 28,
+  "mapCode": "AADIADh4-Pj4AAEB4CJ0ACABUFwIAABwqoAAAACkEIQoQQggAAABAA",
+  "replayCode": "ENozTUvPXaIzNoA",
   "actions": [
+    "R",
     "U",
-    "U",
     "R",
     "R",
-    "R",
+    "D",
     "D",
     "R",
     "D",
@@ -301,7 +301,573 @@
   "routes": [
     {
       "actions": [
+        "R",
         "U",
+        "R",
+        "R",
+        "D",
+        "D",
+        "R",
+        "D",
+        "L",
+        "L",
+        "U",
+        "L",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "D",
+        "L",
+        "L",
+        "U"
+      ],
+      "replayCode": "ENozTUvPXaIzNoA",
+      "controls": [],
+      "trace": [
+        {
+          "step": 1,
+          "action": "R",
+          "p": [
+            0,
+            2,
+            3
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 2,
+          "action": "U",
+          "p": [
+            0,
+            2,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 3,
+          "action": "R",
+          "p": [
+            0,
+            3,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                3
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 4,
+          "action": "R",
+          "p": [
+            0,
+            4,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 5,
+          "action": "D",
+          "p": [
+            0,
+            4,
+            3
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                4,
+                2
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 6,
+          "action": "D",
+          "p": [
+            0,
+            4,
+            4
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                4,
+                3
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 7,
+          "action": "R",
+          "p": [
+            0,
+            5,
+            4
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                2
+              ],
+              [
+                4,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 8,
+          "action": "D",
+          "p": [
+            0,
+            5,
+            5
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                3
+              ],
+              [
+                5,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 9,
+          "action": "L",
+          "p": [
+            0,
+            4,
+            5
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                4
+              ],
+              [
+                5,
+                5
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 10,
+          "action": "L",
+          "p": [
+            0,
+            3,
+            5
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                4
+              ],
+              [
+                4,
+                5
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 11,
+          "action": "U",
+          "p": [
+            0,
+            3,
+            4
+          ],
+          "ghosts": [
+            [
+              [
+                4,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 12,
+          "action": "L",
+          "p": [
+            0,
+            2,
+            4
+          ],
+          "ghosts": [
+            [
+              [
+                3,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          ],
+          "diagnostics": [
+            {
+              "target": {
+                "x": 3,
+                "y": 4
+              },
+              "contenders": [
+                {
+                  "from": {
+                    "x": 4,
+                    "y": 4
+                  },
+                  "seesAfter": true
+                },
+                {
+                  "from": {
+                    "x": 3,
+                    "y": 5
+                  },
+                  "seesAfter": false
+                }
+              ],
+              "decision": "visible_target_priority",
+              "capturesPlayer": false,
+              "layer": 0
+            }
+          ]
+        },
+        {
+          "step": 13,
+          "action": "U",
+          "p": [
+            0,
+            2,
+            3
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 14,
+          "action": "R",
+          "p": [
+            0,
+            3,
+            3
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 15,
+          "action": "U",
+          "p": [
+            0,
+            3,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                3
+              ]
+            ]
+          ],
+          "diagnostics": [
+            {
+              "target": {
+                "x": 3,
+                "y": 3
+              },
+              "contenders": [
+                {
+                  "from": {
+                    "x": 2,
+                    "y": 3
+                  },
+                  "seesAfter": false
+                },
+                {
+                  "from": {
+                    "x": 3,
+                    "y": 4
+                  },
+                  "seesAfter": true
+                }
+              ],
+              "decision": "visible_target_priority",
+              "capturesPlayer": false,
+              "layer": 0
+            }
+          ]
+        },
+        {
+          "step": 16,
+          "action": "R",
+          "p": [
+            0,
+            4,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 17,
+          "action": "U",
+          "p": [
+            0,
+            4,
+            1
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                2
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 18,
+          "action": "R",
+          "p": [
+            0,
+            5,
+            1
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                1
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 19,
+          "action": "D",
+          "p": [
+            0,
+            5,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                3
+              ],
+              [
+                5,
+                1
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 20,
+          "action": "L",
+          "p": [
+            0,
+            4,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                3
+              ],
+              [
+                5,
+                2
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 21,
+          "action": "L",
+          "p": [
+            0,
+            3,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                2
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 22,
+          "action": "U",
+          "p": [
+            0,
+            3,
+            1
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                2
+              ]
+            ]
+          ],
+          "diagnostics": []
+        }
+      ]
+    },
+    {
+      "actions": [
+        "D",
         "U",
         "R",
         "R",
@@ -324,12 +890,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80P3aIzNoA",
+      "replayCode": "ENozTUtP3aIzNoA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -867,7 +1433,7 @@
     },
     {
       "actions": [
-        "U",
+        "D",
         "U",
         "R",
         "R",
@@ -890,12 +1456,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80PfaIzNoA",
+      "replayCode": "ENozTUtPfaIzNoA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -1433,7 +1999,7 @@
     },
     {
       "actions": [
-        "U",
+        "D",
         "U",
         "R",
         "D",
@@ -1456,12 +2022,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80N_aIzNoA",
+      "replayCode": "ENozTUtN_aIzNoA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -1999,7 +2565,7 @@
     },
     {
       "actions": [
-        "U",
+        "D",
         "D",
         "R",
         "U",
@@ -2022,12 +2588,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80c_aIzNoA",
+      "replayCode": "ENozTUtc_aIzNoA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -2565,7 +3131,7 @@
     },
     {
       "actions": [
-        "U",
+        "D",
         "D",
         "R",
         "R",
@@ -2588,12 +3154,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80fPaIzNoA",
+      "replayCode": "ENozTUtfPaIzNoA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -3131,7 +3697,7 @@
     },
     {
       "actions": [
-        "U",
+        "D",
         "D",
         "R",
         "R",
@@ -3154,12 +3720,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80fzaIzNoA",
+      "replayCode": "ENozTUtfzaIzNoA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -3697,7 +4263,573 @@
     },
     {
       "actions": [
+        "R",
         "U",
+        "R",
+        "R",
+        "D",
+        "D",
+        "R",
+        "D",
+        "L",
+        "L",
+        "U",
+        "L",
+        "U",
+        "R",
+        "U",
+        "R",
+        "R",
+        "U",
+        "L",
+        "D",
+        "L",
+        "U"
+      ],
+      "replayCode": "ENozTUvPXaIzyYA",
+      "controls": [],
+      "trace": [
+        {
+          "step": 1,
+          "action": "R",
+          "p": [
+            0,
+            2,
+            3
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 2,
+          "action": "U",
+          "p": [
+            0,
+            2,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 3,
+          "action": "R",
+          "p": [
+            0,
+            3,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                3
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 4,
+          "action": "R",
+          "p": [
+            0,
+            4,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 5,
+          "action": "D",
+          "p": [
+            0,
+            4,
+            3
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                4,
+                2
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 6,
+          "action": "D",
+          "p": [
+            0,
+            4,
+            4
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                4,
+                3
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 7,
+          "action": "R",
+          "p": [
+            0,
+            5,
+            4
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                2
+              ],
+              [
+                4,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 8,
+          "action": "D",
+          "p": [
+            0,
+            5,
+            5
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                3
+              ],
+              [
+                5,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 9,
+          "action": "L",
+          "p": [
+            0,
+            4,
+            5
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                4
+              ],
+              [
+                5,
+                5
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 10,
+          "action": "L",
+          "p": [
+            0,
+            3,
+            5
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                4
+              ],
+              [
+                4,
+                5
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 11,
+          "action": "U",
+          "p": [
+            0,
+            3,
+            4
+          ],
+          "ghosts": [
+            [
+              [
+                4,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 12,
+          "action": "L",
+          "p": [
+            0,
+            2,
+            4
+          ],
+          "ghosts": [
+            [
+              [
+                3,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          ],
+          "diagnostics": [
+            {
+              "target": {
+                "x": 3,
+                "y": 4
+              },
+              "contenders": [
+                {
+                  "from": {
+                    "x": 4,
+                    "y": 4
+                  },
+                  "seesAfter": true
+                },
+                {
+                  "from": {
+                    "x": 3,
+                    "y": 5
+                  },
+                  "seesAfter": false
+                }
+              ],
+              "decision": "visible_target_priority",
+              "capturesPlayer": false,
+              "layer": 0
+            }
+          ]
+        },
+        {
+          "step": 13,
+          "action": "U",
+          "p": [
+            0,
+            2,
+            3
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 14,
+          "action": "R",
+          "p": [
+            0,
+            3,
+            3
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 15,
+          "action": "U",
+          "p": [
+            0,
+            3,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                3
+              ]
+            ]
+          ],
+          "diagnostics": [
+            {
+              "target": {
+                "x": 3,
+                "y": 3
+              },
+              "contenders": [
+                {
+                  "from": {
+                    "x": 2,
+                    "y": 3
+                  },
+                  "seesAfter": false
+                },
+                {
+                  "from": {
+                    "x": 3,
+                    "y": 4
+                  },
+                  "seesAfter": true
+                }
+              ],
+              "decision": "visible_target_priority",
+              "capturesPlayer": false,
+              "layer": 0
+            }
+          ]
+        },
+        {
+          "step": 16,
+          "action": "R",
+          "p": [
+            0,
+            4,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 17,
+          "action": "R",
+          "p": [
+            0,
+            5,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                2
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 18,
+          "action": "U",
+          "p": [
+            0,
+            5,
+            1
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                3
+              ],
+              [
+                5,
+                2
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 19,
+          "action": "L",
+          "p": [
+            0,
+            4,
+            1
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                3
+              ],
+              [
+                5,
+                1
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 20,
+          "action": "D",
+          "p": [
+            0,
+            4,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                1
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 21,
+          "action": "L",
+          "p": [
+            0,
+            3,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                2
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 22,
+          "action": "U",
+          "p": [
+            0,
+            3,
+            1
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                2
+              ]
+            ]
+          ],
+          "diagnostics": []
+        }
+      ]
+    },
+    {
+      "actions": [
+        "D",
         "U",
         "R",
         "R",
@@ -3720,12 +4852,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80P3aIzyYA",
+      "replayCode": "ENozTUtP3aIzyYA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -4263,7 +5395,7 @@
     },
     {
       "actions": [
-        "U",
+        "D",
         "U",
         "R",
         "R",
@@ -4286,12 +5418,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80PfaIzyYA",
+      "replayCode": "ENozTUtPfaIzyYA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -4829,7 +5961,7 @@
     },
     {
       "actions": [
-        "U",
+        "D",
         "U",
         "R",
         "D",
@@ -4852,12 +5984,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80N_aIzyYA",
+      "replayCode": "ENozTUtN_aIzyYA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -5395,7 +6527,7 @@
     },
     {
       "actions": [
-        "U",
+        "D",
         "D",
         "R",
         "U",
@@ -5418,12 +6550,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80c_aIzyYA",
+      "replayCode": "ENozTUtc_aIzyYA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -5961,7 +7093,7 @@
     },
     {
       "actions": [
-        "U",
+        "D",
         "D",
         "R",
         "R",
@@ -5984,12 +7116,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80fPaIzyYA",
+      "replayCode": "ENozTUtfPaIzyYA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -6527,7 +7659,7 @@
     },
     {
       "actions": [
-        "U",
+        "D",
         "D",
         "R",
         "R",
@@ -6550,12 +7682,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80fzaIzyYA",
+      "replayCode": "ENozTUtfzaIzyYA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -7093,7 +8225,573 @@
     },
     {
       "actions": [
+        "R",
         "U",
+        "R",
+        "R",
+        "D",
+        "D",
+        "R",
+        "D",
+        "L",
+        "L",
+        "U",
+        "L",
+        "U",
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "D",
+        "L",
+        "L",
+        "U"
+      ],
+      "replayCode": "ENozTUvPXaI8NoA",
+      "controls": [],
+      "trace": [
+        {
+          "step": 1,
+          "action": "R",
+          "p": [
+            0,
+            2,
+            3
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 2,
+          "action": "U",
+          "p": [
+            0,
+            2,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 3,
+          "action": "R",
+          "p": [
+            0,
+            3,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                3
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 4,
+          "action": "R",
+          "p": [
+            0,
+            4,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 5,
+          "action": "D",
+          "p": [
+            0,
+            4,
+            3
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                4,
+                2
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 6,
+          "action": "D",
+          "p": [
+            0,
+            4,
+            4
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                4,
+                3
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 7,
+          "action": "R",
+          "p": [
+            0,
+            5,
+            4
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                2
+              ],
+              [
+                4,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 8,
+          "action": "D",
+          "p": [
+            0,
+            5,
+            5
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                3
+              ],
+              [
+                5,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 9,
+          "action": "L",
+          "p": [
+            0,
+            4,
+            5
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                4
+              ],
+              [
+                5,
+                5
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 10,
+          "action": "L",
+          "p": [
+            0,
+            3,
+            5
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                4
+              ],
+              [
+                4,
+                5
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 11,
+          "action": "U",
+          "p": [
+            0,
+            3,
+            4
+          ],
+          "ghosts": [
+            [
+              [
+                4,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 12,
+          "action": "L",
+          "p": [
+            0,
+            2,
+            4
+          ],
+          "ghosts": [
+            [
+              [
+                3,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          ],
+          "diagnostics": [
+            {
+              "target": {
+                "x": 3,
+                "y": 4
+              },
+              "contenders": [
+                {
+                  "from": {
+                    "x": 4,
+                    "y": 4
+                  },
+                  "seesAfter": true
+                },
+                {
+                  "from": {
+                    "x": 3,
+                    "y": 5
+                  },
+                  "seesAfter": false
+                }
+              ],
+              "decision": "visible_target_priority",
+              "capturesPlayer": false,
+              "layer": 0
+            }
+          ]
+        },
+        {
+          "step": 13,
+          "action": "U",
+          "p": [
+            0,
+            2,
+            3
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 14,
+          "action": "R",
+          "p": [
+            0,
+            3,
+            3
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 15,
+          "action": "R",
+          "p": [
+            0,
+            4,
+            3
+          ],
+          "ghosts": [
+            [
+              [
+                3,
+                3
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": [
+            {
+              "target": {
+                "x": 3,
+                "y": 3
+              },
+              "contenders": [
+                {
+                  "from": {
+                    "x": 2,
+                    "y": 3
+                  },
+                  "seesAfter": true
+                },
+                {
+                  "from": {
+                    "x": 3,
+                    "y": 4
+                  },
+                  "seesAfter": false
+                }
+              ],
+              "decision": "visible_target_priority",
+              "capturesPlayer": false,
+              "layer": 0
+            }
+          ]
+        },
+        {
+          "step": 16,
+          "action": "U",
+          "p": [
+            0,
+            4,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                4,
+                3
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 17,
+          "action": "U",
+          "p": [
+            0,
+            4,
+            1
+          ],
+          "ghosts": [
+            [
+              [
+                4,
+                2
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 18,
+          "action": "R",
+          "p": [
+            0,
+            5,
+            1
+          ],
+          "ghosts": [
+            [
+              [
+                4,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 19,
+          "action": "D",
+          "p": [
+            0,
+            5,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 20,
+          "action": "L",
+          "p": [
+            0,
+            4,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                2
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 21,
+          "action": "L",
+          "p": [
+            0,
+            3,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                4,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 22,
+          "action": "U",
+          "p": [
+            0,
+            3,
+            1
+          ],
+          "ghosts": [
+            [
+              [
+                4,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ]
+          ],
+          "diagnostics": []
+        }
+      ]
+    },
+    {
+      "actions": [
+        "D",
         "U",
         "R",
         "R",
@@ -7116,12 +8814,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80P3aI8NoA",
+      "replayCode": "ENozTUtP3aI8NoA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -7659,7 +9357,7 @@
     },
     {
       "actions": [
-        "U",
+        "D",
         "U",
         "R",
         "R",
@@ -7682,12 +9380,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80PfaI8NoA",
+      "replayCode": "ENozTUtPfaI8NoA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -8225,7 +9923,7 @@
     },
     {
       "actions": [
-        "U",
+        "D",
         "U",
         "R",
         "D",
@@ -8248,12 +9946,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80N_aI8NoA",
+      "replayCode": "ENozTUtN_aI8NoA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -8791,7 +10489,7 @@
     },
     {
       "actions": [
-        "U",
+        "D",
         "D",
         "R",
         "U",
@@ -8814,12 +10512,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80c_aI8NoA",
+      "replayCode": "ENozTUtc_aI8NoA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -9357,7 +11055,7 @@
     },
     {
       "actions": [
-        "U",
+        "D",
         "D",
         "R",
         "R",
@@ -9380,12 +11078,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80fPaI8NoA",
+      "replayCode": "ENozTUtfPaI8NoA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -9923,7 +11621,7 @@
     },
     {
       "actions": [
-        "U",
+        "D",
         "D",
         "R",
         "R",
@@ -9946,12 +11644,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80fzaI8NoA",
+      "replayCode": "ENozTUtfzaI8NoA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -10489,7 +12187,573 @@
     },
     {
       "actions": [
+        "R",
         "U",
+        "R",
+        "R",
+        "D",
+        "D",
+        "R",
+        "D",
+        "L",
+        "L",
+        "U",
+        "L",
+        "U",
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "L",
+        "D",
+        "L",
+        "U"
+      ],
+      "replayCode": "ENozTUvPXaI8yYA",
+      "controls": [],
+      "trace": [
+        {
+          "step": 1,
+          "action": "R",
+          "p": [
+            0,
+            2,
+            3
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 2,
+          "action": "U",
+          "p": [
+            0,
+            2,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 3,
+          "action": "R",
+          "p": [
+            0,
+            3,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                3
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 4,
+          "action": "R",
+          "p": [
+            0,
+            4,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 5,
+          "action": "D",
+          "p": [
+            0,
+            4,
+            3
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                4,
+                2
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 6,
+          "action": "D",
+          "p": [
+            0,
+            4,
+            4
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                4,
+                3
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 7,
+          "action": "R",
+          "p": [
+            0,
+            5,
+            4
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                2
+              ],
+              [
+                4,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 8,
+          "action": "D",
+          "p": [
+            0,
+            5,
+            5
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                3
+              ],
+              [
+                5,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 9,
+          "action": "L",
+          "p": [
+            0,
+            4,
+            5
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                4
+              ],
+              [
+                5,
+                5
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 10,
+          "action": "L",
+          "p": [
+            0,
+            3,
+            5
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                4
+              ],
+              [
+                4,
+                5
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 11,
+          "action": "U",
+          "p": [
+            0,
+            3,
+            4
+          ],
+          "ghosts": [
+            [
+              [
+                4,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 12,
+          "action": "L",
+          "p": [
+            0,
+            2,
+            4
+          ],
+          "ghosts": [
+            [
+              [
+                3,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          ],
+          "diagnostics": [
+            {
+              "target": {
+                "x": 3,
+                "y": 4
+              },
+              "contenders": [
+                {
+                  "from": {
+                    "x": 4,
+                    "y": 4
+                  },
+                  "seesAfter": true
+                },
+                {
+                  "from": {
+                    "x": 3,
+                    "y": 5
+                  },
+                  "seesAfter": false
+                }
+              ],
+              "decision": "visible_target_priority",
+              "capturesPlayer": false,
+              "layer": 0
+            }
+          ]
+        },
+        {
+          "step": 13,
+          "action": "U",
+          "p": [
+            0,
+            2,
+            3
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 14,
+          "action": "R",
+          "p": [
+            0,
+            3,
+            3
+          ],
+          "ghosts": [
+            [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 15,
+          "action": "R",
+          "p": [
+            0,
+            4,
+            3
+          ],
+          "ghosts": [
+            [
+              [
+                3,
+                3
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": [
+            {
+              "target": {
+                "x": 3,
+                "y": 3
+              },
+              "contenders": [
+                {
+                  "from": {
+                    "x": 2,
+                    "y": 3
+                  },
+                  "seesAfter": true
+                },
+                {
+                  "from": {
+                    "x": 3,
+                    "y": 4
+                  },
+                  "seesAfter": false
+                }
+              ],
+              "decision": "visible_target_priority",
+              "capturesPlayer": false,
+              "layer": 0
+            }
+          ]
+        },
+        {
+          "step": 16,
+          "action": "U",
+          "p": [
+            0,
+            4,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                4,
+                3
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 17,
+          "action": "R",
+          "p": [
+            0,
+            5,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                4,
+                2
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 18,
+          "action": "U",
+          "p": [
+            0,
+            5,
+            1
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                2
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 19,
+          "action": "L",
+          "p": [
+            0,
+            4,
+            1
+          ],
+          "ghosts": [
+            [
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 20,
+          "action": "D",
+          "p": [
+            0,
+            4,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                4,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 21,
+          "action": "L",
+          "p": [
+            0,
+            3,
+            2
+          ],
+          "ghosts": [
+            [
+              [
+                4,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ]
+          ],
+          "diagnostics": []
+        },
+        {
+          "step": 22,
+          "action": "U",
+          "p": [
+            0,
+            3,
+            1
+          ],
+          "ghosts": [
+            [
+              [
+                4,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ]
+          ],
+          "diagnostics": []
+        }
+      ]
+    },
+    {
+      "actions": [
+        "D",
         "U",
         "R",
         "R",
@@ -10512,12 +12776,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80P3aI8yYA",
+      "replayCode": "ENozTUtP3aI8yYA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -11055,7 +13319,7 @@
     },
     {
       "actions": [
-        "U",
+        "D",
         "U",
         "R",
         "R",
@@ -11078,12 +13342,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80PfaI8yYA",
+      "replayCode": "ENozTUtPfaI8yYA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -11621,7 +13885,7 @@
     },
     {
       "actions": [
-        "U",
+        "D",
         "U",
         "R",
         "D",
@@ -11644,12 +13908,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80N_aI8yYA",
+      "replayCode": "ENozTUtN_aI8yYA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -12187,7 +14451,7 @@
     },
     {
       "actions": [
-        "U",
+        "D",
         "D",
         "R",
         "U",
@@ -12210,12 +14474,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80c_aI8yYA",
+      "replayCode": "ENozTUtc_aI8yYA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -12753,7 +15017,7 @@
     },
     {
       "actions": [
-        "U",
+        "D",
         "D",
         "R",
         "R",
@@ -12776,12 +15040,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80fPaI8yYA",
+      "replayCode": "ENozTUtfPaI8yYA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -13319,7 +15583,7 @@
     },
     {
       "actions": [
-        "U",
+        "D",
         "D",
         "R",
         "R",
@@ -13342,12 +15606,12 @@
         "L",
         "U"
       ],
-      "replayCode": "EPqyX80fzaI8yYA",
+      "replayCode": "ENozTUtfzaI8yYA",
       "controls": [],
       "trace": [
         {
           "step": 1,
-          "action": "U",
+          "action": "D",
           "p": [
             0,
             1,
@@ -13885,41 +16149,5 @@
     }
   ],
   "role": "physical_QA_not_human_quality",
-  "localAdjacentEntry": {
-    "external": [
-      0,
-      0,
-      5
-    ],
-    "actions": [
-      "R"
-    ],
-    "unitArrival": [
-      0,
-      1,
-      5
-    ],
-    "internal": [
-      0,
-      1,
-      5
-    ],
-    "keys": 0,
-    "externalGhosts": 0,
-    "exteriorSealedExceptEntrance": true,
-    "initialInteriorEqual": true,
-    "afterGhosts": [
-      [
-        [
-          5,
-          1
-        ],
-        [
-          3,
-          4
-        ]
-      ]
-    ],
-    "wholeOptimalRoutesInteriorEqual": true
-  }
+  "timedGhostClasses": 28
 }

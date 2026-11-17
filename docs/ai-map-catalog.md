@@ -1,5 +1,15 @@
 # AI 地图总目录
 
+## 2026-11-17 · 第22关《逆渡》调整开局选择（稳定ID52 v03）
+
+[逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=52) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AADIADh4-Pj4AAEB4CJ0ACABUFwIAABwqoAAAACkEIQoQQggAAABAA) · [原件与范围](../examples/discovery-course-20261023/drafts/reverse-gate-entry-review-20261117/README.md)。仅将出生由(1,5)移到(1,3)，墙、鬼、物品、目标与22格保持。原两种准备仍22步，新增同长的上侧引鬼；原24条逐步映射保留，当前28条／28类鬼动停，三种接近不等于28种设计思想。原图也可先探目标，新首右三步试1仍22步，改变的是接近选择，不称首次允许探索或新机制。0首次从上侧开、开前引鬼、开后取物的完整条件保持。首次下引后1323态6475原生后继对应，明确不含复活后或观察差异；全部最优／去终点／编号／码、真正西外1326态6490后继通过。两端28条操作及28类644帧回放、24／26步补救、四死亡／四无效与三种开场的撤销重做通过，六图已检视。旧52两端继续第2步，更新后死亡仍回旧出生且可撤回，主动刷新才用新出生；原v02四件原样保留，v01保持，其余48码和关序不变。当前49关，新版公开页正在同步；未知规则真人趣味待审，不入正式地图集。预览求解仍只显首入口，其余27类经同一应用方法核对，不冒称28个入口均已可点。
+
+<details><summary>22步参考回放（含解法）</summary>
+
+[上侧引动的参考](https://ghostmaze.novic.cc/?map=AADIADh4-Pj4AAEB4CJ0ACABUFwIAABwqoAAAACkEIQoQQggAAABAA&replay=ENozTUvPXaIzNoA)。规划与QA资料，不是真人或AI盲试玩过程。
+
+</details>
+
 ## 2026-11-17 · 第49关《留层》重画完整取物任务（稳定ID72 v02）
 
 [逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=72) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWN4wMHBf_4AAwMDhwyDB5uD1oJLoiEMQBDAxcik4MAAAk1MTM3NzAwMLAwKTAoMLCyMDEwNDAwLRJhWiE1QYWlgYDgwsQEA) · [原件、反例与范围](../examples/discovery-course-20261023/drafts/key-room-before-parking-course-20261117/README.md)。去A、钥匙移到上守卫后、目标到下守卫后1门，新增下方两格引鬼回路并删旧目标叶格，24变25格，27步唯一；不是旧解等价精简。原图37步无互相影响方案不再完成新任务，完整禁重合任务分别跳过任一梯口保护均无解。两鬼最佳各留原层，延续旧主题，不称新机制或品质已提升。23格左移稿虽24步最佳安全，却有34步无互相影响通关，拒绝；上层两底格保留31步走错箭头后的恢复选择。全部最优／去终点／跨层编号／码、外侧801态3970后继及两端27步、29／31／35步补救、错误撤回和28帧回放通过，六图已检视。旧v01四件原样归档，两端旧局能继续第2步，主动刷新才载新码；其余48码和关序保持。当前49关，Site122原生部署成功，成功后未重复访问线上；趣味、观察成本与末段跨度仍待未知规则真人，不入正式地图集。
