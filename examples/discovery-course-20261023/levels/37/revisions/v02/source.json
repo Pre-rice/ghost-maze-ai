@@ -1,0 +1,146 @@
+{
+  "id": "37",
+  "title": "37",
+  "revision": 2,
+  "revisedOn": "2026-10-24",
+  "width": 3,
+  "height": 4,
+  "params": {
+    "start": [
+      2,
+      2
+    ],
+    "end": [
+      0,
+      3
+    ],
+    "ghosts": [
+      [
+        0,
+        2
+      ]
+    ],
+    "buttons": [
+      [
+        1,
+        1,
+        0,
+        -1,
+        "A"
+      ]
+    ],
+    "edges": [
+      [
+        "v",
+        1,
+        0,
+        6,
+        {
+          "letter": "A",
+          "initialState": "closed"
+        }
+      ],
+      [
+        "v",
+        1,
+        1,
+        6,
+        {
+          "letter": "A",
+          "initialState": "open"
+        }
+      ],
+      [
+        "v",
+        1,
+        2,
+        1
+      ],
+      [
+        "h",
+        1,
+        1,
+        1
+      ],
+      [
+        "v",
+        2,
+        1,
+        1
+      ],
+      [
+        "h",
+        1,
+        2,
+        2
+      ]
+    ],
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        0,
+        3
+      ]
+    ]
+  },
+  "derivedFrom": {
+    "courseLevelId": "34",
+    "previousVersion": "levels/37/revisions/v01",
+    "changes": [
+      "把已有双入口守卫问题改为反相A控制：近路先开、远路先关",
+      "同一控制点需要先临时关闭近路，再在引出鬼之后返回重新开放",
+      "保留已经认识的普通门，让返回操作安全；删掉下方二格回环并内移出生，避免追着绕行一次开A就通关"
+    ]
+  },
+  "knowledgeBefore": [
+    "主动引开守卫",
+    "普通门能隔开追逐",
+    "从不同入口进出同一区域"
+  ],
+  "newDiscovery": "眼前已经开放的路也可能需要先关闭；打开远端通路引出守卫后，再回到按钮恢复近路。",
+  "evidence": "两扇A门始终反相。开放近入口并不能直接靠近守卫，先切到远端才能引出它；借普通门回到控制点后，再切回原门态才能通往目标。",
+  "transfer": "首先在完整往返中认识同A反相联动；随后45仍只用A，让玩家主动安排保护并换控制位置，再进入错位的A/B，不马上换机关类型。",
+  "risk": "单鬼、小图和两次A必要不证明有趣；从旧九格一次关门图改为完整往返问题，但未知规则玩家能否识别控制方式仍待真实体验，不自动入正式地图集。",
+  "familyGroup": "discovery-first-letter-trap-20261023-v1",
+  "relatedFamilyGroups": [
+    "discovery-guarded-door-room-20261023-v1"
+  ],
+  "createdOn": "2026-10-23",
+  "humanQuality": null,
+  "role": "discovery_level_design_not_human_learning_evidence"
+}
