@@ -1,5 +1,15 @@
 # AI 地图总目录
 
+## 2026-11-17 · 第25关《伴归》替换课程研究稿（稳定ID75）
+
+[逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=75) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AADIgODg-Dg4AAECICOMBE4gHUAANQpAICoAABQCIEQIIFUCIAAAAg) · [设计、原件与证据](../examples/discovery-course-20261023/drafts/escort-return-course-20261117/README.md)。新手画18格斜接双室，两鬼两钥匙、一普通门及目标2，无A／0／箭头／楼梯，26步四原始路线、两类。先前留下的旧鬼会在回程再追来，新追者需要带回来保护自己；仍与再借概念亲缘，不继承好评。原20格删除无必要0及下侧两格；以更少元件和执行替换未评价的29格44步携影，但不是旧图等价精简。旧61四件与原说明保留，其余48码和相对顺序保持，Site118公开49关。十项完整历史、全部最优／去终点／编号／码、外侧194态965后继、两端完整操作和两类54帧回放通过；原生成功后未访问部署重复检查。没有真人质量、学习或AI感受，不入正式地图集。
+
+<details><summary>两类26步参考回放（含解法）</summary>
+
+[右室先上侧调动](https://ghostmaze.novic.cc/?map=AADIgODg-Dg4AAECICOMBE4gHUAANQpAICoAABQCIEQIIFUCIAAAAg&replay=EFOy9-AhzX6XwqgA) · [右室先下侧调动](https://ghostmaze.novic.cc/?map=AADIgODg-Dg4AAECICOMBE4gHUAANQpAICoAABQCIEQIIFUCIAAAAg&replay=EFOy9-AhzVQ9aCgA)。工程规划证书，不是真人过程；各类另有初始安静赶路不同的原始路线，全部见证据。
+
+</details>
+
 ## 2026-11-17 · 第48关《迁居》替换课程研究稿（稳定ID74）
 
 [逐关试玩](https://ghostmaze-discovery-path.prerice.chatgpt.site/?level=74) · [正式引擎单图](https://ghostmaze.novic.cc/?map=AWN4wMDAfvwAAwMDswMPA0Oog2MoAxgwcfgIgBkc_AfAVIMEK4ODcahoCEReg4UDwuAQWAAA) · [完整任务与原件](../examples/discovery-course-20261023/drafts/exchanged-floors-course-20261117/README.md)。新手画17格，双层双鬼、两对楼梯、普通门、钥匙与目标1，15步唯一一类。先到右上取物再回左上目标，须暂留下鬼、把上鬼带下，最后下鬼追到上层，两只实际交换楼层。无资源原稿可19步逐只完成，加入完整取物目标后才排除，最佳15步未变。14项完整历史、全部最优／去终点／编号／码／外侧108态535后继及两端完整操作与16帧回放通过。旧58《同室两用》的地图、证据、码和原说明保留，其余48码及相对顺序保持，当前公开49关。未知规则真人体验仍待审，不入正式地图集、不转移亲缘好评。
