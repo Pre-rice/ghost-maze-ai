@@ -1,0 +1,1069 @@
+{
+  "createdOn": "2026-11-17",
+  "sourceId": "57",
+  "sourceMapId": "3661ad5fd3b6fb9ebb1bb25731d4d555c7fca520115fb8f6b2c569f3cfe5cdf2",
+  "sourceCode": "AWM4-BEIPjAwMBos8OkOEGQo41qh59DAEMa0ioGBQcCpS-CJxkIWBhBoAAA",
+  "humanQuality": null,
+  "scope": "三种明示单删；原图与第三鬼的教学价值不是已证结论，未改公开地图",
+  "cases": [
+    {
+      "removed": 0,
+      "initialPosition": {
+        "x": 2,
+        "y": 2,
+        "id": 0
+      },
+      "mapId": "ee76e947133f16bae5042434d2f8808e231e5d02f963b5beb638fb013c5e40b5",
+      "mapCode": "AADB8fHx8fAAAAEwoDFqAiAOwVUFyBAACsBVQAAAAghRQhyFFCCAAAAAABA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 250,
+        "transitions": 1250,
+        "discovered": 281,
+        "totalActions": 23
+      },
+      "count": "2",
+      "actions": [
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R",
+        "U",
+        "L",
+        "R",
+        "U",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "L"
+      ],
+      "originalReferenceStillWins": true,
+      "boundary": {
+        "status": "safe",
+        "reason": "all_optimal_routes_avoid_overlap",
+        "mapId": "ee76e947133f16bae5042434d2f8808e231e5d02f963b5beb638fb013c5e40b5",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 250,
+        "transitions": 1250,
+        "discovered": 279,
+        "optimum": 23,
+        "ignoredFatalOverlap": 4,
+        "observedNonFatalOverlap": null,
+        "safeOptimalWitness": [
+          "U",
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "D",
+          "D",
+          "R",
+          "R",
+          "R",
+          "U",
+          "L",
+          "R",
+          "U",
+          "R",
+          "R",
+          "U",
+          "U",
+          "L",
+          "L",
+          "D",
+          "L"
+        ],
+        "elapsedMs": 51,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+      },
+      "ordinary": {
+        "analysisVersion": "ordinary-plans-v1",
+        "mapId": "ee76e947133f16bae5042434d2f8808e231e5d02f963b5beb638fb013c5e40b5",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "ghosts": [
+          {
+            "index": 0,
+            "initialPosition": [
+              2,
+              3
+            ]
+          },
+          {
+            "index": 1,
+            "initialPosition": [
+              3,
+              2
+            ]
+          }
+        ],
+        "budget": {
+          "nodeBudget": 400000,
+          "stateBudget": 400000,
+          "budgetMs": 20000,
+          "totalBudgetMs": 40000,
+          "orderBudget": 24,
+          "avoidOverlap": true
+        },
+        "scope": {
+          "singleLayerOnly": true,
+          "noDamageOrRevival": true,
+          "avoidOverlap": true,
+          "arrivalDeathCheckedWithoutGoal": true,
+          "movement": "按本体实际记录计鬼移动；终局动作另查去终点死亡，不把该反事实当实际轨迹",
+          "handoff": "一方末次与另一方首次移动允许同一动作；不要求所有鬼必须移动",
+          "history": "处理阶段进入完整状态键；本体参考键保留同层鬼数组位置",
+          "optimality": "只比较本报告明确限制范围内的最短步数，不能替代正式全部最优验收"
+        },
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 239,
+            "transitions": 1194,
+            "discovered": 269,
+            "totalActions": 23
+          },
+          "actions": [
+            "U",
+            "U",
+            "L",
+            "L",
+            "D",
+            "D",
+            "D",
+            "D",
+            "R",
+            "R",
+            "R",
+            "U",
+            "L",
+            "R",
+            "U",
+            "R",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L",
+            "D",
+            "L"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 1,
+              "lastMove": 15
+            },
+            {
+              "ghost": 1,
+              "firstMove": 6,
+              "lastMove": 16
+            }
+          ]
+        },
+        "queries": [
+          {
+            "kind": "independent_prefix",
+            "ghost": 0,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 281,
+              "transitions": 1405,
+              "discovered": 281,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 0,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 112,
+              "transitions": 559,
+              "discovered": 118,
+              "totalActions": 29
+            },
+            "actions": [
+              "L",
+              "L",
+              "D",
+              "D",
+              "U",
+              "U",
+              "R",
+              "R",
+              "U",
+              "R",
+              "R",
+              "D",
+              "D",
+              "D",
+              "D",
+              "L",
+              "U",
+              "L",
+              "R",
+              "D",
+              "R",
+              "U",
+              "U",
+              "U",
+              "U",
+              "L",
+              "L",
+              "D",
+              "L"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 9,
+                "lastMove": 20
+              },
+              {
+                "ghost": 1,
+                "firstMove": 4,
+                "lastMove": 5
+              }
+            ],
+            "sameBaselineLength": false
+          },
+          {
+            "kind": "independent_prefix",
+            "ghost": 1,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 112,
+              "transitions": 559,
+              "discovered": 118,
+              "totalActions": 29
+            },
+            "actions": [
+              "L",
+              "L",
+              "D",
+              "D",
+              "U",
+              "U",
+              "R",
+              "R",
+              "U",
+              "R",
+              "R",
+              "D",
+              "D",
+              "D",
+              "D",
+              "L",
+              "U",
+              "L",
+              "R",
+              "D",
+              "R",
+              "U",
+              "U",
+              "U",
+              "U",
+              "L",
+              "L",
+              "D",
+              "L"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 9,
+                "lastMove": 20
+              },
+              {
+                "ghost": 1,
+                "firstMove": 4,
+                "lastMove": 5
+              }
+            ],
+            "sameBaselineLength": false
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 1,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 281,
+              "transitions": 1405,
+              "discovered": 281,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 281,
+              "transitions": 1405,
+              "discovered": 281,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 112,
+              "transitions": 559,
+              "discovered": 118,
+              "totalActions": 29
+            },
+            "actions": [
+              "L",
+              "L",
+              "D",
+              "D",
+              "U",
+              "U",
+              "R",
+              "R",
+              "U",
+              "R",
+              "R",
+              "D",
+              "D",
+              "D",
+              "D",
+              "L",
+              "U",
+              "L",
+              "R",
+              "D",
+              "R",
+              "U",
+              "U",
+              "U",
+              "U",
+              "L",
+              "L",
+              "D",
+              "L"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 9,
+                "lastMove": 20
+              },
+              {
+                "ghost": 1,
+                "firstMove": 4,
+                "lastMove": 5
+              }
+            ],
+            "sameBaselineLength": false
+          }
+        ],
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        },
+        "conclusion": "complete_sequential_witness_found",
+        "humanQualityScore": null,
+        "interpretation": "有普通替代只给出具体证书；没有普通替代也不证明新意、难度或尤里卡。",
+        "elapsedMs": 238.526281
+      },
+      "noEndReference": {
+        "safe": true,
+        "fatalAt": null,
+        "player": [
+          0,
+          1,
+          1
+        ],
+        "ghosts": [
+          [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        ],
+        "scope": "仅所选参考的去终点死亡检查；boundary.status仅表达其原始重合／玻璃政策，不代表本项"
+      }
+    },
+    {
+      "removed": 1,
+      "initialPosition": {
+        "x": 2,
+        "y": 3,
+        "id": 1
+      },
+      "mapId": "58b6d826f1ac094ad97834927dd501a68b1025afac503fc603ec5b83f659a28f",
+      "mapCode": "AADB8fHx8fAAAAEwoCxqAiAOwVUFyBAACsBVQAAAAghRQhyFFCCAAAAAABA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 92,
+        "transitions": 460,
+        "discovered": 109,
+        "totalActions": 14
+      },
+      "count": "1",
+      "actions": [
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "L",
+        "L"
+      ],
+      "originalReferenceStillWins": true,
+      "boundary": {
+        "status": "safe",
+        "reason": "all_optimal_routes_avoid_overlap",
+        "mapId": "58b6d826f1ac094ad97834927dd501a68b1025afac503fc603ec5b83f659a28f",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 92,
+        "transitions": 460,
+        "discovered": 108,
+        "optimum": 14,
+        "ignoredFatalOverlap": 1,
+        "observedNonFatalOverlap": null,
+        "safeOptimalWitness": [
+          "L",
+          "L",
+          "D",
+          "D",
+          "D",
+          "D",
+          "R",
+          "R",
+          "R",
+          "U",
+          "U",
+          "U",
+          "L",
+          "L"
+        ],
+        "elapsedMs": 7,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+      },
+      "ordinary": {
+        "analysisVersion": "ordinary-plans-v1",
+        "mapId": "58b6d826f1ac094ad97834927dd501a68b1025afac503fc603ec5b83f659a28f",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "ghosts": [
+          {
+            "index": 0,
+            "initialPosition": [
+              2,
+              2
+            ]
+          },
+          {
+            "index": 1,
+            "initialPosition": [
+              3,
+              2
+            ]
+          }
+        ],
+        "budget": {
+          "nodeBudget": 400000,
+          "stateBudget": 400000,
+          "budgetMs": 20000,
+          "totalBudgetMs": 40000,
+          "orderBudget": 24,
+          "avoidOverlap": true
+        },
+        "scope": {
+          "singleLayerOnly": true,
+          "noDamageOrRevival": true,
+          "avoidOverlap": true,
+          "arrivalDeathCheckedWithoutGoal": true,
+          "movement": "按本体实际记录计鬼移动；终局动作另查去终点死亡，不把该反事实当实际轨迹",
+          "handoff": "一方末次与另一方首次移动允许同一动作；不要求所有鬼必须移动",
+          "history": "处理阶段进入完整状态键；本体参考键保留同层鬼数组位置",
+          "optimality": "只比较本报告明确限制范围内的最短步数，不能替代正式全部最优验收"
+        },
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 87,
+            "transitions": 434,
+            "discovered": 103,
+            "totalActions": 14
+          },
+          "actions": [
+            "L",
+            "L",
+            "D",
+            "D",
+            "D",
+            "D",
+            "R",
+            "R",
+            "R",
+            "U",
+            "U",
+            "U",
+            "L",
+            "L"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 4,
+              "lastMove": 10
+            },
+            {
+              "ghost": 1,
+              "firstMove": 4,
+              "lastMove": 13
+            }
+          ]
+        },
+        "queries": [
+          {
+            "kind": "independent_prefix",
+            "ghost": 0,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 228,
+              "transitions": 1140,
+              "discovered": 228,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 0,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 30,
+              "transitions": 150,
+              "discovered": 30,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_prefix",
+            "ghost": 1,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 30,
+              "transitions": 150,
+              "discovered": 30,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 1,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 228,
+              "transitions": 1140,
+              "discovered": 228,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 228,
+              "transitions": 1140,
+              "discovered": 228,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 30,
+              "transitions": 150,
+              "discovered": 30,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          }
+        ],
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        },
+        "conclusion": "no_complete_sequential_plan_within_scope",
+        "humanQualityScore": null,
+        "interpretation": "有普通替代只给出具体证书；没有普通替代也不证明新意、难度或尤里卡。",
+        "elapsedMs": 104.55361599999998
+      },
+      "noEndReference": {
+        "safe": true,
+        "fatalAt": null,
+        "player": [
+          0,
+          1,
+          1
+        ],
+        "ghosts": [
+          [
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        ],
+        "scope": "仅所选参考的去终点死亡检查；boundary.status仅表达其原始重合／玻璃政策，不代表本项"
+      }
+    },
+    {
+      "removed": 2,
+      "initialPosition": {
+        "x": 3,
+        "y": 2,
+        "id": 2
+      },
+      "mapId": "f0aa08e318e9f5ff0cb971d64c38e6baa3b4dc37b9419094b4b2d32dc6394d71",
+      "mapCode": "AADB8fHx8fAAAAEwoCyKAiAOwVUFyBAACsBVQAAAAghRQhyFFCCAAAAAABA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 207,
+        "transitions": 1035,
+        "discovered": 245,
+        "totalActions": 15
+      },
+      "count": "3",
+      "actions": [
+        "U",
+        "R",
+        "R",
+        "D",
+        "D",
+        "D",
+        "D",
+        "L",
+        "U",
+        "L",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L"
+      ],
+      "originalReferenceStillWins": true,
+      "boundary": {
+        "status": "safe",
+        "reason": "all_optimal_routes_avoid_overlap",
+        "mapId": "f0aa08e318e9f5ff0cb971d64c38e6baa3b4dc37b9419094b4b2d32dc6394d71",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 202,
+        "transitions": 1010,
+        "discovered": 236,
+        "optimum": 15,
+        "ignoredFatalOverlap": 3,
+        "observedNonFatalOverlap": null,
+        "safeOptimalWitness": [
+          "U",
+          "R",
+          "R",
+          "D",
+          "D",
+          "D",
+          "D",
+          "L",
+          "U",
+          "L",
+          "R",
+          "U",
+          "U",
+          "L",
+          "L"
+        ],
+        "elapsedMs": 11,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+      },
+      "ordinary": {
+        "analysisVersion": "ordinary-plans-v1",
+        "mapId": "f0aa08e318e9f5ff0cb971d64c38e6baa3b4dc37b9419094b4b2d32dc6394d71",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "ghosts": [
+          {
+            "index": 0,
+            "initialPosition": [
+              2,
+              2
+            ]
+          },
+          {
+            "index": 1,
+            "initialPosition": [
+              2,
+              3
+            ]
+          }
+        ],
+        "budget": {
+          "nodeBudget": 400000,
+          "stateBudget": 400000,
+          "budgetMs": 20000,
+          "totalBudgetMs": 40000,
+          "orderBudget": 24,
+          "avoidOverlap": true
+        },
+        "scope": {
+          "singleLayerOnly": true,
+          "noDamageOrRevival": true,
+          "avoidOverlap": true,
+          "arrivalDeathCheckedWithoutGoal": true,
+          "movement": "按本体实际记录计鬼移动；终局动作另查去终点死亡，不把该反事实当实际轨迹",
+          "handoff": "一方末次与另一方首次移动允许同一动作；不要求所有鬼必须移动",
+          "history": "处理阶段进入完整状态键；本体参考键保留同层鬼数组位置",
+          "optimality": "只比较本报告明确限制范围内的最短步数，不能替代正式全部最优验收"
+        },
+        "baseline": {
+          "result": {
+            "status": "solved",
+            "reason": "goal_reached",
+            "expanded": 190,
+            "transitions": 949,
+            "discovered": 224,
+            "totalActions": 15
+          },
+          "actions": [
+            "U",
+            "R",
+            "R",
+            "D",
+            "D",
+            "D",
+            "D",
+            "L",
+            "U",
+            "L",
+            "R",
+            "U",
+            "U",
+            "L",
+            "L"
+          ],
+          "movementSpans": [
+            {
+              "ghost": 0,
+              "firstMove": 1,
+              "lastMove": 9
+            },
+            {
+              "ghost": 1,
+              "firstMove": 1,
+              "lastMove": 14
+            }
+          ]
+        },
+        "queries": [
+          {
+            "kind": "independent_prefix",
+            "ghost": 0,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 145,
+              "transitions": 724,
+              "discovered": 155,
+              "totalActions": 16
+            },
+            "actions": [
+              "L",
+              "L",
+              "D",
+              "D",
+              "U",
+              "U",
+              "R",
+              "R",
+              "R",
+              "R",
+              "D",
+              "D",
+              "L",
+              "U",
+              "L",
+              "L"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 4,
+                "lastMove": 15
+              },
+              {
+                "ghost": 1,
+                "firstMove": 15,
+                "lastMove": 15
+              }
+            ],
+            "sameBaselineLength": false
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 0,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 108,
+              "transitions": 540,
+              "discovered": 108,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_prefix",
+            "ghost": 1,
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 108,
+              "transitions": 540,
+              "discovered": 108,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          },
+          {
+            "kind": "independent_suffix",
+            "ghost": 1,
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 145,
+              "transitions": 724,
+              "discovered": 155,
+              "totalActions": 16
+            },
+            "actions": [
+              "L",
+              "L",
+              "D",
+              "D",
+              "U",
+              "U",
+              "R",
+              "R",
+              "R",
+              "R",
+              "D",
+              "D",
+              "L",
+              "U",
+              "L",
+              "L"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 4,
+                "lastMove": 15
+              },
+              {
+                "ghost": 1,
+                "firstMove": 15,
+                "lastMove": 15
+              }
+            ],
+            "sameBaselineLength": false
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              0,
+              1
+            ],
+            "result": {
+              "status": "solved",
+              "reason": "goal_reached",
+              "expanded": 145,
+              "transitions": 724,
+              "discovered": 155,
+              "totalActions": 16
+            },
+            "actions": [
+              "L",
+              "L",
+              "D",
+              "D",
+              "U",
+              "U",
+              "R",
+              "R",
+              "R",
+              "R",
+              "D",
+              "D",
+              "L",
+              "U",
+              "L",
+              "L"
+            ],
+            "movementSpans": [
+              {
+                "ghost": 0,
+                "firstMove": 4,
+                "lastMove": 15
+              },
+              {
+                "ghost": 1,
+                "firstMove": 15,
+                "lastMove": 15
+              }
+            ],
+            "sameBaselineLength": false
+          },
+          {
+            "kind": "complete_sequential",
+            "order": [
+              1,
+              0
+            ],
+            "result": {
+              "status": "proven_unsat",
+              "reason": "frontier_exhausted",
+              "expanded": 108,
+              "transitions": 540,
+              "discovered": 108,
+              "totalActions": null
+            },
+            "actions": null,
+            "movementSpans": null,
+            "sameBaselineLength": null
+          }
+        ],
+        "completeOrders": {
+          "possible": "2",
+          "queried": 2,
+          "coverageComplete": true
+        },
+        "conclusion": "complete_sequential_witness_found",
+        "humanQualityScore": null,
+        "interpretation": "有普通替代只给出具体证书；没有普通替代也不证明新意、难度或尤里卡。",
+        "elapsedMs": 104.21524
+      },
+      "noEndReference": {
+        "safe": true,
+        "fatalAt": null,
+        "player": [
+          0,
+          1,
+          1
+        ],
+        "ghosts": [
+          [
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        ],
+        "scope": "仅所选参考的去终点死亡检查；boundary.status仅表达其原始重合／玻璃政策，不代表本项"
+      }
+    }
+  ]
+}

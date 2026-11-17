@@ -1,0 +1,2579 @@
+{
+  "createdOn": "2026-11-17",
+  "humanQuality": null,
+  "scope": "四个明示外缘／目标调整，保留原三鬼初位、双A控制、出生与准备；是否保住完整问题另审，不把较短或全部最优安全当作已经优化",
+  "cases": [
+    {
+      "name": "crop_corner",
+      "crop": [
+        [
+          4,
+          4
+        ]
+      ],
+      "goal": null,
+      "sealOld": false,
+      "mapId": "b8bef4f71046e937a75b1a603ec033d875f156d0dbbe1b964df2f6bee1658ccd",
+      "mapCode": "AWM4-BEIHjAwMBos8OkOEGQo41qh59DAEKYYwsDAIODUJfBEYyEHAwg0AAA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 109,
+        "transitions": 545,
+        "discovered": 116,
+        "totalActions": 23
+      },
+      "count": "1",
+      "actions": [
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R",
+        "U",
+        "L",
+        "R",
+        "U",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "L"
+      ],
+      "boundary": {
+        "status": "safe",
+        "reason": "all_optimal_routes_avoid_overlap",
+        "mapId": "b8bef4f71046e937a75b1a603ec033d875f156d0dbbe1b964df2f6bee1658ccd",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 109,
+        "transitions": 545,
+        "discovered": 115,
+        "optimum": 23,
+        "ignoredFatalOverlap": 3,
+        "observedNonFatalOverlap": null,
+        "safeOptimalWitness": [
+          "U",
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "D",
+          "D",
+          "R",
+          "R",
+          "R",
+          "U",
+          "L",
+          "R",
+          "U",
+          "R",
+          "R",
+          "U",
+          "U",
+          "L",
+          "L",
+          "D",
+          "L"
+        ],
+        "elapsedMs": 20,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "action": "U",
+          "p": [
+            2,
+            0
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 2,
+          "action": "U",
+          "p": [
+            2,
+            0
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "motion",
+            "changes": [
+              {
+                "from": [
+                  0,
+                  2,
+                  2
+                ],
+                "actual": [
+                  0,
+                  2,
+                  2
+                ],
+                "alone": [
+                  0,
+                  2,
+                  1
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "step": 3,
+          "action": "L",
+          "p": [
+            1,
+            0
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 4,
+          "action": "L",
+          "p": [
+            0,
+            0
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 5,
+          "action": "D",
+          "p": [
+            0,
+            1
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 6,
+          "action": "D",
+          "p": [
+            0,
+            2
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 7,
+          "action": "D",
+          "p": [
+            0,
+            3
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 8,
+          "action": "D",
+          "p": [
+            0,
+            4
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 9,
+          "action": "R",
+          "p": [
+            1,
+            4
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 10,
+          "action": "R",
+          "p": [
+            2,
+            4
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 11,
+          "action": "R",
+          "p": [
+            3,
+            4
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 12,
+          "action": "U",
+          "p": [
+            3,
+            3
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 13,
+          "action": "L",
+          "p": [
+            2,
+            3
+          ],
+          "g": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 14,
+          "action": "R",
+          "p": [
+            3,
+            3
+          ],
+          "g": [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 15,
+          "action": "U",
+          "p": [
+            3,
+            2
+          ],
+          "g": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 16,
+          "action": "R",
+          "p": [
+            4,
+            2
+          ],
+          "g": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "motion",
+            "changes": [
+              {
+                "from": [
+                  0,
+                  3,
+                  3
+                ],
+                "actual": [
+                  0,
+                  3,
+                  3
+                ],
+                "alone": [
+                  0,
+                  3,
+                  2
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "step": 17,
+          "action": "R",
+          "p": [
+            4,
+            2
+          ],
+          "g": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 18,
+          "action": "U",
+          "p": [
+            4,
+            1
+          ],
+          "g": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 19,
+          "action": "U",
+          "p": [
+            4,
+            0
+          ],
+          "g": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 20,
+          "action": "L",
+          "p": [
+            3,
+            0
+          ],
+          "g": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 21,
+          "action": "L",
+          "p": [
+            2,
+            0
+          ],
+          "g": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 22,
+          "action": "D",
+          "p": [
+            2,
+            1
+          ],
+          "g": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 23,
+          "action": "L",
+          "p": [
+            1,
+            1
+          ],
+          "g": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        }
+      ],
+      "noEndReference": {
+        "safe": true,
+        "fatalAt": null,
+        "player": [
+          0,
+          1,
+          1
+        ],
+        "ghosts": [
+          [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        ],
+        "scope": "仅所选参考的去终点死亡检查；boundary.status仅表达其原始重合／玻璃政策，不代表本项"
+      }
+    },
+    {
+      "name": "crop_lower_right",
+      "crop": [
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "goal": null,
+      "sealOld": false,
+      "mapId": "a8a0f1ee9b9b770f1daa20270afe0d260f576d300b31b5747920c1eed0cdb9f8",
+      "mapCode": "AADB8fHx4eAAAAEwoEyLUBEAdgqoLkCACCsBVAAAABBCihDkKIIQAAAAAAE",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 102,
+        "transitions": 510,
+        "discovered": 109,
+        "totalActions": 23
+      },
+      "count": "1",
+      "actions": [
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R",
+        "U",
+        "L",
+        "R",
+        "U",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "L"
+      ],
+      "boundary": {
+        "status": "safe",
+        "reason": "all_optimal_routes_avoid_overlap",
+        "mapId": "a8a0f1ee9b9b770f1daa20270afe0d260f576d300b31b5747920c1eed0cdb9f8",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 102,
+        "transitions": 510,
+        "discovered": 108,
+        "optimum": 23,
+        "ignoredFatalOverlap": 3,
+        "observedNonFatalOverlap": null,
+        "safeOptimalWitness": [
+          "U",
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "D",
+          "D",
+          "R",
+          "R",
+          "R",
+          "U",
+          "L",
+          "R",
+          "U",
+          "R",
+          "R",
+          "U",
+          "U",
+          "L",
+          "L",
+          "D",
+          "L"
+        ],
+        "elapsedMs": 7,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "action": "U",
+          "p": [
+            2,
+            0
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 2,
+          "action": "U",
+          "p": [
+            2,
+            0
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "motion",
+            "changes": [
+              {
+                "from": [
+                  0,
+                  2,
+                  2
+                ],
+                "actual": [
+                  0,
+                  2,
+                  2
+                ],
+                "alone": [
+                  0,
+                  2,
+                  1
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "step": 3,
+          "action": "L",
+          "p": [
+            1,
+            0
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 4,
+          "action": "L",
+          "p": [
+            0,
+            0
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 5,
+          "action": "D",
+          "p": [
+            0,
+            1
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 6,
+          "action": "D",
+          "p": [
+            0,
+            2
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 7,
+          "action": "D",
+          "p": [
+            0,
+            3
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 8,
+          "action": "D",
+          "p": [
+            0,
+            4
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 9,
+          "action": "R",
+          "p": [
+            1,
+            4
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 10,
+          "action": "R",
+          "p": [
+            2,
+            4
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 11,
+          "action": "R",
+          "p": [
+            3,
+            4
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 12,
+          "action": "U",
+          "p": [
+            3,
+            3
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 13,
+          "action": "L",
+          "p": [
+            2,
+            3
+          ],
+          "g": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 14,
+          "action": "R",
+          "p": [
+            3,
+            3
+          ],
+          "g": [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 15,
+          "action": "U",
+          "p": [
+            3,
+            2
+          ],
+          "g": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 16,
+          "action": "R",
+          "p": [
+            4,
+            2
+          ],
+          "g": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "motion",
+            "changes": [
+              {
+                "from": [
+                  0,
+                  3,
+                  3
+                ],
+                "actual": [
+                  0,
+                  3,
+                  3
+                ],
+                "alone": [
+                  0,
+                  3,
+                  2
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "step": 17,
+          "action": "R",
+          "p": [
+            4,
+            2
+          ],
+          "g": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 18,
+          "action": "U",
+          "p": [
+            4,
+            1
+          ],
+          "g": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 19,
+          "action": "U",
+          "p": [
+            4,
+            0
+          ],
+          "g": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 20,
+          "action": "L",
+          "p": [
+            3,
+            0
+          ],
+          "g": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 21,
+          "action": "L",
+          "p": [
+            2,
+            0
+          ],
+          "g": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 22,
+          "action": "D",
+          "p": [
+            2,
+            1
+          ],
+          "g": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 23,
+          "action": "L",
+          "p": [
+            1,
+            1
+          ],
+          "g": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        }
+      ],
+      "noEndReference": {
+        "safe": true,
+        "fatalAt": null,
+        "player": [
+          0,
+          1,
+          1
+        ],
+        "ghosts": [
+          [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        ],
+        "scope": "仅所选参考的去终点死亡检查；boundary.status仅表达其原始重合／玻璃政策，不代表本项"
+      }
+    },
+    {
+      "name": "goal_under_A",
+      "crop": [],
+      "goal": [
+        2,
+        1
+      ],
+      "sealOld": false,
+      "mapId": "c02fd6d495575c0f424eaef2e426976109323b194d42aaaa8cad389bbdd4b133",
+      "mapCode": "AWM4-BEIPjAwMFos8OkOEGQo41qh59DAEMa0ioGBQcCpS-CJxkIWBhBoAAA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 105,
+        "transitions": 525,
+        "discovered": 118,
+        "totalActions": 16
+      },
+      "count": "1",
+      "actions": [
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R",
+        "U",
+        "L",
+        "R",
+        "U",
+        "U",
+        "L"
+      ],
+      "boundary": {
+        "status": "safe",
+        "reason": "all_optimal_routes_avoid_overlap",
+        "mapId": "c02fd6d495575c0f424eaef2e426976109323b194d42aaaa8cad389bbdd4b133",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 105,
+        "transitions": 525,
+        "discovered": 117,
+        "optimum": 16,
+        "ignoredFatalOverlap": 3,
+        "observedNonFatalOverlap": null,
+        "safeOptimalWitness": [
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "D",
+          "D",
+          "R",
+          "R",
+          "R",
+          "U",
+          "L",
+          "R",
+          "U",
+          "U",
+          "L"
+        ],
+        "elapsedMs": 13,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "action": "U",
+          "p": [
+            2,
+            0
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 2,
+          "action": "L",
+          "p": [
+            1,
+            0
+          ],
+          "g": [
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 3,
+          "action": "L",
+          "p": [
+            0,
+            0
+          ],
+          "g": [
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 4,
+          "action": "D",
+          "p": [
+            0,
+            1
+          ],
+          "g": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 5,
+          "action": "D",
+          "p": [
+            0,
+            2
+          ],
+          "g": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 6,
+          "action": "D",
+          "p": [
+            0,
+            3
+          ],
+          "g": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 7,
+          "action": "D",
+          "p": [
+            0,
+            4
+          ],
+          "g": [
+            [
+              0,
+              3
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 8,
+          "action": "R",
+          "p": [
+            1,
+            4
+          ],
+          "g": [
+            [
+              0,
+              4
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 9,
+          "action": "R",
+          "p": [
+            2,
+            4
+          ],
+          "g": [
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 10,
+          "action": "R",
+          "p": [
+            3,
+            4
+          ],
+          "g": [
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 11,
+          "action": "U",
+          "p": [
+            3,
+            3
+          ],
+          "g": [
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 12,
+          "action": "L",
+          "p": [
+            2,
+            3
+          ],
+          "g": [
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 13,
+          "action": "R",
+          "p": [
+            3,
+            3
+          ],
+          "g": [
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 14,
+          "action": "U",
+          "p": [
+            3,
+            2
+          ],
+          "g": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 15,
+          "action": "U",
+          "p": [
+            3,
+            1
+          ],
+          "g": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "motion",
+            "changes": [
+              {
+                "from": [
+                  0,
+                  2,
+                  2
+                ],
+                "actual": [
+                  0,
+                  2,
+                  2
+                ],
+                "alone": [
+                  0,
+                  3,
+                  2
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "step": 16,
+          "action": "L",
+          "p": [
+            2,
+            1
+          ],
+          "g": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        }
+      ],
+      "noEndReference": {
+        "safe": false,
+        "fatalAt": 16,
+        "player": [
+          0,
+          2,
+          1
+        ],
+        "ghosts": [
+          [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        ],
+        "scope": "仅所选参考的去终点死亡检查；boundary.status仅表达其原始重合／玻璃政策，不代表本项"
+      }
+    },
+    {
+      "name": "goal_under_A_seal_old",
+      "crop": [],
+      "goal": [
+        2,
+        1
+      ],
+      "sealOld": true,
+      "mapId": "9129ad9ce99f5f024588529cd9e83caa8cec9b5dfb3071a248a7c99ebad5c875",
+      "mapCode": "AWM4-BEIPjAwMFos8OkOEGQo41qh59DAEMa0ioGBQcBpKUeRSEATAwg4AAA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 105,
+        "transitions": 525,
+        "discovered": 118,
+        "totalActions": 16
+      },
+      "count": "1",
+      "actions": [
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "R",
+        "U",
+        "L",
+        "R",
+        "U",
+        "U",
+        "L"
+      ],
+      "boundary": {
+        "status": "safe",
+        "reason": "all_optimal_routes_avoid_overlap",
+        "mapId": "9129ad9ce99f5f024588529cd9e83caa8cec9b5dfb3071a248a7c99ebad5c875",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 105,
+        "transitions": 525,
+        "discovered": 117,
+        "optimum": 16,
+        "ignoredFatalOverlap": 3,
+        "observedNonFatalOverlap": null,
+        "safeOptimalWitness": [
+          "U",
+          "L",
+          "L",
+          "D",
+          "D",
+          "D",
+          "D",
+          "R",
+          "R",
+          "R",
+          "U",
+          "L",
+          "R",
+          "U",
+          "U",
+          "L"
+        ],
+        "elapsedMs": 5,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+      },
+      "trace": [
+        {
+          "step": 1,
+          "action": "U",
+          "p": [
+            2,
+            0
+          ],
+          "g": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 2,
+          "action": "L",
+          "p": [
+            1,
+            0
+          ],
+          "g": [
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 3,
+          "action": "L",
+          "p": [
+            0,
+            0
+          ],
+          "g": [
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 4,
+          "action": "D",
+          "p": [
+            0,
+            1
+          ],
+          "g": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 5,
+          "action": "D",
+          "p": [
+            0,
+            2
+          ],
+          "g": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 6,
+          "action": "D",
+          "p": [
+            0,
+            3
+          ],
+          "g": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 7,
+          "action": "D",
+          "p": [
+            0,
+            4
+          ],
+          "g": [
+            [
+              0,
+              3
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 8,
+          "action": "R",
+          "p": [
+            1,
+            4
+          ],
+          "g": [
+            [
+              0,
+              4
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 9,
+          "action": "R",
+          "p": [
+            2,
+            4
+          ],
+          "g": [
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 10,
+          "action": "R",
+          "p": [
+            3,
+            4
+          ],
+          "g": [
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 11,
+          "action": "U",
+          "p": [
+            3,
+            3
+          ],
+          "g": [
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 12,
+          "action": "L",
+          "p": [
+            2,
+            3
+          ],
+          "g": [
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 13,
+          "action": "R",
+          "p": [
+            3,
+            3
+          ],
+          "g": [
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 14,
+          "action": "U",
+          "p": [
+            3,
+            2
+          ],
+          "g": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        },
+        {
+          "step": 15,
+          "action": "U",
+          "p": [
+            3,
+            1
+          ],
+          "g": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "motion",
+            "changes": [
+              {
+                "from": [
+                  0,
+                  2,
+                  2
+                ],
+                "actual": [
+                  0,
+                  2,
+                  2
+                ],
+                "alone": [
+                  0,
+                  3,
+                  2
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "step": 16,
+          "action": "L",
+          "p": [
+            2,
+            1
+          ],
+          "g": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "influence": {
+            "kind": "none",
+            "changes": []
+          }
+        }
+      ],
+      "noEndReference": {
+        "safe": false,
+        "fatalAt": 16,
+        "player": [
+          0,
+          2,
+          1
+        ],
+        "ghosts": [
+          [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        ],
+        "scope": "仅所选参考的去终点死亡检查；boundary.status仅表达其原始重合／玻璃政策，不代表本项"
+      }
+    }
+  ]
+}
