@@ -1,0 +1,847 @@
+{
+  "createdOn": "2026-11-17",
+  "humanQuality": null,
+  "mapId": "d0c92243f0b6f14ced0b1d57efe46e94a1de0f204fb8ac2393dca4523482086b",
+  "history": {
+    "mapId": "d0c92243f0b6f14ced0b1d57efe46e94a1de0f204fb8ac2393dca4523482086b",
+    "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+    "scope": "取物前右侧／下侧停车旗标进入完整键；排除到达死亡；第三项只指取物后静止，不等同再召回。",
+    "queries": [
+      {
+        "name": "never_right_park_before_key",
+        "result": {
+          "status": "solved",
+          "reason": "goal_reached",
+          "expanded": 113,
+          "transitions": 561,
+          "discovered": 131,
+          "totalActions": 14
+        },
+        "actions": [
+          "U",
+          "L",
+          "R",
+          "D",
+          "L",
+          "U",
+          "U",
+          "U",
+          "R",
+          "D",
+          "R",
+          "D",
+          "R",
+          "U"
+        ]
+      },
+      {
+        "name": "lower_park_before_key",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 212,
+          "transitions": 1060,
+          "discovered": 212,
+          "totalActions": null
+        },
+        "actions": null
+      },
+      {
+        "name": "ghost_static_after_key",
+        "result": {
+          "status": "proven_unsat",
+          "reason": "frontier_exhausted",
+          "expanded": 118,
+          "transitions": 590,
+          "discovered": 118,
+          "totalActions": null
+        },
+        "actions": null
+      }
+    ]
+  },
+  "deletions": [
+    {
+      "cell": [
+        0,
+        1
+      ],
+      "mapId": "c1fb65cfe556a806e5b57de73bafc7586432295c8d57457a691fec0dd2cca122",
+      "mapCode": "AWM42fDw4QMGBgZGrwYWhhCWBZsbmFYwAIEK0xWBJgEGEOAAAA",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 10,
+        "transitions": 50,
+        "discovered": 10,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "cell": [
+        1,
+        1
+      ],
+      "mapId": "5e02795d733112fecf94ad43fb7c15177226e4dd6e6fbd8805862de28d6d7c99",
+      "mapCode": "AWM42Jj48AEDAwOjVwMLQwjTAp8G1gAGIPDgWqHIosAAAgIA",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 38,
+        "transitions": 190,
+        "discovered": 38,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "cell": [
+        2,
+        1
+      ],
+      "mapId": "7b13a5ce0d9c0d0ab371c012351516583986fd3925858440d3faffcd51b9da66",
+      "mapCode": "AWM42Ljw4QMGBgZGrwYWhhCGxm4FxhAGIBBiChFoEmAAAQ4A",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 70,
+        "transitions": 350,
+        "discovered": 75,
+        "totalActions": 14
+      },
+      "count": "2",
+      "actions": [
+        "U",
+        "L",
+        "R",
+        "D",
+        "L",
+        "U",
+        "U",
+        "U",
+        "R",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U"
+      ]
+    },
+    {
+      "cell": [
+        0,
+        2
+      ],
+      "mapId": "b75f1b24ae7403890a9eb55352526537e16d4424fe8ed6ef71dc93e3a48bd046",
+      "mapCode": "AWM42fjg4QMGBgbGqAYWhhBGx3QWphUMQKDCcoWjSYABBDgA",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 9,
+        "transitions": 45,
+        "discovered": 9,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "cell": [
+        1,
+        2
+      ],
+      "mapId": "54a3b08dcd9c46a5b287d5714ebb3992d815def8d7e87a337e125e9e07cd6ae1",
+      "mapCode": "AWM42Pgw8QEDAwNjVAMLQwijw0wW1gAGIPDg7OKa4MQAAowA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 26,
+        "transitions": 130,
+        "discovered": 31,
+        "totalActions": 12
+      },
+      "count": "1",
+      "actions": [
+        "L",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "U",
+        "D",
+        "R",
+        "D",
+        "R",
+        "U"
+      ]
+    },
+    {
+      "cell": [
+        2,
+        2
+      ],
+      "mapId": "b6cbb0068d9f4a42e45a511b65461b7e693234ea10b839777768ffc98d85f88a",
+      "mapCode": "AWM42fhw4QMGBgbGqAYWhhBGh-uMTCsYgECF5YrQghYGEGACAA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 68,
+        "transitions": 340,
+        "discovered": 72,
+        "totalActions": 16
+      },
+      "count": "2",
+      "actions": [
+        "U",
+        "L",
+        "R",
+        "D",
+        "L",
+        "U",
+        "U",
+        "U",
+        "R",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U"
+      ]
+    },
+    {
+      "cell": [
+        3,
+        2
+      ],
+      "mapId": "c60158a9f3e30ba3bb7649260524bcb72531e1aa0cef3f57c5da9964784087b9",
+      "mapCode": "AWM42Pjw4AMGBgbGqAYWhhBGh0OMrAEMQODB2cXRyMEAAgA",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 97,
+        "transitions": 485,
+        "discovered": 97,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "cell": [
+        0,
+        3
+      ],
+      "mapId": "4378f2b27813fa9766ea8ea8566e1ea3ecc06d036cb4b51aea34222a750a7400",
+      "mapCode": "AWM42PjwwQMGBgbGqAYWhhBGh8OKDCEMQCDElNQkoMQAAowA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 71,
+        "transitions": 355,
+        "discovered": 82,
+        "totalActions": 14
+      },
+      "count": "1",
+      "actions": [
+        "U",
+        "L",
+        "R",
+        "R",
+        "U",
+        "L",
+        "U",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U"
+      ]
+    },
+    {
+      "cell": [
+        2,
+        3
+      ],
+      "mapId": "631d5ff5cf562581a7b71031b3284ce08e8d7cc03adaf49faf69f27bd7415478",
+      "mapCode": "AWM42fjw4QIGBgbG6AYWhhBGh3NMrAoMQDBBOMCJM4ABBDgA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 75,
+        "transitions": 375,
+        "discovered": 80,
+        "totalActions": 14
+      },
+      "count": "4",
+      "actions": [
+        "U",
+        "L",
+        "R",
+        "D",
+        "L",
+        "U",
+        "U",
+        "U",
+        "R",
+        "D",
+        "R",
+        "D",
+        "R",
+        "U"
+      ]
+    },
+    {
+      "cell": [
+        3,
+        3
+      ],
+      "mapId": "cd1e36deebfd0dd5ad794310c395229d3f46f365e2d548973a61a3219ec9a8a5",
+      "mapCode": "AWM42Pjw4QEGBgbG6AYWhhBGh8MKCisYgECIKalJwIUBBBgB",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 85,
+        "transitions": 425,
+        "discovered": 91,
+        "totalActions": 14
+      },
+      "count": "4",
+      "actions": [
+        "U",
+        "L",
+        "R",
+        "D",
+        "L",
+        "U",
+        "U",
+        "U",
+        "R",
+        "D",
+        "R",
+        "D",
+        "R",
+        "U"
+      ]
+    }
+  ],
+  "alternatives": [
+    {
+      "removedDoor": [
+        "h",
+        1,
+        2
+      ],
+      "mapId": "97a3a9390a737b62c734545972276bf24ccf414b35068ad841c99c003b30cd47",
+      "mapCode": "AWM42Pjw4QMGBgbG6AYWhhBGByMGUQcQV0FNQ5FFgQEEBAA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 90,
+        "transitions": 450,
+        "discovered": 98,
+        "totalActions": 12
+      },
+      "count": "5",
+      "actions": [
+        "U",
+        "L",
+        "R",
+        "U",
+        "U",
+        "L",
+        "D",
+        "R",
+        "R",
+        "D",
+        "R",
+        "U"
+      ]
+    },
+    {
+      "removedDoor": [
+        "v",
+        2,
+        1
+      ],
+      "mapId": "66d286189257350e2c52d3438f40a319513e3dabe64c9c4e246d2fc8391d8064",
+      "mapCode": "AWM42Pjw4QMGBgbG6AYWhhBGh8MKjCEMQCDEpKHIosAAAgIA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 90,
+        "transitions": 450,
+        "discovered": 100,
+        "totalActions": 14
+      },
+      "count": "14",
+      "actions": [
+        "U",
+        "L",
+        "R",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "D",
+        "R",
+        "R",
+        "D",
+        "R",
+        "U"
+      ]
+    }
+  ],
+  "prefixes": [
+    {
+      "prefix": [
+        "R",
+        "R",
+        "U"
+      ],
+      "keys": 0,
+      "fast": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "R",
+          "R",
+          "U"
+        ],
+        "actions": [
+          "L",
+          "L",
+          "L",
+          "R",
+          "R",
+          "U",
+          "L",
+          "U",
+          "D",
+          "D",
+          "D",
+          "R",
+          "R",
+          "U",
+          "U"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "fast_bfs",
+          "expanded": 98,
+          "discovered": 106,
+          "exhausted": false,
+          "elapsedMs": 3.0722350000000063,
+          "nodeBudget": 500000,
+          "budgetMs": 20000
+        }
+      },
+      "reference": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "R",
+          "R",
+          "U"
+        ],
+        "actions": [
+          "L",
+          "L",
+          "L",
+          "R",
+          "R",
+          "U",
+          "L",
+          "U",
+          "D",
+          "D",
+          "D",
+          "R",
+          "R",
+          "U",
+          "U"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "reference_bfs",
+          "expanded": 98,
+          "discovered": 106,
+          "exhausted": false,
+          "elapsedMs": 11.689866999999964,
+          "nodeBudget": 500000,
+          "budgetMs": 20000
+        }
+      },
+      "total": 18
+    },
+    {
+      "prefix": [
+        "U",
+        "L",
+        "R",
+        "U",
+        "U"
+      ],
+      "keys": 1,
+      "fast": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "prefix": [
+          "U",
+          "L",
+          "R",
+          "U",
+          "U"
+        ],
+        "actions": null,
+        "optimality": null,
+        "search": {
+          "algorithm": "fast_bfs",
+          "expanded": 5,
+          "discovered": 5,
+          "exhausted": true,
+          "elapsedMs": 0.10859299999998484,
+          "nodeBudget": 500000,
+          "budgetMs": 20000
+        }
+      },
+      "reference": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "prefix": [
+          "U",
+          "L",
+          "R",
+          "U",
+          "U"
+        ],
+        "actions": null,
+        "optimality": null,
+        "search": {
+          "algorithm": "reference_bfs",
+          "expanded": 5,
+          "discovered": 5,
+          "exhausted": true,
+          "elapsedMs": 0.5211840000000052,
+          "nodeBudget": 500000,
+          "budgetMs": 20000
+        }
+      },
+      "total": null
+    },
+    {
+      "prefix": [
+        "U",
+        "L",
+        "R",
+        "D"
+      ],
+      "keys": 0,
+      "fast": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "U",
+          "L",
+          "R",
+          "D"
+        ],
+        "actions": [
+          "L",
+          "U",
+          "U",
+          "U",
+          "R",
+          "D",
+          "R",
+          "D",
+          "R",
+          "U"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "fast_bfs",
+          "expanded": 80,
+          "discovered": 87,
+          "exhausted": false,
+          "elapsedMs": 2.9260949999999752,
+          "nodeBudget": 500000,
+          "budgetMs": 20000
+        }
+      },
+      "reference": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "U",
+          "L",
+          "R",
+          "D"
+        ],
+        "actions": [
+          "L",
+          "U",
+          "U",
+          "U",
+          "R",
+          "D",
+          "R",
+          "D",
+          "R",
+          "U"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "reference_bfs",
+          "expanded": 80,
+          "discovered": 87,
+          "exhausted": false,
+          "elapsedMs": 9.72223600000001,
+          "nodeBudget": 500000,
+          "budgetMs": 20000
+        }
+      },
+      "total": 14
+    },
+    {
+      "prefix": [
+        "L",
+        "R",
+        "R",
+        "U",
+        "U"
+      ],
+      "keys": 0,
+      "fast": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "L",
+          "R",
+          "R",
+          "U",
+          "U"
+        ],
+        "actions": [
+          "L",
+          "U",
+          "D",
+          "D",
+          "D",
+          "R",
+          "R",
+          "U",
+          "U"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "fast_bfs",
+          "expanded": 42,
+          "discovered": 54,
+          "exhausted": false,
+          "elapsedMs": 0.802188000000001,
+          "nodeBudget": 500000,
+          "budgetMs": 20000
+        }
+      },
+      "reference": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "L",
+          "R",
+          "R",
+          "U",
+          "U"
+        ],
+        "actions": [
+          "L",
+          "U",
+          "D",
+          "D",
+          "D",
+          "R",
+          "R",
+          "U",
+          "U"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "reference_bfs",
+          "expanded": 42,
+          "discovered": 54,
+          "exhausted": false,
+          "elapsedMs": 5.797678000000019,
+          "nodeBudget": 500000,
+          "budgetMs": 20000
+        }
+      },
+      "total": 14
+    },
+    {
+      "prefix": [
+        "U",
+        "L",
+        "R",
+        "R",
+        "U",
+        "L",
+        "U"
+      ],
+      "keys": 1,
+      "fast": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "U",
+          "L",
+          "R",
+          "R",
+          "U",
+          "L",
+          "U"
+        ],
+        "actions": [
+          "D",
+          "D",
+          "D",
+          "R",
+          "R",
+          "U",
+          "U"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "fast_bfs",
+          "expanded": 15,
+          "discovered": 20,
+          "exhausted": false,
+          "elapsedMs": 0.3470320000000129,
+          "nodeBudget": 500000,
+          "budgetMs": 20000
+        }
+      },
+      "reference": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "U",
+          "L",
+          "R",
+          "R",
+          "U",
+          "L",
+          "U"
+        ],
+        "actions": [
+          "D",
+          "D",
+          "D",
+          "R",
+          "R",
+          "U",
+          "U"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "reference_bfs",
+          "expanded": 15,
+          "discovered": 20,
+          "exhausted": false,
+          "elapsedMs": 2.051167000000021,
+          "nodeBudget": 500000,
+          "budgetMs": 20000
+        }
+      },
+      "total": 14
+    }
+  ],
+  "deaths": [
+    {
+      "prefix": [
+        "U",
+        "L"
+      ],
+      "action": "U"
+    },
+    {
+      "prefix": [
+        "U",
+        "L",
+        "R"
+      ],
+      "action": "L"
+    },
+    {
+      "prefix": [
+        "U",
+        "L",
+        "R",
+        "R"
+      ],
+      "action": "L"
+    },
+    {
+      "prefix": [
+        "U",
+        "L",
+        "R",
+        "R",
+        "U"
+      ],
+      "action": "D"
+    }
+  ],
+  "invalids": [
+    {
+      "prefix": [],
+      "action": "D"
+    },
+    {
+      "prefix": [
+        "U",
+        "L"
+      ],
+      "action": "L"
+    },
+    {
+      "prefix": [
+        "U",
+        "L",
+        "R",
+        "R",
+        "U"
+      ],
+      "action": "U"
+    },
+    {
+      "prefix": [
+        "U",
+        "L",
+        "R",
+        "R",
+        "U"
+      ],
+      "action": "R"
+    }
+  ],
+  "goalProbe": {
+    "prefix": [
+      "R",
+      "R",
+      "U"
+    ],
+    "action": "U",
+    "valid": false,
+    "keys": 0,
+    "ghostStillInitial": true
+  }
+}

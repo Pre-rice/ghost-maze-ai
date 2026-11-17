@@ -1,0 +1,103 @@
+{
+  "verifiedOn": "2026-11-17",
+  "scope": "Chromium桌面及触屏模拟；非真人体验，非真机验收",
+  "mapId": "d0c92243f0b6f14ced0b1d57efe46e94a1de0f204fb8ac2393dca4523482086b",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "viewports": [
+    {
+      "mobile": false,
+      "allOptimalRawRoutes": 6,
+      "ghostTrajectoryClasses": 4,
+      "allPhysicalFrames": true,
+      "safeGoalQualificationProbe": true,
+      "recoverableRoutes": [
+        14,
+        18
+      ],
+      "safeWrongPrefixes": 1,
+      "deathsUndo": 4,
+      "invalidInputs": 4,
+      "historyCriticalSteps": 12,
+      "replayFrames": 60,
+      "solverCount": 4,
+      "visibleSolverLinks": 1,
+      "otherReplaysOpenedThroughApplicationMethod": 3,
+      "neighbors": [
+        "57",
+        "12"
+      ],
+      "frameDocumentLoads": 1,
+      "reviewEntries": 49,
+      "screenshotsViewed": true
+    },
+    {
+      "mobile": true,
+      "allOptimalRawRoutes": 6,
+      "ghostTrajectoryClasses": 4,
+      "allPhysicalFrames": true,
+      "safeGoalQualificationProbe": true,
+      "recoverableRoutes": [
+        14,
+        18
+      ],
+      "safeWrongPrefixes": 1,
+      "deathsUndo": 4,
+      "invalidInputs": 4,
+      "historyCriticalSteps": 12,
+      "replayFrames": 60,
+      "solverCount": 4,
+      "visibleSolverLinks": 1,
+      "otherReplaysOpenedThroughApplicationMethod": 3,
+      "neighbors": [
+        "57",
+        "12"
+      ],
+      "frameDocumentLoads": 1,
+      "reviewEntries": 49,
+      "screenshotsViewed": true
+    }
+  ],
+  "refresh": [
+    {
+      "oldId": "57",
+      "mobile": false,
+      "retiredContinuesSecondStep": false,
+      "preservedProgress": true,
+      "newSelectionLoads": true
+    },
+    {
+      "oldId": "63",
+      "mobile": false,
+      "retiredContinuesSecondStep": true,
+      "preservedProgress": true,
+      "newSelectionLoads": true
+    },
+    {
+      "oldId": "12",
+      "mobile": false,
+      "retiredContinuesSecondStep": false,
+      "preservedProgress": true,
+      "newSelectionLoads": true
+    },
+    {
+      "oldId": "63",
+      "mobile": true,
+      "retiredContinuesSecondStep": true,
+      "preservedProgress": true,
+      "newSelectionLoads": true
+    }
+  ],
+  "solverRepresentatives": {
+    "codes": [
+      "EFsVI9gvIV8A",
+      "EFsVI9i8IV8A",
+      "EFsVI9gtgN3A",
+      "EFsVI9gnIN3A"
+    ],
+    "classes": 4,
+    "allNativeClassesCovered": true,
+    "visibleLinks": 1,
+    "scope": "网页实际四个代表覆盖全部原生鬼动停类；当前界面只显首个入口，其余回放已另以应用切换方法逐帧验收。"
+  },
+  "verificationLimit": "网页实际四个代表覆盖全部类，但当前界面只显首个入口；其余三类用同一应用切换方法逐帧核对。触屏模拟非真机或未知规则真人。"
+}
