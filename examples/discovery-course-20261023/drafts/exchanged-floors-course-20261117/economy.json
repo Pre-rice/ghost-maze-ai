@@ -1,0 +1,969 @@
+{
+  "verifiedOn": "2026-11-17",
+  "humanQuality": null,
+  "mapId": "61425928e0b6d9d5a416a7e38493de77948c0b4d937c825416a1fb89ba22621c",
+  "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+  "comparisons": [
+    {
+      "kind": "no_lower_ghost",
+      "mapId": "50a5e120b4eb60a229b92a9512a174e1b49833c9e65ed01ac47c4233d5ba9922",
+      "mapCode": "AWN4wcDAfvwAAwMDMwMDawiLaAADGCi0HAHTTMwfwJQCG6ODAN-qrlUQaREmFgiDhSMAAA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 134,
+        "transitions": 670,
+        "discovered": 145,
+        "totalActions": 13
+      },
+      "count": "2",
+      "actions": [
+        "U",
+        "STAIR",
+        "R",
+        "R",
+        "R",
+        "STAIR",
+        "L",
+        "L",
+        "L",
+        "STAIR",
+        "L",
+        "L",
+        "U"
+      ],
+      "boundary": {
+        "status": "safe",
+        "reason": "all_optimal_routes_avoid_overlap",
+        "mapId": "50a5e120b4eb60a229b92a9512a174e1b49833c9e65ed01ac47c4233d5ba9922",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 134,
+        "transitions": 670,
+        "discovered": 144,
+        "optimum": 13,
+        "ignoredFatalOverlap": 0,
+        "observedNonFatalOverlap": null,
+        "safeOptimalWitness": [
+          "U",
+          "STAIR",
+          "R",
+          "R",
+          "R",
+          "STAIR",
+          "L",
+          "L",
+          "L",
+          "STAIR",
+          "L",
+          "L",
+          "U"
+        ],
+        "elapsedMs": 43,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+      }
+    },
+    {
+      "kind": "no_upper_ghost",
+      "mapId": "6480d74eb726540c19911a7f83e939a36940dcfbe976cc0c30bf10ebccf88026",
+      "mapCode": "AWN4wcDAfvwAAwMDswMPA0Oog2MoAxgwcfg4gBkK9mBKkWEBB3uoK1SWi5EJqoxFAwA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 96,
+        "transitions": 480,
+        "discovered": 105,
+        "totalActions": 13
+      },
+      "count": "3",
+      "actions": [
+        "U",
+        "D",
+        "R",
+        "U",
+        "R",
+        "R",
+        "STAIR",
+        "L",
+        "L",
+        "L",
+        "L",
+        "L",
+        "U"
+      ],
+      "boundary": {
+        "status": "safe",
+        "reason": "all_optimal_routes_avoid_overlap",
+        "mapId": "6480d74eb726540c19911a7f83e939a36940dcfbe976cc0c30bf10ebccf88026",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 96,
+        "transitions": 480,
+        "discovered": 103,
+        "optimum": 13,
+        "ignoredFatalOverlap": 0,
+        "observedNonFatalOverlap": null,
+        "safeOptimalWitness": [
+          "U",
+          "D",
+          "R",
+          "U",
+          "R",
+          "R",
+          "STAIR",
+          "L",
+          "L",
+          "L",
+          "L",
+          "L",
+          "U"
+        ],
+        "elapsedMs": 19,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+      }
+    },
+    {
+      "kind": "ordinary_to_empty",
+      "mapId": "e196851e24d7f8467ff2f34386697dc09801fdca3c5ace32694a633668f345f0",
+      "mapCode": "AWN4wMDAfvwAAwMDswMPA0Oog2MoAxgwcThCGA1_wFQHY0MAC7NpYKgDRLrBoQEi38jFAAA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 51,
+        "transitions": 255,
+        "discovered": 53,
+        "totalActions": 15
+      },
+      "count": "1",
+      "actions": [
+        "U",
+        "STAIR",
+        "R",
+        "R",
+        "R",
+        "STAIR",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "STAIR",
+        "L",
+        "L",
+        "U"
+      ],
+      "boundary": {
+        "status": "conflict",
+        "reason": "optimal_solution_uses_overlap",
+        "mapId": "e196851e24d7f8467ff2f34386697dc09801fdca3c5ace32694a633668f345f0",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 51,
+        "transitions": 251,
+        "discovered": 52,
+        "optimum": 15,
+        "ignoredFatalOverlap": 4,
+        "observedNonFatalOverlap": {
+          "witness": [
+            "U",
+            "STAIR",
+            "R",
+            "R",
+            "R",
+            "STAIR",
+            "D",
+            "L",
+            "L",
+            "L",
+            "U",
+            "STAIR"
+          ],
+          "conflict": {
+            "target": {
+              "x": 2,
+              "y": 2
+            },
+            "contenders": [
+              {
+                "from": {
+                  "x": 3,
+                  "y": 2
+                },
+                "seesAfter": false
+              },
+              {
+                "from": {
+                  "x": 2,
+                  "y": 3
+                },
+                "seesAfter": false
+              }
+            ],
+            "decision": "equal_priority_overlap",
+            "capturesPlayer": false,
+            "layer": 0
+          }
+        },
+        "safeOptimalWitness": null,
+        "elapsedMs": 14,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除",
+        "witness": [
+          "U",
+          "STAIR",
+          "R",
+          "R",
+          "R",
+          "STAIR",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "STAIR",
+          "L",
+          "L",
+          "U"
+        ]
+      }
+    },
+    {
+      "kind": "internal_wall_to_empty",
+      "mapId": "7e390212f9a52ea42a87cf6cc28aeb31cb2d3667aebb3a4ffefe41d02f429072",
+      "mapCode": "AWN4wMDAfvwAAwMDswMPA0OoA9MqBjBgEZihAGYIyDeAKEEGAy6GhrRVWisg8gEcAhCGgKIDAA",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 88,
+        "transitions": 440,
+        "discovered": 88,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "kind": "no_left_stairs",
+      "mapId": "5e4713d20f8446b1d11ccc16f0e12a1cee7fdfbf45b63e89c7c4d2b828d8f368",
+      "mapCode": "AWN4wMDAfvwAAwMDswMPA0Oog2MoAxgwcfgIgBkc_AfAVIMEK4ODcahoCEReg4UDwuDgYgAA",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 63,
+        "transitions": 315,
+        "discovered": 63,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "kind": "no_right_stairs",
+      "mapId": "1c4b7c5d12c8bf83aa89a26e5086db62cbea26b86a9fdac57876e846c4ef1d7c",
+      "mapCode": "AWN4wMDAfvwAAwMDswMPA0Oog2MoAxgwcfgIgBkc_AfAVIMEK4ODcahoCEReg4UDwuDgaAAA",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 59,
+        "transitions": 295,
+        "discovered": 59,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "kind": "no_resource_task",
+      "mapId": "1887a975c3628b4dbe8417895dfeca687087ddc4aff51937bf18ae4584e82dd7",
+      "mapCode": "AWN4wMDAfvwAAwMDswMPA0Oog2MoAxgwcfgIgBkc_AfAVIMAE8OqrlUQWREmFgiDIwAA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 90,
+        "transitions": 450,
+        "discovered": 97,
+        "totalActions": 15
+      },
+      "count": "1",
+      "actions": [
+        "U",
+        "STAIR",
+        "R",
+        "R",
+        "R",
+        "STAIR",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "STAIR",
+        "L",
+        "L",
+        "U"
+      ],
+      "boundary": {
+        "status": "safe",
+        "reason": "all_optimal_routes_avoid_overlap",
+        "mapId": "1887a975c3628b4dbe8417895dfeca687087ddc4aff51937bf18ae4584e82dd7",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 84,
+        "transitions": 420,
+        "discovered": 88,
+        "optimum": 15,
+        "ignoredFatalOverlap": 1,
+        "observedNonFatalOverlap": null,
+        "safeOptimalWitness": [
+          "U",
+          "STAIR",
+          "R",
+          "R",
+          "R",
+          "STAIR",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "STAIR",
+          "L",
+          "L",
+          "U"
+        ],
+        "elapsedMs": 17,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+      }
+    }
+  ],
+  "deletions": [
+    {
+      "cell": [
+        0,
+        1,
+        2
+      ],
+      "mapId": "1e7c30f6d682f2ef3daf680936d3c6c8d91f38ed57119e0e8de9d29bf8d909eb",
+      "mapCode": "AWN4wMDAfPwAAwMD0wEOBgatFsdQBjBg5PARADM4-A-AqQYJVgYH41DREIi8BgsHhMEhIAEA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 54,
+        "transitions": 270,
+        "discovered": 56,
+        "totalActions": 15
+      },
+      "count": "1",
+      "actions": [
+        "U",
+        "STAIR",
+        "R",
+        "R",
+        "R",
+        "STAIR",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "STAIR",
+        "L",
+        "L",
+        "U"
+      ],
+      "boundary": {
+        "status": "safe",
+        "reason": "all_optimal_routes_avoid_overlap",
+        "mapId": "1e7c30f6d682f2ef3daf680936d3c6c8d91f38ed57119e0e8de9d29bf8d909eb",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 54,
+        "transitions": 270,
+        "discovered": 55,
+        "optimum": 15,
+        "ignoredFatalOverlap": 1,
+        "observedNonFatalOverlap": null,
+        "safeOptimalWitness": [
+          "U",
+          "STAIR",
+          "R",
+          "R",
+          "R",
+          "STAIR",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "STAIR",
+          "L",
+          "L",
+          "U"
+        ],
+        "elapsedMs": 10,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+      }
+    },
+    {
+      "cell": [
+        0,
+        3,
+        2
+      ],
+      "mapId": "8e2c94e3bb2601ff788ba0efef2c656e1fe574d028e0e90212c31ae5c990fafe",
+      "mapCode": "AWN4wMDAdvwAAwMD0wEOBoagRsdQBjBgChJmgTCYP4ApBTZGBwGeq65QeS5GJqhCFjUA",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 26,
+        "transitions": 130,
+        "discovered": 26,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "cell": [
+        0,
+        1,
+        3
+      ],
+      "mapId": "266ad699586ea20340b45e248a1ec6eb38ab3a48230bb431071bd1d24c975118",
+      "mapCode": "AWN4wMDAfvgAAwMD0wEeBoZQJ4VQBjBg4tARADM4-A-AqQYJVgYH41DREIi8BgsHhMEhsAAA",
+      "result": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "expanded": 52,
+        "transitions": 260,
+        "discovered": 54,
+        "totalActions": 15
+      },
+      "count": "1",
+      "actions": [
+        "U",
+        "STAIR",
+        "R",
+        "R",
+        "R",
+        "STAIR",
+        "D",
+        "L",
+        "L",
+        "L",
+        "U",
+        "STAIR",
+        "L",
+        "L",
+        "U"
+      ],
+      "boundary": {
+        "status": "safe",
+        "reason": "all_optimal_routes_avoid_overlap",
+        "mapId": "266ad699586ea20340b45e248a1ec6eb38ab3a48230bb431071bd1d24c975118",
+        "ruleset": "sha256:69f3b7eea3dce5d2a53acf41074ebbeb289e1a49c4f45f30018b7dbad71cfed0",
+        "policy": "all_optimal_routes_avoid_overlap_v2",
+        "glassCount": 0,
+        "expanded": 52,
+        "transitions": 260,
+        "discovered": 53,
+        "optimum": 15,
+        "ignoredFatalOverlap": 1,
+        "observedNonFatalOverlap": null,
+        "safeOptimalWitness": [
+          "U",
+          "STAIR",
+          "R",
+          "R",
+          "R",
+          "STAIR",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "STAIR",
+          "L",
+          "L",
+          "U"
+        ],
+        "elapsedMs": 4,
+        "scope": "全部最优无伤无复活解不经过鬼重合；玻璃换实墙核对全部无伤可达物理后继含死亡动作，观察差异排除"
+      }
+    },
+    {
+      "cell": [
+        0,
+        3,
+        3
+      ],
+      "mapId": "61ec0ccfcaa95f6582ab7f572f08611f61d7147aa7281fd0d08f2186f15a586e",
+      "mapCode": "AWN4wMDAfuwAAwMDswMPA0Oow4KlDGDAxOHlAGYo2IMpJYYEEUaGsyGhARD5BQIKEIaCUwMA",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 27,
+        "transitions": 135,
+        "discovered": 27,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "cell": [
+        0,
+        4,
+        3
+      ],
+      "mapId": "24d47f00de273c7457130f9bd670f030657455d781a335daabd2288db2245bb0",
+      "mapCode": "AWN4wMDAftyBgYGB2YGHgSHUwTGIAQxYBGasgDDYH4ApBx6mBgXJVV2rIPIiTCxQhRwBAA",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 74,
+        "transitions": 370,
+        "discovered": 74,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "cell": [
+        0,
+        5,
+        3
+      ],
+      "mapId": "811c282107c15cbe6fb9baeb0a8a5dbf991c48ba26e33f2dcff673b1dc57e328",
+      "mapCode": "AWN4wMDAfryBgYGB2YGHgSHUIWAVAxgwcfgogBkc_AfAVIMEK4ODcahoCEReg4UDwuAQWAAA",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 73,
+        "transitions": 365,
+        "discovered": 73,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "cell": [
+        1,
+        1,
+        2
+      ],
+      "mapId": "bae7fdfa1ae92bafa440675646c003f2e8176af43100d841ed94939fb7226b3b",
+      "mapCode": "AWN4wMDAfvwAAwMDswMPA0Oog2MoAxgwcfgIgBkc3AfAVIMEC4OD0SrVAIj8AlEOCINDYAEA",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 97,
+        "transitions": 485,
+        "discovered": 97,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    },
+    {
+      "cell": [
+        1,
+        3,
+        2
+      ],
+      "mapId": "fde7b97e66bd11d6a5a5017b0c66dda94eb2a05f1c7937036f73247210416ce6",
+      "mapCode": "AWN4wMDAfvwAAwMDswMPA0Oog2MoAxgwcfgIgBkcfAfAVIMEC4ODsZdWAER-gaAHhMEhsAAA",
+      "result": {
+        "status": "proven_unsat",
+        "reason": "frontier_exhausted",
+        "expanded": 64,
+        "transitions": 320,
+        "discovered": 64,
+        "totalActions": null
+      },
+      "count": "0",
+      "actions": null
+    }
+  ],
+  "deaths": [
+    {
+      "prefix": [
+        "U"
+      ],
+      "action": "R"
+    },
+    {
+      "prefix": [
+        "U",
+        "STAIR"
+      ],
+      "action": "L"
+    },
+    {
+      "prefix": [
+        "U",
+        "STAIR",
+        "R",
+        "R",
+        "R",
+        "STAIR"
+      ],
+      "action": "L"
+    },
+    {
+      "prefix": [
+        "U",
+        "STAIR",
+        "R",
+        "R",
+        "R",
+        "STAIR",
+        "D",
+        "L",
+        "L",
+        "L"
+      ],
+      "action": "R"
+    }
+  ],
+  "invalids": [
+    {
+      "prefix": [],
+      "action": "D"
+    },
+    {
+      "prefix": [
+        "R",
+        "R"
+      ],
+      "action": "U"
+    },
+    {
+      "prefix": [],
+      "action": "STAIR"
+    },
+    {
+      "prefix": [
+        "U",
+        "STAIR",
+        "R"
+      ],
+      "action": "U"
+    }
+  ],
+  "prefixes": [
+    {
+      "prefix": [
+        "L"
+      ],
+      "fast": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "L"
+        ],
+        "actions": [
+          "R",
+          "U",
+          "STAIR",
+          "R",
+          "R",
+          "R",
+          "STAIR",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "STAIR",
+          "L",
+          "L",
+          "U"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "fast_bfs",
+          "expanded": 105,
+          "discovered": 106,
+          "exhausted": false,
+          "elapsedMs": 3.0179430000000025,
+          "nodeBudget": 400000,
+          "budgetMs": 20000
+        }
+      },
+      "reference": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "L"
+        ],
+        "actions": [
+          "R",
+          "U",
+          "STAIR",
+          "R",
+          "R",
+          "R",
+          "STAIR",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "STAIR",
+          "L",
+          "L",
+          "U"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "reference_bfs",
+          "expanded": 105,
+          "discovered": 106,
+          "exhausted": false,
+          "elapsedMs": 12.100732999999991,
+          "nodeBudget": 400000,
+          "budgetMs": 20000
+        }
+      },
+      "total": 17
+    },
+    {
+      "prefix": [
+        "U",
+        "L"
+      ],
+      "fast": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "U",
+          "L"
+        ],
+        "actions": [
+          "D",
+          "R",
+          "U",
+          "STAIR",
+          "R",
+          "R",
+          "R",
+          "STAIR",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "STAIR",
+          "L",
+          "L",
+          "U"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "fast_bfs",
+          "expanded": 101,
+          "discovered": 101,
+          "exhausted": false,
+          "elapsedMs": 2.2593499999999835,
+          "nodeBudget": 400000,
+          "budgetMs": 20000
+        }
+      },
+      "reference": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "U",
+          "L"
+        ],
+        "actions": [
+          "D",
+          "R",
+          "U",
+          "STAIR",
+          "R",
+          "R",
+          "R",
+          "STAIR",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "STAIR",
+          "L",
+          "L",
+          "U"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "reference_bfs",
+          "expanded": 101,
+          "discovered": 101,
+          "exhausted": false,
+          "elapsedMs": 10.51034900000002,
+          "nodeBudget": 400000,
+          "budgetMs": 20000
+        }
+      },
+      "total": 19
+    },
+    {
+      "prefix": [
+        "R",
+        "R",
+        "R"
+      ],
+      "fast": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "R",
+          "R",
+          "R"
+        ],
+        "actions": [
+          "L",
+          "L",
+          "L",
+          "U",
+          "STAIR",
+          "R",
+          "R",
+          "R",
+          "STAIR",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "STAIR",
+          "L",
+          "L",
+          "U"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "fast_bfs",
+          "expanded": 105,
+          "discovered": 106,
+          "exhausted": false,
+          "elapsedMs": 2.8080570000000193,
+          "nodeBudget": 400000,
+          "budgetMs": 20000
+        }
+      },
+      "reference": {
+        "status": "solved",
+        "reason": "goal_reached",
+        "prefix": [
+          "R",
+          "R",
+          "R"
+        ],
+        "actions": [
+          "L",
+          "L",
+          "L",
+          "U",
+          "STAIR",
+          "R",
+          "R",
+          "R",
+          "STAIR",
+          "D",
+          "L",
+          "L",
+          "L",
+          "U",
+          "STAIR",
+          "L",
+          "L",
+          "U"
+        ],
+        "optimality": null,
+        "search": {
+          "algorithm": "reference_bfs",
+          "expanded": 105,
+          "discovered": 106,
+          "exhausted": false,
+          "elapsedMs": 16.36408899999998,
+          "nodeBudget": 400000,
+          "budgetMs": 20000
+        }
+      },
+      "total": 21
+    }
+  ],
+  "entryPath": {
+    "external": [
+      0,
+      2,
+      4
+    ],
+    "externalCells": [
+      [
+        2,
+        4
+      ]
+    ],
+    "actions": [
+      "U"
+    ]
+  },
+  "entry": {
+    "external": [
+      0,
+      2,
+      4
+    ],
+    "actions": [
+      "U"
+    ],
+    "externalCells": [
+      [
+        2,
+        4
+      ]
+    ],
+    "internal": [
+      0,
+      2,
+      3
+    ],
+    "keys": 0,
+    "externalGhosts": 0,
+    "actualExternalStartOutsideEnvelope": true,
+    "exteriorSealedExceptEntrance": true,
+    "initialInteriorEqual": true,
+    "afterGhosts": [
+      [
+        [
+          4,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          2
+        ]
+      ]
+    ],
+    "wholeOptimalRoutesInteriorEqual": true,
+    "allInternalSuccessorsEqual": {
+      "states": 108,
+      "transitions": 535,
+      "includesFatalActions": true
+    },
+    "noEndSafeRoutes": 1,
+    "scope": "只声明所列外侧路径、零钥匙与无外部鬼；不声称任意外部局面均适用"
+  }
+}
