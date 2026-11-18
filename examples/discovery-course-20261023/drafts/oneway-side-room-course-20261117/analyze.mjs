@@ -1,0 +1,9 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {createReferenceEnvironment} from '../../../../src/reference/environment.js';
+import {createBreadthFirstSearch} from '../../../../../ghost-maze/src/solver/breadthFirst.js';
+import {inspectGhostInfluence} from '../../../../src/design/ghost-influence.js';
+const root=new URL('./',import.meta.url),s=JSON.parse(fs.readFileSync(new URL('goal-recess.json',root))),map=s.map,e=createReferenceEnvironment(map),nm=structuredClone(map);nm.layers[0].endPos=null;const no=createReferenceEnvironment(nm),budget={nodeBudget:750000,stateBudget:750000,budgetMs:30000},rows=[];
+for(const name of ['never_cross_arrow','no_actual_influence']){const q=createBreadthFirstSearch(e,{monitor:{initial:()=>[],advance(h,b,a,n){if(n.isWon&&no.step(b,a).isDead)return null;if(name==='never_cross_arrow'&&b.player.x===2&&b.player.y===3&&a==='D'||name==='no_actual_influence'&&inspectGhostInfluence(e,b,a,n).kind!=='none')return null;return h;}}}),result=q.run(budget);assert(['solved','proven_unsat'].includes(result.status));rows.push({name,result,actions:q.firstActions()});}
+const ordinary=structuredClone(map);ordinary.layers[0].hWalls[4][2]={type:2,keys:0};const oe=createReferenceEnvironment(ordinary),q=createBreadthFirstSearch(oe,{allOptimal:true}),result=q.run(budget);ordinary.layers[0].endPos=null;const on=createReferenceEnvironment(ordinary);let safe=0;for(const a of q.routes()){let st=on.initialState();for(const step of a)st=on.step(st,step);if(!st.isDead)safe++;}
+fs.writeFileSync(new URL('complete-plans.json',root),JSON.stringify({mapId:e.mapId,rows,ordinary:{result,count:q.routeCount().toString(),actions:q.firstActions(),noEndSafeRoutes:safe},humanQuality:null},null,2)+'\n');console.log(JSON.stringify({rows:rows.map(r=>({name:r.name,status:r.result.status,T:r.result.totalActions,actions:r.actions})),ordinaryT:result.totalActions}));
