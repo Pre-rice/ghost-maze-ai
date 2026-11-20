@@ -4,7 +4,7 @@
 
 ## 公开产品与入口
 
-[鬼迷宫·初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)对所有人公开，当前50关，Site124原生部署成功。成功后未访问部署重复核验；[精确发布记录](../examples/discovery-course-20261023/site-publication.json)保存来源、版本和部署ID。[唯一人读审查说明](../examples/discovery-course-20261023/review-guide.md)逐关列来源、实际改动、设计意图和待审；网页可定位当前关，正常游玩不显示设计提示。
+[鬼迷宫·初见](https://ghostmaze-discovery-path.prerice.chatgpt.site)对所有人公开，当前50关，更新审查说明的Site125原生部署成功。成功后未访问部署重复核验；[精确发布记录](../examples/discovery-course-20261023/site-publication.json)保存来源、版本和部署ID。[唯一人读审查说明](../examples/discovery-course-20261023/review-guide.md)逐关列来源、实际改动、设计意图和待审；网页可定位当前关，正常游玩不显示设计提示。
 
 顺序唯一来源为[course-order.json](../examples/discovery-course-20261023/course-order.json)，目录ID不等于关号。1—6墙、追逐与普通门；7—13延续A及A/B；14首次钥匙、19首次0，资源与安排到33；34—38方向和控制可达性；39—46多鬼与既有策略；47—50楼梯。观察不当掌握，原作好评不转移给改图或关序。人读来源口径仍18认可作品来源、5未评价研究、27课程新构／重构；构造器27课程专用、23复用／变式，两种口径分开。
 
